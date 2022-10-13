@@ -1,0 +1,13 @@
+uuid: 9b78fc2b-1f9f-46ee-b0e6-5b5a35ddc560
+langcode: en
+status: true
+dependencies: {  }
+id: intro_text
+label: 'Intro text'
+classes: intro-text
+type: section
+group: add_ons
+weight: 11
+block_restrictions: {  }
+layout_restrictions:
+  - layout_onecol

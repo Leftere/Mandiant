@@ -1,0 +1,10 @@
+<div {{ attributes }}>
+	<div class="mega-dropdown-inner">
+		{% for row in rows %}
+			{{ row }}
+		{% endfor %}
+		<div class="mega-dropdown-bottom">
+			<a href="#" class="js-close-btn">{{ 'Close'|t }}</a>
+		</div>
+	</div>
+</div>

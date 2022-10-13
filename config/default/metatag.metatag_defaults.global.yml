@@ -1,0 +1,14 @@
+uuid: d67c1855-665a-4d4f-b0da-d8a697fa7fe6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sL588ui1E_8-2c_UupwyYxcqX2OVyMFp3HTLbbFqvPc
+id: global
+label: Global
+tags:
+  canonical_url: '[current-page:url]'
+  title: '[current-page:title] | [site:name]'
+  og_image: '[site_settings:meta_tag_social_sharing_image--metatag_social_sharing_image]'
+  og_image_secure_url: '[site_settings:meta_tag_social_sharing_image--metatag_social_sharing_image]'
+  og_image_url: '[site_settings:meta_tag_social_sharing_image--metatag_social_sharing_image]'

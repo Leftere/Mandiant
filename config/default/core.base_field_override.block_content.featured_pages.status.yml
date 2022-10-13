@@ -1,0 +1,22 @@
+uuid: 631e7dcb-35a9-4361-84e7-fd819c2717d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.featured_pages
+id: block_content.featured_pages.status
+field_name: status
+entity_type: block_content
+bundle: featured_pages
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

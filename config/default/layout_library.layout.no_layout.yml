@@ -1,0 +1,162 @@
+uuid: d079906f-773f-4a6f-a0f9-94988da5ce2d
+langcode: en
+status: true
+dependencies: {  }
+id: no_layout
+label: 'No layout'
+targetEntityType: block_content
+targetBundle: cta
+layout:
+  -
+    layout_id: layout_onecol
+    layout_settings:
+      label: ''
+      layout_builder_styles_style:
+        0: ''
+        1: ''
+        block_plain_text: 0
+        cta_contact_full: 0
+        component_intro: 0
+        intro_text: 0
+        negative_top_margin: 0
+        related_thought_leadership: 0
+        search_filter: 0
+        search_results_: 0
+        section_product_services: 0
+        negative_bottom_margin: 0
+        margin_bottom_zero: 0
+        padding_top_bottom_: 0
+        padding_top_: 0
+        small_image_tile: 0
+        small_tile_section: 0
+        featured_testimonial: 0
+        margin_bottom_60px_: 0
+        padding_top_60px_: 0
+        resource_hero: 0
+      layout_builder_id: ''
+      context_mapping: {  }
+    components:
+      ee7bc32c-848e-4384-bfda-36e0f059f7ad:
+        uuid: ee7bc32c-848e-4384-bfda-36e0f059f7ad
+        region: content
+        configuration:
+          id: 'field_block:block_content:cta:field_eyebrow'
+          label: Eyebrow
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: string
+            settings:
+              link_to_entity: false
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          layout_builder_id: ''
+        weight: 0
+      8e1f157d-d0d4-4417-87b8-2e2bdec978aa:
+        uuid: 8e1f157d-d0d4-4417-87b8-2e2bdec978aa
+        region: content
+        configuration:
+          id: 'field_block:block_content:cta:field_title'
+          label: Title
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: text_field_formatter
+            settings:
+              link_to_entity: 0
+              wrap_tag: h2
+              wrap_class: ''
+              wrap_attributes: ''
+              override_link_label: ''
+              token: ''
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          layout_builder_id: ''
+        weight: 1
+      f08920a3-7bbe-4d0e-a206-7546f0241ebf:
+        uuid: f08920a3-7bbe-4d0e-a206-7546f0241ebf
+        region: content
+        configuration:
+          id: 'field_block:block_content:cta:field_cta'
+          label: Link
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: link
+            settings:
+              trim_length: 80
+              url_only: false
+              url_plain: false
+              rel: '0'
+              target: '0'
+            third_party_settings:
+              field_formatter_class:
+                class: href-cta
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          layout_builder_id: ''
+        weight: 2
+      da7c80bd-7ba2-43ea-bf33-3aa6756a2896:
+        uuid: da7c80bd-7ba2-43ea-bf33-3aa6756a2896
+        region: content
+        configuration:
+          id: 'field_block:block_content:cta:field_cta2'
+          label: 'Link Secondary'
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: link
+            settings:
+              trim_length: 80
+              url_only: false
+              url_plain: false
+              rel: '0'
+              target: '0'
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          layout_builder_id: ''
+        weight: 3
+      f4d7a92f-cca0-4735-b92f-6b60e04dab0e:
+        uuid: f4d7a92f-cca0-4735-b92f-6b60e04dab0e
+        region: content
+        configuration:
+          id: 'field_block:block_content:cta:field_media_document'
+          label: Document
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: entity_reference_entity_view
+            settings:
+              view_mode: cta
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          layout_builder_id: ''
+        weight: 4
+    third_party_settings: {  }

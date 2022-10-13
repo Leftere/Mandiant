@@ -1,0 +1,65 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed Jun 02 2021 20:00:20 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:lockable",
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "A New Future for FireEye and Mandiant: Accelerating Opportunities",
+    "twitterSize": "large",
+    "jcr:versionHistory": "9f2e92a3-a826-4a91-9ccf-184473749e93",
+    "author": "Kevin Mandia",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en",
+    "jcr:predecessors": [
+      "cd25de83-6ad7-4787-afef-40e35367041d"
+    ],
+    "jcr:created": "Tue Jun 08 2021 22:15:09 GMT+0000",
+    "cq:lastModified": "Tue Jun 08 2021 22:14:50 GMT+0000",
+    "jcr:description": "With today\u2019s announcement of the sale of the FireEye Products business to Symphony Technology Group (STG), we have taken an important step forward to help us better serve our customers and accelerate strategies that are defining the future of cyber security.",
+    "jcr:baseVersion": "cd25de83-6ad7-4787-afef-40e35367041d",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:cap-kevin-mandia",
+      "fireeye-blog-products-and-services:products-and-services",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:fireeye",
+      "fireeye-blog-tags:mandiant"
+    ],
+    "jcr:uuid": "2b37efd5-02e7-4f07-b5dd-a6662e8fa7df",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Wed Jun 02 2021 08:00:00 GMT-0700",
+    "cq:lastModifiedBy": "jeff.payne@fireeye.com",
+    "navTitle": "A New Future for FireEye and Mandiant",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "matthew.sawicki@fireeye.com",
+        "text": "\u003Cp\u003EWith \u003Ca href=\u0022\/content\/fireeye-www\/en_US\/company\/press-releases\/2021\/fireeye-announces-sale-of-fireeye-products-business-to-symphony-technology-group.html\u0022 adhocenable=\u0022false\u0022\u003E\u003Cb\u003Etoday\u2019s announcement\u003C\/b\u003E\u003C\/a\u003E of the sale of the FireEye Products business to Symphony Technology Group (STG), we have taken an important step forward to help us better serve our customers and accelerate strategies that are defining the future of cyber security.\u003C\/p\u003E\n\u003Cp\u003EThe transaction will separate FireEye\u2019s network, email, endpoint, and cloud security products, and related security management and orchestration platform from Mandiant Solutions\u2019 controls-agnostic software and services. The result: both organizations will be able to accelerate growth investments, pursue new go-to-market pathways, and focus innovation on their respective solutions.\u003C\/p\u003E\n\u003Cp\u003EThe transaction is expected to close by the end of the fourth quarter of 2021, and until then, the two organizations will continue to operate as a single entity, allowing for the FireEye Products business to make a smooth transition into the STG portfolio. Post-closing, the Company plans to rebrand as Mandiant.\u003C\/p\u003E\n\u003Cp\u003EI am convinced this will result in extraordinary benefits for our customers, partners, and employees.\u003C\/p\u003E\n\u003Cp\u003EMandiant will be able to concentrate on the scaling of its industry-leading threat intelligence and frontline expertise through the Mandiant Advantage platform. This supports our goal to close the security gap by automating our capabilities and making them accessible and actionable to any organization.\u003C\/p\u003E\n\u003Cp\u003EBy joining STG\u2019s portfolio of companies, the FireEye Products business will have an opportunity to accelerate its pivot toward becoming the leading, cloud-first XDR platform extending across network, email, endpoint, and cloud security products, and the related security management and orchestration platform. STG\u2019s focus on fueling innovative leaders makes them an ideal partner for FireEye Products \u2013 we clearly share a vision to build the world\u2019s leading cyber security company. FireEye\u0026nbsp;will be led by Bryan Palma, who joined us earlier this year as Executive Vice President of Products, along with his current leadership team.\u003C\/p\u003E\n\u003Cp\u003EMandiant will consist of Consulting, Managed Defense, and the solutions delivered through our Mandiant Advantage platform, including Threat Intelligence, Validation, and Automated Defense. I will remain CEO, and the leadership team will include many of our current executives, including John Watters, who rejoined us as President and Chief Operating Officer earlier this year.\u003C\/p\u003E\n\u003Cp\u003EThe two organizations will continue to share on critical information, with bi-directional sharing of threat intelligence and product telemetry to build and preserve competitive advantages that benefit the customers of both businesses. A joint reseller agreement will enable the FireEye and Mandiant sales teams to continue offering our integrated solutions.\u0026nbsp;We have also established cooperative processes to make certain customer data is secure. In these and other ways, we will ensure that both parties have the resources necessary to deliver on \u2013 and exceed \u2013 customer expectations.\u003C\/p\u003E\n\u003Cp\u003EBut the greater opportunities are ahead. I am proud of the progress our teams have made in protecting our customers and creating a safer world for the broader community with innovative technology, world-class intelligence and frontline expertise. I am convinced the best is yet to come as we see the newly independent FireEye and Mandiant build on these strengths.\u003C\/p\u003E\n\u003Cp\u003EIn the weeks and months ahead, we will be sharing more details on our plans and our progress. Check the \u003Cb\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/company\/newsroom\/information-about-the-sale-of-products-business-to-stg.html\u0022\u003Einformation and resources page\u003C\/a\u003E\u003C\/b\u003E on our website for updates on this journey. I invite you to join us and learn more about the exciting future we are creating in cyber security.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Wed Jun 02 2021 22:51:01 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "fileReference": "\/content\/dam\/fireeye-www\/brand\/logos\/fireeye-mandiant-combo-logo-400px.png",
+      "jcr:lastModifiedBy": "jeff.payne@fireeye.com",
+      "jcr:lastModified": "Tue Jun 08 2021 22:14:50 GMT+0000",
+      "imageRotate": "0"
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "matthew.sawicki@fireeye.com",
+      "text": "\u003Cp\u003EWith \u003Ca href=\u0022\/content\/fireeye-www\/en_US\/company\/press-releases\/2021\/fireeye-announces-sale-of-fireeye-products-business-to-symphony-technology-group.html\u0022\u003Etoday\u2019s announcement\u003C\/a\u003E of the sale of the FireEye Products business to Symphony Technology Group (STG), we have taken an important step forward to help us better serve our customers and accelerate strategies that are defining the future of cyber security.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Wed Jun 02 2021 19:02:41 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    }
+  }
+}

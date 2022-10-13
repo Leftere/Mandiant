@@ -1,0 +1,16 @@
+#edit-actions[role] {
+  ul {
+    display: flex;
+    @include breakpoint($desktop) {
+      flex-direction: row;
+      flex-grow: 1;
+    }
+    li {
+      list-style: none;
+      margin-right: 2rem;
+      a {
+        color: var(--colorGinText)
+      }
+    }
+  }
+}

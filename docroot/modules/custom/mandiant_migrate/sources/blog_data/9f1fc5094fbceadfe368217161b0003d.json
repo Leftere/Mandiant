@@ -1,0 +1,76 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed May 11 2016 12:16:28 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Threat Actor Leverages Windows Zero-day Exploit in Payment Card Data Attacks",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "8411fcdb-1144-4716-85c4-e5467dc9cc41",
+    "author": "Dhanesh Kizhakkinan",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "lynda.hall@fireeye.com",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "2c2b5fab-a361-4d0f-ad61-7ce07d1eba9a"
+    ],
+    "jcr:created": "Mon Aug 08 2016 10:54:17 GMT-0400",
+    "cq:lastReplicated": "Mon Aug 08 2016 10:54:12 GMT-0400",
+    "cq:lastModified": "Mon Aug 08 2016 10:54:02 GMT-0400",
+    "cq:distribute": true,
+    "jcr:baseVersion": "2c2b5fab-a361-4d0f-ad61-7ce07d1eba9a",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-tags:zero-day-exploit",
+      "fireeye-blog-authors:cap-yu-wang",
+      "fireeye-blog-tags:0-day",
+      "fireeye-blog-tags:0day",
+      "fireeye-blog-authors:dhanesh-kizhakkinan",
+      "fireeye-blog-tags:0day-exploits",
+      "fireeye-blog-authors:cap-dan-caselden",
+      "fireeye-blog-authors:cap-erica-eng",
+      "fireeye-blog-tags:zero-day-vulnerability",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-threat-research:threat-research\/vulnerabilities"
+    ],
+    "jcr:uuid": "ff56c0a9-fc81-4502-9398-3b1ca06d3a46",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Wed May 11 2016 15:00:00 GMT-0400",
+    "_charset_": "UTF-8",
+    "cq:lastModifiedBy": "lynda.hall@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EIn March 2016, a financially motivated threat actor launched several tailored spear phishing campaigns primarily targeting the retail, restaurant, and hospitality industries. The emails contained variations of \u003Ca href=\u0022http:\/\/researchcenter.paloaltonetworks.com\/2016\/03\/powersniff-malware-used-in-macro-based-attacks\/\u0022\u003EMicrosoft Word\u003C\/a\u003E documents with \u003Ca href=\u0022https:\/\/blogs.mcafee.com\/mcafee-labs\/macro-malware-associated-dridex-finds-new-ways-hide\/\u0022\u003Eembedded macros\u003C\/a\u003E that, when \u003Ca href=\u0022https:\/\/labs.bromium.com\/2016\/03\/09\/macro-malware-connecting-to-github\/\u0022\u003Eenabled\u003C\/a\u003E, downloaded and executed a malicious downloader that we refer to as PUNCHBUGGY.\u003C\/p\u003E\n\u003Cp\u003EPUNCHBUGGY is a dynamic-link library (DLL) downloader, existing in both 32-bit and 64-bit versions, that can obtain additional code over HTTPS. This downloader was used by the threat actor to interact with compromised systems and move laterally across victim environments.\u003C\/p\u003E\n\u003Cp\u003EFireEye identified more than 100 organizations in North America that fell victim to this campaign. FireEye investigated a number of these breaches and observed that the threat actor had access to relatively sophisticated tools including a previously unknown elevation of privilege (EoP) exploit and a previously unnamed point of sale (POS) memory scraping tool that we refer to as PUNCHTRACK.\u0026nbsp;\u003C\/p\u003E\n\u003Ch4\u003ECVE-2016-0167 \u2013 Microsoft Windows Zero-Day Local Privilege Escalation\u003C\/h4\u003E\n\u003Cp\u003EIn some victim environments, the threat actor exploited a previously unknown elevation of privilege (EoP) vulnerability in Microsoft Windows to selectively gain SYSTEM privileges on a limited number of compromised machines (Figure 1).\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/Microsoft%200Day%20%20Dhanesh%20Kizhakkina\/Fig1.png\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 1. CVE-2016-0167 Local privilege escalation exploit elevates to system\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EWe coordinated with Microsoft, who patched CVE-2016-0167 on the April 12, 2016, Patch Tuesday (\u003Ca href=\u0022https:\/\/technet.microsoft.com\/en-us\/library\/security\/ms16-039.aspx\u0022\u003EMS16-039\u003C\/a\u003E). Working together, we were able to observe limited, targeted use of this particular exploit dating back to March 8, 2016.\u003C\/p\u003E\n\u003Ch4\u003EThe Threat Actor\u003C\/h4\u003E\n\u003Cp\u003EWe attribute the use of this EoP to a financially motivated threat actor. In the past year, not only have we observed this group using similar infrastructure and tactics, techniques, and procedures (TTPs), but they are also the only group we have observed to date who uses the downloader PUNCHBUGGY and POS malware PUNCHTRACK. Designed to scrape both Track 1 and Track 2 payment card data, PUNCHTRACK is loaded and executed by a highly obfuscated launcher and is never saved to disk.\u003C\/p\u003E\n\u003Cp\u003EThis actor has conducted operations on a large scale and at a rapid pace, displaying a level of operational awareness and ability to adapt their operations on the fly. These abilities, combined with targeted usage of an EoP exploit and the reconnaissance required to individually tailor phishing emails to victims, potentially speaks to the threat actors\u2019 operational maturity and sophistication.\u003C\/p\u003E\n\u003Ch4\u003EExploitation Details\u003C\/h4\u003E\n\u003Ch5\u003EWin32k!xxxMNDestroyHandler Use-After-Free\u003C\/h5\u003E\n\u003Cp\u003ECVE-2016-0167 is a local elevation of privilege vulnerability in the win32k Windows Graphics subsystem. An attacker who had already achieved remote code execution (RCE) could exploit this vulnerability to elevate privileges. In the attack from the wild, attackers first achieved RCE with malicious macros in documents attached to spear phishing emails. They then downloaded and ran a CVE-2016-0167 exploit to run subsequent code as SYSTEM.\u003C\/p\u003E\n\u003Cp\u003ECVE-2016-0167 is patched as of April 12, 2016, meaning the attacker\u2019s EoP exploit will no longer function on fully updated systems. Microsoft released an additional update (\u003Ca target=\u0022_blank\u0022 href=\u0022https:\/\/technet.microsoft.com\/library\/security\/MS16-062\u0022 adhocenable=\u0022false\u0022\u003EMS16-062\u003C\/a\u003E) on May 10, 2016, to further improve Windows against similar issues.\u003C\/p\u003E\n\u003Ch5\u003EVulnerability Setup\u003C\/h5\u003E\n\u003Cp\u003EFirst, the exploit calls CreateWindowEx() to create a main window. It sets the WNDCLASSEX.lpfnWndProc field to a function that we name WndProc. It installs an application-defined hook (that we name MessageHandler) and an event hook (that we name EventHandler) using SetWindowsHookEx() and SetWinEventHook(), respectively.\u003C\/p\u003E\n\u003Cp\u003ENext, it creates a timer with IDEvent 0x5678 in SetTimer(). When the timeout occurs, WndProc receives the WM_TIMER message and will invoke TrackPopupMenuEx() to display a shortcut menu. EventHandler will capture the EVENT_SYSTEM_MENUPOPUPSTART event from xxxTrackPopupMenuEx()and post a message to the kernel. In handling the message, the kernel eventually calls the vulnerable function xxxMNDestroyHandler(), which calls the usermode callback MessageHandler. MessageHandler then causes a use-after-free scenario by calling DestroyWindow()\u003C\/p\u003E\n\u003Ch5\u003EHeap Control\u003C\/h5\u003E\n\u003Cp\u003EThe exploit uses SetSysColors() to perform heap Feng Shui which manipulates the layout of the \u003Ca href=\u0022https:\/\/en.wikipedia.org\/wiki\/Heap_%28programming%29\u0022 title=\u0022Heap (programming)\u0022\u003Eheap\u003C\/a\u003E by carefully making heap allocations. In the following snippet, one of the important fields is at address fffff900`c1aaac40, where fffff900`c06a0422 is a window kernel object\u2019s (tagWND) base address plus 0x22:\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/Microsoft%200Day%20%20Dhanesh%20Kizhakkina\/Fig2.png\u0022\u003E\u003C\/p\u003E\n\u003Ch5\u003EMemory Corruption\u003C\/h5\u003E\n\u003Cp\u003EThe USE operation occurs at HMAssignmentUnlock()+0x14 as shown below:\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/Microsoft%200Day%20%20Dhanesh%20Kizhakkina\/Fig3.png\u0022\u003ESince RDX contains the base address of tagWND plus 0x22, this instruction will add 0xffffffff to the win32k!tagWND.state field, changing its value from 0x07004000 to 0x07003fff. 0x07004000 indicates that the bServerSideWindowProc flag is unset. When the change occurs, it sets the bServerSideWindowProc flag as shown below.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/Microsoft%200Day%20%20Dhanesh%20Kizhakkina\/Fig4.png\u0022\u003E\u003C\/p\u003E\n\u003Ch5\u003ECode Execution\u003C\/h5\u003E\n\u003Cp\u003EIf a window is marked as server-side (bServerSideWindowPro is set), the lpfnWndProc function pointer will be trusted by default and this can be user-mode shellcode. The following backtrace shows the kernel calling the exploit\u2019s shellcode:\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/Microsoft%200Day%20%20Dhanesh%20Kizhakkina\/Fig5.png\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003EThe shellcode then steals the System process token to elevate a child cmd.exe process.\u003C\/p\u003E\n\u003Ch4\u003EMitigation\u003C\/h4\u003E\n\u003Cp\u003EFireEye products and services identify this activity as Exploit.doc.MVX, Malware.Binary.Doc, PUNCHBUGGY, Malware.Binary.exe, and PUNCHTRACK within the user interfaces.\u003C\/p\u003E\n\u003Cp\u003EThe latest Windows updates address CVE-2016-0167, and fully protect systems from exploits targeting CVE-2016-0167.\u003C\/p\u003E\n\u003Cp\u003EIn addition, effective mitigations exist to prevent social engineering attacks that utilize Office macros. Individual users can disable Office macros in their settings and enterprise administrators can enforce a Group Policy to control macro execution for all Office 2016 users. More details about Office macro attacks and mitigations are available \u003Ca href=\u0022https:\/\/blogs.technet.microsoft.com\/mmpc\/2016\/03\/22\/new-feature-in-office-2016-can-block-macros-and-help-prevent-infection\/\u0022\u003Ehere\u003C\/a\u003E.\u003C\/p\u003E\n\u003Ch4\u003EAcknowledgements\u003C\/h4\u003E\n\u003Cp\u003EThank you to Elia Florio and the Secure@ staff of Microsoft, and Dimiter Andonov, Erye Hernandez, Nick Richard, and Ryann Winters of FireEye for their collaboration on this issue.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Sun Aug 07 2016 18:04:49 GMT-0400",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "alt": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "comments": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/commons\/components\/comments"
+      },
+      "trackback": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/blog\/components\/trackback"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "lynda.hall@fireeye.com",
+      "text": "\u003Cp\u003EIn March 2016, a financially motivated threat actor launched several tailored spear phishing campaigns primarily targeting the retail, restaurant, and hospitality industries. The emails contained variations of \u003Ca href=\u0022http:\/\/researchcenter.paloaltonetworks.com\/2016\/03\/powersniff-malware-used-in-macro-based-attacks\/\u0022\u003EMicrosoft Word\u003C\/a\u003E documents with \u003Ca href=\u0022https:\/\/blogs.mcafee.com\/mcafee-labs\/macro-malware-associated-dridex-finds-new-ways-hide\/\u0022\u003Eembedded macros\u003C\/a\u003E that, when \u003Ca href=\u0022https:\/\/labs.bromium.com\/2016\/03\/09\/macro-malware-connecting-to-github\/\u0022\u003Eenabled\u003C\/a\u003E, downloaded and executed a malicious downloader that we refer to as PUNCHBUGGY.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Mon Aug 08 2016 10:54:02 GMT-0400",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    }
+  }
+}

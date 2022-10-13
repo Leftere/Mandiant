@@ -1,0 +1,16 @@
+uuid: 72ede9d7-8974-44e7-9af9-04149d63f2a4
+langcode: en
+status: true
+dependencies: {  }
+id: desktop_container
+label: 'Desktop Container'
+classes: desktop-container
+type: section
+group: size
+weight: 0
+block_restrictions: {  }
+layout_restrictions:
+  - layout_onecol
+  - layout_twocol_section
+  - layout_threecol_section
+  - layout_fourcol_section

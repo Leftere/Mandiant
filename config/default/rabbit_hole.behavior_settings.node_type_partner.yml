@@ -1,0 +1,14 @@
+uuid: 871a35bc-fff1-454d-a0f0-80d76de5907e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.partner
+id: node_type_partner
+entity_type_id: node_type
+entity_id: partner
+action: display_page
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

@@ -1,0 +1,70 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Tue Jun 15 2021 12:00:18 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Effective On-Demand Cyber Intelligence Training, Anywhere, Any Time",
+    "jcr:versionHistory": "66eb7150-0c24-437b-973b-6d699947a88f",
+    "author": "Shanyn Ronis",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "49c7b193-5b17-4217-a3d5-ee6ae6ce1cd2"
+    ],
+    "jcr:created": "Tue Jun 15 2021 12:00:18 GMT+0000",
+    "cq:lastModified": "Mon Jun 14 2021 22:31:17 GMT+0000",
+    "jcr:baseVersion": "49c7b193-5b17-4217-a3d5-ee6ae6ce1cd2",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:shanyn-ronis",
+      "fireeye-blog-products-and-services:products-and-services",
+      "fireeye-blog-tags:intelligence",
+      "fireeye-blog-tags:mandiant",
+      "fireeye-blog-tags:training",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:homepage-carousel"
+    ],
+    "jcr:uuid": "e773ce1a-c825-4aca-b363-f2fbfabee274",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Tue Jun 15 2021 08:00:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EOrganizations and security teams are increasingly aiming for intelligence-led security to maximize risk mitigation programs, reduce the impact of critical security events, and ultimately enhance their threat awareness and security posture. They\u2019re beginning to acknowledge the reality that security expertise, staffing and actionable threat data must align, and that \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/threat-intelligence.html\u0022\u003Ecyber threat intelligence\u003C\/a\u003E (CTI) is essential to safely cross the finish line.\u003C\/p\u003E\n\u003Cp\u003EIn fact, adoption of CTI has gained significant momentum over the past 12 months. According to Forrester, decision-makers now subscribe to an average of 7.5 commercial threat intelligence services (Forrester Wave: ETIS Q1 2021 and Forrester Analytics\u2019 Business Technographics) and threat intelligence reporting has become the most important SOC activity (Ponemon January 2021)\u003C\/p\u003E\n\u003Cp\u003EYet, based on our own observations, rapid adoption of CTI often produces unsatisfactory experiences for many organizations, with common problems such as siloes of CTI coverage, poor identification of expired data, or inadequate intelligence requirements. In many cases, these challenges with application of CTI can be attributed to a combination of lack of staff and lack of skills to utilize CTI.\u003C\/p\u003E\n\u003Ch4\u003EMandiant\u2019s Commitment to Prepare Security Teams\u003C\/h4\u003E\n\u003Cp\u003EOn June 15, we took an important step forward in our commitment to prepare security teams of all sizes and announced \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/services\/training\/intel-wbt.html\u0022\u003EMandiant On-Demand Cyber Intelligence Training\u003C\/a\u003E. Backed by more than 15 years of front-line expertise and accessible 24\/7, this on-demand training provides a cost-effective approach that empowers cyber security teams to effectively use intelligence across different job roles, at different skill levels.\u003C\/p\u003E\n\u003Cp\u003EAt Mandiant, we see two groups of audiences for this new offering:\u003C\/p\u003E\n\u003Col\u003E\n\u003Cli\u003EGlobal security organizations that want greater value from their cyber intelligence investments can improve the analytic tradecraft of their analysts and cyber operators, while mitigating talent deficits, constant personnel turnover, or lack of continuity in a standard set of skills.\u003C\/li\u003E\n\u003Cli\u003EBecause of its price point, this training also targets individual security analysts or frequent intelligence consumers. Many of these users are struggling to get their foot in the door due to the traditionally high cost of training and certification requirements. They also struggle to meet the constantly evolving demands of their current job role and want to better use intelligence for their career progression.\u003C\/li\u003E\n\u003C\/ol\u003E\n\u003Ch4\u003EWhat to Expect\u003C\/h4\u003E\n\u003Cp\u003EThe cost-effective on-demand training developed by top experts in the field is accessible 24\/7 from anywhere via web browser. Training focuses on sharpening the skills of cyber analysts and operators who need to excel in their jobs today while building skills for continued career growth or to combat new threats tomorrow.\u003C\/p\u003E\n\u003Cp\u003EMore than just a computer-based training course, Mandiant On-Demand Cyber Intelligence Training engages users via:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EProfessionally-crafted videos featuring subject matter experts (SMEs) who explain and explore key tradecraft concepts.\u003C\/li\u003E\n\u003Cli\u003EFormative assessments throughout the course to help students identify areas requiring reinforcement\/further study, and areas where they excel.\u003C\/li\u003E\n\u003Cli\u003ECase studies drawn from real-world experiences and seminal events in the history of cyber security.\u0026nbsp;\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Ch4\u003EBenefits and Bonuses\u003C\/h4\u003E\n\u003Cp\u003EWith this new offering, Mandiant changes what we\u0027ve come to expect from traditional, expensive, offline training sessions:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003E\u003Cb\u003ELearn anywhere, anytime. \u003C\/b\u003EAs most security teams work in hybrid environments (home and office), courses can be accessed 24\/7 in a standard web browser (including mobile browsers).\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003EGet cyber intelligence tradecraft from the experts. \u003C\/b\u003EContent is created by SMEs, and students can learn how to conduct analysis the Mandiant way.\u0026nbsp;\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003ETest skills against real-world scenarios and case studies drawn from our front-line expertise.\u003C\/b\u003E Training concepts are explored through real-world scenarios and case studies. After completion of the courses, users receive a certificate that can be submitted for CPE credits.\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EMandiant On-Demand Cyber Intelligence Training now offers three\u003Cb\u003E\u0026nbsp;\u003C\/b\u003Edifferent trainings,\u0026nbsp;with more training courses coming available each quarter.\u003C\/p\u003E\n\u003Cp\u003ELearn more about \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/services\/training\/intel-wbt.html\u0022\u003EMandiant On-Demand Cyber Intelligence Training\u003C\/a\u003E, and for additional information, listen to our \u003Ci\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.buzzsprout.com\/1762840\/8700673\u0022\u003EEye on Security\u003C\/a\u003E\u003C\/i\u003E podcast now.\u003C\/p\u003E",
+        "jcr:lastModified": "Mon Jun 14 2021 22:30:55 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      },
+      "htmlpassthru": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "adam.greenberg@fireeye.com",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "jcr:created": "Mon Jun 14 2021 22:31:11 GMT+0000",
+        "html": "\u003Cdiv id=\u0022buzzsprout-player-8700673\u0022\u003E\u003C\/div\u003E\n\u003Cscript src=\u0022https:\/\/www.buzzsprout.com\/1762840\/8700673-filling-the-cti-skills-gap-with-mandiant-on-demand-cyber-intelligence-training.js?container_id=buzzsprout-player-8700673\u0026player=small\u0022 type=\u0022text\/javascript\u0022 charset=\u0022utf-8\u0022\u003E\u003C\/script\u003E",
+        "jcr:lastModified": "Mon Jun 14 2021 22:31:17 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/html\/htmlpassthru"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EIntelligence is an invaluable tool, but it can be tricky to implement, so let us help with Mandiant On-Demand Cyber Intelligence Training.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Mon Jun 14 2021 17:22:49 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Mon Jun 14 2021 17:24:29 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

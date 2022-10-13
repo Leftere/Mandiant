@@ -1,0 +1,8 @@
+uuid: dfe2118a-9a6c-40f6-958d-81ae12bdef34
+langcode: en
+status: true
+dependencies: {  }
+id: partner
+label: 'Featured Partners'
+revision: 0
+description: ''

@@ -1,0 +1,13 @@
+uuid: ddfd3fc5-1842-4d44-8b5a-cdcc7bfedea6
+langcode: en
+status: true
+dependencies: {  }
+id: secondary_cta
+label: 'Secondary CTA'
+classes: secondary-cta
+type: component
+group: modifiers_type
+weight: -7
+block_restrictions:
+  - 'inline_block:cta'
+layout_restrictions: {  }

@@ -1,0 +1,114 @@
+.utility-navigation {
+  background-color: #1e1c27;
+  bottom: 0;
+  color: $white;
+  display: block !important;
+  opacity: 0;
+  overflow-x: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
+  transition: all .3s ease-in-out;
+  width: 30rem;
+  will-change: opacity, transform;
+  z-index: 25;
+
+  nav {
+    > ul {
+      padding: 0 3rem 3rem;
+    }
+  }
+
+  a,
+  button {
+    color: $white;
+  }
+
+  &__close {
+    @include font-size(14, 30);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    display: block;
+    font-weight: 500;
+    outline: 0;
+    padding: .5rem;
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+
+    span {
+      text-decoration: underline;
+      text-transform: uppercase;
+    }
+
+    svg {
+      color: $red;
+      height: 1.2rem;
+      margin-right: 1.2rem;
+      width: 1.2rem;
+    }
+  }
+
+  &__inner {
+    padding-top: 6rem;
+  }
+
+  &__footer {
+    border-top: 1px solid #fff;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-top: 3rem;
+  }
+
+  .toolbar-fixed & {
+    top: 79px;
+  }
+
+  .light & {
+    background-color: $xgray;
+    color: #15141d;
+
+    a,
+    button {
+      color: #15141d;
+    }
+  }
+
+  &.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  li {
+    @include font-size(16, 24);
+    font-weight: 500;
+    margin-bottom: 4rem;
+
+    &:first-of-type {
+      margin-top: 4rem;
+    }
+
+    a {
+      display: block;
+      padding-left: 3rem;
+      position: relative;
+
+      &:before {
+        background-image: url('../images/arrow-red.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 14px;
+        content: '';
+        display: inline-block;
+        height: 100%;
+        left: -14px;
+        position: absolute;
+        top: 0;
+        transform: rotate(225deg);
+        width: 40px;
+      }
+    }
+  }
+}

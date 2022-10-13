@@ -1,0 +1,67 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Thu Mar 25 2021 11:59:51 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "FireEye Recognized by Leading Independent Research Firm As a Strong Performer for Managed Detection \u0026 Response Service",
+    "jcr:versionHistory": "a89b35e9-38e5-44d1-a7e1-ad273f4bdf05",
+    "cq:template": "\/apps\/fireeye-www\/fdc\/templates\/press-release",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "3815b995-8a59-445a-ba42-85eb2a4be0a8"
+    ],
+    "jcr:created": "Mon Jul 19 2021 17:37:17 GMT+0000",
+    "cq:lastModified": "Mon Jul 19 2021 17:35:12 GMT+0000",
+    "jcr:baseVersion": "3815b995-8a59-445a-ba42-85eb2a4be0a8",
+    "jcr:isCheckedOut": true,
+    "pagedate": "Thu Mar 25 2021 05:00:00 GMT-0700",
+    "cq:tags": [
+      "company:en-US\/press-releases",
+      "company:en-US\/press-releases\/2021",
+      "company:en-US\/press-releases\/latest",
+      "fireeye-doctypes:press-releases",
+      "company:en-US\/awards"
+    ],
+    "jcr:uuid": "4e6772f4-aff4-4949-be04-8e9d10a18379",
+    "sling:resourceType": "fireeye-www\/fdc\/components\/page\/press-release",
+    "cq:designPath": "\/etc\/designs\/fireeye-www",
+    "cq:lastModifiedBy": "jeff.payne@fireeye.com",
+    "content-par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "grid_100_full": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "adam.greenberg@fireeye.com",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "jcr:created": "Wed Mar 24 2021 21:47:24 GMT+0000",
+        "jcr:lastModified": "Wed Mar 24 2021 21:47:24 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/grids\/grid-100-full",
+        "grid-100-mid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "fireeye-www\/fdc\/components\/grids\/grid-parsys\/parsys-100-full\/parsys",
+          "text": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "adam.greenberg@fireeye.com",
+            "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+            "jcr:created": "Wed Mar 24 2021 21:47:28 GMT+0000",
+            "text": "\u003Cp\u003E\u003Cb\u003EMILPITAS, Calif., March 25, 2021 \u003C\/b\u003E\u2013 \u003Ca href=\u0022https:\/\/www.fireeye.com\/\u0022\u003EFireEye, Inc.\u0026nbsp;\u003C\/a\u003E(NASDAQ: FEYE), the intelligence-led security company, today announced that it was recognized as a strong performer in the Forrester Research, Inc. report: \u201cThe Forrester Wave\u003Csup\u003ETM\u003C\/sup\u003E: Managed Detection and Response, Q1 2021.\u201d\u003C\/p\u003E\n\u003Cp\u003EAccording to the Forrester report, \u201cMandiant Managed Defense \u2014 and its various iterations \u2014 is considered one of the first, if not the first, iterations of MDR that existed. That legacy remains in the service and for good reason.\u201d\u003C\/p\u003E\n\u003Cp\u003E\u201cWe believe our ranking for \u2018strength of current offering\u2019 is a testament to Mandiant\u2019s ability to protect our customers with cutting-edge frontline detections,\u201d said Marshall Heilman, Executive Vice President, Managed Defense and FLARE, FireEye. \u201cOur speed in integrating nation-grade threat intelligence and our attacker research into Managed Defense is important. It\u0027s a large part of what distinguishes us.\u201d\u003C\/p\u003E\n\u003Cp\u003EThe Forrester report notes, \u201cFireEye\u2019s MDR offering is one aimed at more sophisticated practitioners, with mature investigative methodologies and strong threat hunting capabilities as one would expect given the company\u2019s reputation for incident response. FireEye\u2019s MDR service does not require client sophistication in order to receive benefits, but more-mature clients and more-skilled practitioners with IR and threat intelligence experience will definitely maximize the value inherent in it.\u201d\u003C\/p\u003E\n\u003Cp\u003EThe full report \u201cThe Forrester Wave\u2122: Managed Detection and Response, Q1 2021\u201d is available for download: \u003Ca href=\u0022https:\/\/www.fireeye.com\/mandiant\/managed-detection-and-response\/forrester-wave-managed-detection-response-q121.html\u0022\u003Ehttps:\/\/www.fireeye.com\/mandiant\/managed-detection-and-response\/forrester-wave-managed-detection-response-q121.html\u003C\/a\u003E\u003C\/p\u003E\n\u003Cp\u003EMandiant Managed Defense Recognized as a Strong Performer for MDR \u2013 Blog: \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/products-and-services\/2021\/03\/fireeye-mandiant-managed-defense-recognized-as-strong-performer-mdr.html\u0022\u003Ehttps:\/\/www.fireeye.com\/blog\/products-and-services\/2021\/03\/fireeye-mandiant-managed-defense-recognized-as-strong-performer-mdr.html\u003C\/a\u003E\u003C\/p\u003E\n\u003Cp\u003ELearn more about amplifying teams and elevating security with Managed Defense: \u003Ca href=\u0022https:\/\/www.fireeye.com\/mandiant\/managed-detection-and-response.html\u0022\u003Ehttps:\/\/www.fireeye.com\/mandiant\/managed-detection-and-response.html\u003C\/a\u003E\u003C\/p\u003E\n\u003Ch4\u003EAbout Mandiant\u003Cb\u003E\u003C\/b\u003E\u003C\/h4\u003E\n\u003Cp\u003EMandiant Solutions, a part of FireEye, brings together the world\u2019s leading threat intelligence and frontline expertise with continuous security validation to arm organizations with the tools needed to increase security effectiveness and reduce organizational risk.\u003C\/p\u003E\n\u003Ch4\u003EAbout FireEye, Inc.\u003C\/h4\u003E\n\u003Cp\u003EFireEye is the intelligence-led security company. Working as a seamless, scalable\u0026nbsp;extension of customer security operations, FireEye offers a single platform that blends innovative security technologies, nation-state grade threat intelligence, and world-renowned Mandiant\u00ae consulting. With this approach, FireEye eliminates the complexity and burden of cyber security for organizations struggling to prepare for, prevent, and respond to cyber attacks. FireEye has over 9,900 customers across 103 countries, including more than 50 percent of the Forbes Global 2000.\u003C\/p\u003E\n\u003Cp\u003E\u00a9 2021 FireEye, Inc. All rights reserved. FireEye and Mandiant are registered trademarks or trademarks of FireEye, Inc. in the United States and other countries. All other brands, products, or service names are or may be trademarks or service marks of their respective owners.\u003C\/p\u003E\n\u003Ch4\u003EContacts\u003C\/h4\u003E\n\u003Cp\u003E\u003Cb\u003EMedia\u003C\/b\u003E\u003Cbr\u003E\n\u003Ca href=\u0022mailto:Media.Relations@FireEye.com\u0022\u003EMedia.Relations@FireEye.com\u003C\/a\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cb\u003EInvestors\u003C\/b\u003E\u003Cbr\u003E\n\u003Ca href=\u0022mailto:Investor.relations@fireeye.com\u0022\u003EInvestor.Relations@FireEye.com\u003C\/a\u003E\u003C\/p\u003E\n",
+            "jcr:lastModified": "Wed Mar 24 2021 21:48:37 GMT+0000",
+            "sling:resourceType": "fireeye-www\/fdc\/components\/text\/text",
+            "textIsRich": "true"
+          }
+        }
+      }
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "jeff.payne@fireeye.com",
+      "jcr:lastModified": "Mon Jul 19 2021 17:35:12 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+uuid: f788309f-678b-4b13-9f8b-eda1fdb87475
+langcode: en
+status: true
+dependencies: {  }
+id: podcasts
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - podcasts
+migration_group: mandiant_migrate
+label: Podcasts
+source:
+  plugin: mandiant_podcast
+process:
+  langcode:
+    plugin: default_value
+    default_value: en
+  type:
+    plugin: default_value
+    default_value: article
+  layout_selection:
+    plugin: default_value
+    default_value: article_podcast
+  title: title
+  field_summary_html: description
+  field_date: date
+  field_terms_topic:
+    plugin: entity_generate
+    source: topic
+  field_terms_industry:
+    plugin: entity_generate
+    source: industry
+  guests:
+    -
+      plugin: explode
+      delimiter: ','
+      source: guest
+    -
+      plugin: callback
+      callable: trim
+  field_related_bios:
+    plugin: entity_generate
+    source: '@guests'
+    values:
+      field_summary: guest_bio
+  field_podcast_episode_number: episode
+  field_podcast_series:
+    plugin: entity_generate
+    source: series
+  field_apple_podcast_link: apple
+  field_spotify_podcast_link: spotify
+  field_buzzsprout_embed: buzzsprout
+  field_youtube_embed: youtube_embed
+  field_podcast_media:
+    plugin: entity_generate
+    source: youtube_source
+    value_key: field_media_oembed_video
+  uid:
+    plugin: default_value
+    default_value: 1
+  status:
+    plugin: default_value
+    default_value: 1
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }

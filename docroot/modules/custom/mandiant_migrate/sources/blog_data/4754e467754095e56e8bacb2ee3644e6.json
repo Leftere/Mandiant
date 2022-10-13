@@ -1,0 +1,89 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Tue Sep 12 2017 13:08:35 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "subtitle": [
+      ","
+    ],
+    "jcr:createdBy": "fireeye_global_admin",
+    "jcr:title": [
+      "FireEye Uncovers CVE-2017-8759: Zero-Day Used in the Wild to Distribute FINSPY,FireEye Uncovers CVE-2017-8759: Zero-Day Used in the Wild to Distribute FINSPY"
+    ],
+    "jcr:versionHistory": "006c984a-d7ce-463b-b5da-30eacf462598",
+    "author": "Genwei Jiang",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": [
+      "en_us"
+    ],
+    "jcr:predecessors": [
+      "2052c877-8853-4449-acf2-4bc4e1b7e923"
+    ],
+    "jcr:created": "Wed Mar 11 2020 17:15:31 GMT+0000",
+    "cq:lastModified": "Wed Mar 11 2020 17:15:23 GMT+0000",
+    "jcr:description": [
+      ","
+    ],
+    "jcr:baseVersion": "2052c877-8853-4449-acf2-4bc4e1b7e923",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-tags:FLARE",
+      "fireeye-blog-tags:0-day",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-authors:ben-read",
+      "fireeye-doctypes:blog",
+      "fireeye-blog-authors:cap-genwei-jiang",
+      "fireeye-blog-authors:cap-james-t-bennett",
+      "fireeye-blog-tags:zero-day-vulnerability"
+    ],
+    "jcr:uuid": "f7ebe235-6852-4081-9b81-2eaaa65dfc75",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Tue Sep 12 2017 13:00:00 GMT-0400",
+    "_charset_": "UTF-8",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "navTitle": [
+      ","
+    ],
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "jonathan.falgate@fireeye.com",
+        "text": "\u003Cp\u003EFireEye recently detected a malicious Microsoft Office RTF document that leveraged \u003Ca href=\u0022https:\/\/portal.msrc.microsoft.com\/en-us\/security-guidance\/advisory\/CVE-2017-8759\u0022\u003ECVE-2017-8759\u003C\/a\u003E, a SOAP \u003Ca href=\u0022https:\/\/msdn.microsoft.com\/en-us\/library\/ms996486.aspx\u0022\u003EWSDL\u003C\/a\u003E parser code injection vulnerability. This vulnerability allows a malicious actor to inject arbitrary code during the parsing of SOAP WSDL definition contents. \u003Ca href=\u0022\/content\/fireeye-www\/en_US\/services.html\u0022 target=\u0022_self\u0022\u003EMandiant\u003C\/a\u003E analyzed a Microsoft Word document where attackers used the arbitrary code injection to download and execute a Visual Basic script that contained PowerShell commands.\u003C\/p\u003E\r\n\u003Cp\u003EFireEye shared the details of the vulnerability with Microsoft and has been coordinating public disclosure timed with the release of a patch to address the vulnerability and security guidance, which can be found \u003Ca href=\u0022https:\/\/portal.msrc.microsoft.com\/en-us\/security-guidance\/advisory\/CVE-2017-8759\u0022\u003Ehere\u003C\/a\u003E.\u003C\/p\u003E\r\n\u003Cp\u003EFireEye email, endpoint and network products detected the malicious documents.\u003C\/p\u003E\r\n\u003Ch4\u003EVulnerability Used to Target Russian Speakers\u003C\/h4\u003E\r\n\u003Cp\u003EThe malicious document, \u201c\u041f\u0440\u043e\u0435\u043a\u0442.doc\u201d (MD5: fe5c4d6bb78e170abf5cf3741868ea4c), might have been used to target a Russian speaker. Upon successful exploitation of CVE-2017-8759, the document downloads multiple components (details follow), and eventually launches a FINSPY payload (MD5: a7b990d5f57b244dd17e9a937a41e7f5).\u003C\/p\u003E\r\n\u003Cp\u003EFINSPY malware, also reported as FinFisher or \u003Ca href=\u0022http:\/\/download.microsoft.com\/download\/E\/B\/0\/EB0F50CC-989C-4B66-B7F6-68CD3DC90DE3\/Microsoft_Security_Intelligence_Report_Volume_21_English.pdf\u0022\u003EWingBird\u003C\/a\u003E, is available for purchase as part of a \u201clawful intercept\u201d capability. Based on this and previous use of \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/threat-research\/2017\/04\/cve-2017-0199_useda.html\u0022\u003EFINSPY\u003C\/a\u003E, we assess with moderate confidence that this malicious document was used by a nation-state to target a Russian-speaking entity for cyber espionage purposes. Additional detections by FireEye\u2019s Dynamic Threat Intelligence system indicates that related activity, though potentially for a different client, might have occurred as early as July 2017.\u003C\/p\u003E\r\n\u003Ch4\u003ECVE-2017-8759 WSDL Parser Code Injection\u003C\/h4\u003E\r\n\u003Cp\u003EA code injection vulnerability exists in the WSDL parser module within the PrintClientProxy method (\u003Ca href=\u0022http:\/\/referencesource.microsoft.com\/#System.Runtime.Remoting\/metadata\/wsdlparser.cs,6111\u0022\u003Ehttp:\/\/referencesource.microsoft.com\/ - System.Runtime.Remoting\/metadata\/wsdlparser.cs,6111\u003C\/a\u003E). The IsValidUrl does not perform correct validation if provided data that contains a CRLF sequence. This allows an attacker to inject and execute arbitrary code. A portion of the vulnerable code is shown in Figure 1.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/SOAP%200day\/Fig1.png\u0022\u003E\u003Cbr\u003E\r\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 1: Vulnerable WSDL Parser\u003C\/span\u003E\u003C\/p\u003E\r\n\u003Cp\u003EWhen multiple \u003Ci\u003Eaddress\u003C\/i\u003E definitions are provided in a SOAP response, the code inserts the \u201c\/\/base.ConfigureProxy(this.GetType(),\u201d string after the first address, commenting out the remaining addresses. However, if a CRLF sequence is in the additional addresses, the code following the CRLF will not be commented out. Figure 2 shows that due to lack validation of CRLF, a System.Diagnostics.Process.Start method call is injected. The generated code will be compiled by csc.exe of .NET framework, and loaded by the Office executables as a DLL.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/SOAP%200day\/Fig2.png\u0022\u003E\u003Cbr\u003E\r\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 2: SOAP definition VS Generated code\u003C\/span\u003E\u003C\/p\u003E\r\n\u003Ch4\u003EThe In-the-Wild Attacks\u003C\/h4\u003E\r\n\u003Cp\u003EThe attacks that FireEye observed in the wild leveraged a Rich Text Format (RTF) document, similar to the \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/threat-research\/2017\/04\/cve-2017-0199-hta-handler.html\u0022\u003ECVE-2017-0199\u003C\/a\u003E documents we previously reported on. The malicious sampled contained an embedded SOAP monikers to facilitate exploitation (Figure 3).\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/SOAP%200day\/Fig3.png\u0022\u003E\u003Cbr\u003E\r\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 3: SOAP Moniker\u003C\/span\u003E\u003C\/p\u003E\r\n\u003Cp\u003EThe payload retrieves the malicious SOAP WSDL definition from an attacker-controlled server. The WSDL parser, implemented in System.Runtime.Remoting.ni.dll of .NET framework, parses the content and generates a .cs source code at the working directory. The csc.exe of .NET framework then compiles the generated source code into a library, namely http[url path].dll. Microsoft Office then loads the library, completing the exploitation stage. \u0026nbsp;Figure 4 shows an example library loaded as a result of exploitation.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/SOAP%200day\/Fig4.png\u0022\u003E\u003Cbr\u003E\r\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 4: DLL loaded\u003C\/span\u003E\u003C\/p\u003E\r\n\u003Cp\u003EUpon successful exploitation, the injected code creates a new process and leverages mshta.exe to retrieve a HTA script named \u201cword.db\u201d from the same server. The HTA script removes the source code, compiled DLL and the PDB files from disk and then downloads and executes the FINSPY malware named \u201cleft.jpg,\u201d which in spite of the .jpg extension and \u201cimage\/jpeg\u201d content-type, is actually an executable. Figure 5 shows the details of the PCAP of this malware transfer.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/SOAP%200day\/Fig5.png\u0022\u003E\u003Cbr\u003E\r\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 5: Live requests\u003C\/span\u003E\u003C\/p\u003E\r\n\u003Cp\u003EThe malware will be placed at %appdata%\\Microsoft\\Windows\\OfficeUpdte-KB[ 6 random numbers ].exe. Figure 6 shows the process create chain under Process Monitor.\u003C\/p\u003E\r\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/SOAP%200day\/Fig6.png\u0022\u003E\u003Cbr\u003E\r\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 6: Process Created Chain\u003C\/span\u003E\u003C\/p\u003E\r\n\u003Ch4\u003EThe Malware\u003C\/h4\u003E\r\n\u003Cp\u003EThe \u201cleft.jpg\u201d (md5: a7b990d5f57b244dd17e9a937a41e7f5) is a variant of FINSPY. It leverages heavily obfuscated code that employs a built-in virtual machine \u2013 among other anti-analysis techniques \u2013 to make reversing more difficult. As likely another unique anti-analysis technique, it parses its own full path and searches for the string representation of its own MD5 hash. Many resources, such as analysis tools and sandboxes, rename files\/samples to their MD5 hash in order to ensure unique filenames. This variant runs with a mutex of \u0026quot;WininetStartupMutex0\u0026quot;.\u003C\/p\u003E\r\n\u003Ch4\u003EConclusion\u003C\/h4\u003E\r\n\u003Cp\u003ECVE-2017-8759 is the second zero-day vulnerability used to distribute FINSPY uncovered by FireEye in 2017. These exposures demonstrate the significant resources available to \u201clawful intercept\u201d companies and their customers. Furthermore, FINSPY has been sold to multiple clients, suggesting the vulnerability was being used against other targets.\u003C\/p\u003E\r\n\u003Cp\u003EIt is possible that CVE-2017-8759 was being used by additional actors. While we have not found evidence of this, the zero day being used to distribute FINSPY in April 2017, CVE-2017-0199 was simultaneously being used by a financially motivated actor. If the actors behind FINSPY obtained this vulnerability from the same source used previously, it is possible that source sold it to additional actors.\u003C\/p\u003E\r\n\u003Ch4\u003EAcknowledgement\u003C\/h4\u003E\r\n\u003Cp\u003EThank you to Dhanesh Kizhakkinan, Joseph Reyes, FireEye Labs Team, FireEye FLARE Team and \u003Ca href=\u0022https:\/\/www.fireeye.com\/solutions\/isight-cyber-threat-intelligence-subscriptions.html\u0022\u003EFireEye iSIGHT Intelligence\u003C\/a\u003E for their contributions to this blog. We also thank everyone from the Microsoft Security Response Center (MSRC) who worked with us on this issue.\u003C\/p\u003E\r\n",
+        "jcr:lastModified": "Mon Sep 02 2019 13:19:20 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext",
+        "textIsRich": "true"
+      }
+    },
+    "alt": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "comments": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/commons\/components\/comments"
+      },
+      "trackback": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/blog\/components\/trackback"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EFireEye recently detected a malicious Microsoft Office RTF document that leveraged CVE-2017-8759,\u0026nbsp;a SOAP WSDL\u0026nbsp;parser code injection vulnerability.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Tue Sep 12 2017 12:44:54 GMT-0400",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Wed Mar 11 2020 17:15:23 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

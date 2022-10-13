@@ -1,0 +1,95 @@
+.cta-phone {
+  .sub-title {
+    align-items: flex-start;
+    background-color: transparent;
+    border: 0px;
+    display: flex;
+    position: relative;
+
+    h2 {
+      @include font-size(30, 40);
+      font-weight: 500;
+      margin: 0 0 0 2rem;
+      padding: 0;
+      text-align: left;
+    }
+
+    &:before {
+      @include font-size(18, 40);
+      align-items: center;
+      background-color: $red;
+      border-radius: 100%;
+      color: #fff;
+      content: '!';
+      display: flex;
+      flex-basis: 28px;
+      flex-grow: 0;
+      flex-shrink: 0;
+      font-weight: 650;
+      height: 28px;
+      justify-content: center;
+      letter-spacing: 0;
+      position: relative;
+      top: 6px;
+      width: 28px;
+      z-index: 1;
+    }
+
+    &:after {
+      animation: pulse-ring 2s cubic-bezier(.215, .61, .355, 1) infinite;
+      background-color: $red;
+      border-radius: 100%;
+      content: '';
+      height: 48px;
+      left: -11px;
+      position: absolute;
+      top: -4px;
+      width: 48px;
+      z-index: 0;
+    }
+  }
+
+  .devider {
+    margin-left: 5rem;
+  }
+
+  .call-now {
+    display: block;
+
+    @include breakpoint($desktop) {
+      align-items: center;
+      display: flex;
+    }
+
+    .custom-select-container {
+      @include font-size(16, 34);
+      color: rgba(255, 255, 255, .4);
+      letter-spacing: .05em;
+      margin-left: -4px;
+      margin-right: 2rem;
+      min-width: 17rem;
+      text-transform: uppercase;
+    }
+
+    a {
+      @include font-size(16, 34);
+      letter-spacing: .05em;
+      white-space: nowrap;
+
+      &:after {
+        content: none;
+      }
+
+      &:before {
+        @include breakpoint($desktop) {
+          @include font-size(16, 34);
+          color: rgba(255, 255, 255, .4);
+          content: '//';
+          letter-spacing: .05em;
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+}
+

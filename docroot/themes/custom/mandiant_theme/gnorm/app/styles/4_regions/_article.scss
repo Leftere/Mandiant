@@ -1,0 +1,62 @@
+.article {
+  $self: '.article';
+
+  &--customer-story {
+    .hero {
+      background-color: #e6e6ec;
+      background-image: url('../images/backgrounds/gray-circle.png');
+      background-position: 50% 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+
+      .layout--twocol-section {
+        @include container($desktop);
+        align-items: center;
+        padding: 8rem 2rem;
+        position: relative;
+      }
+
+      .layout__region--first {
+        margin-bottom: 4rem;
+
+        @include breakpoint($desktop) {
+          margin-bottom: 0;
+        }
+
+        h1 {
+          letter-spacing: 0;
+          max-width: 50rem;
+        }
+
+        .devider {
+          max-width: 40rem;
+        }
+      }
+
+      .hero__continue {
+        bottom: 5rem;
+
+        svg {
+          color: $darkBlue;
+        }
+      }
+
+      .layout__region--second {
+        img {
+          margin-left: 2rem;
+        }
+      }
+    }
+
+    #{$self}__content {
+      background-color: #eeeef2;
+
+      .layout--twocol-section {
+        @include container($desktop);
+        padding: 4rem 2rem;
+        position: relative;
+      }
+    }
+  }
+}

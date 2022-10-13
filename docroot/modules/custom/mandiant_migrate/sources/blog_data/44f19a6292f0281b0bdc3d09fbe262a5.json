@@ -1,0 +1,64 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "fireeye_global_admin",
+  "jcr:created": "Thu Feb 20 2020 13:02:25 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "fireeye_global_admin",
+    "jcr:title": "M-Trends 2020: Insights From the Front Lines",
+    "jcr:versionHistory": "8cb49b3e-15c1-4e9c-8450-5d2959a0b598",
+    "author": "Jurgen Kutscher",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "c7fe0f27-ec20-4753-839f-8518a060889e"
+    ],
+    "jcr:created": "Thu Feb 20 2020 17:58:49 GMT+0000",
+    "cq:lastModified": "Thu Feb 20 2020 17:58:41 GMT+0000",
+    "jcr:baseVersion": "c7fe0f27-ec20-4753-839f-8518a060889e",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:cap-jurgen-kutscher",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:m-trends",
+      "fireeye-blog-tags:mandiant",
+      "fireeye-blog-tags:incident-response",
+      "fireeye-blog-tags:malware",
+      "fireeye-blog-tags:apt",
+      "fireeye-blog-tags:TTPs"
+    ],
+    "jcr:uuid": "fe204d10-3052-4963-a81d-0122f40f9fe5",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Thu Feb 20 2020 08:00:00 GMT-0500",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EToday we release \u003Ci\u003E\u003Ca href=\u0022\/content\/fireeye-www\/en_US\/current-threats\/annual-threat-report\/mtrends.html\u0022\u003EM-Trends 2020\u003C\/a\u003E\u003C\/i\u003E, the 11\u003Csup\u003Eth\u003C\/sup\u003E edition of our popular annual FireEye Mandiant report. This latest \u003Ci\u003EM-Trends\u003C\/i\u003E contains all of the statistics, trends, case studies and hardening recommendations that readers have come to expect through the years\u2014and more.\u003C\/p\u003E\n\u003Cp\u003EOne of the most exciting takeaways from this year\u2019s report: the global median dwell time is now 56 days. That means the average attacker is going undetected on a network for under two months\u2014an \u003Ci\u003EM-Trends\u003C\/i\u003E first. This is a very promising statistic that demonstrates how far we\u2019ve come since 2011 when the global median dwell time was 416 days. And yet, we know a sophisticated attacker needs only a few days to gain access to the crown jewels, so there is still plenty of room for improvement.\u003C\/p\u003E\n\u003Cp\u003EAnother interesting statistic in the report is what we refer to as \u0026quot;detection by source.\u0026quot; For the first time since 2015, the majority of organizations are being notified of compromises by external sources (53 percent) over internal teams (47 percent). This is more likely due to factors such as increases in law enforcement notifications and compliance changes, and less likely due to internal teams having lost a step.\u003C\/p\u003E\n\u003Cp\u003EThere\u2019s a whole lot more to look forward to in \u003Ci\u003EM-Trends 2020\u003C\/i\u003E, including:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003E\u003Cb\u003EBy the Numbers\u003C\/b\u003E: Global median dwell time and detection by source are just the tip of the iceberg\u2014we share a number of other statistics related to targeted industries, malware, threat techniques and more.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003ENewly Named APT Groups\u003C\/b\u003E: Learn all about APT41, group responsible for carrying out Chinese state-sponsored espionage and financially motivated activity since as far back as 2012.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003ETrends\u003C\/b\u003E: We take a deep dive into the latest trends involving malware families, monetizing ransomware, crimeware as a service, and malicious insiders.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003ECase Studies\u003C\/b\u003E: With so many organizations moving to the cloud, we take a look at a breach involving cloud assets. We also take readers through a campaign where attackers were targeting gift cards.\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EWhile \u003Ci\u003EM-Trends 2020\u003C\/i\u003E contains plenty of new information, the goal of \u003Ci\u003EM-Trends\u003C\/i\u003E has remained the same since the beginning: to arm security professionals with details on the latest attacks and threats we are seeing during our engagements.\u003C\/p\u003E\n\u003Cp\u003E\u003Ca href=\u0022\/content\/fireeye-www\/en_US\/current-threats\/annual-threat-report\/mtrends.html\u0022\u003EDownload the 11\u003Csup\u003Eth\u003C\/sup\u003E edition of M-Trends today\u003C\/a\u003E.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Thu Feb 20 2020 17:58:01 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EM-Trends 2020 contains all of the statistics, trends, case studies and hardening recommendations that readers have come to expect.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Thu Feb 20 2020 17:58:41 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Wed Feb 19 2020 20:56:31 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

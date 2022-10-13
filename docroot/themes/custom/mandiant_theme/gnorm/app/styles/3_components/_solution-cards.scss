@@ -1,0 +1,13 @@
+.solution-cards {
+  background-image: url('../images/backgrounds/solution-cards-bg.jpg');
+  background-size: cover;
+  backround-repeat: no-repeat;
+  padding-bottom: 10rem;
+
+  &__inner {
+    @include container($desktop);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 8rem;
+  }
+}

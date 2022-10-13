@@ -1,0 +1,13 @@
+uuid: 5b8d0c8d-b678-478e-867a-85ba92f21f23
+langcode: en
+status: true
+dependencies: {  }
+id: cta_with_image
+label: 'CTA with image'
+classes: cta--with-image
+type: component
+group: modifiers_type
+weight: -18
+block_restrictions:
+  - 'inline_block:cta'
+layout_restrictions: {  }

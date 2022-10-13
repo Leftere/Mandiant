@@ -1,0 +1,64 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Tue Nov 28 2017 14:00:27 GMT-0500",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Newly Observed Ursnif Variant Employs Malicious TLS Callback Technique to Achieve Process Injection",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "f07df06d-0f3e-4cc7-b4a1-14b5ba8c7fdb",
+    "author": "Abhay Vaish",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "adam.greenberg@fireeye.com",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "a1bddbed-4ab7-4287-8ecd-69877016c57f"
+    ],
+    "jcr:created": "Tue Nov 28 2017 14:32:28 GMT-0500",
+    "cq:lastReplicated": "Tue Nov 28 2017 14:32:28 GMT-0500",
+    "cq:lastModified": "Tue Nov 28 2017 14:32:23 GMT-0500",
+    "jcr:baseVersion": "a1bddbed-4ab7-4287-8ecd-69877016c57f",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:sandor-nemes",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:malware-analysis",
+      "fireeye-blog-tags:malware",
+      "fireeye-blog-authors:abhay-vaish"
+    ],
+    "jcr:uuid": "02305fda-5832-4d41-9c80-facd82a5060e",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Tue Nov 28 2017 14:00:00 GMT-0500",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Ch4\u003EIntroduction\u003C\/h4\u003E\n\u003Cp\u003ETLS (Thread Local Storage) callbacks are provided by the Windows operating system to support additional initialization and termination for per-thread data structures.\u003C\/p\u003E\n\u003Cp\u003EAs \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/threat-research\/2013\/02\/the-number-of-the-beast.html\u0022\u003Epreviously reported\u003C\/a\u003E, malicious TLS callbacks, as an anti-analysis trick, have been observed for quite some time and can allow for PE files to include malicious TLS callback functions to be executed prior to the AddressOfEntryPoint field (the normal start of intended execution) in the PE header. In essence, unsuspecting analysts and automated security tools can miss the actual entry point to malcode if they do not account for it in the beginning of their analysis and insert a breakpoint on the regular offset pointed to by AddressOfEntryPoint.\u003C\/p\u003E\n\u003Cp\u003EWe recently came across a Ursnif\/Gozi-ISFB sample that manipulated TLS callbacks while injecting to child process. Though many of the malware binaries (or their packers) use some variation of GetThreadContext\/SetThreadContext or CreateRemoteThread Windows API functions to change the entry point of the remote process during injection, this sample (and the related cluster) is using a relatively lesser-known stealth technique. This little deviation from the standard textbook approach may cause some generic unpackers or tools to break following the execution flow, if they do not account for the technique.\u003C\/p\u003E\n\u003Ch4\u003EDistribution\u003C\/h4\u003E\n\u003Cp\u003ESince early 2017, we have regularly observed the abuse of compromised Sharepoint accounts to host malicious payloads, with distribution of URIs via spam emails. Some of the major campaigns we\u2019ve observed involve distributing Dridex within the UK and Ursnif\/Gozi-ISFB in Australia. The recently observed Ursnif variant discussed in this post was discovered via a spam email. A sample lure can been seen in Figure 1.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/ursnif-variant\/Fig1.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 1: Malicious email lure distributing Ursnif\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EAfter clicking on the \u201cREVIEW DOCUMENT\u201d button, the malware downloads a ZIP file named \u003Ci\u003EYourMYOBSupply_Order.zip\u003C\/i\u003E from the following location:\u003C\/p\u003E\n\u003Cul style=\u0022list-style-position: inside;\u0022\u003E\n\u003Cli\u003Ehttps:\/\/eacg1-my.sharepoint.com\/personal\/steve_robson_eaconsultinggroup_com\/_layouts\/15\/download.aspx?docid=\u0026lt;\u003Ci\u003Eredacted\u003C\/i\u003E\u0026gt;\u0026amp;amp;authkey=\u0026lt;\u003Ci\u003Eredacted\u003C\/i\u003E\u0026gt;\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EThe ZIP file contains a malicious JavaScript file that, when executed, will download and execute the Ursnif\/Gozi-ISFB payload.\u003C\/p\u003E\n\u003Cp\u003EThe activities of the distribution are difficult to identify within an organization\u2019s normal network activity because the command and control (C2) server of this payload communicates over HTTPS and the compromised Sharepoint accounts being used also communicate over HTTPS.\u003C\/p\u003E\n\u003Ch4\u003EVariant Analysis\u003C\/h4\u003E\n\u003Cp\u003EOn execution, the observed sample (MD5: 13794d1d8e87c69119237256ef068043) tries to create a child process named \u003Ci\u003Esvchost.exe\u003C\/i\u003E (using the \u003Ci\u003Esvchost.exe\u003C\/i\u003E file from the System32 folder) using the CreateProcessW API function in suspended mode.\u003C\/p\u003E\n\u003Cp\u003ENext, for process hollowing of \u003Ci\u003Esvchost.exe\u003C\/i\u003E, the malware creates a section object and maps the section using ZwMapViewOfSection. It uses the memset function to fill the mapped section with zeroes, and then leverages memcpy to copy the unpacked DLL to that region. The malware then resolves three lower level API functions by walking the ntdll.dll module.\u003C\/p\u003E\n\u003Cp\u003EThe malware then constructs its entry shellcode into a newly mapped region in memory.\u003C\/p\u003E\n\u003Cp\u003EIn an effort to manipulate and identify the mapped sections of the child process, it reads out the PEB structure of the process using a call to ZwReadVirtualMemory.\u003C\/p\u003E\n\u003Cp\u003EThe malware will then change protection permissions of the PE header of the child process to enable write access to that page. It then uses a call to ZwWriteVirtualMemory to write 18 bytes of buffer at offset 0x40 from the start of \u003Ci\u003Esvchost.exe\u003C\/i\u003E process executable in the target child process. The malware then cleverly changes the region protection back to \u201cread only\u201d to avoid suspicion.\u003C\/p\u003E\n\u003Cp\u003EAgain, it repeats the procedure of changing protections for the PE image of \u003Ci\u003Esvchost.exe\u003C\/i\u003E to write 8 bytes at an offset of 0x198 bytes from the start of the process executable.\u003C\/p\u003E\n\u003Ch4\u003EThe Stealthy Tweak\u003C\/h4\u003E\n\u003Cp\u003EThis buffer, when correctly placed at the offset, will represent the TLS directory offset for the process because offset 0x198 is the location of the TLS directory in PE executable, and the next DWORD represents the size of the directory (seen in Figure 2). Notice how the malware writes the offset 0x40 for directory and the size 0x18 bytes in an effort to point to the buffer it had already crafted at offset 0x40 with size 0x18 bytes.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/ursnif-variant\/Fig2.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 2: TLS directory location and size\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EThe TLS directory structure, when used to parse out that buffer of 0x18 bytes, points to an offset containing a list of pointers representing AddressOfCallBacks (see Figure 3).\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/ursnif-variant\/Fig3.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 3: TLS directory structure with pointers\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EIf we take a look at offset 0xe058, it points to the list of AddressOfCallBacks (Figure 4), and if we go to the offset 0xe058 in memory we are pointed to the only callback address at offset 0xe068 - which is in fact the actual entry point code (Figure 5).\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/ursnif-variant\/Fig4.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 4: Offset 0xe058\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/ursnif-variant\/Fig5.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 5: Offset 0xe068 in memory\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EFinally, the malware unmaps the view using ZwUnmapViewOfSection and calls ResumeThread to begin malicious execution of its injected process (from the injected TLS callback address instead of the regular AddressOfEntryPoint listed in the PE header). Hence, the execution will first land at the injected TLS callback (see Figure 6).\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/ursnif-variant\/Fig6.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 6: Actual entry point\u003C\/span\u003E\u003C\/p\u003E\n\u003Ch4\u003EImpact\u003C\/h4\u003E\n\u003Cp\u003EThe \u003Ca href=\u0022https:\/\/github.com\/gbrindisi\/malware\/blob\/master\/windows\/gozi-isfb\/AcDll\/stubs.c\u0022\u003Eleaked source code\u003C\/a\u003E of Ursnif\/Gozi-ISFB used the standard DllMain call entry point to initialize the injected DLL image and execute its entry (see Figure 7).\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/ursnif-variant\/Fig7.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 7: DllMain call used in leaked Ursnif source code\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EThis newer variant shows that actors are not only modifying the malware to evade signatures, they are also equipping them with stealthier techniques. Unaware debugging environments or detection frameworks can potentially miss the actual hidden TLS callback entry point, allowing the malware to perform its malicious activities under the hood.\u003C\/p\u003E\n\u003Ch4\u003EIndicators of Compromise\u003C\/h4\u003E\n\u003Cp\u003EFilename :YourMYOBSupply_Order.zip\u003Cbr\u003E\nMD5 : f6ee68d03f3958785fce45a1b4f590b4\u003Cbr\u003E\nSHA256 : 772bc1ae314dcea525789bc7dc5b41f2d4358b755ec221d783ca79b5555f22ce\u003C\/p\u003E\n\u003Cp\u003EFilename : YourMYOBSupply_Order.js\u003Cbr\u003E\nMD5 : c9f18579a269b8c28684b827079be52b\u003Cbr\u003E\nSHA256 : 9f7413a57595ffe33ca320df26231d30a521596ef47fb3e3ed54af1a95609132\u003C\/p\u003E\n\u003Cp\u003EFilename : download[1].aspx\u003Cbr\u003E\nMD5 : 13794d1d8e87c69119237256ef068043\u003Cbr\u003E\nSHA256 : e498b56833da8c0170ffba4b8bcd04f85b99f9c892e20712d6c8e3ff711fa66c\u003C\/p\u003E\n",
+        "jcr:lastModified": "Tue Nov 28 2017 14:32:23 GMT-0500",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Tue Nov 28 2017 14:32:03 GMT-0500",
+      "imageRotate": "0"
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EWe recently came across a Ursnif\/Gozi-ISFB sample that manipulated TLS callbacks while injecting to child process.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Tue Nov 28 2017 13:59:16 GMT-0500",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    }
+  }
+}

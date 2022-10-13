@@ -1,0 +1,28 @@
+id: blogs_content
+label: Blogs Content
+migration_group: mandiant_migrate
+source:
+  plugin: blogs_page
+
+process:
+  type:
+    plugin: default_value
+    default_value: article
+  title: title
+  'field_body/value': body
+  'field_body/format':
+    plugin: default_value
+    default_value: basic_html
+  'layout_selection':
+    plugin: default_value
+    default_value: article_blog
+  field_date: publish_date
+  uid:
+    plugin: default_value
+    default_value: 1
+  status:
+    plugin: default_value
+    default_value: 1
+destination:
+  plugin: entity:node
+migration_dependencies: {}

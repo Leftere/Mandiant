@@ -1,0 +1,67 @@
+// =======================================
+//    #UTILITY - FONTS
+// =======================================
+
+// =============================================================================
+// Font Face
+// =============================================================================
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: woff2 woff) {
+  $src: null;
+
+  $formats: (
+    otf: 'opentype',
+    ttf: 'truetype'
+  );
+
+  @each $ext in $exts {
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append($src, url(quote($path + '.' + $ext)) format(quote($format)), comma);
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}
+
+// Barlow
+@include font-face('Barlow', '../fonts/barlow/Barlow-Thin', 100, normal);
+@include font-face('Barlow', '../fonts/barlow/Barlow-Light', 300, normal);
+@include font-face('Barlow', '../fonts/barlow/Barlow-LightItalic', 300, italic);
+@include font-face('Barlow', '../fonts/barlow/Barlow-Regular', 400, normal);
+@include font-face('Barlow', '../fonts/barlow/Barlow-Medium', 500, normal);
+@include font-face('Barlow', '../fonts/barlow/Barlow-MediumItalic', 500, italic);
+@include font-face('Barlow', '../fonts/barlow/Barlow-SemiBold', 600, normal);
+@include font-face('Barlow', '../fonts/barlow/Barlow-Bold', 700, normal);
+@include font-face('Barlow', '../fonts/barlow/Barlow-ExtraBold', 800, normal);
+
+// PT Mono
+@include font-face('PT Mono', '../fonts/mono/PTMono-Regular', 400, normal);
+
+// System Font stack
+// https://css-tricks.com/snippets/css/system-font-stack/
+$systemFont: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+$sans: 'Barlow', $systemFont;
+$mono: 'PT Mono', $systemFont;
+
+// ========================================================================= //
+//  Web Fonts
+//
+//
+//  FOR REFERENCE: Font-weights by numeric value / name.
+//  Side note: it is recommended that we to use the numeric value here to help clarify exactly which weight is getting referenced to.
+//    100 = thin
+//    200 = extra-light
+//    300 = light
+//    400 = normal, book
+//    500 = medium
+//    600 = demi-bold / semi-bold
+//    700 = bold
+//    800 = heavy / extra-bold / heavy
+//    900 = black / extra-black / ultra-black
+//
+// ========================================================================= //

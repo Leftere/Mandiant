@@ -1,0 +1,64 @@
+<div class="layout-container">
+  <div class="g-recaptcha" id="normalRecaptcha"></div>
+  <div class="g-recaptcha" id="compactRecaptcha"></div>
+  <div id="header__top"></div> {# for scroll-based header animation#}
+  <header role="banner" class="global-header">
+    {{ page.header }}
+    {% if page.top %}
+      <div class="utility-navigation" aria-hidden="true">
+        <button class="utility-navigation__close">
+          {% include "@mandiant_theme/includes/icons/close.svg" %}<span>{{ 'Close'|t }}</span>
+        </button>
+        <div class="utility-navigation__inner">
+          {{ page.top }}
+        </div>
+        <div class="utility-navigation__footer">
+          <a href="/report-incident" class="pulse-ring">
+            <span class="text">{{ 'Incident response'|t }}</span>
+            <span class="icon">!</span>
+          </a>
+        </div>
+      </div>
+    {% endif %}
+  </header>
+
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+    <div class="layout-content">
+      {{ page.content }}
+    </div>
+
+    {% if page.sidebar_first %}
+      <aside class="layout-sidebar-first" role="complementary">
+        {{ page.sidebar_first }}
+      </aside>
+    {% endif %}
+
+    {% if page.sidebar_second %}
+      <aside class="layout-sidebar-second" role="complementary">
+        {{ page.sidebar_second }}
+      </aside>
+    {% endif %}
+
+  </main>
+
+  {% if page.footer %}
+    <footer role="contentinfo" class="footer">
+    <div class="wrapper">
+      <div class="footer_logo">
+        {% include "@mandiant_theme/includes/icons/mandiantlogo.svg" %}
+        <span>your cybersecurity advantage</span>
+      </div>
+    </div>
+      {{ page.footer }}
+    </footer>
+  {% endif %}
+
+  {% if page.bottom %}
+    <div class="bottom">
+      {{ page.bottom }}
+    </div>
+  {% endif %}
+
+</div>

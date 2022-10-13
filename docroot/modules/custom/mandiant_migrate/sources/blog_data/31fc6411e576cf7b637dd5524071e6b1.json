@@ -1,0 +1,63 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Tue Apr 13 2021 13:51:01 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "M-Trends 2021: A View From the Front Lines",
+    "jcr:versionHistory": "3d80caca-43f0-4a06-ad76-22a72e04b1bd",
+    "author": "Jurgen Kutscher",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "bbb361a6-7a49-4f19-a11d-80f43be2aa79"
+    ],
+    "jcr:created": "Tue Apr 13 2021 13:51:01 GMT+0000",
+    "cq:lastModified": "Tue Apr 13 2021 13:50:48 GMT+0000",
+    "jcr:baseVersion": "bbb361a6-7a49-4f19-a11d-80f43be2aa79",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:cap-jurgen-kutscher",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:m-trends",
+      "fireeye-blog-tags:incident-response",
+      "fireeye-blog-tags:fireeye",
+      "fireeye-blog-tags:mandiant",
+      "fireeye-blog-tags:TTPs"
+    ],
+    "jcr:uuid": "c6668f08-f854-4069-807a-545cdb8e5893",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Tue Apr 13 2021 09:45:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EWe are thrilled to launch \u003Ci\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/current-threats\/annual-threat-report\/mtrends.html\u0022\u003EM-Trends 2021\u003C\/a\u003E\u003C\/i\u003E, the 12\u003Csup\u003Eth\u003C\/sup\u003E edition of our annual FireEye Mandiant publication. The past year has been unique, as we witnessed an unprecedented combination of global events. Business operations shifted in response to the worldwide pandemic and threat actors continued to escalate the sophistication and aggressiveness of their attacks, while in parallel leveraged unexpected global events to their advantage.\u003C\/p\u003E\n\u003Cp\u003EWe discuss all of this and much more in the full report, which is \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/current-threats\/annual-threat-report\/mtrends.html\u0022\u003Eavailable for download today\u003C\/a\u003E. But first, here is a sneak preview of the most popular \u003Ci\u003EM-Trends\u003C\/i\u003E metric where we answer the critical question: Are organizations getting better at detecting attacks?\u003C\/p\u003E\n\u003Cp\u003EIn short, yes! Back in 2011, we reported a 416-day global median dwell time, indicating that attackers were operating undetected on a system or network for over a year on average. This time, from Oct. 1, 2019 through Sept. 30, 2020, the median dwell time has decreased to only 24 days. This means\u2014for the first time in \u003Ci\u003EM-Trends\u003C\/i\u003E history\u2014the median dwell time has dropped to under one month.\u003C\/p\u003E\n\u003Cp\u003EAlthough this drop in dwell time is promising, it is critical for organizations to remember that cyber adversaries typically only need a few days to achieve their objective, such as identifying and stealing the crown jewels of a victim organization or launching a crippling ransomware attack. Organizations across the globe must remain vigilant, to prepare for the next incident.\u003C\/p\u003E\n\u003Cp\u003EThere is much more to unpack in the \u003Ci\u003EM-Trends 2021 \u003C\/i\u003Ereport. Here is a quick rundown of what to expect:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003E\u003Cb\u003EBy the Numbers\u003C\/b\u003E: A large and diverse set of metrics including attacker dwell time, detection by source, industry targeting, growing threat techniques, sophisticated malware families, and more.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003ERansomware\u003C\/b\u003E: Front-line stories on how this harmful threat is evolving, challenges with recovery, and best practice hardening strategies to effectively combat this threat.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003ENewly Named Threat Groups\u003C\/b\u003E: More on FIN11, a financially motivated threat group that we promoted in 2020, which has been active since at least 2016 and is most recently known for operations involving ransomware and extortion.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003EPandemic-Related Threats\u003C\/b\u003E: Breakdown of countless espionage campaigns targeting ground-breaking research in the race to learn more about COVID-19.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003EUNC2452\/SUNBURST\u003C\/b\u003E: UNC2452\u2019s headline-making compromise of environments via an implant in the SolarWinds Orion platform, mapped to the attack lifecycle framework with details at every stage.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003ECase Studies\u003C\/b\u003E: Mandiant engagements involving the rise of insider threats and how to be more prepared, plus advanced red teaming tactics that enabled access to executive emails without any exploits.\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EFor over a decade, the mission of \u003Ci\u003EM-Trends\u003C\/i\u003E has always been the same: to arm security professionals with insights on the latest attacker activity as seen directly on the front lines, backed by actionable learnings to improve organizations\u2019 security postures within an evolving threat landscape.\u003C\/p\u003E\n\u003Cp\u003EDownload the \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/current-threats\/annual-threat-report\/mtrends.html\u0022\u003E\u003Ci\u003EM-Trends 2021\u003C\/i\u003E report\u003C\/a\u003E today, and then for more information, check out the \u003Ca href=\u0022https:\/\/virtualsummit.fireeye.com\/index.html\u0022\u003EFireEye Mandiant Virtual Summit\u003C\/a\u003E. Starting today and running through April 15, the event includes a variety of sessions, with three related to \u003Ci\u003EM-Trends\u003C\/i\u003E: one that provides an \u003Ca href=\u0022https:\/\/virtualsummit.fireeye.com\/track-expertise.html#top-cyber-trends\u0022\u003Eoverview of the report and highlights key topics\u003C\/a\u003E, another focused on our \u003Ca href=\u0022https:\/\/virtualsummit.fireeye.com\/track-expertise.html#mtrends-2021\u0022\u003E\u201cBy the Numbers\u201d chapter\u003C\/a\u003E coupled with mitigation solutions related to these metrics, and one covering \u003Ca href=\u0022https:\/\/www.brighttalk.com\/webcast\/10703\/479027\u0022\u003Ethe report through a lens from the EMEA region\u003C\/a\u003E. \u003Ca href=\u0022https:\/\/virtualsummit.fireeye.com\/index.html\u0022\u003ERegister now\u003C\/a\u003E!\u003C\/p\u003E\n",
+        "jcr:lastModified": "Mon Apr 12 2021 16:05:03 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EWe reveal much in our latest M-Trends report, including how organizations around the globe are detecting attackers faster than ever before.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Mon Apr 12 2021 16:06:36 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Tue Apr 13 2021 13:50:48 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

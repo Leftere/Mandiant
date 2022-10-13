@@ -1,0 +1,83 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed May 03 2017 16:29:57 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "To SDB, Or Not To SDB: FIN7 Leveraging Shim Databases for Persistence",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "338bc07d-558e-4930-ad49-17547f4f4e7f",
+    "author": "Matthew McWhirt",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "adam.greenberg@fireeye.com",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "64284a03-7e4e-49bd-8532-b3844ddcd0bd"
+    ],
+    "jcr:created": "Fri Jun 14 2019 15:44:58 GMT-0400",
+    "cq:lastReplicated": "Fri Jun 14 2019 15:44:57 GMT-0400",
+    "cq:lastModified": "Fri Jun 14 2019 15:44:50 GMT-0400",
+    "cq:distribute": true,
+    "jcr:baseVersion": "64284a03-7e4e-49bd-8532-b3844ddcd0bd",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-tags:cyber-crime",
+      "fireeye-blog-tags:financial-services",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-authors:matthew-mcwhirt",
+      "fireeye-doctypes:blog",
+      "fireeye-blog-authors:jon-erickson",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-authors:dj-palombo",
+      "fireeye-blog-tags:carbanak",
+      "fireeye-blog-tags:fin7",
+      "fireeye-blog-tags:FLARE"
+    ],
+    "jcr:uuid": "64f28e8a-461f-42c2-8522-39494bd2737f",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Wed May 03 2017 16:30:00 GMT-0400",
+    "_charset_": "UTF-8",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EIn 2017, Mandiant responded to multiple incidents we attribute to FIN7, a financially motivated threat group associated with malicious operations dating back to 2015. Throughout the various environments, FIN7 leveraged the CARBANAK backdoor, which this group has used in previous operations.\u003C\/p\u003E\n\u003Cp\u003EA unique aspect of the incidents was how the group installed the CARBANAK backdoor for persistent access. Mandiant identified that the group leveraged an application shim database to achieve persistence on systems in multiple environments. The shim injected a malicious in-memory patch into the Services Control Manager (\u201cservices.exe\u201d) process, and then spawned a CARBANAK backdoor process.\u003C\/p\u003E\n\u003Cp\u003EMandiant identified that FIN7 also used this technique to install a payment card harvesting utility for persistent access. This was a departure from FIN7\u2019s previous approach of installing a malicious Windows service for process injection and persistent access.\u003C\/p\u003E\n\u003Ch4\u003EApplication Compatibility Shims Background\u003C\/h4\u003E\n\u003Cp\u003EAccording to Microsoft, an \u003Ca href=\u0022https:\/\/technet.microsoft.com\/en-us\/library\/dd837644(v=ws.10).aspx\u0022\u003Eapplication compatibility shim\u003C\/a\u003E is a small library that transparently intercepts an API (via hooking), \u003Ca href=\u0022https:\/\/blogs.technet.microsoft.com\/askperf\/2011\/06\/17\/demystifying-shims-or-using-the-app-compat-toolkit-to-make-your-old-stuff-work-with-your-new-stuff\/\u0022\u003Echanges the parameters passed\u003C\/a\u003E, handles the operation itself, or redirects the operation elsewhere, such as additional code stored on a system.\u0026nbsp;Today, shims are mainly used for compatibility purposes for legacy applications. While shims serve a legitimate purpose, they can also be used in a malicious manner. Mandiant consultants previously discussed shim databases at both \u003Ca href=\u0022http:\/\/files.brucon.org\/2015\/Tomczak_and_Ballenthin_Shims_for_the_Win.pdf\u0022\u003EBruCon\u003C\/a\u003E and \u003Ca href=\u0022https:\/\/www.blackhat.com\/docs\/asia-14\/materials\/Erickson\/Asia-14-Erickson-Persist-It-Using-And-Abusing-Microsofts-Fix-It-Patches.pdf\u0022\u003EBlackHat\u003C\/a\u003E.\u003C\/p\u003E\n\u003Ch4\u003EShim Database Registration\u003C\/h4\u003E\n\u003Cp\u003EThere are multiple ways to register a shim database on a system. One technique is to use the built-in \u201c\u003Ca href=\u0022https:\/\/technet.microsoft.com\/en-us\/library\/cc749169(v=ws.10).aspx\u0022\u003Esdbinst.exe\u003C\/a\u003E\u201d command line tool. Figure 1 displays the two registry keys created when a shim is registered with the \u201csdbinst.exe\u201d utility.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/FIN7%20SDB\/Fig1.png\u0022\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 1: Shim database registry keys\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EOnce a shim database has been registered on a system, the shim database file (\u201c.sdb\u201d file extension) will be copied to the \u201cC:\\Windows\\AppPatch\\Custom\u201d directory for 32-bit shims or \u201cC:\\Windows\\AppPatch\\Custom\\Custom64\u201d directory for 64-bit shims.\u003C\/p\u003E\n\u003Ch4\u003EMalicious Shim Database Installation\u003C\/h4\u003E\n\u003Cp\u003ETo install and register the malicious shim database on a system, FIN7 used a custom Base64 encoded PowerShell script, which ran the \u201csdbinst.exe\u201d utility to register a custom shim database file containing a patch onto a system. Figure 2 provides a decoded excerpt from a recovered FIN7 PowerShell script showing the parameters for this command.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/FIN7%20SDB\/Fig2.png\u0022\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 2: Excerpt from a FIN7 PowerShell script to install a custom shim\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EFIN7 used various naming conventions for the shim database files that were installed and registered on systems with the \u201csdbinst.exe\u201d utility. A common observance was the creation of a shim database file with a \u201c.tmp\u201d file extension (Figure 3).\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/FIN7%20SDB\/Fig3.png\u0022\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 3: Malicious shim database example\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EUpon registering the custom shim database on a system, a file named with a random GUID and an \u201c.sdb\u201d extension was written to the 64-bit shim database default directory, as shown in Figure 4. The registered shim database file had the same MD5 hash as the file that was initially created in the \u201cC:\\Windows\\Temp\u201d directory.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/FIN7%20SDB\/Fig4.png\u0022\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 4: Shim database after registration\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EIn addition, specific registry keys were created that correlated to the shim database registration.\u0026nbsp; Figure 5 shows the keys and values related to this shim installation.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/FIN7%20SDB\/Fig5.png\u0022\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 5: Shim database registry keys\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EThe database description used for the shim database registration, \u201cMicrosoft KB2832077\u201d was interesting because this KB number was not a published Microsoft Knowledge Base patch. This description (shown in Figure 6) appeared in the listing of installed programs within the Windows Control Panel on the compromised system.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/FIN7%20SDB\/Fig6.png\u0022\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 6: Shim database as an installed application\u003C\/span\u003E\u003C\/p\u003E\n\u003Ch4\u003EMalicious Shim Database Details\u003C\/h4\u003E\n\u003Cp\u003EDuring the investigations, Mandiant observed that FIN7 used a custom shim database to patch both the 32-bit and 64-bit versions of \u201cservices.exe\u201d with their CARBANAK payload. This occurred when the \u201cservices.exe\u201d process executed at startup. The shim database file contained shellcode for a first stage loader that obtained an additional shellcode payload stored in a registry key. The second stage shellcode launched the CARBANAK DLL (stored in a registry key), which spawned an instance of Service Host (\u201csvchost.exe\u201d) and injected itself into that process. \u0026nbsp;\u003C\/p\u003E\n\u003Cp\u003EFigure 7 shows a \u003Ca href=\u0022https:\/\/github.com\/williballenthin\/python-sdb\u0022\u003Eparsed\u003C\/a\u003E shim database file that was leveraged by FIN7.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/FIN7%20SDB\/Fig7.png\u0022\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 7: Parsed shim database file\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EFor the first stage loader, the patch overwrote the \u201cScRegisterTCPEndpoint\u201d function at relative virtual address (RVA) \u201c0x0001407c\u201d within the services.exe process with the malicious shellcode from the shim database file.\u0026nbsp;\u003C\/p\u003E\n\u003Cp\u003EThe new \u201cScRegisterTCPEndpoint\u201d function (shellcode) contained a reference to the path of \u201c\\REGISTRY\\MACHINE\\SOFTWARE\\Microsoft\\DRM\u201d, which is a registry location where additional malicious shellcode and the CARBANAK DLL payload was stored on the system.\u003C\/p\u003E\n\u003Cp\u003EFigure 8 provides an excerpt of the parsed patch structure within the recovered shim database file.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/FIN7%20SDB\/Fig8.png\u0022\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 8: Parsed patch structure from the shim database file\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EThe shellcode stored within the registry path \u201cHKLM\\SOFTWARE\\Microsoft\\DRM\u201d used the API function \u201cRtlDecompressBuffer\u201d to decompress the payload. It then slept for four minutes before calling the CARBANAK DLL payload\u0027s entry point on the system. Once loaded in memory, it created a new process named \u201csvchost.exe\u201d that contained the CARBANAK DLL.\u0026nbsp;\u003C\/p\u003E\n\u003Ch4\u003EBringing it Together\u003C\/h4\u003E\n\u003Cp\u003EFigure 9 provides a high-level overview of a shim database being leveraged as a persistent mechanism for utilizing an in-memory patch, injecting shellcode into the 64-bit version of \u201cservices.exe\u201d.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/FIN7%20SDB\/Fig9.png\u0022\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 9: Shim database code injection process\u003C\/span\u003E\u003C\/p\u003E\n\u003Ch4\u003EDetection\u003C\/h4\u003E\n\u003Cp\u003EMandiant recommends the following to detect malicious application shimming in an environment:\u003C\/p\u003E\n\u003Col\u003E\n\u003Cli\u003EMonitor for new shim database files created in the default shim database directories of \u201cC:\\Windows\\AppPatch\\Custom\u201d and \u201cC:\\Windows\\AppPatch\\Custom\\Custom64\u201d\u003C\/li\u003E\n\u003Cli\u003EMonitor for registry key creation and\/or modification events for the keys of \u201cHKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\Custom\u201d and \u201cHKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\InstalledSDB\u201d\u003C\/li\u003E\n\u003Cli\u003EMonitor process execution events and command line arguments for malicious use of the \u201csdbinst.exe\u201d utility\u0026nbsp;\u003C\/li\u003E\n\u003C\/ol\u003E\n",
+        "jcr:lastModified": "Wed May 03 2017 16:42:51 GMT-0400",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "alt": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "comments": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/commons\/components\/comments"
+      },
+      "trackback": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/blog\/components\/trackback"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EIn 2017, Mandiant responded to multiple incidents we attribute to FIN7, and a unique aspect of the incidents was how the group leveraged an application shim database to achieve persistence on systems in multiple environments.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Wed May 03 2017 16:07:40 GMT-0400",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Fri Jun 14 2019 15:44:49 GMT-0400",
+      "imageRotate": "0"
+    }
+  }
+}

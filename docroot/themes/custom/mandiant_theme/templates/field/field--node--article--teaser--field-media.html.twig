@@ -1,0 +1,6 @@
+{% for item in items %}
+  {% set media_uri = item.content['#media'] | file_uri %}
+  {% if media_uri is not null %}
+    {{ drupal_image(media_uri, 'thumbnail') }}
+  {% endif %}
+{% endfor %}

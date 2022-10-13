@@ -1,0 +1,19 @@
+uuid: 1821d149-8d3e-4711-82bc-51a639d4fb19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.site_setting_entity.field_image
+    - site_settings.site_setting_entity_type.metatag_social_sharing_image
+id: site_setting_entity.metatag_social_sharing_image.field_image
+field_name: field_image
+entity_type: site_setting_entity
+bundle: metatag_social_sharing_image
+label: 'Image URI'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

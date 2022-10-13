@@ -1,0 +1,62 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Mon May 24 2021 16:50:32 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Top Cyber Threats to Latin America and the Caribbean",
+    "jcr:versionHistory": "1b55c1c5-d39d-432c-9c04-1ab3dd9e976e",
+    "author": "Juan Carlos Garcia Caparros",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "a58f0297-ed4c-4966-b7ab-3170847141ec"
+    ],
+    "jcr:created": "Mon May 24 2021 16:50:32 GMT+0000",
+    "cq:lastModified": "Mon May 24 2021 16:49:17 GMT+0000",
+    "jcr:baseVersion": "a58f0297-ed4c-4966-b7ab-3170847141ec",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:juan-carlos-garcia-caparros",
+      "fireeye-blog-executive-perspective:executive-perspective",
+      "fireeye-blog-tags:caribbean",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:latin-america",
+      "fireeye-blog-tags:threat-intelligence",
+      "fireeye-blog-tags:ransomware"
+    ],
+    "jcr:uuid": "f5babd7f-905a-47c3-b9e1-f99b25106789",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Mon May 24 2021 13:00:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003ECyber threat activity affects governments, businesses, and societies across Latin America and the Caribbean. Mandiant Threat Intelligence has observed financially motivated actors pursuing a variety of schemes in the region, including social engineering to trick individuals and businesses into transferring money to attacker-controlled accounts, and recruiting insiders at banks and telecommunications companies to facilitate money laundering and SIM swapping. State-sponsored actors linked to China, Russia, and Iran deploy cyber espionage and information operations to gather intelligence and persuade audiences to support their interests.\u003C\/p\u003E\n\u003Cp\u003EThis blog post examines the specific threats and targets Mandiant observes in region.\u003C\/p\u003E\n\u003Ch4\u003EFinancially Motivated Threats\u003C\/h4\u003E\n\u003Cp\u003EWe judge that financially motivated cyber threat activity is very common and has a serious impact on individuals and organizations in Latin America and the Caribbean. In addition to campaigns by actors that operate globally, such as \u003Ca href=\u0022\/content\/fireeye-www\/en_US\/blog\/threat-research\/2020\/10\/fin11-email-campaigns-precursor-for-ransomware-data-theft.html\u0022 adhocenable=\u0022false\u0022\u003EFIN11\u003C\/a\u003E and \u003Ca href=\u0022\/content\/fireeye-www\/en_US\/blog\/threat-research\/2020\/10\/kegtap-and-singlemalt-with-a-ransomware-chaser.html\u0022 adhocenable=\u0022false\u0022\u003EUNC2053\u003C\/a\u003E, we also track activity by regional actors. During the past several years we have noted Brazilian cybercrime actors expand the geographic scope of their targeting to include North America and Europe. We also observed evidence of increased collaboration between the Brazilian cybercrime community and those of other Latin American countries, including Mexico and Peru. Both trends could increase the threat posed by regional actors as they gain access to additional resources and expertise.\u003C\/p\u003E\n\u003Ch4\u003ERansomware\u003C\/h4\u003E\n\u003Cp\u003ESince at least 2017, ransomware incidents have steadily become more frequent and worldwide, and this trend has only accelerated during the coronavirus pandemic. Not only is ransomware more common, but threat actor innovations over the past several years have significantly increased the potential cost and damage of a ransomware infection. For example, throughout 2020, Mandiant Threat Intelligence\u0026nbsp;observed\u0026nbsp;threat actors incorporate data theft and extortion into ransomware operations, advertising stolen data on actor-operated websites.\u003C\/p\u003E\n\u003Cp\u003EWe noted that advertisements for data stolen from Latin America and the Caribbean organizations during ransomware incidents increased 550% from the first quarter of 2020 to the first quarter of 2021. This activity affected many countries, most frequently Brazil, Mexico, and Colombia (see Figure 1), and nearly every industry category, including the manufacturing, retail, and energy \u0026amp; utilities sectors. We identified websites associated with more than 15 different varieties of ransomware advertising data allegedly stolen from regional organizations; PYSA, SODINOKIBI, and EGREGOR were among the most prolific. For more details, \u003Ca href=\u0022https:\/\/advantage.mandiant.com\/reports\/21-00009094\u0022\u003Eplease download the report in Mandiant Advantage\u003C\/a\u003E.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/lac-trends\/lac.png\u0022 alt=\u0022\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 1: Percentage of ransomware data theft advertisements in LAC by country\u003C\/span\u003E\u003C\/p\u003E\n\u003Ch4\u003EState-Sponsored Operations\u003C\/h4\u003E\n\u003Cp\u003EWhile our observations suggest that state-sponsored campaigns in the region are less frequent than cybercrime, these operations have the potential to cause significant damage.\u003C\/p\u003E\n\u003Cp\u003EWe have seen Chinese attackers engage in operations likely intended to monitor developments relevant to its Belt to Road initiative, which seeks to expand China\u2019s trading routes. We noted multiple campaigns seeking to deploy EVILNUGGET malware against government targets, for example ahead of regional trade summits, as well as against construction and transportation entities.\u003C\/p\u003E\n\u003Cp\u003EWe have also observed information operations associated with the Liberty Front Press network expressing support for Iran-sympathetic leaders in Venezuela and Bolivia.\u003C\/p\u003E\n\u003Ch4\u003ENext Steps for CISOs\u003C\/h4\u003E\n\u003Cp\u003ELatin America and the Caribbean face significant adversary activity, and organizations operating in the region should take steps to defend against and mitigate the effects of these threats. Best practices such as enforcing multifactor authentication, segmenting networks, regular patching, and adhering to the principle of least privilege can help reduce exposure to many common threat activity types. Tabletop exercises can also help security teams to \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/blog\/executive-perspective\/2019\/08\/improving-incident-response-with-tabletop-exercises.html\u0022\u003Eidentify potential gaps in their security architecture\u003C\/a\u003E and emergency plans.\u003C\/p\u003E\n\u003Cp\u003EOrganizations may also focus their efforts and using the actionable insights from Mandiant Threat Intelligence, available through \u003Ca href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/threat-intelligence.html\u0022 adhocenable=\u0022false\u0022\u003EMandiant Advantage\u003C\/a\u003E. Intelligence helps organizations achieve visibility across the threat landscape and prioritize threats that are most critical. We collect global Breach, Machine, Operational, and Adversarial intelligence to deliver the same real-time threat data and analytics on which our global experts rely.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Mon May 24 2021 16:43:05 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003ECyber threat activity affects governments, businesses, and societies across Latin America and the Caribbean, so here are some of the top threats we are seeing.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Mon May 24 2021 16:45:25 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Mon May 24 2021 16:49:17 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

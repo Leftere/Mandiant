@@ -1,0 +1,251 @@
+.layout-container > .top > div {
+  display: flex;
+  justify-content: flex-end;
+}
+.layout-container > .top > div > nav > ul {
+  display: flex;
+  justify-content: space-between;
+}
+.layout-container > .top > div > nav > ul > li a {
+  padding: 0 1.5rem;
+}
+.layout-container > .top > div > #block-top,
+.layout-container > .top > div > #block-dropdownlanguage {
+  padding: 1.5rem;
+}
+.layout-container > header > div {
+  display: flex;
+  align-items: flex-end;
+}
+.layout-container > header > div > #block-mainnavigation-2 {
+  margin-left: auto;
+}
+.layout-container > main {
+  min-height: 300px;
+  padding: 5rem;
+}
+
+.layout-builder__section {
+  padding: 1.5rem;
+  border: 1px dashed gray;
+}
+
+.layout-builder__layout {
+  margin-top: 0;
+}
+
+.layout-builder-block__content-preview-placeholder-label {
+  border: 1px solid gray;
+  margin: 1rem;
+}
+
+/* Layout template styles classes */
+#block-mandiant-theme-content .layout.shrink {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+#block-mandiant-theme-content .layout.centered {
+  text-align: center;
+}
+#block-mandiant-theme-content .layout.divider > div {
+  border-right: 1px solid #333;
+}
+#block-mandiant-theme-content .layout.divider > div:last-child {
+  border: none;
+}
+
+.layout-builder-configure-section {
+  overflow-y: auto;
+}
+.layout-builder-configure-section > * {
+  padding-left: 20px;
+  padding-right: 21px;
+  flex-shrink: 1;
+  flex-grow: unset;
+  overflow: unset;
+}
+.layout-builder-configure-section > *:nth-last-child(2) {
+  flex-grow: 1;
+}
+
+body.toolbar-tray-open.toolbar-horizontal.toolbar-fixed .layout-layout-builder-form.glb-form > .form-actions {
+  margin-top: 78px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.chosen-container .chosen-choices {
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+}
+
+.field--name-field-body table > thead,
+.field--name-field-block table > thead {
+  text-align: left;
+}
+.field--name-field-body table > thead h4,
+.field--name-field-block table > thead h4 {
+  margin-top: 0;
+}
+.field--name-field-body table > thead tr, .field--name-field-body table > thead th,
+.field--name-field-block table > thead tr,
+.field--name-field-block table > thead th {
+  padding: 0;
+}
+.field--name-field-body .tabledrag-toggle-weight-wrapper,
+.field--name-field-block .tabledrag-toggle-weight-wrapper {
+  display: none;
+}
+.field--name-field-body .form-item--multiple.glb-form-item,
+.field--name-field-block .form-item--multiple.glb-form-item {
+  margin-top: 0 !important;
+}
+.field--name-field-body table,
+.field--name-field-block table {
+  width: 100%;
+}
+.field--name-field-body table > tbody > tr > td:nth-child(1),
+.field--name-field-body table > tbody > tr > td:nth-child(3),
+.field--name-field-block table > tbody > tr > td:nth-child(1),
+.field--name-field-block table > tbody > tr > td:nth-child(3) {
+  width: 5%;
+}
+.field--name-field-body a.tabledrag-handle .handle,
+.field--name-field-block a.tabledrag-handle .handle {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.field--name-field-embed [data-drupal-selector=edit-settings-block-form-field-embed-0-format] {
+  display: none;
+}
+
+/* View: Tags */
+.tags-list .item-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 5rem 0;
+  width: 100%;
+}
+.tags-list .item-list ul li,
+.tags-list .item-list ul li div {
+  display: inline;
+}
+.tags-list .item-list ul a {
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 5rem;
+  border: 1px solid #333;
+  background-color: #fff;
+  white-space: nowrap;
+}
+.tags-list .item-list ul a:hover, .tags-list .item-list ul a:focus, .tags-list .item-list ul a:active {
+  text-decoration: none;
+}
+.tags-list .item-list ul a:hover, .tags-list .item-list ul a:focus, .tags-list .item-list ul a:active {
+  background-color: #333;
+  color: #f2f2f2;
+}
+
+.article-list .views-row {
+  display: flex;
+}
+.article-list .views-row .views-col {
+  border: 1px solid #333;
+  padding: 2rem;
+}
+
+/* Block Type: CTA */
+.block-bundle-cta.block-cta-media .layout__region--first img {
+  margin: 0 auto;
+}
+.block-bundle-cta.block-cta-media .layout__region--second {
+  padding: 2rem;
+}
+.block-bundle-cta.block-cta-3quarters .layout__region--first, .block-bundle-cta.block-cta-embed .layout__region--first, .block-bundle-cta.block-cta-phone .layout__region--first, .block-bundle-cta.block-cta-block .layout__region--first {
+  padding: 2rem;
+}
+.block-bundle-cta.dark {
+  border: 2px solid #333;
+  background-color: #333;
+  color: #f2f2f2;
+}
+
+/* Block Type: VIEW */
+.block-bundle-view.centered {
+  text-align: center;
+}
+
+.block-bundle-card {
+  color: #fff;
+  margin-bottom: 5rem;
+}
+.block-bundle-card p {
+  margin-bottom: 4rem;
+}
+.block-bundle-card .layout__region--first {
+  text-align: center;
+  padding: 2rem 10rem;
+}
+.block-bundle-card .layout__region--second {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+.block-bundle-card .layout__region--second ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.block-bundle-card .layout__region--second ul li a:hover {
+  text-decoration: underline;
+}
+
+.block-bundle-featured_logos .field-media {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10rem;
+}
+.block-bundle-featured_logos .href-cta {
+  overflow: hidden;
+  text-align: right;
+}
+.block-bundle-featured_logos .href-cta a {
+  color: #009dd9;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 4rem;
+  display: block;
+}
+.block-bundle-featured_logos .href-cta a:hover, .block-bundle-featured_logos .href-cta a:focus, .block-bundle-featured_logos .href-cta a:active {
+  text-decoration: underline;
+}
+
+/*.contact-message-mandiant-newsletter-form #contact-message-mandiant-newsletter-form .form-email {
+  width: auto;
+  max-width: 250px;
+  height: 34px;
+  padding: 5px;
+  border: 0;
+  box-shadow: none;
+  border-bottom: 1px solid rgba(48,60,66,0.7);
+  background: transparent;
+  outline: none;
+}
+.contact-message-mandiant-newsletter-form #contact-message-mandiant-newsletter-form .button {
+  text-transform: uppercase;
+  padding: 4px 14px;
+  background: transparent;
+  box-shadow: none;
+  border: 1px solid rgba(48,60,66,0.7);
+  cursor: pointer;
+  border-radius: 4px;
+}*/
+
+/*# sourceMappingURL=styles.css.map */

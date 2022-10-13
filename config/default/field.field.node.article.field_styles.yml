@@ -1,0 +1,23 @@
+uuid: 01591d41-3480-4538-a6a6-16c0a9184f4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_styles
+    - node.type.article
+  module:
+    - options
+id: node.article.field_styles
+field_name: field_styles
+entity_type: node
+bundle: article
+label: Styles
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: dark
+default_value_callback: ''
+settings: {  }
+field_type: list_string

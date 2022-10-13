@@ -1,0 +1,15 @@
+uuid: 147736d4-98d1-41fa-b51b-e74028e3cc40
+langcode: en
+status: true
+dependencies: {  }
+id: framed_column_cards
+label: 'Column cards (Framed)'
+classes: framed-column-cards
+type: section
+group: modifiers_type
+weight: 1
+block_restrictions: {  }
+layout_restrictions:
+  - layout_twocol_section
+  - layout_threecol_section
+  - layout_fourcol_section

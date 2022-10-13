@@ -1,0 +1,15 @@
+uuid: 386b9036-3c50-4a99-8f81-a87c3ad07489
+langcode: en
+status: true
+dependencies: {  }
+id: hide_media
+label: 'Hide Media'
+classes: hide-media
+type: component
+group: add_ons
+weight: 0
+block_restrictions:
+  - 'inline_block:view'
+  - 'inline_block:featured_pages'
+  - 'inline_block:relationship'
+layout_restrictions: {  }

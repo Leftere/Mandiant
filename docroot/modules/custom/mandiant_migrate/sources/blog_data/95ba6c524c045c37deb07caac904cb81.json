@@ -1,0 +1,73 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed May 04 2016 09:03:30 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Web Historian: Reloaded",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "03ed0ab0-655d-4c9d-8a2a-abb38d692485",
+    "author": "M-Labs",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "lynda.hall@fireeye.com",
+    "focusKeyword": "blackhat",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "63a1a5af-caeb-4f10-8202-3856524a703b"
+    ],
+    "jcr:created": "Fri Jun 03 2016 19:45:23 GMT-0400",
+    "cq:lastReplicated": "Fri Jun 03 2016 19:45:23 GMT-0400",
+    "cq:lastModified": "Wed Jun 16 2010 12:35:03 GMT-0500",
+    "cq:distribute": true,
+    "jcr:baseVersion": "63a1a5af-caeb-4f10-8202-3856524a703b",
+    "jcr:isCheckedOut": true,
+    "cq:createdBy": "admin",
+    "cq:tags": [
+      "fireeye-blog-authors:cap-yura-socolov",
+      "fireeye-blog-tags:blackhat",
+      "fireeye-blog-tags:mir-1-4",
+      "fireeye-blog-tags:browser-forensics",
+      "fireeye-blog-tags:web-historian",
+      "fireeye-blog-tags:free-tools"
+    ],
+    "jcr:uuid": "007afaac-f480-4b4f-98dd-055f71610571",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Wed Jun 16 2010 12:35:03 GMT-0500",
+    "_charset_": "UTF-8",
+    "cq:lastModifiedBy": "admin",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "admin",
+        "text": "\u003Cdiv class=\u0022c00 c00v1\u0022\u003E\u003Cp\u003EWe\u0027ve been busy here on team agent at MANDIANT.  In the spirit of our long-standing support of free software in the Incident Response community, we are happy to announce the release of \u003Cstrong\u003EWeb Historian 2.0\u003C\/strong\u003E.  This release is a complete rewrite and revamp of our very popular web history extraction tool.  This version of Web Historian comes packed with features and supports Firefox 2\/3+, Chrome 3+, and Internet Explorer versions 5 through 8.  Here is a quick run-down of some of the new features:\u003C\/p\u003E \u003Cul\u003E\u003Cli\u003ECollects web history, cookie history, file download history, and form history into data sets\u003C\/li\u003E\u003Cli\u003ESimple\/powerful UI based on tabbed organization of datasets\u003C\/li\u003E\u003Cli\u003EPerform a live artifact scan of the local system\u003C\/li\u003E\u003Cli\u003EPerform an artifact scan of one or more arbitrary history files from all supported browsers\u003C\/li\u003E\u003Cli\u003EImport results from existing XML scan documents\u003C\/li\u003E\u003Cli\u003EData displayed in gridview style with full search, sort, and filter capabilities\u003C\/li\u003E\u003Cli\u003ECustom filters can be created and applied to one or more data sets\u003C\/li\u003E\u003Cli\u003EExport data sets to XML, HTML or CSV\u003C\/li\u003E\u003Cli\u003EExtract and export history files used in live artifact scan\u003C\/li\u003E\u003Cli\u003EQuick copy\/paste selected gridview rows to clipboard\u003C\/li\u003E\u003Cli\u003ECustomizable scan settings can tweak the scan to target specific browsers and data sets\u003C\/li\u003E\u003Cli\u003ERight-click context menu for narrowing gridview data instantly\u003C\/li\u003E\u003Cli\u003ESelect which columns to display in each dataset\u003C\/li\u003E\u003Cli\u003EView page thumbnails and indexed content\u003C\/li\u003E\u003Cli\u003EExport sanitized version of history results to distribute to others\u003C\/li\u003E\u003Cli\u003EWebsite Analyzer provides visualization of datasets using bar graphs, pie charts and timelines\u003C\/li\u003E\u003Cli\u003EWebsite Profiler shows a quick \u0022report card\u0022 of artifacts for various websites\u003C\/li\u003E\u003C\/ul\u003E\u003Cp\u003EThe custom filters mentioned above are extremely useful for narrowing the scope of your web history investigation. Web Historian ships with several pre-defined filters that allow you to quickly cull through large web history data sets.  For example, you can instantly filter the web history data by visit type to only show hidden page views caused by ads; or, filter the file download history data to only show downloaded media (movies, images, etc.), PDF\u0027s, or plain text files.  You can easily create your own filters using the filter editor and configure Web Historian to automatically save any of your searches as filters.  Finally, more filters are accessible with a simple right-click on any web history item.\u003C\/p\u003E \u003Cp\u003EAlso new in Web Historian 2.0 are the \u003Cstrong\u003EWebsite Analyzer\u003C\/strong\u003E and \u003Cstrong\u003EWebsite Profiler \u003C\/strong\u003Efeatures.  The Website Analyzer allows you to visualize web history data (rather than scrolling through pages of records) and generate useful bar graphs, pie charts and timeline plots that can be used in an external report.  The Website Profiler generates a quick \u0022report card\u0022 summary of any domain in your web history data, showing all artifacts created on your system when it was visited (page titles, cookies, cached files, form data, etc).  This feature allows you to get a quick impression of how a site behaves.  The screenshot below shows the profile of CNN.com:\u003C\/p\u003E \u003Cp\u003E\u003Cspan style=\u0022text-align: center;\u0022\u003E\u003Ca href=\u0022https:\/\/www.fireeye.com\/content\/dam\/legacy\/ammo\/wh_screenshot1.png\u0022\u003E\u003Cimg class=\u0022size-full wp-image-1083 aligncenter\u0022 alt=\u0022\u0022 src=\u0022https:\/\/www.fireeye.com\/content\/dam\/legacy\/ammo\/wh_screenshot1.png\u0022 width=\u0022661\u0022 height=\u0022422\u0022 \/\u003E\u003C\/a\u003E\u003C\/span\u003E\u003C\/p\u003E \u003Cp\u003EWe hope you enjoy the new features in this release of Web Historian. As usual, if you have any questions, comments or feedback, please head on over to the \u003Ca href=\u0022https:\/\/community.fireeye.com\/welcome\u0022 target=\u0022_blank\u0022\u003Euser forum\u003C\/a\u003E.\u003C\/p\u003E \u003Cp\u003EStay tuned for even more exciting features coming soon!  If you would like a demo or talk to me about features, I will be at Blackhat USA in Las Vegas this summer and hope to be accepted to demo Web Historian 2.0 at \u003Ca href=\u0022http:\/\/www.blackhat.com\/html\/bh-us-10\/bh-us-10-specialevents_arsenal.html\u0022 target=\u0022_blank\u0022\u003EBlackhat Arsenal\u003C\/a\u003E.  And finally, don\u0027t miss out on our memory forensics training at Blackhat:  \u003Ca href=\u0022http:\/\/www.blackhat.com\/html\/bh-us-10\/training\/bh-us-10-training_jb-mf.html\u0022 target=\u0022_blank\u0022\u003EAdvanced Memory Forensics in Incident Response\u003C\/a\u003E.\u003C\/p\u003E \u003C\/div\u003E",
+        "jcr:lastModified": "Wed Jun 16 2010 12:35:03 GMT-0500",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "alt": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "comments": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/commons\/components\/comments"
+      },
+      "trackback": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/blog\/components\/trackback"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "admin",
+      "text": "\u003Cp\u003EWe\u0027ve been busy here on team agent at MANDIANT.  In the spirit of our long-standing support of free software in the Incident Response community, we are happy to announce the release of \u003Cstrong\u003EWeb Historian 2.0\u003C\/strong\u003E.  This release is a complete rewrite and revamp of our very popular web history extraction tool.  This version of Web Historian comes packed with features and supports Firefox 2\/3+, Chrome 3+, and Internet Explorer versions 5 through 8.  Here is a quick run-down of some of the new features:\u003C\/p\u003E ",
+      "jcr:lastModified": "Wed Jun 16 2010 12:35:03 GMT-0500",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    }
+  }
+}

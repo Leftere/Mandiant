@@ -1,0 +1,78 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Fri Oct 13 2017 20:00:20 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "2017 Flare-On Challenge Solutions",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "23a164e9-58c8-4ee4-a476-421a86e35497",
+    "author": "Nick Harbour",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "adam.greenberg@fireeye.com",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "84e6de2c-8d7a-49ed-bd2f-4370d1212d85"
+    ],
+    "jcr:created": "Wed Oct 18 2017 18:22:22 GMT-0400",
+    "cq:lastReplicated": "Wed Oct 18 2017 18:22:21 GMT-0400",
+    "cq:lastModified": "Wed Oct 18 2017 18:22:01 GMT-0400",
+    "cq:distribute": true,
+    "jcr:baseVersion": "84e6de2c-8d7a-49ed-bd2f-4370d1212d85",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-tags:malware-analysis",
+      "fireeye-blog-tags:FLARE",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-authors:cap-nick-harbour",
+      "fireeye-doctypes:blog",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest"
+    ],
+    "jcr:uuid": "dda948eb-ec4e-4ddb-80a0-b25fcba4c7ca",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Fri Oct 13 2017 17:00:00 GMT-0400",
+    "_charset_": "UTF-8",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EAnother year, another successful Flare-On Challenge. I\u2019d first like to thank our challenge authors for their hard work developing each of the challenges, and also for writing up their solutions:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EChallenge #1: Dominik Weber (@Invalid_handle)\u003C\/li\u003E\n\u003Cli\u003EChallenge #2: Nhan Huynh\u003C\/li\u003E\n\u003Cli\u003EChallenge #3: Matt Williams (@0xmwilliams)\u003C\/li\u003E\n\u003Cli\u003EChallenge #4: James T. Bennett (@jtbennettjr)\u003C\/li\u003E\n\u003Cli\u003EChallenge #5: Tyler Dean (@spresec)\u003C\/li\u003E\n\u003Cli\u003EChallenge #6: Jon Erickson (@2130706433)\u003C\/li\u003E\n\u003Cli\u003EChallenge #7: Michael Bailey (@mykill)\u003C\/li\u003E\n\u003Cli\u003EChallenge #8: Moritz Raabe (@m_r_tz)\u003C\/li\u003E\n\u003Cli\u003EChallenge #9: Joshua Homan\u003C\/li\u003E\n\u003Cli\u003EChallenge #10: Dominik Weber (@Invalid_handle)\u003C\/li\u003E\n\u003Cli\u003EChallenge #11: Nick Harbour (@nickharbour)\u003C\/li\u003E\n\u003Cli\u003EChallenge #12: Jay Smith (@jay_smif)\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EOur popularity and participation continued to swell, with a 57 percent increase in total players (3240) and a 304 percent increase in the number of players who solved at least one challenge (2617) over last year. The overall difficulty also appears to have increased this year, with only 4.3 percent of players (140 total) completing the challenge, a decrease from the 6 percent who completed \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/threat-research\/2016\/11\/2016_flare-on_challe.html\u0022\u003Elast year\u2019s challenge\u003C\/a\u003E.\u003C\/p\u003E\n\u003Cp\u003EThe following graph shows the total number of players who solved each stage of the challenge:\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/Flare-On%202017%20solutions\/2017_stats.png\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003EThe 140+ players who completed the challenge will have their names forever listed on our hall of fame, and they will receive a prize. The prize this year is this massive Flare pin that measures nearly 4 inches across:\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/Flare-On%202017%20solutions\/Fig1.jpeg\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003EThis pin is a great item to sport on your backpack or affix to your lanyard. The above is a mock-up from the manufacturer \u2013 we expect to receive them in the next few weeks and will begin shipping them to the winners soon after.\u003C\/p\u003E\n\u003Cp\u003EAll the binaries from this year\u2019s challenge are now posted on the \u003Ca adhocenable=\u0022false\u0022 href=\u0022http:\/\/flare-on.com\/files\/Flare-On4_Challenges.zip\u0022\u003EFlare-On website\u003C\/a\u003E\u00a0(password: flare), and here are the solutions written by each challenge author:\u003C\/p\u003E\n\u003Col\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/dam\/fireeye-www\/global\/en\/blog\/threat-research\/Flare-On%202017\/Challenge1.pdf\u0022\u003ESOLUTION #1\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/dam\/fireeye-www\/global\/en\/blog\/threat-research\/Flare-On%202017\/Challenge2.pdf\u0022\u003ESOLUTION #2\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/dam\/fireeye-www\/global\/en\/blog\/threat-research\/Flare-On%202017\/Challenge%20%233%20solution.pdf\u0022\u003ESOLUTION #3\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/dam\/fireeye-www\/global\/en\/blog\/threat-research\/Flare-On%202017\/Challenge4.pdf\u0022\u003ESOLUTION #4\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/dam\/fireeye-www\/global\/en\/blog\/threat-research\/Flare-On%202017\/Challenge5.pdf\u0022\u003ESOLUTION #5\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/dam\/fireeye-www\/global\/en\/blog\/threat-research\/Flare-On%202017\/Challenge6.pdf\u0022\u003ESOLUTION #6\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/dam\/fireeye-www\/global\/en\/blog\/threat-research\/Flare-On%202017\/Challenge7.pdf\u0022\u003ESOLUTION #7\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/dam\/fireeye-www\/global\/en\/blog\/threat-research\/Flare-On%202017\/Challenge8.pdf\u0022\u003ESOLUTION #8\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/dam\/fireeye-www\/global\/en\/blog\/threat-research\/Flare-On%202017\/Challenge9.pdf\u0022\u003ESOLUTION #9\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/dam\/fireeye-www\/global\/en\/blog\/threat-research\/Flare-On%202017\/Challenge10.pdf\u0022\u003ESOLUTION #10\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/dam\/fireeye-www\/global\/en\/blog\/threat-research\/Flare-On%202017\/Challenge11.pdf\u0022\u003ESOLUTION #11\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/dam\/fireeye-www\/global\/en\/blog\/threat-research\/Flare-On%202017\/Challenge12.pdf\u0022\u003ESOLUTION #12\u003C\/a\u003E\u003C\/li\u003E\n\u003C\/ol\u003E\n",
+        "jcr:lastModified": "Wed Oct 18 2017 18:22:01 GMT-0400",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "alt": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "comments": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/commons\/components\/comments"
+      },
+      "trackback": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/blog\/components\/trackback"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EThe 2017 Flare-On Challenge has ended, now come check out the solutions.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Thu Oct 12 2017 13:24:23 GMT-0400",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Thu Oct 12 2017 13:25:03 GMT-0400",
+      "imageRotate": "0"
+    }
+  }
+}

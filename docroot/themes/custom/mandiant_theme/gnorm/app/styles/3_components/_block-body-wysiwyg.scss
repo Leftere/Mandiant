@@ -1,0 +1,107 @@
+.resource-body {
+  max-width: 66rem;
+
+  @include breakpoint(max-width 450px) {
+    code {
+      font-size: 10px;
+    }
+  }
+
+  h2 {
+    @include font-size(30, 40);
+    font-weight: 500;
+  }
+
+  h3 {
+    @include font-size(18, 22);
+    font-weight: 600;
+  }
+
+  h4 {
+    @include font-size(16, 22);
+    font-weight: 700;
+  }
+
+  p {
+    @include font-size(16, 22);
+    color: palette(black, med);
+    font-weight: 400;
+
+    a {
+      color: palette(red, base);
+      font-weight: 600;
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    color: palette(black, med);
+    font-weight: 400;
+  }
+
+  li {
+    margin: 0 0 1em 0;
+
+    a {
+      color: palette(red, base);
+      font-weight: 600;
+      text-decoration: underline;
+    }
+  }
+
+  table {
+    background-color: #fff;
+    border-collapse: collapse;
+    box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, .25);
+    display: block;
+    margin: 2rem auto;
+    max-width: 100%;
+    overflow-x: auto;
+    table-layout: fixed;
+    text-align: center;
+    width: fit-content;
+
+    th {
+      @include font-size(14);
+      background-color: rgba(0, 0, 0, .25);
+      font-weight: 500;
+      padding: .5rem;
+      text-align: center;
+    }
+
+    td {
+      @include font-size(14);
+      border: 1px solid $black;
+      min-width: 20rem;
+      padding: .5rem;
+      text-align: left;
+
+      p {
+        @include font-size(14);
+        line-height: 1.2;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.resource {
+  background-color: #f3f3f8;
+
+  .layout--twocol-section {
+    @include container($desktop);
+    padding-bottom: 4.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 4.5rem;
+
+    @include breakpoint($desktop) {
+      padding-bottom: 9rem;
+      padding-top: 9rem;
+    }
+
+    .layout__region--first {
+      width: 100%;
+    }
+  }
+}

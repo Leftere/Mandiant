@@ -1,0 +1,28 @@
+uuid: 2c563822-14bd-49b9-9a0e-24d7bce3212c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card
+    - field.storage.block_content.field_alternative
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: '0'
+    restricted_html: '0'
+    full_html: '0'
+    plain_text: '0'
+id: block_content.card.field_alternative
+field_name: field_alternative
+entity_type: block_content
+bundle: card
+label: Alternative
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

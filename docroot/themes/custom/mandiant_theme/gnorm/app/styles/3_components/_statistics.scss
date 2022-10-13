@@ -1,0 +1,56 @@
+.statistics--columns {
+  padding: 5rem 0;
+  text-align: center;
+
+  @include breakpoint($large-tablet) {
+    padding: 9rem 0;
+  }
+
+  > .wrapper {
+    @include container($desktop);
+  }
+
+  .block-bundle-statistic {
+    padding: 1rem;
+  }
+
+  .column {
+    max-width: 350px;
+
+    .layout--twocol-section {
+      min-height: auto;
+    }
+
+    .layout__region {
+      flex: auto;
+      max-width: 100%;
+      padding: 0;
+
+      h2 {
+        @include font-size(30, 34);
+        font-weight: 300;
+      }
+
+      p {
+        @include font-size(16, 24);
+      }
+
+      .body-text {
+        max-width: 100%;
+        padding: 0;
+      }
+
+      .eyebrow {
+        span {
+          @include font-size(74, 44);
+          color: $charcoal;
+          font-weight: 400;
+
+          .fonts-loaded & {
+            font-family: $mono;
+          }
+        }
+      }
+    }
+  }
+}

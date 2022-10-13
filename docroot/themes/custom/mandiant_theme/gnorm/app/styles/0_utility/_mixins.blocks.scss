@@ -1,0 +1,48 @@
+/*
+ * Since all custom drupal blocks keeps a consistent field naming and
+ * configuration, this mixin shares common styles for all of them as a
+ * controller to switch between component grid, types and variants.
+ */
+@mixin make-custom-block($type: "article", $grid-gap: 3rem) {
+  @include container($desktop);
+  padding: 3rem $spacing-unit;
+
+  /* to-be-removed: this needs to be editable */
+  > .eyebrow,
+  > .devider,
+  > p {
+    text-align: center;
+  }
+
+  > h2 {
+    @include font-size(26, 28);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  > h3 {
+    @include font-size(30, 34);
+    color: $black;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .cols {
+    @include anchor-column-grid($grid-gap);
+
+    @if $type == bio {
+      @include anchor-column-grid-alter-bios();
+    }
+
+    > a {
+      @if $type == page {
+        @include card-page();
+      } @else if $type == article {
+        @include card-article();
+      } @else if $type == bio {
+        @include card-bio();
+      }
+    }
+  }
+}

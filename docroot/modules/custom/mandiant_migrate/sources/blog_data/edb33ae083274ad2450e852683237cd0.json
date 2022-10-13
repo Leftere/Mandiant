@@ -1,0 +1,83 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Thu Apr 06 2017 14:56:59 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "APT10 (MenuPass Group): New Tools, Global Campaign Latest Manifestation of Longstanding Threat",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "a0e6ccc5-317e-41bd-8ad4-23ca0ef5aa14",
+    "author": "FireEye iSIGHT Intelligence",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "lynda.hall@fireeye.com",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "bb5b3479-90b4-48f0-91b3-7d9d2c61f693"
+    ],
+    "jcr:created": "Tue Apr 11 2017 14:03:08 GMT-0400",
+    "cq:lastReplicated": "Tue Apr 11 2017 14:03:08 GMT-0400",
+    "cq:lastModified": "Tue Apr 11 2017 14:02:50 GMT-0400",
+    "cq:distribute": true,
+    "jcr:baseVersion": "bb5b3479-90b4-48f0-91b3-7d9d2c61f693",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-tags:backdoor",
+      "fireeye-blog-tags:spear-phishing",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-threat-research:threat-research\/threat-intelligence",
+      "fireeye-blog-authors:fireeye-isight-intelligence",
+      "fireeye-blog-tags:apt",
+      "fireeye-doctypes:blog",
+      "fireeye-blog-threat-research:threat-research\/targeted-attack",
+      "fireeye-blog-threat-research:threat-research\/malware-research",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:malware",
+      "fireeye-blog-tags:homepage-carousel"
+    ],
+    "jcr:uuid": "6758a2ff-6480-4e3b-91cd-5c87c78e7814",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Thu Apr 06 2017 12:00:00 GMT-0700",
+    "_charset_": "UTF-8",
+    "cq:lastModifiedBy": "lynda.hall@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Ch4\u003EAPT10 Background\u003C\/h4\u003E\n\u003Cp\u003EAPT10 (MenuPass Group) is a Chinese cyber espionage group that FireEye has tracked since 2009. They have historically targeted construction and engineering, aerospace, and telecom firms, and governments in the United States, Europe, and Japan. We believe that the targeting of these industries has been in support of Chinese national security goals, including acquiring valuable military and intelligence information as well as the theft of confidential business data to support Chinese corporations. PwC and BAE recently issued a \u003Ca href=\u0022http:\/\/baesystemsai.blogspot.com\/2017\/04\/apt10-operation-cloud-hopper_3.html\u0022\u003Ejoint blog\u003C\/a\u003E detailing extensive APT10 activity.\u003C\/p\u003E\n\u003Ch4\u003EAPT10\u2019s Resurgence\u003C\/h4\u003E\n\u003Cp\u003EIn June 2016, FireEye iSIGHT intelligence first reported that APT10 expanded their operations. The group was initially detected targeting a Japanese university, and more widespread targeting in Japan was subsequently uncovered. Further collaboration between FireEye as a Service (FaaS), Mandiant and FireEye iSIGHT intelligence uncovered additional victims worldwide, a new suite of tools and novel techniques.\u003C\/p\u003E\n\u003Ch4\u003EGlobal Targeting Using New Tools\u003C\/h4\u003E\n\u003Cp\u003ELeveraging its global footprint, FireEye has detected APT10 activity across six continents in 2016 and 2017. APT10 has targeted or compromised manufacturing companies in India, Japan and Northern Europe; a mining company in South America; and multiple IT service providers worldwide. We believe these companies are a mix of final targets and organizations that could provide a foothold in a final target.\u003C\/p\u003E\n\u003Cp\u003EAPT10 unveiled new tools in its 2016\/2017 activity. In addition to the continued use of SOGU, the current wave of intrusions has involved new tools we believe are unique to APT10. HAYMAKER and SNUGRIDE have been used as first stage backdoors, while BUGJUICE and a customized version of the open source QUASARRAT have been used as second stage backdoors. These new pieces of malware show that APT10 is devoting resources to capability development and innovation.\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EHAYMAKER is a backdoor that can download and execute additional payloads in the form of modules. It also conducts basic victim profiling activity, collecting the computer name, running process IDs, %TEMP% directory path and version of Internet Explorer. It communicates encoded system information to a single hard coded command and control (C2) server, using the system\u2019s default User-Agent string.\u003C\/li\u003E\n\u003Cli\u003EBUGJUICE is a backdoor that is executed by launching a benign file and then \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/threat-research\/2010\/07\/malware-persistence-windows-registry.html\u0022\u003Ehijacking the search order\u003C\/a\u003E to load a malicious dll into it. That malicious dll then loads encrypted shellcode from the binary, which is decrypted and runs the final BUGJUICE payload. BUGJUICE defaults to TCP using a custom binary protocol to communicate with the C2, but can also use HTTP and HTTPs if directed by the C2. It has the capability to find files, enumerate drives, exfiltrate data, take screenshots and provide a reverse shell.\u003C\/li\u003E\n\u003Cli\u003ESNUGRIDE is a backdoor that communicates with its C2 server through HTTP requests. Messages are encrypted using AES with a static key. The malware\u2019s capabilities include taking a system survey, access to the filesystem, executing commands and a reverse shell. Persistence is maintained through a Run registry key.\u003C\/li\u003E\n\u003Cli\u003EQUASARRAT is an open-source RAT available \u003Ca href=\u0022https:\/\/github.com\/quasar\/QuasarRat\u0022\u003Ehere\u003C\/a\u003E. The versions used by APT10 (1.3.4.0, 2.0.0.0, and 2.0.0.1) are not available via the public GitHub page, indicating that APT10 has further customized the open source version. The 2.0 versions require a dropper to decipher and launch the AES encrypted QUASARRAT payload. QUASARRAT is a fully functional .NET backdoor that has been used by multiple cyber espionage groups in the past.\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Ch4\u003ETraditional and Novel Methods\u003C\/h4\u003E\n\u003Cp\u003EThis recent APT10 activity has included both traditional spear phishing and access to victim\u2019s networks through service providers. (For more information on infection via service providers see \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/executive-perspective\/2016\/02\/m-trends_2016.html\u0022\u003EM-Trends 2016\u003C\/a\u003E). APT10 spear phishes have been relatively unsophisticated, leveraging .lnk files within archives, files with double extensions (e.g. \u201c[Redacted]_Group_Meeting_Document_20170222_doc_.exe) and in some cases simply identically named decoy documents and malicious launchers within the same archive.\u003C\/p\u003E\n\u003Cp\u003EIn addition to the spear phishes, FireEye ISIGHT Intelligence has observed APT10 accessing victims through global service providers. Service providers have significant access to customer networks, enabling an attacker who had compromised a service provider to move laterally into the network of the service provider\u2019s customer. In addition, web traffic between a service provider\u2019s customer and a service provider is likely to be viewed as benign by network defenders at the customer, allowing the attacker to exfiltrate data stealthily. A notable instance of this observed by FireEye involved a SOGU backdoor that was set to communicate with its C2 through a server belonging to the victim\u2019s service provider.\u003C\/p\u003E\n\u003Cp\u003EAPT10 actors issued the following commands to a SOGU implant at a victim:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003Esc create CorWrTool binPath= \u0026quot;\\\u0026quot;C:\\Windows\\vss\\vixDiskMountServer.exe\\\u0026quot;\u0026quot; start= auto displayname= \u0026quot;Corel Writing Tools Utility\u0026quot; type= own\u003C\/li\u003E\n\u003Cli\u003Esc description CorWrTool \u0026quot;Corel Graphics Corporation Applications.\u0026quot;\u003C\/li\u003E\n\u003Cli\u003Eping -a [Redacted]\u003C\/li\u003E\n\u003Cli\u003Epsexec.exe \u0026lt;orghost\u0026gt; d.exe\u003C\/li\u003E\n\u003Cli\u003Enet view \/domain:[Redacted]\u003C\/li\u003E\n\u003Cli\u003Eproxyconnect - \u0026quot;port\u0026quot;: 3389, \u0026quot;server\u0026quot;: \u0026quot;[IP Address Redacted]\u0026quot;\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EThese commands included setting persistence on the victim\u2019s system. The actor then tested connectivity to an IP managed by the victim\u2019s service provider. Once connectivity to the service provider IP was verified, the actor established the service provider IP as a proxy for the victim\u2019s SOGU backdoor. This effectively routes SOGU malware traffic through the victim\u2019s service provider, which likely indicates a foothold on the service provider\u2019s network. The tactic also serves to mask malicious C2 and exfiltration traffic and make it appear innocuous.\u003C\/p\u003E\n\u003Ch4\u003EImplications\u003C\/h4\u003E\n\u003Cp\u003EAPT10 is a threat to organizations worldwide. Their abuse of access to service provider networks demonstrates that peripheral organizations continue to be of interest to a malicious actor \u2013 especially those seeking alternative angles of attack. We believe the pace of APT10 operations may slow following the public disclosure by the \u003Ca href=\u0022http:\/\/baesystemsai.blogspot.com\/2017\/04\/apt10-operation-cloud-hopper_3.html\u0022\u003EPwC\/BAE blog\u003C\/a\u003E; however, we believe they will return to their large-scale operations, potentially employing new tactics, techniques and procedures.\u0026nbsp;\u003C\/p\u003E\n",
+        "jcr:lastModified": "Thu Apr 06 2017 23:45:58 GMT-0400",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "alt": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "comments": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/commons\/components\/comments"
+      },
+      "trackback": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/blog\/components\/trackback"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EAPT10 (MenuPass Group), a Chinese cyber espionage group that FireEye has tracked since 2009, has been using new tools in its most recent activity.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Thu Apr 06 2017 14:45:58 GMT-0400",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "lynda.hall@fireeye.com",
+      "jcr:lastModified": "Tue Apr 11 2017 14:02:50 GMT-0400",
+      "imageRotate": "0"
+    }
+  }
+}

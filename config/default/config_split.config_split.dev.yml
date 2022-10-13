@@ -1,0 +1,22 @@
+uuid: feddb83e-04c3-4323-a882-cc5948a000f8
+langcode: en
+status: false
+dependencies: {  }
+id: dev
+label: Dev
+description: ''
+folder: ../config/envs/dev
+module:
+  syslog: 0
+theme: {  }
+blacklist: {  }
+graylist:
+  - acquia_connector.settings
+  - acquia_search.settings
+  - miniorange_saml.settings
+  - system.performance
+  - system.site
+  - tmgmt.translator.globallink
+graylist_dependents: false
+graylist_skip_equal: true
+weight: 1

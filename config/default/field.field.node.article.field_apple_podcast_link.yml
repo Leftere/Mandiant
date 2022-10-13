@@ -1,0 +1,19 @@
+uuid: d1e37748-a739-4a0d-9bad-8f2b5c63c1f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_apple_podcast_link
+    - node.type.article
+id: node.article.field_apple_podcast_link
+field_name: field_apple_podcast_link
+entity_type: node
+bundle: article
+label: 'Apple Podcast Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

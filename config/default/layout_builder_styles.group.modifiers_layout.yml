@@ -1,0 +1,10 @@
+uuid: ccef49df-f1eb-4f12-8b0c-bfa6301d8140
+langcode: en
+status: true
+dependencies: {  }
+id: modifiers_layout
+label: 'Layout modifiers'
+multiselect: multiple
+form_type: checkboxes
+required: 0
+weight: 0

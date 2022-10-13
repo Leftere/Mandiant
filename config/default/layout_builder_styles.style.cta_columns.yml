@@ -1,0 +1,15 @@
+uuid: b5a2ce9a-a0a0-42aa-9c4e-9ba9e393f723
+langcode: en
+status: true
+dependencies: {  }
+id: cta_columns
+label: 'Columns (CTA)'
+classes: cta-columns
+type: section
+group: modifiers_layout
+weight: 4
+block_restrictions: {  }
+layout_restrictions:
+  - layout_twocol_section
+  - layout_threecol_section
+  - layout_fourcol_section

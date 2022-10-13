@@ -1,0 +1,22 @@
+uuid: ba1ee63a-3f84-4e8d-a420-ffc4e45ec433
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.bio
+id: node.bio.status
+field_name: status
+entity_type: node
+bundle: bio
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

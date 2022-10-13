@@ -1,0 +1,8 @@
+uuid: 65dc7a0c-5cf2-4c1a-a7c5-08f1ae01ea11
+langcode: en
+status: true
+dependencies: {  }
+id: metatag_social_sharing_image
+label: 'Meta Tag Social Sharing Image'
+fieldset: 'Meta Tag Social Sharing Image'
+multiple: false

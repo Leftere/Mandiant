@@ -1,0 +1,23 @@
+<section class="large-image-cta">
+  <div class="large-image-cta__inner">
+    {% if image %}
+      <div class="large-image-cta__image">
+        <img src="{{ image.src }}" alt="{{ image.alt }}"/>
+      </div>
+    {% endif %}
+
+    <div class="large-image-cta__content">
+    {% if title %}
+      <h2>{{ title }}</h2>
+    {% endif %}
+
+    {% if description %}
+      {{ description }}
+    {% endif %}
+
+    {% if cta %}
+      <div class="cta-button"><a href="{{ cta.url }}" tabindex="-1" draggable="false">{{ cta.label }}</a></div>
+    {% endif %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,13 @@
+uuid: eb75c769-f260-4656-923e-e7fcffb7327a
+langcode: en
+status: true
+dependencies: {  }
+id: product_title
+label: 'Product title'
+classes: product-title
+type: component
+group: add_ons
+weight: -12
+block_restrictions:
+  - 'inline_block:text'
+layout_restrictions: {  }

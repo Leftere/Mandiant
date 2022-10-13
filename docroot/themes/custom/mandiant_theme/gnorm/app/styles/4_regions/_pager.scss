@@ -1,0 +1,51 @@
+.pager {
+  background: #dcdce2;
+  padding: 1rem;
+
+  &__inner {
+    @include container($desktop);
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
+  }
+
+  &__items {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  &__item {
+    @include font-size(14, 14);
+    display: none;
+    margin: 0 .5rem;
+
+    @include breakpoint($tablet) {
+      display: inline-block;
+    }
+
+    &--first,
+    &--previous,
+    &--next,
+    &--last {
+      display: inline-block;
+    }
+
+    a {
+      display: inline-block;
+      padding: 1rem;
+    }
+
+    &.is-active {
+      a {
+        background: $red;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
+        color: $white;
+        white-space: nowrap;
+      }
+    }
+  }
+}

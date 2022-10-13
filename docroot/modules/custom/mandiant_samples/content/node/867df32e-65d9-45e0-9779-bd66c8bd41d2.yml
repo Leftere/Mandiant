@@ -1,0 +1,208 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 867df32e-65d9-45e0-9779-bd66c8bd41d2
+  bundle: page
+  default_langcode: en
+  depends:
+    76142c52-522d-4fd1-aa68-da16dde771e8: user
+    21b2b57f-8a74-4ecf-bdc9-7612e5ee03e5: block_content
+    87f2eada-e572-45f2-804a-d7e93a26e743: block_content
+    b7344cfb-8564-46fd-8f87-1edf8c1c1615: block_content
+    352a6d3d-94f5-4640-b918-529a5d19f72e: block_content
+    a9b33d46-82e0-4393-8788-5b80591f834d: block_content
+    5401b851-1417-4cae-9e41-bf91126207cf: block_content
+    042dc07c-36d0-4f99-b56a-d6e195c1dcbf: block_content
+default:
+  revision_uid:
+    -
+      entity: 76142c52-522d-4fd1-aa68-da16dde771e8
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 76142c52-522d-4fd1-aa68-da16dde771e8
+  title:
+    -
+      value: Sample - Homepage
+  created:
+    -
+      value: 1626907215
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /samples/homepage
+      langcode: en
+      pathauto: 0
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  layout_builder__layout:
+    -
+      section:
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          2c1fdb1a-c7ed-41a4-a4bf-5dc6b46961e3:
+            uuid: 2c1fdb1a-c7ed-41a4-a4bf-5dc6b46961e3
+            region: content
+            configuration:
+              id: 'inline_block:hero'
+              label: 'Inline block'
+              provider: layout_builder
+              label_display: false
+              view_mode: full
+              block_revision_id: '36'
+              block_serialized: null
+              context_mapping: {  }
+            additional:
+              layout_builder_styles_style:
+                - tall
+              target_uuid: 21b2b57f-8a74-4ecf-bdc9-7612e5ee03e5
+            weight: 0
+        third_party_settings: {  }
+    -
+      section:
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          layout_builder_styles_style:
+            - centered
+          context_mapping: {  }
+        components:
+          b021eb9e-66c8-4cfa-870e-deb73453322e:
+            uuid: b021eb9e-66c8-4cfa-870e-deb73453322e
+            region: content
+            configuration:
+              id: 'inline_block:view'
+              label: 'Inline block'
+              provider: layout_builder
+              label_display: false
+              view_mode: full
+              block_revision_id: '111'
+              block_serialized: null
+              context_mapping: {  }
+            additional:
+              target_uuid: 87f2eada-e572-45f2-804a-d7e93a26e743
+            weight: 0
+        third_party_settings: {  }
+    -
+      section:
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          layout_builder_styles_style:
+            - shrink
+          context_mapping: {  }
+        components:
+          a11bd31e-cd6d-49d6-8227-152e791918c9:
+            uuid: a11bd31e-cd6d-49d6-8227-152e791918c9
+            region: content
+            configuration:
+              id: 'inline_block:cta'
+              label: 'Inline block'
+              provider: layout_builder
+              label_display: false
+              view_mode: full
+              block_revision_id: '151'
+              block_serialized: null
+              context_mapping: {  }
+            additional:
+              layout_builder_styles_style: {  }
+              target_uuid: b7344cfb-8564-46fd-8f87-1edf8c1c1615
+            weight: 0
+        third_party_settings: {  }
+    -
+      section:
+        layout_id: layout_threecol_section
+        layout_settings:
+          label: ''
+          column_widths: 33-34-33
+          layout_builder_styles_style:
+            - centered
+            - divider
+          context_mapping: {  }
+        components:
+          45658ab7-62e3-47d1-b65b-875d61c705ed:
+            uuid: 45658ab7-62e3-47d1-b65b-875d61c705ed
+            region: first
+            configuration:
+              id: 'inline_block:text'
+              label: 'Inline block'
+              provider: layout_builder
+              label_display: false
+              view_mode: full
+              block_revision_id: '156'
+              block_serialized: null
+              context_mapping: {  }
+            additional:
+              target_uuid: 352a6d3d-94f5-4640-b918-529a5d19f72e
+            weight: 0
+          3445466c-9b39-44e7-b72a-f8703cdbce1f:
+            uuid: 3445466c-9b39-44e7-b72a-f8703cdbce1f
+            region: second
+            configuration:
+              id: 'inline_block:text'
+              label: 'Inline block'
+              provider: layout_builder
+              label_display: false
+              view_mode: full
+              block_revision_id: '161'
+              block_serialized: null
+              context_mapping: {  }
+            additional:
+              target_uuid: a9b33d46-82e0-4393-8788-5b80591f834d
+            weight: 0
+          fb9f0413-4911-4625-ac0f-2b21816074d7:
+            uuid: fb9f0413-4911-4625-ac0f-2b21816074d7
+            region: third
+            configuration:
+              id: 'inline_block:text'
+              label: 'Inline block'
+              provider: layout_builder
+              label_display: false
+              view_mode: full
+              block_revision_id: '166'
+              block_serialized: null
+              context_mapping: {  }
+            additional:
+              target_uuid: 5401b851-1417-4cae-9e41-bf91126207cf
+            weight: 0
+        third_party_settings: {  }
+    -
+      section:
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          layout_builder_styles_style: {  }
+          context_mapping: {  }
+        components:
+          c2e42bf1-577b-4b93-bc74-abaea1ca60bf:
+            uuid: c2e42bf1-577b-4b93-bc74-abaea1ca60bf
+            region: content
+            configuration:
+              id: 'inline_block:view'
+              label: 'Inline block'
+              provider: layout_builder
+              label_display: false
+              view_mode: full
+              block_revision_id: '171'
+              block_serialized: null
+              context_mapping: {  }
+            additional:
+              target_uuid: 042dc07c-36d0-4f99-b56a-d6e195c1dcbf
+            weight: 0
+        third_party_settings: {  }

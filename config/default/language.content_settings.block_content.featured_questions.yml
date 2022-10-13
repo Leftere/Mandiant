@@ -1,0 +1,11 @@
+uuid: 2883b3a5-53b4-4918-a0fe-2b0ea49e477d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.featured_questions
+id: block_content.featured_questions
+target_entity_type_id: block_content
+target_bundle: featured_questions
+default_langcode: site_default
+language_alterable: false

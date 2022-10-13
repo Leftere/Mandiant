@@ -1,0 +1,28 @@
+uuid: d4209107-ed33-476b-9ab3-6038c97c733d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cta
+    - field.storage.block_content.field_block
+  module:
+    - block_field
+id: block_content.cta.field_block
+field_name: field_block
+entity_type: block_content
+bundle: cta
+label: Blocks
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      'block_content:e970f4ff-971f-47a4-bcac-357edaa192b5': 'block_content:e970f4ff-971f-47a4-bcac-357edaa192b5'
+      'block_content:7d375a6c-718e-40a5-8666-5f87eef1ed36': 'block_content:7d375a6c-718e-40a5-8666-5f87eef1ed36'
+      'block_content:fd1a5480-9e6c-4d4c-84e5-225003d76aad': 'block_content:fd1a5480-9e6c-4d4c-84e5-225003d76aad'
+      'block_content:d78bca8f-d137-41d7-9880-a71c33930c52': 'block_content:d78bca8f-d137-41d7-9880-a71c33930c52'
+field_type: block_field

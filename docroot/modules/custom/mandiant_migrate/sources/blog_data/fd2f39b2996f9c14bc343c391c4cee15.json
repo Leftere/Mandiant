@@ -1,0 +1,61 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Sat Oct 24 2020 00:00:40 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Flare-On 7 Challenge Solutions",
+    "jcr:versionHistory": "cb6a0bae-ae60-49ac-9cd4-88baf412caa7",
+    "author": "Nick Harbour",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "a7f1d373-db17-44fc-b467-0499a8bde144"
+    ],
+    "jcr:created": "Sat Oct 24 2020 00:00:40 GMT+0000",
+    "cq:lastModified": "Fri Oct 23 2020 18:39:42 GMT+0000",
+    "jcr:baseVersion": "a7f1d373-db17-44fc-b467-0499a8bde144",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:cap-nick-harbour",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:FLARE",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:malware",
+      "fireeye-blog-tags:reverse-engineering"
+    ],
+    "jcr:uuid": "08e82e96-7e84-4002-a74c-3c4d8f177390",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Fri Oct 23 2020 20:00:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EWe are thrilled to announce the conclusion of the seventh annual Flare-On challenge. This year proved to be the most difficult challenge we\u2019ve produced, with the lowest rate of finishers. This year\u2019s winners are truly the elite of the elite! Lucky for them, all 260 winners will receive this cyberpunk metal key.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/flareon7-solutions\/picture1.png\u0022 alt=\u0022\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003EWe would like to thank the challenge authors individually for their great puzzles and solutions:\u003C\/p\u003E\n\u003Col\u003E\n\u003Cli\u003Efidler \u2013 Nick Harbour (\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/twitter.com\/nickharbour\u0022\u003E@nickharbour\u003C\/a\u003E)\u003C\/li\u003E\n\u003Cli\u003Egarbage \u2013 Jon Erickson\u003C\/li\u003E\n\u003Cli\u003EWednesday \u2013 Blaine Stancill (\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/twitter.com\/MalwareMechanic\u0022\u003E@MalwareMechanic\u003C\/a\u003E)\u003C\/li\u003E\n\u003Cli\u003Ereport \u2013 Moritz Raabe (\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/twitter.com\/m_r_tz\u0022\u003E@m_r_tz\u003C\/a\u003E)\u003C\/li\u003E\n\u003Cli\u003ETKApp \u2013 Moritz Raabe (\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/twitter.com\/m_r_tz\u0022\u003E@m_r_tz\u003C\/a\u003E)\u003C\/li\u003E\n\u003Cli\u003ECodeIt \u2013 Mike Hunhoff (\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/twitter.com\/mehunhoff\u0022\u003E@mehunhoff\u003C\/a\u003E)\u003C\/li\u003E\n\u003Cli\u003Ere_crowd \u2013 Chris Gardner, Moritz Raabe, Blaine Stancill\u003C\/li\u003E\n\u003Cli\u003EAardvark \u2013 Jacob Thompson\u003C\/li\u003E\n\u003Cli\u003Ecrackinstaller \u2013 Paul Tarter (\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/twitter.com\/HefrPidge\u0022\u003E@Hefrpidge\u003C\/a\u003E)\u003C\/li\u003E\n\u003Cli\u003Ebreak \u2013 Chris Gardner\u003C\/li\u003E\n\u003Cli\u003ERabbit Hole \u2013 Sandor Nemes (\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/twitter.com\/sandornemes\u0022\u003E@sandornemes\u003C\/a\u003E)\u003C\/li\u003E\n\u003C\/ol\u003E\n\u003Cp\u003EThis year\u2019s Flare-On challenge was the first to feature a live public scoreboard, so players could track their progress and the progress of previous Flare-On challenge champions. Despite this increased data at your fingertips, we are still going to bring you even more stats. As of 11:00am ET, participation was near record setting levels at 5,648 players registered. 3,574 of those players finished at least one challenge.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/flareon7-solutions\/picture2.png\u0022 alt=\u0022\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003EThe U.S. reclaimed the top spot for total finishers with 22. Singapore was once again in second place, but in uncontested first place per capita, with one Flare-On finisher for every 296,000 living persons in Singapore. This is the first year we have included a per capita finishers by country chart, and we did it to highlight just what a remarkable concentration of talent exists in some corners of the world. Consistent top finisher Russia took third place, and\u0026nbsp;a growing player base in Germany and Israel came into full bloom this year, with those countries edging out other frequent top five countries such as China, India and Vietnam.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/flareon7-solutions\/picture3.png\u0022 alt=\u0022\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/flareon7-solutions\/picture4.png\u0022 alt=\u0022\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003EAll the binaries from this year\u2019s challenge are now posted on the \u003Ca href=\u0022http:\/\/flare-on.com\/files\/Flare-On7_Challenges.zip\u0022\u003EFlare-On website\u003C\/a\u003E. Here are the solutions written by each challenge author:\u003C\/p\u003E\n\u003Col\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/flareon7-challenge1-solution.pdf\u0022\u003ESOLUTION #1\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/flareon7-challenge2-solution.pdf\u0022\u003ESOLUTION #2\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/flareon7-challenge3-solution.pdf\u0022\u003ESOLUTION #3\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/flareon7-challenge4-solution.pdf\u0022\u003ESOLUTION #4\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/flareon7-challenge5-solution.pdf\u0022\u003ESOLUTION #5\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/flareon7-challenge6a-solution.pdf\u0022\u003ESOLUTION #6\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/flareon7-challenge7a-solution.pdf\u0022\u003ESOLUTION #7\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/flareon7-challenge8-solution.pdf\u0022\u003ESOLUTION #8\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/flareon7-challenge9-solution.pdf\u0022\u003ESOLUTION #9\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/flareon7-challenge10-solution.pdf\u0022\u003ESOLUTION #10\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/flareon7-challenge11-solution.pdf\u0022\u003ESOLUTION #11\u003C\/a\u003E\u003C\/li\u003E\n\u003C\/ol\u003E\n",
+        "jcr:lastModified": "Fri Oct 23 2020 18:39:42 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Fri Oct 23 2020 16:53:29 GMT+0000",
+      "imageRotate": "0"
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EThe Flare-On 7\u0026nbsp;challenge is over, now come check out the solutions and stats.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Fri Oct 23 2020 17:16:23 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    }
+  }
+}

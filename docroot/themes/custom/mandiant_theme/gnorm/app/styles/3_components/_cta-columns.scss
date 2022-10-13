@@ -1,0 +1,103 @@
+.cta-columns {
+  @extend %wrapper;
+
+  @include container($desktop);
+
+  .wrapper {
+    > .layout__region {
+      margin: .5rem;
+      max-width: 350px;
+
+      @include breakpoint($tablet) {
+        flex: 1 !important;
+      }
+    }
+  }
+
+  // Layout modifiers
+  &.negative-margin-bottom {
+    margin-bottom: -10rem !important;
+  }
+
+  ul {
+    font-weight: 600;
+    margin: $spacing-unit 0;
+    padding: $spacing-unit;
+
+    .center & {
+      margin: $spacing-unit auto 3rem;
+      width: 125px;
+    }
+
+    li {
+      @include font-size(14, 24);
+
+      a {
+        color: $red;
+        display: flex;
+        position: relative;
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        &:before {
+          background-color: #efeef4;
+          background-image: url('../images/download.svg');
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: 12px;
+          content: '';
+          height: 100%;
+          left: -28px;
+          position: absolute;
+          top: 0;
+          width: 20px;
+        }
+      }
+    }
+  }
+
+  .sub-title {
+    h2 {
+      @include font-size(24, 22);
+      font-weight: 600;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .block-bundle-cta {
+    @include breakpoint($large-tablet) {
+      padding: 4.5rem;
+    }
+
+    &.simple-cta {
+      background-color: transparent;
+      height: auto;
+      padding: 2rem;
+
+      @include breakpoint($desktop) {
+        padding: 2rem;
+      }
+
+      .layout__region--second {
+        width: 100%;
+      }
+
+      .cta-button {
+        display: inline-block;
+
+        a {
+          color: $black;
+          margin: 0;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+uuid: 0d9c4386-b5ff-4e57-abef-aba6da575fea
+langcode: en
+status: true
+dependencies: {  }
+id: small_image
+label: Small
+classes: small-image
+type: component
+group: modifiers_image
+weight: -4
+block_restrictions:
+  - 'inline_block:cta'
+layout_restrictions: {  }

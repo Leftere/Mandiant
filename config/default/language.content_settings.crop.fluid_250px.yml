@@ -1,0 +1,11 @@
+uuid: 19bceffc-af1a-42b7-8fbe-d6d1ba456c5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.fluid_250px
+id: crop.fluid_250px
+target_entity_type_id: crop
+target_bundle: fluid_250px
+default_langcode: site_default
+language_alterable: false

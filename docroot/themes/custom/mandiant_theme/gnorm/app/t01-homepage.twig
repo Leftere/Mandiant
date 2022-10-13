@@ -1,0 +1,26 @@
+{# t01-homepage.twig #}
+{% extends '@includes/1_core/layout.twig' %}
+
+{% block page %}
+  {# Homepage Hero #}
+  {% include "@includes/3_components/homepage-hero.twig" %}
+
+  {# Solution Cards #}
+  {% include "@includes/3_components/solution-cards.twig" with solutionCards %}
+
+  {# TODO: Large Image CTA (Advantage) #}
+  {% include "@includes/3_components/large-image-cta.twig" with largeImageCTA only %}
+
+  {# TODO: Mandiant Products and Solutions #}
+
+  {# Testimonial #}
+
+  {# Logos #}
+
+  {# Featured News (dark variant) #}
+
+  {# Related Thought Leadership #}
+
+  {# Contact CTA #}
+
+{% endblock %}

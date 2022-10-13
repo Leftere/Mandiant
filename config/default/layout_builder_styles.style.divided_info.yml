@@ -1,0 +1,14 @@
+uuid: 89fb94cd-f81f-4e55-9e39-a0ede9e91e60
+langcode: en
+status: true
+dependencies: {  }
+id: divided_info
+label: 'Divided Information'
+classes: divided-info
+type: component
+group: add_ons
+weight: 0
+block_restrictions:
+  - 'inline_block:view'
+  - 'inline_block:relationship'
+layout_restrictions: {  }

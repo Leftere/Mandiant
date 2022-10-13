@@ -1,0 +1,13 @@
+uuid: 939559ac-a2a2-4d81-ba54-a485eeb2cdbd
+langcode: en
+status: true
+dependencies: {  }
+id: padding_top_bottom_60
+label: 'Padding (top bottom)'
+classes: p-6
+type: component
+group: modifiers_style
+weight: 0
+block_restrictions:
+  - 'inline_block:to_be_removed'
+layout_restrictions: {  }

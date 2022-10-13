@@ -1,0 +1,651 @@
+uuid: a609e583-bbe1-4294-a2c6-babdddf1987b
+langcode: en
+status: true
+dependencies: {  }
+id: b1t2_mandiant_landing_page
+label: 'Batch 1 - T02  - Mandiant Landing'
+targetEntityType: node
+targetBundle: page
+layout:
+  -
+    layout_id: layout_onecol
+    layout_settings:
+      label: ''
+      layout_builder_styles_style:
+        0: ''
+        1: ''
+        intro_text: intro_text
+        block_plain_text: 0
+        component_intro: 0
+        negative_bottom_margin: 0
+        negative_top_margin: 0
+        related_thought_leadership: 0
+        section_product_services: 0
+        small_tile_section: 0
+        small_image_tile: 0
+      context_mapping: {  }
+    components:
+      96390289-9650-4e73-8b96-c5250da3f9eb:
+        uuid: 96390289-9650-4e73-8b96-c5250da3f9eb
+        region: content
+        configuration:
+          id: 'inline_block:hero'
+          label: 'Inline block'
+          provider: layout_builder
+          label_display: ''
+          view_mode: full
+          block_revision_id: null
+          block_serialized: "O:40:\"Drupal\\block_content\\Entity\\BlockContent\":30:{s:8:\"\0*\0theme\";N;s:9:\"\0*\0values\";a:30:{s:8:\"langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:2:\"en\";}}}s:11:\"revision_id\";a:1:{s:9:\"x-default\";a:0:{}}s:2:\"id\";a:1:{s:9:\"x-default\";a:0:{}}s:4:\"uuid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:36:\"6fa22fbd-964d-4ff2-829f-12af2492b765\";}}}s:4:\"type\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:4:\"hero\";}}}s:16:\"revision_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629674783;}}}s:13:\"revision_user\";a:1:{s:9:\"x-default\";a:0:{}}s:12:\"revision_log\";a:1:{s:9:\"x-default\";a:0:{}}s:6:\"status\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:4:\"info\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:12:\"Inline block\";}}}s:7:\"changed\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629674783;}}}s:8:\"reusable\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:16:\"default_langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:16:\"revision_default\";a:1:{s:9:\"x-default\";a:0:{}}s:29:\"revision_translation_affected\";a:1:{s:9:\"x-default\";a:0:{}}s:7:\"metatag\";a:1:{s:9:\"x-default\";a:0:{}}s:26:\"content_translation_source\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:3:\"und\";}}}s:28:\"content_translation_outdated\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:23:\"content_translation_uid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:1:\"1\";}}}s:27:\"content_translation_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629674783;}}}s:10:\"field_body\";a:1:{s:9:\"x-default\";a:1:{i:0;a:2:{s:5:\"value\";s:168:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>\r\n\";s:6:\"format\";s:10:\"basic_html\";}}}s:9:\"field_cta\";a:1:{s:9:\"x-default\";a:1:{i:0;a:4:{s:10:\"attributes\";a:0:{}s:3:\"uri\";s:10:\"internal:#\";s:5:\"title\";s:9:\"CTA Lorem\";s:7:\"options\";a:0:{}}}}s:13:\"field_eyebrow\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:18:\"Landing Page label\";}}}s:11:\"field_media\";a:1:{s:9:\"x-default\";a:0:{}}s:22:\"field_media_background\";a:1:{s:9:\"x-default\";a:1:{i:0;a:4:{s:13:\"remove_button\";O:48:\"Drupal\\Core\\StringTranslation\\TranslatableMarkup\":3:{s:9:\"\0*\0string\";s:6:\"Remove\";s:12:\"\0*\0arguments\";a:0:{}s:10:\"\0*\0options\";a:0:{}}s:11:\"edit_button\";O:48:\"Drupal\\Core\\StringTranslation\\TranslatableMarkup\":3:{s:9:\"\0*\0string\";s:4:\"Edit\";s:12:\"\0*\0arguments\";a:0:{}s:10:\"\0*\0options\";a:0:{}}s:6:\"weight\";i:0;s:9:\"target_id\";s:2:\"71\";}}}s:11:\"field_title\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:44:\"Main Landing Page Lorem Ipsum Dolor SIt Amet\";}}}s:11:\"field_block\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_embed\";a:1:{s:9:\"x-default\";a:0:{}}s:19:\"field_related_nodes\";a:1:{s:9:\"x-default\";a:0:{}}s:16:\"layout_selection\";a:1:{s:9:\"x-default\";a:0:{}}}s:9:\"\0*\0fields\";a:0:{}s:19:\"\0*\0fieldDefinitions\";N;s:12:\"\0*\0languages\";N;s:14:\"\0*\0langcodeKey\";s:8:\"langcode\";s:21:\"\0*\0defaultLangcodeKey\";s:16:\"default_langcode\";s:17:\"\0*\0activeLangcode\";s:9:\"x-default\";s:18:\"\0*\0defaultLangcode\";s:2:\"en\";s:15:\"\0*\0translations\";a:1:{s:9:\"x-default\";a:1:{s:6:\"status\";i:2;}}s:24:\"\0*\0translationInitialize\";b:0;s:14:\"\0*\0newRevision\";b:1;s:20:\"\0*\0isDefaultRevision\";b:1;s:13:\"\0*\0entityKeys\";a:3:{s:6:\"bundle\";s:4:\"hero\";s:8:\"revision\";N;s:2:\"id\";N;}s:25:\"\0*\0translatableEntityKeys\";a:1:{s:8:\"langcode\";a:1:{s:9:\"x-default\";s:2:\"en\";}}s:12:\"\0*\0validated\";b:1;s:21:\"\0*\0validationRequired\";b:0;s:19:\"\0*\0loadedRevisionId\";N;s:33:\"\0*\0revisionTranslationAffectedKey\";s:29:\"revision_translation_affected\";s:37:\"\0*\0enforceRevisionTranslationAffected\";a:0:{}s:15:\"\0*\0entityTypeId\";s:13:\"block_content\";s:15:\"\0*\0enforceIsNew\";b:1;s:12:\"\0*\0typedData\";N;s:16:\"\0*\0cacheContexts\";a:0:{}s:12:\"\0*\0cacheTags\";a:0:{}s:14:\"\0*\0cacheMaxAge\";i:-1;s:14:\"\0*\0_serviceIds\";a:0:{}s:18:\"\0*\0_entityStorages\";a:0:{}s:12:\"\0*\0isSyncing\";b:0;s:19:\"\0*\0accessDependency\";N;}"
+          context_mapping: {  }
+        additional:
+          layout_builder_styles_style:
+            hero_incident: 0
+            0: tall
+          layout_builder_id: ''
+        weight: 0
+      0d1ec9f4-fee8-4895-94ad-8d847e2371d4:
+        uuid: 0d1ec9f4-fee8-4895-94ad-8d847e2371d4
+        region: content
+        configuration:
+          id: 'inline_block:text'
+          label: 'Inline block'
+          provider: layout_builder
+          label_display: ''
+          view_mode: full
+          block_revision_id: null
+          block_serialized: "O:40:\"Drupal\\block_content\\Entity\\BlockContent\":30:{s:8:\"\0*\0theme\";N;s:9:\"\0*\0values\";a:23:{s:8:\"langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:2:\"en\";}}}s:11:\"revision_id\";a:1:{s:9:\"x-default\";a:0:{}}s:2:\"id\";a:1:{s:9:\"x-default\";a:0:{}}s:4:\"uuid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:36:\"9b15c3a6-d307-4737-b41f-ebd16a8a7cff\";}}}s:4:\"type\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:4:\"text\";}}}s:16:\"revision_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629674870;}}}s:13:\"revision_user\";a:1:{s:9:\"x-default\";a:0:{}}s:12:\"revision_log\";a:1:{s:9:\"x-default\";a:0:{}}s:6:\"status\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1;}}}s:4:\"info\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:12:\"Inline block\";}}}s:7:\"changed\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629674870;}}}s:8:\"reusable\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:16:\"default_langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:16:\"revision_default\";a:1:{s:9:\"x-default\";a:0:{}}s:29:\"revision_translation_affected\";a:1:{s:9:\"x-default\";a:0:{}}s:7:\"metatag\";a:1:{s:9:\"x-default\";a:0:{}}s:26:\"content_translation_source\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:3:\"und\";}}}s:28:\"content_translation_outdated\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:23:\"content_translation_uid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:1:\"1\";}}}s:27:\"content_translation_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629674870;}}}s:10:\"field_body\";a:1:{s:9:\"x-default\";a:1:{i:0;a:2:{s:5:\"value\";s:455:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan.</p>\r\n\r\n<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptaten quia voluptas sit aspernatur aut odit aut fugit, sed quia.</p>\r\n\";s:6:\"format\";s:10:\"basic_html\";}}}s:13:\"field_eyebrow\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:15:\"Component Label\";}}}s:11:\"field_title\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:58:\"How Can I Protect My Organization from the Latest Threats?\";}}}}s:9:\"\0*\0fields\";a:0:{}s:19:\"\0*\0fieldDefinitions\";N;s:12:\"\0*\0languages\";N;s:14:\"\0*\0langcodeKey\";s:8:\"langcode\";s:21:\"\0*\0defaultLangcodeKey\";s:16:\"default_langcode\";s:17:\"\0*\0activeLangcode\";s:9:\"x-default\";s:18:\"\0*\0defaultLangcode\";s:2:\"en\";s:15:\"\0*\0translations\";a:1:{s:9:\"x-default\";a:1:{s:6:\"status\";i:2;}}s:24:\"\0*\0translationInitialize\";b:0;s:14:\"\0*\0newRevision\";b:1;s:20:\"\0*\0isDefaultRevision\";b:1;s:13:\"\0*\0entityKeys\";a:2:{s:6:\"bundle\";s:4:\"text\";s:8:\"revision\";N;}s:25:\"\0*\0translatableEntityKeys\";a:1:{s:8:\"langcode\";a:1:{s:9:\"x-default\";s:2:\"en\";}}s:12:\"\0*\0validated\";b:1;s:21:\"\0*\0validationRequired\";b:0;s:19:\"\0*\0loadedRevisionId\";N;s:33:\"\0*\0revisionTranslationAffectedKey\";s:29:\"revision_translation_affected\";s:37:\"\0*\0enforceRevisionTranslationAffected\";a:0:{}s:15:\"\0*\0entityTypeId\";s:13:\"block_content\";s:15:\"\0*\0enforceIsNew\";b:1;s:12:\"\0*\0typedData\";N;s:16:\"\0*\0cacheContexts\";a:0:{}s:12:\"\0*\0cacheTags\";a:0:{}s:14:\"\0*\0cacheMaxAge\";i:-1;s:14:\"\0*\0_serviceIds\";a:0:{}s:18:\"\0*\0_entityStorages\";a:0:{}s:12:\"\0*\0isSyncing\";b:0;s:19:\"\0*\0accessDependency\";N;}"
+          context_mapping: {  }
+        additional:
+          layout_builder_styles_style:
+            0: ''
+            1: ''
+            accordion: 0
+            authors_title: 0
+            cta_phone: 0
+            product_title: 0
+            margin_bottom_70px_: 0
+          layout_builder_id: ''
+        weight: 1
+    third_party_settings: {  }
+  -
+    layout_id: layout_threecol_section
+    layout_settings:
+      label: ''
+      column_widths: 33-34-33
+      layout_builder_styles_style:
+        0: ''
+        1: ''
+        framed_column_cards: framed_column_cards
+        block_plain_text: 0
+        cta_columns: 0
+        column_cards: 0
+        divider: 0
+        negative_bottom_margin: 0
+        negative_top_margin: 0
+        small_tile_section: 0
+        s: 0
+      context_mapping: {  }
+    components:
+      5d083e3c-3890-4d0b-950f-4f03823687b8:
+        uuid: 5d083e3c-3890-4d0b-950f-4f03823687b8
+        region: first
+        configuration:
+          id: 'inline_block:text'
+          label: 'Inline block'
+          provider: layout_builder
+          label_display: ''
+          view_mode: full
+          block_revision_id: null
+          block_serialized: "O:40:\"Drupal\\block_content\\Entity\\BlockContent\":30:{s:8:\"\0*\0theme\";N;s:9:\"\0*\0values\";a:23:{s:8:\"langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:2:\"en\";}}}s:11:\"revision_id\";a:1:{s:9:\"x-default\";a:0:{}}s:2:\"id\";a:1:{s:9:\"x-default\";a:0:{}}s:4:\"uuid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:36:\"64d74c52-1425-45d7-8264-c71c1656fda6\";}}}s:4:\"type\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:4:\"text\";}}}s:16:\"revision_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629674968;}}}s:13:\"revision_user\";a:1:{s:9:\"x-default\";a:0:{}}s:12:\"revision_log\";a:1:{s:9:\"x-default\";a:0:{}}s:6:\"status\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1;}}}s:4:\"info\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:12:\"Inline block\";}}}s:7:\"changed\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629674968;}}}s:8:\"reusable\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:16:\"default_langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:16:\"revision_default\";a:1:{s:9:\"x-default\";a:0:{}}s:29:\"revision_translation_affected\";a:1:{s:9:\"x-default\";a:0:{}}s:7:\"metatag\";a:1:{s:9:\"x-default\";a:0:{}}s:26:\"content_translation_source\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:3:\"und\";}}}s:28:\"content_translation_outdated\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:23:\"content_translation_uid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:1:\"1\";}}}s:27:\"content_translation_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629674968;}}}s:10:\"field_body\";a:1:{s:9:\"x-default\";a:1:{i:0;a:2:{s:5:\"value\";s:335:\"<p>&nbsp;<img alt=\"Improve Security\" data-entity-type=\"file\" data-entity-uuid=\"fcb27eaf-e8e5-4846-8561-dd6b3c15c739\" src=\"/sites/default/files/inline-images/improve-sec.png\" /></p>\r\n\r\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus euismod bibendum.</p>\r\n\";s:6:\"format\";s:10:\"basic_html\";}}}s:13:\"field_eyebrow\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_title\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:24:\"Improve Security Posture\";}}}}s:9:\"\0*\0fields\";a:0:{}s:19:\"\0*\0fieldDefinitions\";N;s:12:\"\0*\0languages\";N;s:14:\"\0*\0langcodeKey\";s:8:\"langcode\";s:21:\"\0*\0defaultLangcodeKey\";s:16:\"default_langcode\";s:17:\"\0*\0activeLangcode\";s:9:\"x-default\";s:18:\"\0*\0defaultLangcode\";s:2:\"en\";s:15:\"\0*\0translations\";a:1:{s:9:\"x-default\";a:1:{s:6:\"status\";i:2;}}s:24:\"\0*\0translationInitialize\";b:0;s:14:\"\0*\0newRevision\";b:1;s:20:\"\0*\0isDefaultRevision\";b:1;s:13:\"\0*\0entityKeys\";a:2:{s:6:\"bundle\";s:4:\"text\";s:8:\"revision\";N;}s:25:\"\0*\0translatableEntityKeys\";a:1:{s:8:\"langcode\";a:1:{s:9:\"x-default\";s:2:\"en\";}}s:12:\"\0*\0validated\";b:1;s:21:\"\0*\0validationRequired\";b:0;s:19:\"\0*\0loadedRevisionId\";N;s:33:\"\0*\0revisionTranslationAffectedKey\";s:29:\"revision_translation_affected\";s:37:\"\0*\0enforceRevisionTranslationAffected\";a:0:{}s:15:\"\0*\0entityTypeId\";s:13:\"block_content\";s:15:\"\0*\0enforceIsNew\";b:1;s:12:\"\0*\0typedData\";N;s:16:\"\0*\0cacheContexts\";a:0:{}s:12:\"\0*\0cacheTags\";a:0:{}s:14:\"\0*\0cacheMaxAge\";i:-1;s:14:\"\0*\0_serviceIds\";a:0:{}s:18:\"\0*\0_entityStorages\";a:0:{}s:12:\"\0*\0isSyncing\";b:0;s:19:\"\0*\0accessDependency\";N;}"
+          context_mapping: {  }
+        additional:
+          layout_builder_styles_style:
+            0: ''
+            1: ''
+            accordion: 0
+            authors_title: 0
+            cta_phone: 0
+            product_title: 0
+            margin_bottom_70px_: 0
+          layout_builder_id: ''
+        weight: 0
+      b57cb96c-9410-49d4-ba76-de2373dd8bbb:
+        uuid: b57cb96c-9410-49d4-ba76-de2373dd8bbb
+        region: second
+        configuration:
+          id: 'inline_block:text'
+          label: 'Inline block'
+          provider: layout_builder
+          label_display: ''
+          view_mode: full
+          block_revision_id: null
+          block_serialized: "O:40:\"Drupal\\block_content\\Entity\\BlockContent\":30:{s:8:\"\0*\0theme\";N;s:9:\"\0*\0values\";a:23:{s:8:\"langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:2:\"en\";}}}s:11:\"revision_id\";a:1:{s:9:\"x-default\";a:0:{}}s:2:\"id\";a:1:{s:9:\"x-default\";a:0:{}}s:4:\"uuid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:36:\"8740dcdb-8090-4dcb-89d7-4b8759777578\";}}}s:4:\"type\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:4:\"text\";}}}s:16:\"revision_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629675000;}}}s:13:\"revision_user\";a:1:{s:9:\"x-default\";a:0:{}}s:12:\"revision_log\";a:1:{s:9:\"x-default\";a:0:{}}s:6:\"status\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1;}}}s:4:\"info\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:12:\"Inline block\";}}}s:7:\"changed\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629675000;}}}s:8:\"reusable\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:16:\"default_langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:16:\"revision_default\";a:1:{s:9:\"x-default\";a:0:{}}s:29:\"revision_translation_affected\";a:1:{s:9:\"x-default\";a:0:{}}s:7:\"metatag\";a:1:{s:9:\"x-default\";a:0:{}}s:26:\"content_translation_source\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:3:\"und\";}}}s:28:\"content_translation_outdated\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:23:\"content_translation_uid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:1:\"1\";}}}s:27:\"content_translation_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629675000;}}}s:10:\"field_body\";a:1:{s:9:\"x-default\";a:1:{i:0;a:2:{s:5:\"value\";s:323:\"<p>&nbsp;<img alt=\"Automate\" data-entity-type=\"file\" data-entity-uuid=\"ede9908c-4eb1-4ec5-9ed7-d000ea3f5011\" src=\"/sites/default/files/inline-images/recycle.png\" /></p>\r\n\r\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus euismod bibendum.</p>\r\n\";s:6:\"format\";s:10:\"basic_html\";}}}s:13:\"field_eyebrow\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_title\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:21:\"Automate manual tasks\";}}}}s:9:\"\0*\0fields\";a:0:{}s:19:\"\0*\0fieldDefinitions\";N;s:12:\"\0*\0languages\";N;s:14:\"\0*\0langcodeKey\";s:8:\"langcode\";s:21:\"\0*\0defaultLangcodeKey\";s:16:\"default_langcode\";s:17:\"\0*\0activeLangcode\";s:9:\"x-default\";s:18:\"\0*\0defaultLangcode\";s:2:\"en\";s:15:\"\0*\0translations\";a:1:{s:9:\"x-default\";a:1:{s:6:\"status\";i:2;}}s:24:\"\0*\0translationInitialize\";b:0;s:14:\"\0*\0newRevision\";b:1;s:20:\"\0*\0isDefaultRevision\";b:1;s:13:\"\0*\0entityKeys\";a:2:{s:6:\"bundle\";s:4:\"text\";s:8:\"revision\";N;}s:25:\"\0*\0translatableEntityKeys\";a:1:{s:8:\"langcode\";a:1:{s:9:\"x-default\";s:2:\"en\";}}s:12:\"\0*\0validated\";b:1;s:21:\"\0*\0validationRequired\";b:0;s:19:\"\0*\0loadedRevisionId\";N;s:33:\"\0*\0revisionTranslationAffectedKey\";s:29:\"revision_translation_affected\";s:37:\"\0*\0enforceRevisionTranslationAffected\";a:0:{}s:15:\"\0*\0entityTypeId\";s:13:\"block_content\";s:15:\"\0*\0enforceIsNew\";b:1;s:12:\"\0*\0typedData\";N;s:16:\"\0*\0cacheContexts\";a:0:{}s:12:\"\0*\0cacheTags\";a:0:{}s:14:\"\0*\0cacheMaxAge\";i:-1;s:14:\"\0*\0_serviceIds\";a:0:{}s:18:\"\0*\0_entityStorages\";a:0:{}s:12:\"\0*\0isSyncing\";b:0;s:19:\"\0*\0accessDependency\";N;}"
+          context_mapping: {  }
+        additional:
+          layout_builder_styles_style:
+            0: ''
+            1: ''
+            accordion: 0
+            authors_title: 0
+            cta_phone: 0
+            product_title: 0
+            margin_bottom_70px_: 0
+          layout_builder_id: ''
+        weight: 0
+      a43b5fcb-487a-4388-8c49-68f49fecc7be:
+        uuid: a43b5fcb-487a-4388-8c49-68f49fecc7be
+        region: third
+        configuration:
+          id: 'inline_block:text'
+          label: 'Inline block'
+          provider: layout_builder
+          label_display: ''
+          view_mode: full
+          block_revision_id: null
+          block_serialized: "O:40:\"Drupal\\block_content\\Entity\\BlockContent\":30:{s:8:\"\0*\0theme\";N;s:9:\"\0*\0values\";a:23:{s:8:\"langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:2:\"en\";}}}s:11:\"revision_id\";a:1:{s:9:\"x-default\";a:0:{}}s:2:\"id\";a:1:{s:9:\"x-default\";a:0:{}}s:4:\"uuid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:36:\"829ac4d0-9ba1-4ec4-90f1-47055850aed2\";}}}s:4:\"type\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:4:\"text\";}}}s:16:\"revision_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629675015;}}}s:13:\"revision_user\";a:1:{s:9:\"x-default\";a:0:{}}s:12:\"revision_log\";a:1:{s:9:\"x-default\";a:0:{}}s:6:\"status\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1;}}}s:4:\"info\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:12:\"Inline block\";}}}s:7:\"changed\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629675015;}}}s:8:\"reusable\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:16:\"default_langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:16:\"revision_default\";a:1:{s:9:\"x-default\";a:0:{}}s:29:\"revision_translation_affected\";a:1:{s:9:\"x-default\";a:0:{}}s:7:\"metatag\";a:1:{s:9:\"x-default\";a:0:{}}s:26:\"content_translation_source\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:3:\"und\";}}}s:28:\"content_translation_outdated\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:23:\"content_translation_uid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:1:\"1\";}}}s:27:\"content_translation_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629675015;}}}s:10:\"field_body\";a:1:{s:9:\"x-default\";a:1:{i:0;a:2:{s:5:\"value\";s:321:\"<p>&nbsp;<img alt=\"Unify\" data-entity-type=\"file\" data-entity-uuid=\"445da1cf-ef9c-4caf-a0cd-2fad9e2e7234\" src=\"/sites/default/files/inline-images/automate.png\" /></p>\r\n\r\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus euismod bibendum.</p>\r\n\";s:6:\"format\";s:10:\"basic_html\";}}}s:13:\"field_eyebrow\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_title\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:24:\"Unify your security data\";}}}}s:9:\"\0*\0fields\";a:0:{}s:19:\"\0*\0fieldDefinitions\";N;s:12:\"\0*\0languages\";N;s:14:\"\0*\0langcodeKey\";s:8:\"langcode\";s:21:\"\0*\0defaultLangcodeKey\";s:16:\"default_langcode\";s:17:\"\0*\0activeLangcode\";s:9:\"x-default\";s:18:\"\0*\0defaultLangcode\";s:2:\"en\";s:15:\"\0*\0translations\";a:1:{s:9:\"x-default\";a:1:{s:6:\"status\";i:2;}}s:24:\"\0*\0translationInitialize\";b:0;s:14:\"\0*\0newRevision\";b:1;s:20:\"\0*\0isDefaultRevision\";b:1;s:13:\"\0*\0entityKeys\";a:2:{s:6:\"bundle\";s:4:\"text\";s:8:\"revision\";N;}s:25:\"\0*\0translatableEntityKeys\";a:1:{s:8:\"langcode\";a:1:{s:9:\"x-default\";s:2:\"en\";}}s:12:\"\0*\0validated\";b:1;s:21:\"\0*\0validationRequired\";b:0;s:19:\"\0*\0loadedRevisionId\";N;s:33:\"\0*\0revisionTranslationAffectedKey\";s:29:\"revision_translation_affected\";s:37:\"\0*\0enforceRevisionTranslationAffected\";a:0:{}s:15:\"\0*\0entityTypeId\";s:13:\"block_content\";s:15:\"\0*\0enforceIsNew\";b:1;s:12:\"\0*\0typedData\";N;s:16:\"\0*\0cacheContexts\";a:0:{}s:12:\"\0*\0cacheTags\";a:0:{}s:14:\"\0*\0cacheMaxAge\";i:-1;s:14:\"\0*\0_serviceIds\";a:0:{}s:18:\"\0*\0_entityStorages\";a:0:{}s:12:\"\0*\0isSyncing\";b:0;s:19:\"\0*\0accessDependency\";N;}"
+          context_mapping: {  }
+        additional:
+          layout_builder_styles_style:
+            0: ''
+            1: ''
+            accordion: 0
+            authors_title: 0
+            cta_phone: 0
+            product_title: 0
+            margin_bottom_70px_: 0
+          layout_builder_id: ''
+        weight: 0
+    third_party_settings: {  }
+  -
+    layout_id: layout_onecol
+    layout_settings:
+      label: ''
+      layout_builder_styles_style:
+        0: ''
+        1: ''
+        small_image_tile: small_image_tile
+        block_plain_text: 0
+        component_intro: 0
+        intro_text: 0
+        negative_bottom_margin: 0
+        negative_top_margin: 0
+        related_thought_leadership: 0
+        section_product_services: 0
+        small_tile_section: 0
+      context_mapping: {  }
+    components:
+      bb96064c-a32b-4e93-a9c3-0af4d213fe76:
+        uuid: bb96064c-a32b-4e93-a9c3-0af4d213fe76
+        region: content
+        configuration:
+          id: 'inline_block:cta'
+          label: 'Inline block'
+          provider: layout_builder
+          label_display: ''
+          view_mode: full
+          block_revision_id: null
+          block_serialized: "O:40:\"Drupal\\block_content\\Entity\\BlockContent\":30:{s:8:\"\0*\0theme\";N;s:9:\"\0*\0values\";a:30:{s:8:\"langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:2:\"en\";}}}s:11:\"revision_id\";a:1:{s:9:\"x-default\";a:0:{}}s:2:\"id\";a:1:{s:9:\"x-default\";a:0:{}}s:4:\"uuid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:36:\"5bf5870a-96c8-44c2-9b6a-7f020b2b427b\";}}}s:4:\"type\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:3:\"cta\";}}}s:16:\"revision_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629675148;}}}s:13:\"revision_user\";a:1:{s:9:\"x-default\";a:0:{}}s:12:\"revision_log\";a:1:{s:9:\"x-default\";a:0:{}}s:6:\"status\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1;}}}s:4:\"info\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:12:\"Inline block\";}}}s:7:\"changed\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629675148;}}}s:8:\"reusable\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:16:\"default_langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:16:\"revision_default\";a:1:{s:9:\"x-default\";a:0:{}}s:29:\"revision_translation_affected\";a:1:{s:9:\"x-default\";a:0:{}}s:7:\"metatag\";a:1:{s:9:\"x-default\";a:0:{}}s:26:\"content_translation_source\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:3:\"und\";}}}s:28:\"content_translation_outdated\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:23:\"content_translation_uid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:1:\"1\";}}}s:27:\"content_translation_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629675148;}}}s:11:\"field_block\";a:1:{s:9:\"x-default\";a:0:{}}s:10:\"field_body\";a:1:{s:9:\"x-default\";a:1:{i:0;a:2:{s:5:\"value\";s:279:\"<p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>\r\n\";s:6:\"format\";s:10:\"basic_html\";}}}s:9:\"field_cta\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_embed\";a:1:{s:9:\"x-default\";a:0:{}}s:13:\"field_eyebrow\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_media\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_title\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:38:\"Powered by the Mandiant<br/>Intel Grid\";}}}s:16:\"layout_selection\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:15:\"block_cta_media\";}}}s:10:\"field_cta2\";a:1:{s:9:\"x-default\";a:0:{}}s:20:\"field_media_document\";a:1:{s:9:\"x-default\";a:0:{}}}s:9:\"\0*\0fields\";a:0:{}s:19:\"\0*\0fieldDefinitions\";N;s:12:\"\0*\0languages\";N;s:14:\"\0*\0langcodeKey\";s:8:\"langcode\";s:21:\"\0*\0defaultLangcodeKey\";s:16:\"default_langcode\";s:17:\"\0*\0activeLangcode\";s:9:\"x-default\";s:18:\"\0*\0defaultLangcode\";s:2:\"en\";s:15:\"\0*\0translations\";a:1:{s:9:\"x-default\";a:1:{s:6:\"status\";i:2;}}s:24:\"\0*\0translationInitialize\";b:0;s:14:\"\0*\0newRevision\";b:1;s:20:\"\0*\0isDefaultRevision\";b:1;s:13:\"\0*\0entityKeys\";a:2:{s:6:\"bundle\";s:3:\"cta\";s:8:\"revision\";N;}s:25:\"\0*\0translatableEntityKeys\";a:1:{s:8:\"langcode\";a:1:{s:9:\"x-default\";s:2:\"en\";}}s:12:\"\0*\0validated\";b:1;s:21:\"\0*\0validationRequired\";b:0;s:19:\"\0*\0loadedRevisionId\";N;s:33:\"\0*\0revisionTranslationAffectedKey\";s:29:\"revision_translation_affected\";s:37:\"\0*\0enforceRevisionTranslationAffected\";a:0:{}s:15:\"\0*\0entityTypeId\";s:13:\"block_content\";s:15:\"\0*\0enforceIsNew\";b:1;s:12:\"\0*\0typedData\";N;s:16:\"\0*\0cacheContexts\";a:0:{}s:12:\"\0*\0cacheTags\";a:0:{}s:14:\"\0*\0cacheMaxAge\";i:-1;s:14:\"\0*\0_serviceIds\";a:0:{}s:18:\"\0*\0_entityStorages\";a:0:{}s:12:\"\0*\0isSyncing\";b:0;s:19:\"\0*\0accessDependency\";N;}"
+          context_mapping: {  }
+        additional:
+          layout_builder_styles_style:
+            0: ''
+            1: ''
+            cta_phone: 0
+            cta_: 0
+            right: 0
+            small_image: 0
+            left_oriented: 0
+            arrow_link: 0
+            2: ''
+          layout_builder_id: ''
+        weight: 0
+    third_party_settings: {  }
+  -
+    layout_id: layout_onecol
+    layout_settings:
+      label: ''
+      layout_builder_styles_style:
+        0: ''
+        1: ''
+        section_product_services: section_product_services
+        block_plain_text: 0
+        component_intro: 0
+        intro_text: 0
+        negative_bottom_margin: 0
+        negative_top_margin: 0
+        related_thought_leadership: 0
+        small_tile_section: 0
+        small_image_tile: 0
+      context_mapping: {  }
+    components:
+      a9700ff2-bf09-4a43-ad7c-6d6f6d44e0e0:
+        uuid: a9700ff2-bf09-4a43-ad7c-6d6f6d44e0e0
+        region: content
+        configuration:
+          id: 'inline_block:text'
+          label: 'Inline block'
+          provider: layout_builder
+          label_display: ''
+          view_mode: full
+          block_revision_id: null
+          block_serialized: "O:40:\"Drupal\\block_content\\Entity\\BlockContent\":30:{s:8:\"\0*\0theme\";N;s:9:\"\0*\0values\";a:23:{s:8:\"langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:2:\"en\";}}}s:11:\"revision_id\";a:1:{s:9:\"x-default\";a:0:{}}s:2:\"id\";a:1:{s:9:\"x-default\";a:0:{}}s:4:\"uuid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:36:\"f61ed189-7c2f-4d15-aa81-43a5e1b36026\";}}}s:4:\"type\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:4:\"text\";}}}s:16:\"revision_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629675394;}}}s:13:\"revision_user\";a:1:{s:9:\"x-default\";a:0:{}}s:12:\"revision_log\";a:1:{s:9:\"x-default\";a:0:{}}s:6:\"status\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1;}}}s:4:\"info\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:12:\"Inline block\";}}}s:7:\"changed\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629675394;}}}s:8:\"reusable\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:16:\"default_langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:16:\"revision_default\";a:1:{s:9:\"x-default\";a:0:{}}s:29:\"revision_translation_affected\";a:1:{s:9:\"x-default\";a:0:{}}s:7:\"metatag\";a:1:{s:9:\"x-default\";a:0:{}}s:26:\"content_translation_source\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:3:\"und\";}}}s:28:\"content_translation_outdated\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:23:\"content_translation_uid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:1:\"1\";}}}s:27:\"content_translation_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629675394;}}}s:10:\"field_body\";a:1:{s:9:\"x-default\";a:1:{i:0;a:2:{s:5:\"value\";s:112:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, lorem ipsum dolor consectetur adipiscing elit.</p>\r\n\";s:6:\"format\";s:10:\"basic_html\";}}}s:13:\"field_eyebrow\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_title\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:84:\"Effectively detect and respond to threats and reduce overall impact of business risk\";}}}}s:9:\"\0*\0fields\";a:0:{}s:19:\"\0*\0fieldDefinitions\";N;s:12:\"\0*\0languages\";N;s:14:\"\0*\0langcodeKey\";s:8:\"langcode\";s:21:\"\0*\0defaultLangcodeKey\";s:16:\"default_langcode\";s:17:\"\0*\0activeLangcode\";s:9:\"x-default\";s:18:\"\0*\0defaultLangcode\";s:2:\"en\";s:15:\"\0*\0translations\";a:1:{s:9:\"x-default\";a:1:{s:6:\"status\";i:2;}}s:24:\"\0*\0translationInitialize\";b:0;s:14:\"\0*\0newRevision\";b:1;s:20:\"\0*\0isDefaultRevision\";b:1;s:13:\"\0*\0entityKeys\";a:2:{s:6:\"bundle\";s:4:\"text\";s:8:\"revision\";N;}s:25:\"\0*\0translatableEntityKeys\";a:1:{s:8:\"langcode\";a:1:{s:9:\"x-default\";s:2:\"en\";}}s:12:\"\0*\0validated\";b:1;s:21:\"\0*\0validationRequired\";b:0;s:19:\"\0*\0loadedRevisionId\";N;s:33:\"\0*\0revisionTranslationAffectedKey\";s:29:\"revision_translation_affected\";s:37:\"\0*\0enforceRevisionTranslationAffected\";a:0:{}s:15:\"\0*\0entityTypeId\";s:13:\"block_content\";s:15:\"\0*\0enforceIsNew\";b:1;s:12:\"\0*\0typedData\";N;s:16:\"\0*\0cacheContexts\";a:0:{}s:12:\"\0*\0cacheTags\";a:0:{}s:14:\"\0*\0cacheMaxAge\";i:-1;s:14:\"\0*\0_serviceIds\";a:0:{}s:18:\"\0*\0_entityStorages\";a:0:{}s:12:\"\0*\0isSyncing\";b:0;s:19:\"\0*\0accessDependency\";N;}"
+          context_mapping: {  }
+        additional:
+          layout_builder_styles_style:
+            0: ''
+            1: ''
+            product_title: product_title
+            accordion: 0
+            authors_title: 0
+            cta_phone: 0
+            margin_bottom_70px_: 0
+          layout_builder_id: ''
+        weight: 1
+      f04f12cd-5781-435b-9635-225e94cd552d:
+        uuid: f04f12cd-5781-435b-9635-225e94cd552d
+        region: content
+        configuration:
+          id: 'inline_block:text'
+          label: 'Inline block'
+          provider: layout_builder
+          label_display: ''
+          view_mode: full
+          block_revision_id: null
+          block_serialized: "O:40:\"Drupal\\block_content\\Entity\\BlockContent\":30:{s:8:\"\0*\0theme\";N;s:9:\"\0*\0values\";a:23:{s:8:\"langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:2:\"en\";}}}s:11:\"revision_id\";a:1:{s:9:\"x-default\";a:0:{}}s:2:\"id\";a:1:{s:9:\"x-default\";a:0:{}}s:4:\"uuid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:36:\"0ff88391-5295-4c32-b18b-4e8120e557ae\";}}}s:4:\"type\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:4:\"text\";}}}s:16:\"revision_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629675493;}}}s:13:\"revision_user\";a:1:{s:9:\"x-default\";a:0:{}}s:12:\"revision_log\";a:1:{s:9:\"x-default\";a:0:{}}s:6:\"status\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1;}}}s:4:\"info\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:12:\"Inline block\";}}}s:7:\"changed\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629675493;}}}s:8:\"reusable\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:16:\"default_langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:16:\"revision_default\";a:1:{s:9:\"x-default\";a:0:{}}s:29:\"revision_translation_affected\";a:1:{s:9:\"x-default\";a:0:{}}s:7:\"metatag\";a:1:{s:9:\"x-default\";a:0:{}}s:26:\"content_translation_source\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:3:\"und\";}}}s:28:\"content_translation_outdated\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:23:\"content_translation_uid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:1:\"1\";}}}s:27:\"content_translation_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629675493;}}}s:10:\"field_body\";a:1:{s:9:\"x-default\";a:1:{i:0;a:2:{s:5:\"value\";s:205:\"<img alt=\"devider\" data-align=\"center\" data-entity-type=\"file\" data-entity-uuid=\"75a6966c-a642-4873-aff4-53968a8c18ab\" src=\"/sites/default/files/inline-images/3%20Divider%20Squares.png\" />\r\n<p>&nbsp;</p>\r\n\";s:6:\"format\";s:10:\"basic_html\";}}}s:13:\"field_eyebrow\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_title\";a:1:{s:9:\"x-default\";a:0:{}}}s:9:\"\0*\0fields\";a:0:{}s:19:\"\0*\0fieldDefinitions\";N;s:12:\"\0*\0languages\";N;s:14:\"\0*\0langcodeKey\";s:8:\"langcode\";s:21:\"\0*\0defaultLangcodeKey\";s:16:\"default_langcode\";s:17:\"\0*\0activeLangcode\";s:9:\"x-default\";s:18:\"\0*\0defaultLangcode\";s:2:\"en\";s:15:\"\0*\0translations\";a:1:{s:9:\"x-default\";a:1:{s:6:\"status\";i:2;}}s:24:\"\0*\0translationInitialize\";b:0;s:14:\"\0*\0newRevision\";b:1;s:20:\"\0*\0isDefaultRevision\";b:1;s:13:\"\0*\0entityKeys\";a:2:{s:6:\"bundle\";s:4:\"text\";s:8:\"revision\";N;}s:25:\"\0*\0translatableEntityKeys\";a:1:{s:8:\"langcode\";a:1:{s:9:\"x-default\";s:2:\"en\";}}s:12:\"\0*\0validated\";b:1;s:21:\"\0*\0validationRequired\";b:0;s:19:\"\0*\0loadedRevisionId\";N;s:33:\"\0*\0revisionTranslationAffectedKey\";s:29:\"revision_translation_affected\";s:37:\"\0*\0enforceRevisionTranslationAffected\";a:0:{}s:15:\"\0*\0entityTypeId\";s:13:\"block_content\";s:15:\"\0*\0enforceIsNew\";b:1;s:12:\"\0*\0typedData\";N;s:16:\"\0*\0cacheContexts\";a:0:{}s:12:\"\0*\0cacheTags\";a:0:{}s:14:\"\0*\0cacheMaxAge\";i:-1;s:14:\"\0*\0_serviceIds\";a:0:{}s:18:\"\0*\0_entityStorages\";a:0:{}s:12:\"\0*\0isSyncing\";b:0;s:19:\"\0*\0accessDependency\";N;}"
+          context_mapping: {  }
+        additional:
+          layout_builder_styles_style:
+            0: ''
+            1: ''
+            accordion: 0
+            authors_title: 0
+            cta_phone: 0
+            product_title: 0
+            margin_bottom_70px_: 0
+          layout_builder_id: ''
+        weight: 0
+      8bf97750-e9a0-4e78-b39a-4aedf91e8a0e:
+        uuid: 8bf97750-e9a0-4e78-b39a-4aedf91e8a0e
+        region: content
+        configuration:
+          id: 'inline_block:card'
+          label: 'Inline block'
+          provider: layout_builder
+          label_display: ''
+          view_mode: full
+          block_revision_id: null
+          block_serialized: "O:40:\"Drupal\\block_content\\Entity\\BlockContent\":30:{s:8:\"\0*\0theme\";N;s:9:\"\0*\0values\";a:26:{s:8:\"langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:2:\"en\";}}}s:11:\"revision_id\";a:1:{s:9:\"x-default\";a:0:{}}s:2:\"id\";a:1:{s:9:\"x-default\";a:0:{}}s:4:\"uuid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:36:\"4483b7c1-b218-4cb8-9c81-82f0b68c5db1\";}}}s:4:\"type\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:4:\"card\";}}}s:16:\"revision_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629675628;}}}s:13:\"revision_user\";a:1:{s:9:\"x-default\";a:0:{}}s:12:\"revision_log\";a:1:{s:9:\"x-default\";a:0:{}}s:6:\"status\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:4:\"info\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:12:\"Inline block\";}}}s:7:\"changed\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629675628;}}}s:8:\"reusable\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:16:\"default_langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:16:\"revision_default\";a:1:{s:9:\"x-default\";a:0:{}}s:29:\"revision_translation_affected\";a:1:{s:9:\"x-default\";a:0:{}}s:7:\"metatag\";a:1:{s:9:\"x-default\";a:0:{}}s:26:\"content_translation_source\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:3:\"und\";}}}s:28:\"content_translation_outdated\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:23:\"content_translation_uid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:1:\"1\";}}}s:27:\"content_translation_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629675628;}}}s:17:\"field_alternative\";a:1:{s:9:\"x-default\";a:1:{i:0;a:2:{s:5:\"value\";s:324:\"<ul>\r\n\t<li>How can I automate solutions to work with my existing security controls?</li>\r\n\t<li>How do I evaluate, identify and mitigate weaknesses and gaps?</li>\r\n\t<li>How can I triage security alerts from my entire security stack?</li>\r\n\t<li>How can I keep pace with the threat landscape and expand awareness?</li>\r\n</ul>\r\n\";s:6:\"format\";s:10:\"basic_html\";}}}s:10:\"field_body\";a:1:{s:9:\"x-default\";a:1:{i:0;a:2:{s:5:\"value\";s:105:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin.</p>\r\n\";s:6:\"format\";s:10:\"basic_html\";}}}s:9:\"field_cta\";a:1:{s:9:\"x-default\";a:1:{i:0;a:4:{s:10:\"attributes\";a:0:{}s:3:\"uri\";s:10:\"internal:#\";s:5:\"title\";s:9:\"CTA Lorem\";s:7:\"options\";a:0:{}}}}s:13:\"field_eyebrow\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:9:\"Solutions\";}}}s:11:\"field_media\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_title\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:27:\"Prevent a Security Incident\";}}}}s:9:\"\0*\0fields\";a:0:{}s:19:\"\0*\0fieldDefinitions\";N;s:12:\"\0*\0languages\";N;s:14:\"\0*\0langcodeKey\";s:8:\"langcode\";s:21:\"\0*\0defaultLangcodeKey\";s:16:\"default_langcode\";s:17:\"\0*\0activeLangcode\";s:9:\"x-default\";s:18:\"\0*\0defaultLangcode\";s:2:\"en\";s:15:\"\0*\0translations\";a:1:{s:9:\"x-default\";a:1:{s:6:\"status\";i:2;}}s:24:\"\0*\0translationInitialize\";b:0;s:14:\"\0*\0newRevision\";b:1;s:20:\"\0*\0isDefaultRevision\";b:1;s:13:\"\0*\0entityKeys\";a:3:{s:6:\"bundle\";s:4:\"card\";s:8:\"revision\";N;s:2:\"id\";N;}s:25:\"\0*\0translatableEntityKeys\";a:1:{s:8:\"langcode\";a:1:{s:9:\"x-default\";s:2:\"en\";}}s:12:\"\0*\0validated\";b:1;s:21:\"\0*\0validationRequired\";b:0;s:19:\"\0*\0loadedRevisionId\";N;s:33:\"\0*\0revisionTranslationAffectedKey\";s:29:\"revision_translation_affected\";s:37:\"\0*\0enforceRevisionTranslationAffected\";a:0:{}s:15:\"\0*\0entityTypeId\";s:13:\"block_content\";s:15:\"\0*\0enforceIsNew\";b:1;s:12:\"\0*\0typedData\";N;s:16:\"\0*\0cacheContexts\";a:0:{}s:12:\"\0*\0cacheTags\";a:0:{}s:14:\"\0*\0cacheMaxAge\";i:-1;s:14:\"\0*\0_serviceIds\";a:0:{}s:18:\"\0*\0_entityStorages\";a:0:{}s:12:\"\0*\0isSyncing\";b:0;s:19:\"\0*\0accessDependency\";N;}"
+          context_mapping: {  }
+        additional:
+          layout_builder_styles_style:
+            0: ''
+            1: ''
+            card_product_services: card_product_services
+          layout_builder_id: ''
+        weight: 2
+      3716cce9-7aa2-4f31-a035-021e4b48ef02:
+        uuid: 3716cce9-7aa2-4f31-a035-021e4b48ef02
+        region: content
+        configuration:
+          id: 'inline_block:card'
+          label: 'Inline block'
+          provider: layout_builder
+          label_display: ''
+          view_mode: full
+          block_revision_id: null
+          block_serialized: "O:40:\"Drupal\\block_content\\Entity\\BlockContent\":30:{s:8:\"\0*\0theme\";N;s:9:\"\0*\0values\";a:26:{s:8:\"langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:2:\"en\";}}}s:11:\"revision_id\";a:1:{s:9:\"x-default\";a:0:{}}s:2:\"id\";a:1:{s:9:\"x-default\";a:0:{}}s:4:\"uuid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:36:\"ce3ab84f-81b8-4ad2-bef6-83326e807833\";}}}s:4:\"type\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:4:\"card\";}}}s:16:\"revision_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629675700;}}}s:13:\"revision_user\";a:1:{s:9:\"x-default\";a:0:{}}s:12:\"revision_log\";a:1:{s:9:\"x-default\";a:0:{}}s:6:\"status\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:4:\"info\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:12:\"Inline block\";}}}s:7:\"changed\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629675700;}}}s:8:\"reusable\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:16:\"default_langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:16:\"revision_default\";a:1:{s:9:\"x-default\";a:0:{}}s:29:\"revision_translation_affected\";a:1:{s:9:\"x-default\";a:0:{}}s:7:\"metatag\";a:1:{s:9:\"x-default\";a:0:{}}s:26:\"content_translation_source\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:3:\"und\";}}}s:28:\"content_translation_outdated\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:23:\"content_translation_uid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:1:\"1\";}}}s:27:\"content_translation_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629675700;}}}s:17:\"field_alternative\";a:1:{s:9:\"x-default\";a:0:{}}s:10:\"field_body\";a:1:{s:9:\"x-default\";a:1:{i:0;a:2:{s:5:\"value\";s:105:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin.</p>\r\n\";s:6:\"format\";s:10:\"basic_html\";}}}s:9:\"field_cta\";a:1:{s:9:\"x-default\";a:1:{i:0;a:4:{s:10:\"attributes\";a:0:{}s:3:\"uri\";s:10:\"internal:#\";s:5:\"title\";s:9:\"CTA Lorem\";s:7:\"options\";a:0:{}}}}s:13:\"field_eyebrow\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:17:\"Advantage Product\";}}}s:11:\"field_media\";a:1:{s:9:\"x-default\";a:1:{i:0;a:4:{s:13:\"remove_button\";O:48:\"Drupal\\Core\\StringTranslation\\TranslatableMarkup\":3:{s:9:\"\0*\0string\";s:6:\"Remove\";s:12:\"\0*\0arguments\";a:0:{}s:10:\"\0*\0options\";a:0:{}}s:11:\"edit_button\";O:48:\"Drupal\\Core\\StringTranslation\\TranslatableMarkup\":3:{s:9:\"\0*\0string\";s:4:\"Edit\";s:12:\"\0*\0arguments\";a:0:{}s:10:\"\0*\0options\";a:0:{}}s:6:\"weight\";i:0;s:9:\"target_id\";s:2:\"76\";}}}s:11:\"field_title\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:19:\"Threat Intelligence\";}}}}s:9:\"\0*\0fields\";a:0:{}s:19:\"\0*\0fieldDefinitions\";N;s:12:\"\0*\0languages\";N;s:14:\"\0*\0langcodeKey\";s:8:\"langcode\";s:21:\"\0*\0defaultLangcodeKey\";s:16:\"default_langcode\";s:17:\"\0*\0activeLangcode\";s:9:\"x-default\";s:18:\"\0*\0defaultLangcode\";s:2:\"en\";s:15:\"\0*\0translations\";a:1:{s:9:\"x-default\";a:1:{s:6:\"status\";i:2;}}s:24:\"\0*\0translationInitialize\";b:0;s:14:\"\0*\0newRevision\";b:1;s:20:\"\0*\0isDefaultRevision\";b:1;s:13:\"\0*\0entityKeys\";a:3:{s:6:\"bundle\";s:4:\"card\";s:8:\"revision\";N;s:2:\"id\";N;}s:25:\"\0*\0translatableEntityKeys\";a:1:{s:8:\"langcode\";a:1:{s:9:\"x-default\";s:2:\"en\";}}s:12:\"\0*\0validated\";b:1;s:21:\"\0*\0validationRequired\";b:0;s:19:\"\0*\0loadedRevisionId\";N;s:33:\"\0*\0revisionTranslationAffectedKey\";s:29:\"revision_translation_affected\";s:37:\"\0*\0enforceRevisionTranslationAffected\";a:0:{}s:15:\"\0*\0entityTypeId\";s:13:\"block_content\";s:15:\"\0*\0enforceIsNew\";b:1;s:12:\"\0*\0typedData\";N;s:16:\"\0*\0cacheContexts\";a:0:{}s:12:\"\0*\0cacheTags\";a:0:{}s:14:\"\0*\0cacheMaxAge\";i:-1;s:14:\"\0*\0_serviceIds\";a:0:{}s:18:\"\0*\0_entityStorages\";a:0:{}s:12:\"\0*\0isSyncing\";b:0;s:19:\"\0*\0accessDependency\";N;}"
+          context_mapping: {  }
+        additional:
+          layout_builder_styles_style:
+            0: ''
+            1: ''
+            card_product_services: card_product_services
+          layout_builder_id: ''
+        weight: 3
+      2088c692-8b44-40b7-90ed-4b677976e28a:
+        uuid: 2088c692-8b44-40b7-90ed-4b677976e28a
+        region: content
+        configuration:
+          id: 'inline_block:card'
+          label: 'Inline block'
+          provider: layout_builder
+          label_display: ''
+          view_mode: full
+          block_revision_id: null
+          block_serialized: "O:40:\"Drupal\\block_content\\Entity\\BlockContent\":30:{s:8:\"\0*\0theme\";N;s:9:\"\0*\0values\";a:26:{s:8:\"langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:2:\"en\";}}}s:11:\"revision_id\";a:1:{s:9:\"x-default\";a:0:{}}s:2:\"id\";a:1:{s:9:\"x-default\";a:0:{}}s:4:\"uuid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:36:\"7f165621-a2b0-4b25-9bdf-aa63d03bf5b4\";}}}s:4:\"type\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:4:\"card\";}}}s:16:\"revision_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629675790;}}}s:13:\"revision_user\";a:1:{s:9:\"x-default\";a:0:{}}s:12:\"revision_log\";a:1:{s:9:\"x-default\";a:0:{}}s:6:\"status\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:4:\"info\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:12:\"Inline block\";}}}s:7:\"changed\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629675790;}}}s:8:\"reusable\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:16:\"default_langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:16:\"revision_default\";a:1:{s:9:\"x-default\";a:0:{}}s:29:\"revision_translation_affected\";a:1:{s:9:\"x-default\";a:0:{}}s:7:\"metatag\";a:1:{s:9:\"x-default\";a:0:{}}s:26:\"content_translation_source\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:3:\"und\";}}}s:28:\"content_translation_outdated\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:23:\"content_translation_uid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:1:\"1\";}}}s:27:\"content_translation_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629675790;}}}s:17:\"field_alternative\";a:1:{s:9:\"x-default\";a:0:{}}s:10:\"field_body\";a:1:{s:9:\"x-default\";a:1:{i:0;a:2:{s:5:\"value\";s:199:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>\r\n\";s:6:\"format\";s:10:\"basic_html\";}}}s:9:\"field_cta\";a:1:{s:9:\"x-default\";a:1:{i:0;a:4:{s:10:\"attributes\";a:0:{}s:3:\"uri\";s:10:\"internal:#\";s:5:\"title\";s:9:\"CTA Lorem\";s:7:\"options\";a:0:{}}}}s:13:\"field_eyebrow\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_media\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_title\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:20:\"Government Solutions\";}}}}s:9:\"\0*\0fields\";a:0:{}s:19:\"\0*\0fieldDefinitions\";N;s:12:\"\0*\0languages\";N;s:14:\"\0*\0langcodeKey\";s:8:\"langcode\";s:21:\"\0*\0defaultLangcodeKey\";s:16:\"default_langcode\";s:17:\"\0*\0activeLangcode\";s:9:\"x-default\";s:18:\"\0*\0defaultLangcode\";s:2:\"en\";s:15:\"\0*\0translations\";a:1:{s:9:\"x-default\";a:1:{s:6:\"status\";i:2;}}s:24:\"\0*\0translationInitialize\";b:0;s:14:\"\0*\0newRevision\";b:1;s:20:\"\0*\0isDefaultRevision\";b:1;s:13:\"\0*\0entityKeys\";a:3:{s:6:\"bundle\";s:4:\"card\";s:8:\"revision\";N;s:2:\"id\";N;}s:25:\"\0*\0translatableEntityKeys\";a:1:{s:8:\"langcode\";a:1:{s:9:\"x-default\";s:2:\"en\";}}s:12:\"\0*\0validated\";b:1;s:21:\"\0*\0validationRequired\";b:0;s:19:\"\0*\0loadedRevisionId\";N;s:33:\"\0*\0revisionTranslationAffectedKey\";s:29:\"revision_translation_affected\";s:37:\"\0*\0enforceRevisionTranslationAffected\";a:0:{}s:15:\"\0*\0entityTypeId\";s:13:\"block_content\";s:15:\"\0*\0enforceIsNew\";b:1;s:12:\"\0*\0typedData\";N;s:16:\"\0*\0cacheContexts\";a:0:{}s:12:\"\0*\0cacheTags\";a:0:{}s:14:\"\0*\0cacheMaxAge\";i:-1;s:14:\"\0*\0_serviceIds\";a:0:{}s:18:\"\0*\0_entityStorages\";a:0:{}s:12:\"\0*\0isSyncing\";b:0;s:19:\"\0*\0accessDependency\";N;}"
+          context_mapping: {  }
+        additional:
+          layout_builder_styles_style:
+            0: ''
+            1: ''
+            card_product_services: card_product_services
+          layout_builder_id: ''
+        weight: 4
+    third_party_settings: {  }
+  -
+    layout_id: layout_onecol
+    layout_settings:
+      label: ''
+      layout_builder_styles_style:
+        0: ''
+        1: ''
+        block_plain_text: 0
+        component_intro: 0
+        intro_text: 0
+        negative_bottom_margin: 0
+        negative_top_margin: 0
+        related_thought_leadership: 0
+        section_product_services: 0
+        small_tile_section: 0
+        small_image_tile: 0
+      context_mapping: {  }
+    components:
+      a35e0b23-ba8f-4dac-a7a3-790826642753:
+        uuid: a35e0b23-ba8f-4dac-a7a3-790826642753
+        region: content
+        configuration:
+          id: 'inline_block:statistic'
+          label: 'Inline block'
+          provider: layout_builder
+          label_display: ''
+          view_mode: full
+          block_revision_id: null
+          block_serialized: "O:40:\"Drupal\\block_content\\Entity\\BlockContent\":30:{s:8:\"\0*\0theme\";N;s:9:\"\0*\0values\";a:25:{s:8:\"langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:7:\"zh-hans\";}}}s:11:\"revision_id\";a:1:{s:9:\"x-default\";a:0:{}}s:2:\"id\";a:1:{s:9:\"x-default\";a:0:{}}s:4:\"uuid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:36:\"d59987a8-a605-4729-8180-aa5d533d6a03\";}}}s:4:\"type\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:9:\"statistic\";}}}s:16:\"revision_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629675901;}}}s:13:\"revision_user\";a:1:{s:9:\"x-default\";a:0:{}}s:12:\"revision_log\";a:1:{s:9:\"x-default\";a:0:{}}s:6:\"status\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:4:\"info\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:12:\"Inline block\";}}}s:7:\"changed\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629675901;}}}s:8:\"reusable\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:16:\"default_langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:16:\"revision_default\";a:1:{s:9:\"x-default\";a:0:{}}s:29:\"revision_translation_affected\";a:1:{s:9:\"x-default\";a:0:{}}s:7:\"metatag\";a:1:{s:9:\"x-default\";a:0:{}}s:26:\"content_translation_source\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:3:\"und\";}}}s:28:\"content_translation_outdated\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:23:\"content_translation_uid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:1:\"1\";}}}s:27:\"content_translation_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629675901;}}}s:10:\"field_body\";a:1:{s:9:\"x-default\";a:1:{i:0;a:2:{s:5:\"value\";s:148:\"<p>Optional copy block lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor accumsan.</p>\r\n\";s:6:\"format\";s:10:\"basic_html\";}}}s:9:\"field_cta\";a:1:{s:9:\"x-default\";a:1:{i:0;a:4:{s:10:\"attributes\";a:0:{}s:3:\"uri\";s:10:\"internal:#\";s:5:\"title\";s:9:\"CTA Lorem\";s:7:\"options\";a:0:{}}}}s:13:\"field_eyebrow\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:4:\"900+\";}}}s:11:\"field_media\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_title\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:42:\"Analysts & researcher experts at Mandiant.\";}}}}s:9:\"\0*\0fields\";a:0:{}s:19:\"\0*\0fieldDefinitions\";N;s:12:\"\0*\0languages\";N;s:14:\"\0*\0langcodeKey\";s:8:\"langcode\";s:21:\"\0*\0defaultLangcodeKey\";s:16:\"default_langcode\";s:17:\"\0*\0activeLangcode\";s:9:\"x-default\";s:18:\"\0*\0defaultLangcode\";s:7:\"zh-hans\";s:15:\"\0*\0translations\";a:1:{s:9:\"x-default\";a:1:{s:6:\"status\";i:2;}}s:24:\"\0*\0translationInitialize\";b:0;s:14:\"\0*\0newRevision\";b:1;s:20:\"\0*\0isDefaultRevision\";b:1;s:13:\"\0*\0entityKeys\";a:3:{s:6:\"bundle\";s:9:\"statistic\";s:8:\"revision\";N;s:2:\"id\";N;}s:25:\"\0*\0translatableEntityKeys\";a:1:{s:8:\"langcode\";a:0:{}}s:12:\"\0*\0validated\";b:1;s:21:\"\0*\0validationRequired\";b:0;s:19:\"\0*\0loadedRevisionId\";N;s:33:\"\0*\0revisionTranslationAffectedKey\";s:29:\"revision_translation_affected\";s:37:\"\0*\0enforceRevisionTranslationAffected\";a:0:{}s:15:\"\0*\0entityTypeId\";s:13:\"block_content\";s:15:\"\0*\0enforceIsNew\";b:1;s:12:\"\0*\0typedData\";N;s:16:\"\0*\0cacheContexts\";a:0:{}s:12:\"\0*\0cacheTags\";a:0:{}s:14:\"\0*\0cacheMaxAge\";i:-1;s:14:\"\0*\0_serviceIds\";a:0:{}s:18:\"\0*\0_entityStorages\";a:0:{}s:12:\"\0*\0isSyncing\";b:0;s:19:\"\0*\0accessDependency\";N;}"
+          context_mapping: {  }
+        additional:
+          layout_builder_styles_style:
+            column: 0
+            0: ''
+          layout_builder_id: ''
+        weight: 0
+    third_party_settings: {  }
+  -
+    layout_id: layout_onecol
+    layout_settings:
+      label: ''
+      layout_builder_styles_style:
+        0: customer_stories_header
+        1: featured_testimonial
+        block_plain_text: 0
+        component_intro: 0
+        intro_text: 0
+        negative_bottom_margin: 0
+        negative_top_margin: 0
+        related_thought_leadership: 0
+        resource_hero: 0
+        section_product_services: 0
+        small_tile_section: 0
+        small_image_tile: 0
+      context_mapping: {  }
+      layout_builder_id: ''
+    components:
+      346ee1d5-2e48-4297-9623-10979ae880a5:
+        uuid: 346ee1d5-2e48-4297-9623-10979ae880a5
+        region: content
+        configuration:
+          id: 'inline_block:testimonial'
+          label: 'Inline block'
+          provider: layout_builder
+          label_display: ''
+          view_mode: full
+          block_revision_id: null
+          block_serialized: "O:40:\"Drupal\\block_content\\Entity\\BlockContent\":30:{s:8:\"\0*\0theme\";N;s:9:\"\0*\0values\";a:21:{s:8:\"langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:2:\"en\";}}}s:11:\"revision_id\";a:1:{s:9:\"x-default\";a:0:{}}s:2:\"id\";a:1:{s:9:\"x-default\";a:0:{}}s:4:\"uuid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:36:\"07074184-d822-4e23-90fc-a56aebf9cb75\";}}}s:4:\"type\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:11:\"testimonial\";}}}s:16:\"revision_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629676035;}}}s:13:\"revision_user\";a:1:{s:9:\"x-default\";a:0:{}}s:12:\"revision_log\";a:1:{s:9:\"x-default\";a:0:{}}s:6:\"status\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:4:\"info\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:12:\"Inline block\";}}}s:7:\"changed\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629676035;}}}s:8:\"reusable\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:16:\"default_langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:16:\"revision_default\";a:1:{s:9:\"x-default\";a:0:{}}s:29:\"revision_translation_affected\";a:1:{s:9:\"x-default\";a:0:{}}s:7:\"metatag\";a:1:{s:9:\"x-default\";a:0:{}}s:26:\"content_translation_source\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:3:\"und\";}}}s:28:\"content_translation_outdated\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:23:\"content_translation_uid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:1:\"1\";}}}s:27:\"content_translation_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629676035;}}}s:17:\"field_testimonial\";a:1:{s:9:\"x-default\";a:1:{i:0;a:4:{s:6:\"weight\";i:0;s:4:\"form\";N;s:10:\"needs_save\";b:0;s:9:\"target_id\";s:3:\"466\";}}}}s:9:\"\0*\0fields\";a:0:{}s:19:\"\0*\0fieldDefinitions\";N;s:12:\"\0*\0languages\";N;s:14:\"\0*\0langcodeKey\";s:8:\"langcode\";s:21:\"\0*\0defaultLangcodeKey\";s:16:\"default_langcode\";s:17:\"\0*\0activeLangcode\";s:9:\"x-default\";s:18:\"\0*\0defaultLangcode\";s:2:\"en\";s:15:\"\0*\0translations\";a:1:{s:9:\"x-default\";a:1:{s:6:\"status\";i:2;}}s:24:\"\0*\0translationInitialize\";b:0;s:14:\"\0*\0newRevision\";b:1;s:20:\"\0*\0isDefaultRevision\";b:1;s:13:\"\0*\0entityKeys\";a:2:{s:6:\"bundle\";s:11:\"testimonial\";s:8:\"revision\";N;}s:25:\"\0*\0translatableEntityKeys\";a:1:{s:8:\"langcode\";a:1:{s:9:\"x-default\";s:2:\"en\";}}s:12:\"\0*\0validated\";b:1;s:21:\"\0*\0validationRequired\";b:0;s:19:\"\0*\0loadedRevisionId\";N;s:33:\"\0*\0revisionTranslationAffectedKey\";s:29:\"revision_translation_affected\";s:37:\"\0*\0enforceRevisionTranslationAffected\";a:0:{}s:15:\"\0*\0entityTypeId\";s:13:\"block_content\";s:15:\"\0*\0enforceIsNew\";b:1;s:12:\"\0*\0typedData\";N;s:16:\"\0*\0cacheContexts\";a:0:{}s:12:\"\0*\0cacheTags\";a:0:{}s:14:\"\0*\0cacheMaxAge\";i:-1;s:14:\"\0*\0_serviceIds\";a:0:{}s:18:\"\0*\0_entityStorages\";a:0:{}s:12:\"\0*\0isSyncing\";b:0;s:19:\"\0*\0accessDependency\";N;}"
+          context_mapping: {  }
+        additional:
+          layout_builder_id: ''
+        weight: 0
+    third_party_settings: {  }
+  -
+    layout_id: layout_onecol
+    layout_settings:
+      label: ''
+      layout_builder_styles_style:
+        0: ''
+        1: darker_gray
+        block_plain_text: 0
+        component_intro: 0
+        intro_text: 0
+        negative_bottom_margin: 0
+        negative_top_margin: 0
+        related_thought_leadership: 0
+        section_product_services: 0
+        small_tile_section: 0
+        small_image_tile: 0
+      context_mapping: {  }
+    components:
+      e27f5027-14ae-4bcc-b312-721dcc634f8f:
+        uuid: e27f5027-14ae-4bcc-b312-721dcc634f8f
+        region: content
+        configuration:
+          id: 'inline_block:featured_logos'
+          label: 'Inline block'
+          provider: layout_builder
+          label_display: ''
+          view_mode: full
+          block_revision_id: null
+          block_serialized: "O:40:\"Drupal\\block_content\\Entity\\BlockContent\":30:{s:8:\"\0*\0theme\";N;s:9:\"\0*\0values\";a:28:{s:8:\"langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:2:\"en\";}}}s:11:\"revision_id\";a:1:{s:9:\"x-default\";a:0:{}}s:2:\"id\";a:1:{s:9:\"x-default\";a:0:{}}s:4:\"uuid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:36:\"c0329054-1efb-47ac-9ee9-025cecca0a5f\";}}}s:4:\"type\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:14:\"featured_logos\";}}}s:16:\"revision_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629676765;}}}s:13:\"revision_user\";a:1:{s:9:\"x-default\";a:0:{}}s:12:\"revision_log\";a:1:{s:9:\"x-default\";a:0:{}}s:6:\"status\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:4:\"info\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:12:\"Inline block\";}}}s:7:\"changed\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629676765;}}}s:8:\"reusable\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:16:\"default_langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:16:\"revision_default\";a:1:{s:9:\"x-default\";a:0:{}}s:29:\"revision_translation_affected\";a:1:{s:9:\"x-default\";a:0:{}}s:7:\"metatag\";a:1:{s:9:\"x-default\";a:0:{}}s:26:\"content_translation_source\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:3:\"und\";}}}s:28:\"content_translation_outdated\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:23:\"content_translation_uid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:1:\"1\";}}}s:27:\"content_translation_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629676765;}}}s:10:\"field_body\";a:1:{s:9:\"x-default\";a:0:{}}s:9:\"field_cta\";a:1:{s:9:\"x-default\";a:0:{}}s:13:\"field_eyebrow\";a:1:{s:9:\"x-default\";a:0:{}}s:13:\"field_gallery\";a:1:{s:9:\"x-default\";a:1:{i:0;a:4:{s:13:\"remove_button\";O:48:\"Drupal\\Core\\StringTranslation\\TranslatableMarkup\":3:{s:9:\"\0*\0string\";s:6:\"Remove\";s:12:\"\0*\0arguments\";a:0:{}s:10:\"\0*\0options\";a:0:{}}s:11:\"edit_button\";O:48:\"Drupal\\Core\\StringTranslation\\TranslatableMarkup\":3:{s:9:\"\0*\0string\";s:4:\"Edit\";s:12:\"\0*\0arguments\";a:0:{}s:10:\"\0*\0options\";a:0:{}}s:6:\"weight\";i:4;s:9:\"target_id\";s:2:\"96\";}}}s:11:\"field_media\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_title\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:18:\"Trusted worldwide:\";}}}s:16:\"layout_selection\";a:1:{s:9:\"x-default\";a:0:{}}s:10:\"field_cta2\";a:1:{s:9:\"x-default\";a:0:{}}}s:9:\"\0*\0fields\";a:0:{}s:19:\"\0*\0fieldDefinitions\";N;s:12:\"\0*\0languages\";N;s:14:\"\0*\0langcodeKey\";s:8:\"langcode\";s:21:\"\0*\0defaultLangcodeKey\";s:16:\"default_langcode\";s:17:\"\0*\0activeLangcode\";s:9:\"x-default\";s:18:\"\0*\0defaultLangcode\";s:2:\"en\";s:15:\"\0*\0translations\";a:1:{s:9:\"x-default\";a:1:{s:6:\"status\";i:2;}}s:24:\"\0*\0translationInitialize\";b:0;s:14:\"\0*\0newRevision\";b:1;s:20:\"\0*\0isDefaultRevision\";b:1;s:13:\"\0*\0entityKeys\";a:3:{s:6:\"bundle\";s:14:\"featured_logos\";s:8:\"revision\";N;s:2:\"id\";N;}s:25:\"\0*\0translatableEntityKeys\";a:1:{s:8:\"langcode\";a:1:{s:9:\"x-default\";s:2:\"en\";}}s:12:\"\0*\0validated\";b:1;s:21:\"\0*\0validationRequired\";b:0;s:19:\"\0*\0loadedRevisionId\";N;s:33:\"\0*\0revisionTranslationAffectedKey\";s:29:\"revision_translation_affected\";s:37:\"\0*\0enforceRevisionTranslationAffected\";a:0:{}s:15:\"\0*\0entityTypeId\";s:13:\"block_content\";s:15:\"\0*\0enforceIsNew\";b:1;s:12:\"\0*\0typedData\";N;s:16:\"\0*\0cacheContexts\";a:0:{}s:12:\"\0*\0cacheTags\";a:0:{}s:14:\"\0*\0cacheMaxAge\";i:-1;s:14:\"\0*\0_serviceIds\";a:0:{}s:18:\"\0*\0_entityStorages\";a:0:{}s:12:\"\0*\0isSyncing\";b:0;s:19:\"\0*\0accessDependency\";N;}"
+          context_mapping: {  }
+        additional:
+          layout_builder_styles_style:
+            featured_logos: 0
+          layout_builder_id: ''
+        weight: 0
+    third_party_settings: {  }
+  -
+    layout_id: layout_onecol
+    layout_settings:
+      label: ''
+      layout_builder_styles_style:
+        0: ''
+        1: ''
+        component_intro: component_intro
+        block_plain_text: 0
+        intro_text: 0
+        negative_bottom_margin: 0
+        negative_top_margin: 0
+        related_thought_leadership: 0
+        section_product_services: 0
+        small_tile_section: 0
+        small_image_tile: 0
+      context_mapping: {  }
+    components:
+      62db4de6-5517-4c0c-9dd8-ecba2ebc531b:
+        uuid: 62db4de6-5517-4c0c-9dd8-ecba2ebc531b
+        region: content
+        configuration:
+          id: 'inline_block:text'
+          label: 'Inline block'
+          provider: layout_builder
+          label_display: ''
+          view_mode: full
+          block_revision_id: null
+          block_serialized: "O:40:\"Drupal\\block_content\\Entity\\BlockContent\":30:{s:8:\"\0*\0theme\";N;s:9:\"\0*\0values\";a:23:{s:8:\"langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:2:\"en\";}}}s:11:\"revision_id\";a:1:{s:9:\"x-default\";a:0:{}}s:2:\"id\";a:1:{s:9:\"x-default\";a:0:{}}s:4:\"uuid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:36:\"5475a816-94bc-40f2-8324-8a94afd82348\";}}}s:4:\"type\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:4:\"text\";}}}s:16:\"revision_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629676871;}}}s:13:\"revision_user\";a:1:{s:9:\"x-default\";a:0:{}}s:12:\"revision_log\";a:1:{s:9:\"x-default\";a:0:{}}s:6:\"status\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1;}}}s:4:\"info\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:12:\"Inline block\";}}}s:7:\"changed\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629676871;}}}s:8:\"reusable\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:16:\"default_langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:16:\"revision_default\";a:1:{s:9:\"x-default\";a:0:{}}s:29:\"revision_translation_affected\";a:1:{s:9:\"x-default\";a:0:{}}s:7:\"metatag\";a:1:{s:9:\"x-default\";a:0:{}}s:26:\"content_translation_source\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:3:\"und\";}}}s:28:\"content_translation_outdated\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:23:\"content_translation_uid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:1:\"1\";}}}s:27:\"content_translation_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629676871;}}}s:10:\"field_body\";a:1:{s:9:\"x-default\";a:0:{}}s:13:\"field_eyebrow\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_title\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:20:\"Bullet Listing Cards\";}}}}s:9:\"\0*\0fields\";a:0:{}s:19:\"\0*\0fieldDefinitions\";N;s:12:\"\0*\0languages\";N;s:14:\"\0*\0langcodeKey\";s:8:\"langcode\";s:21:\"\0*\0defaultLangcodeKey\";s:16:\"default_langcode\";s:17:\"\0*\0activeLangcode\";s:9:\"x-default\";s:18:\"\0*\0defaultLangcode\";s:2:\"en\";s:15:\"\0*\0translations\";a:1:{s:9:\"x-default\";a:1:{s:6:\"status\";i:2;}}s:24:\"\0*\0translationInitialize\";b:0;s:14:\"\0*\0newRevision\";b:1;s:20:\"\0*\0isDefaultRevision\";b:1;s:13:\"\0*\0entityKeys\";a:2:{s:6:\"bundle\";s:4:\"text\";s:8:\"revision\";N;}s:25:\"\0*\0translatableEntityKeys\";a:1:{s:8:\"langcode\";a:1:{s:9:\"x-default\";s:2:\"en\";}}s:12:\"\0*\0validated\";b:1;s:21:\"\0*\0validationRequired\";b:0;s:19:\"\0*\0loadedRevisionId\";N;s:33:\"\0*\0revisionTranslationAffectedKey\";s:29:\"revision_translation_affected\";s:37:\"\0*\0enforceRevisionTranslationAffected\";a:0:{}s:15:\"\0*\0entityTypeId\";s:13:\"block_content\";s:15:\"\0*\0enforceIsNew\";b:1;s:12:\"\0*\0typedData\";N;s:16:\"\0*\0cacheContexts\";a:0:{}s:12:\"\0*\0cacheTags\";a:0:{}s:14:\"\0*\0cacheMaxAge\";i:-1;s:14:\"\0*\0_serviceIds\";a:0:{}s:18:\"\0*\0_entityStorages\";a:0:{}s:12:\"\0*\0isSyncing\";b:0;s:19:\"\0*\0accessDependency\";N;}"
+          context_mapping: {  }
+        additional:
+          layout_builder_styles_style:
+            0: ''
+            1: ''
+            accordion: 0
+            authors_title: 0
+            cta_phone: 0
+            product_title: 0
+            margin_bottom_70px_: 0
+          layout_builder_id: ''
+        weight: 0
+    third_party_settings: {  }
+  -
+    layout_id: layout_threecol_section
+    layout_settings:
+      label: ''
+      column_widths: 33-34-33
+      layout_builder_styles_style:
+        0: ''
+        1: ''
+        cta_columns: cta_columns
+        block_plain_text: 0
+        column_cards: 0
+        divider: 0
+        framed_column_cards: 0
+        negative_bottom_margin: 0
+        negative_top_margin: 0
+        small_tile_section: 0
+        s: 0
+      context_mapping: {  }
+    components:
+      f852c431-f509-49c6-bff3-d4d6a59ce984:
+        uuid: f852c431-f509-49c6-bff3-d4d6a59ce984
+        region: first
+        configuration:
+          id: 'inline_block:cta'
+          label: 'Inline block'
+          provider: layout_builder
+          label_display: ''
+          view_mode: full
+          block_revision_id: null
+          block_serialized: "O:40:\"Drupal\\block_content\\Entity\\BlockContent\":30:{s:8:\"\0*\0theme\";N;s:9:\"\0*\0values\";a:30:{s:8:\"langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:2:\"en\";}}}s:11:\"revision_id\";a:1:{s:9:\"x-default\";a:0:{}}s:2:\"id\";a:1:{s:9:\"x-default\";a:0:{}}s:4:\"uuid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:36:\"c75235d8-5e85-4960-a147-f645ec076ed2\";}}}s:4:\"type\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:3:\"cta\";}}}s:16:\"revision_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629676930;}}}s:13:\"revision_user\";a:1:{s:9:\"x-default\";a:0:{}}s:12:\"revision_log\";a:1:{s:9:\"x-default\";a:0:{}}s:6:\"status\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1;}}}s:4:\"info\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:12:\"Inline block\";}}}s:7:\"changed\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629676930;}}}s:8:\"reusable\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:16:\"default_langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:16:\"revision_default\";a:1:{s:9:\"x-default\";a:0:{}}s:29:\"revision_translation_affected\";a:1:{s:9:\"x-default\";a:0:{}}s:7:\"metatag\";a:1:{s:9:\"x-default\";a:0:{}}s:26:\"content_translation_source\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:3:\"und\";}}}s:28:\"content_translation_outdated\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:23:\"content_translation_uid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:1:\"1\";}}}s:27:\"content_translation_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629676930;}}}s:11:\"field_block\";a:1:{s:9:\"x-default\";a:0:{}}s:10:\"field_body\";a:1:{s:9:\"x-default\";a:1:{i:0;a:2:{s:5:\"value\";s:246:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus euismod bibendum.</p>\r\n\r\n<ul>\r\n\t<li>List one lorem</li>\r\n\t<li>List two lorem</li>\r\n\t<li>List three lorem</li>\r\n</ul>\r\n\";s:6:\"format\";s:10:\"basic_html\";}}}s:9:\"field_cta\";a:1:{s:9:\"x-default\";a:1:{i:0;a:4:{s:10:\"attributes\";a:0:{}s:3:\"uri\";s:10:\"internal:#\";s:7:\"options\";a:1:{s:10:\"attributes\";a:1:{s:6:\"target\";s:0:\"\";}}s:5:\"title\";s:9:\"CTA Lorem\";}}}s:11:\"field_embed\";a:1:{s:9:\"x-default\";a:0:{}}s:13:\"field_eyebrow\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_media\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_title\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:8:\"Programs\";}}}s:16:\"layout_selection\";a:1:{s:9:\"x-default\";a:0:{}}s:10:\"field_cta2\";a:1:{s:9:\"x-default\";a:0:{}}s:20:\"field_media_document\";a:1:{s:9:\"x-default\";a:0:{}}}s:9:\"\0*\0fields\";a:0:{}s:19:\"\0*\0fieldDefinitions\";N;s:12:\"\0*\0languages\";N;s:14:\"\0*\0langcodeKey\";s:8:\"langcode\";s:21:\"\0*\0defaultLangcodeKey\";s:16:\"default_langcode\";s:17:\"\0*\0activeLangcode\";s:9:\"x-default\";s:18:\"\0*\0defaultLangcode\";s:2:\"en\";s:15:\"\0*\0translations\";a:1:{s:9:\"x-default\";a:1:{s:6:\"status\";i:2;}}s:24:\"\0*\0translationInitialize\";b:0;s:14:\"\0*\0newRevision\";b:1;s:20:\"\0*\0isDefaultRevision\";b:1;s:13:\"\0*\0entityKeys\";a:2:{s:6:\"bundle\";s:3:\"cta\";s:8:\"revision\";N;}s:25:\"\0*\0translatableEntityKeys\";a:1:{s:8:\"langcode\";a:1:{s:9:\"x-default\";s:2:\"en\";}}s:12:\"\0*\0validated\";b:1;s:21:\"\0*\0validationRequired\";b:0;s:19:\"\0*\0loadedRevisionId\";N;s:33:\"\0*\0revisionTranslationAffectedKey\";s:29:\"revision_translation_affected\";s:37:\"\0*\0enforceRevisionTranslationAffected\";a:0:{}s:15:\"\0*\0entityTypeId\";s:13:\"block_content\";s:15:\"\0*\0enforceIsNew\";b:1;s:12:\"\0*\0typedData\";N;s:16:\"\0*\0cacheContexts\";a:0:{}s:12:\"\0*\0cacheTags\";a:0:{}s:14:\"\0*\0cacheMaxAge\";i:-1;s:14:\"\0*\0_serviceIds\";a:0:{}s:18:\"\0*\0_entityStorages\";a:0:{}s:12:\"\0*\0isSyncing\";b:0;s:19:\"\0*\0accessDependency\";N;}"
+          context_mapping: {  }
+        additional:
+          layout_builder_styles_style:
+            0: ''
+            1: ''
+            cta_phone: 0
+            cta_: 0
+            right: 0
+            small_image: 0
+            left_oriented: 0
+            arrow_link: 0
+            2: ''
+          layout_builder_id: ''
+        weight: 0
+      33e7a10e-098d-46c8-a577-f71af4062b9b:
+        uuid: 33e7a10e-098d-46c8-a577-f71af4062b9b
+        region: second
+        configuration:
+          id: 'inline_block:cta'
+          label: 'Inline block'
+          provider: layout_builder
+          label_display: ''
+          view_mode: full
+          block_revision_id: null
+          block_serialized: "O:40:\"Drupal\\block_content\\Entity\\BlockContent\":30:{s:8:\"\0*\0theme\";N;s:9:\"\0*\0values\";a:30:{s:8:\"langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:2:\"en\";}}}s:11:\"revision_id\";a:1:{s:9:\"x-default\";a:0:{}}s:2:\"id\";a:1:{s:9:\"x-default\";a:0:{}}s:4:\"uuid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:36:\"37d43f98-222a-4bcc-8be4-a45fed7154d8\";}}}s:4:\"type\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:3:\"cta\";}}}s:16:\"revision_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629676955;}}}s:13:\"revision_user\";a:1:{s:9:\"x-default\";a:0:{}}s:12:\"revision_log\";a:1:{s:9:\"x-default\";a:0:{}}s:6:\"status\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1;}}}s:4:\"info\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:12:\"Inline block\";}}}s:7:\"changed\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629676955;}}}s:8:\"reusable\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:16:\"default_langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:16:\"revision_default\";a:1:{s:9:\"x-default\";a:0:{}}s:29:\"revision_translation_affected\";a:1:{s:9:\"x-default\";a:0:{}}s:7:\"metatag\";a:1:{s:9:\"x-default\";a:0:{}}s:26:\"content_translation_source\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:3:\"und\";}}}s:28:\"content_translation_outdated\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:23:\"content_translation_uid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:1:\"1\";}}}s:27:\"content_translation_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629676955;}}}s:11:\"field_block\";a:1:{s:9:\"x-default\";a:0:{}}s:10:\"field_body\";a:1:{s:9:\"x-default\";a:1:{i:0;a:2:{s:5:\"value\";s:246:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus euismod bibendum.</p>\r\n\r\n<ul>\r\n\t<li>List one lorem</li>\r\n\t<li>List two lorem</li>\r\n\t<li>List three lorem</li>\r\n</ul>\r\n\";s:6:\"format\";s:10:\"basic_html\";}}}s:9:\"field_cta\";a:1:{s:9:\"x-default\";a:1:{i:0;a:4:{s:10:\"attributes\";a:0:{}s:3:\"uri\";s:10:\"internal:#\";s:7:\"options\";a:1:{s:10:\"attributes\";a:1:{s:6:\"target\";s:0:\"\";}}s:5:\"title\";s:9:\"CTA Lorem\";}}}s:11:\"field_embed\";a:1:{s:9:\"x-default\";a:0:{}}s:13:\"field_eyebrow\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_media\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_title\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:18:\"Supported Products\";}}}s:16:\"layout_selection\";a:1:{s:9:\"x-default\";a:0:{}}s:10:\"field_cta2\";a:1:{s:9:\"x-default\";a:0:{}}s:20:\"field_media_document\";a:1:{s:9:\"x-default\";a:0:{}}}s:9:\"\0*\0fields\";a:0:{}s:19:\"\0*\0fieldDefinitions\";N;s:12:\"\0*\0languages\";N;s:14:\"\0*\0langcodeKey\";s:8:\"langcode\";s:21:\"\0*\0defaultLangcodeKey\";s:16:\"default_langcode\";s:17:\"\0*\0activeLangcode\";s:9:\"x-default\";s:18:\"\0*\0defaultLangcode\";s:2:\"en\";s:15:\"\0*\0translations\";a:1:{s:9:\"x-default\";a:1:{s:6:\"status\";i:2;}}s:24:\"\0*\0translationInitialize\";b:0;s:14:\"\0*\0newRevision\";b:1;s:20:\"\0*\0isDefaultRevision\";b:1;s:13:\"\0*\0entityKeys\";a:2:{s:6:\"bundle\";s:3:\"cta\";s:8:\"revision\";N;}s:25:\"\0*\0translatableEntityKeys\";a:1:{s:8:\"langcode\";a:1:{s:9:\"x-default\";s:2:\"en\";}}s:12:\"\0*\0validated\";b:1;s:21:\"\0*\0validationRequired\";b:0;s:19:\"\0*\0loadedRevisionId\";N;s:33:\"\0*\0revisionTranslationAffectedKey\";s:29:\"revision_translation_affected\";s:37:\"\0*\0enforceRevisionTranslationAffected\";a:0:{}s:15:\"\0*\0entityTypeId\";s:13:\"block_content\";s:15:\"\0*\0enforceIsNew\";b:1;s:12:\"\0*\0typedData\";N;s:16:\"\0*\0cacheContexts\";a:0:{}s:12:\"\0*\0cacheTags\";a:0:{}s:14:\"\0*\0cacheMaxAge\";i:-1;s:14:\"\0*\0_serviceIds\";a:0:{}s:18:\"\0*\0_entityStorages\";a:0:{}s:12:\"\0*\0isSyncing\";b:0;s:19:\"\0*\0accessDependency\";N;}"
+          context_mapping: {  }
+        additional:
+          layout_builder_styles_style:
+            0: ''
+            1: ''
+            cta_phone: 0
+            cta_: 0
+            right: 0
+            small_image: 0
+            left_oriented: 0
+            arrow_link: 0
+            2: ''
+          layout_builder_id: ''
+        weight: 0
+      cc42b351-2c8e-46fb-8738-a7a8c4d89374:
+        uuid: cc42b351-2c8e-46fb-8738-a7a8c4d89374
+        region: third
+        configuration:
+          id: 'inline_block:cta'
+          label: 'Inline block'
+          provider: layout_builder
+          label_display: ''
+          view_mode: full
+          block_revision_id: null
+          block_serialized: "O:40:\"Drupal\\block_content\\Entity\\BlockContent\":30:{s:8:\"\0*\0theme\";N;s:9:\"\0*\0values\";a:30:{s:8:\"langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:2:\"en\";}}}s:11:\"revision_id\";a:1:{s:9:\"x-default\";a:0:{}}s:2:\"id\";a:1:{s:9:\"x-default\";a:0:{}}s:4:\"uuid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:36:\"bd2f18a6-67f9-47f9-a7e2-65c810a3319a\";}}}s:4:\"type\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:3:\"cta\";}}}s:16:\"revision_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629676987;}}}s:13:\"revision_user\";a:1:{s:9:\"x-default\";a:0:{}}s:12:\"revision_log\";a:1:{s:9:\"x-default\";a:0:{}}s:6:\"status\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1;}}}s:4:\"info\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:12:\"Inline block\";}}}s:7:\"changed\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629676987;}}}s:8:\"reusable\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:16:\"default_langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:16:\"revision_default\";a:1:{s:9:\"x-default\";a:0:{}}s:29:\"revision_translation_affected\";a:1:{s:9:\"x-default\";a:0:{}}s:7:\"metatag\";a:1:{s:9:\"x-default\";a:0:{}}s:26:\"content_translation_source\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:3:\"und\";}}}s:28:\"content_translation_outdated\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:23:\"content_translation_uid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:1:\"1\";}}}s:27:\"content_translation_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629676987;}}}s:11:\"field_block\";a:1:{s:9:\"x-default\";a:0:{}}s:10:\"field_body\";a:1:{s:9:\"x-default\";a:1:{i:0;a:2:{s:5:\"value\";s:246:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus euismod bibendum.</p>\r\n\r\n<ul>\r\n\t<li>List one lorem</li>\r\n\t<li>List two lorem</li>\r\n\t<li>List three lorem</li>\r\n</ul>\r\n\";s:6:\"format\";s:10:\"basic_html\";}}}s:9:\"field_cta\";a:1:{s:9:\"x-default\";a:1:{i:0;a:4:{s:10:\"attributes\";a:0:{}s:3:\"uri\";s:10:\"internal:#\";s:7:\"options\";a:1:{s:10:\"attributes\";a:1:{s:6:\"target\";s:0:\"\";}}s:5:\"title\";s:9:\"CTA Lorem\";}}}s:11:\"field_embed\";a:1:{s:9:\"x-default\";a:0:{}}s:13:\"field_eyebrow\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_media\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_title\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:7:\"Notices\";}}}s:16:\"layout_selection\";a:1:{s:9:\"x-default\";a:0:{}}s:10:\"field_cta2\";a:1:{s:9:\"x-default\";a:0:{}}s:20:\"field_media_document\";a:1:{s:9:\"x-default\";a:0:{}}}s:9:\"\0*\0fields\";a:0:{}s:19:\"\0*\0fieldDefinitions\";N;s:12:\"\0*\0languages\";N;s:14:\"\0*\0langcodeKey\";s:8:\"langcode\";s:21:\"\0*\0defaultLangcodeKey\";s:16:\"default_langcode\";s:17:\"\0*\0activeLangcode\";s:9:\"x-default\";s:18:\"\0*\0defaultLangcode\";s:2:\"en\";s:15:\"\0*\0translations\";a:1:{s:9:\"x-default\";a:1:{s:6:\"status\";i:2;}}s:24:\"\0*\0translationInitialize\";b:0;s:14:\"\0*\0newRevision\";b:1;s:20:\"\0*\0isDefaultRevision\";b:1;s:13:\"\0*\0entityKeys\";a:2:{s:6:\"bundle\";s:3:\"cta\";s:8:\"revision\";N;}s:25:\"\0*\0translatableEntityKeys\";a:1:{s:8:\"langcode\";a:1:{s:9:\"x-default\";s:2:\"en\";}}s:12:\"\0*\0validated\";b:1;s:21:\"\0*\0validationRequired\";b:0;s:19:\"\0*\0loadedRevisionId\";N;s:33:\"\0*\0revisionTranslationAffectedKey\";s:29:\"revision_translation_affected\";s:37:\"\0*\0enforceRevisionTranslationAffected\";a:0:{}s:15:\"\0*\0entityTypeId\";s:13:\"block_content\";s:15:\"\0*\0enforceIsNew\";b:1;s:12:\"\0*\0typedData\";N;s:16:\"\0*\0cacheContexts\";a:0:{}s:12:\"\0*\0cacheTags\";a:0:{}s:14:\"\0*\0cacheMaxAge\";i:-1;s:14:\"\0*\0_serviceIds\";a:0:{}s:18:\"\0*\0_entityStorages\";a:0:{}s:12:\"\0*\0isSyncing\";b:0;s:19:\"\0*\0accessDependency\";N;}"
+          context_mapping: {  }
+        additional:
+          layout_builder_styles_style:
+            0: ''
+            1: ''
+            cta_phone: 0
+            cta_: 0
+            right: 0
+            small_image: 0
+            left_oriented: 0
+            arrow_link: 0
+            2: ''
+          layout_builder_id: ''
+        weight: 0
+    third_party_settings: {  }
+  -
+    layout_id: layout_onecol
+    layout_settings:
+      label: ''
+      layout_builder_styles_style:
+        0: ''
+        1: ''
+        related_thought_leadership: related_thought_leadership
+        block_plain_text: 0
+        component_intro: 0
+        intro_text: 0
+        negative_bottom_margin: 0
+        negative_top_margin: 0
+        section_product_services: 0
+        small_tile_section: 0
+        small_image_tile: 0
+      context_mapping: {  }
+    components:
+      1ad242e9-ce04-4250-b18f-8776a487343e:
+        uuid: 1ad242e9-ce04-4250-b18f-8776a487343e
+        region: content
+        configuration:
+          id: 'inline_block:view'
+          label: 'Inline block'
+          provider: layout_builder
+          label_display: ''
+          view_mode: full
+          block_revision_id: null
+          block_serialized: "O:40:\"Drupal\\block_content\\Entity\\BlockContent\":30:{s:8:\"\0*\0theme\";N;s:9:\"\0*\0values\";a:24:{s:8:\"langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:2:\"en\";}}}s:11:\"revision_id\";a:1:{s:9:\"x-default\";a:0:{}}s:2:\"id\";a:1:{s:9:\"x-default\";a:0:{}}s:4:\"uuid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:36:\"cbb8989c-1eec-417b-96f2-26ab71d44efb\";}}}s:4:\"type\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:4:\"view\";}}}s:16:\"revision_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629677028;}}}s:13:\"revision_user\";a:1:{s:9:\"x-default\";a:0:{}}s:12:\"revision_log\";a:1:{s:9:\"x-default\";a:0:{}}s:6:\"status\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1;}}}s:4:\"info\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:12:\"Inline block\";}}}s:7:\"changed\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629677028;}}}s:8:\"reusable\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:16:\"default_langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:16:\"revision_default\";a:1:{s:9:\"x-default\";a:0:{}}s:29:\"revision_translation_affected\";a:1:{s:9:\"x-default\";a:0:{}}s:7:\"metatag\";a:1:{s:9:\"x-default\";a:0:{}}s:26:\"content_translation_source\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:3:\"und\";}}}s:28:\"content_translation_outdated\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:23:\"content_translation_uid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:1:\"1\";}}}s:27:\"content_translation_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629677028;}}}s:10:\"field_body\";a:1:{s:9:\"x-default\";a:0:{}}s:15:\"field_catalogue\";a:1:{s:9:\"x-default\";a:1:{i:0;a:4:{s:7:\"options\";a:5:{s:5:\"pager\";s:0:\"\";s:5:\"limit\";s:0:\"\";s:8:\"argument\";s:0:\"\";s:6:\"offset\";s:0:\"\";s:5:\"title\";i:0;}s:9:\"target_id\";s:9:\"resources\";s:10:\"display_id\";s:7:\"block_2\";s:4:\"data\";s:102:\"a:5:{s:5:\"pager\";s:0:\"\";s:5:\"limit\";s:0:\"\";s:8:\"argument\";s:0:\"\";s:6:\"offset\";s:0:\"\";s:5:\"title\";i:0;}\";}}}s:9:\"field_cta\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_title\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:26:\"Related Thought Leadership\";}}}}s:9:\"\0*\0fields\";a:0:{}s:19:\"\0*\0fieldDefinitions\";N;s:12:\"\0*\0languages\";N;s:14:\"\0*\0langcodeKey\";s:8:\"langcode\";s:21:\"\0*\0defaultLangcodeKey\";s:16:\"default_langcode\";s:17:\"\0*\0activeLangcode\";s:9:\"x-default\";s:18:\"\0*\0defaultLangcode\";s:2:\"en\";s:15:\"\0*\0translations\";a:1:{s:9:\"x-default\";a:1:{s:6:\"status\";i:2;}}s:24:\"\0*\0translationInitialize\";b:0;s:14:\"\0*\0newRevision\";b:1;s:20:\"\0*\0isDefaultRevision\";b:1;s:13:\"\0*\0entityKeys\";a:2:{s:6:\"bundle\";s:4:\"view\";s:8:\"revision\";N;}s:25:\"\0*\0translatableEntityKeys\";a:1:{s:8:\"langcode\";a:1:{s:9:\"x-default\";s:2:\"en\";}}s:12:\"\0*\0validated\";b:1;s:21:\"\0*\0validationRequired\";b:0;s:19:\"\0*\0loadedRevisionId\";N;s:33:\"\0*\0revisionTranslationAffectedKey\";s:29:\"revision_translation_affected\";s:37:\"\0*\0enforceRevisionTranslationAffected\";a:0:{}s:15:\"\0*\0entityTypeId\";s:13:\"block_content\";s:15:\"\0*\0enforceIsNew\";b:1;s:12:\"\0*\0typedData\";N;s:16:\"\0*\0cacheContexts\";a:0:{}s:12:\"\0*\0cacheTags\";a:0:{}s:14:\"\0*\0cacheMaxAge\";i:-1;s:14:\"\0*\0_serviceIds\";a:0:{}s:18:\"\0*\0_entityStorages\";a:0:{}s:12:\"\0*\0isSyncing\";b:0;s:19:\"\0*\0accessDependency\";N;}"
+          context_mapping: {  }
+        additional:
+          layout_builder_styles_style:
+            divided_info: 0
+            hide_media: 0
+          layout_builder_id: ''
+        weight: 0
+    third_party_settings: {  }
+  -
+    layout_id: layout_onecol
+    layout_settings:
+      label: ''
+      layout_builder_styles_style:
+        0: ''
+        1: ''
+        block_plain_text: 0
+        component_intro: 0
+        intro_text: 0
+        negative_bottom_margin: 0
+        negative_top_margin: 0
+        related_thought_leadership: 0
+        section_product_services: 0
+        small_tile_section: 0
+        small_image_tile: 0
+      context_mapping: {  }
+    components:
+      e0bee71c-b80c-44a1-9b4c-e2d8c7ec052a:
+        uuid: e0bee71c-b80c-44a1-9b4c-e2d8c7ec052a
+        region: content
+        configuration:
+          id: 'inline_block:cta'
+          label: 'Inline block'
+          provider: layout_builder
+          label_display: ''
+          view_mode: full
+          block_revision_id: null
+          block_serialized: "O:40:\"Drupal\\block_content\\Entity\\BlockContent\":30:{s:8:\"\0*\0theme\";N;s:9:\"\0*\0values\";a:30:{s:8:\"langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:2:\"en\";}}}s:11:\"revision_id\";a:1:{s:9:\"x-default\";a:0:{}}s:2:\"id\";a:1:{s:9:\"x-default\";a:0:{}}s:4:\"uuid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:36:\"c61276a3-2d34-4821-b299-3af382c86ab8\";}}}s:4:\"type\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:3:\"cta\";}}}s:16:\"revision_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629677102;}}}s:13:\"revision_user\";a:1:{s:9:\"x-default\";a:0:{}}s:12:\"revision_log\";a:1:{s:9:\"x-default\";a:0:{}}s:6:\"status\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1;}}}s:4:\"info\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:12:\"Inline block\";}}}s:7:\"changed\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629677102;}}}s:8:\"reusable\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:16:\"default_langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:16:\"revision_default\";a:1:{s:9:\"x-default\";a:0:{}}s:29:\"revision_translation_affected\";a:1:{s:9:\"x-default\";a:0:{}}s:7:\"metatag\";a:1:{s:9:\"x-default\";a:0:{}}s:26:\"content_translation_source\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:3:\"und\";}}}s:28:\"content_translation_outdated\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:23:\"content_translation_uid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:1:\"1\";}}}s:27:\"content_translation_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629677102;}}}s:11:\"field_block\";a:1:{s:9:\"x-default\";a:0:{}}s:10:\"field_body\";a:1:{s:9:\"x-default\";a:1:{i:0;a:2:{s:5:\"value\";s:83:\"<p>Optional copy block lorem ipsum dlolor sit ame. consectetur adipscilt eli.</p>\r\n\";s:6:\"format\";s:10:\"basic_html\";}}}s:9:\"field_cta\";a:1:{s:9:\"x-default\";a:1:{i:0;a:4:{s:10:\"attributes\";a:0:{}s:3:\"uri\";s:10:\"internal:#\";s:7:\"options\";a:1:{s:10:\"attributes\";a:1:{s:6:\"target\";s:0:\"\";}}s:5:\"title\";s:9:\"CTA Lorem\";}}}s:11:\"field_embed\";a:1:{s:9:\"x-default\";a:0:{}}s:13:\"field_eyebrow\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_media\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_title\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:31:\"Have more questions? Let's talk\";}}}s:16:\"layout_selection\";a:1:{s:9:\"x-default\";a:0:{}}s:10:\"field_cta2\";a:1:{s:9:\"x-default\";a:0:{}}s:20:\"field_media_document\";a:1:{s:9:\"x-default\";a:0:{}}}s:9:\"\0*\0fields\";a:0:{}s:19:\"\0*\0fieldDefinitions\";N;s:12:\"\0*\0languages\";N;s:14:\"\0*\0langcodeKey\";s:8:\"langcode\";s:21:\"\0*\0defaultLangcodeKey\";s:16:\"default_langcode\";s:17:\"\0*\0activeLangcode\";s:9:\"x-default\";s:18:\"\0*\0defaultLangcode\";s:2:\"en\";s:15:\"\0*\0translations\";a:1:{s:9:\"x-default\";a:1:{s:6:\"status\";i:2;}}s:24:\"\0*\0translationInitialize\";b:0;s:14:\"\0*\0newRevision\";b:1;s:20:\"\0*\0isDefaultRevision\";b:1;s:13:\"\0*\0entityKeys\";a:2:{s:6:\"bundle\";s:3:\"cta\";s:8:\"revision\";N;}s:25:\"\0*\0translatableEntityKeys\";a:1:{s:8:\"langcode\";a:1:{s:9:\"x-default\";s:2:\"en\";}}s:12:\"\0*\0validated\";b:1;s:21:\"\0*\0validationRequired\";b:0;s:19:\"\0*\0loadedRevisionId\";N;s:33:\"\0*\0revisionTranslationAffectedKey\";s:29:\"revision_translation_affected\";s:37:\"\0*\0enforceRevisionTranslationAffected\";a:0:{}s:15:\"\0*\0entityTypeId\";s:13:\"block_content\";s:15:\"\0*\0enforceIsNew\";b:1;s:12:\"\0*\0typedData\";N;s:16:\"\0*\0cacheContexts\";a:0:{}s:12:\"\0*\0cacheTags\";a:0:{}s:14:\"\0*\0cacheMaxAge\";i:-1;s:14:\"\0*\0_serviceIds\";a:0:{}s:18:\"\0*\0_entityStorages\";a:0:{}s:12:\"\0*\0isSyncing\";b:0;s:19:\"\0*\0accessDependency\";N;}"
+          context_mapping: {  }
+        additional:
+          layout_builder_styles_style:
+            0: ''
+            1: ''
+            cta_phone: 0
+            cta_: 0
+            right: 0
+            small_image: 0
+            left_oriented: 0
+            arrow_link: 0
+            2: footer_cta
+          layout_builder_id: ''
+        weight: 0
+    third_party_settings: {  }

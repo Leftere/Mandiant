@@ -1,0 +1,40 @@
+.block-bundle-featured_resources {
+  @include make-custom-block($type: 'article', $grid-gap: 1.5rem);
+
+  &:not(.hide-media) {
+    .cols {
+      @include breakpoint($tablet) {
+        margin-top: 6rem;
+      }
+
+      > a {
+        margin-bottom: 2rem;
+        margin-top: 4rem;
+      }
+    }
+  }
+
+  &.hide-media {
+    .cols {
+      @include breakpoint($tablet) {
+        margin-top: 4rem;
+      }
+
+      > a {
+        margin-bottom: 4rem;
+
+        span.media {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &.divided-info {
+    .cols {
+      > a {
+        @include card-related-article-divided-info();
+      }
+    }
+  }
+}

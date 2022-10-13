@@ -1,0 +1,79 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed May 05 2021 17:27:49 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Prove the Value of Security Investments and Instill Confidence Across the Organization",
+    "jcr:versionHistory": "36fe978c-f531-4f11-8373-8ddde78652b8",
+    "author": "Lynn Harrington",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "d95663e3-6e7a-4c49-bbab-8b6402d3ee0c"
+    ],
+    "jcr:created": "Wed May 05 2021 21:03:37 GMT+0000",
+    "cq:lastModified": "Wed May 05 2021 21:02:51 GMT+0000",
+    "jcr:baseVersion": "d95663e3-6e7a-4c49-bbab-8b6402d3ee0c",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:lynn-harrington",
+      "fireeye-blog-products-and-services:products-and-services",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:security-validation",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:c-suite",
+      "fireeye-blog-tags:mandiant"
+    ],
+    "jcr:uuid": "a53415e5-8bc8-4d7d-8261-0deda84a55bf",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Wed May 05 2021 13:30:00 GMT-0400",
+    "cq:lastModifiedBy": "jeff.payne@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "adam.greenberg@fireeye.com",
+        "jcr:lastModifiedBy": "matthew.sawicki@fireeye.com",
+        "jcr:created": "Wed May 05 2021 16:17:32 GMT+0000",
+        "text": "\u003Cp\u003ECyber security has evolved to become more than a compliance-driven mandate. Today\u2019s CEOs, boards of directors, and shareholders are demanding an understanding from IT leadership of the value security delivers to the business, which means that CIOs and CISOs need empiric evidence that demonstrates security controls are working as intended. In a nutshell, they need security validation to prove security effectiveness.\u003C\/p\u003E\n\u003Cp\u003EAs shared in our white paper, \u003Ca href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/security-validation\/wp-security-validation-for-security-effectiveness.html\u0022\u003E\u003Ci\u003ESecurity Validation for Security Effectiveness: Five Critical Steps to Prove the Return on Security Investments\u003C\/i\u003E\u003C\/a\u003E,\u003Cb\u003E \u003C\/b\u003Esecurity validation can help organizations meet critical business mandates and prove value to the C-Suite. Organizations that embrace and adopt the needed validation capabilities will be better able to defend against the rising tide of ransomware, data breaches, and other forms of malicious threats while they sustain, or even improve, operational performance and rationalize investments.\u003C\/p\u003E\n\u003Cp\u003EFor instance, did you know that:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003E53% of organizations are unaware that an attack is active in their environment\u003C\/li\u003E\n\u003Cli\u003EMore than 67% of attacks executed are not prevented\u003C\/li\u003E\n\u003Cli\u003ERoughly 74% of the attacks tested in production environments go undetected\u003C\/li\u003E\n\u003Cli\u003EOnly 9% of attacks detected are correlated by SIEMs and generate an alert\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EThese findings, reported in the \u003Ca href=\u0022\/content\/fireeye-www\/en_US\/current-threats\/annual-threat-report\/security-effectiveness-report.html\u0022\u003E\u003Ci\u003EMandiant Security Effectiveness Report 2020\u003C\/i\u003E\u003C\/a\u003E, were uncovered during testing by the \u003Ca href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/security-validation.html\u0022\u003EMandiant Security Validation Platform\u003C\/a\u003E in enterprise production environments and compiled by the Mandiant Solutions research team. Without a doubt, there is a clear need for organizations to improve security effectiveness. When approached the right way, security validation can help IT leadership answer critical questions such as:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EWhat is the risk of targeted threats to our company, and how does that impact operations?\u003C\/li\u003E\n\u003Cli\u003EHow can we optimize cyber defenses while justifying our security investments?\u003C\/li\u003E\n\u003Cli\u003EWhat proactive steps should we take to understand the impact of the removal of a technology or change in our security infrastructure?\u003C\/li\u003E\n\u003Cli\u003EHow does the security team prove its value and instill confidence across the company?\u003C\/li\u003E\n\u003C\/ul\u003E\n",
+        "jcr:lastModified": "Wed May 05 2021 18:53:03 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/text\/text",
+        "textIsRich": "true"
+      },
+      "grid_40_60_full": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "matthew.sawicki@fireeye.com",
+        "jcr:lastModifiedBy": "matthew.sawicki@fireeye.com",
+        "jcr:created": "Wed May 05 2021 18:47:56 GMT+0000",
+        "jcr:lastModified": "Wed May 05 2021 18:47:56 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/grids\/grid-40-60-full"
+      },
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "matthew.sawicki@fireeye.com",
+        "text": "\n\u003Cul\u003E\n\u003Cli\u003E\u003Cb\u003EPrioritize\u003C\/b\u003E what you are going to measure based on relevant and timely cyber threat intelligence\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003EMeasure\u003C\/b\u003E where you are today\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003EOptimize\u003C\/b\u003E your environment as informed by the identified gaps\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003ERationalize\u003C\/b\u003E your portfolio and processes to eliminate redundancies\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003EMonitor\u003C\/b\u003E your environment continuously against a known good baseline\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EWant to learn more about how security validation can reduce risk, prove effectiveness and improve ROI? Download our white paper, \u003Ca href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/security-validation\/wp-security-validation-for-security-effectiveness.html\u0022 adhocenable=\u0022false\u0022\u003E\u003Ci\u003ESecurity Validation for Security Effectiveness: Five Critical Steps to Prove the Return on Security Investments\u003C\/i\u003E\u003C\/a\u003E.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Wed May 05 2021 18:49:57 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003ELeaders need evidence that demonstrates security is working as intended; learn about how security validation can reduce risk, prove effectiveness and improve ROI.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Wed May 05 2021 16:55:24 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Wed May 05 2021 16:58:03 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

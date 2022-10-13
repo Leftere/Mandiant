@@ -1,0 +1,151 @@
+.block-bundle-testimonial {
+  @include container($desktop);
+  color: $white;
+  padding: 8rem 0 !important;
+  position: relative;
+
+  @include breakpoint(max-width $large-tablet) {
+    padding: 4rem 2rem;
+  }
+
+  article {
+    @extend %wrapper;
+
+    @include container(1030px);
+    margin-left: 0 !important;
+
+    .image {
+      position: relative;
+
+      img {
+        border-radius: 0;
+        width: 100%;
+      }
+
+      &:after {
+        border-bottom: 2px solid $red;
+        border-left: 2px solid $red;
+        border-top: 2px solid $red;
+        content: '';
+        height: 110%;
+        left: -20px;
+        position: absolute;
+        top: -50%;
+        transform: translateY(41%);
+        width: 15px;
+      }
+
+      &:before {
+        border-bottom: 2px solid $red;
+        border-right: 2px solid $red;
+        border-top: 2px solid $red;
+        content: '';
+        height: 110%;
+        position: absolute;
+        right: -17px;
+        top: -50%;
+        transform: translateY(41%);
+        width: 15px;
+
+        @include breakpoint($tablet) {
+          right: -12px;
+        }
+      }
+    }
+  }
+
+  .layout {
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .layout__region--first {
+    picture {
+      @include frame;
+      display: flex;
+      position: relative;
+
+      &:before,
+      &:after {
+        padding: 0 1.25rem;
+      }
+
+      img {
+        border-top-left-radius: 0;
+        padding: 2rem 1rem;
+      }
+    }
+  }
+
+  .layout__region--second {
+    margin-top: 2rem;
+
+    @include breakpoint($tablet) {
+      margin-top: 0;
+    }
+
+    @include breakpoint(min-width 650px) {
+      flex: 0 1 50% !important;
+    }
+
+    @include breakpoint(min-width 800px) {
+      flex: 0 1 67% !important;
+    }
+
+    @include breakpoint($large-tablet) {
+      padding-left: 12rem;
+      padding-right: 4rem;
+    }
+
+    .title {
+      color: $medGray;
+      display: inline-block;
+    }
+
+    .description {
+      font-style: italic;
+
+      @include breakpoint(max-width $desktop) {
+        font-size: 26px;
+      }
+    }
+
+    .company {
+      @include small-caps;
+      color: #929292;
+      display: inline-flex;
+      line-height: 1.2;
+      margin-bottom: 2rem;
+
+      &:before {
+        content: '|';
+        padding: 0 $spacing-unit;
+      }
+    }
+
+    .summary {
+      @include font-size(20, 42);
+      font-weight: 500;
+      letter-spacing: 0;
+      padding: $spacing-unit 0 3rem;
+
+      p {
+        @include font-size(20, 42);
+      }
+    }
+  }
+
+  h2 {
+    @include small-caps;
+    line-height: initial;
+  }
+
+  .cta-button {
+    .featured-testimonial & {
+      a {
+        @include cta-simple;
+      }
+    }
+  }
+}

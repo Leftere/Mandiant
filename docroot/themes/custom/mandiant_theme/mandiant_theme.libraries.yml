@@ -1,0 +1,18 @@
+gnorm-styles:
+   version: 1.0
+   css:
+    theme:
+      gnorm/build/styles/screen.css : {}
+
+gnorm-js:
+   version: 1.0
+   js:
+     gnorm/build/scripts/app.built.js : {}
+
+vertical-tabs:
+  version: 1.0
+  js:
+    js/vertical-tabs.js : {}
+  dependencies:
+    - core/drupal
+    - core/once

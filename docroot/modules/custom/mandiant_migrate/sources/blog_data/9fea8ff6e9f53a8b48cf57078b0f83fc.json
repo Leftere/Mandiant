@@ -1,0 +1,70 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed Oct 14 2020 12:04:34 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "FIN11: Widespread Email Campaigns as Precursor for Ransomware and Data Theft",
+    "jcr:versionHistory": "7b388297-c271-4a44-bd2a-e16a0c238772",
+    "author": "Genevieve Stark",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "34a4f10b-2934-45fb-abbb-0f81adce7b3f"
+    ],
+    "jcr:created": "Tue Oct 20 2020 16:15:23 GMT+0000",
+    "cq:lastModified": "Tue Oct 20 2020 16:15:13 GMT+0000",
+    "jcr:baseVersion": "34a4f10b-2934-45fb-abbb-0f81adce7b3f",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:genevieve-stark",
+      "fireeye-blog-authors:andrew-moore",
+      "fireeye-blog-authors:vincent-cannon",
+      "fireeye-blog-authors:jacqueline-oleary",
+      "fireeye-blog-authors:nalani-fraser",
+      "fireeye-blog-authors:kimberly-goody",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:fin-group",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:threat-intelligence",
+      "fireeye-blog-tags:mandiant-advantage",
+      "fireeye-blog-tags:phishing",
+      "fireeye-blog-tags:ransomware",
+      "fireeye-blog-tags:financial-cyber-security"
+    ],
+    "jcr:uuid": "d9908bae-f62c-4093-8e68-fb3094a6ede3",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Wed Oct 14 2020 05:00:00 GMT-0700",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EMandiant Threat Intelligence recently promoted a threat cluster to a named FIN (or financially motivated) threat group for the first time since 2017.\u0026nbsp;We have detailed FIN11\u0027s various tactics, techniques and procedures in a report that is available now by signing up for\u0026nbsp;\u003Ca href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/advantage.html\u0022\u003EMandiant Advantage Free\u003C\/a\u003E.\u003C\/p\u003E\n\u003Cp\u003EIn some ways, FIN11 is reminiscent of APT1; they are notable not for their sophistication, but for their sheer volume of activity. There are significant gaps in FIN11\u2019s phishing operations, but when active, the group conducts up to five high-volume campaigns a week. While many financially motivated threat groups are short lived, FIN11 has been conducting these widespread phishing campaigns since at least 2016. From 2017 through 2018, the threat group primarily targeted organizations in the financial, retail, and hospitality sectors. However, in 2019 FIN11\u2019s targeting expanded to include a diverse set of sectors and geographic regions. At this point, it would be difficult to name a client that FIN11 hasn\u2019t targeted.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/fin11\/fin11services3.png\u0022 alt=\u0022\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003EMandiant has also responded to numerous FIN11 intrusions, but we\u2019ve only observed the group successfully monetize access in few instances. This could suggest that the actors cast a wide net during their phishing operations, then choose which victims to further exploit based on characteristics such as sector, geolocation or perceived security posture. Recently, FIN11 has deployed CLOP ransomware and threatened to publish exfiltrated data to pressure victims into paying ransom demands. The group\u2019s shifting monetization methods\u2014from point-of-sale (POS) malware in 2018, to ransomware in 2019, and hybrid extortion in 2020\u2014is part of a larger trend in which criminal actors have increasingly focused on post-compromise ransomware deployment and data theft extortion.\u003C\/p\u003E\n\u003Cp\u003ENotably, FIN11 includes a subset of the activity \u003Ca href=\u0022https:\/\/www.proofpoint.com\/us\/threat-insight\/post\/threat-actor-profile-ta505-dridex-globeimposter\u0022\u003Esecurity researchers call TA505\u003C\/a\u003E, but we do not attribute TA505\u2019s early operations to FIN11 and caution against using the names interchangeably. Attribution of both historic TA505 activity and more recent FIN11 activity is complicated by the actors\u2019 use of criminal service providers. Like most financially motivated actors, FIN11 doesn\u2019t operate in a vacuum. We believe that the group has used services that provide anonymous domain registration, bulletproof hosting, code signing certificates, and private or semi-private malware. Outsourcing work to these criminal service providers likely enables FIN11 to increase the scale and sophistication of their operations.\u003C\/p\u003E\n\u003Cp\u003ETo learn more about FIN11\u2019s evolving delivery tactics, use of services, post-compromise TTPs, and monetization methods,\u0026nbsp;register for\u0026nbsp;\u003Ca href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/advantage.html\u0022\u003EMandiant Advantage Free\u003C\/a\u003E. The full FIN11 report is also available through our \u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/intelligence.fireeye.com\/sign_in\u0022\u003EFireEye Intelligence Portal (FIP)\u003C\/a\u003E.\u0026nbsp;Then for even more information, register for our \u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.brighttalk.com\/webcast\/7451\/447347\u0022\u003Eexclusive webinar on Oct. 29\u003C\/a\u003E where Mandiant threat intelligence experts will take a deeper dive into FIN11, including its origins, tactics, and potential for future activity.\u0026nbsp;\u003C\/p\u003E\n",
+        "jcr:lastModified": "Tue Oct 20 2020 16:15:13 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext",
+        "textIsRich": "true"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EWe introduce FIN11, a highly active group that Mandiant Threat Intelligence recently promoted to a FIN (or financially motivated) threat actor.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Tue Oct 13 2020 17:28:35 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "jeff.payne@fireeye.com",
+      "jcr:lastModified": "Tue Oct 13 2020 22:30:22 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

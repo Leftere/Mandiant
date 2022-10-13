@@ -1,0 +1,13 @@
+uuid: c0b9f0d2-4616-40ba-aece-c0f178a22e22
+langcode: en
+status: true
+dependencies: {  }
+id: authors_title
+label: 'Authors title'
+classes: author-title
+type: component
+group: add_ons
+weight: 0
+block_restrictions:
+  - 'inline_block:text'
+layout_restrictions: {  }

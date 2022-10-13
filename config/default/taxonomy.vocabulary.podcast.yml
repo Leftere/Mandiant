@@ -1,0 +1,8 @@
+uuid: 8954c2d4-f8ce-4055-ad8a-fb1b5a1bc65c
+langcode: en
+status: true
+dependencies: {  }
+name: Podcast
+vid: podcast
+description: 'Names of podcast series.'
+weight: 0

@@ -1,0 +1,83 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Mon Apr 24 2017 10:20:03 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "FIN7 Evolution and the Phishing LNK",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "728944d4-b395-4866-b612-54c6f31cd863",
+    "author": "Nick Carr",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "adam.greenberg@fireeye.com",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "cc8ebf5c-3464-4003-bcc9-e27f1cc2be98"
+    ],
+    "jcr:created": "Mon Aug 27 2018 11:42:59 GMT-0400",
+    "cq:lastReplicated": "Mon Aug 27 2018 11:42:56 GMT-0400",
+    "cq:lastModified": "Mon Aug 27 2018 11:42:49 GMT-0400",
+    "cq:distribute": true,
+    "jcr:baseVersion": "cc8ebf5c-3464-4003-bcc9-e27f1cc2be98",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-tags:cyber-crime",
+      "fireeye-blog-tags:backdoor",
+      "fireeye-blog-authors:saravanan-mohankumar",
+      "fireeye-blog-authors:nick-carr",
+      "fireeye-blog-authors:yogesh-londhe",
+      "fireeye-blog-authors:cap-barry-vengerik",
+      "fireeye-blog-tags:phishing",
+      "fireeye-blog-tags:malware",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-authors:dominik-weber",
+      "fireeye-blog-tags:carbanak",
+      "fireeye-blog-tags:fin7"
+    ],
+    "jcr:uuid": "d5694ca1-e581-48aa-ad3c-13a53b0b1e65",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Mon Apr 24 2017 10:30:00 GMT-0400",
+    "_charset_": "UTF-8",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "shane.murphy@fireeye.com",
+        "text": "\u003Cp\u003EFIN7 is a financially-motivated threat group that has been associated with malicious operations dating back to late 2015. FIN7 is referred to by many vendors as \u201cCarbanak Group\u201d, although we do not equate all usage of the CARBANAK backdoor with FIN7. FireEye recently observed a \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/threat-research\/2017\/03\/fin7_spear_phishing.html\u0022\u003EFIN7 spear phishing campaign\u003C\/a\u003E targeting personnel involved with United States Securities and Exchange Commission (SEC) filings at various organizations.\u003C\/p\u003E\n\u003Cp\u003EIn a newly-identified campaign, FIN7 modified their phishing techniques to implement unique infection and persistence mechanisms. FIN7 has moved away from weaponized Microsoft Office macros in order to evade detection. This round of FIN7 phishing lures implements hidden shortcut files (LNK files) to initiate the infection and VBScript functionality launched by mshta.exe to infect the victim.\u003C\/p\u003E\n\u003Cp\u003EIn this ongoing campaign, FIN7 is targeting organizations with spear phishing emails containing either a malicious DOCX or RTF file \u2013 two versions of the same LNK file and VBScript technique. These lures originate from external email addresses that the attacker rarely re-used, and they were sent to various locations of large restaurant chains, hospitality, and financial service organizations. The subjects and attachments were themed as complaints, catering orders, or resumes. As with previous campaigns, and as highlighted in our \u003Ca href=\u0022https:\/\/www.fireeye.com\/current-threats\/annual-threat-report\/mtrends\/rpt-m-trends-2017.html\u0022\u003Eannual M-Trends 2017 report\u003C\/a\u003E, FIN7 is calling stores at targeted organizations to ensure they received the email and attempting to walk them through the infection process.\u003C\/p\u003E\n\u003Ch4\u003EInfection Chain\u003C\/h4\u003E\n\u003Cp\u003EWhile FIN7 has embedded VBE as OLE objects for over a year, they continue to update their script launching mechanisms. In the current lures, both the malicious DOCX and RTF attempt to convince the user to double-click on the image in the document, as seen in Figure 1. This spawns the hidden embedded malicious LNK file in the document. Overall, this is a more effective phishing tactic since the malicious content is embedded in the document content rather than packaged in the OLE object.\u003C\/p\u003E\n\u003Cp\u003EBy requiring this unique interaction \u2013 double-clicking on the image and clicking the \u201cOpen\u201d button in the security warning popup \u2013 the phishing lure attempts to evade dynamic detection as many sandboxes are not configured to simulate that specific user action.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/FIN7%20LNK\/Fig1%20(2).png\u0022\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 1: Malicious FIN7 lure asking victim to double click to unlock contents\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EThe malicious LNK launches \u201cmshta.exe\u201d with the following arguments passed to it:\u003C\/p\u003E\n\u003Cp\u003Evbscript:Execute(\u0026quot;On Error Resume Next:set w=GetObject(,\u0026quot;\u0026quot;Word.Application\u0026quot;\u0026quot;):execute w.ActiveDocument.Shapes(2).TextFrame.TextRange.Text:close\u0026quot;)\u003C\/p\u003E\n\u003Cp\u003EThe script in the argument combines all the textbox contents in the document and executes them, as seen in Figure 2.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/FIN7%20LNK\/Fig2.png\u0022\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 2: Textbox inside DOC\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EThe combined script from Word textbox drops the following components:\u003C\/p\u003E\n\u003Cp\u003E\\Users\\[user_name]\\Intel\\58d2a83f7778d5.36783181.vbs\u003Cbr\u003E\n\\Users\\[user_name]\\Intel\\58d2a83f777942.26535794.ps1\u003Cbr\u003E\n\\Users\\[user_name]\\Intel\\58d2a83f777908.23270411.vbs\u003C\/p\u003E\n\u003Cp\u003EAlso, the script creates a named schedule task for persistence to launch \u201c58d2a83f7778d5.36783181.vbs\u201d every 25 minutes.\u003C\/p\u003E\n\u003Ch4\u003EVBScript #1\u003C\/h4\u003E\n\u003Cp\u003EThe dropped script \u201c58d2a83f7778d5.36783181.vbs\u201d acts as a launcher. This VBScript checks if the \u201c58d2a83f777942.26535794.ps1\u201d PowerShell script is running using WMI queries and, if not, launches it.\u003C\/p\u003E\n\u003Ch4\u003EPowerShell Script\u003C\/h4\u003E\n\u003Cp\u003E\u201c58d2a83f777942.26535794.ps1\u201d is a multilayer obfuscated PowerShell script, which launches shellcode for a Cobalt Strike stager.\u003C\/p\u003E\n\u003Cp\u003EThe shellcode retrieves an additional payload by connecting to the following C2 server using DNS:\u003C\/p\u003E\n\u003Cp\u003Eaaa.stage.14919005.www1.proslr3[.]com\u003C\/p\u003E\n\u003Cp\u003EOnce a successful reply is received from the command and control (C2) server, the PowerShell script executes the embedded Cobalt Strike shellcode. If unable to contact the C2 server initially, the shellcode is configured to reattempt communication with the C2 server address in the following pattern:\u003C\/p\u003E\n\u003Cp\u003E\u0026nbsp;[a-z][a-z][a-z].stage.14919005.www1.proslr3[.]com\u003C\/p\u003E\n\u003Ch4\u003EVBScript #2\u003C\/h4\u003E\n\u003Cp\u003E\u201cmshta.exe\u201d further executes the second VBScript \u201c58d2a83f777908.23270411.vbs\u201d, which creates a folder by GUID name inside \u201cIntel\u201d and drops the VBScript payloads and configuration files:\u003C\/p\u003E\n\u003Cp\u003E\\Intel\\{BFF4219E-C7D1-2880-AE58-9C9CD9701C90}\\58d2a83f777638.60220156.ini\u003Cbr\u003E\n\\Intel\\{BFF4219E-C7D1-2880-AE58-9C9CD9701C90}\\58d2a83f777688.78384945.ps1\u003Cbr\u003E\n\\Intel\\{BFF4219E-C7D1-2880-AE58-9C9CD9701C90}\\58d2a83f7776b5.64953395.txt\u003Cbr\u003E\n\\Intel\\{BFF4219E-C7D1-2880-AE58-9C9CD9701C90}\\58d2a83f7776e0.72726761.vbs\u003Cbr\u003E\n\\Intel\\{BFF4219E-C7D1-2880-AE58-9C9CD9701C90}\\58d2a83f777716.48248237.vbs\u003Cbr\u003E\n\\Intel\\{BFF4219E-C7D1-2880-AE58-9C9CD9701C90}\\58d2a83f777788.86541308.vbs\u003Cbr\u003E\n\\Intel\\{BFF4219E-C7D1-2880-AE58-9C9CD9701C90}\\Foxconn.lnk\u003C\/p\u003E\n\u003Cp\u003EThis script then executes \u201c58d2a83f777716.48248237.vbs\u201d, which is a variant of FIN7\u2019s HALFBAKED backdoor.\u003C\/p\u003E\n\u003Ch4\u003EHALFBAKED Backdoor Variant\u003C\/h4\u003E\n\u003Cp\u003EThe HALFBAKED malware family consists of multiple components designed to establish and maintain a foothold in victim networks, with the ultimate goal of gaining access to sensitive financial information. This version of HALFBAKED connects to the following C2 server:\u003C\/p\u003E\n\u003Cp\u003Ehxxp:\/\/198[.]100.119.6:80\/cd\u003Cbr\u003E\nhxxp:\/\/198[.]100.119.6:443\/cd\u003Cbr\u003E\nhxxp:\/\/198[.]100.119.6:8080\/cd\u003C\/p\u003E\n\u003Cp\u003EThis version of HALFBAKED listens for the following commands from the C2 server:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003E\u003Cb\u003Einfo\u003C\/b\u003E: Sends victim machine information (OS, Processor, BIOS and running processes) using WMI queries\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003EprocessList\u003C\/b\u003E: Send list of process running\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003Escreenshot\u003C\/b\u003E: Takes screen shot of victim machine (using 58d2a83f777688.78384945.ps1)\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003Erunvbs\u003C\/b\u003E: Executes a VB script\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003Erunexe\u003C\/b\u003E: Executes EXE file\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003Erunps1\u003C\/b\u003E: Executes PowerShell script\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003Edelete\u003C\/b\u003E: Delete the specified file\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003Eupdate\u003C\/b\u003E: Update the specified file\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EAll communication between the backdoor and attacker C2 are encoded using the following technique, represented in pseudo code:\u003C\/p\u003E\n\u003Cp\u003EFunction send_data(data)\u003Cbr\u003E\n\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;random_string = custom_function_to_generate_random_string()\u003Cbr\u003E\n\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;encoded_data = URLEncode(SimpleEncrypt(data))\u003Cbr\u003E\n\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;post_data(\u0026quot;POST\u201d, random_string \u0026amp; \u0026quot;=\u0026quot; \u0026amp; encoded_data, Hard_coded_c2_url,\u003Cbr\u003E\nCreate_Random_Url(class_id))\u003C\/p\u003E\n\u003Cp\u003EThe FireEye iSIGHT Intelligence MySIGHT Portal contains additional information based on our investigations of a variety of topics discussed in this post, including FIN7 and the HALFBAKED backdoor. Click\u0026nbsp;\u003Ca href=\u0022https:\/\/www.fireeye.com\/products\/isight-intelligence.html\u0022\u003Ehere\u003C\/a\u003E\u0026nbsp;for more information.\u003C\/p\u003E\n\u003Ch4\u003EPersistence Mechanism\u003C\/h4\u003E\n\u003Cp\u003EFigure 3 shows that for persistence, the document creates two scheduled tasks and creates one auto-start registry entry pointing to the LNK file.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/FIN7%20LNK\/Fig3.png\u0022\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 3: FIN7 phishing lure persistence mechanisms\u003C\/span\u003E\u003C\/p\u003E\n\u003Ch4\u003EExamining Attacker Shortcut Files\u003C\/h4\u003E\n\u003Cp\u003EIn many cases, attacker-created LNK files can reveal valuable information about the attacker\u2019s development environment. These files can be parsed with \u003Ca href=\u0022https:\/\/code.google.com\/archive\/p\/lnk-parser\/\u0022\u003Elnk-parser\u003C\/a\u003E to extract all contents. LNK files have been valuable during Mandiant incident response investigations as they include volume serial number, NetBIOS name, and MAC address.\u003C\/p\u003E\n\u003Cp\u003EFor example, one of these FIN7 LNK files contained the following properties:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EVersion: 0\u003C\/li\u003E\n\u003Cli\u003ENetBIOS name: andy-pc\u003C\/li\u003E\n\u003Cli\u003EDroid volume identifier: e2c10c40-6f7d-4442-bcec-470c96730bca\u003C\/li\u003E\n\u003Cli\u003EDroid file identifier: a6eea972-0e2f-11e7-8b2d-0800273d5268\u003C\/li\u003E\n\u003Cli\u003EBirth droid volume identifier: e2c10c40-6f7d-4442-bcec-470c96730bca\u003C\/li\u003E\n\u003Cli\u003EBirth droid file identifier: a6eea972-0e2f-11e7-8b2d-0800273d5268\u003C\/li\u003E\n\u003Cli\u003EMAC address: 08:00:27:3d:52:68\u003C\/li\u003E\n\u003Cli\u003EUUID timestamp: 03\/21\/2017 (12:12:28.500) [UTC]\u003C\/li\u003E\n\u003Cli\u003EUUID sequence number: 2861\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EFrom this LNK file, we can see not only what the shortcut launched within the string data, but that the attacker likely generated this file on a VirtualBox system with hostname \u201candy-pc\u201d on March 21, 2017.\u003C\/p\u003E\n\u003Ch4\u003EExample Phishing Lures\u003C\/h4\u003E\n\u003Cul\u003E\n\u003Cli\u003E\u003Cb\u003EFilename: \u003C\/b\u003EDoc33.docx\u003Cb\u003E\u003C\/b\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003EMD5\u003C\/b\u003E: 6a5a42ed234910121dbb7d1994ab5a5e\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cul\u003E\n\u003Cli\u003E\u003Cb\u003EFilename:\u003C\/b\u003E Mail.rtf\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003EMD5:\u003C\/b\u003E 1a9e113b2f3caa7a141a94c8bc187ea7\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Ch4\u003EFIN7 April 2017 Community Protection Event\u003C\/h4\u003E\n\u003Cp\u003EOn April 12, in response to FIN7 actively targeting multiple clients, FireEye kicked off a Community Protection Event (CPE) \u2013 a coordinated effort by FireEye as a Service (FaaS), Mandiant, FireEye iSight Intelligence, and our product team \u2013 to secure all clients affected by this campaign.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Thu Apr 19 2018 05:39:24 GMT-0400",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "alt": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "comments": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/commons\/components\/comments"
+      },
+      "trackback": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/blog\/components\/trackback"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EIn a newly-identified campaign, financially-motivated threat group FIN7 has modified their phishing techniques to implement unique infection and persistence mechanisms.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Mon Apr 24 2017 10:17:52 GMT-0400",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Mon Aug 27 2018 11:42:49 GMT-0400",
+      "imageRotate": "0"
+    }
+  }
+}

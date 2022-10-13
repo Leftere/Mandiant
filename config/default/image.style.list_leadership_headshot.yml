@@ -1,0 +1,15 @@
+uuid: 5f2200f9-a844-4e9e-980c-2f0842eef0f6
+langcode: en
+status: true
+dependencies: {  }
+name: list_leadership_headshot
+label: 'List: Leadership Headshot'
+effects:
+  9222ff8c-7a8e-4216-a8b7-9c7f6b8ccefa:
+    uuid: 9222ff8c-7a8e-4216-a8b7-9c7f6b8ccefa
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 255
+      height: 255
+      anchor: center-top

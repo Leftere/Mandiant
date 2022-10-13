@@ -1,0 +1,18 @@
+uuid: 2bb785aa-ecc2-430b-8605-ff0c4382bce4
+langcode: en
+status: true
+dependencies:
+  config:
+    - site_settings.site_setting_entity_type.email
+id: site_setting_entity.email.metatag
+field_name: metatag
+entity_type: site_setting_entity
+bundle: email
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

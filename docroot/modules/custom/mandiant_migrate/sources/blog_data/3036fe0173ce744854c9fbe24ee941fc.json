@@ -1,0 +1,62 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Tue May 25 2021 15:52:40 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "How to Lower the Risk That Digital Transformation Leads to a Financially Costly Breach",
+    "jcr:versionHistory": "da3251d5-d490-440e-9d32-ffc466bf47b8",
+    "author": "Earl Matthews",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "96138ddc-8aee-4673-a551-68931563f071"
+    ],
+    "jcr:created": "Tue May 25 2021 15:52:40 GMT+0000",
+    "cq:lastModified": "Tue May 25 2021 15:50:49 GMT+0000",
+    "jcr:baseVersion": "96138ddc-8aee-4673-a551-68931563f071",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:earl-matthews",
+      "fireeye-blog-authors:ryan-dodd",
+      "fireeye-blog-products-and-services:products-and-services",
+      "fireeye-blog-tags:breach",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:rationalization",
+      "fireeye-blog-tags:security-validation"
+    ],
+    "jcr:uuid": "644c3026-396a-49a6-8ee7-8f6f575ab716",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Tue May 25 2021 12:00:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EAt a time when corporate budgets are already under pressure, companies are experiencing unprecedented cyber threats since the onset of COVID-19. The rapid acceleration of digital transformation and work-from-home has created an unparalleled increase in strains on corporate IT networks. Some of these operational shifts will prove permanent.\u003C\/p\u003E\n\u003Cp\u003EFor companies that execute well, these transformations offer enormous benefits in terms of improved efficiencies, productivity, and cost savings. The downside, though, is that the risks grow as a companies\u2019 most valued assets have been digitized.\u003C\/p\u003E\n\u003Cp\u003EWith the increasing business importance of cyber, the security budget is an area of both potential overspend and underspend as C-suites grapple with this expanded set of risks. Here are examples of poorly optimized budgets by many companies:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003ECompanies only use on average 25 percent of the full utilization capacity across all tools in their security stack, resulting in significant waste and redundancies.\u003C\/li\u003E\n\u003Cli\u003EOn average, enterprises have 30 to 70 different security tools and sometimes spend millions of dollars to address a single type of attack. This highlights the need to produce evidence of a specific tool\u2019s contribution to the overall security posture\u2014evidence that supports the standardization of security controls and the divestiture of technologies that no longer add value.\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EEnter security validation, a relatively new cyber security concept. It has emerged due to increasing pressure from boards and C-suites demanding that collaborative teams of CISOs and CFOs provide hard data around both the effectiveness and ROI of their cyber security spend against prioritized attack types and the overall company risk profile. They also want to verify their companies\u2019 ability to recoup cyber security investments, which involves articulating and measuring value lost in successful attacks and relating that to the ability to improve effectiveness using cyber security technology.\u003C\/p\u003E\n\u003Cp\u003ESecurity rationalization is a pillar of the security validation approach. It is the allocation of corporate resources toward things that verifiably improve security posture, and lower the growing financial risks associated with poor cyber governance. It is fundamentally about measuring the effectiveness of security programs across technology, people and processes, and is enabled by security controls validation.\u003Cb\u003E\u003C\/b\u003E\u003C\/p\u003E\n\u003Cp\u003EIn a world of constrained budgets, validation and rationalization are critical for companies to optimize security spend, decrease the likelihood of suffering a costly business interruption breach, and lower the downside financial risks associated with digital transformations\u003C\/p\u003E\n\u003Ch4\u003EUnderstanding \u2018Good\u2019 Versus \u2018Poor\u2019 Digital Transformation\u003C\/h4\u003E\n\u003Cp\u003EAn important starting point for the budget conversation is to understand how well or poorly a company is currently managing its security.\u003C\/p\u003E\n\u003Cp\u003EIt is now possible to assess \u2018good\u2019 versus \u2018poor\u2019 cyber security in an objective and externally verifiable manner. \u003Ca href=\u0022https:\/\/www.intangic.com\/\u0022\u003EIntangic\u003C\/a\u003E, formerly Cyberhedge, uses proprietary data to rate company cyber governance from 5-Star (best) to 1-Star (worst). 1-Star companies have poor cyber, combined with significant financial constraints, which limit their ability to invest in fixing existing cyber problems. Our data indicates these companies have a difficult time getting out of this \u201cbad cyber-poor financials\u201d cycle. Why does that matter? Two reasons:\u003C\/p\u003E\n\u003Col\u003E\n\u003Cli\u003EThey have a significantly increased risk of experiencing a substantial attack such as ransomware, and incurring large financial and market losses as a result.\u003C\/li\u003E\n\u003Cli\u003EThe verified ratings serve as an early warning signal for C-suites that vulnerabilities require immediate attention to lower the likelihood of a disruptive and costly attack that creates financial and operational fallout for the company, and any customers that rely upon it.\u003C\/li\u003E\n\u003C\/ol\u003E\n\u003Cp\u003EBut companies that deploy \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/security-validation.html\u0022\u003EMandiant Security Validation\u003C\/a\u003E and rationalization are far more likely to avoid 1-Star status and the financial risks that come with it, and this holds true across all industry sectors. Intangic data clearly indicates that companies with a security controls validation approach to cyber through an integrated platform such as Mandiant Security Validation can effectively move from a 1-Star rating to a 2-Star or 3-Star rating (less likely to be breached and suffer significant financial and market losses).\u003C\/p\u003E\n\u003Cp\u003EExecuting on this approach requires an \u201cinside-out\u201d view plus an \u201coutside-in\u201d view of cyber performance, as well as the financial risks and gains associated with that good, average or poor performance.\u003C\/p\u003E\n\u003Col\u003E\n\u003Cli\u003E\u003Cb\u003EInside-out view:\u003C\/b\u003E The view from inside the corporate network to the outside through a security lens\u2014a detailed look at security risks and company tools and controls, a verifiable view of what\u2019s working, what\u2019s not, and what can be fixed to better optimize security spend.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003EOutside-in view:\u003C\/b\u003E The view from outside the corporate network to the inside through a CyFi\u00ae (Cyber-Financial) lens. Second-generation data sets derived entirely from externally verifiable data (without inside network view) combines both cyber and operational\/financial impact on companies. These are the only known assessments mapped to the maximum and most accurate sample size of breach events.\u003C\/li\u003E\n\u003C\/ol\u003E\n\u003Cp\u003EBy employing a security rationalization methodology that leverages the inside-out and outside-in views as part of a larger controls validation approach, a company can improve its cyber and financial performance, lowering the likelihood of a costly business interruption. How do we know? The data shows that Mandiant customers consistently score better on Intangic\u2019s CyFi\u00ae (Cyber-Financial) metrics.\u003C\/p\u003E\n\u003Cp\u003ERationalization was the focus of a \u003Ca href=\u0022https:\/\/www.brighttalk.com\/webcast\/7451\/462716\/proving-security-effectiveness-to-your-ciso-cfo-and-board\u0022\u003Erecent webinar\u003C\/a\u003E now available on-demand. Head over to our website to learn more about \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/security-validation.html\u0022\u003EMandiant Security Validation\u003C\/a\u003E.\u003C\/p\u003E\n\u003Cp\u003E\u003Ci\u003ERyan Dodd is the founder and CEO of Intangic.\u003C\/i\u003E\u003C\/p\u003E\n",
+        "jcr:lastModified": "Tue May 25 2021 15:27:27 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EAn important starting point for the budget conversation is to understand how well or poorly a company is currently managing its security, and that\u0027s where validation can help.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Tue May 25 2021 15:31:20 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Tue May 25 2021 15:50:49 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

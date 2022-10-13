@@ -1,0 +1,34 @@
+.search-results {
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+
+  &__header {
+    background: #dcdce2;
+  }
+
+  &__rows {
+    @include container($desktop);
+    padding-bottom: 4.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 4.5rem;
+  }
+
+  &__item {
+    border-bottom: 2px dotted #bbbbc1;
+    margin-bottom: 2rem;
+    padding: 2rem;
+
+    h2 {
+      margin: 0;
+
+      a {
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__item-type {
+    @include small-caps;
+  }
+}

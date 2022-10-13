@@ -1,0 +1,18 @@
+uuid: f9fc8bf3-8a9d-47a9-a47f-df39fcc1f6aa
+langcode: de
+status: true
+dependencies:
+  config:
+    - block_content.type.text_column
+id: block_content.text_column.info
+field_name: info
+entity_type: block_content
+bundle: text_column
+label: 'Block description'
+description: 'A brief description of your block.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

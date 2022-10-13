@@ -1,0 +1,70 @@
+uuid: 794a2305-1bd9-4358-8474-245b964c1cc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.featured_pages
+    - field.field.block_content.featured_pages.field_body
+    - field.field.block_content.featured_pages.field_eyebrow
+    - field.field.block_content.featured_pages.field_related_nodes
+    - field.field.block_content.featured_pages.field_title
+  module:
+    - field_formatter_class
+    - layout_builder
+    - layout_library
+    - text
+    - text_field_formatter
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+  layout_library:
+    enable: false
+id: block_content.featured_pages.default
+targetEntityType: block_content
+bundle: featured_pages
+mode: default
+content:
+  field_body:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_eyebrow:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_related_nodes:
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: entity_reference_entity_view
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      wrap_tag: h3
+      wrap_class: ''
+      wrap_attributes: ''
+      override_link_label: ''
+      link_to_entity: 0
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: text_field_formatter
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

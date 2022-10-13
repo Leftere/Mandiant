@@ -1,0 +1,25 @@
+uuid: 76e41179-c759-4eb6-9869-98700ff59ff7
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:text:e0409c36-c831-4489-b151-c4ae645a03df'
+  module:
+    - block_content
+  theme:
+    - mandiant_theme
+id: megamenuservicescta
+theme: mandiant_theme
+region: header
+weight: -5
+provider: null
+plugin: 'block_content:e0409c36-c831-4489-b151-c4ae645a03df'
+settings:
+  id: 'block_content:e0409c36-c831-4489-b151-c4ae645a03df'
+  label: 'MegaMenu - Services - CTA'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

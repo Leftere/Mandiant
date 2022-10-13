@@ -1,0 +1,19 @@
+uuid: a4e556b7-9ac3-479e-8e2b-f657235c86fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - iframe
+    - node
+id: node.field_podcast
+field_name: field_podcast
+entity_type: node
+type: iframe
+settings: {  }
+module: iframe
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 352a6d3d-94f5-4640-b918-529a5d19f72e
+  bundle: text
+  default_langcode: en
+  depends:
+    76142c52-522d-4fd1-aa68-da16dde771e8: user
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Inline block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      entity: 76142c52-522d-4fd1-aa68-da16dde771e8
+  content_translation_created:
+    -
+      value: 1626960431
+  field_body:
+    -
+      value: "<p>Breach response hours per year</p>\r\n"
+      format: basic_html
+  field_title:
+    -
+      value: 200k+

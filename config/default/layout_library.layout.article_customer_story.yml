@@ -1,0 +1,205 @@
+uuid: 93ee339e-452e-4d52-a295-aa4770ba822a
+langcode: en
+status: true
+dependencies: {  }
+id: article_customer_story
+label: 'Customer Story'
+targetEntityType: node
+targetBundle: article
+layout:
+  -
+    layout_id: layout_twocol_section
+    layout_settings:
+      label: ''
+      column_widths: 50-50
+      layout_builder_styles_style:
+        0: ''
+        1: ''
+        block_plain_text: 0
+        cta_columns: 0
+        column_cards: 0
+        divider: 0
+        framed_column_cards: 0
+        negative_bottom_margin: 0
+        negative_top_margin: 0
+        small_tile_section: 0
+      layout_builder_id: ''
+      context_mapping: {  }
+    components:
+      4cc25faf-822d-42dc-90ec-96d811920451:
+        uuid: 4cc25faf-822d-42dc-90ec-96d811920451
+        region: first
+        configuration:
+          id: 'field_block:node:article:title'
+          label: Title
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: text_field_formatter
+            settings:
+              link_to_entity: 0
+              wrap_tag: h1
+              wrap_class: ''
+              wrap_attributes: ''
+              override_link_label: ''
+              token: ''
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          layout_builder_id: ''
+        weight: 1
+      3630dc77-6f0e-4a7f-a3cd-ff9ecc799b17:
+        uuid: 3630dc77-6f0e-4a7f-a3cd-ff9ecc799b17
+        region: first
+        configuration:
+          id: 'field_block:node:article:field_eyebrow'
+          label: Eyebrow
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: string
+            settings:
+              link_to_entity: false
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          layout_builder_id: ''
+        weight: 0
+      9fe29973-bbd4-4440-88f9-a739ff34d79b:
+        uuid: 9fe29973-bbd4-4440-88f9-a739ff34d79b
+        region: second
+        configuration:
+          id: 'field_block:node:article:field_media'
+          label: Media
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: entity_reference_entity_view
+            settings:
+              view_mode: cta
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          layout_builder_id: ''
+        weight: 0
+      b957cbd4-275d-4686-9c3b-95561d9d9ff9:
+        uuid: b957cbd4-275d-4686-9c3b-95561d9d9ff9
+        region: first
+        configuration:
+          id: 'field_block:node:article:field_summary_html'
+          label: 'Summary (HTML)'
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: smart_trim
+            settings:
+              trim_length: 20
+              trim_type: words
+              trim_suffix: ''
+              wrap_output: true
+              wrap_class: trimmed
+              more_link: false
+              more_text: More
+              more_class: more-link
+              trim_options:
+                text: true
+                trim_zero: true
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          layout_builder_styles_style:
+            left_oriented: 0
+            padding_top_60px_: 0
+            padding_top_bottom_60: 0
+          layout_builder_id: ''
+        weight: 3
+    third_party_settings: {  }
+  -
+    layout_id: layout_twocol_section
+    layout_settings:
+      label: ''
+      column_widths: 67-33
+      layout_builder_styles_style:
+        0: ''
+        1: ''
+        2: ''
+        block_plain_text: 0
+        cta_contact_full: 0
+        divider: 0
+        negative_top_margin: 0
+        cta_columns: 0
+        negative_bottom_margin: 0
+        small_tile_section: 0
+        featured_testimonial: 0
+        3: ''
+      layout_builder_id: ''
+      context_mapping: {  }
+    components:
+      bef95771-2fd1-4d29-ae3f-19e64e2ff6d2:
+        uuid: bef95771-2fd1-4d29-ae3f-19e64e2ff6d2
+        region: first
+        configuration:
+          id: 'field_block:node:article:field_body'
+          label: Body
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: text_default
+            settings: {  }
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          layout_builder_id: ''
+        weight: 0
+      6c373634-494e-489c-a5a0-eec42e89e8df:
+        uuid: 6c373634-494e-489c-a5a0-eec42e89e8df
+        region: first
+        configuration:
+          id: 'field_block:node:article:field_media_document'
+          label: 'Download materials'
+          provider: layout_builder
+          label_display: visible
+          formatter:
+            label: hidden
+            type: entity_reference_entity_view
+            settings:
+              view_mode: cta
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          layout_builder_styles_style:
+            left_oriented: 0
+            padding_top_60px_: 0
+            padding_top_bottom_60: 0
+          layout_builder_id: ''
+        weight: 1
+    third_party_settings: {  }

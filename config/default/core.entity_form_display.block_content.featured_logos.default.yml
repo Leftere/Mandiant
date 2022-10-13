@@ -1,0 +1,175 @@
+uuid: ba5544d3-bd9b-4151-8a0f-396ee312b8e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.featured_logos
+    - field.field.block_content.featured_logos.field_body
+    - field.field.block_content.featured_logos.field_cta
+    - field.field.block_content.featured_logos.field_cta2
+    - field.field.block_content.featured_logos.field_eyebrow
+    - field.field.block_content.featured_logos.field_gallery
+    - field.field.block_content.featured_logos.field_media
+    - field.field.block_content.featured_logos.field_title
+    - field.field.block_content.featured_logos.layout_selection
+  module:
+    - field_group
+    - link
+    - media_library
+    - text
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_content
+        - group_media
+        - group_settings
+      parent_name: ''
+      weight: 1
+      format_type: tabs
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        direction: horizontal
+        width_breakpoint: 640
+      label: Tabs
+    group_content:
+      children:
+        - field_eyebrow
+        - field_title
+        - field_body
+        - field_cta
+        - field_cta2
+      parent_name: group_tabs
+      weight: 11
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: open
+        required_fields: true
+      label: Content
+    group_media:
+      children:
+        - field_media
+        - field_gallery
+      parent_name: group_tabs
+      weight: 12
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Media
+    group_settings:
+      children:
+        - layout_selection
+        - langcode
+        - translation
+      parent_name: group_tabs
+      weight: 13
+      format_type: tab
+      region: content
+      format_settings:
+        description: ''
+        formatter: closed
+        show_empty_fields: true
+        required_fields: true
+        id: ''
+        classes: modal-styling-options
+      label: Settings
+id: block_content.featured_logos.default
+targetEntityType: block_content
+bundle: featured_logos
+mode: default
+content:
+  field_body:
+    weight: 10
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_cta:
+    weight: 11
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_cta2:
+    weight: 12
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_eyebrow:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_gallery:
+    type: media_library_widget
+    weight: 4
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_media:
+    weight: 3
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_title:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 7
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  layout_selection:
+    type: options_select
+    region: content
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+  translation:
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

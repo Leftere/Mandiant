@@ -1,0 +1,15 @@
+uuid: 2edbaf98-292b-4f68-a910-614059b62ef2
+langcode: en
+status: true
+dependencies: {  }
+id: column_cards
+label: 'Column cards'
+classes: column-cards
+type: section
+group: modifiers_type
+weight: 0
+block_restrictions: {  }
+layout_restrictions:
+  - layout_twocol_section
+  - layout_threecol_section
+  - layout_fourcol_section

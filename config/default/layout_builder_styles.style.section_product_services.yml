@@ -1,0 +1,13 @@
+uuid: 4e50c50f-affb-4d89-b4bc-fb1bec80bf3d
+langcode: en
+status: true
+dependencies: {  }
+id: section_product_services
+label: 'Section product services'
+classes: section-product-services
+type: section
+group: add_ons
+weight: 15
+block_restrictions: {  }
+layout_restrictions:
+  - layout_onecol

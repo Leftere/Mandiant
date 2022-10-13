@@ -1,0 +1,15 @@
+uuid: 234972e6-0012-4bbb-93bb-06aadcf1a898
+langcode: en
+status: true
+dependencies: {  }
+id: right_oriented
+label: 'Right oriented'
+classes: right
+type: component
+group: alignment
+weight: -8
+block_restrictions:
+  - 'inline_block:card'
+  - 'inline_block:cta'
+  - 'inline_block:tile'
+layout_restrictions: {  }

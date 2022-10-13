@@ -1,0 +1,67 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e5a04aa4-9cd8-4520-bf00-779b847d5dfe
+  bundle: article
+  default_langcode: en
+  depends:
+    76142c52-522d-4fd1-aa68-da16dde771e8: user
+    05cb08cc-fe68-4355-85d9-366c84f74a53: media
+default:
+  revision_uid:
+    -
+      entity: 76142c52-522d-4fd1-aa68-da16dde771e8
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 76142c52-522d-4fd1-aa68-da16dde771e8
+  title:
+    -
+      value: 'Sample - Ut nec tristique eros. In hac habitasse platea dictumst'
+  created:
+    -
+      value: 1626961699
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /ut-nec-tristique-eros-hac-habitasse-platea-dictumst
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_author:
+    -
+      value: 'Quisque Vel'
+  field_body:
+    -
+      value: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut neque faucibus, tincidunt nisi vel, tempor urna. In faucibus eros elit, a luctus dolor tincidunt at. Duis pretium, massa eget dictum varius, sem felis pretium neque, eu vulputate eros diam vel tortor. Maecenas nec semper odio. In hac habitasse platea dictumst. Aenean eget neque ut erat tempor cursus. Sed sit amet faucibus turpis. Praesent id magna finibus, porttitor nisi eget, scelerisque diam. Quisque porta tincidunt tortor vitae fermentum. Aliquam fringilla et elit quis convallis.</p>\r\n\r\n<p>Sed euismod, erat et finibus elementum, felis ligula bibendum nibh, in condimentum tortor sem nec diam. Sed euismod nunc vitae pretium lacinia. Praesent rutrum ex vitae ipsum consequat consequat. Etiam vitae metus quis neque mattis dapibus aliquet in mauris. Duis gravida nisi id maximus vestibulum. Nulla a tempus nunc. Nullam ex quam, sodales vitae nisi at, aliquet laoreet quam. Maecenas dui diam, elementum eu elit a, egestas rutrum orci. Cras a ornare nisl. Integer aliquet, risus aliquet vehicula euismod, lorem lorem interdum urna, eu tempor orci massa sit amet est. Integer laoreet sit amet metus a commodo. Aenean non dolor sapien. Ut commodo tincidunt tortor et placerat. Nulla vel consequat lacus.</p>\r\n\r\n<p>Ut nec tristique eros. In hac habitasse platea dictumst. In ut fermentum erat, tempus pharetra ante. Quisque bibendum auctor massa, mattis ornare ligula sodales sed. Curabitur volutpat non tortor et fermentum. Nam a rutrum justo. Morbi et suscipit orci. Phasellus non vestibulum lacus, ut laoreet tellus. Nullam tincidunt libero nec dignissim rutrum. Integer vel blandit justo, vel pretium dui. Mauris non quam non ipsum egestas ultrices.</p>\r\n"
+      format: basic_html
+  field_date:
+    -
+      value: '2021-07-21T00:00:00'
+  field_media:
+    -
+      entity: 05cb08cc-fe68-4355-85d9-366c84f74a53
+  field_role_company:
+    -
+      value: 'Sed neque felis'
+  field_summary:
+    -
+      value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut neque faucibus, tincidunt nisi vel, tempor urna. In faucibus eros elit, a luctus dolor tincidunt at. Duis pretium, massa eget dictum varius, sem felis pretium neque, eu vulputate eros diam vel tortor.'
+  layout_selection:
+    -
+      target_id: article_blog

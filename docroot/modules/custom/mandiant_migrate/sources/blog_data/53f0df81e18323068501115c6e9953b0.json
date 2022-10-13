@@ -1,0 +1,81 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed Aug 03 2016 16:32:15 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "FakeNet-NG: Next Generation Dynamic Network Analysis Tool",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "e179d062-ad18-4dde-855d-c5dd7128801d",
+    "author": "Peter Kacherginsky",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "adam.greenberg@fireeye.com",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "bb095803-5794-4606-bf9a-9bcd2ddc5326"
+    ],
+    "jcr:created": "Wed May 08 2019 18:22:52 GMT-0400",
+    "cq:lastReplicated": "Wed May 08 2019 18:22:51 GMT-0400",
+    "cq:lastModified": "Wed May 08 2019 18:21:51 GMT-0400",
+    "cq:distribute": true,
+    "jcr:description": "FakeNet-NG is a powerful and highly configurable tool that can be used to perform more advanced tasks such as process and traffic filtering, aiding in automatic malware unpacking, security assessment of thick-client applications and many others.",
+    "jcr:baseVersion": "bb095803-5794-4606-bf9a-9bcd2ddc5326",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-tags:malware-analysis",
+      "fireeye-blog-tags:open-source",
+      "fireeye-blog-tags:open-source-tools",
+      "fireeye-blog-authors:cap-peter-kacherginsky",
+      "fireeye-doctypes:blog",
+      "fireeye-blog-threat-research:threat-research\/malware-research",
+      "fireeye-blog-tags:malware",
+      "fireeye-blog-tags:detection",
+      "fireeye-blog-tags:FLARE"
+    ],
+    "jcr:uuid": "2a142101-9420-45fb-8b9f-bc581d7fe098",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Wed Aug 03 2016 04:30:00 GMT-0400",
+    "_charset_": "UTF-8",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "lynn.thorne@fireeye.com",
+        "text": "\u003Cp\u003EAs a reverse engineer on the FLARE (FireEye Labs Advanced Reverse Engineering) team, I regularly perform basic dynamic analysis of malware samples. The goal is to quickly observe runtime characteristics by running binaries in a safe environment. One important task during dynamic analysis is to emulate the network environment and trick the malware into thinking it is connected to the Internet. When done right, the malware reveals its network signatures such as command and control (C2) domain names, User-Agent strings, URLs queried, and so on.\u003C\/p\u003E\n\u003Cp\u003EOne tool of choice is FakeNet. In this blog, I will discuss a major overhaul to FakeNet and how it helps you perform basic malware dynamic analysis. Some of the new features include full support for Windows Vista and later operating systems, process logging, advanced process and host traffic filtering engine, support for third party tools (e.g. debuggers, HTTP proxies, etc.) and many others.\u003C\/p\u003E\n\u003Cp\u003EThis blog covers the basic installation and most common scenarios for running FakeNet-NG. I invite you to review the complete documentation available \u003Ca href=\u0022https:\/\/github.com\/fireeye\/flare-fakenet-ng\u0022\u003Ehere\u003C\/a\u003E.\u003C\/p\u003E\n\u003Ch5\u003EGetting and Installing FakeNet-NG\u003C\/h5\u003E\n\u003Cp\u003EThe tool can be found on FLARE\u2019s official Github repository \u003Ca href=\u0022https:\/\/github.com\/fireeye\/flare-fakenet-ng\/releases\u0022\u003Ehere\u003C\/a\u003E.\u003C\/p\u003E\n\u003Cp\u003EFrom the releases page, download the latest pre-compiled archive. Next, copy the release archive to the Malware Analysis VM and extract it in an easily accessible location.\u003C\/p\u003E\n\u003Ch5\u003ERunning FakeNet-NG\u003C\/h5\u003E\n\u003Cp\u003EThe simplest way to run FakeNet-NG is to double click on fakenet64.exe or fakenet32.exe for the 64-bit or 32-bit versions of Windows, respectively, as illustrated in Figure 1.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/FakeNet\/Fig1.png\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 1: Running FakeNet-NG\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EThe tool requires Administrator access, so you will have to confirm the UAC prompt requesting elevated privileges. Once launched you will see a console window similar to the one in Figure 2.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/FakeNet\/Fig2.png\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 2: FakeNet-NG Startup\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EBy default, FakeNet-NG is configured to start several most commonly used services:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EDNS Listener on UDP port 53\u003C\/li\u003E\n\u003Cli\u003EHTTP Listener on TCP port 80\u003C\/li\u003E\n\u003Cli\u003EHTTPS Listener on TCP port 443\u003C\/li\u003E\n\u003Cli\u003ESMTP Listener on TCP port 25\u003C\/li\u003E\n\u003Cli\u003ERaw Binary Listener on both TCP and UDP ports 1337. This service is also used as a default listener to handle all communications. Default listeners are explained below.\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EAt this point you are ready to run a malware sample and observe its behavior. Figure 3 illustrates sample malware communication to the C2 server.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/FakeNet\/Fig3.png\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 3: Sample malware communication\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EThere are quite a few things going on in the log output above so let\u2019s break it down into smaller components.\u003C\/p\u003E\n\u003Cp\u003EOnce launched, the malware attempts to resolve a C2 domain evil.mandiant.com by querying the configured DNS server 4.2.2.2. Figure 4 illustrates how FakeNet-NG diverts the traffic from 4.2.2.2 to the local machine\u2019s IP address 172.16.163.131.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/FakeNet\/Fig4.png\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 4: Diverting DNS traffic\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EA major benefit of running FakeNet-NG on the same host as the malware is that it can perform additional analysis of running executables. For example, FakeNet-NG is capable of detecting the exact executable name that is generating traffic. In this case, we can see that level1_payload.exe is generating the above DNS traffic.\u003C\/p\u003E\n\u003Cp\u003EContinuing with the analysis, Figure 5 shows FakeNet-NG\u2019s DNS listener providing a fake response to the query pointing malware to a fake C2 IP address 192.0.2.123.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/FakeNet\/Fig5.png\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 5: Faking DNS response\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EAfter successfully resolving the domain, the malware proceeds to communicate with the C2 domain name, as shown in Figure 6.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/FakeNet\/Fig6.png\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 6: Faking C2 communication\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EFakeNet-NG implements a few popular network listeners. In this case, the malware is communicating using the HTTP protocol on port 80. The output above provides us with several good network indicators such as the exact URL requested and User-Agent used in the communication, as well as the unencrypted beacon payload containing the compromised host\u2019s machine name. All of these indicators can be used to create good network signatures to detect this malware sample.\u003C\/p\u003E\n\u003Cp\u003EBy default, FakeNet-NG captures all of the intercepted traffic in PCAP files so you can perform additional analysis. For example, Figure 7 shows both original and diverted packets performing DNS resolution as well as HTTP POST requests to the C2 server.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/FakeNet\/Fig7.png\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 7: Wireshark PCAP\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003ECaptured PCAP files are stored in the same directory as the FakeNet-NG\u2019s executable. As an added logging feature, FakeNet-NG will also preserve complete HTTP POST payloads in separate text files also stored in the executable\u2019s working path.\u003C\/p\u003E\n\u003Ch5\u003EConfiguring FakeNet-NG\u003C\/h5\u003E\n\u003Cp\u003EBy default, FakeNet-NG is configured to cover the majority of malware analysis scenarios. However, if you encounter a more complex sample, then you can easily adapt the tool by editing one of the few configuration files located in the configs directory. By default, FakeNet-NG loads default.ini configuration file when it loads. You can either modify that file or create a new one and point FakeNet-NG to load it with the \u2013c command-line parameter. Consider a sample scenario, where you have malware communicating using a binary protocol on port 4444. Figure 8 illustrates a sample listener configuration that will fake this service.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/FakeNet\/Fig8.png\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003EFigure 8: Custom Listener Configuration\u003C\/p\u003E\n\u003Cp\u003EThe key elements of the configuration above are \u003Ci\u003EPort\u003C\/i\u003E, \u003Ci\u003EProtocol \u003C\/i\u003Eand \u003Ci\u003EListener\u003C\/i\u003E. \u003Ci\u003EPort\u003C\/i\u003E and \u003Ci\u003EProtocol\u003C\/i\u003E attributes define the port and protocol used to both setup the listener service and define the rule to divert traffic. The \u003Ci\u003EListener\u003C\/i\u003E attribute is used to define a specific listener class. In this case, \u003Ci\u003ERawListener\u003C\/i\u003E is used to handle arbitrary binary protocols. Alternatively, if you wanted to setup a listener to handle HTTP or HTTPS traffic you would use \u003Ci\u003EHTTPListener\u003C\/i\u003E instead. Please refer to the documentation for a complete list of supported listeners and available options.\u003C\/p\u003E\n\u003Cp\u003EWith the above configuration appended to the active configuration file, we can now launch FakeNet-NG and intercept traffic destined to TCP port 4444, as shown in Figure 9.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/FakeNet\/Fig9.png\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 9: Diverting to Custom Listener\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EThe scenario above was for a single, known port that the malware would use for its communication. In many cases it is hard to predict the exact port used from basic static or dynamic analysis. Instead, let\u2019s use another powerful feature that essentially allows you to handle any traffic to any port by a default listener. In order to configure the default listener, edit the [Diverter] section in the configuration file as follows in Figure 10.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/FakeNet\/Fig10.png\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003EF\u003Cspan style=\u0022font-size: 12px; line-height: 1.538;\u0022\u003Eigure 10: Default Listener Configuration\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003ENow, if the same malware sample decided to communicate on another port (e.g. 5555), it would still be intercepted and handled by the previously defined CustomListener4444.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/FakeNet\/Fig11.png\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 11: Diverting to Default Listener\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EThe Figure 11 illustrates traffic going to the unknown port 5555 being diverted to the previously defined custom listener on port 4444. It is important to note that any explicitly defined listeners will take precedence over the default listener. So if you have DNS or HTTP listeners defined on UDP port 53 and TCP port 80 respectively, then they would handle diverted traffic instead of the default listener as expected.\u003C\/p\u003E\n\u003Ch5\u003ENew Code Base\u003C\/h5\u003E\n\u003Cp\u003EThe new FakeNet-NG is developed completely in Python so it is easy to implement new services and features. It no longer uses the deprecated LSP (WinSock Layered Service Provider) driver implemented in the original FakeNet. Instead, FakeNet-NG relies on the excellent PyDivert\\WinDivert library, which comes with a WFP (Windows Filtering Platform) driver that performs all of the traffic redirection.\u003C\/p\u003E\n\u003Ch5\u003EConclusion\u003C\/h5\u003E\n\u003Cp\u003EThis blog shares a few techniques that can be used to quickly perform basic dynamic malware analysis and extract good network-based indicators. FakeNet-NG is a powerful and highly configurable tool that can be used to perform more advanced tasks such as process and traffic filtering, aiding in automatic malware unpacking, security assessment of thick-client applications and many others. Stay tuned for future blog posts that demonstrate the full features of this tool.\u003C\/p\u003E\n\u003Cp\u003ETry out FakeNet-NG the next time you need to perform malware analysis, security assessment or simply to divert network traffic and fake network responses. We hope you love this tool as much as we do on the FLARE team.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Wed Aug 10 2016 14:49:41 GMT-0400",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "alt": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "comments": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/commons\/components\/comments"
+      },
+      "trackback": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/blog\/components\/trackback"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EFakeNet-NG is a powerful and highly configurable tool that can be used to perform more advanced tasks such as process and traffic filtering, aiding in automatic malware unpacking, security assessment of thick-client applications and many others.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Wed Aug 03 2016 15:13:38 GMT-0400",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Wed May 08 2019 18:21:51 GMT-0400",
+      "imageRotate": "0"
+    }
+  }
+}

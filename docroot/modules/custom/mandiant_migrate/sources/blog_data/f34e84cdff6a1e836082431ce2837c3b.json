@@ -1,0 +1,62 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Mon May 03 2021 13:01:37 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Mandiant Managed Defense Now Supports Microsoft Defender for Endpoint",
+    "jcr:versionHistory": "d1de197a-fa8b-4786-b1a1-cc6fff99890e",
+    "author": "Marshall Heilman",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "a979f220-9a65-4625-b848-6ef41c922d75"
+    ],
+    "jcr:created": "Mon May 03 2021 13:09:38 GMT+0000",
+    "cq:lastModified": "Mon May 03 2021 13:09:28 GMT+0000",
+    "jcr:baseVersion": "a979f220-9a65-4625-b848-6ef41c922d75",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:cap-marshall-heilman",
+      "fireeye-blog-products-and-services:products-and-services",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:managed-defense",
+      "fireeye-blog-tags:advantage",
+      "fireeye-blog-tags:mandiant",
+      "fireeye-blog-tags:microsoft"
+    ],
+    "jcr:uuid": "a27399c8-b28a-40ab-a7bc-6ab274fd19d3",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Mon May 03 2021 09:00:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003ELast September, Mandiant announced a \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/blog\/products-and-services\/2020\/09\/mandiant-solutions-microsoft-working-together-for-better-security-outcomes.html\u0022\u003Ecollaboration with Microsoft\u003C\/a\u003E to combat cyber attacks and threat actors. This collaboration represented our membership in the Microsoft Intelligence Security Association (MISA) and previewed our plan to extend \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/managed-detection-and-response.html\u0022\u003EManaged Defense\u003C\/a\u003E to support Microsoft Defender for Endpoint. This integration combines Defender\u2019s telemetry with Managed Defense\u2019s expertise, powerful analytical capabilities, and industry-leading threat intelligence.\u003C\/p\u003E\n\u003Cp\u003EToday, we are pleased to announce that \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/managed-detection-and-response\/defender-for-endpoint.html\u0022\u003EMandiant Managed Defense for Defender for Endpoint\u003C\/a\u003E is now available to our joint customers.\u003C\/p\u003E\n\u003Ch4\u003EThreat Intelligence\u003C\/h4\u003E\n\u003Cp\u003EIn joining the Mandiant community, Defender for Endpoint customers benefit from nation-grade threat intelligence to identify and respond to the most impactful events. Customers will receive the expertise of our investigators to triage incidents, working with our Managed Defense Consultants to eradicate threats from their environments. The service also includes proactive threat hunting from our team of experts who are proficient in identifying unknown threats inside customer environments. Customers also gain advanced access to Mandiant Advantage, an industry-leading source of cyber threat intelligence. Finally, customers benefit from proactive security recommendations the Managed Defense Consultants provide based on our experience from the front lines (including all of the activity that does not get reported publicly!).\u003C\/p\u003E\n\u003Cp\u003EAdding support for Defender for Endpoint means better security outcomes and leverage of existing spend for Mandiant customers. Defender telemetry expands our visibility, providing widespread insight into today\u2019s attackers. It also enhances security for Defender customers who can now benefit from Mandiant\u2019s frontline visibility, threat research, and decades of investigation and response experience. We demonstrated our efficiency as a global Managed Detection and Response (MDR) provider in late 2020 during the SolarWinds Orion (SVR, according to the U.S. government) incident. As soon as our analysts and threat hunters identified \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/blog\/threat-research\/2020\/12\/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor.html\u0022\u003ESUNBURST\u003C\/a\u003E, we worked to mitigate the impact of the backdoor across our customer base, performing triage and incident response as necessary around the globe in a compressed timeframe. Additionally, Managed Defense, and now Microsoft, customers benefit from up-to-the-minute cutting-edge detections deployed across the Managed Defense customer base.\u003C\/p\u003E\n\u003Ch4\u003EHunting\u003C\/h4\u003E\n\u003Cp\u003EIn addition to live detection and response, Mandiant investigative findings quickly make their way into the workflows of the Managed Defense Proactive Hunting team. Pivoting on techniques observed \u201cin the wild\u201d and world-class threat intelligence, our hunting team brings their expertise to our customers using Defender for Endpoint. Defender allows our threat hunters to conduct threat hunts across the available Windows environment in seconds. With the accessibility of this data, Managed Defense can quickly test new threat hunting methodologies and validate the results.\u003C\/p\u003E\n\u003Cp\u003EManaged Defense threat hunting is transparent to our customers. Our hunts are mapped to MITRE\u2019s ATT\u0026amp;CK Framework, allowing our customers to see exactly what we are hunting for and the threat actors associated with various techniques. We provide links to intelligence articles in Mandiant Advantage describing the actors and techniques we\u2019re hunting for to ensure customers can learn more about threats we have observed and why they\u2019re impactful.\u003C\/p\u003E\n\u003Ch4\u003EThe Journey Ahead\u003C\/h4\u003E\n\u003Cp\u003EWe are constantly improving our service to deliver more value for our customers. Integrating Microsoft Defender for Endpoint is just one step in expanding our data points and telemetry. All customers benefit from increased visibility and threat awareness, as we work together to detect and prevent even the most advanced attacks.\u003C\/p\u003E\n\u003Cp\u003EToday marks a step in a new direction for Managed Defense in providing direct support for third-party endpoint products, consistent with our security-controls agnostic approach. We look forward to the journey ahead.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Sun May 02 2021 22:07:32 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EWe are pleased to announce that Mandiant Managed Defense and Microsoft Defender for Endpoint are now integrated and available for purchase.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Tue Apr 20 2021 16:31:50 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Mon May 03 2021 13:09:28 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

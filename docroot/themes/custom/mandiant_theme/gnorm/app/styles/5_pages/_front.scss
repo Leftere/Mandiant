@@ -1,0 +1,25 @@
+.front {
+  .section-small-tiles {
+    background-color: #131119;
+    color: #fff;
+    padding: 2rem;
+
+    @include breakpoint($large-tablet) {
+      padding: 8rem 0;
+    }
+
+    p {
+      max-width: 60rem !important;
+    }
+
+    .cta-button {
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  .block-bundle-cta.block-cta-media {
+    margin: 0 auto;
+  }
+}

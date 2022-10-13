@@ -1,0 +1,118 @@
+.resource-hero {
+  background: $white url('../images/backgrounds/gray-circle.png');
+  background-size: cover;
+
+  .minutes {
+    margin-top: 0;
+  }
+
+  > div {
+    @include container($desktop);
+    overflow: hidden;
+    padding: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 10rem;
+    position: relative;
+
+    @include breakpoint($tablet) {
+      padding-top: 13rem;
+    }
+  }
+
+  .eyebrow {
+    @include font-size(13, 22);
+    color: palette(blue, darkermed);
+    font-weight: bold;
+    letter-spacing: .15em;
+    margin: 0 0 $spacing-unit 0;
+    opacity: .7;
+    text-transform: uppercase;
+  }
+
+  span {
+    h1 {
+      font-weight: 600;
+      margin-left: -2px;
+      margin-top: 0;
+      max-width: 72rem;
+      font-size: 4rem;
+
+      @include breakpoint($large-mobile) {
+        font-size: 5rem;
+      }
+    }
+  }
+
+  .sub-title {
+    @include font-size(15, 22);
+    color: palette(blue, darkermed);
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 1em 0;
+    text-transform: uppercase;
+  }
+
+  .time {
+    @include font-size(13, 13);
+    color: palette(blue, darktime);
+    float: left;
+    font-family: $sans;
+    font-weight: 700;
+    height: 15px;
+    letter-spacing: 1px;
+    margin: 0 10px 0 0;
+    position: relative;
+    text-transform: uppercase;
+    width: auto;
+
+    &:after {
+      color: $black;
+      content: '|';
+      position: absolute;
+      right: -10px;
+      top: 0;
+    }
+  }
+
+  .hero-reading-time {
+    @include font-size(13, 13);
+    color: palette(blue, darktime);
+    float: left;
+    font-family: $sans;
+    font-weight: 700;
+    height: 15px;
+    letter-spacing: 1px;
+    margin: 0 0 0 10px;
+    max-width: 100%;
+    position: relative;
+    text-transform: uppercase;
+    width: auto;
+  }
+
+  .topic-hero {
+    clear: left;
+    padding-top: 6rem;
+
+    div {
+      @include font-size(13, 22);
+      color: $black;
+      display: inline;
+      font-family: $sans;
+      font-weight: 700;
+      height: 20px;
+      letter-spacing: .05em;
+      margin-right: 2rem;
+      min-width: 300px;
+      text-decoration: underline;
+      text-transform: uppercase;
+
+      &:before {
+        content: '#';
+      }
+
+      &:hover {
+        text-decoration: underline $black;
+      }
+    }
+  }
+}

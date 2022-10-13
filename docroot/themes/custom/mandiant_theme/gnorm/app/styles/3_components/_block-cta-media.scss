@@ -1,0 +1,132 @@
+.block-bundle-cta {
+  &.statistic-cta {
+    background-color: transparent;
+  }
+
+  &.block-cta-media {
+    @include container($large-desktop + 200px);
+    border: none;
+    margin: 5rem auto;
+    padding: 0;
+
+    &.right {
+      .layout--twocol-section {
+        flex-direction: row-reverse;
+
+        .layout__region--second {
+          @include breakpoint($desktop) {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+
+    .layout--twocol-section {
+      align-items: center;
+      flex-direction: row;
+    }
+
+
+
+    .layout__region--second {
+      align-items: flex-start;
+      align-self: center;
+      flex-direction: column;
+      justify-content: center;
+
+      @include breakpoint($desktop) {
+        padding-left: 10rem;
+      }
+
+      @include breakpoint(max-width $tablet) {
+        padding: 4rem;
+      }
+
+      h2 {
+        @include font-size(30, 40);
+        margin: 1rem 0;
+        max-width: 430px;
+      }
+
+      p {
+        @include font-size(16, 24);
+        margin-bottom: 2rem;
+        max-width: 430px;
+
+        a {
+          color: palette(red, base);
+          font-weight: 600;
+          text-decoration: underline;
+        }
+      }
+
+      .cta-button {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &.cta--with-image {
+      @include container($desktop);
+      background: $black;
+      border-bottom-right-radius: 15px;
+      border-top-left-radius: 15px;
+      color: $white;
+      padding: 4rem;
+
+      .sub-title {
+        h2 {
+          color: $white;
+        }
+      }
+
+      .image {
+        position: relative;
+
+        &:after {
+          border-bottom: 2px solid $red;
+          border-left: 2px solid $red;
+          border-top: 2px solid $red;
+          content: '';
+          height: 80%;
+          left: -15px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 30px;
+        }
+
+        &:before {
+          border-bottom: 2px solid $red;
+          border-right: 2px solid $red;
+          border-top: 2px solid $red;
+          content: '';
+          height: 80%;
+          position: absolute;
+          right: -15px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 30px;
+        }
+      }
+
+      .secondary-cta {
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.small {
+  margin-bottom: 0 !important;
+
+  @include breakpoint($tablet) {
+    padding: 10rem;
+  }
+
+  .block-bundle-cta {
+    @include container($desktop);
+    background: transparent;
+  }
+}

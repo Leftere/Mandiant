@@ -1,0 +1,16 @@
+uuid: 0b153723-4093-407d-b8f0-c45bf2074e0d
+langcode: en
+status: true
+dependencies: {  }
+id: margin_bottom_zero
+label: 'Margin bottom zero'
+classes: margin-bottom-zero
+type: section
+group: modifiers_layout
+weight: 0
+block_restrictions: {  }
+layout_restrictions:
+  - layout_onecol
+  - layout_twocol_section
+  - layout_threecol_section
+  - layout_fourcol_section

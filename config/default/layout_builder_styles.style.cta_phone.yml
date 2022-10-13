@@ -1,0 +1,14 @@
+uuid: 881fdc2c-0ef9-41d2-a231-981e1b0b3bb0
+langcode: en
+status: true
+dependencies: {  }
+id: cta_phone
+label: 'CTA Phone'
+classes: cta-phone
+type: component
+group: add_ons
+weight: 0
+block_restrictions:
+  - 'inline_block:cta'
+  - 'inline_block:text'
+layout_restrictions: {  }

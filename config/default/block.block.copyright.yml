@@ -1,0 +1,25 @@
+uuid: 7af0e1a0-173b-46a4-b883-4d8c6fc36b58
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:text:8e34ba60-0769-4675-a6cb-68228afebc9a'
+  module:
+    - block_content
+  theme:
+    - mandiant_theme
+id: copyright
+theme: mandiant_theme
+region: bottom
+weight: -5
+provider: null
+plugin: 'block_content:8e34ba60-0769-4675-a6cb-68228afebc9a'
+settings:
+  id: 'block_content:8e34ba60-0769-4675-a6cb-68228afebc9a'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

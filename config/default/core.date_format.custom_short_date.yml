@@ -1,0 +1,8 @@
+uuid: 5bb68f91-ee04-4f3d-950a-8b649d1968a8
+langcode: und
+status: true
+dependencies: {  }
+id: custom_short_date
+label: 'Custom Short Date'
+locked: false
+pattern: m.d.Y

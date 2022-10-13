@@ -1,0 +1,10 @@
+uuid: 2fc9401d-4267-4780-ad41-33d8843c682e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.column
+label: Column
+targetEntityType: node
+cache: true

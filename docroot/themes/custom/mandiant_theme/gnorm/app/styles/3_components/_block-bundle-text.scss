@@ -1,0 +1,60 @@
+.block-bundle-text {
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 0;
+  }
+
+  &.center {
+    text-align: center;
+
+    img {
+      left: 50%;
+      transform: translate(-50%, 1rem);
+    }
+
+    h2 {
+      font-weight: 500;
+    }
+  }
+
+  .sub-title {
+    h2 {
+      @include font-size(30, 40);
+      font-weight: 500;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .devider {
+    margin: 2rem 0;
+
+    a {
+      color: $red;
+      font-weight: bold;
+    }
+  }
+
+  p {
+    @include font-size(16, 22);
+    letter-spacing: 0;
+  }
+
+  .layout--twocol-section & {
+    padding: $spacing-unit;
+  }
+
+  .layout--threecol-section & {
+    padding: $spacing-unit;
+  }
+
+  .layout--fourcol-section & {
+    padding: $spacing-unit;
+  }
+}
+
+.product-title {
+  color: $white;
+}

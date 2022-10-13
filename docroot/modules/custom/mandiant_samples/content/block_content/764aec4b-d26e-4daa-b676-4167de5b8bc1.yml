@@ -1,0 +1,49 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 764aec4b-d26e-4daa-b676-4167de5b8bc1
+  bundle: hero
+  default_langcode: en
+  depends:
+    76142c52-522d-4fd1-aa68-da16dde771e8: user
+    05cb08cc-fe68-4355-85d9-366c84f74a53: media
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Inline block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      entity: 76142c52-522d-4fd1-aa68-da16dde771e8
+  content_translation_created:
+    -
+      value: 1626967518
+  field_body:
+    -
+      value: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod</p>\r\n"
+      format: basic_html
+  field_cta:
+    -
+      uri: 'internal:#'
+      title: 'Contact Us'
+      options: {  }
+  field_media:
+    -
+      entity: 05cb08cc-fe68-4355-85d9-366c84f74a53
+  field_title:
+    -
+      value: 'Discover Mandiant<br/>Security Solutions'

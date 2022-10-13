@@ -1,0 +1,13 @@
+uuid: b34eb2e2-7ff4-491b-a3e5-ed3c33c130d4
+langcode: en
+status: true
+dependencies: {  }
+id: dark
+label: 'Solid (Dark)'
+classes: dark
+type: section
+group: background
+weight: 6
+block_restrictions:
+  - 'inline_block:cta'
+layout_restrictions: {  }

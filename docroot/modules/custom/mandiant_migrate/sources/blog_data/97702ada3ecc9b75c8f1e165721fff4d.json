@@ -1,0 +1,78 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Fri Mar 03 2017 09:24:28 GMT-0500",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": " AntiVirus Evasion Reconstructed \u2013 Veil 3.0",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "94420f7e-9419-4f91-9fb1-bbe3337e0212",
+    "author": "Christopher Truncer",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "matthew.sawicki@fireeye.com",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "df128867-da8e-4b83-b40e-0ceccd5dc6c0"
+    ],
+    "jcr:created": "Fri Mar 03 2017 19:24:32 GMT-0500",
+    "cq:lastReplicated": "Fri Mar 03 2017 19:24:32 GMT-0500",
+    "cq:lastModified": "Fri Mar 03 2017 09:24:15 GMT-0500",
+    "cq:distribute": true,
+    "jcr:description": "Everything you need to know about Veil 3.0, the latest update on tools designed for use during offensive security training.",
+    "jcr:baseVersion": "df128867-da8e-4b83-b40e-0ceccd5dc6c0",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-tags:anit-virus",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-doctypes:blog",
+      "fireeye-blog-authors:christopher-truncer",
+      "fireeye-blog-threat-research:threat-research\/malware-research",
+      "fireeye-blog-tags:latest"
+    ],
+    "jcr:uuid": "53ecb615-c2b6-454a-a3eb-d01bd4c99d69",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Fri Mar 03 2017 08:00:00 GMT-0500",
+    "_charset_": "UTF-8",
+    "cq:lastModifiedBy": "lynn.thorne@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "lynn.thorne@fireeye.com",
+        "text": "\u003Cp\u003EThe \u003Ca href=\u0022https:\/\/www.veil-framework.com\/\u0022\u003EVeil Framework\u003C\/a\u003E is a collection of tools designed for use during offensive security testing. When the time calls for it, \u003Ca href=\u0022\/content\/fireeye-www\/en_US\/services\/red-team-operations.html\u0022 target=\u0022_blank\u0022 adhocenable=\u0022false\u0022\u003EMandiant\u2019s Red Team\u003C\/a\u003E will use the Veil-Framework to help achieve their objective. \u0026nbsp;The most commonly used tool is Veil-Evasion, which can turn an arbitrary script or piece of shellcode into a Windows executable that will evade detections by common antivirus products.\u003C\/p\u003E\n\u003Cp\u003EVeil 2.0 was made publicly available on June 17, 2013, and the core framework has remained largely unchanged since that date. There have been some modifications to the framework itself, but these have generally been minor in nature, with the majority of modifications involving the support of new programming languages and new payload modules.\\\u003C\/p\u003E\n\u003Cp\u003EAfter spending a few years developing in Python, I revisited the Veil codebase and identified parts of the backend framework that could be developed more efficiently. Six months later, after refactoring the codebase and adding a large number of updates, I am happy to present \u003Ca href=\u0022https:\/\/github.com\/Veil-Framework\/Veil\u0022\u003EVeil 3.0\u003C\/a\u003E. The main menu is shown in Figure 1.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/Anti%20Virus%20Evasion%20Truncer\/Fig1.png\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 1: Veil 3 main menu\u003C\/span\u003E\u003C\/p\u003E\n\u003Ch5\u003EPython 3\u003C\/h5\u003E\n\u003Cp\u003EFirst and foremost, one of the largest overhauls to Veil was updating the version of Python from Python 2 to Python 3. Python 2 is scheduled to reach end-of-life (EOL) in 2020, so it did not make much sense to spend time performing a large update to Veil in a language that will no longer be supported in three years.\u003C\/p\u003E\n\u003Cp\u003EUpdating Veil from Python 2 to Python 3 was easily the most time-consuming part of creating Veil 3. Running the \u003Ca href=\u0022https:\/\/docs.python.org\/2\/library\/2to3.html\u0022\u003E2to3 tool\u003C\/a\u003E was not an option; the conversion process required manual review for essentially all changes to Veil.\u003C\/p\u003E\n\u003Cp\u003EOne of the major differences when developing Veil in Python 3 vs. Python 2 is how shellcode is handled and modified. To illustrates this issue, Figure 2 shows a Python 2-based stager that includes encrypted shellcode to be decrypted at runtime.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/Anti%20Virus%20Evasion%20Truncer\/Fig2.png\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 2: AES decrypting stager from Veil 2 in Python 2\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EWhile the code in Figure 2 works in Python 2, it will not work in Python 3. Specifically, in Python 3, the shellcode no longer needs to be string escaped into a bytearray after decryption. The output of Python 3\u2019s decryption is the original clear text data in a bytearray, which is immediately consumable by the rest of the script. Figure 3 shows the Python 3 version of the same decryption stager.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/Anti%20Virus%20Evasion%20Truncer\/Fig3.png\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 3: AES decrypting stager from Veil 3 in Python 3\u003C\/span\u003E\u003C\/p\u003E\n\u003Ch5\u003EOrdnance\u003C\/h5\u003E\n\u003Cp\u003EEarly versions of Veil relied on the Metasploit Framework\u0027s \u003Ca href=\u0022https:\/\/github.com\/rapid7\/metasploit-framework\/blob\/master\/msfvenom\u0022\u003Emsfvenom\u003C\/a\u003E tool to generate shellcode for Veil payloads. After the initial release of Veil, however, this caused a problem. The output for msfvenom changed and it completely broke Veil\u0027s ability to process msfvenom output. After providing a patch to fix the issue, the Veil team decided that a different solution would be required instead of relying on a tool outside of our control.\u003C\/p\u003E\n\u003Cp\u003EThus, \u003Ca href=\u0022https:\/\/github.com\/Veil-Framework\/Veil-Ordnance\u0022\u003EVeil-Ordnance\u003C\/a\u003E was developed and released in 2015. Veil-Ordnance is a tool that generates shellcode for use in Veil-Evasion stagers. Developing Veil-Ordnance had two main benefits:\u003C\/p\u003E\n\u003Col\u003E\n\u003Cli\u003EThe Veil development team is in control of the output, preventing any future compatibility issues with Veil-Evasion.\u003C\/li\u003E\n\u003Cli\u003EShellcode generation is faster with Veil-Ordnance.\u003C\/li\u003E\n\u003C\/ol\u003E\n\u003Cp\u003EPreviously, Veil-Evasion and Veil-Ordnance were two separate tools. With the release of Veil 3.0, that is no longer the case, as shown in Figure 4.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/Anti%20Virus%20Evasion%20Truncer\/Fig4.png\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 4: Ordnance included in Veil 3.0\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EVeil 3.0 users still have the ability to use msfvenom to generate their shellcode, but they now \u003Cb\u003Ealso\u003C\/b\u003E have the option to use Ordnance. Ordnance will be able to immediately generate shellcode after users provide the IP and Port that the shellcode should connect to or listen on. Ordnance supports the most popular payload types:\u003C\/p\u003E\n\u003Col\u003E\n\u003Cli\u003EReverse TCP\u003C\/li\u003E\n\u003Cli\u003EReverse HTTP\u003C\/li\u003E\n\u003Cli\u003EReverse HTTPS\u003C\/li\u003E\n\u003Cli\u003EReverse TCP DNS\u003C\/li\u003E\n\u003Cli\u003EReverse TCP All Ports\u003C\/li\u003E\n\u003Cli\u003EBind TCP\u003C\/li\u003E\n\u003C\/ol\u003E\n\u003Cp\u003EThis gives Veil users multiple options to choose from \u2013 they can stick with msfvenom, or use the new built-in tool, Ordnance.\u003C\/p\u003E\n\u003Ch5\u003EAdditional Languages\u003C\/h5\u003E\n\u003Cp\u003EWhile Veil itself is written in Python, the processed payloads and output files can be in other programming languages. In Veil 3.0, two additional languages are now supported:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EAutoIt3\u003C\/li\u003E\n\u003Cli\u003ELua\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003ELua payloads are only supported in a script format that must be compiled and run using a lua runtime, but Veil 3.0 running on Linux can compile AutoIt3 scripts into Windows executables. Veil 3.0 also supports the seven languages previously supported in version 2.0:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EPython\u003C\/li\u003E\n\u003Cli\u003EPowerShell\u003C\/li\u003E\n\u003Cli\u003EC\u003C\/li\u003E\n\u003Cli\u003EC#\u003C\/li\u003E\n\u003Cli\u003EPerl\u003C\/li\u003E\n\u003Cli\u003ERuby\u003C\/li\u003E\n\u003Cli\u003EGolang\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Ch5\u003EEnvironmental Detection\u003C\/h5\u003E\n\u003Cp\u003EAnother new feature in Veil 3.0 is the ability to check information about the system where the Veil payload is running. This feature is useful for ensuring that shellcode is only executed on target systems and during the engagement timeframe. The stager performs these checks and will only inject and execute the embedded shellcode if the specified conditions are met. Figure 5 shows the options for this feature.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/Anti%20Virus%20Evasion%20Truncer\/Fig5.png\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 5: Environmental detection options\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EUsers can specify one or more of the following checks for Veil stagers:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EThe domain that the victim machine must be joined to.\u003C\/li\u003E\n\u003Cli\u003EA date that the payload expires on.\u003C\/li\u003E\n\u003Cli\u003EThe hostname of the system running the payload.\u003C\/li\u003E\n\u003Cli\u003EThe minimum number of processors on the system running the payload.\u003C\/li\u003E\n\u003Cli\u003EThe required username running the payload.\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EIf specifying more than one check, all checks must be met; otherwise the stager will cease execution without executing the shellcode.\u003C\/p\u003E\n\u003Cp\u003EThis covers the major updates with Veil 3.0\u0027s release. If you have any questions, or encounter an issue, please visit \u003Ca href=\u0022https:\/\/github.com\/Veil-Framework\/Veil\u0022\u003EVeil\u0027s Github repository\u003C\/a\u003E. I hope that Veil can help further your assessments in the same way that it has helped us.\u003C\/p\u003E\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\n",
+        "jcr:lastModified": "Fri Mar 03 2017 09:24:15 GMT-0500",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "alt": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "comments": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/commons\/components\/comments"
+      },
+      "trackback": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/blog\/components\/trackback"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "lynn.thorne@fireeye.com",
+      "text": "\u003Cp\u003EEverything you need to know about Veil 3.0, the latest update on tools designed for use during offensive security training.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Fri Mar 03 2017 09:23:20 GMT-0500",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "lynn.thorne@fireeye.com",
+      "jcr:lastModified": "Fri Mar 03 2017 09:23:43 GMT-0500",
+      "imageRotate": "0"
+    }
+  }
+}

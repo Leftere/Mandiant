@@ -1,0 +1,66 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed Apr 21 2021 13:00:29 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Mandiant Advantage Expands SaaS Platform With New Mandiant Automated Defense Module",
+    "jcr:versionHistory": "4ae57e6a-6d09-49aa-8aad-00a844b524d3",
+    "cq:template": "\/apps\/fireeye-www\/fdc\/templates\/press-release",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "66171e52-0f6d-4b4f-8807-c6c2632bc7a4"
+    ],
+    "jcr:created": "Wed Apr 21 2021 13:00:29 GMT+0000",
+    "cq:lastModified": "Wed Apr 21 2021 13:00:12 GMT+0000",
+    "jcr:baseVersion": "66171e52-0f6d-4b4f-8807-c6c2632bc7a4",
+    "jcr:isCheckedOut": true,
+    "pagedate": "Wed Apr 21 2021 09:00:00 GMT-0400",
+    "cq:tags": [
+      "company:en-US\/press-releases",
+      "fireeye-doctypes:press-releases",
+      "company:en-US\/press-releases\/2021",
+      "company:en-US\/press-releases\/latest"
+    ],
+    "jcr:uuid": "d84f22a7-c075-4a38-ac26-7eae15c85c0f",
+    "sling:resourceType": "fireeye-www\/fdc\/components\/page\/press-release",
+    "cq:designPath": "\/etc\/designs\/fireeye-www",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "content-par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "grid_100_full": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "adam.greenberg@fireeye.com",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "jcr:created": "Wed Apr 21 2021 04:06:36 GMT+0000",
+        "jcr:lastModified": "Wed Apr 21 2021 04:06:36 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/grids\/grid-100-full",
+        "grid-100-mid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "fireeye-www\/fdc\/components\/grids\/grid-parsys\/parsys-100-full\/parsys",
+          "text": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "adam.greenberg@fireeye.com",
+            "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+            "jcr:created": "Wed Apr 21 2021 04:06:43 GMT+0000",
+            "text": "\u003Cp style=\u0022text-align: center;\u0022\u003E\u003Ci\u003ENew SaaS capabilities leveraging Mandiant\u2019s frontline intelligence and expertise target the challenges of the modern SOC\u003C\/i\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cb\u003EMILPITAS, Calif., April 21, 2021 \u003C\/b\u003E\u2013 \u003Ca href=\u0022https:\/\/www.fireeye.com\/\u0022\u003EFireEye, Inc.\u0026nbsp;\u003C\/a\u003E(NASDAQ: FEYE), the intelligence-led security company, today announced the expansion of its Mandiant Advantage SaaS platform now equipped with a powerful, multi-vendor XDR capability and introduced its newest module \u2013\u0026nbsp;Mandiant Automated Defense. Mandiant Automated Defense is the latest module available in the Mandiant Advantage platform, joining the Mandiant Threat Intelligence and Mandiant Security Validation modules.\u003C\/p\u003E\n\u003Cp\u003EOrganizations struggle to consistently, quickly, and accurately assess and investigate the multitude of alerts received by their security operations centers (SOC) daily. In February 2021 alone, Mandiant Automated Defense reduced more than 52 billion customer alerts down to less than 700 prioritized investigations. Formerly Respond Software\u2019s virtual analyst product, Mandiant Automated Defense dramatically increases Mandiant\u0027s ability to scale its unique expertise and intelligence as software delivered through an easy-to-deploy SaaS interface.\u003C\/p\u003E\n\u003Cp\u003E\u0026quot;Skill shortages, an overwhelming number of alerts, and even misconfigured tools all contribute to the challenges faced by the modern SOC,\u0026quot; said Chris Key, Executive Vice President of Products, Mandiant Solutions. \u0026quot;Our customers have been asking us for technology that embeds Mandiant expertise and intelligence into their environments at scale \u2013 Mandiant Automated Defense is another of our products that does just that.\u0026quot;\u003C\/p\u003E\n\u003Cp\u003EMandiant Automated Defense addresses the people, process, and technology challenges faced by cyber security defenders in the SOC. Automated Defense allows security analysts to triage alerts from the security stack at machine speed, scale, and consistency using data science and machine learning. This automated triage process is designed to enable security personnel to prioritize and focus on the most relevant threats, reducing time wasted on false positives.\u0026nbsp;\u003C\/p\u003E\n\u003Cp\u003E\u0026quot;Enterprises are truly changing the way they manage security operations,\u0026quot; said Jon Oltsik, Senior Principal Analyst and Fellow, Enterprise Strategy Group. \u0026quot;Through Respond Software, Mandiant has added an innovator in security operations that can help enable security teams better serve customers, increase productivity, and achieve better cyber security business outcomes. Mandiant Automated Defense can help customers truly work without boundaries \u2013 outside of their current tools and processes.\u0026quot;\u003C\/p\u003E\n\u003Cp\u003EMandiant Advantage is an intelligence-driven approach to security operations.\u003C\/p\u003E\n\u003Cp\u003EWithout a significant increase in human expertise, it is impossible for organizations to win the global war on cyber crime. Mandiant Advantage productizes attacker expertise and threat intelligence capabilities into accessible, automated solutions that instantly provide the scale and capability that security teams so desperately need. Supporting more than 60 security technologies, cloud platforms and network management tools, the Mandiant Advantage SaaS platform works with best-of-breed, multi-vendor controls to deliver world-class XDR capabilities.\u003C\/p\u003E\n\u003Cp\u003EThe Mandiant Advantage platform now includes three modules:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003E\u003Ca href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/threat-intelligence.html\u0022\u003EMandiant Threat Intelligence\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/security-validation.html\u0022\u003EMandiant Security Validation\u003C\/a\u003E (formerly Verodin)\u003C\/li\u003E\n\u003Cli\u003E\u003Ca href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/automated-defense.html\u0022\u003EMandiant Automated Defense\u003C\/a\u003E (formerly Respond Software)\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EIntroducing Mandiant Automated Defense:\u0026nbsp;Rounding out Mandiant Advantage with\u0026nbsp;automated\u0026nbsp;triage at machine speed \u2013 blog post: \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/products-and-services\/2021\/04\/introducing-mandiant-automated-defense-triage-at-machine-speed.html\u0022\u003Ehttps:\/\/www.fireeye.com\/blog\/products-and-services\/2021\/04\/introducing-mandiant-automated-defense-triage-at-machine-speed.html\u003C\/a\u003E\u003C\/p\u003E\n\u003Ch4\u003EAbout Mandiant\u003C\/h4\u003E\n\u003Cp\u003EMandiant, a part of FireEye, brings together the world\u2019s leading threat intelligence and frontline expertise with continuous security validation to arm organizations with the tools needed to increase security effectiveness and reduce organizational risk.\u003C\/p\u003E\n\u003Ch4\u003EAbout FireEye, Inc.\u003C\/h4\u003E\n\u003Cp\u003EFireEye is the intelligence-led security company. Working as a seamless, scalable extension of customer security operations, FireEye offers a single platform that blends innovative security technologies, nation-state grade threat intelligence, and world-renowned Mandiant\u00ae consulting. With this approach, FireEye eliminates the complexity and burden of cyber security for organizations struggling to prepare for, prevent, and respond to cyber attacks. FireEye has over 9,900 customers across 103 countries, including more than 50 percent of the Forbes Global 2000.\u003C\/p\u003E\n\u003Cp\u003E\u00a9 2021 FireEye, Inc. All rights reserved. FireEye and Mandiant are registered trademarks or trademarks of FireEye, Inc. in the United States and other countries. All other brands, products, or service names are or may be trademarks or service marks of their respective owners.\u003C\/p\u003E\n\u003Ch4\u003EContacts\u003C\/h4\u003E\n\u003Cp\u003EMedia\u003Cbr\u003E\n\u003Ca href=\u0022mailto:Media.Relations@FireEye.com\u0022\u003EMedia.Relations@FireEye.com\u003C\/a\u003E\u003C\/p\u003E\n\u003Cp\u003EInvestors\u003Cbr\u003E\n\u003Ca href=\u0022mailto:Investor.Relations@FireEye.com\u0022\u003EInvestor.Relations@FireEye.com\u003C\/a\u003E\u003C\/p\u003E\n",
+            "jcr:lastModified": "Wed Apr 21 2021 13:00:12 GMT+0000",
+            "sling:resourceType": "fireeye-www\/fdc\/components\/text\/text",
+            "textIsRich": "true"
+          }
+        }
+      }
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Wed Apr 21 2021 04:12:28 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

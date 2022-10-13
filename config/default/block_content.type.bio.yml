@@ -1,0 +1,8 @@
+uuid: 0d917aec-a6ad-4313-a2e4-c9737388409d
+langcode: en
+status: true
+dependencies: {  }
+id: bio
+label: 'Featured Bios'
+revision: 0
+description: ''

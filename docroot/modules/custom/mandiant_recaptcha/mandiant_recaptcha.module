@@ -1,0 +1,29 @@
+<?php
+/**
+ * @file
+ * Functions to support handling recaptcha integration.
+ */
+use Drupal\Core\Site\Settings;
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function mandiant_recaptcha_page_attachments_alter(array &$page) {
+  $logged_in = \Drupal::currentUser()->isAuthenticated();
+  if (Settings::get('recaptcha_key')) {
+    if ($logged_in) {
+      // Enable the libraries if the current route is not an admin page.
+      $route = \Drupal::routeMatch()->getRouteObject();
+      if (!\Drupal::service('router.admin_context')->isAdminRoute($route)) {
+        // Attaches js assets globally.
+        $page['#attached']['library'][] = 'mandiant_recaptcha/recaptcha_integration';
+      }
+    }
+    else {
+      $page['#attached']['library'][] = 'mandiant_recaptcha/recaptcha_integration';
+    }
+
+    // Pass settings to JavaScript.
+    $page['#attached']['drupalSettings']['mandiantRecaptcha']['recaptchaKey'] = Settings::get('recaptcha_key');
+  }
+}

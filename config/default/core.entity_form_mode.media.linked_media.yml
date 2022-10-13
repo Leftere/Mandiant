@@ -1,0 +1,10 @@
+uuid: 33774f51-cf54-43c6-b648-ebc5ee86b441
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.linked_media
+label: 'Linked media'
+targetEntityType: media
+cache: true

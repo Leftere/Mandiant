@@ -1,0 +1,278 @@
+.hero {
+  padding: 10rem 3rem;
+  position: relative;
+
+  @include breakpoint($large-tablet) {
+    padding: 10em;
+  }
+
+  .wrapper {
+    @extend %wrapper;
+
+    @include container($desktop);
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  &.tall {
+    align-items: center;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    min-height: 90vh;
+
+    .dark & {
+      color: $white;
+    }
+  }
+
+  &.short {
+    align-items: center;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    min-height: 50vh;
+    padding: 10rem 3rem 5rem;
+
+    @include breakpoint($large-tablet) {
+      padding: 13rem 10rem 5rem;
+    }
+
+    .dark & {
+      color: $white;
+    }
+
+    &.insights-listing {
+      @include breakpoint($large-tablet) {
+        padding: 13rem 0 5rem 10rem;
+      }
+
+      .media {
+        margin-bottom: 5rem;
+
+        img {
+          // height: 500px;
+        }
+      }
+
+      .type {
+        @include small-caps;
+        @include font-size(16, 22);
+        color: $medGray;
+        margin-left: 5rem;
+      }
+
+      .title {
+        color: $white;
+        margin: 1rem 0 1rem 5rem;
+      }
+
+      .info {
+        @include font-size(14, 18);
+        color: $white;
+        margin: 1rem 0 5rem 5rem;
+      }
+
+      .time {
+        color: $medGray;
+        margin-left: 2rem;
+      }
+      // padding: 10rem 3rem 5rem;
+    }
+  }
+
+  &__background {
+    background-color: #07050d;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+    }
+
+    .contextual-region {
+      position: static;
+    }
+  }
+
+  .layout {
+    z-index: 1;
+
+    @include breakpoint($large-tablet) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  .layout--twocol-section--50-50 {
+    align-items: center;
+
+    .layout__region--first {
+      flex: 0 1 auto;
+
+      @include breakpoint($large-tablet) {
+        flex: 0 1 50%;
+      }
+    }
+
+    .layout__region--second {
+      flex: 0 1 auto;
+
+      @include breakpoint($large-tablet) {
+        flex: 0 1 50%;
+      }
+    }
+  }
+
+  h1 {
+    @include font-size(32, 32);
+    font-weight: bold;
+    margin: 3rem 0;
+    max-width: 52rem;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+
+    @include breakpoint($large-tablet) {
+      @include font-size(50, 50);
+    }
+
+    .dark & {
+      color: palette(white, initial);
+    }
+  }
+
+  h2 {
+    @include font-size(32, 32);
+    font-weight: 600;
+    margin: 3rem 0;
+    max-width: 52rem;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+
+    @include breakpoint($large-tablet) {
+      @include font-size(50, 50);
+    }
+  }
+
+  p,
+  .trimmed {
+    @include font-size(15, 22);
+    margin: 0 0 2rem;
+    max-width: 40rem;
+    position: relative;
+    z-index: 1;
+
+    .dark & {
+      color: $lightGray;
+    }
+
+    a {
+      color: $lightGray;
+      font-weight: bold;
+    }
+  }
+
+  .cta-button {
+    display: block;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .cta-button,
+  .eyebrow,
+  .media {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__continue {
+    background: transparent;
+    border: 0px;
+    bottom: 0;
+    cursor: pointer;
+    left: 50%;
+    padding: 0 .6rem;
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    .intro-text & {
+      bottom: 5rem;
+    }
+
+    &:after {
+      background-color: $black;
+      border-radius: 18px;
+      bottom: -10px;
+      content: '';
+      height: 35px;
+      left: 0;
+      position: absolute;
+      transform: translate(-4px, 2px);
+      width: 35px;
+      z-index: -1;
+    }
+
+    svg {
+      color: $white;
+      pointer-events: none;
+      width: 15px;
+    }
+  }
+
+  &--incident {
+    h1 {
+      margin-top: 10rem;
+      position: relative;
+
+      &:before {
+        @include font-size(30, 40);
+        align-items: center;
+        background-color: $red;
+        border-radius: 100%;
+        color: #fff;
+        content: '!';
+        display: flex;
+        flex-basis: 40px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        font-weight: 650;
+        height: 40px;
+        justify-content: center;
+        letter-spacing: 0;
+        position: relative;
+        top: -20px;
+        width: 40px;
+        z-index: 1;
+      }
+
+      &:after {
+        animation: pulse-ring 2s cubic-bezier(.215, .61, .355, 1) infinite;
+        background-color: $red;
+        border-radius: 100%;
+        content: '';
+        height: 66px;
+        left: -13px;
+        position: absolute;
+        top: -32px;
+        width: 66px;
+        z-index: 0;
+      }
+    }
+  }
+
+  .block-bundle-cta {
+    background: transparent;
+  }
+}
+

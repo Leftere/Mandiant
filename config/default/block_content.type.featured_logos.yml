@@ -1,0 +1,8 @@
+uuid: ffbd7cbf-c945-409a-a069-4fa162dccdd1
+langcode: en
+status: true
+dependencies: {  }
+id: featured_logos
+label: 'Featured Logos (Deprecated)'
+revision: 0
+description: ''

@@ -1,0 +1,62 @@
+image: docksal/ci-agent:1.10-php
+
+pipelines:
+
+  tags:
+    '**':
+      - step:
+          name: Build and push artifact
+          image:
+            name: docksal/cli:php7.4
+            run-as-user: 1000
+          script:
+            - sudo chown -R `whoami`:`whoami` .
+            - composer install --no-interaction
+            - ./vendor/bin/blt artifact:deploy --commit-msg "Automated commit by Bitbucket Pipelines for Build ${BITBUCKET_TAG}" --tag "${BITBUCKET_TAG}-build" --no-interaction
+
+  branches:
+    main:
+      - step:
+          name: Build and push artifact
+          image:
+            name: docksal/cli:php7.4
+            run-as-user: 1000
+          script:
+            - sudo chown -R `whoami`:`whoami` .
+            - composer install --no-interaction
+            - ./vendor/bin/blt artifact:deploy --branch="$BITBUCKET_BRANCH-build" --no-interaction --environment=ci
+
+    develop:
+      - step:
+          name: Build and push artifact
+          image:
+            name: docksal/cli:php7.4
+            run-as-user: 1000
+          script:
+            - sudo chown -R `whoami`:`whoami` .
+            - composer install --no-interaction
+            - ./vendor/bin/blt artifact:deploy --branch="$BITBUCKET_BRANCH-build" --no-interaction --environment=ci
+
+  pull-requests:
+    '**':
+      - step:
+          name: Code validation & security
+          image:
+            name: docksal/cli:php7.4
+            run-as-user: 1000
+          script:
+            - composer install --no-interaction
+            - ./vendor/bin/blt tests:security-composer --no-interaction
+            - ./vendor/bin/blt tests:security-drupal --no-interaction
+
+  custom:
+    deploy-branch:
+      - step:
+          name: Build and push artifact
+          image:
+            name: docksal/cli:php7.4
+            run-as-user: 1000
+          script:
+            - sudo chown -R `whoami`:`whoami` .
+            - composer install --no-interaction
+            - ./vendor/bin/blt deploy -vvv --branch="$BITBUCKET_BRANCH-build" --no-interaction --environment=ci

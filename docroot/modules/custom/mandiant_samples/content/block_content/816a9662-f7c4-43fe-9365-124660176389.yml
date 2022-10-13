@@ -1,0 +1,45 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 816a9662-f7c4-43fe-9365-124660176389
+  bundle: cta
+  default_langcode: en
+  depends:
+    76142c52-522d-4fd1-aa68-da16dde771e8: user
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Inline block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      entity: 76142c52-522d-4fd1-aa68-da16dde771e8
+  content_translation_created:
+    -
+      value: 1626961886
+  field_body:
+    -
+      value: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut neque faucibus, tincidunt nisi vel, tempor urna. In faucibus eros elit, a luctus dolor tincidunt at. Duis pretium, massa eget dictum varius, sem felis pretium neque, eu vulputate eros diam vel tortor.</p>\r\n"
+      format: basic_html
+  field_cta:
+    -
+      uri: 'internal:#'
+      title: 'Contact Us'
+      options: {  }
+  field_title:
+    -
+      value: 'Sample CTA FULL (Dark)'

@@ -1,0 +1,90 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed Jun 02 2021 20:00:11 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:lockable",
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "FireEye Announces Sale of FireEye Products Business to Symphony Technology Group for $1.2 Billion",
+    "jcr:versionHistory": "c89594e3-4fc8-42c4-bed2-1b13134ff7bc",
+    "cq:template": "\/apps\/fireeye-www\/fdc\/templates\/press-release",
+    "jcr:language": "en",
+    "jcr:predecessors": [
+      "bf313753-3b2c-4523-883b-46b7f0ec589a"
+    ],
+    "jcr:created": "Wed Jun 02 2021 20:10:52 GMT+0000",
+    "cq:lastModified": "Wed Jun 02 2021 20:10:44 GMT+0000",
+    "jcr:description": "FireEye has announced it has entered into a definitive agreement to sell the FireEye Products business, including the FireEye name, to a consortium led by Symphony Technology Group (STG).",
+    "jcr:baseVersion": "bf313753-3b2c-4523-883b-46b7f0ec589a",
+    "jcr:isCheckedOut": true,
+    "pagedate": "Wed Jun 02 2021 13:00:00 GMT-0700",
+    "cq:tags": [
+      "fireeye-doctypes:press-releases",
+      "company:en-US\/press-releases\/latest",
+      "company:en-US",
+      "company:en-US\/press-releases\/2021",
+      "company:en-US\/press-releases"
+    ],
+    "jcr:uuid": "8b39d357-777b-4ad2-9d99-d0c68ff67d19",
+    "sling:resourceType": "fireeye-www\/fdc\/components\/page\/press-release",
+    "cq:designPath": "\/etc\/designs\/fireeye-www",
+    "cq:lastModifiedBy": "matthew.sawicki@fireeye.com",
+    "navTitle": "FireEye Announces Sale of Products Business",
+    "content-par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "grid_100_full": {
+        "jcr:primaryType": "nt:unstructured",
+        "anchor-point": "center",
+        "jcr:createdBy": "matthew.sawicki@fireeye.com",
+        "jcr:lastModifiedBy": "matthew.sawicki@fireeye.com",
+        "gradientposition": "60",
+        "jcr:created": "Wed Jun 02 2021 14:57:25 GMT+0000",
+        "side": "left",
+        "bottompadding": "pad-bottom-80",
+        "jcr:lastModified": "Wed Jun 02 2021 15:34:58 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/grids\/grid-100-full",
+        "breakpoint": "m",
+        "alignment": "left",
+        "gutterwidth": " g-alt",
+        "grid-100-mid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "fireeye-www\/fdc\/components\/grids\/grid-parsys\/parsys-100-full\/parsys",
+          "text": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "matthew.sawicki@fireeye.com",
+            "jcr:lastModifiedBy": "matthew.sawicki@fireeye.com",
+            "jcr:created": "Wed Jun 02 2021 14:57:36 GMT+0000",
+            "text": "\u003Cul\u003E\n\u003Cli\u003E\u003Ci\u003EAll cash transaction unlocks high-growth Mandiant Solutions business\u003C\/i\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ci\u003EContinued partnership after closing supports customers with reseller relationship and shared product telemetry and frontline threat intelligence\u003C\/i\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ci\u003EFireEye Board authorizes share repurchase program of up to $500 million\u003C\/i\u003E\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EMILPITAS, Calif., June 2, 2021 \u2013 FireEye, Inc. (NASDAQ: FEYE) today announced it has entered into a definitive agreement to sell the FireEye Products business, including the FireEye name, to a consortium led by Symphony Technology Group (STG) in an all-cash transaction for $1.2 billion, before taxes and transaction-related expenses.\u003C\/p\u003E\n\u003Cp\u003EThe transaction is expected to close by the end of the fourth quarter of 2021, subject to customary regulatory approvals and closing conditions, and will separate FireEye\u2019s network, email, endpoint, and cloud security products, along with the related security management and orchestration platform, from Mandiant\u2019s controls-agnostic software and services, enabling both organizations to accelerate growth investments, pursue new go-to-market pathways, and focus innovation on their respective solutions. The FireEye Products business and Mandiant Solutions will continue to operate as a single entity until the transaction closes, allowing management and STG to develop a successful transition of the FireEye Products business to a standalone entity within the STG portfolio.\u003C\/p\u003E\n\u003Cp\u003EThe Company is committed to building and preserving a strong partnership and at closing will enter into agreements designed to maximize the benefits for joint customers. These agreements include a reseller and market cooperation agreement, a strategic collaboration agreement, and a transition services agreement. Customers and partners can expect to receive the full benefit of these agreements as the companies share technology, telemetry, threat intelligence, and expertise.\u003C\/p\u003E\n\u003Cp\u003E\u201cWe believe this separation will unlock our high-growth Mandiant Solutions business and allow both organizations to better serve customers,\u201d said FireEye Chief Executive Officer Kevin Mandia. \u201cAfter closing, we will be able to concentrate exclusively on scaling our intelligence and frontline expertise through the Mandiant Advantage platform, while the FireEye Products business will be able to prioritize investment on its cloud-first security product portfolio. STG\u2019s focus on fueling innovative market leaders in software and cybersecurity makes them an ideal partner for FireEye Products. We look forward to our relationship and collaboration on threat intelligence and expertise.\u201d\u003Cbr\u003E\n\u003C\/p\u003E\n\u003Cp\u003E\u201cWe are extremely impressed by the FireEye Products business and the mission critical role it plays for its customers,\u201d said William Chisholm, Managing Partner at STG. \u201cWe believe that there is enormous untapped opportunity for the business that we are excited to crystallize by leveraging our significant security software sector experience and our market leading carve-out expertise.\u201d\u003C\/p\u003E\n\u003Cp\u003EMandiant Solutions has established its position as the market leader in threat intelligence and cybersecurity expertise from the front lines, serving enterprises, governments and law enforcement agencies worldwide. With a mission of making every organization secure from cyber threats, Mandiant is scaling its intelligence and expertise through the open Mandiant Advantage SaaS platform. With Mandiant Advantage, customers of all sizes can access the latest threat intelligence from the front lines, automate alert investigation and prioritization, and validate the effectiveness of security controls products from any vendor.\u003C\/p\u003E\n\u003Cp\u003EFireEye pioneered the advanced threat detection market with the introduction of its Multi-Vector Execution (MVX) engine for network security. Since then, FireEye has continuously innovated to advance its detection and prevention technologies through machine-learning and advanced analytics while extending across network, email, endpoint, and cloud security products, and the related security management and orchestration platform. Today, FireEye\u2019s intelligent, cloud-first XDR platform delivers unmatched detection, protection, and response for more than 50 percent of the Forbes Global 2000.\u003C\/p\u003E\n\u003Cp\u003EGoldman Sachs \u0026amp; Co. LLC is serving as financial advisor, and Wilson Sonsini Goodrich \u0026amp; Rosati P.C. is acting as legal advisor, to FireEye.\u003C\/p\u003E\n\u003Cp\u003EUBS Investment Bank and Jefferies LLC are acting as financial advisors, and Paul Hastings LLP is acting as legal advisor, to STG. UBS Investment Bank and Jefferies Finance LLC are providing financing for the transaction.\u003C\/p\u003E\n\u003Cp\u003E\u003Cb\u003EShare Repurchase Program Authorized\u003C\/b\u003E\u003C\/p\u003E\n\u003Cp\u003EThe company also announced that its Board of Directors has approved a share repurchase program for up to $500 million of outstanding FireEye common stock.\u003C\/p\u003E\n\u003Cp\u003ERepurchases may be made at management\u2019s discretion from time to time on the open market, through privately negotiated transactions and through Rule 10b5-1 plans. The repurchase program has no termination date and may be suspended for periods, amended or discontinued at any time. Any shares acquired will be available for general corporate purposes.\u003C\/p\u003E\n\u003Cp\u003E\u003Cb\u003EConference Call Information\u003C\/b\u003E\u003C\/p\u003E\n\u003Cp\u003EFireEye will host a conference call today, June 2, 2021, at 5 p.m. Eastern time (2 p.m. Pacific time) to discuss the transaction. Interested parties may access the conference call by dialing 877-312-5521 (domestic) or 678-894-3048 (international). A live audio webcast of the call can be accessed from the Investor Relations section of the company\u0027s website at \u003Ca href=\u0022https:\/\/investors.fireeye.com\u0022\u003Ehttps:\/\/investors.fireeye.com\u003C\/a\u003E. An archived version of the webcast will be available at the same website shortly after the conclusion of the live event.\u003C\/p\u003E\n\u003Cp\u003E\u003Cb\u003EForward-looking Statements\u003C\/b\u003E\u003C\/p\u003E\n\u003Cp\u003EThis press release contains forward-looking statements, including statements related to the timing of the completion of the transaction; the amount of cash proceeds and the use thereof; the effects of the transaction on FireEye\u2019s remaining customers and Mandiant\u2019s controls-agnostic software and services; the Company\u2019s ability to accelerate growth investments, pursue new go-to-market pathways, and focus innovation on its solutions; its expectations around the certainty of and timing of closing of the transaction; any other statements of expectation or belief; and any statements of assumptions underlying any of the foregoing, as well as statements regarding plans and opportunities.\u003C\/p\u003E\n\u003Cp\u003EThese forward-looking statements involve risks and uncertainties, as well as assumptions which, if they do not fully materialize or prove incorrect, could cause FireEye\u2019s results to differ materially from those expressed or implied by such forward-looking statements. The risks and uncertainties that could cause FireEye\u2019s results to differ materially from those expressed or implied by such forward-looking statements include failure to satisfy any of the conditions to the completion of the proposed transaction; the occurrence of any event, change or other circumstance that could give rise to the termination of the Asset Purchase Agreement; whether and when FireEye executes on the stock repurchase, and its ultimate size, which is based on a number of assumptions; the effect of the sale of the FireEye assets on the Company\u2019s retained businesses and products; retention of existing executive leadership team members; difficulties in improving go forward execution and product development during transitions; general business and economic conditions; fluctuations and volatility in FireEye\u2019s stock price; the ability of FireEye to successfully execute strategic plans; the ability to maintain customer and partner relationships; the ability of FireEye to achieve its cost and operating efficiency goals; the anticipated growth of certain market segments; FireEye\u2019s sales pipeline and business strategy; fluctuations in tax rates and foreign currency exchange rates; the timing and market acceptance of new product releases and upgrades; and the successful development of new products and the degree to which these products gain market acceptance; and general market, political, economic, and business conditions, as well as those risks and uncertainties included under the captions \u201cRisk Factors\u201d and \u201cManagement\u2019s Discussion and Analysis of Financial Condition and Results of Operations\u201d in FireEye\u2019s Form 10-Q filed with the Securities and Exchange Commission on April 30, 2021, which should be read in conjunction with these financial results and is available on the Investor Relations section of FireEye\u2019s website at \u003Ca href=\u0022http:\/\/investors.fireeye.com\u0022\u003Einvestors.fireeye.com\u003C\/a\u003E and on the SEC website at \u003Ca href=\u0022https:\/\/cts.businesswire.com\/ct\/CT?id=smartlink\u0026amp;url=http%3A%2F%2Fwww.sec.gov\u0026amp;esheet=52419084\u0026amp;newsitemid=20210427006011\u0026amp;lan=en-US\u0026amp;anchor=www.sec.gov\u0026amp;index=3\u0026amp;md5=f779a94648dc0541d2fc9511376d0558\u0022\u003Ewww.sec.gov\u003C\/a\u003E.\u003C\/p\u003E\n\u003Cp\u003EAll forward-looking statements in this press release are based on information available to the company as of the date hereof, and FireEye does not assume any obligation to update the forward-looking statements provided to reflect events that occur or circumstances that exist after the date on which they were made, except as required by law. Any future product, service, feature, or related specification that may be referenced in this release is for informational purposes only and is not a commitment to deliver any offering, technology or enhancement. FireEye reserves the right to modify future product or service plans at any time.\u003C\/p\u003E\n\u003Cp\u003E\u003Cb\u003EAbout STG\u003C\/b\u003E\u003C\/p\u003E\n\u003Cp\u003ESymphony Technology Group (STG) is the private equity partner to market leading companies in data, software, and analytics. The firm brings expertise, flexibility, and resources to build strategic value and unlock the potential of innovative companies. Partnering to build customer-centric, market winning portfolio companies, STG creates sustainable foundations for growth that bring value to all existing and future stakeholders. The firm is dedicated to transforming and building outstanding technology companies in partnership with world class management teams. STG\u2019s expansive portfolio has consisted of more than 35 global companies. For more information, please visit \u003Ca href=\u0022http:\/\/www.stgpartners.com\u0022\u003Ewww.stgpartners.com\u003C\/a\u003E.\u003C\/p\u003E\n\u003Cp\u003E\u003Cb\u003EAbout FireEye, Inc.\u003C\/b\u003E\u003C\/p\u003E\n\u003Cp\u003EWorking as a seamless, scalable extension of customer security operations, FireEye offers a single platform that blends innovative security technologies, nation-state grade threat intelligence, and world-renowned Mandiant consulting. With this approach, FireEye eliminates the complexity and burden of cyber security for organizations struggling to prepare for, prevent, and respond to cyber attacks. FireEye has over 10,100 customers across 103 countries, including more than 50 percent of the Forbes Global 2000.\u003C\/p\u003E\n\u003Cp\u003E\u00a9 2021 FireEye, Inc. All rights reserved. FireEye and Mandiant are registered trademarks or trademarks of FireEye, Inc. in the United States and other countries. All other brands, products, or service names are or may be trademarks or service marks of their respective owners.\u003C\/p\u003E\n\u003Cp\u003E\u003Cb\u003E\u0026nbsp;\u003C\/b\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cb\u003EContacts\u003C\/b\u003E\u003C\/p\u003E\n\u003Cp\u003EMedia:\u003Cbr\u003E\n\u003Ca href=\u0022mailto:media.relations@fireeye.com\u0022\u003EMedia.Relations@fireeye.com\u003C\/a\u003E\u003C\/p\u003E\n\u003Cp\u003EInvestors:\u003Cbr\u003E\n\u003Ca href=\u0022mailto:investor.relations@fireeye.com\u0022\u003EInvestor.Relations@fireeye.com\u003C\/a\u003E\u003C\/p\u003E\n\u003Cp\u003ESource: FireEye\u003C\/p\u003E\n",
+            "jcr:lastModified": "Wed Jun 02 2021 15:24:48 GMT+0000",
+            "sling:resourceType": "fireeye-www\/fdc\/components\/text\/text",
+            "textIsRich": "true"
+          }
+        },
+        "background-image": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModifiedBy": "matthew.sawicki@fireeye.com",
+          "jcr:lastModified": "Wed Jun 02 2021 15:34:58 GMT+0000",
+          "sling:resourceType": "fireeye-www\/fdc\/components\/grids\/fdc-grids\/background-image"
+        },
+        "image-texture": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModifiedBy": "matthew.sawicki@fireeye.com",
+          "useOriginalImagePath": "true",
+          "jcr:lastModified": "Wed Jun 02 2021 15:34:58 GMT+0000",
+          "sling:resourceType": "foundation\/components\/image"
+        }
+      }
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "matthew.sawicki@fireeye.com",
+      "jcr:lastModified": "Wed Jun 02 2021 20:10:44 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

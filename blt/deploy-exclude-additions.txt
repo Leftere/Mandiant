@@ -1,0 +1,3 @@
+.github
+.docksal
+.local_dbs

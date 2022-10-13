@@ -1,0 +1,19 @@
+uuid: 6c328786-90d1-4f16-a92b-254c7441ff31
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.featured_logos
+    - field.storage.block_content.field_eyebrow
+id: block_content.featured_logos.field_eyebrow
+field_name: field_eyebrow
+entity_type: block_content
+bundle: featured_logos
+label: Eyebrow
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

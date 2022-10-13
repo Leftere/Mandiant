@@ -1,0 +1,21 @@
+uuid: 6c972abd-524c-445e-8430-5cadc7671f1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - field.storage.block_content.layout_selection
+id: block_content.hero.layout_selection
+field_name: layout_selection
+entity_type: block_content
+bundle: hero
+label: Layout
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: layout_library
+  handler_settings: {  }
+field_type: entity_reference

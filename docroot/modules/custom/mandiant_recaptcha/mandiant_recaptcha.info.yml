@@ -1,0 +1,7 @@
+name: Mandiant Recaptcha
+type: module
+package: CUSTOM
+core_version_requirement: ^8 || ^9
+description: 'Mandiant recaptcha module aims to manage the integration between Marketo Form and Recaptcha into the CMS. '
+libraries:
+  - mandiant_recaptcha/recaptcha_integration

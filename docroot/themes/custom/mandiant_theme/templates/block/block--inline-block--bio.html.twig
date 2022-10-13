@@ -1,0 +1,12 @@
+{% set layout_id = content['#block_content'].layout_selection.value %}
+{% set default_class = layout_id is empty ? 'block-bio-default' : '' %}
+<div{{ attributes.addClass(default_class) }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+</div>

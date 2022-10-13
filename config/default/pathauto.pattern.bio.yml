@@ -1,0 +1,22 @@
+uuid: b799df0e-cf7c-4eb4-bc9e-b6f7b30eccab
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: bio
+label: Bio
+type: 'canonical_entities:node'
+pattern: '/bio/[node:title]'
+selection_criteria:
+  b3ca41ea-6f52-4583-afb3-dfc457eec283:
+    id: node_type
+    bundles:
+      bio: bio
+    negate: false
+    context_mapping:
+      node: node
+    uuid: b3ca41ea-6f52-4583-afb3-dfc457eec283
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,19 @@
+.featured-testimonial {
+  margin-bottom: 0 !important;
+  padding-bottom: 10rem;
+  position: relative;
+
+  &:after {
+    background-image: url('../images/backgrounds/scaly-bg.png');
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 600px;
+    bottom: 0;
+    content: '';
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+  }
+}

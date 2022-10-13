@@ -1,0 +1,24 @@
+.layout--fourcol-section {
+  .wrapper {
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+
+    @include breakpoint($tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint($desktop) {
+      grid-template-columns: repeat(4, 1fr);
+      padding: 0;
+    }
+
+    .block-bundle-cta {
+      @include breakpoint($tablet) {
+        padding: $spacing-unit;
+      }
+    }
+  }
+}

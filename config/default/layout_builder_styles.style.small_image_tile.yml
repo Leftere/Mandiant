@@ -1,0 +1,13 @@
+uuid: bd53e37a-b7fe-4698-b9ae-91bd973022a7
+langcode: en
+status: true
+dependencies: {  }
+id: small_image_tile
+label: 'Tiles (Small with images)'
+classes: small
+type: section
+group: modifiers_layout
+weight: 19
+block_restrictions: {  }
+layout_restrictions:
+  - layout_onecol

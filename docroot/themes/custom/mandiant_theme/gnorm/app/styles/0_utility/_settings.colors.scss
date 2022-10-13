@@ -1,0 +1,110 @@
+// ================================== //
+//    #UTILITY - COLORS
+//
+// Note: the palette function is included here (vs in the tools directory)
+// since both of these are needed in order to work properly
+// ================================== //
+
+@function palette($palette, $tone: "base") {
+  @return map-get(map-get(map-get($palettes, colors), $palette), $tone);
+}
+
+$palettes: (
+  colors: (
+    black: (
+      light: #0e0e0d,
+      base: #000,
+      med: #090516,
+    ),
+    white: (
+      initial: #fff,
+      base: #e6e6eb,
+      light: #ededf1,
+      lighter: #f2f1f5,
+    ),
+    gray: (
+      btn: #bdc3c3,
+      lightest: #e6e6eb,
+      light: #d7d7d7,
+      midlight: #747474,
+      bg: #dadadf,
+      med: #838386,
+      base: #444,
+      dark: #5b5b5b,
+      xgray: #f2f2f5,
+      igray: #7e7e82,
+    ),
+    blue: (
+      base: #0074d9,
+      dark: #131119,
+      charcoal: #201e27,
+      darktime: #17151e,
+      darkermed: #15141d,
+      darkest: #14121b,
+    ),
+    red: (
+      base: #d70e0a,
+      dark: #59171c,
+    ),
+    purple: (
+      dark: #1b161e,
+    ),
+    teal: (
+      base: #1cd3a7,
+      dark: #0f9c78,
+    )
+  ),
+);
+
+$white: palette(white, base);
+$lightWhite: palette(white, light);
+$lighterWhite: palette(white, lighter);
+$black: palette(black, base);
+$lightBlack: palette(black, light);
+$gray: palette(gray);
+$btnGray: palette(gray, btn);
+$bgGray: palette(gray, bg);
+$DarkGray: palette(gray, dark);
+$medGray: palette(gray, med);
+$lightGray: palette(gray, light);
+$lighterGray: palette(gray, lightest);
+$red: palette(red);
+$darkRed: palette(red, dark);
+$darkBlue: palette(blue, dark);
+$charcoal: palette(blue, charcoal);
+$xgray: palette(gray, xgray);
+$darkerBlue: palette(blue, darker);
+$darkestBlue: palette(blue, darkest);
+$darkPurple: palette(purple, dark);
+$teal: palette(teal, base);
+$darkTeal: palette(teal, dark);
+
+/** Ex. Light brown
+p {
+  color: palette(brown, light);
+}
+**/
+
+// Returns flattened $palettes color map
+@function get-flat-palette($map) {
+  $colors: ();
+
+  @each $color, $value in map-get($map, colors) {
+    @each $name, $tone in $value {
+      // key for "base" color is the color name itself, e.g. "gray"
+      // key for other tones combines color and tone name, e.g. "gray-light"
+      $key: if($name == "base", $color, $color + "-" + $name);
+      $colors: map-merge(
+        $colors,
+        (
+          $key: $tone,
+        )
+      );
+    }
+  }
+
+  @return $colors;
+}
+
+// Save palette as flat map, used by style-guide.scss and variables.scss
+$color-map: get-flat-palette($palettes);

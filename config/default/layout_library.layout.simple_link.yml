@@ -1,0 +1,9 @@
+uuid: da45f397-aaea-47e4-a833-9766b6208f27
+langcode: en
+status: true
+dependencies: {  }
+id: simple_link
+label: 'Simple Link'
+targetEntityType: block_content
+targetBundle: text
+layout: {  }

@@ -1,0 +1,49 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: db9a55d7-a6f1-4c24-987c-de044e740e35
+  bundle: card
+  default_langcode: en
+  depends:
+    76142c52-522d-4fd1-aa68-da16dde771e8: user
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Inline block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      entity: 76142c52-522d-4fd1-aa68-da16dde771e8
+  content_translation_created:
+    -
+      value: 1626967682
+  field_alternative:
+    -
+      value: "<ul>\r\n\t<li><a href=\"http://mandiant.docksal/samples/solutions-overview#\">How can I automate solutions to work with my existing security controls?</a></li>\r\n\t<li><a href=\"http://mandiant.docksal/samples/solutions-overview#\">How do I evaluate, identify and mitigate weaknesses and gaps?</a></li>\r\n\t<li><a href=\"http://mandiant.docksal/samples/solutions-overview#\">How can I triage security alerts from my entire security stack?</a></li>\r\n\t<li><a href=\"http://mandiant.docksal/samples/solutions-overview#\">How can I keep pace with the threat landscape and expand awareness?</a></li>\r\n</ul>\r\n"
+      format: basic_html
+  field_body:
+    -
+      value: "<p>Protect critical assets, brand value&nbsp;and<br />\r\nreputation against known and continually.</p>\r\n"
+      format: basic_html
+  field_cta:
+    -
+      uri: 'internal:#'
+      title: 'Learn More'
+      options: {  }
+  field_title:
+    -
+      value: 'Prevent a<br/>security incident'

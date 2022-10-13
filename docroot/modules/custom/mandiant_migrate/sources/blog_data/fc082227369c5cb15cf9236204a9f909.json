@@ -1,0 +1,63 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Fri Oct 05 2018 20:00:04 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "2018 Flare-On Challenge Solutions",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "bc061ceb-e73b-4616-82b5-f6df4d8c4518",
+    "author": "Nick Harbour",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "adam.greenberg@fireeye.com",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "c2752c91-4451-4f21-842b-417a0054eb98"
+    ],
+    "jcr:created": "Fri Oct 05 2018 20:00:04 GMT-0400",
+    "cq:lastReplicated": "Fri Oct 05 2018 20:00:04 GMT-0400",
+    "cq:lastModified": "Fri Oct 05 2018 19:59:53 GMT-0400",
+    "jcr:baseVersion": "c2752c91-4451-4f21-842b-417a0054eb98",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:cap-nick-harbour",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:FLARE",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:malware-analysis"
+    ],
+    "jcr:uuid": "da0d9cd0-f515-4e28-9dd6-b48913b976b5",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Fri Oct 05 2018 20:00:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EWe are pleased to announce the conclusion of the fifth annual Flare-On Challenge. The numbers are in and we can safely say that this was by far the most difficult challenge we\u2019ve ever hosted. We plan to reduce the difficulty next year, so it may be that the 114 people who solved this year\u2019s challenge solved not only the most difficult Flare-On to date, but the most difficult Flare-On there ever will be. The prize for these amazing and dedicated Reverse Engineers is a magic decoder buckle and coin insert. It can be used to decode and encode secret messages using a pre-shared key. It is based on a crypto system known as a Diana Cipher. They will be shipping soon.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/FlareOn18\/FlareOn2018%20Fig1.png\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003EWe would like to thank the challenge authors individually for their great puzzles and solutions:\u003C\/p\u003E\n\u003Col style=\u0022list-style-position: inside;\u0022\u003E\n\u003Cli\u003EMinesweeper Championship Registration: Nick Harbour (@nickharbour)\u003C\/li\u003E\n\u003Cli\u003EUltimate Minesweeper: Nick Harbour (@nickharbour)\u003C\/li\u003E\n\u003Cli\u003EFLEGGO: Moritz Raabe\u003C\/li\u003E\n\u003Cli\u003Ebinstall: Tyler Dean the Malware Machine\u003C\/li\u003E\n\u003Cli\u003EWeb 2.0: William Ballenthin (@williballenthin)\u003C\/li\u003E\n\u003Cli\u003EMagic: Sebastion Vogl\u003C\/li\u003E\n\u003Cli\u003EWOW: Ryan Warns\u003C\/li\u003E\n\u003Cli\u003EDoogie Hacker: Matt Williams (@0xmwilliams)\u003C\/li\u003E\n\u003Cli\u003Eleet editr: Michael Bailey\u003C\/li\u003E\n\u003Cli\u003Egolf: Ryan Warns\u003C\/li\u003E\n\u003Cli\u003Emalware skillz: Jay Smith\u003C\/li\u003E\n\u003Cli\u003ESuspicious Floppy Disk: Nick Harbour (@nickharbour)\u003C\/li\u003E\n\u003C\/ol\u003E\n\u003Cp\u003EAnd now for the stats. As of 10:00am ET, participation was at an all-time high, with 4,893 registered players and 3,374 players finishing at least one challenge. This year had the least amount of finishers as well with 114.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/FlareOn18\/FlareOn2018%20Fig2.png\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003EThe U.S. continues to slip further down the ranking in terms of finishers by country. China takes the lead in overall finishers and Singapore is the undisputed champion of per capita finishers with more than one finisher per million people.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/FlareOn18\/FlareOn2018%20Fig3.png\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003EAll the binaries from this year\u2019s challenge are now posted on the \u003Ca adhocenable=\u0022false\u0022 href=\u0022http:\/\/flare-on.com\/\u0022\u003EFlare-On website\u003C\/a\u003E. And here are the solutions written by each challenge author:\u003C\/p\u003E\n\u003Col style=\u0022list-style-position: inside;\u0022\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/FlareOn5_Challenge1_Solution.pdf\u0022\u003ESOLUTION #1\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/FlareOn5_Challenge2_Solution.pdf\u0022\u003ESOLUTION #2\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/FlareOn5_Challenge3_Solution.pdf\u0022\u003ESOLUTION #3\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/FlareOn5_Challenge4_Solution.pdf\u0022\u003ESOLUTION #4\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/FlareOn5_Challenge5_Solution.pdf\u0022\u003ESOLUTION #5\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/FlareOn5_Challenge6_Solution.pdf\u0022\u003ESOLUTION #6\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/FlareOn5_Challenge7_Solution.pdf\u0022\u003ESOLUTION #7\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/FlareOn5_Challenge8_Solution.pdf\u0022\u003ESOLUTION #8\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/2018_flareon_writeup_mykill_leet_editr.pdf\u0022\u003ESOLUTION #9\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/FlareOn5_Challenge10_Solution.pdf\u0022\u003ESOLUTION #10\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/FlareOn5_Challenge11_Solution.pdf\u0022\u003ESOLUTION #11\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/FlareOn5_Challenge12_Solution.pdf\u0022\u003ESOLUTION #12\u003C\/a\u003E\u003C\/li\u003E\n\u003C\/ol\u003E\n",
+        "jcr:lastModified": "Fri Oct 05 2018 19:59:26 GMT-0400",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EThe fifth annual Flare-On Challenge is over, with 114 finishers out of 4,893 registrants.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Fri Oct 05 2018 13:59:10 GMT-0400",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Fri Oct 05 2018 19:59:53 GMT-0400",
+      "imageRotate": "0"
+    }
+  }
+}

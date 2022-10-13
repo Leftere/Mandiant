@@ -1,0 +1,19 @@
+.bg-solid {
+  &--red {
+    background-color: $darkRed;
+    color: $white;
+
+    a {
+      color: $white !important;
+    }
+  }
+
+  &--purple {
+    background-color: $darkPurple;
+    color: $white;
+
+    a {
+      color: $white !important;
+    }
+  }
+}

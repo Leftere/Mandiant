@@ -1,0 +1,67 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Tue Jun 22 2021 11:59:59 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "The Washington Post Names FireEye A 2021 Top Washington-Area Workplace",
+    "jcr:versionHistory": "fa979c1f-68ad-4af5-8300-4818ca89800f",
+    "cq:template": "\/apps\/fireeye-www\/fdc\/templates\/press-release",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "3012a8c6-1d0b-4a4c-9e3c-a2cdebac7fe1"
+    ],
+    "jcr:created": "Mon Jul 19 2021 17:37:17 GMT+0000",
+    "cq:lastModified": "Mon Jul 19 2021 17:37:04 GMT+0000",
+    "jcr:baseVersion": "3012a8c6-1d0b-4a4c-9e3c-a2cdebac7fe1",
+    "jcr:isCheckedOut": true,
+    "pagedate": "Tue Jun 22 2021 05:00:00 GMT-0700",
+    "cq:tags": [
+      "company:en-US\/press-releases",
+      "company:en-US\/press-releases\/2021",
+      "company:en-US\/press-releases\/latest",
+      "fireeye-doctypes:press-releases",
+      "company:en-US\/awards"
+    ],
+    "jcr:uuid": "a5acb5f8-32dc-4c72-89f1-59fcf80866f6",
+    "sling:resourceType": "fireeye-www\/fdc\/components\/page\/press-release",
+    "cq:designPath": "\/etc\/designs\/fireeye-www",
+    "cq:lastModifiedBy": "jeff.payne@fireeye.com",
+    "content-par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "grid_100_full": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "adam.greenberg@fireeye.com",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "jcr:created": "Mon Jun 21 2021 16:33:49 GMT+0000",
+        "jcr:lastModified": "Mon Jun 21 2021 16:33:49 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/grids\/grid-100-full",
+        "grid-100-mid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "fireeye-www\/fdc\/components\/grids\/grid-parsys\/parsys-100-full\/parsys",
+          "text": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "adam.greenberg@fireeye.com",
+            "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+            "jcr:created": "Mon Jun 21 2021 16:33:53 GMT+0000",
+            "text": "\u003Cp\u003E\u003Cb\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/company\/images\/awards\/wapo1.jpg\u0022 alt=\u0022\u0022 class=\u0022float-right-small\u0022\u003EMILPITAS, Calif.,\u0026nbsp;June 22, 2021\u0026nbsp;\u003C\/b\u003E\u2013\u0026nbsp;\u003Ca href=\u0022https:\/\/www.fireeye.com\/\u0022\u003EFireEye, Inc.\u202f\u003C\/a\u003E(NASDAQ: FEYE), the intelligence-led security company, has been named one of The Washington Post\u2019s 2021 Top Workplaces in the Washington, D.C. area. Selection is based solely on employee feedback gathered through an anonymous third-party survey administered by research partner \u003Ca href=\u0022http:\/\/www.energage.com\/\u0022\u003EEnergage, LLC\u003C\/a\u003E, which measured several aspects of workplace culture, including alignment, execution, and connection.\u003C\/p\u003E\n\u003Cp\u003E\u201cNow in its eighth year, The Post\u2019s Top Workplaces list continues to highlight the companies in the Washington-area that are leaders in company satisfaction and engagement,\u201d said Washington Post Top Workplaces editor Dion Haynes. \u201cThroughout the past 15 months, these companies have had to make quick decisions in order to keep their employees safe while also balancing productivity and efficiency, and their employees have taken note of this great work.\u201d\u003C\/p\u003E\n\u003Cp\u003E\u201cWe are thrilled to receive this outstanding recognition,\u201d said Barbara Massa, EVP \u0026amp; Chief of Business Operations at FireEye. \u201cBeing named a Top Workplace is especially significant to us, as it was our own Washington, D.C. area employees and their feedback that secured this placement.\u201d\u003C\/p\u003E\n\u003Cp\u003EThe Washington Post hosted a virtual awards ceremony on Thursday, June 17 to recognize the top-ranked companies. For more about The Washington Post\u2019s Top Workplaces and to see the full list of this year\u2019s honorees, visit https:\/\/wapo.st\/3q7iiRE.\u003C\/p\u003E\n\u003Ch4\u003EAbout The Washington Post\u003C\/h4\u003E\n\u003Cp\u003E\u003Ca href=\u0022https:\/\/www.washingtonpost.com\/regional\/\u0022\u003EThe Washington Post\u003C\/a\u003E is an award-winning news leader whose mission is to connect, inform, and enlighten local, national and global readers with trustworthy reporting, in-depth analysis and engaging opinions. It combines world-class journalism with the latest technology and tools so readers can interact with The Post anytime, anywhere.\u003C\/p\u003E\n\u003Ch4\u003EAbout Energage, LLC\u003C\/h4\u003E\n\u003Cp\u003EHeadquartered in Exton, Pa., \u003Ca href=\u0022http:\/\/www.energage.com\u0022\u003EEnergage\u003C\/a\u003E (formerly known as WorkplaceDynamics) is a leading provider of technology-based employee engagement tools that help leaders to unlock potential, inspire performance, and achieve amazing results within their organizations. The research partner behind the \u003Ca href=\u0022http:\/\/www.topworkplaces.com\u0022\u003ETop Workplaces\u003C\/a\u003E program, Energage has surveyed more than 47,000 organizations representing well over 16 million employees in the United States.\u003C\/p\u003E\n\u003Ch4\u003EAbout FireEye, Inc.\u003C\/h4\u003E\n\u003Cp\u003EFireEye is the intelligence-led security company. Working as a seamless, scalable extension of customer security operations, FireEye offers a single platform that blends innovative security technologies, nation-state grade threat intelligence, and world-renowned Mandiant\u00ae consulting. With this approach, FireEye eliminates the complexity and burden of cyber security for organizations struggling to prepare for, prevent, and respond to\u0026nbsp;cyber attacks. FireEye has over 10,100 customers across 103 countries, including more than 50 percent of the Forbes Global 2000.\u0026nbsp;\u003C\/p\u003E\n\u003Cp\u003E\u00a9 2021 FireEye, Inc. All rights reserved. FireEye and Mandiant are registered trademarks or trademarks of FireEye, Inc. in the United States and other countries. All other brands, products, or service names are or may be trademarks or service marks of their respective owners.\u0026nbsp;\u003C\/p\u003E\n\u003Ch4\u003EContacts\u003C\/h4\u003E\n\u003Cp\u003EMedia\u003Cbr\u003E\n\u003Ca href=\u0022mailto:Media.Relations@FireEye.com\u0022\u003EMedia.Relations@FireEye.com\u003C\/a\u003E\u0026nbsp;\u0026nbsp;\u003C\/p\u003E\n\u003Cp\u003EInvestors\u003Cbr\u003E\n\u003Ca href=\u0022mailto:Investor.Relations@FireEye.com\u0022\u003EInvestor.Relations@FireEye.com\u003C\/a\u003E\u003C\/p\u003E\n",
+            "jcr:lastModified": "Mon Jun 21 2021 17:12:53 GMT+0000",
+            "sling:resourceType": "fireeye-www\/fdc\/components\/text\/text",
+            "textIsRich": "true"
+          }
+        }
+      }
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "jeff.payne@fireeye.com",
+      "jcr:lastModified": "Mon Jul 19 2021 17:37:04 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

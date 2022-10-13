@@ -1,0 +1,19 @@
+uuid: 4cdbdb82-85cb-4331-85b7-86aaaca1e3a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.partner
+id: node.partner.field_summary
+field_name: field_summary
+entity_type: node
+bundle: partner
+label: Summary
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

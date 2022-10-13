@@ -1,0 +1,13 @@
+uuid: f08ffef0-693b-4437-8c97-24d38425552b
+langcode: en
+status: true
+dependencies: {  }
+id: resource_hero
+label: 'Resource hero'
+classes: resource-hero
+type: section
+group: modifiers_style
+weight: 18
+block_restrictions: {  }
+layout_restrictions:
+  - layout_onecol

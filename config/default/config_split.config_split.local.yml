@@ -1,0 +1,32 @@
+uuid: 3e0f6452-3458-4b25-9882-99bcb236ba5b
+langcode: en
+status: false
+dependencies: {  }
+id: local
+label: Local
+description: ''
+folder: ../config/envs/local
+module:
+  dblog: 0
+  devel: 0
+  stage_file_proxy: 0
+  twig_vardumper: 0
+  update: 0
+  views_ui: 0
+theme: {  }
+blacklist: {  }
+graylist:
+  - acquia_connector.settings
+  - acquia_search.settings
+  - search_api.index.acquia_search_index
+  - search_api.index.resources
+  - search_api.index.search
+  - search_api.server.acquia_search_server
+  - search_api.server.local
+  - system.logging
+  - system.performance
+  - system.site
+  - tmgmt.translator.globallink
+graylist_dependents: false
+graylist_skip_equal: true
+weight: 1

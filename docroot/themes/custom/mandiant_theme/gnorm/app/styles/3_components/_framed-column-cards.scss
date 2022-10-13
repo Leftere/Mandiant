@@ -1,0 +1,68 @@
+.framed-column-cards {
+  @extend %wrapper;
+
+  @include container($desktop);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: relative;
+
+  @include breakpoint($desktop) {
+    @include frame;
+  }
+
+  &.center {
+    text-align: center !important;
+
+    .block-bundle-text,
+    .block-bundle-cta {
+      img {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  .wrapper {
+    flex: 1;
+
+    > .layout__region {
+      align-items: center;
+      background-color: #f3f3f8;
+      border-bottom: 15px solid $lighterGray;
+      border-top: 15px solid $lighterGray;
+      margin: .5rem;
+      padding: 10rem 4rem 5rem 4rem;
+
+      @include breakpoint($tablet) {
+        flex: 1;
+      }
+    }
+  }
+
+  .block-bundle-text,
+  .block-bundle-cta {
+    color: palette(blue, darkermed);
+    padding: 0 !important;
+    position: relative;
+
+    img {
+      border-radius: 0;
+      max-height: 4rem;
+      object-fit: contain;
+      position: absolute;
+      top: -5rem;
+    }
+
+    h2 {
+      @include font-size(18, 22);
+      font-weight: 700;
+      margin: 0 0 $spacing-unit 0;
+    }
+
+    p {
+      @include font-size(16, 22);
+      font-weight: 400;
+      letter-spacing: .05em;
+    }
+  }
+}

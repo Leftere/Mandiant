@@ -1,0 +1,71 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed May 04 2016 09:03:50 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Mandiant Exposes APT1 \u2013 One of China\u0027s Cyber Espionage Units \u0026 Releases 3,000 Indicators",
+    "jcr:versionHistory": "c2ae9adf-eeea-4986-905c-d563d4c5f386",
+    "author": "Dan Mcwhorter",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "focusKeyword": "Advanced Persistent Threat",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "9a57ee6c-63ca-49d9-bee1-08c86cd44a99"
+    ],
+    "jcr:created": "Fri Feb 19 2021 20:15:13 GMT+0000",
+    "cq:lastModified": "Fri Feb 19 2021 20:14:48 GMT+0000",
+    "jcr:baseVersion": "9a57ee6c-63ca-49d9-bee1-08c86cd44a99",
+    "jcr:isCheckedOut": true,
+    "cq:createdBy": "admin",
+    "cq:tags": [
+      "fireeye-blog-authors:cap-dan-mcwhorter",
+      "fireeye-blog-tags:indicators-of-compromise",
+      "fireeye-blog-tags:malware-analysis",
+      "fireeye-blog-tags:targeted-attacks",
+      "fireeye-blog-tags:china-cybercrime",
+      "fireeye-blog-tags:advanced-persistent-threat",
+      "fireeye-blog-tags:cyber-espionage",
+      "fireeye-blog-tags:apt"
+    ],
+    "jcr:uuid": "83f03625-72c7-49b1-bd73-cb1db12ecf24",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Tue Feb 19 2013 02:00:45 GMT-0500",
+    "_charset_": "UTF-8",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cdiv class=\u0022c00 c00v1\u0022\u003E\u003Cp\u003EToday, The Mandiant\u00ae Intelligence Center\u2122 released an \u003Ca href=\u0022\/content\/dam\/fireeye-www\/services\/pdfs\/mandiant-apt1-report.pdf\u0022 adhocenable=\u0022false\u0022\u003Eunprecedented report\u003C\/a\u003E exposing APT1\u0027s multi-year, enterprise-scale computer espionage campaign. APT1 is one of dozens of threat groups Mandiant tracks around the world and we consider it to be one of the most prolific in terms of the sheer quantity of information it has stolen.\u003C\/p\u003E\n\u003Cp\u003EHighlights of the report include:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EEvidence linking APT1 to China\u0027s 2nd Bureau of the People\u0027s Liberation Army (PLA) General Staff Department\u0027s (GSD) 3rd Department (Military Cover Designator 61398).\u003C\/li\u003E\n\u003Cli\u003EA timeline of APT1 economic espionage conducted since 2006 against 141 victims across multiple industries.\u003C\/li\u003E\n\u003Cli\u003EAPT1\u0027s modus operandi (tools, tactics, procedures) including a \u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.youtube.com\/watch?v=mYaTCvA2VLQ\u0026amp;feature=youtu.be\u0022\u003Ecompilation of videos showing actual APT1 activity\u003C\/a\u003E.\u003C\/li\u003E\n\u003Cli\u003EThe timeline and details of over 40 APT1 malware families.\u003C\/li\u003E\n\u003Cli\u003EThe timeline and details of APT1\u0027s extensive attack infrastructure.\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EMandiant is also releasing a digital appendix with more than 3,000 indicators to bolster defenses against APT1 operations. This appendix includes:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EDigital delivery of over 3,000 APT1 indicators, such as domain names, and MD5 hashes of malware.\u003C\/li\u003E\n\u003Cli\u003EThirteen (13) X.509 encryption certificates used by APT1.\u003C\/li\u003E\n\u003Cli\u003EA set of APT1 Indicators of Compromise (IOCs) and detailed descriptions of over 40 malware families in APT1\u0027s arsenal of digital weapons.\u003C\/li\u003E\n\u003Cli\u003EIOCs that can be used in conjunction with \u003Ca href=\u0022\/content\/fireeye-www\/en_US\/services\/freeware\/redline.html\u0022 adhocenable=\u0022false\u0022\u003ERedline\u003C\/a\u003E\u2122, Mandiant\u0027s free host-based investigative tool, or with \u003Ca href=\u0022http:\/\/www.mandiant.com\/products\/platform\/\u0022 adhocenable=\u0022false\u0022\u003EMandiant Intelligent Response\u00ae (MIR)\u003C\/a\u003E, Mandiant\u0027s commercial enterprise investigative tool.\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EThe scale and impact of APT1\u0027s operations compelled us to write this report. The decision to publish a significant part of our intelligence about Unit 61398 was a painstaking one. What started as a \u0026quot;what if\u0026quot; discussion about our traditional non-disclosure policy quickly turned into the realization that the positive impact resulting from our decision to expose APT1 outweighed the risk of losing much of our ability to collect intelligence on this particular APT group. It is time to acknowledge the threat is originating from China, and we wanted to do our part to arm and prepare security professionals to combat the threat effectively. The issue of attribution has always been a missing link in the public\u0027s understanding of the landscape of APT cyber espionage. Without establishing a solid connection to China, there will always be room for observers to dismiss APT actions as uncoordinated, solely criminal in nature, or peripheral to larger national security and global economic concerns. We hope that this report will lead to increased understanding and coordinated action in countering APT network breaches.\u003C\/p\u003E\n\u003Cp\u003EWe recognize that no one entity can understand the entire complex picture that many years of intense cyber espionage by a single group creates. We look forward to seeing the surge of data and conversations a report like this will likely generate.\u003C\/p\u003E\n\u003Cp\u003EDan McWhorter\u003C\/p\u003E\n\u003Cp\u003EManaging Director, Threat Intelligence\u003C\/p\u003E\n\u003C\/div\u003E\n",
+        "jcr:lastModified": "Fri Feb 19 2021 20:14:48 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "alt": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "comments": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/commons\/components\/comments"
+      },
+      "trackback": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/blog\/components\/trackback"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "admin",
+      "text": "\u003Cp\u003EToday, The Mandiant\u00ae Intelligence Center\u2122 released an \u003Ca href=\u0022http:\/\/www.mandiant.com\/apt1\u0022\u003Eunprecedented report\u003C\/a\u003E exposing APT1\u0027s multi-year, enterprise-scale computer espionage campaign.  APT1 is one of dozens of threat groups Mandiant tracks around the world and we consider it to be one of the most prolific in terms of the sheer quantity of information it has stolen.\u003C\/p\u003E ",
+      "jcr:lastModified": "Tue Feb 19 2013 02:00:45 GMT-0500",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    }
+  }
+}

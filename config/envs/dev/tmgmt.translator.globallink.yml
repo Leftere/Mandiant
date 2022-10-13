@@ -1,0 +1,40 @@
+uuid: e0446e0e-12c4-4303-bed3-f112b5b34ac1
+langcode: en
+status: true
+dependencies:
+  module:
+    - globallink
+name: globallink
+label: GlobalLink
+description: 'GlobalLink is the world’s most powerful and flexible system to manage multilingual content'
+auto_accept: false
+weight: null
+plugin: globallink
+settings:
+  pd_url: 'https://gl-sandbox6.translations.com/PD/'
+  pd_username: fireeye_drupal_9
+  pd_password: 4m45RDKSAe!12
+  pd_projectid: FIR001534
+  pd_submissionprefix: MAND
+  pd_classifier: fireeye_drupal
+  pd_notify_emails: 'shirley.yang@mandiant.com rachel.quinn@mandiant.com amanda.lemmers@mandiant.com'
+  pd_combine: '0'
+  pd_due_date_offset: '3'
+  pd_notify_level:
+    status: status
+    error: error
+    debug: '0'
+    warning: '0'
+  pd_user_agent: dev
+remote_languages_mappings:
+  en: ''
+  fr: ''
+  de: ''
+  it: ''
+  ja: ''
+  ko: ''
+  pt-br: ''
+  es: ''
+  zh-hans: ''
+  zh-hant: ''
+  ar: ''

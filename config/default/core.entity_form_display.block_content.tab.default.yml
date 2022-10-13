@@ -1,0 +1,132 @@
+uuid: fe152906-4dca-4027-87e2-60afec6ead4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tab
+    - field.field.block_content.tab.field_body
+    - field.field.block_content.tab.field_eyebrow
+    - field.field.block_content.tab.field_tab
+    - field.field.block_content.tab.field_title
+  module:
+    - field_group
+    - inline_entity_form
+    - text
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_content
+        - group_settings
+      parent_name: ''
+      weight: 2
+      format_type: tabs
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        direction: horizontal
+        width_breakpoint: 640
+      label: Tabs
+    group_content:
+      children:
+        - field_eyebrow
+        - field_title
+        - field_body
+        - field_tab
+      parent_name: group_tabs
+      weight: 6
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Content
+    group_settings:
+      children:
+        - langcode
+        - translation
+      parent_name: group_tabs
+      weight: 7
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: true
+        id: ''
+        classes: modal-styling-options
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Settings
+id: block_content.tab.default
+targetEntityType: block_content
+bundle: tab
+mode: default
+content:
+  field_body:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_eyebrow:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_tab:
+    type: inline_entity_form_complex
+    weight: 4
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Tab
+      label_plural: Tabs
+      allow_new: true
+      match_operator: CONTAINS
+      revision: false
+      collapsible: false
+      collapsed: false
+      allow_existing: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 50
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  translation:
+    weight: 51
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

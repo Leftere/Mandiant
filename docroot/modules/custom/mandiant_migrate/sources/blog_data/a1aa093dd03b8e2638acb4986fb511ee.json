@@ -1,0 +1,79 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Mon Oct 30 2017 10:10:49 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Introducing GoCrack: A Managed Password Cracking Tool",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "552acadf-9b1a-4877-ad2f-f51afb838341",
+    "author": "Christopher Schmitt",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "adam.greenberg@fireeye.com",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "ea534967-c0f2-4eed-84e0-864d3cc2a15b"
+    ],
+    "jcr:created": "Fri Jun 14 2019 15:49:27 GMT-0400",
+    "cq:lastReplicated": "Fri Jun 14 2019 15:49:26 GMT-0400",
+    "cq:lastModified": "Fri Jun 14 2019 15:49:18 GMT-0400",
+    "cq:distribute": true,
+    "jcr:baseVersion": "ea534967-c0f2-4eed-84e0-864d3cc2a15b",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-authors:christopher-schmitt",
+      "fireeye-doctypes:blog",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:tools",
+      "fireeye-blog-tags:password",
+      "fireeye-blog-tags:FLARE"
+    ],
+    "jcr:uuid": "977a5b1c-cb50-4079-b0e8-7ccc428322f7",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Mon Oct 30 2017 10:00:00 GMT-0400",
+    "_charset_": "UTF-8",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EFireEye\u0027s Innovation and Custom Engineering (ICE) team released a tool today called \u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/github.com\/fireeye\/gocrack\u0022\u003EGoCrack\u003C\/a\u003E that allows red teams to efficiently manage password cracking tasks across multiple GPU servers by providing an easy-to-use, web-based real-time UI (Figure 1 shows the dashboard) to create, view, and manage tasks. Simply deploy a GoCrack server along with a worker on every GPU\/CPU capable machine and the system will automatically distribute tasks across those GPU\/CPU machines.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/GoCrack\/Fig1.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 1: Dashboard\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EAs readers of this blog probably know, password cracking tools are an effective way for security professionals to test password effectiveness, develop improved methods to securely store passwords, and audit current password requirements. Some use cases for a password cracking tool can include cracking passwords on exfil archives, auditing password requirements in internal tools, and offensive\/defensive operations. We\u2019re releasing GoCrack to provide another tool for distributed teams to have in their arsenal for managing password cracking and recovery tasks.\u003C\/p\u003E\n\u003Cp\u003EKeeping in mind the sensitivity of passwords, GoCrack includes an entitlement-based system that prevents users from accessing task data unless they are the original creator or they grant additional users to the task. Modifications to a task, viewing of cracked passwords, downloading a task file, and other sensitive actions are logged and available for auditing by administrators. Engine files (files used by the cracking engine) such as Dictionaries, Mangling Rules, etc. can be uploaded as \u201cShared\u201d, which allows other users to use them in task yet do not grant them the ability to download or edit. This allows for sensitive dictionaries to be used without enabling their contents to be viewed.\u003C\/p\u003E\n\u003Cp\u003EFigure 2 shows a task list, Figure 3 shows the \u201cRealtime Status\u201d tab for a task, and Figure 4 shows the \u201cCracked Passwords\u201d tab.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/GoCrack\/Fig2.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 2: Task Listing\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/GoCrack\/Fig3.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 3: Task Status\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/GoCrack\/Fig4.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 4: Cracked Passwords Tab\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EGoCrack is shipping with support for hashcat v3.6+, requires no external database server (via a flat file), and includes support for both LDAP and database backed authentication. In the future, we plan on adding support for MySQL and Postgres database engines for larger deployments, ability to manage and edit files in the UI, automatic task expiration, and greater configuration of the hashcat engine. We\u2019re shipping with Dockerfile\u2019s to help jumpstart users with GoCrack. The server component can run on any Linux server with Docker installed. Users with NVIDIA GPUs can use \u003Ca href=\u0022https:\/\/github.com\/NVIDIA\/nvidia-docker\u0022\u003ENVIDIA Docker\u003C\/a\u003E to run the worker in a container with full access to the GPUs.\u003C\/p\u003E\n\u003Cp\u003EGoCrack is available immediately for download along with its source code on the \u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/github.com\/fireeye\/gocrack\u0022\u003Eproject\u0027s GitHub page\u003C\/a\u003E. If you have any feature requests, questions, or bug reports, please file an issue in GitHub.\u003C\/p\u003E\n\u003Cp\u003EICE is a small, highly trained, team of engineers that incubate and deliver capabilities that matter to our products, our clients and our customers. ICE is always looking for exceptional candidates interested in solving challenging problems quickly. If you\u2019re interested, check out \u003Ca href=\u0022https:\/\/www.fireeye.com\/company\/jobs.html\u0022\u003EFireEye careers\u003C\/a\u003E.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Mon Oct 30 2017 09:53:34 GMT-0400",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "alt": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "comments": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/commons\/components\/comments"
+      },
+      "trackback": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/blog\/components\/trackback"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EFireEye\u0027s Innovation and Custom Engineering team released a tool called GoCrack that allows red teams to efficiently manage password cracking tasks across multiple GPU servers by providing an easy-to-use, web-based real-time UI to create, view, and manage tasks.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Mon Oct 30 2017 09:50:58 GMT-0400",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Fri Jun 14 2019 15:49:18 GMT-0400",
+      "imageRotate": "0"
+    }
+  }
+}

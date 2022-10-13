@@ -1,0 +1,66 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Tue Feb 16 2021 14:00:04 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Automating Threat Detection Desired for Security Analysts Battling Fear of Missing Incidents and Security Operations Center Inefficiency",
+    "jcr:versionHistory": "4252006f-e488-460d-b86c-b470a69a3207",
+    "cq:template": "\/apps\/fireeye-www\/fdc\/templates\/press-release",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "2dc5e522-255a-4fbb-adf5-a4b695b6a82b"
+    ],
+    "jcr:created": "Tue Feb 16 2021 14:00:04 GMT+0000",
+    "cq:lastModified": "Fri Feb 12 2021 20:24:39 GMT+0000",
+    "jcr:baseVersion": "2dc5e522-255a-4fbb-adf5-a4b695b6a82b",
+    "jcr:isCheckedOut": true,
+    "pagedate": "Tue Feb 16 2021 09:00:00 GMT-0500",
+    "cq:tags": [
+      "company:en-US\/press-releases",
+      "company:en-US\/press-releases\/2021",
+      "company:en-US\/press-releases\/latest",
+      "fireeye-doctypes:press-releases"
+    ],
+    "jcr:uuid": "19fd2f62-1d51-4427-bf7d-cf08eaafd14f",
+    "sling:resourceType": "fireeye-www\/fdc\/components\/page\/press-release",
+    "cq:designPath": "\/etc\/designs\/fireeye-www",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "content-par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "grid_100_full": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "adam.greenberg@fireeye.com",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "jcr:created": "Fri Feb 12 2021 18:23:40 GMT+0000",
+        "jcr:lastModified": "Fri Feb 12 2021 18:23:40 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/grids\/grid-100-full",
+        "grid-100-mid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "fireeye-www\/fdc\/components\/grids\/grid-parsys\/parsys-100-full\/parsys",
+          "text": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "adam.greenberg@fireeye.com",
+            "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+            "jcr:created": "Fri Feb 12 2021 18:23:45 GMT+0000",
+            "text": "\u003Ch5 style=\u0022text-align: center;\u0022\u003E\u003Ci\u003ENew Voice of the Analysts survey details desire to manage growing alert fatigue amidst flood of false positive alerts\u003C\/i\u003E\u003C\/h5\u003E\n\u003Cp\u003E\u003Cb\u003EMILPITAS, Calif., Feb. 16, 2021\u003C\/b\u003E \u2013 \u003Ca href=\u0022https:\/\/www.fireeye.com\/\u0022\u003EFireEye, Inc.\u0026nbsp;\u003C\/a\u003E(NASDAQ: FEYE), the intelligence-led security company, today announced the release of the IDC InfoBrief \u201c\u003Ci\u003EThe\u003C\/i\u003E \u003Ci\u003EVoice of the Analysts:\u003C\/i\u003E \u003Ci\u003EImproving Security Operations Center Processes Through Adapted Technologies\u003C\/i\u003E\u201d. In surveying 350 internal and managed security service provider (MSSP) security analysts and managers, the report finds that security analysts are becoming less productive due to widespread \u201calert fatigue\u201d resulting in ignored alerts, increased stress, and fear of missing incidents. To improve job satisfaction and effectiveness, the report also uncovered the top activities analysts felt would be best to automate to better secure their Security Operations Centers (SOCs).\u003C\/p\u003E\n\u003Cp\u003E\u201cSecurity analysts are being overwhelmed by a flood of false positive alerts from disparate solutions while growing increasingly concerned they may miss a true threat,\u201d said Chris Triolo, Vice President of Customer Success at FireEye. \u201cTo solve these challenges, analysts are asking for advanced automation tools, like Extended Detection and Response, which can help reduce the fear of missing incidents while strengthening their SOC\u2019s cybersecurity posture.\u201d\u003C\/p\u003E\n\u003Cp\u003E\u003Ci\u003ESecurity analysts continue to feel the pressure of increased alerts, spending almost half their time on false positives.\u003C\/i\u003E\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003E\u003Cb\u003EFalse positives create \u201calert fatigue:\u201d\u003C\/b\u003E While analysts and IT security managers receive thousands of alerts every day, respondents indicated 45 percent of the alerts are false positives, making in-house analysts\u2019 jobs less efficient and slowing workflow processes. To manage alert overload in the SOC, 35 percent of this group said that they ignore alerts.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003EMSSPs spend even more time sifting through\u003C\/b\u003E \u003Cb\u003Efalse positives, and they ignore more alerts: \u003C\/b\u003EMSSP analysts indicated that fifty-three percent of the alerts they receive are false positives. Meanwhile, 44 percent of analysts at managed service providers said they ignore alerts when their queue gets too full, which could lead to a breach involving multiple clients.\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003E\u003Ci\u003EFear of missing incidents (FOMI) is impacting a majority of security analysts and managers.\u003C\/i\u003E\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003E\u003Cb\u003EAs analysts experience more challenges managing alerts manually, their worry of missing an incident also increases: \u003C\/b\u003EThree in four\u003Cb\u003E \u003C\/b\u003Eanalysts are worried about missing incidents, and one in four worry \u201ca lot\u201d about missing incidents.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003EYet, this FOMI is plaguing security managers even more than their analysts: \u003C\/b\u003EMore than 6 percent of security managers reported losing sleep due to fear of missing incidents.\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003E\u003Ci\u003EAnalysts need automated SOC solutions to combat FOMI.\u003C\/i\u003E\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003E\u003Cb\u003ELess than half of enterprise security teams are currently using tools to automate SOC activities: \u003C\/b\u003ERespondents shared the top tools they use to investigate alerts, showing that less than half use artificial intelligence and machine learning technologies (43 percent), Security Orchestration Automation and Response (SOAR) tools (46 percent), Security Information and Event Management (SIEM) software (45 percent), Threat Hunting (45 percent), and other security functions. In addition, only two in five analysts use artificial intelligence and machine learning technologies alongside other tools.\u003Cbr\u003E\n\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003ETo manage their SOCs, security teams need advanced automated solutions to reduce alert fatigue and improve success by focusing on more high-skilled tasks like threat hunting and cyber investigations:\u003C\/b\u003E When ranking the activities that are best to automate, threat detection was the highest (18 percent) on the analysts\u2019 wish list, followed threat intelligence (13 percent) and incident triage (9 percent).\u0026nbsp;\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Ch4\u003EAdditional Report Resources\u003C\/h4\u003E\n\u003Cul\u003E\n\u003Cli\u003EFireEye blog post with additional report analysis, \u0026quot;\u003Ca href=\u0022\/content\/fireeye-www\/en_US\/blog\/products-and-services\/2021\/02\/avoid-fear-of-missing-incidents-with-automation-and-xdr.html\u0022\u003EAvoid Fear of Missing Incidents with Automation and XDR\u003C\/a\u003E\u0026quot;\u003C\/li\u003E\n\u003Cli\u003E\u201cFear of Missing Incidents \u2013 The Battle for Security Analysts,\u201d a live FireEye webinar on March 25 at 11 am PT, register here: \u003Ca href=\u0022https:\/\/www.brighttalk.com\/webcast\/7451\/469809\u0022\u003Ehttps:\/\/www.brighttalk.com\/webcast\/7451\/469809\u003C\/a\u003E\u003Cb\u003E\u003C\/b\u003E\u003C\/li\u003E\n\u003Cli\u003EIDC InfoBrief, sponsored by FireEye, \u201c\u003Ca href=\u0022https:\/\/www.fireeye.com\/offers\/idc-voice-of-the-analyst.html\u0022\u003EThe Voice of the Analysts\u003C\/a\u003E,\u201d Doc. #US47227621, January 2021\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Ch4\u003EIDC InfoBrief Methodology\u003C\/h4\u003E\n\u003Cp\u003EIDC surveyed 300 IT security managers and security analysts in the U.S. working in SOCs across multiple verticals including financial, healthcare, and government, as well as 50 managed security service providers on the challenges they experience managing their SOCs. The survey was conducted in Fall 2020.\u003C\/p\u003E\n\u003Cp\u003EThis IDC InfoBrief was previously sponsored by Respond Software, now a part of FireEye.\u003C\/p\u003E\n\u003Ch4\u003EAbout FireEye, Inc.\u003C\/h4\u003E\n\u003Cp\u003EFireEye is the intelligence-led security company. Working as a seamless, scalable\u0026nbsp;extension of customer security operations, FireEye offers a single platform that blends innovative security technologies, nation-state grade threat intelligence, and world-renowned Mandiant\u00ae consulting. With this approach, FireEye eliminates the complexity and burden of cyber security for organizations struggling to prepare for, prevent, and respond to cyber attacks. FireEye has over 9,900 customers across 103 countries, including more than 50 percent of the Forbes Global 2000.\u003C\/p\u003E\n\u003Cp\u003E\u00a9 2021 FireEye, Inc. All rights reserved. FireEye and Mandiant are registered trademarks or trademarks of FireEye, Inc. in the United States and other countries. All other brands, products, or service names are or may be trademarks or service marks of their respective owners.\u003C\/p\u003E\n\u003Ch4\u003EContacts\u003Cb\u003E\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u003C\/b\u003E\u003C\/h4\u003E\n\u003Cp\u003E\u003Cb\u003EMedia\u003C\/b\u003E\u003Cbr\u003E\n\u003Ca href=\u0022mailto:Media.Relations@FireEye.com\u0022\u003EMedia.Relations@FireEye.com\u003C\/a\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cb\u003EInvestors\u003C\/b\u003E\u003Cbr\u003E\n\u003Ca href=\u0022mailto:Investor.relations@fireeye.com\u0022\u003EInvestor.Relations@FireEye.com\u003C\/a\u003E\u003C\/p\u003E\n",
+            "jcr:lastModified": "Fri Feb 12 2021 20:24:39 GMT+0000",
+            "sling:resourceType": "fireeye-www\/fdc\/components\/text\/text",
+            "textIsRich": "true"
+          }
+        }
+      }
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Fri Feb 12 2021 18:31:19 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

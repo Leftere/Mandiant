@@ -1,0 +1,9 @@
+mandiant_migrate_proxy.proxy:
+  path: '/proxy'
+  defaults:
+    _controller: Drupal\mandiant_migrate_proxy\Controller\MandiantProxyController::proxy
+    _title: 'Mandiant Proxy'
+  options:
+    no_cache: 'TRUE'
+  requirements:
+    _access: 'TRUE'

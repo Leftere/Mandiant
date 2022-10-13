@@ -1,0 +1,25 @@
+uuid: 60e00d32-07ee-4009-8101-c92c0692244f
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.fluid_500px
+  module:
+    - crop
+name: fluid_500
+label: 'Fluid 500px'
+effects:
+  b35df470-6dd0-4266-aa6c-b45ce2647117:
+    uuid: b35df470-6dd0-4266-aa6c-b45ce2647117
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: fluid_500px
+  409ea591-a8b3-4864-9a91-34b176593a2b:
+    uuid: 409ea591-a8b3-4864-9a91-34b176593a2b
+    id: image_scale
+    weight: 2
+    data:
+      width: 500
+      height: null
+      upscale: true

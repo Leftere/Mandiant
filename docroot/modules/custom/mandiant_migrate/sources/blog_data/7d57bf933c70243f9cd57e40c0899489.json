@@ -1,0 +1,51 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "fireeye_global_admin",
+  "jcr:created": "Wed Jul 15 2020 21:24:22 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "fireeye_global_admin",
+    "jcr:title": "\u003CMandiant Report\u003E \uc2e4\uc9c8\uc801\uc778 \uc0ac\uc774\ubc84 \ubcf4\uc548\uc5d0 \ub300\ud55c \uc2ec\uce35 \ubd84\uc11d",
+    "jcr:versionHistory": "320a0a01-5992-4b15-89ca-023231cb0394",
+    "author": "FireEye Threat Intelligence",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "ko_kr",
+    "jcr:predecessors": [
+      "47f2ce61-9b16-4346-959b-2ddcb1d4fcab"
+    ],
+    "jcr:created": "Wed Jul 15 2020 21:24:22 GMT+0000",
+    "cq:lastModified": "Wed Jul 15 2020 21:24:12 GMT+0000",
+    "jcr:baseVersion": "47f2ce61-9b16-4346-959b-2ddcb1d4fcab",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:security-effectiveness",
+      "fireeye-blog-tags:mandiant-intelligence-center",
+      "fireeye-blog-tags:mandiant-for-security-operations"
+    ],
+    "jcr:uuid": "c20bb780-c394-4835-8d29-0f6ac1fa471f",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Thu Jun 11 2020 14:24:05 GMT-0700",
+    "cq:lastModifiedBy": "lynda.hall@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "lynda.hall@fireeye.com",
+        "text": "\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\n\u003Cp\u003E\ub9e8\ub514\uc5b8\ud2b8 \ucd5c\uc2e0 \ubcf4\uace0\uc11c \u0027\uc2e4\uc9c8\uc801\uc778 \uc0ac\uc774\ubc84 \ubcf4\uc548\uc5d0 \ub300\ud55c \uc2ec\uce35 \ubd84\uc11d(Security Effectiveness Report 2020)\u0027 \ubcf4\uace0\uc11c\uac00 \ubc1c\ud45c\ub418\uc5c8\uc2b5\ub2c8\ub2e4. \uc774 \ubcf4\uace0\uc11c\ub294 \ubcf4\uc548 \ud6a8\uacfc\uc131 \uce21\uc815\uc774\ub77c\ub294 \uc8fc\uc81c\ub97c \ub9e4\uc6b0 \uc2ec\ub3c4 \uc788\uac8c \ub2e4\ub8f9\ub2c8\ub2e4. \uc2e4\uc81c\ub85c \ubd84\uc11d \ub300\uc0c1\uacfc \ubc94\uc704\ub3c4 \uc0c1\ub2f9\ud569\ub2c8\ub2e4. \uc774 \ubcf4\uace0\uc11c\uc5d0 \ub2f4\uae34 \uac01\uc885 \ud1b5\uacc4\ub294 11\uac1c \uc0b0\uc5c5 \uad70, 123\uac1c\uc758 \uc120\ub3c4\uc801\uc778 \ubcf4\uc548 \uae30\uc220, \uc704\ud611\uc5d0 \uc601\ud5a5\uc744 \ubc1b\ub294 9\uc5b5 \uba85\uc758 \uc18c\ube44\uc790\ub97c \uc9c0\uc6d0\ud558\ub294 \ud504\ub85c\ub355\uc158 \ud658\uacbd\uc744 \ub300\uc0c1\uc73c\ub85c \ub2e4\uc591\ud55c \uacf5\uaca9 \ud589\uc704\uc5d0 \ub300\ud55c \uc138\ubc00\ud55c \ubd84\uc11d \uacb0\uacfc\uc785\ub2c8\ub2e4. \uc774\ub97c \ud1a0\ub300\ub85c \uc870\uc0ac \ub300\uc0c1 \ud504\ub85c\ub355\uc158 \ud658\uacbd\uc758 \ubcf4\uc548 \ud6a8\uacfc\uc131 \uc800\ud574 \uc694\uc18c\uac00 \ubb34\uc5c7\uc778\uc9c0 \ubc1d\ud600 \ub0b4\uace0 \uac1c\uc120 \ubc29\uc548\uc744 \uc81c\uc2dc\ud569\ub2c8\ub2e4.\u003C\/p\u003E\n\u003Ctable border=\u00221\u0022 cellspacing=\u00220\u0022 cellpadding=\u00220\u0022 width=\u0022673\u0022\u003E\n\u003Ctbody\u003E\u003Ctr\u003E\u003Ctd width=\u0022673\u0022\u003E\u003Cp\u003E\u003Cb\u003E\ubaa9\ucc28\u003C\/b\u003E\u003C\/p\u003E\n\u003C\/td\u003E\n\u003C\/tr\u003E\u003Ctr\u003E\u003Ctd width=\u0022673\u0022\u003E\u003Cp\u003E\ube44\uc988\ub2c8\uc2a4 \uc9c0\ud45c\ub85c\uc11c\uc758 \uc0ac\uc774\ubc84 \ubcf4\uc548\uc758 \ud6a8\uacfc\uc131\u003C\/p\u003E\n\u003C\/td\u003E\n\u003C\/tr\u003E\u003Ctr\u003E\u003Ctd width=\u0022673\u0022\u003E\u003Cp\u003E\ubcf4\uc548 \ud6a8\uacfc\uc131 \uce21\uc815\uc758 \ub09c\uc81c\u003C\/p\u003E\n\u003C\/td\u003E\n\u003C\/tr\u003E\u003Ctr\u003E\u003Ctd width=\u0022673\u0022\u003E\u003Cp\u003E\ub9e4\ud06c\ub85c \ud2b8\ub80c\ub4dc\uac00 \ubcf4\uc548 \ud6a8\uacfc\uc131\uc5d0 \ubbf8\uce58\ub294 \uc601\ud5a5\u003C\/p\u003E\n\u003C\/td\u003E\n\u003C\/tr\u003E\u003Ctr\u003E\u003Ctd width=\u0022673\u0022\u003E\u003Cp\u003E7\uac00\uc9c0 \uc8fc\uc694 \ubcf4\uc548 \uacfc\uc81c\u003C\/p\u003E\n\u003C\/td\u003E\n\u003C\/tr\u003E\u003Ctr\u003E\u003Ctd width=\u0022673\u0022\u003E\u003Cp\u003E\ubcf4\uc548 \ud6a8\uacfc\uc131\uc744 \uac1c\uc120\ud558\ub294 \ubc29\ubc95\u003C\/p\u003E\n\u003C\/td\u003E\n\u003C\/tr\u003E\u003Ctr\u003E\u003Ctd width=\u0022673\u0022\u003E\ub9fa\uc74c\ub9d0\u003C\/td\u003E\n\u003C\/tr\u003E\u003C\/tbody\u003E\u003C\/table\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/current-threats\/images\/security-effectiveness-report-2020-thumb.png\u0022 alt=\u0022\u0022 class=\u0022float-left-small\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cb\u003E\u003Cu\u003E\ubcf4\uc548 \ud22c\uc790 \ud6a8\uacfc \uadf9\ub300\ud654\ub97c \uace0\ubbfc\ud558\ub294 CxO, \ubcf4\uc548 \uc6b4\uc601 \ucc45\uc784\uc790, \uc6b4\uc601 \ub2f4\ub2f9\uc790, \ud3ec\ub80c\uc2dd \uc804\ubb38\uac00.... \ubaa8\ub450\uc758 \uad00\uc2ec\uc0ac\ub97c \uc2dc\uc6d0\ud558\uac8c \ud30c\ud5e4\uce58\ub294\u0026nbsp;\ubcf4\uace0\uc11c\u0026nbsp;\u003C\/u\u003E\u003C\/b\u003E\u003C\/p\u003E\n\u003Cp\u003E\ubcf4\ud1b5 \ubcf4\uace0\uc11c\ub294 \ud0c0\uae43 \ub3c5\uc790\uce35\uc774 \uc788\uc2b5\ub2c8\ub2e4. \u0027\uc2e4\uc9c8\uc801\uc778 \uc0ac\uc774\ubc84 \ubcf4\uc548\uc5d0 \ub300\ud55c \uc2ec\uce35 \ubd84\uc11d\u0027 \ubcf4\uace0\uc11c\uc758 \ud0c0\uae43\uc740? \ud504\ub85c\ub355\uc158 \ud658\uacbd \ubcf4\uc548 \uc774\ud574\uad00\uacc4\uc790 \ubaa8\ub450\uc785\ub2c8\ub2e4. \uc758\uc0ac\uacb0\uc815\uc790\ubd80\ud130 \uc2e4\ubb34 \ucc45\uc784\uc790, \uc6b4\uc601\uc790 \uadf8\ub9ac\uace0 \uc194\ub8e8\uc158 \ubca4\ub354 \uc5d4\uc9c0\ub2c8\uc5b4\uc640 \uc720\uc9c0\ubcf4\uc218 \ub2f4\ub2f9\uc790 \ubaa8\ub450\uac00 \uc9c1\uc2dc\ud574\uc57c \ud560 \u0027\ud604\uc2e4\u0027\uc744 \ub0b1\ub0b1\uc774 \ud30c\ud5e4\uce69\ub2c8\ub2e4. \uadf8\ub9ac\uace0 \ud604\uc2e4 \uc790\uac01\uc744 \ubc14\ud0d5\uc73c\ub85c \uc9c0\uae08 \ub2f9\uc7a5 \ud574\uc57c \ud560 \uc2e4\ud589 \uc548\uc744 \uc81c\uc2dc\ud569\ub2c8\ub2e4. \ubcf4\uc548 \ud22c\uc790\ub97c \uace0\ubbfc \uc911\uc774\uac70\ub098, \ubcf4\uc548 \uc6b4\uc601 \ubc29\uc2dd \uac1c\uc120\uc744 \uc900\ube44 \uc911\uc774\ub77c\uba74? \uc815\ub3c5\uc744 \ucd94\ucc9c\ud569\ub2c8\ub2e4.\u003C\/p\u003E\n\u003Cp\u003E\u003Cbr\u003E\n\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/regional\/ko_KR\/blogs\/images\/security-effectiveness-report-numbers.png\u0022 alt=\u0022\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Ci\u003E\ud574\ub2f9 \ub9ac\ud3ec\ud2b8\ub97c \uc9c0\uae08 \u003C\/i\u003E\u003Ca href=\u0022\/content\/fireeye-www\/ko_KR\/current-threats\/annual-threat-report\/security-effectiveness-report.html\u0022 adhocenable=\u0022false\u0022\u003E\u003Ci\u003E\ub2e4\uc6b4\ub85c\ub4dc\u003C\/i\u003E\u003C\/a\u003E\u003Ci\u003E \ud574\uc11c \ud655\uc778\ud574 \ubcf4\uc138\uc694.\u003C\/i\u003E\u003Cbr\u003E\n\u003C\/p\u003E\n",
+        "jcr:lastModified": "Wed Jul 15 2020 21:20:38 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "lynda.hall@fireeye.com",
+      "jcr:lastModified": "Wed Jul 15 2020 21:24:12 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

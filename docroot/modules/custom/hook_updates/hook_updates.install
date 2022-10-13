@@ -1,0 +1,216 @@
+<?php
+
+/**
+ * @file
+ * Contains hook_updates.install.
+ *
+ * Reset `drush ev "drupal_set_installed_schema_version('hook_updates', 9203)"`.
+ */
+
+/**
+ * Fixes all contents that wronlgy uses `zh-hant` and `zh-hans` langcode.
+ */
+function hook_updates_update_9207() {
+  $connection = \Drupal\Core\Database\Database::getConnection('default');
+
+  $affected_tables = [
+    'block_content',
+    'block_content__body',
+    'block_content__field_alternative',
+    'block_content__field_bios',
+    'block_content__field_block',
+    'block_content__field_body',
+    'block_content__field_catalogue',
+    'block_content__field_column',
+    'block_content__field_cta',
+    'block_content__field_cta2',
+    'block_content__field_embed',
+    'block_content__field_eyebrow',
+    'block_content__field_gallery',
+    'block_content__field_links',
+    'block_content__field_media',
+    'block_content__field_media_background',
+    'block_content__field_media_document',
+    'block_content__field_partners',
+    'block_content__field_related_nodes',
+    'block_content__field_tab',
+    'block_content__field_table',
+    'block_content__field_testimonial',
+    'block_content__field_title',
+    'block_content__layout_selection',
+    'block_content_field_data',
+    'block_content_field_revision',
+    'block_content_revision',
+    'block_content_revision__body',
+    'block_content_revision__field_alternative',
+    'block_content_revision__field_bios',
+    'block_content_revision__field_block',
+    'block_content_revision__field_body',
+    'block_content_revision__field_catalogue',
+    'block_content_revision__field_column',
+    'block_content_revision__field_cta',
+    'block_content_revision__field_cta2',
+    'block_content_revision__field_embed',
+    'block_content_revision__field_eyebrow',
+    'block_content_revision__field_gallery',
+    'block_content_revision__field_links',
+    'block_content_revision__field_media',
+    'block_content_revision__field_media_background',
+    'block_content_revision__field_media_document',
+    'block_content_revision__field_partners',
+    'block_content_revision__field_related_nodes',
+    'block_content_revision__field_tab',
+    'block_content_revision__field_table',
+    'block_content_revision__field_testimonial',
+    'block_content_revision__field_title',
+    'block_content_revision__layout_selection',
+  ];
+
+  foreach ($affected_tables as $table_name) {
+    $num_updated = $connection->update($table_name)
+    ->fields([
+      'langcode' => 'en',
+    ])
+    ->condition('langcode', ['zh-hant','zh-hans'], 'IN')
+    ->execute();
+  }
+}
+
+/**
+ * Updating all resources to disable "Dark" option.
+ */
+function hook_updates_update_9206() {
+  $nids = \Drupal::entityTypeManager()
+    ->getStorage('node')
+    ->getQuery()
+    ->condition('type', 'article')
+    ->execute();
+
+  $articles = \Drupal::entityTypeManager()
+    ->getStorage('node')
+    ->loadMultiple($nids);
+
+  /** @var \Drupal\node\Entity\Node $article */
+  foreach ($articles as $article) {
+    $article->set('field_styles', []);
+    $article->save();
+  }
+}
+
+/**
+ * Fixes race condition from corrupted block_content.view field_view.
+ */
+function hook_updates_update_9205() {
+  /* Fixes race condition from corrupted block_content.view field_view by
+  forcing adding the schema on hook_update and removing the field
+  later during config-import. */
+  $database = \Drupal::database();
+  $schema = $database->schema();
+
+  $table_name = [
+    'block_content__field_view',
+    'block_content_revision__field_view',
+  ];
+  $table_schema = [
+    'fields' => [
+      'bundle' => [
+        'type' => 'varchar',
+        'not null' => TRUE,
+        'length' => 128,
+      ],
+      'deleted' => [
+        'type' => 'int',
+        'size' => 'tiny',
+        'not null' => TRUE,
+        'default' => 0,
+      ],
+      'entity_id' => [
+        'type' => 'int',
+        'not null' => TRUE,
+      ],
+      'revision_id' => [
+        'type' => 'int',
+        'not null' => TRUE,
+      ],
+      'langcode' => [
+        'type' => 'varchar',
+        'not null' => TRUE,
+        'length' => 32,
+      ],
+      'delta' => [
+        'type' => 'int',
+        'not null' => TRUE,
+      ],
+      'field_view_target_id' => [
+        'type' => 'varchar',
+        'not null' => TRUE,
+        'length' => 255,
+      ],
+      'field_view_display_id' => [
+        'type' => 'varchar',
+        'not null' => TRUE,
+        'length' => 255,
+      ],
+      'field_view_data' => [
+        'type' => 'varchar',
+        'not null' => TRUE,
+        'length' => 255,
+      ],
+    ],
+    'primary key' => ['entity_id', 'deleted', 'delta', 'langcode'],
+  ];
+
+  foreach ($table_name as $name) {
+    $schema->createTable($name, $table_schema);
+  }
+}
+
+/**
+ * Implements hook_updates.
+ */
+function hook_updates_update_9204() {
+  // Uninstall old modules.
+  $modules = [
+    'layout_builder_operation_link',
+    'section_library',
+  ];
+  \Drupal::service('module_installer')
+    ->uninstall($modules);
+
+  \Drupal::database()->delete('key_value')
+    ->condition('collection', 'system.schema')
+    ->condition('name', $modules, 'IN')
+    ->execute();
+
+  foreach ($modules as $module) {
+    $module_data = \Drupal::config('core.extension')->get($module);
+    unset($module_data[$module]);
+    \Drupal::configFactory()
+      ->getEditable('core.extension')
+      ->set('module', $module_data)
+      ->save();
+  }
+}
+
+/**
+ * Remove old non-generic inline/custom blocks.
+ */
+function hook_updates_update_9203() {
+  $delete_block_types = ['hero_tall', 'cta_full'];
+
+  foreach ($delete_block_types as $type) {
+    $blocks = \Drupal::entityTypeManager()
+      ->getStorage('block_content')
+      ->getQuery()
+      ->condition('type', $type)
+      ->execute();
+
+    $items = \Drupal::entityTypeManager()
+      ->getStorage('block_content')
+      ->loadMultiple($blocks);
+
+    foreach ($items as $item) {
+      $item->delete();
+    }
+  }
+}

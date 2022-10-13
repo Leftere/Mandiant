@@ -1,0 +1,23 @@
+uuid: 290923f4-e7cb-4518-88d4-0f86867b24ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card
+    - field.storage.block_content.field_cta
+  module:
+    - link
+id: block_content.card.field_cta
+field_name: field_cta
+entity_type: block_content
+bundle: card
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

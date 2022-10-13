@@ -1,0 +1,20 @@
+uuid: ab31f2fe-4402-414c-b9ef-3f7edb2f4944
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_terms_maturity_level
+field_name: field_terms_maturity_level
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

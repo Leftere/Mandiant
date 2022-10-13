@@ -1,0 +1,13 @@
+uuid: 215912c4-4418-4eb0-b12c-482112351d89
+langcode: en
+status: true
+dependencies: {  }
+id: column
+label: Column
+classes: column
+type: component
+group: modifiers_layout
+weight: -19
+block_restrictions:
+  - 'inline_block:statistic'
+layout_restrictions: {  }

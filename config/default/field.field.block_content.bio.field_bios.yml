@@ -1,0 +1,29 @@
+uuid: 88631d45-e304-4a45-88d1-acfea1a764b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.bio
+    - field.storage.block_content.field_bios
+    - node.type.bio
+id: block_content.bio.field_bios
+field_name: field_bios
+entity_type: block_content
+bundle: bio
+label: Bios
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      bio: bio
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

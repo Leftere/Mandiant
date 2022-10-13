@@ -1,0 +1,8 @@
+uuid: 33439a3d-33da-4e88-ab4b-5f2398f54265
+langcode: en
+status: true
+dependencies: {  }
+id: text_column
+label: 'Text Column'
+revision: 0
+description: ''

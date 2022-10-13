@@ -1,0 +1,66 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "fireeye_global_admin",
+  "jcr:created": "Sun Sep 08 2019 02:16:19 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "fireeye_global_admin",
+    "jcr:title": "Open Sourcing StringSifter",
+    "jcr:versionHistory": "a4eb093b-9056-4a11-b3fc-9acaaf00f118",
+    "author": "Philip Tully",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "8cedc156-e4fb-4da4-b9bf-5171e55deec0"
+    ],
+    "jcr:created": "Sun Sep 08 2019 19:58:20 GMT+0000",
+    "cq:lastModified": "Sun Sep 08 2019 19:58:10 GMT+0000",
+    "jcr:baseVersion": "8cedc156-e4fb-4da4-b9bf-5171e55deec0",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:philip-tully",
+      "fireeye-blog-authors:matthew-haigh",
+      "fireeye-blog-authors:jay-gibble",
+      "fireeye-blog-authors:cap-michael-sikorski",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:malware-analysis",
+      "fireeye-blog-tags:tools",
+      "fireeye-blog-tags:FLARE",
+      "fireeye-blog-tags:machine-learning",
+      "fireeye-blog-tags:data-science"
+    ],
+    "jcr:uuid": "f605c900-c3a0-433b-948f-00a0476905e7",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Sat Sep 07 2019 13:00:00 GMT-0400",
+    "cq:lastModifiedBy": "matthew.sawicki@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "matthew.sawicki@fireeye.com",
+        "text": "\u003Cp\u003EMalware analysts routinely use the \u003Ca href=\u0022https:\/\/docs.microsoft.com\/en-us\/sysinternals\/downloads\/strings\u0022\u003E\u003Ci\u003EStrings \u003C\/i\u003Eprogram\u003C\/a\u003E during static analysis in order to inspect a binary\u0027s printable characters. However, identifying relevant strings by hand is time consuming and prone to human error. Larger binaries produce upwards of thousands of strings that can quickly evoke analyst fatigue, relevant strings occur less often than irrelevant ones, and the definition of \u0026quot;relevant\u0026quot; can vary significantly among analysts. Mistakes can lead to missed clues that would have reduced overall time spent performing malware analysis, or even worse, incomplete or incorrect investigatory conclusions.\u003C\/p\u003E\n\u003Cp style=\u0022text-align: center;\u0022\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/stringsifter\/Picture1.png\u0022 alt=\u0022\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003EEarlier this year, the FireEye Data Science (FDS) and FireEye Labs Reverse Engineering (FLARE) teams \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/blog\/threat-research\/2019\/05\/learning-to-rank-strings-output-for-speedier-malware-analysis.html\u0022\u003Epublished a blog post\u003C\/a\u003E describing a machine learning model that automatically ranked strings to address these concerns. Today, we publicly release this model as part of \u003Ca href=\u0022https:\/\/github.com\/fireeye\/stringsifter\u0022\u003EStringSifter\u003C\/a\u003E, a utility that identifies and prioritizes strings according to their relevance for malware analysis.\u003C\/p\u003E\n\u003Ch4\u003EGoals\u003C\/h4\u003E\n\u003Cp\u003EStringSifter is built to sit downstream from the \u003Ci\u003EStrings\u003C\/i\u003E program; it takes a list of strings as input and returns those same strings ranked according to their relevance for malware analysis as output. It is intended to make an analyst\u0027s life easier, allowing them to focus their attention on only the most relevant strings located towards the top of its predicted output. StringSifter is designed to be seamlessly plugged into a user\u2019s existing malware analysis stack. Once its GitHub repository is cloned and installed locally, it can be conveniently invoked from the command line with its default arguments according to:\u003C\/p\u003E\n\u003Cp style=\u0022text-align: center;\u0022\u003E\u003Cspan class=\u0022code\u0022\u003Estrings \u0026lt;sample_of_interest\u0026gt; | rank_strings\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EWe are also providing Docker command line tools for additional portability and usability. For a more detailed overview of how to use StringSifter, including how to specify optional arguments for customizable functionality, \u003Ca href=\u0022https:\/\/github.com\/fireeye\/stringsifter\/blob\/master\/README.md\u0022 adhocenable=\u0022false\u0022\u003Eplease view its README file on GitHub\u003C\/a\u003E.\u003C\/p\u003E\n\u003Cp\u003EWe have received great initial internal feedback about StringSifter from FireEye\u2019s reverse engineers, SOC analysts, red teamers, and incident responders. Encouragingly, we have also observed users at the opposite ends of the experience spectrum find the tool to be useful \u2013 from beginners detonating their first piece of malware as part of a \u003Ca href=\u0022https:\/\/www.fireeye.com\/services\/training\/courses.html\u0022\u003EFireEye training course\u003C\/a\u003E \u2013 to expert malware researchers triaging incoming samples on the front lines. By making StringSifter publicly available, we hope to enable a broad set of personas, use cases, and creative downstream applications. We will also welcome external contributions to help improve the tool\u2019s accuracy and utility in future releases.\u003C\/p\u003E\n\u003Ch4\u003EConclusion\u003C\/h4\u003E\n\u003Cp\u003EWe are releasing StringSifter to coincide with \u003Ca href=\u0022https:\/\/www.derbycon.com\/\u0022 adhocenable=\u0022false\u0022\u003Eour presentation\u003C\/a\u003E at DerbyCon 2019 on Sept. 7, and we will also be doing a technical dive into the model at the \u003Ca href=\u0022https:\/\/www.camlis.org\/\u0022\u003EConference on Applied Machine Learning for Information Security\u003C\/a\u003E this October. With its release, StringSifter will join \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/threat-research\/2017\/07\/flare-vm-the-windows-malware.html\u0022\u003EFLARE VM\u003C\/a\u003E, \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/threat-research\/2016\/08\/fakenet-ng_next_gen.html\u0022\u003EFakeNet\u003C\/a\u003E, and \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/blog\/threat-research\/2019\/03\/commando-vm-windows-offensive-distribution.html\u0022\u003ECommandoVM\u003C\/a\u003E as one of \u003Ca href=\u0022https:\/\/github.com\/fireeye\u0022\u003Emany recent malware analysis tools\u003C\/a\u003E that FireEye has chosen to make publicly available. If you are interested in developing data-driven tools that make it easier to find evil and help benefit the security community, please consider joining the FDS or FLARE teams by applying to one of our \u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/company\/jobs.html\u0022\u003Ejob openings\u003C\/a\u003E.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Sun Sep 08 2019 19:58:10 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EWe present StringSifter, a utility that identifies and prioritizes strings according to their relevance for malware analysis.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Wed Sep 04 2019 18:22:34 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Thu Sep 05 2019 20:17:20 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

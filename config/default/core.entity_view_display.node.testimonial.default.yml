@@ -1,0 +1,197 @@
+uuid: 6add2aca-e4d3-4e0c-8df2-02e0a7808b97
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.testimonial.title
+    - field.field.node.testimonial.field_cta
+    - field.field.node.testimonial.field_media
+    - field.field.node.testimonial.field_role_company
+    - field.field.node.testimonial.field_summary
+    - node.type.testimonial
+  module:
+    - layout_builder
+    - layout_library
+    - link
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          column_widths: 33-67
+          layout_builder_styles_style:
+            0: ''
+            block_plain_text: 0
+            cta_columns: 0
+            column_cards: 0
+            divider: 0
+            framed_column_cards: 0
+            negative_bottom_margin: 0
+            negative_top_margin: 0
+          context_mapping: {  }
+        components:
+          c8f0cdd5-7451-4538-9679-a68fff002f41:
+            uuid: c8f0cdd5-7451-4538-9679-a68fff002f41
+            region: second
+            configuration:
+              id: 'field_block:node:testimonial:field_summary'
+              label: Summary
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: basic_string
+                settings: {  }
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 3
+          1381e0e0-1aab-472f-934f-7d067bef069b:
+            uuid: 1381e0e0-1aab-472f-934f-7d067bef069b
+            region: second
+            configuration:
+              id: 'field_block:node:testimonial:field_role_company'
+              label: 'Role / Company'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 2
+          c000838c-5171-4a38-bf5f-ff57ac088782:
+            uuid: c000838c-5171-4a38-bf5f-ff57ac088782
+            region: first
+            configuration:
+              id: 'field_block:node:testimonial:field_media'
+              label: Media
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: cta
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          df3186d5-1555-47fe-92df-0e67315c949e:
+            uuid: df3186d5-1555-47fe-92df-0e67315c949e
+            region: second
+            configuration:
+              id: 'field_block:node:testimonial:field_cta'
+              label: Link
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: link
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: '0'
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 4
+          8429a379-4eb5-483e-879f-103bfa590315:
+            uuid: 8429a379-4eb5-483e-879f-103bfa590315
+            region: second
+            configuration:
+              id: 'field_block:node:testimonial:title'
+              label: Name
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_field_formatter
+                settings:
+                  link_to_entity: 0
+                  wrap_tag: h2
+                  wrap_class: ''
+                  wrap_attributes: ''
+                  override_link_label: ''
+                  token: ''
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+  layout_library:
+    enable: false
+id: node.testimonial.default
+targetEntityType: node
+bundle: testimonial
+mode: default
+content:
+  field_cta:
+    weight: 3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_media:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_role_company:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_summary:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden:
+  langcode: true
+  links: true
+  search_api_excerpt: true

@@ -1,0 +1,19 @@
+uuid: 36e0ebd6-9c10-4c45-9bdf-9efdc05bc00d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_youtube_embed
+    - node.type.article
+id: node.article.field_youtube_embed
+field_name: field_youtube_embed
+entity_type: node
+bundle: article
+label: 'YouTube Embed'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

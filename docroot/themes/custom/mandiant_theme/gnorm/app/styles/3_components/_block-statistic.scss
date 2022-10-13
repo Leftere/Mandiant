@@ -1,0 +1,99 @@
+.block-bundle-statistic {
+  @extend %wrapper;
+
+  @include container($desktop);
+  overflow: hidden;
+  position: relative;
+
+  .layout--twocol-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 480px;
+  }
+
+  .sub-title {
+    h2 {
+      text-align: left;
+    }
+  }
+
+  .layout--onecol & {
+    .eyebrow span {
+      @include font-size(75, 75);
+      color: $black;
+      display: block;
+      font-weight: 400;
+
+      .fonts-loaded & {
+        font-family: $mono;
+      }
+    }
+  }
+
+  .layout--onecol & {
+    h2 {
+      @include font-size(30, 36);
+      margin: 0;
+    }
+  }
+
+  .layout__region--first {
+    @include breakpoint($large-tablet) {
+      max-width: 40%;
+      padding-right: 8rem;
+    }
+  }
+
+  .body-text {
+    @include breakpoint($large-tablet) {
+      max-width: 60%;
+      padding: 1rem 8rem $spacing-unit 0;
+    }
+  }
+
+  .layout__region--second {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint($large-tablet) {
+      max-width: 60%;
+    }
+
+    div {
+      order: 1;
+
+      &.media {
+        order: 2;
+      }
+    }
+  }
+
+  .media {
+    height: 100%;
+    max-width: 60%;
+
+    @include breakpoint($large-tablet) {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    @include breakpoint(max-width $large-tablet) {
+      margin-top: 4rem;
+      max-width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    div {
+      height: 100%;
+    }
+
+    img {
+      max-height: 100%;
+    }
+  }
+}

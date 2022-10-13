@@ -1,0 +1,29 @@
+uuid: 1388b796-cecd-40be-a804-0f660d7a4471
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_podcast_media
+    - media.type.video
+    - node.type.article
+id: node.article.field_podcast_media
+field_name: field_podcast_media
+entity_type: node
+bundle: article
+label: 'Podcast Media'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      video: video
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

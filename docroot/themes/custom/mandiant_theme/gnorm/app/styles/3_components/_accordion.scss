@@ -1,0 +1,100 @@
+.accordion {
+  .devider {
+    a {
+      &:after {
+        content: none !important;
+      }
+    }
+
+    .ckeditor-accordion-container {
+      @extend %wrapper;
+
+      @include container($desktop);
+      padding: 3rem $spacing-unit;
+
+      > dl {
+        // border: none !important;
+      }
+
+      .ckeditor-accordion-toggler {
+        background-color: transparent !important;
+        border-bottom: none;
+        color: $black;
+        font-weight: bold;
+        padding: 2rem 0;
+        text-align: left;
+        width: 100%;
+
+        span {
+          left: auto;
+          right: 0;
+
+          &:after {
+            color: $white !important;
+            content: '+';
+            height: 0;
+            right: -1px;
+            top: -10px;
+            transform: none;
+          }
+
+          &:before {
+            background: $red !important;
+            height: 25px;
+            top: -10px;
+            transform: none;
+            width: 25px;
+          }
+        }
+      }
+
+      .active {
+        display: flex;
+        padding: 0;
+        text-align: left;
+
+        p {
+          font-weight: 400;
+          padding: 0 !important;
+        }
+
+        .ckeditor-accordion-toggler {
+          span {
+            &:after {
+              color: $white !important;
+              content: '-';
+              top: -10px;
+            }
+          }
+        }
+      }
+
+      dd {
+        @extend %wrapper;
+
+        @include container($desktop);
+        padding: 3rem $spacing-unit;
+
+        &.active {
+          p {
+            display: inline-block;
+            padding: 0 3rem;
+            width: 30%;
+
+            @include breakpoint(max-width $tablet) {
+              display: block;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .styled {
+      border-bottom: 2px solid $black;
+      border-left: none;
+      border-right: none;
+      border-top: 2px solid $black;
+    }
+  }
+}

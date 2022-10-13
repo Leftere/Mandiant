@@ -1,0 +1,25 @@
+uuid: 394b41df-11f0-4b91-b3a7-e267deea04b3
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:text:64c9e41d-b2b9-472d-9c29-e62c5750cc60'
+  module:
+    - block_content
+  theme:
+    - mandiant_theme
+id: megamenumandiantadvantagecta
+theme: mandiant_theme
+region: header
+weight: -8
+provider: null
+plugin: 'block_content:64c9e41d-b2b9-472d-9c29-e62c5750cc60'
+settings:
+  id: 'block_content:64c9e41d-b2b9-472d-9c29-e62c5750cc60'
+  label: 'MegaMenu - Mandiant Advantage - CTA'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

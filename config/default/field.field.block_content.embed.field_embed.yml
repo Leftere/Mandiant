@@ -1,0 +1,26 @@
+uuid: 7e0ec349-7016-4c19-a929-4e3a1cbfc486
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.embed
+    - field.storage.block_content.field_embed
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    plain_text: plain_text
+    basic_html: '0'
+id: block_content.embed.field_embed
+field_name: field_embed
+entity_type: block_content
+bundle: embed
+label: Embed
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

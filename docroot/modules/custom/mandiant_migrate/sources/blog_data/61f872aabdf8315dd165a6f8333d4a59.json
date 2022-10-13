@@ -1,0 +1,212 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "fireeye_global_admin",
+  "jcr:created": "Wed Aug 05 2020 18:05:38 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "fireeye_global_admin",
+    "jcr:title": "Repurposing Neural Networks to Generate Synthetic Media for Information Operations",
+    "jcr:versionHistory": "ab30eb89-439c-4078-ac63-7b3433831221",
+    "author": "Philip Tully",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "5409e573-9a40-4e53-833e-8fc0127b7bce"
+    ],
+    "jcr:created": "Wed Aug 05 2020 22:14:31 GMT+0000",
+    "cq:lastModified": "Wed Aug 05 2020 22:14:26 GMT+0000",
+    "jcr:baseVersion": "5409e573-9a40-4e53-833e-8fc0127b7bce",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:philip-tully",
+      "fireeye-blog-authors:lee-foster",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:machine-learning",
+      "fireeye-blog-tags:information-operations",
+      "fireeye-blog-tags:data-science"
+    ],
+    "jcr:uuid": "fcb12ef3-b497-4850-aa77-5d4698682ab5",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Wed Aug 05 2020 14:00:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "jeff.payne@fireeye.com",
+        "text": "\u003Cp\u003EFireEye\u2019s Data Science and Information Operations Analysis teams released this blog post \u003Ca href=\u0022https:\/\/www.blackhat.com\/us-20\/briefings\/schedule\/#repurposing-neural-networks-to-generate-synthetic-media-for-information-operations-19529\u0022\u003Eto coincide with our Black Hat USA 2020 Briefing\u003C\/a\u003E, which details how open source, pre-trained neural networks can be leveraged to generate synthetic media for malicious purposes. To summarize our presentation, we first demonstrate three successive proof of concepts for how machine learning models can be fine-tuned in order to generate customizable synthetic media in the text, image, and audio domains. Next, we illustrate examples in which synthetically generated media have been weaponized for information operations (IO), as detected on the front lines by Mandiant Threat Intelligence. Finally, we outline challenges in detecting synthetically generated content, and lay out potential paths forward in a future where synthetically generated media will increasingly look, speak, and write like us.\u003C\/p\u003E\n\u003Ctable border=\u00221\u0022 cellspacing=\u00220\u0022 cellpadding=\u00220\u0022 width=\u002290%\u0022 style=\u0022margin: 0 auto 20px;\u0022\u003E\n\u003Ctbody\u003E\u003Ctr\u003E\u003Ctd width=\u0022100%\u0022 valign=\u0022top\u0022\u003E\u003Cp\u003E\u003Ci\u003EHighlights\u003C\/i\u003E\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EOpen source, pre-trained natural language processing, computer vision, and speech recognition neural networks can be weaponized for offensive social media-driven IO campaigns.\u003C\/li\u003E\n\u003Cli\u003EDetection, attribution, and response is challenging in scenarios where actors can anonymously generate and distribute credible fake content using proprietary training datasets.\u003C\/li\u003E\n\u003Cli\u003EThe security community can and should help AI researchers, policy makers, and other stakeholders mitigate the harmful use of open source models.\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003C\/td\u003E\n\u003C\/tr\u003E\u003C\/tbody\u003E\u003C\/table\u003E\n\u003Ch4\u003EBackground: Synthetic Media, Generative Models, and Transfer Learning\u003C\/h4\u003E\n\u003Cp\u003ESynthetic media is by no means a new development; methods for manipulating media for specific agendas are as old as the media themselves. In the 1930\u2019s, the chief of the Soviet secret police was photographed walking alongside Joseph Stalin before being retouched out of an official press photo, \u003Ca href=\u0022https:\/\/en.wikipedia.org\/wiki\/Censorship_of_images_in_the_Soviet_Union\u0022\u003Eafter he \u003Ci\u003Ehimself \u003C\/i\u003Ewas arrested and executed during the Great Purge\u003C\/a\u003E. Digital graphic manipulation like this became prominent with the advent of Photoshop. Then later in the 2010\u2019s, the term \u201cdeepfake\u201d was coined. While deepfake videos, including techniques like face swapping and lip syncing, are concerning in the long term, this blog post focuses on more basic, but we argue more believable, synthetic media generation advancements in the text, static image, and audio domains. Machine learning approaches for creating synthetic media are underpinned by generative models, which have been effectively misused \u003Ca href=\u0022https:\/\/techscience.org\/a\/2019121801\/\u0022\u003Eto fabricate high volume submissions to federal public comment websites\u003C\/a\u003E and \u003Ca href=\u0022https:\/\/www.forbes.com\/sites\/jessedamiani\/2019\/09\/03\/a-voice-deepfake-was-used-to-scam-a-ceo-out-of-243000\/#49bb4bd82241\u0022\u003Eclone a voice to trick an executive into handing over $240,000\u003C\/a\u003E.\u003C\/p\u003E\n\u003Cp\u003EThe pre-training required to produce models capable of synthetic media generation can cost thousands of dollars, take weeks or months of time, and require access to expensive GPU clusters. However, the application of \u003Ca href=\u0022https:\/\/en.wikipedia.org\/wiki\/Transfer_learning\u0022\u003Etransfer learning\u003C\/a\u003E can drastically reduce the amount of time and effort involved. In transfer learning, we start from a large generic model that has been pre-trained for an initial task where copious data is available. We then leverage the model\u2019s acquired knowledge to train it further on a different, smaller dataset so that it excels at a subsequent, related task. This process of training the model further is referred to as \u003Ci\u003Efine-tuning\u003C\/i\u003E, which typically requires less resources compared to pre-training from scratch. You can think of this in more relatable terms\u2014if you\u2019re a professional tennis player, you don\u2019t need to completely relearn how to swing a racket in order to excel at badminton.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Wed Aug 05 2020 00:25:17 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      },
+      "image": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "jeff.payne@fireeye.com",
+        "jcr:title": "Figure 1",
+        "fileReference": "\/content\/dam\/fireeye-www\/blog\/images\/repurposing-neural-networks\/figure1.jpg",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "jcr:created": "Mon Aug 03 2020 23:01:54 GMT+0000",
+        "jcr:description": "Figure 1: The culture of machine learning research has given rise to a rich open source model ecosystem.",
+        "jcr:lastModified": "Tue Aug 04 2020 22:41:45 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/image\/image",
+        "centerimage": "true",
+        "imageRotate": "0"
+      },
+      "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "jeff.payne@fireeye.com",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "jcr:created": "Mon Aug 03 2020 23:01:47 GMT+0000",
+        "text": "\u003Cp\u003EIn practice though, the benefits of transfer learning are only realized when people share their pre-trained models. As illustrated by Figure 1, it turns out that it\u2019s commonplace for well-resourced industry and academic researchers to release their model checkpoints when their state of the art (SOTA) work gets accepted into a top-tier conference. Code is typically released in the form of GitHub repositories with extensive HOWTO guides and well-documented READMEs. This allows anyone to easily reproduce figures from the initial papers, and potentially use this source code as a starting point for their own research or projects. This process plays out on loop, ensuring a healthy, self-reinforcing model supply chain and ultimately a quicker pace of scientific innovation. However, while this emergent model sharing ecosystem beneficially lowers the barrier to entry for non-experts, it also gives a leg up to those seeking to leverage open source models for malicious purposes.\u003C\/p\u003E\n\u003Cp\u003EJust how much has this barrier to entry been lowered though? Fine-tuning can be performed in a fraction of the time, cost, data size, and compute compared to training models from scratch. Whether it\u0027s a cloud hosted notebook with GPU access, or a cloud GPU instance reservation for just a single day, we\u0027re talking on the order of just tens of dollars to fine-tune one of these models. Skill-wise, fine-tuning is not necessarily trivial, but it\u2019s also not \u201cbrain surgery\u201d\u2014authors or other open source contributors often release additional code and tutorials for how to fine-tune.\u003C\/p\u003E\n\u003Cp\u003EThe pre-trained models covered here were each released just within the last year, so the demonstrations in the next section should be seen through the lens of the present moment in time. However, open source releases are accelerating, and the bar for generating credible synthetic content will likely lower even further in the years to come.\u003C\/p\u003E\n\u003Ch4\u003ESee No Evil\u003C\/h4\u003E\n\u003Cp\u003EAs a first proof of concept, we\u2019ll demonstrate how StyleGAN2 can be fine-tuned in order to generate custom portraits to impersonate a target individual. \u003Ca href=\u0022https:\/\/github.com\/NVlabs\/stylegan2\u0022\u003EStyleGAN2, like its predecessor StyleGAN, is architected as a generative adversarial neural network (or GAN)\u003C\/a\u003E. GANs consist of 2 underlying networks that are pitted against each other (hence \u201cadversarial\u201d) - a generator, which generates new instances of data, and a discriminator, which evaluates these instances for authenticity by deciding whether each one belongs to the actual training dataset or not. If you generate images from pre-trained StyleGAN2 off-the-shelf, \u003Ca href=\u0022https:\/\/www.thispersondoesnotexist.com\u0022\u003Eit outputs random, high quality, and highly diverse images that appear in a similar orientation as the images that it was pre-trained on\u003C\/a\u003E. These images are not present in StyleGAN2\u2019s original training set, but are completely fabricated from the generative model\u2014these people in fact do not exist, and never have.\u003C\/p\u003E\n\u003Cp\u003EStyleGAN2 can also be fine-tuned on private datasets to generate outputs for custom tasks that the user of the open source model can control. As illustrated in Figure 2, we downloaded a few hundred images of Tom Hanks from online image search services, cropped them so that they were each face-centered and 512x512 pixels as required by the pre-trained model, and simply continued training StyleGAN2 by pointing it at this new smaller dataset using a slightly smaller learning rate. After less than a day of fine-tuning on a single GPU, we then used the fine-tuned StyleGAN2 model to generate arbitrarily many fake images of Mr. Hanks, which exhibit a high level of resemblance to his authentic online images. In theory, we could collect cropped images from any target of our choosing and perform the same exercise to generate arbitrarily many fake images of them.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Wed Aug 05 2020 22:14:26 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/text\/text",
+        "textIsRich": "true"
+      },
+      "image_1564496428": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "jeff.payne@fireeye.com",
+        "jcr:title": "Figure 2",
+        "fileReference": "\/content\/dam\/fireeye-www\/blog\/images\/repurposing-neural-networks\/figure2.jpg",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "jcr:created": "Mon Aug 03 2020 23:58:27 GMT+0000",
+        "jcr:description": "Figure 2: By fine-tuning StlyeGAN2, we can cheaply generate fake portraits (e.g. three images on the right) belonging to a target of our choice, at scale, from freely available images of them on the Internet (e.g. three images on the bottom left).",
+        "jcr:lastModified": "Tue Aug 04 2020 22:44:02 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/image\/image",
+        "centerimage": "true",
+        "imageRotate": "0"
+      },
+      "text_771433020": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "jeff.payne@fireeye.com",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "jcr:created": "Mon Aug 03 2020 23:59:19 GMT+0000",
+        "text": "\u003Ch4\u003EHear No Evil\u003C\/h4\u003E\n\u003Cp\u003EAs a second proof of concept, we\u2019ll switch to the audio domain where we demonstrate how SV2TTS can be fine-tuned on audio samples in order to impersonate the voice of a target individual. SV2TTS is a \u003Ca href=\u0022https:\/\/github.com\/CorentinJ\/Real-Time-Voice-Cloning\u0022\u003Ecomplex, 3-stage model that can perform Voice Cloning\u003C\/a\u003E\u2014or text-to-speech \u003Ci\u003Efrom \u003C\/i\u003Earbitrary text inputs \u003Ci\u003Eto \u003C\/i\u003Ecaptured reference speech in real time. SV2TTS is comprised of three underlying neural networks \u2013 first, the speaker encoder is trained on thousands of speakers in order to learn an abstract representation of human speech and squeeze it into a compressed embedding of floating point values. Then the Synthesizer, \u003Ca href=\u0022https:\/\/ai.googleblog.com\/2017\/12\/tacotron-2-generating-human-like-speech.html\u0022\u003Ewhich is based on Google\u2019s TacoTron2\u003C\/a\u003E, takes text as input and returns a \u003Ca href=\u0022https:\/\/en.wikipedia.org\/wiki\/Mel_scale\u0022\u003Emel\u003C\/a\u003E \u003Ca href=\u0022https:\/\/en.wikipedia.org\/wiki\/Spectrogram\u0022\u003Espectrogram\u003C\/a\u003E, a numerical representation of an individual\u2019s voice. Lastly, the vocoder, \u003Ca href=\u0022https:\/\/deepmind.com\/blog\/article\/wavenet-generative-model-raw-audio\u0022\u003Ebased on DeepMind\u2019s WaveNet\u003C\/a\u003E, takes the mel spectrogram and converts it into an output waveform that can be heard and comprehended.\u003C\/p\u003E\n\u003Cp\u003EWhile pre-trained SV2TTS can be used to generate speech using arbitrary text from one of a few hundred or so voices, as shown in Figure 3 it can also be fine-tuned to generate speech \u003Ci\u003Ein an arbitrary voice\u003C\/i\u003E using arbitrary text. All we need to do is collect some audio samples, which are freely available to record via the Internet, load up a few of the resulting M4A files into the pre-trained SV2TTS model, and use it as a feature extractor to synthesize new speech waveforms. Using Mr. Hanks again as an example, we demonstrate the result of this process on a few pieces of input text that were chosen by us to resemble cell-phone quality commentary that is thematically representative of the types of narratives we see pushed in IO campaigns. While the specific examples here are somewhat robotic and show signs of inauthenticity, the timbre of the voice is (in our subjective view) similar to that of Mr. Hanks. Neither the text nor the voices exist in any of the original SVT2TTS training datasets. It\u0027s worth noting that we didn\u2019t even need a GPU to do this \u2013 the pre-trained model was fine-tuned locally using a basic laptop\u2019s CPU cores, which also suggests that quality improvements are possible with greater resourcing.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Tue Aug 04 2020 22:46:30 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/text\/text",
+        "textIsRich": "true"
+      },
+      "image_1736598104": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "jeff.payne@fireeye.com",
+        "jcr:title": "Figure 3",
+        "fileReference": "\/content\/dam\/fireeye-www\/blog\/images\/repurposing-neural-networks\/figure3.jpg",
+        "jcr:lastModifiedBy": "brian.sisco@fireeye.com",
+        "componentid": "audioMap",
+        "imageCrop": "0,0,720,342",
+        "imageMap": "[rect(625,23,703,97)\u0022\/content\/dam\/fireeye-www\/blog\/files\/fine-tuned-hanks1.mp3\u0022||\u0022Play Audio Clip 1\u0022][rect(560,0,561,1)||][rect(628,117,706,194)\u0022\/content\/dam\/fireeye-www\/blog\/files\/fine-tuned-hanks2.mp3\u0022||\u0022Play Audio Clip 2\u0022][rect(628,250,706,325)\u0022\/content\/dam\/fireeye-www\/blog\/files\/fine-tuned-hanks3.mp3\u0022||\u0022Play Audio Clip 3\u0022][rect(401,0,402,1)||]",
+        "jcr:created": "Mon Aug 03 2020 23:58:29 GMT+0000",
+        "jcr:description": "Figure 3: By fine-tuning SV2TTS, we can generate cell-phone quality speech audio from arbitrary targets using recorded audio or video files of them on the Internet (e.g. the three sample clips at the bottom left), then after fine-tuning make that speaker dictate arbitrary custom text that we control (e.g. the three audio samples on the right).",
+        "jcr:lastModified": "Wed Aug 05 2020 01:46:17 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/image\/image",
+        "centerimage": "true",
+        "imageRotate": "0"
+      },
+      "text_801716640": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "jeff.payne@fireeye.com",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "jcr:created": "Mon Aug 03 2020 23:59:27 GMT+0000",
+        "text": "\u003Ch4\u003ESpeak No Evil\u003C\/h4\u003E\n\u003Cp\u003EOur last proof of concept is in the text domain, where we demonstrate how GPT-2 can be fine-tuned in order to generate custom social media posts reflecting narratives pushed in a social media IO campaign. GPT-2 is an \u003Ca href=\u0022https:\/\/openai.com\/blog\/better-language-models\/\u0022\u003Eopen source neural network that was trained on the causal language modeling task\u003C\/a\u003E, whose objective is to predict the next word in a sentence from previous context. A pre-trained model ends up being capable of language generation: if the model can predict the next word accurately, it can be used in turn to predict the following word, and then so on and so forth until eventually, the model produces fully coherent sentences and paragraphs.\u003C\/p\u003E\n\u003Cp\u003EThe pre-trained GPT-2 model\u2019s outputs display relatively formal grammar, punctuation, and structure that corresponds to the text present within their original prosaic dataset. To make GPT-2\u0027s generations appear more like posts we might expect to encounter scrolling through social media, with their shorter length, informal grammar, erratic punctuation, and syntactic quirks, we fine-tuned it on a new language modeling task using additional training data. This data consisted of open source social media posts from accounts operated by Russia\u2019s famed Internet Research Agency or IRA \u201ctroll factory.\u201d We fine-tuned GPT-2 on a single GPU for a few hours by \u003Ca href=\u0022\/content\/fireeye-www\/en_US\/blog\/threat-research\/2019\/11\/combatting-social-media-information-operations-neural-language-models.html\u0022\u003Eprocessing these social media posts through the pre-trained model\u003C\/a\u003E, whose activations were then fed through adjustable weights into a linear output layer. The resulting fake posts are short yet biting, express outrage regarding political issues, and contain idiosyncrasies like hashtags and emojis that positionally manifest at the end of the generated text.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Tue Aug 04 2020 22:50:23 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/text\/text",
+        "textIsRich": "true"
+      },
+      "image_412185541": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "jeff.payne@fireeye.com",
+        "jcr:title": "Figure 4",
+        "fileReference": "\/content\/dam\/fireeye-www\/blog\/images\/repurposing-neural-networks\/figure4.jpg",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "jcr:created": "Mon Aug 03 2020 23:58:31 GMT+0000",
+        "jcr:description": "Figure 4: By fine-tuning GPT-2, we can generate social media posts depicting semantic styles regularly exhibited by actual users. The three text samples on the right were produced by the model after fine-tuning.",
+        "jcr:lastModified": "Tue Aug 04 2020 22:50:46 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/image\/image",
+        "centerimage": "true",
+        "imageRotate": "0"
+      },
+      "text_1576991593": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "jeff.payne@fireeye.com",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "jcr:created": "Mon Aug 03 2020 23:59:33 GMT+0000",
+        "text": "\u003Ch4\u003ESynthetic Media in the Wild\u003C\/h4\u003E\n\u003Cp\u003EIO actors use various tactics that would be readily conducive to synthetic media augmentation. For example, one influence campaign we uncovered and dubbed \u003Ca href=\u0022\/content\/fireeye-www\/en_US\/blog\/threat-research\/2020\/02\/information-operations-fabricated-personas-to-promote-iranian-interests.html\u0022\u003E\u0026quot;Distinguished Impersonator\u0026quot; involves falsifying journalist personas and reaching out to real-world experts and political figures\u003C\/a\u003E to disingenuously solicit audio and video interviews that advance an Iranian political agenda. Another commonly used tactic is the development of cross-platform online personas that are used to infiltrate target groups or disseminate fabricated content to specific audiences, such as in the \u003Ca href=\u0022\/content\/fireeye-www\/en_US\/blog\/threat-research\/2020\/07\/ghostwriter-influence-campaign.html\u0022\u003E\u0026quot;Ghostwriter\u0026quot; campaign that has leveraged website compromises and used multiple well-developed personas\u003C\/a\u003E to disseminate fabricated content aligned with Russian security interests. And other very common techniques include the use of appropriated photos of real individuals to backstop false personas, and the repeated use of identical text on social media to \u0026quot;astroturf\u0026quot; political commentary. Synthetic media has real potential to exacerbate the use and effectiveness of such tactics.\u003C\/p\u003E\n\u003Cp\u003EIndeed, we already frequently uncover false personas and networks of inauthentic social media accounts using artificially generated profile photos, and this use is widespread. For example, we\u2019ve uncovered large networks of inauthentic social media accounts pushing pro-China narratives surrounding the Hong Kong democracy protests and the COVID-19 pandemic making significant use of artificially generated photos. We identified inauthentic accounts using synthetic profile photos in a recent operation that appeared designed to support government officials in a region of Argentina. And in a social media-driven influence operation that promoted pro-Cuban government and anti-US narratives, the operators behind one network of inauthentic accounts didn\u2019t even bother to fully crop out the text box placed by the \u201cthispersondoesnotexist\u201d image generation tool stating that the images were generated with StyleGAN2, prior to use. The examples of artificially generated images we\u2019ve seen actively used in IO campaigns presented in Figure 5 illustrate a common format observed, including closely cropped headshots with blurred backgrounds, anomalies around the ears, neck, and shoulders, difficulties with fully rendering accessories such as glasses and earrings, and phantom hair strings being generated outside a credible area. \u0026nbsp;\u003C\/p\u003E\n\u003Cp\u003EBut we can readily envision an escalation of this tactic, in which convincing personas are created using artificially generated profile photos trained on images of real people from a target group or geography that correspond to, say, a particular minority group, and are then used to instigate political conflict or incite animosity and violence. The use of synthetically generated audio interviews in a campaign \u0026nbsp;resembling Distinguished Impersonator trained on a real political expert\u2019s voice, would lower an actor\u2019s burden by removing the need to convincingly engage in direct outreach to real people, which would also make attribution more difficult for investigators by reducing available investigative leads such as contact details and modes of communication between actor and target. And synthetic media would drastically lower barriers for actors seeking to disseminate diverse text-based content at scale, reducing the effort required to create a large corpus of written content and the need to repeatedly reuse snippets of identical text.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Tue Aug 04 2020 22:53:10 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/text\/text",
+        "textIsRich": "true"
+      },
+      "image_2094776002": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "jeff.payne@fireeye.com",
+        "jcr:title": "Figure 5",
+        "fileReference": "\/content\/dam\/fireeye-www\/blog\/images\/repurposing-neural-networks\/figure5.jpg",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "jcr:created": "Mon Aug 03 2020 23:58:33 GMT+0000",
+        "jcr:description": "Figure 5: Suspected artificially generated profile photos we\u2019ve seen actively used in IO campaigns, along with example markers of inauthenticity that often clue us into images being artificially generated.",
+        "jcr:lastModified": "Tue Aug 04 2020 22:53:31 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/image\/image",
+        "centerimage": "true",
+        "imageRotate": "0"
+      },
+      "text_998610251": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "jeff.payne@fireeye.com",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "jcr:created": "Mon Aug 03 2020 23:59:38 GMT+0000",
+        "text": "\u003Ch4\u003EEvading Detection\u003C\/h4\u003E\n\u003Cp\u003ESynthetic media doesn\u2019t \u003Ci\u003Eneed\u003C\/i\u003E to be overwhelmingly credible to have its desired effect. People are used to consuming short, authoritative, error-riddled social media text at speed without dwelling too much on its linguistic features or origin. Users are accustomed to consuming poor-quality audio and video snippets, and the majority of users aren\u2019t going to give a social media account\u2019s profile image more than a cursory glance as they scroll through their feed and ingest written content at rapid speed. The quality bar does not need to be exceedingly high when it comes to synthetic generations; it only needs to be \u201cgood enough\u201d for even just a subset of vocal users to not question it in a world characterized by rapid, high-volume information consumption.\u003C\/p\u003E\n\u003Cp\u003EThe unifying theme behind the various potential IO applications discussed in the previous section is that they would materially help threat actors scale campaigns at low cost \u003Ci\u003Eand\u003C\/i\u003E better evade detection. Fine-tuning in particular presents a problem for blue teams, as it allows threat actors to better evade classifiers and detection models that are built for pre-trained outputs. This is worrisome as a would-be threat actor\u2019s fine-tuning datasets would likely be private and unknown to the defender at test time. This concept is illustrated by the text-based detection experiments we conducted in Figure 6. After releasing GPT-2, \u003Ca href=\u0022https:\/\/github.com\/openai\/gpt-2-output-dataset\u0022\u003EOpenAI released source code along with a fine-tuned classifier based on RoBERTa\u003C\/a\u003E, which does not share the same architecture or tokenizer as GPT-2, that can reliably discriminate between GPT-2\u0027s own output generations and its original pre-training data of high-Karma Reddit posts.\u003C\/p\u003E\n\u003Cp\u003EWe used this \u003Ca href=\u0022https:\/\/ai.facebook.com\/blog\/roberta-an-optimized-method-for-pretraining-self-supervised-nlp-systems\/\u0022\u003ERoBERTa\u003C\/a\u003E model first to verify the findings that one can reliably differentiate between fabricated, GPT-2 generated text and the authentic GPT-2 pre-training dataset. When we performed the same exercise using the classifier to try to differentiate our fine-tuned IO text generations (i.e. those previously discussed in Figure 4), the accuracy significantly dropped. The fact that the pre-trained score distribution is skewed towards 1 means the detection model for pre-trained generations, with a classification threshold of 0.5, can easily classify the generations as \u201cfake.\u201d This results in an accuracy score of over 97% for the detection model, as shown in blue in Figure 6. However, detection accuracy dipped to around 78% for fine-tuned generations as the distribution of scores output by the classifier shifts closer to chance, as shown in red. So if threat actors were to fine-tune on a custom dataset they themselves collated, this could present a problematic asymmetry between the data used to create the synthetic generations and the data blue teams would have access to\u2014or even knowledge of\u2014with which to build a commensurate detection model. \u003Ca href=\u0022https:\/\/arxiv.org\/abs\/1908.09203\u0022\u003EText with shorter length was previously shown to be more difficult for detection models to classify\u003C\/a\u003E, and while our tweet-inspired experiments corroborate this finding, further research is required to disentangle how different datasets, model complexities, input lengths, and hyperparameters will contribute to this effect in the cat-and-mouse future of generators versus detectors.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Tue Aug 04 2020 22:55:00 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/text\/text",
+        "textIsRich": "true"
+      },
+      "image_1383994618": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "jeff.payne@fireeye.com",
+        "jcr:title": "Figure 6",
+        "fileReference": "\/content\/dam\/fireeye-www\/blog\/images\/repurposing-neural-networks\/figure6.jpg",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "jcr:created": "Mon Aug 03 2020 23:59:50 GMT+0000",
+        "jcr:description": "Figure 6: The first plot shows the scores returned by the detection models, and the second plot shows accuracies resulting from those scores.",
+        "jcr:lastModified": "Tue Aug 04 2020 22:55:31 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/image\/image",
+        "centerimage": "true",
+        "imageRotate": "0"
+      },
+      "text_1980465928": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "adam.greenberg@fireeye.com",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "jcr:created": "Tue Aug 04 2020 22:55:43 GMT+0000",
+        "text": "\u003Ch4\u003EConclusion\u003C\/h4\u003E\n\u003Cp\u003ESynthetic media generation continues to become cheaper, both monetarily and in terms of the computing power required, easier, more pervasive, and their outputs ever more credible. Image generation capabilities and even commercial services are already moving beyond merely headshots and facial generations to full-body shots and advanced video generations, and end users will enjoy increasing control over and ease of content generation, both through being able to steer generations towards particular attributes at more granular levels, and by being able to use an increasing amount of both free and commercial low-code or no-code applications for content creation.\u003C\/p\u003E\n\u003Cp\u003EThis blog post highlights the need for the research community to continue to focus attention on the development of technical detection and mitigation capabilities for synthetic media, given its ready applicability to current information operations tactics. Multiple avenues of research can and should be pursued, including statistical approaches to detection like \u003Ca href=\u0022https:\/\/advances.sciencemag.org\/content\/6\/30\/eabb5824\u0022\u003Emachine learning classifiers\u003C\/a\u003E and \u003Ca href=\u0022https:\/\/www.usenix.org\/conference\/usenixsecurity18\/presentation\/adi\u0022\u003Emodel watermarking\u003C\/a\u003E, as well as the signature-based identification of fingerprints and forensic indicators (e.g. Figure 5). Secondly, there\u2019s the human aspect to all of this, including the importance of ensuring communities of researchers from different disciplines coalesce around approaches to overcoming the detection challenges, threat modeling how synthetic media may be deployed in future IO campaigns so that any potential effects can be pre-emptively addressed, and encouraging commercial providers of synthetic media generation capabilities to acknowledge and account for the potential abuse of their services by threat actors. Outside of community efforts, there also remains the need for raising awareness and educating consumers of social media and other content about the risks of synthetic media in a responsible manner that doesn\u2019t misrepresent the threat, as well developing legal and regulatory approaches to dealing with information operations and synthetic media.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Tue Aug 04 2020 22:56:48 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/text\/text",
+        "textIsRich": "true"
+      },
+      "htmlpassthru": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "brian.sisco@fireeye.com",
+        "jcr:lastModifiedBy": "brian.sisco@fireeye.com",
+        "jcr:created": "Wed Aug 05 2020 01:06:12 GMT+0000",
+        "html": "\u003C!-- The script tag should live in the head of your page if at all possible --\u003E\n\u003Cscript type=\u0022text\/javascript\u0022 async src=\u0022https:\/\/play.vidyard.com\/embed\/v4.js\u0022\u003E\u003C\/script\u003E\n\u003Cstyle\u003E\n.vidyard-audio {\n    display: none;\n}\n\u003C\/style\u003E\n\n\u003Cdiv class=\u0022vidyard-audio\u0022\u003E\n\u003Cimg\n  style=\u0022width:0; margin: auto; display: none;\u0022\n  class=\u0022vidyard-player-embed\u0022\n  src=\u0022https:\/\/play.vidyard.com\/7VQB4FC3dZkAca8S129asy.jpg\u0022\n  data-uuid=\u00227VQB4FC3dZkAca8S129asy\u0022\n  data-v=\u00224\u0022\n  data-type=\u0022inline\u0022\n  data-autoplay=\u00220\u0022\n\/\u003E\n\u003Cimg\n  style=\u0022width:0; margin: auto; display: none;\u0022\n  class=\u0022vidyard-player-embed\u0022\n  src=\u0022https:\/\/play.vidyard.com\/gpCqCKE65UjaaaJnbt6vAb.jpg\u0022\n  data-uuid=\u0022gpCqCKE65UjaaaJnbt6vAb\u0022\n  data-v=\u00224\u0022\n  data-type=\u0022inline\u0022\n  data-autoplay=\u00220\u0022\n\/\u003E\n\u003Cimg\n  style=\u0022width:0; margin: auto; display: none;\u0022\n  class=\u0022vidyard-player-embed\u0022\n  src=\u0022https:\/\/play.vidyard.com\/mEcSiG72vkxjQQ46XyhmoQ.jpg\u0022\n  data-uuid=\u0022mEcSiG72vkxjQQ46XyhmoQ\u0022\n  data-v=\u00224\u0022\n  data-type=\u0022inline\u0022\n  data-autoplay=\u00220\u0022\n\/\u003E\n\n\u003C\/div\u003E\n\n\u003Cscript\u003E\nwindow.onVidyardAPI = (vidyardEmbed) =\u003E {\n vidyardEmbed.api.addReadyListener((_, player) =\u003E {\n\nconsole.log(\u0027player ready:\u0027, player.ready());\n console.log(\u0022vidyard player: \u0022 + player.uuid);\n \/\/ put your code here\nif(player.uuid == \u00227VQB4FC3dZkAca8S129asy\u0022) {\n$(\u0022#audioMap area:nth-child(1)\u0022).click(function(e){\n    e.preventDefault();\n    console.log($(this).attr(\u0027href\u0027) + \u0022  \u0022 + $(this).index());\n    player.play();\n});\n} else if(player.uuid ==\u0022gpCqCKE65UjaaaJnbt6vAb\u0022) {\n$(\u0022#audioMap area:nth-child(3)\u0022).click(function(e){\n    e.preventDefault();\n    console.log($(this).attr(\u0027href\u0027) + \u0022  \u0022 + $(this).index());\n    player.play();\n});\n} else if(player.uuid == \u0022mEcSiG72vkxjQQ46XyhmoQ\u0022) {\n$(\u0022#audioMap area:nth-child(4)\u0022).click(function(e){\n    e.preventDefault();\n    console.log($(this).attr(\u0027href\u0027) + \u0022  \u0022 + $(this).index());\n    player.play();\n});\n}\n\n}, )\n }\n\n\u003C\/script\u003E",
+        "jcr:lastModified": "Wed Aug 05 2020 19:17:05 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/html\/htmlpassthru"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EWe demonstrate how machine learning models can be fine-tuned in order to generate customizable synthetic media in text, images and audio.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Tue Aug 04 2020 22:58:21 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Tue Aug 04 2020 23:00:32 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

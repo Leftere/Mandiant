@@ -1,0 +1,66 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "fireeye_global_admin",
+  "jcr:created": "Thu Apr 09 2020 22:01:36 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "fireeye_global_admin",
+    "jcr:title": "M-Trends\u00a02020\u00a0: les nouvelles du front de la s\u00e9curit\u00e9",
+    "jcr:versionHistory": "229808ef-0344-48b1-9e39-1a89eb19d470",
+    "author": "Jurgen Kutscher",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:lastModifiedBy": "lynda.hall@fireeye.com",
+    "jcr:language": "fr",
+    "jcr:predecessors": [
+      "84089556-a83f-4ecb-a0d0-2e1b86544738"
+    ],
+    "jcr:created": "Fri Apr 10 2020 16:08:22 GMT+0000",
+    "cq:lastModified": "Fri Apr 10 2020 16:08:06 GMT+0000",
+    "jcr:baseVersion": "84089556-a83f-4ecb-a0d0-2e1b86544738",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:cap-jurgen-kutscher",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:m-trends",
+      "fireeye-blog-tags:mandiant",
+      "fireeye-blog-tags:incident-response",
+      "fireeye-blog-tags:malware",
+      "fireeye-blog-tags:apt",
+      "fireeye-blog-tags:TTPs"
+    ],
+    "jcr:lastModified": "Wed Apr 01 2020 19:57:57 GMT+0000",
+    "jcr:uuid": "54a6f78a-7ba7-4bec-9a9e-3533542980f0",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Thu Feb 20 2020 05:00:00 GMT-0800",
+    "cq:lastModifiedBy": "lynda.hall@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "lynda.hall@fireeye.com",
+        "text": "\u003Cp\u003EAujourd\u0027hui marque la sortie de \u003Ci\u003E\u003Ca href=\u0022\/content\/fireeye-www\/fr_FR\/current-threats\/annual-threat-report\/mtrends.html\u0022 adhocenable=\u0022false\u0022\u003EM-Trends 2020\u003C\/a\u003E\u003C\/i\u003E, 11\u003Csup\u003Ee\u003C\/sup\u003E \u00e9dition du c\u00e9l\u00e8bre rapport annuel publi\u00e9 par FireEye Mandiant. Cette toute derni\u00e8re \u00e9dition de \u003Ci\u003EM-Trends\u003C\/i\u003E rassemble toutes les statistiques, tendances, \u00e9tudes de cas et recommandations attendues chaque ann\u00e9e par nos lecteurs, et bien plus encore.\u003C\/p\u003E\n\u003Cp\u003ES\u0027il fallait retenir un seul chiffre dans le rapport de cette ann\u00e9e, c\u0027est bien la chute de la dur\u00e9e m\u00e9diane\u0026nbsp;de\u0026nbsp;persistance \u00e0 56\u0026nbsp;jours \u00e0 l\u2019\u00e9chelle mondiale. Autrement dit, un hacker passe en moyenne moins de deux mois sur le r\u00e9seau avant d\u0027\u00eatre d\u00e9masqu\u00e9, un record absolu toutes \u00e9ditions de M-Trends confondues. Cette baisse atteste des \u00e9normes progr\u00e8s effectu\u00e9s depuis 2011, ann\u00e9e o\u00f9 la dur\u00e9e m\u00e9diane\u0026nbsp;de\u0026nbsp;persistance dans le monde \u00e9tait de 416\u0026nbsp;jours. Toutefois, comme chacun sait, il ne faut pas plus de quelques jours \u00e0 un hacker habile pour acc\u00e9der \u00e0 des ressources strat\u00e9giques. Nous sommes donc encore loin du compte.\u003C\/p\u003E\n\u003Cp\u003EUne autre statistique notable du rapport concerne ce que nous appelons la \u0026quot;d\u00e9tection par source.\u0026quot; Pour la premi\u00e8re fois depuis 2015, la majorit\u00e9 des entreprises sont inform\u00e9es de leur compromission par des sources externes (53\u0026nbsp;%) plut\u00f4t qu\u0027internes (47\u0026nbsp;%). Cela s\u0027explique certainement moins par un manque de vigilance en interne que par le nombre croissant des alertes \u00e9mises par les forces de police et le durcissement du cadre r\u00e9glementaire.\u003C\/p\u003E\n\u003Cp\u003ELe rapport \u003Ci\u003EM-Trends 2020\u003C\/i\u003E regorge d\u0027autres \u00e9clairages, parmi lesquels\u0026nbsp;:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003E\u003Cb\u003EChiffres cl\u00e9s\u003C\/b\u003E\u0026nbsp;: La dur\u00e9e m\u00e9diane\u0026nbsp;de\u0026nbsp;persistance dans le monde et la d\u00e9tection par source ne repr\u00e9sentent que la partie \u00e9merg\u00e9e de l\u0027iceberg. Notre rapport livre de nombreuses autres statistiques sur les secteurs cibl\u00e9s, les malwares, les m\u00e9thodes d\u0027attaque et plus encore.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003ENouveaux groupes APT\u003C\/b\u003E \u2013 Un portrait d\u00e9taill\u00e9 d\u0027APT41, un groupe de cyberespionnage \u00e0 la solde du gouvernement chinois qui m\u00e8ne en parall\u00e8le des op\u00e9rations \u00e0 vis\u00e9e financi\u00e8re depuis 2012.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003ETendances\u003C\/b\u003E \u2013 Analyse approfondie des derni\u00e8res tendances concernant les familles de malwares, ransomwares, Crimeware-as-a-Service et autres ennemis de l\u2019int\u00e9rieur.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003E\u00c9tudes de cas\u003C\/b\u003E \u2013 Les entreprises \u00e9tant de plus en plus nombreuses \u00e0 migrer vers le cloud, nous nous penchons sur une compromission impliquant des donn\u00e9es h\u00e9berg\u00e9es dans cet environnement. Le rapport examine par ailleurs le cas d\u0027une campagne d\u0027attaque ciblant des cartes-cadeaux.\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EV\u00e9ritable barom\u00e8tre annuel de la s\u00e9curit\u00e9, le rapport \u003Ci\u003EM-Trends\u003C\/i\u003E reste plus que jamais fid\u00e8le \u00e0 son objectif d\u0027origine\u0026nbsp;: informer les professionnels de la cybers\u00e9curit\u00e9 des derni\u00e8res attaques et menaces observ\u00e9es au cours de nos missions de terrain.\u003C\/p\u003E\n\u003Cp\u003E\u003Ca href=\u0022\/content\/fireeye-www\/fr_FR\/current-threats\/annual-threat-report\/mtrends.html\u0022 adhocenable=\u0022false\u0022\u003ET\u00e9l\u00e9chargez la 11\u003Csup\u003Ee\u003C\/sup\u003E \u00e9dition du M-Trends\u003C\/a\u003E.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Fri Apr 10 2020 16:08:06 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EM-Trends 2020 rassemble toutes les statistiques, tendances, \u00e9tudes de cas et recommandations attendues par nos lecteurs.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Thu Feb 20 2020 17:58:41 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "lynda.hall@fireeye.com",
+      "jcr:lastModified": "Thu Apr 09 2020 22:03:28 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

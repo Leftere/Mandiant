@@ -1,0 +1,18 @@
+uuid: e698a0de-f540-4c80-8f0a-e2579665ba32
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.to_be_removed
+id: block_content.to_be_removed.info
+field_name: info
+entity_type: block_content
+bundle: to_be_removed
+label: 'Block description'
+description: 'A brief description of your block.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,7 @@
+<section class="solution-cards">
+  <div class="solution-cards__inner">
+    {% for card in solutionCards %}
+      {% include "@includes/2_pieces/solution-card.twig" with card only %}
+    {% endfor %}
+  </div>
+</section>

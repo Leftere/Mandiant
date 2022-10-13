@@ -1,0 +1,137 @@
+uuid: 13ad177b-7f07-46c5-a6c7-1c2ba3539576
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.partner.field_cta
+    - field.field.node.partner.field_media
+    - field.field.node.partner.field_summary
+    - field.field.node.partner.field_summary_html
+    - field.field.node.partner.layout_selection
+    - node.type.partner
+  module:
+    - layout_builder
+    - layout_discovery
+    - layout_library
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          86b0a659-8ec4-468d-9648-c90eeadbacfe:
+            uuid: 86b0a659-8ec4-468d-9648-c90eeadbacfe
+            region: content
+            configuration:
+              id: 'field_block:node:partner:field_media'
+              label: Media
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: logo
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional:
+              layout_builder_styles_style:
+                left_oriented: 0
+              layout_builder_id: ''
+            weight: 0
+          37d565b7-b7a1-4ec2-adfb-1393cd98251a:
+            uuid: 37d565b7-b7a1-4ec2-adfb-1393cd98251a
+            region: content
+            configuration:
+              id: 'field_block:node:partner:field_summary_html'
+              label: 'Summary (HTML)'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: smart_trim
+                settings:
+                  trim_length: 20
+                  trim_type: words
+                  trim_suffix: ''
+                  wrap_output: true
+                  wrap_class: trimmed
+                  more_link: false
+                  more_text: More
+                  more_class: more-link
+                  trim_options:
+                    text: true
+                    trim_zero: true
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional:
+              layout_builder_styles_style:
+                left_oriented: 0
+              layout_builder_id: ''
+            weight: 3
+          c619bb65-72ec-49f8-be80-f0a10e177371:
+            uuid: c619bb65-72ec-49f8-be80-f0a10e177371
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:partner:cta_learn_more'
+            additional: {  }
+            weight: 4
+          b65770d3-9888-484b-9ed9-478f7e7a32f4:
+            uuid: b65770d3-9888-484b-9ed9-478f7e7a32f4
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:partner:title_display'
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+  layout_library:
+    enable: false
+id: node.partner.teaser
+targetEntityType: node
+bundle: partner
+mode: teaser
+content:
+  cta_learn_more:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  title_display:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_cta: true
+  field_media: true
+  field_summary: true
+  field_summary_html: true
+  langcode: true
+  layout_selection: true
+  search_api_excerpt: true

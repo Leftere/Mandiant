@@ -1,0 +1,61 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Tue Dec 08 2020 21:01:21 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Unauthorized Access of FireEye Red Team Tools",
+    "jcr:versionHistory": "d300c0c8-c769-4fb1-b918-2af4b44859b9",
+    "author": "FireEye",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "636e0213-9abd-4336-b4f4-ff451999e847"
+    ],
+    "jcr:created": "Tue Dec 08 2020 21:12:54 GMT+0000",
+    "cq:lastModified": "Tue Dec 08 2020 21:12:07 GMT+0000",
+    "jcr:baseVersion": "636e0213-9abd-4336-b4f4-ff451999e847",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:cap-fireeye",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:fireeye",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:red-team",
+      "fireeye-blog-tags:tools"
+    ],
+    "jcr:uuid": "f71c9438-3b00-442e-9f55-ecea8197758f",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Tue Dec 08 2020 16:00:00 GMT-0500",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Ch4\u003EOverview\u003C\/h4\u003E\n\u003Cp\u003EA highly sophisticated state-sponsored adversary stole FireEye Red Team tools. Because we believe that an adversary possesses these tools, and we do not know whether the attacker intends to use the stolen tools themselves or publicly disclose them, FireEye is releasing hundreds of countermeasures with this blog post to enable the broader security community to protect themselves against these tools. We have incorporated the countermeasures in our FireEye products\u2014and shared these countermeasures with partners, government agencies\u2014to significantly limit the ability of the bad actor to exploit the Red Team tools.\u003C\/p\u003E\n\u003Cp\u003E\u003Cb\u003EYou can find a list of the countermeasures on the FireEye GitHub repository found \u003C\/b\u003E\u003Ca href=\u0022https:\/\/github.com\/fireeye\/red_team_tool_countermeasures\u0022 adhocenable=\u0022false\u0022\u003E\u003Cb\u003EHERE\u003C\/b\u003E\u003C\/a\u003E\u003Cb\u003E.\u003C\/b\u003E\u003C\/p\u003E\n\u003Ch4\u003ERed Team Tools and Techniques\u003C\/h4\u003E\n\u003Cp\u003EA Red Team is a group of security professionals authorized and organized to mimic a potential adversary\u2019s attack or exploitation capabilities against an enterprise\u2019s security posture. Our Red Team\u2019s objective is to improve enterprise cyber security by demonstrating the impacts of successful attacks and by showing the defenders (i.e., the Blue Team) how to counter them in an operational environment. We have been performing Red Team assessments for customers around the world for over 15 years. In that time, we have built up a set of scripts, tools, scanners, and techniques to help improve our clients\u2019 security postures. Unfortunately, these tools were stolen by a highly sophisticated attacker.\u003C\/p\u003E\n\u003Cp\u003EThe stolen tools range from simple scripts used for automating reconnaissance to entire frameworks that are similar to publicly available technologies such as CobaltStrike and Metasploit. Many of the Red Team tools have already been released to the community and are already distributed in our open-source virtual machine, \u003Ca href=\u0022https:\/\/github.com\/fireeye\/commando-vm\u0022\u003ECommandoVM\u003C\/a\u003E.\u003C\/p\u003E\n\u003Cp\u003ESome of the tools are publicly available tools modified to evade basic security detection mechanisms. Other tools and frameworks were developed in-house for our Red Team.\u003C\/p\u003E\n\u003Ch4\u003ENo Zero-Day Exploits or Unknown Techniques\u003C\/h4\u003E\n\u003Cp\u003EThe Red Team tools stolen by the attacker did not contain zero-day exploits. The tools apply well-known and documented methods that are used by other red teams around the world. Although we do not believe that this theft will greatly advance the attacker\u2019s overall capabilities, FireEye is doing everything it can to prevent such a scenario.\u0026nbsp;\u003C\/p\u003E\n\u003Cp\u003EIt\u2019s important to note that FireEye has not seen these tools disseminated or used by any adversaries, and we will continue to monitor for any such activity along with our security partners.\u003C\/p\u003E\n\u003Ch4\u003EDetections to Help the Community\u003C\/h4\u003E\n\u003Cp\u003ETo empower the community to detect these tools, we are publishing countermeasures to help organizations identify these tools if they appear in the wild. In response to the theft of our Red Team tools, we have released \u003Ci\u003Ehundreds\u003C\/i\u003E of countermeasures for publicly available technologies like OpenIOC, Yara, Snort, and ClamAV.\u003C\/p\u003E\n\u003Cp\u003EA list of the countermeasure is available on the FireEye GitHub repository found \u003Ca href=\u0022https:\/\/github.com\/fireeye\/red_team_tool_countermeasures\u0022 adhocenable=\u0022false\u0022\u003Ehere\u003C\/a\u003E. We are releasing detections and will continue to update the public repository with overlapping countermeasures for host, network, and file-based indicators as we develop new or refine existing detections. In addition, we are publishing a list of CVEs that need to be addressed to limit the effectiveness of the Red Team tools on the GitHub page.\u003C\/p\u003E\n\u003Ch4\u003EFireEye Products Protect Customers Against These Tools\u003C\/h4\u003E\n\u003Cp\u003ETeams across FireEye have worked to build the countermeasures to protect our customers and the broader community. We have incorporated these countermeasures into our products and shared these countermeasures with our partners, including the Department of Homeland Security, who have incorporated the countermeasures into their products to provide broad coverage for the community.\u003C\/p\u003E\n\u003Cp\u003EMore information on the detection signatures available can be found in the \u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/github.com\/fireeye\/red_team_tool_countermeasures\u0022\u003EGitHub repository\u003C\/a\u003E.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Tue Dec 08 2020 21:12:07 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EA state-sponsored adversary stole FireEye Red Team tools, so we are releasing hundreds of countermeasures to ensure the security community is protected.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Tue Dec 08 2020 20:43:31 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Tue Dec 08 2020 20:56:37 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+<a
+  href="{{ content.cta_learn_more['#url'] }}"
+  title="{{ content.title_display['#title'] }}"
+  aria-label="{{ "Read more about"|t ~ " " ~ content.title_display['#title']}}"
+>
+  {% if content.field_media|render %}
+    <span class="media">
+      {{ content.field_media }}
+    </span>
+  {% endif %}
+
+  <small class="type">{{ content.resource_type }}</small>
+
+  <h3 class="title">
+    {{ content.title_display['#title'] }}
+  </h3>
+
+  <small class="info">
+    {% if content.field_date|render %}
+      <span class="date number">
+        {{ node.field_date.value|date('m.d.Y') }}
+      </span>
+      <span class="date string">
+        {{ node.field_date.value|date('M d, Y') }}
+      </span>
+    {% endif %}
+    <span class="separator">&nbsp;&#124;&nbsp;</span>
+    <span class="time">
+      {{ content.reading_time }}
+    </span>
+  </small>
+</a>

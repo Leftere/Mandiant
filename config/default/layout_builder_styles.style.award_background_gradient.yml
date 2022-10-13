@@ -1,0 +1,13 @@
+uuid: e8240659-b594-4642-8a1e-348f05a14b92
+langcode: en
+status: true
+dependencies: {  }
+id: award_background_gradient
+label: 'Award Background Gradient'
+classes: bg-award-gradient
+type: section
+group: background
+weight: 0
+block_restrictions: {  }
+layout_restrictions:
+  - layout_onecol

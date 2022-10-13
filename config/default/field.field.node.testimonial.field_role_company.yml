@@ -1,0 +1,19 @@
+uuid: 419423c2-1aeb-4b5b-bbf0-7e3d3e8d4608
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_role_company
+    - node.type.testimonial
+id: node.testimonial.field_role_company
+field_name: field_role_company
+entity_type: node
+bundle: testimonial
+label: 'Role / Company'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

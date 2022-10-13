@@ -1,0 +1,23 @@
+.bg-gradient {
+  &--red {
+    position: relative;
+
+    &:after {
+      background-image: url('../images/backgrounds/red-waves-bg.png');
+      background-size: cover;
+      content: '';
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+
+  .devider {
+    img {
+      margin-top: 8rem;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.block-bundle-embed {
+  .layout--twocol-section & {
+    padding: $spacing-unit;
+  }
+
+  .layout--threecol-section & {
+    padding: $spacing-unit;
+  }
+
+  .layout--fourcol-section & {
+    padding: $spacing-unit;
+  }
+}

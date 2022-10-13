@@ -1,0 +1,72 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed May 04 2016 09:04:07 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Attackers Exploit the Heartbleed OpenSSL Vulnerability to Circumvent Multi-factor Authentication on VPNs",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "32ba5fcc-b664-4131-a67b-049dbcce5732",
+    "author": "Christopher Glyer",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "lynda.hall@fireeye.com",
+    "focusKeyword": "Heartbleed",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "8afaaad6-fd26-489a-b5ad-48b722cc09f0"
+    ],
+    "jcr:created": "Fri Jun 03 2016 19:48:22 GMT-0400",
+    "cq:lastReplicated": "Fri Jun 03 2016 19:48:22 GMT-0400",
+    "cq:lastModified": "Fri Apr 18 2014 14:07:27 GMT-0500",
+    "cq:distribute": true,
+    "jcr:baseVersion": "8afaaad6-fd26-489a-b5ad-48b722cc09f0",
+    "jcr:isCheckedOut": true,
+    "cq:createdBy": "admin",
+    "cq:tags": [
+      "fireeye-blog-authors:cap-christopher-glyer",
+      "fireeye-blog-tags:incident-response",
+      "fireeye-blog-tags:heartbleed",
+      "fireeye-blog-tags:mandiant",
+      "fireeye-blog-tags:heartbleed-vulnerability"
+    ],
+    "jcr:uuid": "1b104d17-1922-480d-97c2-7dab253ee1f6",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Fri Apr 18 2014 14:07:27 GMT-0500",
+    "_charset_": "UTF-8",
+    "cq:lastModifiedBy": "admin",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "admin",
+        "text": "\u003Cdiv class=\u0022c00 c00v1\u0022\u003E\u003Cp\u003E\u003Cem\u003EWritten by Christopher Glyer and Chris DiGiamo\u003C\/em\u003E\u003C\/p\u003E \u003Cp\u003ELess than a week since the public disclosure of the \u0022Heartbleed\u0022 vulnerability, Mandiant incident responders have already identified successful attacks in the wild by targeted threat actors. The Heartbleed vulnerability (CVE-2014-0160), publicly disclosed on April 7th by security researchers \u003Cspan style=\u0022text-decoration: underline;\u0022\u003ENeel Mehta and Codenomicon\u003C\/span\u003E is a buffer over-read bug in the Transport Layer Security (TLS) extension. The bug was present in a section of code responsible for providing \u0022Heartbeat\u0022 notifications between a client and server. A working proof of concept of the exploit appeared on the Internet last week that allowed an attacker to obtain up to 64KB of random memory space per malformed heartbeat request.\u003C\/p\u003E \u003Cp\u003ETo date, much of the discussion on the Internet has focused on an attacker using the vulnerability to \u003Ca href=\u0022https:\/\/blog.cloudflare.com\/answering-the-critical-question-can-you-get-private-ssl-keys-using-heartbleed\u0022 target=\u0022_blank\u0022\u003Esteal private keys from a web server\u003C\/a\u003E, and less on the potential for session hijacking (with \u003Ca href=\u0022https:\/\/www.mattslifebytes.com\/?p=533\u0022 target=\u0022_blank\u0022\u003EMatthew Sullivan\u0027s blog\u003C\/a\u003E a notable exception).\u003C\/p\u003E \u003Cp\u003EThis post focuses on a Mandiant investigation where a targeted threat actor leveraged the Heartbleed vulnerability in a SSL VPN concentrator to remotely access our client\u0027s environment and steps to identify retroactively if this occurred to your organization.\u003C\/p\u003E \u003Cp\u003EBeginning on April 8, an attacker leveraged the Heartbleed vulnerability against a VPN appliance and hijacked multiple active user sessions. Specifically, the attacker repeatedly sent malformed heartbeat requests to the HTTPS web server running on the VPN device, which was compiled with a vulnerable version of OpenSSL, to obtain active session tokens for currently authenticated users. With an active session token, the attacker successfully hijacked multiple active user sessions and convinced the VPN concentrator that he\/she was legitimately authenticated. The attack bypassed both the organization\u0027s multifactor authentication and the VPN client software used to validate that systems connecting to the VPN were owned by the organization and running specific security software.\u003C\/p\u003E \u003Cp\u003EThe exploit method was identified and confirmed by analyzing two sources of information, IDS signatures and VPN logs. The victim organization implemented a set of signatures to identify Heartbleed network activity. The IDS signature \u0022SERVER-OTHER TLSv1.1 large heartbeat response - possible ssl heartbleed attempt\u0022, depicted in figure 1, alerted over 17,000 times during the intrusion.  The source of the heartbeat response was the organization\u0027s internal SSL VPN device.\u003C\/p\u003E \u003Cfigure\u003E\u003Cimg class=\u0022size-full wp-image-5662\u0022 alt=\u0022Figure 1: IDS signature for large Heartbleed responses\u0022 src=\u0022https:\/\/www.fireeye.com\/content\/dam\/legacy\/ammo\/Figure-15.jpg\u0022 width=\u0022651\u0022 height=\u0022109\u0022 \/\u003E\u003Cfigcaption\u003EFigure 1: IDS signature for large Heartbleed responses\u003C\/figcaption\u003E\u003C\/figure\u003E\u003Cp\u003EThe following evidence proved the attacker had stolen legitimate user session tokens:\u003C\/p\u003E \u003Col\u003E\u003Cli\u003EA malicious IP address triggered thousands of IDS alerts for the Heartbleed vulnerability destined for the victim organization\u0027s SSL VPN.\u003C\/li\u003E\u003Cli\u003EThe VPN logs showed active VPN connections of multiple users rapidly changing back and forth, \u0022flip flopping\u0022, between the malicious IP address and the user\u0027s original IP address.  In several cases the \u0022flip flopping\u0022 activity lasted for multiple hours.\u003C\/li\u003E\u003Cli\u003EThe timestamps associated with the IP address changes were often within one to two seconds of each other.\u003C\/li\u003E\u003Cli\u003EThe legitimate IP addresses accessing the VPN were geographically distant from malicious IP address and belonged to different service providers.\u003C\/li\u003E\u003Cli\u003EThe timestamps for the VPN log anomalies could be correlated with the IDS alerts associated with the Heartbleed bug.\u003C\/li\u003E\u003C\/ol\u003E\u003Cp\u003EOnce connected to the VPN, the attacker attempted to move laterally and escalate his\/her privileges within the victim organization.\u003C\/p\u003E \u003Cp\u003EMandiant recommends organizations that are running (or had been running) vulnerable versions of remote access software or appliances take the following actions:\u003C\/p\u003E \u003Col\u003E\u003Cli\u003EIdentify infrastructure affected by the vulnerability and upgrade it as soon as possible.\u003C\/li\u003E\u003Cli\u003EImplement network intrusion detection signatures to identify repeated attempts to leverage the vulnerability. In our experience, an attacker will likely send hundreds of attempts because the vulnerability only exposes up to 64KB of data from a random section of memory.\u003C\/li\u003E\u003Cli\u003EPerform historical review of VPN logs to identify instances where the IP address of a session changed repeatedly between two IP addresses. It is common for an IP address to legitimately change during a session, but from our analysis it is fairly uncommon for the IP address to repeatedly change back and forth between IP addresses that are in different network blocks, geographic locations, from different service providers, or rapidly within a short time period.\u003C\/li\u003E\u003C\/ol\u003E\u003C\/div\u003E",
+        "jcr:lastModified": "Fri Apr 18 2014 14:07:27 GMT-0500",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "alt": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "comments": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/commons\/components\/comments"
+      },
+      "trackback": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/blog\/components\/trackback"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "admin",
+      "text": "\u003Cp\u003E\u003Cem\u003EWritten by Christopher Glyer and Chris DiGiamo\u003C\/em\u003E\u003C\/p\u003E ",
+      "jcr:lastModified": "Fri Apr 18 2014 14:07:27 GMT-0500",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    }
+  }
+}

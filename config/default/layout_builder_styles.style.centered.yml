@@ -1,0 +1,19 @@
+uuid: 7e92a55c-9eef-4f02-a426-cb051696e880
+langcode: en
+status: true
+dependencies: {  }
+id: centered
+label: Centered
+classes: center
+type: component
+group: alignment
+weight: -20
+block_restrictions:
+  - 'inline_block:card'
+  - 'inline_block:cta'
+  - 'inline_block:text'
+layout_restrictions:
+  - layout_onecol
+  - layout_twocol_section
+  - layout_threecol_section
+  - layout_fourcol_section

@@ -1,0 +1,6 @@
+name: Mandiant Main Installation Profile
+description: Installation profile for Mandiant starter site.
+type: profile
+core_version_requirement: ^8.9 || ^9
+
+config_install: true

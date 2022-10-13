@@ -1,0 +1,13 @@
+uuid: 3fbc0f93-ab59-4822-9055-883ec7b10106
+langcode: en
+status: true
+dependencies: {  }
+id: margin_bottom_70px_
+label: 'Margin bottom (70px)'
+classes: margin-b-7
+type: component
+group: modifiers_style
+weight: 0
+block_restrictions:
+  - 'inline_block:text'
+layout_restrictions: {  }

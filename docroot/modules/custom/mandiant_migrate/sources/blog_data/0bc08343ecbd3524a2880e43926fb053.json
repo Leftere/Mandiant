@@ -1,0 +1,61 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Mon Jun 28 2021 17:58:56 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Lighten the Load With XDR for Better Threat Detection",
+    "jcr:versionHistory": "2263b320-f335-49bd-aafc-f4c0ead2f885",
+    "author": "Dan Lamorena",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "6cd6d0a9-d10e-4019-8e27-394ad2a5dcf8"
+    ],
+    "jcr:created": "Tue Jun 29 2021 16:19:45 GMT+0000",
+    "cq:lastModified": "Tue Jun 29 2021 16:17:47 GMT+0000",
+    "jcr:baseVersion": "6cd6d0a9-d10e-4019-8e27-394ad2a5dcf8",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:dan-lamorena",
+      "fireeye-blog-products-and-services:products-and-services",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:xdr",
+      "fireeye-blog-tags:threat-intelligence",
+      "fireeye-blog-tags:siem"
+    ],
+    "jcr:uuid": "3deffb6d-82f0-40e4-8795-9f67f30b038e",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Mon Jun 28 2021 14:00:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EAlert fatigue is real. Think about this: How much time do your security analysts spend chasing false alerts or maintaining security controls? How much time do you spend training new security team members only to have them burn out quickly from the vital, yet mundane tasks of monitoring the network for threats? How often do they move on to another job, leaving you to repeat the hiring and training cycle all over again? Throwing people at the tidal wave of data to investigate an alert before it becomes an incident is not a feasible solution.\u003C\/p\u003E\n\u003Cp\u003EMany security operations centers (SOC) already contain a threat intelligence solution, a SIEM, and possibly a SOAR. They\u2019ve got some of the tools, so how can they ensure they are able to stay on top of threats?\u003C\/p\u003E\n\u003Ch4\u003EBring It Together Faster With XDR\u003C\/h4\u003E\n\u003Cp\u003EThreat intelligence is more important than ever. Applying threat intelligence requires having the right context regarding the risks facing your organization. SIEMs and SOARs have under-delivered. These SOC tools collect logs and data, but the promise of using them to find evil in environments has remained unfulfilled. This is due largely to the extensive security engineering required to get the most out of them.\u003C\/p\u003E\n\u003Cp\u003EXDR is a hot topic in security operations and for good reason. XDR solutions promise deeper integration with security controls and data to improve detection and response, are deployed in a user-friendly SaaS format, while reducing the pain of expensive and complex security engineering. XDR ultimately represents the opportunity to approach security operations in a better way.\u003C\/p\u003E\n\u003Cp\u003EGartner addresses XDR in their latest report, \u003Ci\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/automated-defense\/gartner-report-innovation-insight-for-extended-detection-and-response.html\u0022\u003EInnovation Insight for Extended Detection Response\u003C\/a\u003E\u003C\/i\u003E. The report contains various insights and highlights the need for XDR in the modern SOC.\u0026nbsp;\u003C\/p\u003E\n\u003Cp\u003EGartner\u2019s recommendations when considering the move to XDR:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003E\u201cWork with stakeholders to determine if any XDR strategy is right for an organization based on staffing and productivity levels, level of federation of IT, risk tolerance, and security budget. Develop a gap analysis between existing capabilities and those desired from an XDR solution.\u003C\/li\u003E\n\u003Cli\u003EConduct thorough product evaluation and testing to ensure outcomes meet the promises of this fledgling capability.\u003C\/li\u003E\n\u003Cli\u003EDevelop an internal architecture and purchasing policy that is in line with XDR strategy, including when and why exceptions might be permissible. Ensure that future security purchases and planned technology retirements are aligned with a long-term XDR architecture strategy.\u003C\/li\u003E\n\u003Cli\u003EOutsource to a managed security service provider (MSSP) that can build an XDR substitute if it is likely to be beyond the skill sets of existing staff.\u201d\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003ETo assess the need for an XDR solution, organizations need to determine the effectiveness of their existing security detection and response program. Consider the following questions:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EAre you satisfied with the effectiveness of your security control environment?\u003C\/li\u003E\n\u003Cli\u003EAre your SOC teams performing well?\u003C\/li\u003E\n\u003Cli\u003EAre they overworked or unhappy with the number of false positives they must manage?\u003C\/li\u003E\n\u003Cli\u003EAre they able to investigate all of the alerts and events generated from your security infrastructure?\u0026nbsp; \u0026nbsp;\u003C\/li\u003E\n\u003Cli\u003EHow burdened is your security engineering team?\u003C\/li\u003E\n\u003Cli\u003EAnd maybe most importantly, is the investment you\u2019ve put into these systems providing the outcomes you would expect?\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EThe importance of an XDR product evaluation and testing cannot be overstated. Proof of concepts for traditional SIEM solutions were extremely difficult and can be for many native XDR tools. Consider the following questions: Can the vendor stand up an environment using your own tools\/data? Do they require a rip and replace? Do they need a ton of professional services to deploy?\u003C\/p\u003E\n\u003Cp\u003EGartner also discusses the importance of aligning the proposed security architecture with future security purchases and planned technology retirements. This is vital for XDR as many require standardizing on a single vendor\u2019s toolset. This can be challenging as it may cause a highly disruptive technology changeover.\u003C\/p\u003E\n\u003Ch4\u003EThe Mandiant Approach\u003C\/h4\u003E\n\u003Cp\u003EMandiant\u2019s approach enables choice. We work with many of the leading endpoint and network security vendors, SIEMs and SOAR platforms. This means organizations can choose best-of-breed solutions that work best for them, and they don\u2019t have to rely on a single vendor or get locked into tools that they don\u2019t really like. We also enable organizations to measure the effectiveness of their existing controls and ensure they are configured properly. This means getting more out of existing investments and having the data to determine what future investments will have the best ROI.\u003C\/p\u003E\n\u003Cp\u003EWhether to outsource or not is an important decision for organizations. Finding and retaining top SOC talent\u2014particularly security engineering\u2014is difficult. Mandiant is working on solutions that work with the tools organizations have, but eliminate the need for rule writing, content creation and playbook development. Instead, we provide pre-built data science models designed to investigate the way a Mandiant expert does, but operating at machine speed and fortified with timely, relevant threat intelligence. And, if teams do need help, Mandiant managed services are there on-demand or to provide a fully managed threat detection and response solution.\u003C\/p\u003E\n\u003Cp\u003ERead the \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/automated-defense\/gartner-report-innovation-insight-for-extended-detection-and-response.html\u0022\u003EGartner report today\u003C\/a\u003E, it\u2019s well worth it. And if you want to learn more about the \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/threat-intelligence.html\u0022\u003EMandiant Advantage\u003C\/a\u003E platform, schedule some time with us.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Tue Jun 29 2021 16:17:47 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EGartner addresses XDR in their latest report, which\u0026nbsp;contains various insights and highlights the need for XDR in the modern SOC.\u0026nbsp;\u003C\/p\u003E\n",
+      "jcr:lastModified": "Mon Jun 28 2021 17:04:45 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Mon Jun 28 2021 17:58:49 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

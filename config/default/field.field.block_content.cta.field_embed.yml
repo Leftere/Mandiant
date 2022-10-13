@@ -1,0 +1,26 @@
+uuid: d1446024-ecd8-4c30-8648-f1f1a4db2859
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cta
+    - field.storage.block_content.field_embed
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    plain_text: plain_text
+    basic_html: '0'
+id: block_content.cta.field_embed
+field_name: field_embed
+entity_type: block_content
+bundle: cta
+label: Embed
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

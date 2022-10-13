@@ -1,0 +1,139 @@
+/* Gin theme global tweaks and fixes */
+.glb-form-wrapper {
+  .description,
+  .field--name-field-cta > fieldset > legend,
+  .field--name-field-media > fieldset > legend {
+    display: none;
+  }
+  .field--type-link fieldset .glb-fieldset-wrapper {
+    display: flex;
+    gap: 21px;
+  }
+  .form-item-layout-builder-style {
+    margin-top: -20px !important;
+    padding-left: 21px;
+    padding-right: 23px;
+  }
+}
+
+/* Adjusts appearance of Chosen to gin theme */
+.chosen-container {
+  &.form-element.chosen-container-single,
+  &.form-element.chosen-container-multi {
+    width: 100% !important;
+  }
+
+  &.chosen-container-single {
+    .chosen-single {
+      color: inherit;
+      background: transparent;
+      border: none;
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+
+      > div {
+        display: none;
+      }
+    }
+  }
+
+  &.chosen-container-multi {
+    .chosen-choices {
+      li.search-choice {
+        background: transparent;
+        color: inherit;
+        border: none;
+        box-shadow: inset 0 0 0 1px var(--colorGinText);
+      }
+    }
+  }
+
+  .chosen-drop {
+    color: inherit;
+    background: inherit;
+    top: 95%;
+    left: 0;
+    right: 0;
+    border: 0;
+
+    .chosen-results {
+      .result-selected {
+        display: none;
+      }
+
+      li.active-result {
+        color: var(--colorGinText);
+        background-color: var(--colorGinLayer2Background);
+        border: none;
+      }
+
+      li.highlighted {
+        background-color: var(--colorGinPrimaryHover);
+        background-image: none;
+        color: var(--colorGinLayer2Background);
+      }
+    }
+  }
+}
+
+/* Theming custom field group for Layout and Style fields */
+.horizontal-tabs {
+  margin-top: 0;
+}
+
+/* Make field links compact */
+.field--type-link {
+  fieldset:not(.fieldgroup) {
+    padding-top: 0;
+    border: 0;
+    legend {
+      display: none;
+    }
+    legend+div {
+      display: flex;
+      margin: 0;
+      & > div {
+        flex-grow: 1;
+        margin: 0 !important;
+
+        input {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.field-multiple-table {
+  margin-top: 2.5rem !important;
+  margin-bottom: 2.5rem !important;
+
+  .glb-form-item {
+    margin: 0 !important;
+  }
+}
+
+.pretty-element {
+  label {
+    color: var(--colorGinButtonText) !important;
+    background: var(--colorGinPrimary) !important;
+    border: 0;
+    -webkit-box-shadow: 0 2px 18px var(--colorGinButtonShadow);
+    box-shadow: 0 2px 18px var(--colorGinButtonShadow);
+    padding: calc(1rem - 2px) calc(1.5rem - 2px);
+    cursor: pointer;
+    opacity: 0.65;
+  }
+  input:checked + label {
+    background: var(--colorGinPrimaryHover) !important;
+    opacity: 1;
+  }
+}
+
+.field--widget-autocomplete-deluxe {
+  .autocomplete-deluxe-container {
+    background-color: transparent;
+    background: none;
+  }
+}

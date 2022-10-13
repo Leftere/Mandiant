@@ -1,0 +1,45 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 4e14aee1-27de-4599-b9a5-17d64a8c9c96
+  bundle: cta
+  default_langcode: en
+  depends:
+    76142c52-522d-4fd1-aa68-da16dde771e8: user
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Inline block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      entity: 76142c52-522d-4fd1-aa68-da16dde771e8
+  content_translation_created:
+    -
+      value: 1626981516
+  field_body:
+    -
+      value: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id enim sem. Aliquam ut felis nec eros lacinia mattis non eget nunc. Sed sit amet fringilla odio. In nulla magna, laoreet ut massa quis, dictum faucibus nunc. Sed mollis odio ac lorem lacinia, eget fringilla ante facilisis. Morbi laoreet finibus velit, sit amet rhoncus nisl sollicitudin vitae. Fusce neque leo, dapibus vel vehicula sit amet, tempor in est.</p>\r\n"
+      format: basic_html
+  field_cta:
+    -
+      uri: 'internal:#'
+      title: 'Learn More'
+      options: {  }
+  field_title:
+    -
+      value: 'Example for CTA - FORM (dark)'

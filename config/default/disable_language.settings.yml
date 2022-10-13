@@ -1,0 +1,10 @@
+redirect_override_routes:
+  0: user.login
+  2: user.reset.login
+  4: entity.user.edit_form
+exclude_request_path:
+  id: request_path
+  pages: '/user/*'
+  negate: false
+_core:
+  default_config_hash: 6zW_rU8a954fIICyUPwbzqTIo1LijBemdAEjafOYQ2s

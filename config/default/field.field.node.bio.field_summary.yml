@@ -1,0 +1,19 @@
+uuid: 20b40760-3333-42e3-8439-457fdf44feff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.bio
+id: node.bio.field_summary
+field_name: field_summary
+entity_type: node
+bundle: bio
+label: Summary
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

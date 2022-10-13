@@ -1,0 +1,61 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "fireeye_global_admin",
+  "jcr:created": "Sat Sep 28 2019 00:00:04 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "fireeye_global_admin",
+    "jcr:title": "2019 Flare-On Challenge Solutions",
+    "jcr:versionHistory": "55d523a3-6217-466e-8efc-c89a045eb207",
+    "author": "Nick Harbour",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "295db4f9-dec7-42f0-be25-2ed309dbb666"
+    ],
+    "jcr:created": "Sat Sep 28 2019 00:00:04 GMT+0000",
+    "cq:lastModified": "Fri Sep 27 2019 23:13:34 GMT+0000",
+    "jcr:baseVersion": "295db4f9-dec7-42f0-be25-2ed309dbb666",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:cap-nick-harbour",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:FLARE",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:malware-analysis",
+      "fireeye-blog-tags:reverse-engineering"
+    ],
+    "jcr:uuid": "bdd42784-1ad3-4aaa-908e-deea40e09292",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Fri Sep 27 2019 20:00:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EWe are pleased to announce the conclusion of the sixth annual Flare-On Challenge. The popularity of this event continues to grow and this year we saw a record number of players as well as finishers. We will break down the numbers later in the post, but right now let\u2019s look at the fun stuff: the prize! Each of the 308 dedicated and amazing players that finished our marathon of reverse engineering this year will receive a medal. These hard-earned awards will be shipping soon. Incidentally, the number of finishers smashed our estimates, so we have had to order more prizes.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/flareon2019\/flareon2019medal.png\u0022 alt=\u0022\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003EWe would like to thank the challenge authors individually for their great puzzles and solutions.\u003C\/p\u003E\n\u003Col\u003E\n\u003Cli\u003EMemecat Battlestation: Nick Harbour (@nickaharbour)\u003C\/li\u003E\n\u003Cli\u003EOverlong: Eamon Walsh\u003C\/li\u003E\n\u003Cli\u003EFlareBear: Mortiz Raabe (@m_r_tz)\u003C\/li\u003E\n\u003Cli\u003EDnsChess: Eamon Walsh\u003C\/li\u003E\n\u003Cli\u003E4k demo: Christopher Gardner (@t00manybananas)\u003C\/li\u003E\n\u003Cli\u003EBmphide: Tyler Dean (@spresec)\u003C\/li\u003E\n\u003Cli\u003EWopr: Sandor Nemes (@sandornemes)\u003C\/li\u003E\n\u003Cli\u003ESnake: Alex Rich (@AlexRRich)\u003C\/li\u003E\n\u003Cli\u003EReloaderd: Sebastian Vogl\u003C\/li\u003E\n\u003Cli\u003EMugatuWare: Blaine Stancill (@MalwareMechanic)\u003C\/li\u003E\n\u003Cli\u003Evv_max: Dhanesh Kizhakkinan (@dhanesh_k)\u003C\/li\u003E\n\u003Cli\u003Ehelp: Ryan Warns (@NOPAndRoll)\u003C\/li\u003E\n\u003C\/ol\u003E\n\u003Cp\u003EAnd now for the stats. As of 10:00am ET, participation was at an all-time high, with 5,790 players registered and 3,228 finishing at least one challenge. This year had the most finishers ever with 308 players completing all twelve challenges.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/flareon2019\/FlareOn6_by_challenge.png\u0022 alt=\u0022\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003EThe U.S. reclaimed the top spot of total finishers with 29. Singapore strengthened its already unbelievable position of per-capita top Flare-On finishing country with one Flare-On finisher per every 224,000 persons living in Singapore. Rounding out the top five are the consistent high-finishing countries of Vietnam, Russia, and China.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/flareon2019\/FlareOn6_by_country.png\u0022 alt=\u0022\u0022\u003E\u0026nbsp;\u003C\/p\u003E\n\u003Cp\u003EAll the binaries from this year\u2019s challenge are now posted on the \u003Ca href=\u0022http:\/\/flare-on.com\/files\/Flare-On6_Challenges.zip\u0022\u003EFlare-On website\u003C\/a\u003E. Here are the solutions written by each challenge author:\u003C\/p\u003E\n\u003Col\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/FlareOn6_Challenge1_Solution_MemecatBattlestation.pdf\u0022\u003ESOLUTION #1\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/FlareOn6_Challenge2_Solution_Overlong.pdf\u0022\u003ESOLUTION #2\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/FlareOn6_Challenge3_Solution_FlareBear.pdf\u0022\u003ESOLUTION #3\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/FlareOn6_Challenge4_Solution_DnsChess.pdf\u0022\u003ESOLUTION #4\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/FlareOn6_Challenge5_Solution_4k.pdf\u0022\u003ESOLUTION #5\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/FlareOn6_Challenge6_Solution_BMPHIDE.pdf\u0022\u003ESOLUTION #6\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/FlareOn6_Challenge7_Solution_WOPR.pdf\u0022\u003ESOLUTION #7\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/FlareOn6_Challenge8_Solution_SNAKE.pdf\u0022\u003ESOLUTION #8\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/FlareOn6_Challenge9_Solution_RELOADERED.pdf\u0022\u003ESOLUTION #9\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/FlareOn6_Challenge10_Solution_Mugatu.pdf\u0022\u003ESOLUTION #10\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/FlareOn6_Challenge11_Solution_vv_max.pdf\u0022\u003ESOLUTION #11\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/FlareOn6_Challenge12_Solution_help.pdf\u0022\u003ESOLUTION #12\u003C\/a\u003E\u003C\/li\u003E\n\u003C\/ol\u003E\n",
+        "jcr:lastModified": "Fri Sep 27 2019 15:17:49 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EThe 2019 Flare-On challenge is over, now come check out the solutions and stats.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Fri Sep 27 2019 15:18:57 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Fri Sep 27 2019 23:13:34 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

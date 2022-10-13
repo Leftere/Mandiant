@@ -1,0 +1,64 @@
+# Application 'mandiant', environment 'dev'.
+dev:
+  root: /var/www/html/mandiant.dev/docroot
+  ac-site: mandiant
+  ac-env: dev
+  ac-realm: prod
+  uri: mandiantdev.prod.acquia-sites.com
+  dev.livedev:
+    parent: '@mandiant.dev'
+    root: /mnt/gfs/mandiant.dev/livedev/docroot
+  host: mandiantdev.ssh.prod.acquia-sites.com
+  user: mandiant.dev
+  paths:
+    drush-script: drush9
+
+
+# Application 'mandiant', environment 'prod'.
+prod:
+  root: /var/www/html/mandiant.prod/docroot
+  ac-site: mandiant
+  ac-env: prod
+  ac-realm: prod
+  uri: mandiant.prod.acquia-sites.com
+  prod.livedev:
+    parent: '@mandiant.prod'
+    root: /mnt/gfs/mandiant.prod/livedev/docroot
+  host: mandiant.ssh.prod.acquia-sites.com
+  user: mandiant.prod
+  paths:
+    drush-script: drush9
+
+
+# Application 'mandiant', environment 'ra'.
+ra:
+  root: /var/www/html/mandiant.ra/docroot
+  ac-site: mandiant
+  ac-env: ra
+  ac-realm: prod
+  uri: mandiantra.prod.acquia-sites.com
+  ra.livedev:
+    parent: '@mandiant.ra'
+    root: /mnt/gfs/mandiant.ra/livedev/docroot
+  host: mandiantra.ssh.prod.acquia-sites.com
+  user: mandiant.ra
+  paths:
+    drush-script: drush9
+
+
+# Application 'mandiant', environment 'test'.
+test:
+  root: /var/www/html/mandiant.test/docroot
+  ac-site: mandiant
+  ac-env: test
+  ac-realm: prod
+  uri: mandiantstg.prod.acquia-sites.com
+  test.livedev:
+    parent: '@mandiant.test'
+    root: /mnt/gfs/mandiant.test/livedev/docroot
+  host: mandiantstg.ssh.prod.acquia-sites.com
+  user: mandiant.test
+  paths:
+    drush-script: drush9
+
+

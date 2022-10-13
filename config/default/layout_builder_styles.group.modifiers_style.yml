@@ -1,0 +1,10 @@
+uuid: 98ca2e46-5217-4c9b-8f8b-9bf4b5443325
+langcode: en
+status: true
+dependencies: {  }
+id: modifiers_style
+label: 'Style modifiers'
+multiselect: multiple
+form_type: checkboxes
+required: 0
+weight: 0

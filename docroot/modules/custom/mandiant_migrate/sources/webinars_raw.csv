@@ -1,0 +1,420 @@
+Title,Description,DATE,URL REDIRECT,Presented By,BrightTalk URL,Has this been migrated?,Stage Site URL,Migration clean up completed?,Who,Date,asdfa,Type,Topic,Product/Service,Industry,Taxonomy added?,ID
+2020 Mandiant Security Effectiveness Report Findings,"Join our webinar to understand why a majority of tested attacks successfully infiltrate enterprise environments without detection – and why security validation is so critical.
+
+The Mandiant Security Effectiveness Report 2020 takes a deep dive look into cybersecurity performance across network, email, endpoint, and cloud-based security controls – and confirms the prevailing concern: security controls are not performing as expected. Alarmingly, thousands of tests performed by experts from the Mandiant Security Validation (previously known as Verodin) team show that for 53% of the environments tested, attacks were successful in bypassing controls without knowledge. This points to the need for continuous validation of security effectiveness based on four fundamental components.
+
+Register for our upcoming webinar to learn about the fundamentals of security validation and gain the knowledge to answer questions such as:
+
+- Do I have confidence in the effectiveness of my security controls?
+- Can I quickly assess the relevance of threat intelligence or exposure to the latest attack?
+- Am I stopping data leakage and protecting data integrity?
+- How can I simplify and standardize my security stack?
+- Do I have evidence to support communicating key metrics to executives?",5/19/2020,No,Matt Hartley## SVP Mandiant Strategy for FireEye Mandiant || Devon Goforth ##Sr Dir Security Instrumentation for FireEye Mandiant,https://www.brighttalk.com/webcast/10469/405971?utm_source=brighttalk-portal&utm_medium=web&utm_content=2020%20Mandiant%20Security%20Effectiveness%20Report%20Findings&utm_term=search-result-1&utm_campaign=webcasts-search-results-feed,No,,No,,,,Webinar,"Security Strategy, Security Validation", ,General,No,1
+A Global Reset: Cyber Security Predictions 2021,"The year 2020 has been an unprecedented time of change and has shaped up in a way that nobody could have expected. This year’s activities continue to alter the future course of cyber security, making it even more important to ensure that we better prepare ourselves for what’s to come.
+Join us as we share cyber trends and challenges that we can expect in 2021. During the webinar, Jamie Collier, EMEA Mandiant Threat Intelligence Consultant, will cover various topics discussed in our latest report, A Global Reset: Predictions for the Future Cyber Security, including:
+
+•The evolution of remote work and the operational impact
+•The growing need for intelligence-led security validation
+•The future state of cloud security
+•Nation-state activity and changing TTPs
+•How ransomware has pivoted from business risk to national security risk.",1/21/2021,No,"Jamie Collier##Cyber Threat Intelligence Consultant, FireEye Mandiant",https://www.brighttalk.com/webcast/10703/462545,No,,No,,,,Webinar,"Trends, COVID, Nation State, TTPs",Threat Intelligence,General,No,2
+"Closing the Backdoor: Reverse Engineering SUNBURST
+","At the end of 2020, FireEye revealed the details of a sophisticated threat actor that took advantage of SolarWinds’ Orion Platform to orchestrate a wide-scale supply chain attack and deploy a backdoor we call SUNBURST.
+
+This attack impacted organizations worldwide, leading executives everywhere to question whether their environment fell victim. Discovering, sharing, and shutting down access to the SUNBURST backdoor, which allowed attackers to move freely and spy on victims, required the unique expertise of Mandiant’s Frontline Applied Research and Expertise (FLARE) team. And for Mandiant Managed Defense, the identification of victims started well before the public became aware of the SUNBURST campaign.
+
+Join Mandiant experts for a retelling of the SUNBURST discovery story and a look inside how they addressed the SUNBURST threat with customers, including stories from the front lines of this customer-focused response. Our experts will also highlight:
+
+• How this prolific cyber-attack changes the way we view security
+• SUNBURST threat actor TTPs and how Mandiant hunts for the most relevant, and dangerous threats
+• What threat hunting techniques should be deployed to find today’s stealthiest attackers",4/5/2021,no,Mandiant FLARE Experts,https://www.brighttalk.com/webcast/7451/476259,No,,No,,,,Webinar,"MTrends, Ransomware, SUNBURST, UNC", ,General,No,3
+Considerations for Evolving to Intelligence-Led Security,"An intelligence-led security posture and program recognizes that cyber threat intelligence has the potential to help keep organizations ahead of adversaries. The challenge is how to effectively and repeatedly make proper use of the intelligence that organizations collect and consume. Ultimately, organizations need to be able to understand the return on their threat intelligence investments.
+
+Mandiant Threat Intelligence experts Gina Hill and Duke McDonald present an in-depth explanation of what it means to be intelligence-led, how organizations should seek to increase intelligence maturity and capability, and how to get started on this journey.
+
+Join this session to learn:
+• The definition, characteristics and caveats of an intelligence-led security approach
+• Things to consider when assessing and evolving intelligence maturity
+• The importance of frameworks when assessing, measuring and executing on your strategy",4/24/2021,No,"Gina Hill## Principle Consultant, Mandiant || Duke McDonald## Consultant, Mandiant
+",https://www.brighttalk.com/webcast/7451/482550?utm_source=brighttalk-portal&utm_medium=web&utm_content=Considerations%20for%20Evolving%20to%20Intelligence-Led%20Security&utm_term=search-result-1&utm_campaign=webcasts-search-results-feed,No,,No,,,,Webinar,"Intelligence-Led Security, Security Strategy", ,General,No,4
+Fear of Missing Incidents – The Battle for Security Analysts,"The cybersecurity community is no stranger to alert fatigue and security analyst burnout resulting from the large volume of security sensor data. In the recent IDC InfoBrief “The Voice of the Analysts: Improving Security Operations Center Processes Through Adapted Technologies,” 350 internal and managed security service provider security analysts and managers shared their perspectives of the frontline SOC work.
+
+The Reality of the Frontline SOC:
+· False positives create alert fatigue for security analysts, impacting SOC effectiveness
+· Fear of missing incidents (FOMI) negatively impacts job satisfaction for security analysts and managers
+· Security analysts need advanced automation solutions and back up of experienced frontline defenders to reduce alert fatigue and increase effectiveness
+
+Join Chris Triolo, VP of Customer Success, FireEye and Daniel Slack, Director of Mandiant Managed Defense, for a timely discussion on the reality of frontline SOC work. Chris and Daniel will share real-world examples from their experiences in the SOC while analyzing the results from the IDC InfoBrief.",3/25/2020,No,"Chris Triolo## VP of Customer Success, FireEye || Daniel Slack## Director of Mandiant Managed Defense",https://www.brighttalk.com/webcast/7451/469809,No,,No,,,,Webinar,"Alert Fatigue, SOC",Automated Defense,General,No,5
+How to Resolve the Cyber Skills Gap,"There is a very prevalent human factor to the success of cyber security; behind the technology lies a team of professionals with a range of technical and specialist skills used to implement defense and proactive hunting strategies. While technology has a big part to play in the war against cyber attacks, it is the human element which is both the catalyst for attack and defense.
+
+There are an estimated 3.5 million unfilled cyber security positions forecasted for 2021 and research suggests it’s only getting worse. Security leaders must spend far too much time finding, hiring and retaining staff. When leaders cannot find appropriately skilled talent, they are often forced to hire junior employees. Less experienced and untested staff can dramatically increase the risk of a cyber breach.
+
+Join this webinar as our executives discuss the cyber security skills crisis in line with the evolving threat landscape and near- and longer-term options to mitigate the risk of a security breach.",1/22/2020,No,"Kevin Taylor ## Senior VP EMEA|| Mike Trevett ## Director, Professional Services, UKI|| Simon Moor## VP, NEUR
+",https://www.brighttalk.com/webcast/7451/382827,No,,No,,,,Webinar,"Skills Gap, Cyber Security Careers", ,General,No,6
+Light in the Dark: Hunting for SUNBURST,"In December 2020, FireEye revealed the details of a sophisticated threat actor that took advantage of SolarWinds’ Orion Platform to orchestrate a wide-scale supply chain attack and deploy a backdoor we call SUNBURST.
+
+This attack impacted organizations worldwide, leading executives everywhere to question whether their environment fell victim. For Mandiant Managed Defense, the identification of victims started even before the public became aware of the SUNBURST campaign.
+
+Join Matt Bromiley, Principal Consultant, Mandiant Managed Defense and Andrew Rector, Sr. Principal Consultant, Mandiant Managed Defense, for a first-ever look inside how Mandiant addressed the SUNBURST threat with customers, including stories from the front lines of this customer-focused response. Our experts will also highlight:
+
+• How this prolific cyber attack changes the way we view security
+• SUNBURST threat actor TTPs and how Mandiant hunts for the most relevant, and dangerous threats
+• What threat hunting techniques should be deployed to find today’s stealthiest attackers",2/25/2021,No,"Matt Bromiley ##Principal Consultant, Managed Defense|| Andrew Rector ##Sr. Principal Security Analyst, Managed Defense",https://www.brighttalk.com/webcast/7451/469525,No,,No,,,,Webinar,"Sunburst, Supply Chain, backdoor",Managed Defense,General,No,7
+Mandiant Front Lines: The Latest on Exchange Exploits,"Last week, the public learned of multiple vulnerabilities that impacted Microsoft Exchange Server. Since then, many have come to realize that these attacks potentially impacted tens of thousands of organizations—many of whom may be unsure where to begin. Regardless of your organization’s size, industry, or locale, there are steps that you can take to identify if Exchange exploitation in your environment.
+
+In this episode of Mandiant Front Lines, we address the following questions:
+- What’s happening with this attack?
+- What do we know about the threat actors so far?
+- How does this attack impact my organization?
+- What can—and should—I do right now?
+
+Join us to discuss these attacks on Microsoft Exchange servers. Our goal in this episode is for you to walk away with concrete next steps to assess your environment.",3/17/2020,No,"Matthew Bromiley## Senior Consultant|| Mandiant Chris DiGiamo## Sr. Tech Director, Mandiant",https://www.brighttalk.com/webcast/7451/475010,No,,No,,,,Webinar,"Microsoft, TTPS, Vulnerabilities", ,General,No,8
+Mandiant's Perspective on the Threat Actors in Europe,"This presentation will cover five major threat actors which Mandiant Consulting has seen during intrusions that it responded to in Europe. War stories, as well as unique techniques and malware used by the attackers will be covered by an incident response consultant who has worked on all of the engagements.",9/22/2020,No,"Adrien Bataille## Senior Consultant, Mandiant",https://www.brighttalk.com/webcast/10703/438765,No,,No,,,,Webinar,"TTPs, Threat Actors, Europe", ,General,No,9
+Modern Cyber Risk Management for Better Decision Making,"Most C-suite leaders believe their investment decisions in security risk management is not keeping up with the new and heightened levels of cyber risks. This is often due to their use of the decade old, top-down approach in leveraging risk models, which leaves gaps between attacker and defender behaviors.
+
+Transformation of your risk management processes, plus the people behind them, can solve for this.
+
+Aligning your organization’s security efforts with the risk appetite of data owners and business leaders must become a priority.
+
+This webinar spotlights a transformational model that operationalizes security risk management to improve and optimize decision making by:
+
+•Identifying challenges in your current cyber risk management program
+•Establishing a modern cyber risk management strategy
+•Shifting the players and processes involved in your cybersecurity decision support
+•Integrating risk management priorities across the entire security function
+•Monitoring progress with the right kind of security metrics
+
+Join Matt Keane, Principal Consultant at FireEye Mandiant, for his expertise on transforming your security risk management approach by bridging the gap between vital security teams and improving their decision making.",4/11/2021,No,Matt Keane## Principal Consultant at FireEye Mandiant|| Jennifer Guzzetta## Product Marketing Manager at FireEye Mandiant,https://www.brighttalk.com/webcast/7451/402285,No,,No,,,,Webinar,"C-Suite, Risk", ,General,No,10
+M-Trends 2020: Insights into Today’s Cyber Attacks,"Protect your organization against today’s most dangerous attackers.
+
+Explore the latest developments behind today’s attacker techniques, behaviors, and motivations sourced from the M-Trends 2020 Report - our annual publication based on FireEye Mandiant’s frontline investigations of the most interesting and impactful cyber attacks in 2019.
+
+Join us for this webinar on Thursday, March 12th at 8 a.m. PT/11 a.m. ET, as FireEye Mandiant experts discuss highlights and case studies from this year’s edition, including:
+• Global perspectives on trending attacks and how to combat them
+• Details on the most active attack groups in 2019
+• Malware family trends
+• The rise of malicious insiders
+• Insights from cloud investigations, along with common weaknesses and best practices
+• Case studies with practical security lessons",3/12/2020,No,"Nick Bennett## Managing Director, FireEye Mandiant|| Jon Ford##Director, FireEye Mandiant|| Steven Stone## Director, FireEye",https://www.brighttalk.com/webcast/7451/384866,No,,No,,,,Webinar,"MTrends, Malware, Insider Threats", ,General,No,11
+Operationalizing Cyber Threat Intel,"Operationalizing Cyber Threat Intelligence (CTI) helps mitigate risk by focusing people, processes, and technology on the threat activity matters. Above all, it allows organizations to take a more proactive, structured, and holistic approach to security that reduces dwell time and shortens the time frame from identification to fix. In today's dynamic threat environment, it is critical to boosting your overall cyber security return on investment.
+
+Join us as we look specifically at how cyber threat intelligence can help improve computer network defense (CND) operations. Our experts will share:
+
+• A case study, that will examine the intelligence tied to recent Iranian geopolitical events and demonstrate how operators can pivot from intelligence reporting to high confidence alerting and targeted threat hunting
+• FireEye’s Iranian relevant threat intelligence along with the MITRE ATT&CK framework to help decision makers improve their overall network security posture by prioritizing security investments based on adversary capabilities
+• How intelligence enhances your overall cyber security investment and places your operations ahead of the threat
+• Methods for automating vulnerability management and patch prioritization by correlating intelligence to vulnerability scan data",2/10/2020,No,"Shanyn Ronis## Manager, FireEye Threat Intelligence Services|| Katie Bowen## Threat Analyst, FireEye",https://www.brighttalk.com/webcast/7451/383634,No,,No,,,,Webinar,"Threat Intelligence, Computer Network Defense ", ,General,No,12
+Perpsecitve on Iranian Attacks & Practical Mitigations,"FireEye's Perspective on Iranian Attacks and Practical Mitigations
+Make Better-Informed Decisions and Protect Your Organization
+
+The recent tension between Iran and the U.S. has increased the likelihood of Iranian action against U.S. and Gulf entities. While the exact nature, timing, and targets of any response from Iran is uncertain, FireEye Threat Intelligence analysts assess with moderate confidence that it will include a cyber component.
+
+Watch this complimentary on-demand webinar, as Ben Read, Sr. Manager, Cyber Espionage Analysis provides:
+•An overview of FireEye’s perspective on the current threat landscape from Iran
+•Tactics recently employed by Iranian groups like APT33, APT34 and others
+•Recommended mitigations to protect your organization from these groups",1/13/2021,No,"Benjamin Read## Senior Manager, Cyber Espionage Analysis, FireEye",https://www.brighttalk.com/webcast/7451/382779,No,,No,,,,Webinar,"Nationstates, Geopolitics, Iran, APT33, APT34", ,General,No,13
+Proactive Solutions to Stop Modern Ransomware in its Tracks,"Ransomware is one of the most active and profound cyber threats facing organizations today. Years after Wannacry attacks shuttered businesses across the globe, stealthy ransomware infections continuously dominate headlines and board discussions. Attackers have developed advanced techniques that now require organizations to apply a holistic security risk mitigation strategy from the C-suite to practitioners.
+
+This webinar brings together Mandiant incident response, threat intelligence and managed detection and response experts to discuss strategic and tactical solutions that will help your organization:
+
+• Learn modern ransomware trends and attacker behaviors observed on the frontlines
+• Realize why proactive assessment is critical when preparing for and preventing ransomware
+• Understand how threat intelligence, hunting, and response provides the decision support and detection needed to outmaneuver ransomware actors
+• Implement effective mitigation strategies to stop ransomware attackers in their tracks
+
+Register today to join Nader Zaveri – Incident Response Manager, Matt Bromiley – Managed Defense Principal Consultant, and Kimberly Goody – Threat Intelligence Senior Manager, as they provide expert insights on modern-day ransomware attacks and how best to mitigate them.",6/9/2020,No,"Nader Zaveri## IR Mgr|| Matt Bromiley## Principal Consultant|| Kimberly Goody## Sr. Mgr., Threat Intelligence
+",https://www.brighttalk.com/webcast/7451/403414,No,,No,,,,Webinar,"Ransomware, ", ,General,No,14
+"Proving Security Effectiveness to Your CISO, CFO and Board","Investments in cyber security have rapidly increased in recent years, yet high-profile breaches continue to make headlines, and the economic and financial losses stemming from these breaches continue to grow. Combined with economic pressures and extensive remote workforces, CISOs and CFOs must now work together to understand where to cut spending without adding risk. But without proper security validation and assessment tools that can credibly quantify risks in dollar terms, this becomes an impossible task.
+
+Attend this webinar to:
+
+• Learn how to fully validate your organization’s cyber health and measure its impact on the company’s financial posture and market performance Determine your organization’s risk profile, the financial impact of cyber performance and communicate about risk in dollar-based terms
+• Discover how mismanagement, underutilization and duplication of security controls drive up costs that increase as they flow through the organization
+• Learn how a bottom-up approach to security validation combined with a top-down market-validated risk assessment increases ROI of your security investments
+
+Expert Speakers:
+Earl Matthews, Maj Gen, (Ret), Vice President of Strategy, Mandiant Security Validation
+Ryan Dodd, Founder and CEO, Cyberhedge",2/11/2021,No,"Earl Matthews## Maj Gen, (Ret), VP of Strategy, Mandiant Security Validation|| Ryan Dodd## Founder and CEO, Cyberhedge",https://www.brighttalk.com/webcast/7451/462716,No,,No,,,,Webinar,"Cyber Health, Risk, ROI",Security Validation,General,No,15
+Ransomware - Not Just a Technical Issue,"Ransomware is a growing issue across the world, with the number of attacks and ransom values increasing. In this session we will outline our approach to advising some of the world’s biggest companies on this issue.
+
+The session will be delivered by Stuart McKenzie the Senior Vice President of Mandiant Consulting, EMEA who advises organization on threat, response, remediation and recovery from cyber threats.
+
+During this presentation, attendees will hear about:
+• The latest ransomware threats
+• Threat actor tactics
+• Ways to use this intelligence to defend your organization",1/20/2021,No,"Stuart McKenzie## Senior Vice President of Mandiant Consulting, EMEA",https://www.brighttalk.com/webcast/10703/463694,No,,No,,,,Webinar,"Ransomware, Incident Response, Threat Intelligence", ,General,No,16
+Ransomware Trends with a Focus on MAZE,"Ransomware threat actors are upping their game along with their ransom demands, which are climbing into millions of dollars. Large organizations with significant security controls in place are still falling prey to the attackers' tactics. This session examines how ransomware has evolved, and more importantly, what you can do about it. Come learn how to can gain some control your next ransomware experience.",6/9/2020,No,"Steve Ledzian## VP, CTO - APAC, FireEye",https://www.brighttalk.com/webcast/10469/409323,No,,No,,,,Webinar,"Ransomware, Threat Actors, Threat Intelligence", ,General,No,17
+Ransomware: Attackers' top choice for cyber extortion,"Ransomware is one of the most active and profound threats facing organizations today across all industries and sizes. Years after WannaCry attacks impacted businesses across the globe, stealthy ransomware infections continue to dominate headlines and board discussions. The impact of a successful ransomware deployment includes both technical and non-technical challenges and can be crippling to an organization’s operations.
+
+Join our live Panel session where Stuart McKenzie, Senior Vice President of Mandiant Consulting, EMEA and David Grout, EMEA CTO, will be discussing business imperatives including:
+•Board awareness of the impact of ransomware
+•Direct and indirect financial implications for organizations
+•How best to alert, inform and brief the board?
+•The role of senior IT leaders and how traditional Ransomware approaches are no longer effective",3/4/2021,No,"Stuart McKenzie ## Senior Vice President of Mandiant Consulting, EMEA, ||David Grout ## EMEA CTO, FireEye",https://www.brighttalk.com/webcast/10703/470587,No,,No,,,,Webinar,"Ransomware, Boardroom, Business Risk", ,General,No,18
+Respond to the Alerts that Matter with Free Expert Ratings from Mandiant,"30-minute demo on how to get threat actor insights and instant value from Mandiant Advantage
+
+Time is of essence, especially when it comes to responding to alerts. Unfortunately, there are often too many and picking the right one to investigate and respond to takes time and expertise.
+
+Join us in this session where our specialist Tim Gallo will give an overview of Mandiant Advantage: Threat Intelligence and recently added features that will help you prioritize alerts and provide instant context directly from Mandiant’s frontline expertise.
+
+Key topics:
+
+-Understanding the latest news with Mandiant’s judgments
+-Mandiant M-score for quick expert ratings on indicators
+-Browser Plugin, the heads up display every SOC analyst needs
+
+Join us for a 30-minute live presentation and demo on Thursday March 11th 2021 at 2 PM EST.
+
+Presenter: Tim Gallo – Security Strategist and Solutions Engineering Lead at FireEye Mandiant
+Host: Bart Lenaerts – Product Marketing Mandiant Solutions",3/11/2021,No,"Tim Gallo## Security Strategist & Solutions Engineering Lead, FireEye Mandiant|| Bart Lenaerts-Bergmans## Sr. PMM, Mandiant",https://www.brighttalk.com/webcast/7451/469948,No,,No,,,,Webinar,"Mandiant Advantage, Threat Intelligence, SOC",Mandiant Advantage,General,No,19
+Rethink Cyber Defense Strategies by Starting with Threats,"Many organizations define cyber defense strategies based on fears or fines: decisions makers are often influenced by the latest news headline or the next audit.
+Today, threat intelligence content levels have evolved to reach new readers or enable innovative use cases. Consequently, threat intelligence can inform how you optimize cyber strategies, from essential high-quality detection to alert investigation and the reduction of enterprise threat surfaces.
+In this session, Peter Watts, threat intelligence veteran and former Director for Cybersecurity Policy, National Security Council lays out:
+
+• A modern definition of threat intelligence with important milestones
+• How to recognize and develop critical success factors for producing or consuming threat intelligence
+• The impact of actionable threat intelligence on security risk leaders and their organizations
+• Future use cases that may reshape how we think about cyber defense and business value",6/9/2020,No,"Peter Watts## former Director for Cybersecurity Policy, National Security Council",https://www.brighttalk.com/webcast/10469/410225,No,,No,,,,Webinar,"Security Strategy, Threat Intelligence", ,General,No,20
+Security Effectiveness Strategies: Validate and Improve Your Security Posture,"To stay ahead of an evolving threat landscape, security teams must continuously improve their processes and technology. But even with their investments, security professionals still need answers to pressing questions:
+-Who are the attackers that target my industry and what techniques do they use?
+-Which alerts matter most and how do I respond?
+-Are my tools, controls, processes working as expected?
+-Where should I focus improvement efforts?
+
+Join Major General Earl Matthews USAF (Ret), VP of Strategy, Mandiant Solutions and Jeff Compton, Senior Manager, Global Head of Intelligence Consulting, FireEye Mandiant Threat Intelligence for our upcoming webinar to:
+
+-Learn how cyber threat intelligence can inform which attackers target your industry and understand the techniques they employ
+-Find out how continuous validation can pinpoint where you have gaps so you can target improvements where they are needed
+-Understand how validation technology powered by relevant intelligence can generate proof of effectiveness and reduce risk",5/13/2020,No,"Major General Earl Matthews## VP of Strategy, Mandiant Security Validation|| Jeff Compton## Global Head, Mandiant Threat Intel",https://www.brighttalk.com/webcast/7451/391111,No,,No,,,,Webinar,"Security Strategy, Threat Landscape",Security Validation,General,No,21
+The BIG Cyber Security Skills Gap,"Attackers will continue to be effective through an increase in sophistication, but they will also be successful due to the challenges organizations face in recruiting and retaining skilled cyber professionals.
+
+During this webinar we will discuss the benefits and challenges of in-house vs. outsourcing of cyber security operations, and how this has been affected by a cyber-skills shortage within the industry with ‘on-demand’ resource being readily available when needed with real time insight and expertise of cyber breaches.",3/8/2019,No,"Alistair E. Macrae## Systems Engineer, FireEye
+",https://www.brighttalk.com/webcast/7451/352140,No,,No,,,asdfasd,Webinar,"Skills Gap, Cyber Security Careers", ,General,No,22
+The Cyber Skills Gap: A Practitioner’s Perspective,"The shortage of cybersecurity workers is a growing concern for the teams who are directly responsible for protecting the organization against cyber threats. It’s estimated that by 2021, 3.5 million cyber security positions will go unfilled.
+
+Join Stanley Parret, Principal Consultant for FireEye Managed Defense, for a look at the unforeseen challenges and consequences of the growing cyber skills gap, especially around protecting against advanced threats. In this webinar, we’ll discuss:
+
+-The impact of staffing shortages on security practitioners
+-How they’re being required to protect more with less
+-The options available to security teams who need to extend their capacity",6/19/2019,No,"Stanley Parret##Principal Consultant, FireEye Managed Defense",https://www.brighttalk.com/webcast/7451/358572,No,,No,,,,Webinar,"Skills Gap, Cyber Security Careers", ,General,No,23
+The Road Ahead: Cyber Security in 2020 and Beyond,"As 2019 comes to a close, we walk away armed with even more knowledge about the threat actors and trends we can expect to continue in 2020 and beyond. Attackers innovate and grow more sophisticated, but there is a lot we can still do to prepare for upcoming compromise attempts and get ahead of the threats.
+
+On Thursday, November 21st at 8a PT/11a ET, join Sarah Geary, Manager of Intelligence for Executives at FireEye, as she shares her thoughts about cyber security in 2020. During the webinar, Sarah will touch on various topics discussed in our report, The Road Ahead: Cyber Security in 2020 and Beyond, including:
+
+• Geopolitics driving threat actors
+• Cyber influence operation developments
+• New criminal tactics in the underground
+• Trends in ransomware and supply chain attacks
+
+Mandiant Threat Intelligence experts Gina Hill and Duke McDonald present an in-depth explanation of what it means to be intelligence-led, how organizations should seek to increase intelligence maturity and capability, and how to get started on this journey.
+
+Join this session to learn:
+• The definition, characteristics and caveats of an intelligence-led security approach
+• Things to consider when assessing and evolving intelligence maturity
+• The importance of frameworks when assessing, measuring and executing on your strategy",11/21/2019,No,"Sarah Geary## Manager of Intelligence for Executives, FireEye
+",https://www.brighttalk.com/webcast/7451/375921?utm_source=brighttalk-portal&utm_medium=web&utm_content=The%20Road%20Ahead:%20Cyber%20Security%20in%202020%20and%20Beyond&utm_term=search-result-1&utm_campaign=webcasts-search-results-feed,No,,No,,,,Webinar,"Threat Actors, Geopolitics, Ransomware", ,General,No,24
+The Security Operations Center is Essential – But Is it Effective?,"From COVID to the cloud and from ransomware to work-from-home, everything changed, fast. The foundation of it all – the Security Operations Center, or SOC, played a critical role in supporting how enterprises tackled the pivot in how we work, communicate and connect, while ensuring a strong security posture for the organization. The Ponemon Institute researched how these changes have impacted the effectiveness of the SOC in the “Second Annual Study on the Economics of Security Operations Centers: What is the True Cost for Effective Results?”
+
+What stands out this year?
+
+• COVID-19: The pandemic’s impact on how SOCs operate and tackle security challenges as remote employees create new access points and bad actors take advantage.
+• Strong Hiring & Salaries: Jobs and salaries are up as CISOs drive to employ qualified security analysts and retain them in an environment where competition for their services is ruthless.
+• ROI of the SOC is Dropping: Complexity, analyst turnover and the growing cost of MSSP support for security monitoring drives lower scores in SOC investment.
+• Budgets include Automation & Extended Detection & Response: Extended Detection & Response (XDR) and security automation solutions have emerged as budgetary priorities as CISOs seek answers to improve security engineering effectiveness and cost.
+
+Let’s dig into what it all means for the next year. Join the report author, Larry Ponemon, Founder of the Ponemon Institute and Dan Lamorena, VP of Marketing for XDR at FireEye, for a live discussion on the state of today’s SOC, staffing, budgets for SOC tools, cost considerations for outsourcing and ROI.",1/26/2021,No,Larry Ponemon## Founder of the Ponemon Institute || Dan Lamorena##VP Marketing for XDR at FireEye,https://www.brighttalk.com/webcast/7451/460730,No,,No,,,,Webinar,"COVID, Cloud, Ransomware, SOC, ROI", ,General,No,25
+"They Come in the Night: Emerging Ransomware Trends
+Uncover the latest ransomware research including new trends i","Ransomware is remote digital extortion. Disruptive and costly to address, it affects all kinds of organizations, from space technology firms to global manufacturers and industrial environments.
+
+FireEye Threat Intelligence research has uncovered an increasing number of common characteristics in ransomware attacks, including new trends in intrusion vectors, dwell time, deployment time of day and the use of additional tactics to increase leverage against victims.
+
+Join Threat Intelligence experts Kelli Vanderlee and Kimberly Goody, on Tuesday, March 31, 2020 at 8 a.m. PT/11 a.m. ET, to learn about the latest research and ask them critical questions. During this presentation, attendees will hear about:
+
+• The latest ransomware threats
+• Threat actor tactics
+• Ways to use this intelligence to defend your organization",3/31/2019,No,"Kelli Vanderlee Manager## Intelligence Analysis, FireEye || Kimberly Goody## Sr. Manager, FireEye Intelligence",https://www.brighttalk.com/webcast/7451/389929,No,,No,,,,Webinar,"Ransomware, Digital Extortion, Threat Actors", ,General,No,26
+Threat Intel Drives Effective Vulnerability Management,"Organizations value cyber threat intelligence (CTI) because it helps their security teams stay focused on, and stay ahead of, the most impactful threats. One of the critical strategic and tactical roles that CTI plays is in the tracking, analysis, and prioritization of software vulnerabilities that could potentially put an organization’s data, employees and customers at risk.
+
+Join us to hear FireEye Threat Intelligence experts, Jared Semrau and Kathleen Metrick share:
+• The importance of comprehensive CTI to drive better-informed vulnerability management decisions
+• Insight into how FireEye tracks, prioritizes and categorizes vulnerabilities to help organizations more effectively manage and mitigate the risks associated with these potential threats
+• The latest research findings around the speed and frequency of exploitation",4/30/2020,No,"Jared Semrau## Sr. Mgr.,Vulnerability and Exploitation, Mandiant|| Kathleen Metrick## Analyst, Strategic Intelligence, Mandiant",https://www.brighttalk.com/webcast/7451/392772,No,,No,,,,Webinar,"Threat Intelligence, Security Strategy", ,General,No,27
+Threat Intelligence as a Business Enabler,"Join Jens Monrad, Head of Mandiant Threat Intelligence – EMEA, for ‘Cyber Threat Intelligence as a Business Enabler’.
+This session will cover how accurate and relevant Cyber Threat Intelligence can help organisations make smarter decisions around cyber defence, alert & event prioritisation. Jens will also discuss how cyber threat intelligence enables businesses to make decisions based upon the cyber threat landscape and their risk appetite.",6/10/2020,No,"Jens Monrad, Head of Mandiant Threat Intelligence, EMEA
+",https://www.brighttalk.com/webcast/7451/412279,No,,No,,,,Webinar,"Business Risk, Threat Intelligence", ,General,No,28
+UNC2452: What We Know So Far,"Get the latest on UNC2452, the actor behind the SolarWinds supply chain compromise
+
+FireEye's Mandiant team recently uncovered a threat actor leveraging a supply chain to carry out intrusions in a uniquely impactful campaign. The actor behind these intrusions, UNC2452, focuses heavily on operational security, which has limited historic perspective on their behavior and made them very difficult to detect; however, we are rapidly learning more about them.
+
+Join our Mandiant experts for this webinar where we will offer the latest intelligence on this important threat actor.",1/12/2021,No,"Benjamin Read## Director, Threat Intelligence Analysis || John Hultquist## VP, Mandiant Threat Intelligence",https://www.brighttalk.com/webcast/7451/462719?utm_source=brighttalk-portal&utm_medium=web&utm_content=unc2452&utm_term=search-result-3&utm_campaign=webcasts-search-results-feed,No,,No,,,,Webinar,"UNC2452, UNC, Supply Chain", ,General,No,29
+Uplift your SOAR with Detection On Demand,"One of the foremost challenges for security operations center (SOC) analysts is evaluating alerts from the wide variety of tools operating in the SOC. For every alert, SOC analysts must perform a detailed triage in order to determine the extent of an alert and whether an alert is actually a threat or a false positive. It can be difficult for a SOC analyst to easily determine whether a file or hash is malicious or benign and the whole process can take hours of valuable time.
+
+Enter FireEye Detection on Demand! Delivered as an API, this threat detection service provides easy integration into the SOC workflow, SIEM analytics, data repositories, and more. Detection On Demand delivers flexible file and content analysis capabilities to identify malicious behavior wherever the enterprise needs it.
+
+Verdicts are delivered almost instantly and allow applications to quickly process without the latency of other competitors. If more in-depth analysis is needed, users can log into the Detection On Demand web portal which provides reports, memory dumps, pcaps, and access to MITRE ATT&CK mappings.
+
+Detection On Demand integrates natively with FireEye Security Orchestrator and with numerous other SaaS and Security products, providing for rapid integration with the existing infrastructure. Many application integrations are already in place with the likes of Splunk Phantom, Polarity, Siemplify, Palo Alto Network XSOAR, and D3 Security, with more being added every month.
+
+In this webinar, you will learn:
+•How Detection On Demand works
+•How to best integrate Detection On Demand to improve the efficiency of your SOC
+•Other ways you can leverage Detection on Demand
+
+At the end of the webinar, you will be able to test drive Detection On Demand for yourself.",2/16/2021,No,"Rob Ayoub##Sr. Product Marketing Manager, FireEye|| Alex Lanstein##Product Manager, Detection on Demand, FireEye",https://www.brighttalk.com/webcast/10703/462464,No,,No,,,,Webinar,"SOC, SOAR, Detection",Automated Defense,General,No,30
+Validating Security Effectiveness with an Evidence-based Approach,"Cybersecurity spending must be tied to business relevance - protecting business continuity, protecting critical assets, rationalizing investments, and demonstrating compliance with regulatory mandates. This is accomplished through an effective security validation program that utilizes automation and an intelligence-driven approach to mitigate risk, optimize controls, and communicate value.
+
+Join Brian Contos, VP Technology Innovation| FireEye Mandiant and Jeff Vinson, CISO & VP |Harris Health System as they discuss how Mandiant Security Validation (formerly Verodin) helps organizations automate real-time monitoring by leverage an intelligence-driven methodology to maximize the value and mitigate risk.
+
+In the session they will discuss:
+>> Delivering value for security teams and executives
+>> Leveraging automation, real-time monitoring and input from threat intelligence and incident response for an effective security program
+>> Managing the impacts of COVID-19 on your security team",5/14/2020,No,Brian Contos##VP Technology Innovation| FireEye Mandiant || Jeff Vinson##CISO & VP |Harris Health System,https://www.brighttalk.com/webcast/17758/389524,No,,No,,,,Webinar,"COVID, Business Risk, Threat Intelligence",Security Validation,General,No,31
+VS21 Assessing and Managing Cyber Risk: An Approach for Chief Risk Officers (CROs),"Simply investing in cyber security controls isn’t enough, as countless victims of cyber-attacks have learned the hard way. This session will offer valuable insights and recommendations for Chief Risk Officers (CROs) and C-suite decision makers about how to move beyond simply ticking a box to ensuring their cyber security investments are effective and working as intended to provide risk assurance.
+
+In this lesson you will learn about:
+● The importance of moving from auditing security control existence to security control effectiveness
+● Determining the right level of risk for your organization
+● How to assess if security controls are working as they should",4/12/2021,no,"Steve Ledzian ## Vice President, Chief Technology Officer, Asia Pacific",https://www.brighttalk.com/webcast/10469/473822,No,,No,,,,Webinar,"Chief Risk Officer, Risk, C-Suite",Security Validation,General,No,32
+"VS21 Connect the Dots of Your Security Evidence:
+","Security analysts spend more time staring at multiple screens and consoles of alerts instead of focusing on the real cyber detective work of finding attackers. Current SOC tools only fill in some of the blanks and require constant tuning and maintenance. There is a better way.
+
+This Virtual Summit session covers:
+-The new Extended Detection and Response (XDR) product category
+-How organizations are deploying XDR technology to address attacks faster at a fraction of the cost
+
+",4/15/2021,no,"Dan Lamorena## VP of Product Marketing, Mandiant Advantage|| Eric Adams##CISO and SVP, Kyriba",https://www.brighttalk.com/webcast/7451/476302,No,,No,,,,Webinar,"SOC, XDR",Automated Defense,General,No,33
+VS21 Cyber Threat Profile: The Centerpiece of Intelligence-Led Programs,"A cyber threat profile enables organizations to benchmark and understand risks as a function of internal operations against the evolving threat landscape. Integrating a dynamic cyber threat profile into an organization’s sustainable workflow also better equips them to identify key priorities for further investment using an intelligence-led approach to cyber security.
+
+Join Igors Konovalovs, Director, GSS Sales, Asia Pacific, FireEye, to learn why a cyber threat profile should be the centerpiece of any intelligence-led program. Specifically, the discussion will offer:
+
+● Industry case studies and best practices for developing a dynamic cyber threat profile
+● How to use a cyber threat profile to identify threats that matter most
+● Ways to maintain a cyber threat profiles as part of an intelligence-led security program
+
+",4/13/2021,no,"Igors Konovalovs##Director - GSS Sales, Asia Pacific, FireEye",https://www.brighttalk.com/webcast/10469/475743,No,,No,,,,Webinar,"Threat Intelligence, Threat Profile",Threat Intelligence,General,No,34
+VS21 Eliminate Uncertainty with Security Validation,"If you can measure it, you can improve it. One major challenge for cyber security teams is establishing a measurable process of validating their security operations to be able to identify gaps in detection coverage and areas of redundancy to provide specific areas of improvement including potential saving across your security controls.
+
+This webinar will discuss how to:
+• Operationalize Threat Intelligence: Ensure your security controls stand up to the latest tactics, techniques and procedures used by threat actors in your region and industry.
+• Plan security improvements: From both a technology and process perspective.
+• Establish evidence-based KPIs to improve security controls.
+• Report the organization’s ability to mitigate pertinent cyber risks to senior stakeholders
+
+Join this session to uncover how security validation proves the value of your efforts and ultimately reinforces your organization’s security posture.
+
+",4/14/2021,no,"Hatem Ali##Global Services and Intelligence Lead MEA, FireEye Mandiant",https://www.brighttalk.com/webcast/12695/479075,No,,No,,,,Webinar,"Validation, Security Strategy",Security Validation,General,No,35
+VS21 Fantastic Intelligence Use Cases and Where To Find Them,"Cyber threat intelligence (CTI) is a powerful weapon for organizations to identify and better understand relevant threats and how to defend against them. But it goes further than that. When shared across the company from vulnerability management and the security operations center to risk management and senior leadership, CTI can drive better business outcomes.
+
+Join FireEye Mandiant for an in-depth discussion about:
+● How CTI insights should be extended to broader teams, including who, why it matters, and how it can be leveraged in business decision-making
+● Real-world examples and best practice approaches to sharing CTI with business leadership
+● How to leverage CTI to optimize and validate defenses
+
+",4/14/2021,no,"Jamie Collier##Cyber Threat Intelligence Consultant, FireEye Mandiant",https://www.brighttalk.com/webcast/10703/479023,No,,No,,,,Webinar,Threat Intelligence,"Threat Intelligence, Business Risk",General,No,36
+VS21 Fireside Chat with the Head of Mandiant Intelligence: Sandra Joyce,"Join Sandra Joyce, FireEye’s Executive Vice President of Global Intelligence, for a lively discussion about today’s adversaries in an era consumed by a pandemic, geopolitical tensions, and rampant cybercrime.
+
+In this session, Sandra will discuss:
+
+- Real-world examples of today’s threats
+- Insight into how today’s threat actors are operating
+- Tactics and trends that are likely to play an integral role in the landscape of cybersecurity in the years to come
+
+",4/13/2021,no,"Sandra Joyce##Executive Vice President of Global Mandiant Intelligence ||Sarah Geary##Manager, Mandiant",https://www.brighttalk.com/webcast/12695/476523,No,,No,,,,Webinar,"Threat Actors, TTPs, Trends", ,General,No,37
+VS21 Hacking your Operational Technology for Defense,"Ransomware, supply chain attacks and other threats don’t just affect IT networks. Operational Technology (OT), including Industrial Control Systems (ICS), are increasingly being targeted by attackers and nation state groups. With critical infrastructure and public services at stake, OT Security teams must increasingly adopt cyber security strategies from IT Security, such as red teaming and penetration testing, to prevent and respond to these threats. 
+
+Join Rob Caldwell, Director of ICS Consulting at Mandiant, Jeff Greene CISO at International Paper and Daniel Kapellmann, Tech Analysis Manager, Mandiant to learn: 
+
+-How Mandiant Offensive Security teams gained access to an electric utility 
+-The importance of OT cyber physical threat intelligence in protecting OT networks 
+-How IT network security plays a critical role in protecting the OT segment 
+-How International Paper leverages technology and expertise to improve their OT security posture
+
+",4/13/2021,no,"Rob Caldwell##Director, Mandiant||Jeff Greene## CISO, International Paper||Daniel Kapellmann##Tech Analysis Manager, Mandiant",https://www.brighttalk.com/webcast/12695/480199?utm_source=FireEye&utm_medium=brighttalk&utm_campaign=480199,No,,No,,,,Webinar,"Ransomware, Supply Chain, Operational Technology", ,General,No,38
+VS21 How to Proactively Prepare to Defend Against Threats that Matter,"Know Your Enemy and Know Yourself: How to Proactively Prepare to Defend Against Threats that Matter
+
+Security teams are under constant pressure to know their adversaries and the attack tactics they use, and prioritize resources to protect the organization. This is best achieved with expert intelligence about what matters right now, combined with data-driven detection and response and a clear picture of how security controls perform.
+
+Join Mandiant for a discussion about how relevant breach intelligence delivered in a scalable and consistent manner empowers you to prioritize your organization’s security focus and build an effective detection and response operation. When combined with validation of security performance, you’re able to measure and strengthen the health of your security infrastructure and protect against the worst cyber offenders.
+Attend this session to discover:
+- How to operationalize threat intelligence to understand relevant threats and attack techniques targeted at your organization
+- Best practices for validating performance of security controls, people, and processes to determine where to prioritize focus
+- The importance of automation and expert managed services across all capabilities to improve efficiency, reduce costs, and strengthen security
+
+",4/13/2021,no,"Michael Armistead##Sr. Vice President, Mandiant Advantage Products ||Dan Lamorena##VP, Mandiant",https://www.brighttalk.com/webcast/10469/477791,No,,No,,,,Webinar,"Threat Detection, Security Validation", ,General,No,39
+VS21 Intelligence-Led Security Validation: A Strategy to Prove & Communicate Competency,"Intelligence-Led Security Validation: A Strategy to Prove & Communicate Competency
+
+Today we are seeing some of the most aggressive and sophisticated adversary attacks ever recorded. To ensure the health of your organization’s security infrastructure, it’s vital to validate the efficacy of security defenses with the use of authentic and relevant content based on active threat intelligence. Intelligence-led security validation enables you to quantify your risk, prioritize resources and prove competency. The result is the ability to strengthen and maintain your cyber stance against today’s evolving and aggressive adversary landscape.
+
+In this session, you will:
+
+● Learn that testing or validation technology is not enough—The steps required for an effective security validation strategy include the use of authentic and active threat intelligence, and why the emulation of real attacks, rather than attack simulation, is critical
+● Gain insights into how threat intelligence informs security validation efforts by identifying the threat actors that are most likely targeting your organization
+● Understand how continuous validation can prove security effectiveness and operational competency—Ultimately, assuring security infrastructure health, identifying areas for optimization, and reducing risk exposure.
+
+",4/14/2021,no,"Colby M. DeRodeff##Chief Technology Officer, Mandiant Advantage||Rob Potter##VP of Validation Customer Success, Mandiant",https://www.brighttalk.com/webcast/10469/477794,No,,No,,,,Webinar,"Threat Intelligence, Security Validation","Threat Intelligence, Security Validation",General,No,40
+VS21 Malware Maelstrom: Guarding Against the Return of APT10 and its Subsets,"In 2020, during an incident response engagement, FireEye Mandiant stumbled upon APT10 for the first time since the U.S. indictments against the group in late 2018. Upon re-discovery and identification of the group’s new and evolved tooling, FireEye Mandiant determined that other previous incident response engagements that were largely unrecognized had likely featured APT10.
+
+This presentation will take a deep dive look into:
+● How FireEye Mandiant re-discovered APT10 and the threat actor’s new malware and updated tools
+● The difficulties in conducting malware-based attribution and possible subsets of APT10
+● How organizations can spot this threat group and what defensive steps to take
+
+",4/13/2021,no,"Adrien Bataille##Senior Consultant, FireEye Mandiant|| Mitchell Clarke##Principal Consultant, FireEye Mandiant",https://www.brighttalk.com/webcast/12695/479061,No,,No,,,,Webinar,"Incident Response, APT, APT10",Incident Response,General,No,41
+VS21 M-Trends 2021 First Look: The Top Cyber Trends and Attacks Through an EMEA Lens,"For more than a decade, FireEye Mandiant’s annual M-Trends report has been a reliable source of expert insights and frontline intelligence for security professionals worldwide. This year’s highly sought-after report, being released at the Virtual Summit, provides timely data and insights based on global investigations of high-impact cyber-attacks and remediations.
+
+Join FireEye EMEA CTO David Grout for a first-hand look at the latest incident response metrics, attacker trends and behaviours, and case study highlights from the 2021 report. This session will feature expert analysis and commentary on critical topics including:
+● Ransomware Trends and Remediation Techniques
+● SUNBURST / UNC2452 Investigation Insights
+● Enhanced Red Teaming Tactics
+● Growing Insider Threats
+
+",4/15/2021,no,"David Grout##CTO, EMEA, FireEye",https://www.brighttalk.com/webcast/10703/479027,No,,No,,,,Webinar,"MTrends, Ransomware, SUNBURST, UNC, EMEA", ,General,No,42
+VS21 On the Defensive: Shaping Your Cyber Strategy in the Wake of UNC2452,"On December 13, 2020, FireEye discovered a global intrusion campaign performed by a highly evasive attacker leveraging the SolarWinds supply chain to compromise multiple global victims. The campaign, which may have begun as early as Spring 2020, is the work of highly skilled and likely nation-backed actors and was conducted with significant operational security. FireEye is continuing to track the threat actors behind this campaign and has labeled them UNC2452.
+
+In this session, you will learn first-hand:
+● What FireEye Mandiant knows and continues to uncover about these threat actors
+● Multiple techniques the actors are using to achieve their mission while obscuring their activities to evade detection
+● Insights into detection and defensive strategies that organizations should deploy in the aftermath of UNC2452
+
+",4/14/2021,no,"Bader Azzouqa##Senior Consultant, FireEye Mandiant",https://www.brighttalk.com/webcast/7451/479058,No,,No,,,,Webinar,"SolarWinds, UNC, UNC2452", ,General,No,43
+VS21 The Top Cyber Trends and Attacks: A First Look at M-Trends 2021,"The annual M-Trends report from FireEye Mandiant has served as a reliable source of frontline evidence and thought leadership for security professionals for more than a decade. This highly sought-after report provides timely data and insights based on global investigations of high-impact cyber attacks and remediations.
+
+Join Mandiant experts for a first look into the latest incident response metrics, attacker trends and behaviors, and case study highlights from the 2021 report. This session will feature expert analysis and commentary on critical topics including:
+
+• Ransomware Trends and Remediation Techniques
+• SUNBURST / UNC2452 Investigation Insights
+• Enhanced Red Teaming Tactics
+• Growing Insider Threats
+• And much more
+
+This session is recommended as a pre- or post-cursor to By the Numbers: M-Trends 2021 webinar.
+
+Expert panelists: Steven Stone, Sr. Director, Advanced Practices, FireEye Mandiant; Scott Runnels, Tech. Director, Mandiant; Genevieve Stark, Sr. Analyst, Mandiant; Moderator: Jennifer Guzzetta, Sr. PMM, Mandiant Services
+
+",4/13/2021,no,"Steven Stone##Sr. Director, FireEye Mandiant||Scott Runnels##Tech. Director, Mandiant||Genevieve Stark##Sr. Analyst, Mandiant",https://www.brighttalk.com/webcast/7451/472530,No,,No,,,,Webinar,"MTrends, Ransomware, UNC2452", ,General,No,44
+VS21 Using Cyber Intelligence to Advance Your Security Validation Program,"Intelligence-led security has never been more important in the battle to protect organizations against cyber attacks. This session will cover how organizations and federal agencies are operationalizing threat intelligence within the Mandiant Security Validation Platform to continuously measure, manage and improve cybersecurity effectiveness.  
+
+Attendees will gain greater understanding of:
+
+● The use of cyber intelligence data sets to prioritize resources
+● How real-world adversary tactics, techniques, and procedures (TTPs) can be used to measure and improve the effectiveness of individual security controls
+● How an organization can improve its ability to detect, block, and alert based on a comprehensive set of attack behaviors
+● Outcome measurement dashboards aligning to MITRE ATT&CK and NIST architectures
+
+",4/13/2021,no,"Major General Earl Matthews##VP, Strategy, Mandiant||Karlo Arozqueta## Sr. Sales Engineer||Tim Gallo##Systems Architect",https://www.brighttalk.com/webcast/10703/476277,No,,No,,,,Webinar,"Intelligence-Led Security, TTPs, MITRE ATTA&CK,",Security Validation,General,No,45
+VS21 Vigilance in An Era When Ransomware Is Big Business,"Ransomware has become big business with targets spanning organizations across industries. If you are attacked, the cost to your organization could total more than $1 million. This session will offer valuable insights and recommendations on how you can best protect your company and assets, remain ever vigilant and be able to respond across any infected device or server you manage.
+
+In this session you will learn about:
+
+-The tactics attackers use to find their targets and begin the attack
+-Tools you can use to stop a ransomware attack in its tracks
+-Best practices to prevent and mitigate ransomware and reduce the cost to your organization
+
+Presenters:
+
+-James Beeson, Senior Vice President and Global CISO, Cigna
+-Evan Pena, Director of Consulting, Mandiant
+-Matt Bromiley, Senior Principal Consultant, Mandiant
+-Robert Kusters, Senior Product Marketing Manager, Cloud Endpoint
+
+",4/13/2021,no,"James Beeson##Senior Vice President and Global CISO, Cigna||Evan Pena##Director of Consulting, Mandiant||Matt Bromiley##Senior Principal Consultant, Mandiant||Robert Kusters##Senior Product Marketing Manager, Cloud Endpoint",https://www.brighttalk.com/webcast/7451/475967,No,,No,,,,Webinar,"Ransomwere, TTPS", ,General,No,47

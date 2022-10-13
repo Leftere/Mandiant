@@ -1,0 +1,219 @@
+uuid: 4aeda121-fedf-4d0f-b3af-ae49fd20a5b3
+langcode: en
+status: true
+dependencies: {  }
+id: b1t12_mandiant_basic_page
+label: 'Batch 1 - T12 - Basic Page'
+targetEntityType: node
+targetBundle: page
+layout:
+  -
+    layout_id: layout_onecol
+    layout_settings:
+      label: ''
+      layout_builder_styles_style:
+        0: ''
+        1: ''
+        block_plain_text: 0
+        component_intro: 0
+        intro_text: 0
+        negative_bottom_margin: 0
+        negative_top_margin: 0
+        related_thought_leadership: 0
+        section_product_services: 0
+        small_tile_section: 0
+        small_image_tile: 0
+      context_mapping: {  }
+    components:
+      464c705d-9879-4fef-b902-fd34df3e913a:
+        uuid: 464c705d-9879-4fef-b902-fd34df3e913a
+        region: content
+        configuration:
+          id: 'inline_block:hero'
+          label: 'Inline block'
+          provider: layout_builder
+          label_display: ''
+          view_mode: full
+          block_revision_id: null
+          block_serialized: "O:40:\"Drupal\\block_content\\Entity\\BlockContent\":30:{s:8:\"\0*\0theme\";N;s:9:\"\0*\0values\";a:30:{s:8:\"langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:2:\"en\";}}}s:11:\"revision_id\";a:1:{s:9:\"x-default\";a:0:{}}s:2:\"id\";a:1:{s:9:\"x-default\";a:0:{}}s:4:\"uuid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:36:\"ec48658c-6cbd-4278-aa87-4f507bab977a\";}}}s:4:\"type\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:4:\"hero\";}}}s:16:\"revision_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629694042;}}}s:13:\"revision_user\";a:1:{s:9:\"x-default\";a:0:{}}s:12:\"revision_log\";a:1:{s:9:\"x-default\";a:0:{}}s:6:\"status\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:4:\"info\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:12:\"Inline block\";}}}s:7:\"changed\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629694042;}}}s:8:\"reusable\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:16:\"default_langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:16:\"revision_default\";a:1:{s:9:\"x-default\";a:0:{}}s:29:\"revision_translation_affected\";a:1:{s:9:\"x-default\";a:0:{}}s:7:\"metatag\";a:1:{s:9:\"x-default\";a:0:{}}s:26:\"content_translation_source\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:3:\"und\";}}}s:28:\"content_translation_outdated\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:23:\"content_translation_uid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:1:\"1\";}}}s:27:\"content_translation_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629694042;}}}s:10:\"field_body\";a:1:{s:9:\"x-default\";a:1:{i:0;a:2:{s:5:\"value\";s:96:\"<p>Lorem ipsum dolor sit amet, consectetur<br />\r\nadipiscing elit. Ut in dignissim ligula.</p>\r\n\";s:6:\"format\";s:10:\"basic_html\";}}}s:9:\"field_cta\";a:1:{s:9:\"x-default\";a:0:{}}s:13:\"field_eyebrow\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:30:\"Product / Service detail label\";}}}s:11:\"field_media\";a:1:{s:9:\"x-default\";a:0:{}}s:22:\"field_media_background\";a:1:{s:9:\"x-default\";a:1:{i:0;a:4:{s:13:\"remove_button\";O:48:\"Drupal\\Core\\StringTranslation\\TranslatableMarkup\":3:{s:9:\"\0*\0string\";s:6:\"Remove\";s:12:\"\0*\0arguments\";a:0:{}s:10:\"\0*\0options\";a:0:{}}s:11:\"edit_button\";O:48:\"Drupal\\Core\\StringTranslation\\TranslatableMarkup\":3:{s:9:\"\0*\0string\";s:4:\"Edit\";s:12:\"\0*\0arguments\";a:0:{}s:10:\"\0*\0options\";a:0:{}}s:6:\"weight\";i:0;s:9:\"target_id\";s:2:\"81\";}}}s:11:\"field_title\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:22:\"Basic Page Lorem Ipsum\";}}}s:11:\"field_block\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_embed\";a:1:{s:9:\"x-default\";a:0:{}}s:19:\"field_related_nodes\";a:1:{s:9:\"x-default\";a:0:{}}s:16:\"layout_selection\";a:1:{s:9:\"x-default\";a:0:{}}}s:9:\"\0*\0fields\";a:0:{}s:19:\"\0*\0fieldDefinitions\";N;s:12:\"\0*\0languages\";N;s:14:\"\0*\0langcodeKey\";s:8:\"langcode\";s:21:\"\0*\0defaultLangcodeKey\";s:16:\"default_langcode\";s:17:\"\0*\0activeLangcode\";s:9:\"x-default\";s:18:\"\0*\0defaultLangcode\";s:2:\"en\";s:15:\"\0*\0translations\";a:1:{s:9:\"x-default\";a:1:{s:6:\"status\";i:2;}}s:24:\"\0*\0translationInitialize\";b:0;s:14:\"\0*\0newRevision\";b:1;s:20:\"\0*\0isDefaultRevision\";b:1;s:13:\"\0*\0entityKeys\";a:3:{s:6:\"bundle\";s:4:\"hero\";s:8:\"revision\";N;s:2:\"id\";N;}s:25:\"\0*\0translatableEntityKeys\";a:1:{s:8:\"langcode\";a:1:{s:9:\"x-default\";s:2:\"en\";}}s:12:\"\0*\0validated\";b:1;s:21:\"\0*\0validationRequired\";b:0;s:19:\"\0*\0loadedRevisionId\";N;s:33:\"\0*\0revisionTranslationAffectedKey\";s:29:\"revision_translation_affected\";s:37:\"\0*\0enforceRevisionTranslationAffected\";a:0:{}s:15:\"\0*\0entityTypeId\";s:13:\"block_content\";s:15:\"\0*\0enforceIsNew\";b:1;s:12:\"\0*\0typedData\";N;s:16:\"\0*\0cacheContexts\";a:0:{}s:12:\"\0*\0cacheTags\";a:0:{}s:14:\"\0*\0cacheMaxAge\";i:-1;s:14:\"\0*\0_serviceIds\";a:0:{}s:18:\"\0*\0_entityStorages\";a:0:{}s:12:\"\0*\0isSyncing\";b:0;s:19:\"\0*\0accessDependency\";N;}"
+          context_mapping: {  }
+        additional:
+          layout_builder_styles_style:
+            hero_incident: 0
+            0: short
+          layout_builder_id: ''
+        weight: 0
+    third_party_settings: {  }
+  -
+    layout_id: layout_onecol
+    layout_settings:
+      label: ''
+      layout_builder_styles_style:
+        0: ''
+        1: ''
+        block_plain_text: 0
+        component_intro: 0
+        intro_text: 0
+        negative_bottom_margin: 0
+        negative_top_margin: 0
+        related_thought_leadership: 0
+        section_product_services: 0
+        small_tile_section: 0
+        small_image_tile: 0
+      context_mapping: {  }
+    components:
+      d530e0e5-c64b-46d1-b5f4-2424b761e7fb:
+        uuid: d530e0e5-c64b-46d1-b5f4-2424b761e7fb
+        region: content
+        configuration:
+          id: 'inline_block:text'
+          label: 'Inline block'
+          provider: layout_builder
+          label_display: ''
+          view_mode: full
+          block_revision_id: null
+          block_serialized: "O:40:\"Drupal\\block_content\\Entity\\BlockContent\":30:{s:8:\"\0*\0theme\";N;s:9:\"\0*\0values\";a:23:{s:8:\"langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:2:\"en\";}}}s:11:\"revision_id\";a:1:{s:9:\"x-default\";a:0:{}}s:2:\"id\";a:1:{s:9:\"x-default\";a:0:{}}s:4:\"uuid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:36:\"ea0e4b81-a6e5-4bf8-a624-e0020370752c\";}}}s:4:\"type\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:4:\"text\";}}}s:16:\"revision_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629694216;}}}s:13:\"revision_user\";a:1:{s:9:\"x-default\";a:0:{}}s:12:\"revision_log\";a:1:{s:9:\"x-default\";a:0:{}}s:6:\"status\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1;}}}s:4:\"info\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:12:\"Inline block\";}}}s:7:\"changed\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629694216;}}}s:8:\"reusable\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:16:\"default_langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:16:\"revision_default\";a:1:{s:9:\"x-default\";a:0:{}}s:29:\"revision_translation_affected\";a:1:{s:9:\"x-default\";a:0:{}}s:7:\"metatag\";a:1:{s:9:\"x-default\";a:0:{}}s:26:\"content_translation_source\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:3:\"und\";}}}s:28:\"content_translation_outdated\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:23:\"content_translation_uid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:1:\"1\";}}}s:27:\"content_translation_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629694216;}}}s:10:\"field_body\";a:1:{s:9:\"x-default\";a:1:{i:0;a:2:{s:5:\"value\";s:4563:\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in dignissim ligula. Phasellus et elit interdum velit euismod consequat in non mi. Nam at augue id massa semper scelerisque nec vitae tellus. Ut aliquet neque enim, in porta leo ultrices id. Praesent et porta massa. Vestibulum dolor ipsum, consectetur non pretium tempor, cursus sed lorem. Mauris erat dui, consectetur nec sollicitudin nec, hendrerit sit amet tortor.</p>\r\n\r\n<p>Sed ac arcu venenatis, lobortis tortor ut, bibendum lectus. Nulla sed felis vel turpis lacinia pulvinar a vitae purus. Donec egestas ex nec lacus lobortis feugiat eu sed ligula. Duis porttitor eros sit amet ligula bibendum, eu commodo tellus accumsan. Cras ut diam at elit lobortis volutpat vitae ac nisl. Suspendisse quis mollis diam. Maecenas blandit eros et pulvinar venenatis. Donec ligula eros, volutpat ac elementum vel, mattis at ante. Fusce maximus sed enim in imperdiet. Nunc pharetra tortor facilisis velit placerat aliquet. Curabitur risus ex, venenatis ac sapien vitae, ullamcorper vulputate ex. Aliquam eu malesuada dolor. Morbi sapien nisi, congue quis fringilla ac, molestie sed elit. Donec dolor odio, dictum sit amet neque ac, aliquam fringilla velit. Suspendisse potenti.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<hr />\r\n<p>&nbsp;</p>\r\n\r\n<h3>General headline lorem ipsum</h3>\r\n\r\n<p>Nulla sed felis vel turpis lacinia pulvinar a vitae purus. Donec egestas ex nec lacus lobortis feugiat eu sed ligula. Duis porttitor eros sit amet ligula bibendum, eu commodo tellus accumsan. Cras ut diam at elit lobortis volutpat vitae ac nisl. Suspendisse quis mollis diam. Maecenas blandit eros et pulvinar venenatis.</p>\r\n\r\n<p>Donec ligula eros, volutpat ac elementum vel, mattis at ante. Fusce maximus sed enim in imperdiet. Nunc pharetra tortor facilisis velit placerat aliquet. Curabitur risus ex, venenatis ac sapien vitae, ullamcorper vulputate ex.</p>\r\n\r\n<p>Aliquam eu malesuada dolor. Morbi sapien nisi, congue quis fringilla ac, molestie sed elit. Donec dolor odio, dictum sit amet neque ac, aliquam fringilla velit. Suspendisse potenti.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h4>Sub header lorem ipsum</h4>\r\n\r\n<p>Fusce accumsan porta ipsum, eu fringilla ligula dignissim vel. Nulla hendrerit accumsan ornare. Integer aliquam elementum iaculis. Curabitur massa lectus, ultricies in orci ac, gravida aliquam odio. Mauris purus elit, luctus id lobortis eu, sodales ut turpis. Nullam eget ipsum vehicula, consequat purus vel, porttitor eros. Quisque sollicitudin urna sit amet odio porttitor mattis. Cras aliquet, eros ut venenatis facilisis, augue libero accumsan ligula, non placerat orci nunc in purus. Nunc at leo et ligula ullamcorper imperdiet. Sed non risus mattis, scelerisque augue vel, pulvinar sapien.</p>\r\n\r\n<p>Suspendisse potenti. Sed eget ex dolor. Suspendisse massa est, semper quis magna aliquam, lobortis ultricies nisi. In vehicula aliquet elementum. Suspendisse porta odio eget tellus molestie iaculis. Vestibulum placerat gravida eros at sagittis. Nam quis auctor ipsum, nec imperdiet elit. Morbi vel nisl eget ex fermentum accumsan. Mauris tristique quam nisi, in vulputate dui consectetur at. Integer a vulputate lacus, vel feugiat nunc. Quisque commodo placerat augue. Praesent sit amet libero lectus. Nulla vitae lectus ligula.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<dl class=\"ckeditor-accordion\">\r\n\t<dt>Accordion expanded</dt>\r\n\t<dd>\r\n\t<p>Suspendisse potenti. Sed eget ex dolor. Suspendisse massa est, semper quis magna aliquam, lobortis ultricies nisi. In vehicula aliquet elementum. Suspendisse porta odio eget tellus molestie iaculis.</p>\r\n\r\n\t<p>Vestibulum placerat gravida eros at sagittis. Nam quis auctor ipsum, nec imperdiet elit. Morbi vel nisl eget ex fermentum accumsan. Mauris tristique quam nisi, in vulputate dui consectetur at.</p>\r\n\r\n\t<p>Integer a vulputate lacus, vel feugiat nunc. Quisque commodo placerat augue. Praesent sit amet libero lectus. Nulla vitae lectus ligula.</p>\r\n\t</dd>\r\n\t<dt>Accordion collapsed</dt>\r\n\t<dd>\r\n\t<p>Suspendisse potenti. Sed eget ex dolor. Suspendisse massa est, semper quis magna aliquam, lobortis ultricies nisi. In vehicula aliquet elementum. Suspendisse porta odio eget tellus molestie iaculis.</p>\r\n\r\n\t<p>Vestibulum placerat gravida eros at sagittis. Nam quis auctor ipsum, nec imperdiet elit. Morbi vel nisl eget ex fermentum accumsan. Mauris tristique quam nisi, in vulputate dui consectetur at.</p>\r\n\r\n\t<p>Integer a vulputate lacus, vel feugiat nunc. Quisque commodo placerat augue. Praesent sit amet libero lectus. Nulla vitae lectus ligula.</p>\r\n\t</dd>\r\n</dl>\r\n\r\n<p>&nbsp;</p>\r\n\";s:6:\"format\";s:10:\"basic_html\";}}}s:13:\"field_eyebrow\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_title\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:8:\"Overview\";}}}}s:9:\"\0*\0fields\";a:0:{}s:19:\"\0*\0fieldDefinitions\";N;s:12:\"\0*\0languages\";N;s:14:\"\0*\0langcodeKey\";s:8:\"langcode\";s:21:\"\0*\0defaultLangcodeKey\";s:16:\"default_langcode\";s:17:\"\0*\0activeLangcode\";s:9:\"x-default\";s:18:\"\0*\0defaultLangcode\";s:2:\"en\";s:15:\"\0*\0translations\";a:1:{s:9:\"x-default\";a:1:{s:6:\"status\";i:2;}}s:24:\"\0*\0translationInitialize\";b:0;s:14:\"\0*\0newRevision\";b:1;s:20:\"\0*\0isDefaultRevision\";b:1;s:13:\"\0*\0entityKeys\";a:2:{s:6:\"bundle\";s:4:\"text\";s:8:\"revision\";N;}s:25:\"\0*\0translatableEntityKeys\";a:1:{s:8:\"langcode\";a:1:{s:9:\"x-default\";s:2:\"en\";}}s:12:\"\0*\0validated\";b:1;s:21:\"\0*\0validationRequired\";b:0;s:19:\"\0*\0loadedRevisionId\";N;s:33:\"\0*\0revisionTranslationAffectedKey\";s:29:\"revision_translation_affected\";s:37:\"\0*\0enforceRevisionTranslationAffected\";a:0:{}s:15:\"\0*\0entityTypeId\";s:13:\"block_content\";s:15:\"\0*\0enforceIsNew\";b:1;s:12:\"\0*\0typedData\";N;s:16:\"\0*\0cacheContexts\";a:0:{}s:12:\"\0*\0cacheTags\";a:0:{}s:14:\"\0*\0cacheMaxAge\";i:-1;s:14:\"\0*\0_serviceIds\";a:0:{}s:18:\"\0*\0_entityStorages\";a:0:{}s:12:\"\0*\0isSyncing\";b:0;s:19:\"\0*\0accessDependency\";N;}"
+          context_mapping: {  }
+        additional:
+          layout_builder_styles_style:
+            0: ''
+            1: ''
+            accordion: 0
+            authors_title: 0
+            cta_phone: 0
+            product_title: 0
+            margin_bottom_70px_: 0
+          layout_builder_id: ''
+        weight: 0
+    third_party_settings: {  }
+  -
+    layout_id: layout_onecol
+    layout_settings:
+      label: ''
+      layout_builder_styles_style:
+        0: ''
+        1: ''
+        block_plain_text: 0
+        component_intro: 0
+        intro_text: 0
+        negative_bottom_margin: 0
+        negative_top_margin: 0
+        related_thought_leadership: 0
+        section_product_services: 0
+        small_tile_section: 0
+        small_image_tile: 0
+      context_mapping: {  }
+    components:
+      fa83f9d2-3dc6-489b-bd90-5c485ffef564:
+        uuid: fa83f9d2-3dc6-489b-bd90-5c485ffef564
+        region: content
+        configuration:
+          id: 'inline_block:text'
+          label: 'Inline block'
+          provider: layout_builder
+          label_display: ''
+          view_mode: full
+          block_revision_id: null
+          block_serialized: "O:40:\"Drupal\\block_content\\Entity\\BlockContent\":30:{s:8:\"\0*\0theme\";N;s:9:\"\0*\0values\";a:23:{s:8:\"langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:2:\"en\";}}}s:11:\"revision_id\";a:1:{s:9:\"x-default\";a:0:{}}s:2:\"id\";a:1:{s:9:\"x-default\";a:0:{}}s:4:\"uuid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:36:\"380dccb2-1e6f-4aca-8867-112d58aba6ea\";}}}s:4:\"type\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:4:\"text\";}}}s:16:\"revision_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629696229;}}}s:13:\"revision_user\";a:1:{s:9:\"x-default\";a:0:{}}s:12:\"revision_log\";a:1:{s:9:\"x-default\";a:0:{}}s:6:\"status\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1;}}}s:4:\"info\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:12:\"Inline block\";}}}s:7:\"changed\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629696229;}}}s:8:\"reusable\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:16:\"default_langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:16:\"revision_default\";a:1:{s:9:\"x-default\";a:0:{}}s:29:\"revision_translation_affected\";a:1:{s:9:\"x-default\";a:0:{}}s:7:\"metatag\";a:1:{s:9:\"x-default\";a:0:{}}s:26:\"content_translation_source\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:3:\"und\";}}}s:28:\"content_translation_outdated\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:23:\"content_translation_uid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:1:\"1\";}}}s:27:\"content_translation_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629696229;}}}s:10:\"field_body\";a:1:{s:9:\"x-default\";a:0:{}}s:13:\"field_eyebrow\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_title\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:16:\"List link header\";}}}}s:9:\"\0*\0fields\";a:0:{}s:19:\"\0*\0fieldDefinitions\";N;s:12:\"\0*\0languages\";N;s:14:\"\0*\0langcodeKey\";s:8:\"langcode\";s:21:\"\0*\0defaultLangcodeKey\";s:16:\"default_langcode\";s:17:\"\0*\0activeLangcode\";s:9:\"x-default\";s:18:\"\0*\0defaultLangcode\";s:2:\"en\";s:15:\"\0*\0translations\";a:1:{s:9:\"x-default\";a:1:{s:6:\"status\";i:2;}}s:24:\"\0*\0translationInitialize\";b:0;s:14:\"\0*\0newRevision\";b:1;s:20:\"\0*\0isDefaultRevision\";b:1;s:13:\"\0*\0entityKeys\";a:2:{s:6:\"bundle\";s:4:\"text\";s:8:\"revision\";N;}s:25:\"\0*\0translatableEntityKeys\";a:1:{s:8:\"langcode\";a:1:{s:9:\"x-default\";s:2:\"en\";}}s:12:\"\0*\0validated\";b:1;s:21:\"\0*\0validationRequired\";b:0;s:19:\"\0*\0loadedRevisionId\";N;s:33:\"\0*\0revisionTranslationAffectedKey\";s:29:\"revision_translation_affected\";s:37:\"\0*\0enforceRevisionTranslationAffected\";a:0:{}s:15:\"\0*\0entityTypeId\";s:13:\"block_content\";s:15:\"\0*\0enforceIsNew\";b:1;s:12:\"\0*\0typedData\";N;s:16:\"\0*\0cacheContexts\";a:0:{}s:12:\"\0*\0cacheTags\";a:0:{}s:14:\"\0*\0cacheMaxAge\";i:-1;s:14:\"\0*\0_serviceIds\";a:0:{}s:18:\"\0*\0_entityStorages\";a:0:{}s:12:\"\0*\0isSyncing\";b:0;s:19:\"\0*\0accessDependency\";N;}"
+          context_mapping: {  }
+        additional:
+          layout_builder_styles_style:
+            0: ''
+            1: ''
+            accordion: 0
+            authors_title: 0
+            cta_phone: 0
+            product_title: 0
+            margin_bottom_70px_: 0
+          layout_builder_id: ''
+        weight: 0
+    third_party_settings: {  }
+  -
+    layout_id: layout_threecol_section
+    layout_settings:
+      label: ''
+      column_widths: 33-34-33
+      layout_builder_styles_style:
+        0: ''
+        1: ''
+        block_plain_text: 0
+        cta_columns: 0
+        column_cards: 0
+        divider: 0
+        framed_column_cards: 0
+        negative_bottom_margin: 0
+        negative_top_margin: 0
+        small_tile_section: 0
+        s: 0
+      context_mapping: {  }
+    components:
+      d85743b3-0c29-44f1-957d-4dcc488a1692:
+        uuid: d85743b3-0c29-44f1-957d-4dcc488a1692
+        region: first
+        configuration:
+          id: 'inline_block:text'
+          label: 'Inline block'
+          provider: layout_builder
+          label_display: ''
+          view_mode: full
+          block_revision_id: null
+          block_serialized: "O:40:\"Drupal\\block_content\\Entity\\BlockContent\":30:{s:8:\"\0*\0theme\";N;s:9:\"\0*\0values\";a:23:{s:8:\"langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:2:\"en\";}}}s:11:\"revision_id\";a:1:{s:9:\"x-default\";a:0:{}}s:2:\"id\";a:1:{s:9:\"x-default\";a:0:{}}s:4:\"uuid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:36:\"473effba-ad3a-425b-be8c-de4893187345\";}}}s:4:\"type\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:4:\"text\";}}}s:16:\"revision_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629696206;}}}s:13:\"revision_user\";a:1:{s:9:\"x-default\";a:0:{}}s:12:\"revision_log\";a:1:{s:9:\"x-default\";a:0:{}}s:6:\"status\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1;}}}s:4:\"info\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:12:\"Inline block\";}}}s:7:\"changed\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629696206;}}}s:8:\"reusable\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:16:\"default_langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:16:\"revision_default\";a:1:{s:9:\"x-default\";a:0:{}}s:29:\"revision_translation_affected\";a:1:{s:9:\"x-default\";a:0:{}}s:7:\"metatag\";a:1:{s:9:\"x-default\";a:0:{}}s:26:\"content_translation_source\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:3:\"und\";}}}s:28:\"content_translation_outdated\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:23:\"content_translation_uid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:1:\"1\";}}}s:27:\"content_translation_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629696206;}}}s:10:\"field_body\";a:1:{s:9:\"x-default\";a:1:{i:0;a:2:{s:5:\"value\";s:88:\"<p><a href=\"#\">Threat Intelligence</a></p>\r\n\r\n<p><a href=\"#\">Automated Defense</a></p>\r\n\";s:6:\"format\";s:10:\"basic_html\";}}}s:13:\"field_eyebrow\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_title\";a:1:{s:9:\"x-default\";a:0:{}}}s:9:\"\0*\0fields\";a:0:{}s:19:\"\0*\0fieldDefinitions\";N;s:12:\"\0*\0languages\";N;s:14:\"\0*\0langcodeKey\";s:8:\"langcode\";s:21:\"\0*\0defaultLangcodeKey\";s:16:\"default_langcode\";s:17:\"\0*\0activeLangcode\";s:9:\"x-default\";s:18:\"\0*\0defaultLangcode\";s:2:\"en\";s:15:\"\0*\0translations\";a:1:{s:9:\"x-default\";a:1:{s:6:\"status\";i:2;}}s:24:\"\0*\0translationInitialize\";b:0;s:14:\"\0*\0newRevision\";b:1;s:20:\"\0*\0isDefaultRevision\";b:1;s:13:\"\0*\0entityKeys\";a:2:{s:6:\"bundle\";s:4:\"text\";s:8:\"revision\";N;}s:25:\"\0*\0translatableEntityKeys\";a:1:{s:8:\"langcode\";a:1:{s:9:\"x-default\";s:2:\"en\";}}s:12:\"\0*\0validated\";b:1;s:21:\"\0*\0validationRequired\";b:0;s:19:\"\0*\0loadedRevisionId\";N;s:33:\"\0*\0revisionTranslationAffectedKey\";s:29:\"revision_translation_affected\";s:37:\"\0*\0enforceRevisionTranslationAffected\";a:0:{}s:15:\"\0*\0entityTypeId\";s:13:\"block_content\";s:15:\"\0*\0enforceIsNew\";b:1;s:12:\"\0*\0typedData\";N;s:16:\"\0*\0cacheContexts\";a:0:{}s:12:\"\0*\0cacheTags\";a:0:{}s:14:\"\0*\0cacheMaxAge\";i:-1;s:14:\"\0*\0_serviceIds\";a:0:{}s:18:\"\0*\0_entityStorages\";a:0:{}s:12:\"\0*\0isSyncing\";b:0;s:19:\"\0*\0accessDependency\";N;}"
+          context_mapping: {  }
+        additional:
+          layout_builder_styles_style:
+            0: ''
+            1: ''
+            accordion: 0
+            authors_title: 0
+            cta_phone: 0
+            product_title: 0
+            margin_bottom_70px_: 0
+          layout_builder_id: ''
+        weight: 1
+      ebfaf0fd-82d4-4052-8494-efbe9961f34b:
+        uuid: ebfaf0fd-82d4-4052-8494-efbe9961f34b
+        region: second
+        configuration:
+          id: 'inline_block:text'
+          label: 'Inline block'
+          provider: layout_builder
+          label_display: ''
+          view_mode: full
+          block_revision_id: null
+          block_serialized: "O:40:\"Drupal\\block_content\\Entity\\BlockContent\":30:{s:8:\"\0*\0theme\";N;s:9:\"\0*\0values\";a:23:{s:8:\"langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:2:\"en\";}}}s:11:\"revision_id\";a:1:{s:9:\"x-default\";a:0:{}}s:2:\"id\";a:1:{s:9:\"x-default\";a:0:{}}s:4:\"uuid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:36:\"85b2c9f4-b66a-4bf9-a8b9-969c17d3e40c\";}}}s:4:\"type\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:4:\"text\";}}}s:16:\"revision_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629696272;}}}s:13:\"revision_user\";a:1:{s:9:\"x-default\";a:0:{}}s:12:\"revision_log\";a:1:{s:9:\"x-default\";a:0:{}}s:6:\"status\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1;}}}s:4:\"info\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:12:\"Inline block\";}}}s:7:\"changed\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629696272;}}}s:8:\"reusable\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:16:\"default_langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:16:\"revision_default\";a:1:{s:9:\"x-default\";a:0:{}}s:29:\"revision_translation_affected\";a:1:{s:9:\"x-default\";a:0:{}}s:7:\"metatag\";a:1:{s:9:\"x-default\";a:0:{}}s:26:\"content_translation_source\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:3:\"und\";}}}s:28:\"content_translation_outdated\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:23:\"content_translation_uid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:1:\"1\";}}}s:27:\"content_translation_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629696272;}}}s:10:\"field_body\";a:1:{s:9:\"x-default\";a:1:{i:0;a:2:{s:5:\"value\";s:95:\"<p><a href=\"#\">Security Validation</a></p>\r\n\r\n<p><a href=\"#\">Cybersecurity Consulting</a></p>\r\n\";s:6:\"format\";s:10:\"basic_html\";}}}s:13:\"field_eyebrow\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_title\";a:1:{s:9:\"x-default\";a:0:{}}}s:9:\"\0*\0fields\";a:0:{}s:19:\"\0*\0fieldDefinitions\";N;s:12:\"\0*\0languages\";N;s:14:\"\0*\0langcodeKey\";s:8:\"langcode\";s:21:\"\0*\0defaultLangcodeKey\";s:16:\"default_langcode\";s:17:\"\0*\0activeLangcode\";s:9:\"x-default\";s:18:\"\0*\0defaultLangcode\";s:2:\"en\";s:15:\"\0*\0translations\";a:1:{s:9:\"x-default\";a:1:{s:6:\"status\";i:2;}}s:24:\"\0*\0translationInitialize\";b:0;s:14:\"\0*\0newRevision\";b:1;s:20:\"\0*\0isDefaultRevision\";b:1;s:13:\"\0*\0entityKeys\";a:2:{s:6:\"bundle\";s:4:\"text\";s:8:\"revision\";N;}s:25:\"\0*\0translatableEntityKeys\";a:1:{s:8:\"langcode\";a:1:{s:9:\"x-default\";s:2:\"en\";}}s:12:\"\0*\0validated\";b:1;s:21:\"\0*\0validationRequired\";b:0;s:19:\"\0*\0loadedRevisionId\";N;s:33:\"\0*\0revisionTranslationAffectedKey\";s:29:\"revision_translation_affected\";s:37:\"\0*\0enforceRevisionTranslationAffected\";a:0:{}s:15:\"\0*\0entityTypeId\";s:13:\"block_content\";s:15:\"\0*\0enforceIsNew\";b:1;s:12:\"\0*\0typedData\";N;s:16:\"\0*\0cacheContexts\";a:0:{}s:12:\"\0*\0cacheTags\";a:0:{}s:14:\"\0*\0cacheMaxAge\";i:-1;s:14:\"\0*\0_serviceIds\";a:0:{}s:18:\"\0*\0_entityStorages\";a:0:{}s:12:\"\0*\0isSyncing\";b:0;s:19:\"\0*\0accessDependency\";N;}"
+          context_mapping: {  }
+        additional:
+          layout_builder_styles_style:
+            0: ''
+            1: ''
+            accordion: 0
+            authors_title: 0
+            cta_phone: 0
+            product_title: 0
+            margin_bottom_70px_: 0
+          layout_builder_id: ''
+        weight: 0
+      ca165e67-9e90-4b60-ac17-3d1463c7ac86:
+        uuid: ca165e67-9e90-4b60-ac17-3d1463c7ac86
+        region: third
+        configuration:
+          id: 'inline_block:text'
+          label: 'Inline block'
+          provider: layout_builder
+          label_display: ''
+          view_mode: full
+          block_revision_id: null
+          block_serialized: "O:40:\"Drupal\\block_content\\Entity\\BlockContent\":30:{s:8:\"\0*\0theme\";N;s:9:\"\0*\0values\";a:23:{s:8:\"langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:2:\"en\";}}}s:11:\"revision_id\";a:1:{s:9:\"x-default\";a:0:{}}s:2:\"id\";a:1:{s:9:\"x-default\";a:0:{}}s:4:\"uuid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:36:\"a3be92e5-f94c-4bd2-901c-7f3f866d7500\";}}}s:4:\"type\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:4:\"text\";}}}s:16:\"revision_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629696302;}}}s:13:\"revision_user\";a:1:{s:9:\"x-default\";a:0:{}}s:12:\"revision_log\";a:1:{s:9:\"x-default\";a:0:{}}s:6:\"status\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1;}}}s:4:\"info\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:12:\"Inline block\";}}}s:7:\"changed\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629696302;}}}s:8:\"reusable\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:16:\"default_langcode\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:1;}}}s:16:\"revision_default\";a:1:{s:9:\"x-default\";a:0:{}}s:29:\"revision_translation_affected\";a:1:{s:9:\"x-default\";a:0:{}}s:7:\"metatag\";a:1:{s:9:\"x-default\";a:0:{}}s:26:\"content_translation_source\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";s:3:\"und\";}}}s:28:\"content_translation_outdated\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";b:0;}}}s:23:\"content_translation_uid\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:9:\"target_id\";s:1:\"1\";}}}s:27:\"content_translation_created\";a:1:{s:9:\"x-default\";a:1:{i:0;a:1:{s:5:\"value\";i:1629696302;}}}s:10:\"field_body\";a:1:{s:9:\"x-default\";a:1:{i:0;a:2:{s:5:\"value\";s:93:\"<p><a href=\"#\">Managed Offerings</a></p>\r\n\r\n<p><a href=\"#\">Training &amp; Expertise</a></p>\r\n\";s:6:\"format\";s:10:\"basic_html\";}}}s:13:\"field_eyebrow\";a:1:{s:9:\"x-default\";a:0:{}}s:11:\"field_title\";a:1:{s:9:\"x-default\";a:0:{}}}s:9:\"\0*\0fields\";a:0:{}s:19:\"\0*\0fieldDefinitions\";N;s:12:\"\0*\0languages\";N;s:14:\"\0*\0langcodeKey\";s:8:\"langcode\";s:21:\"\0*\0defaultLangcodeKey\";s:16:\"default_langcode\";s:17:\"\0*\0activeLangcode\";s:9:\"x-default\";s:18:\"\0*\0defaultLangcode\";s:2:\"en\";s:15:\"\0*\0translations\";a:1:{s:9:\"x-default\";a:1:{s:6:\"status\";i:2;}}s:24:\"\0*\0translationInitialize\";b:0;s:14:\"\0*\0newRevision\";b:1;s:20:\"\0*\0isDefaultRevision\";b:1;s:13:\"\0*\0entityKeys\";a:2:{s:6:\"bundle\";s:4:\"text\";s:8:\"revision\";N;}s:25:\"\0*\0translatableEntityKeys\";a:1:{s:8:\"langcode\";a:1:{s:9:\"x-default\";s:2:\"en\";}}s:12:\"\0*\0validated\";b:1;s:21:\"\0*\0validationRequired\";b:0;s:19:\"\0*\0loadedRevisionId\";N;s:33:\"\0*\0revisionTranslationAffectedKey\";s:29:\"revision_translation_affected\";s:37:\"\0*\0enforceRevisionTranslationAffected\";a:0:{}s:15:\"\0*\0entityTypeId\";s:13:\"block_content\";s:15:\"\0*\0enforceIsNew\";b:1;s:12:\"\0*\0typedData\";N;s:16:\"\0*\0cacheContexts\";a:0:{}s:12:\"\0*\0cacheTags\";a:0:{}s:14:\"\0*\0cacheMaxAge\";i:-1;s:14:\"\0*\0_serviceIds\";a:0:{}s:18:\"\0*\0_entityStorages\";a:0:{}s:12:\"\0*\0isSyncing\";b:0;s:19:\"\0*\0accessDependency\";N;}"
+          context_mapping: {  }
+        additional:
+          layout_builder_styles_style:
+            0: ''
+            1: ''
+            accordion: 0
+            authors_title: 0
+            cta_phone: 0
+            product_title: 0
+            margin_bottom_70px_: 0
+          layout_builder_id: ''
+        weight: 0
+    third_party_settings: {  }

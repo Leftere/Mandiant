@@ -1,0 +1,25 @@
+uuid: a064220c-f88d-4617-a9c1-26685f350809
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:text:f5ba514c-1847-44b0-b7c5-458345b23ea4'
+  module:
+    - block_content
+  theme:
+    - mandiant_theme
+id: megamenuinsightscta
+theme: mandiant_theme
+region: header
+weight: -3
+provider: null
+plugin: 'block_content:f5ba514c-1847-44b0-b7c5-458345b23ea4'
+settings:
+  id: 'block_content:f5ba514c-1847-44b0-b7c5-458345b23ea4'
+  label: 'MegaMenu - Resources - CTA'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

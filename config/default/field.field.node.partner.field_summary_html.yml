@@ -1,0 +1,26 @@
+uuid: d10644d4-7b8d-4a61-8231-c2aad12c0783
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary_html
+    - node.type.partner
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: '0'
+    plain_text: '0'
+id: node.partner.field_summary_html
+field_name: field_summary_html
+entity_type: node
+bundle: partner
+label: 'Summary (HTML)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

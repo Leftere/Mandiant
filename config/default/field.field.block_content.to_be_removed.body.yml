@@ -1,0 +1,23 @@
+uuid: 7613bf59-7b09-4235-9074-73735fa4740e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.to_be_removed
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.to_be_removed.body
+field_name: body
+entity_type: block_content
+bundle: to_be_removed
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

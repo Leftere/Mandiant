@@ -1,0 +1,25 @@
+.intro-text {
+  background-color: $white;
+  margin-bottom: 0 !important;
+
+  .block-bundle-text {
+    @extend %wrapper;
+
+    @include container($desktop);
+    background-color: $white;
+    margin-top: -6rem;
+    padding: 5rem 3rem;
+    position: relative;
+    text-align: center;
+
+    @include breakpoint($large-tablet) {
+      padding: 5rem 10rem;
+    }
+
+    .layout {
+      @extend %wrapper;
+
+      @include container($tablet);
+    }
+  }
+}

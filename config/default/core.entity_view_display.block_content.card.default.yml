@@ -1,0 +1,199 @@
+uuid: 69650f14-43e6-45ef-a938-cd7fa58b2407
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card
+    - field.field.block_content.card.field_alternative
+    - field.field.block_content.card.field_body
+    - field.field.block_content.card.field_cta
+    - field.field.block_content.card.field_eyebrow
+    - field.field.block_content.card.field_media
+    - field.field.block_content.card.field_title
+  module:
+    - layout_builder
+    - link
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          column_widths: 50-50
+          context_mapping: {  }
+        components:
+          1293464b-cec4-4abc-bbab-f76bd529cde8:
+            uuid: 1293464b-cec4-4abc-bbab-f76bd529cde8
+            region: first
+            configuration:
+              id: 'field_block:block_content:card:field_body'
+              label: Body
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 2
+          0e960266-a814-4ca8-9787-2ddb19e15353:
+            uuid: 0e960266-a814-4ca8-9787-2ddb19e15353
+            region: second
+            configuration:
+              id: 'field_block:block_content:card:field_media'
+              label: Media
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          d17ff73e-5a86-4c1c-80ee-8554198e088e:
+            uuid: d17ff73e-5a86-4c1c-80ee-8554198e088e
+            region: first
+            configuration:
+              id: 'field_block:block_content:card:field_cta'
+              label: Link
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: link
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: '0'
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 3
+          e909fb29-cbd9-4191-a87b-284f4371aa81:
+            uuid: e909fb29-cbd9-4191-a87b-284f4371aa81
+            region: first
+            configuration:
+              id: 'field_block:block_content:card:field_title'
+              label: Title
+              provider: layout_builder
+              label_display: ''
+              formatter:
+                label: hidden
+                type: text_field_formatter
+                settings:
+                  link_to_entity: 0
+                  wrap_tag: h2
+                  wrap_class: ''
+                  wrap_attributes: ''
+                  override_link_label: ''
+                  token: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+          c82b2ac2-4909-401f-85c2-249d6d776ffa:
+            uuid: c82b2ac2-4909-401f-85c2-249d6d776ffa
+            region: second
+            configuration:
+              id: 'field_block:block_content:card:field_alternative'
+              label: Alternative
+              provider: layout_builder
+              label_display: ''
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+          c20e482f-1337-4133-96a3-2cbd9f0463d2:
+            uuid: c20e482f-1337-4133-96a3-2cbd9f0463d2
+            region: first
+            configuration:
+              id: 'field_block:block_content:card:field_eyebrow'
+              label: Eyebrow
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: block_content.card.default
+targetEntityType: block_content
+bundle: card
+mode: default
+content:
+  field_body:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_bullets:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cta:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_media:
+    weight: 3
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  field_alternative: true
+  field_eyebrow: true
+  field_links: true
+  field_title: true
+  langcode: true
+  search_api_excerpt: true

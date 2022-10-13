@@ -1,0 +1,25 @@
+uuid: 222b0f26-2654-43d1-a1e1-7d6080d1e57f
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:text:848ebb57-a51a-4a2a-a6fa-fdbac9bf22d3'
+  module:
+    - block_content
+  theme:
+    - mandiant_theme
+id: megamenusolutionslinks
+theme: mandiant_theme
+region: header
+weight: -9
+provider: null
+plugin: 'block_content:848ebb57-a51a-4a2a-a6fa-fdbac9bf22d3'
+settings:
+  id: 'block_content:848ebb57-a51a-4a2a-a6fa-fdbac9bf22d3'
+  label: 'MegaMenu - Solutions - Links'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

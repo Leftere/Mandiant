@@ -1,0 +1,62 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Tue Jun 01 2021 16:48:58 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Bringing Clarity to the Government Cyber Security Challenge With AI-Powered XDR",
+    "jcr:versionHistory": "7644be3a-d174-4285-b4ce-2af952ff71ca",
+    "author": "Mike Epplin",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "7e747afe-5d40-46ef-9df6-a1afa3fea3d2"
+    ],
+    "jcr:created": "Tue Jun 01 2021 16:50:43 GMT+0000",
+    "cq:lastModified": "Tue Jun 01 2021 16:50:39 GMT+0000",
+    "jcr:baseVersion": "7e747afe-5d40-46ef-9df6-a1afa3fea3d2",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:mike-epplin",
+      "fireeye-blog-products-and-services:products-and-services",
+      "fireeye-blog-tags:automated-defense",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:federal",
+      "fireeye-blog-tags:government",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:xdr"
+    ],
+    "jcr:uuid": "317fdf8e-2e63-4fca-9f9f-29f98f1b042d",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Tue Jun 01 2021 12:45:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EGovernment agencies depend on IT to carry out operations, process essential data and deliver citizen services. Yet the risks to these systems are constantly increasing as security threats evolve and become more sophisticated. According to the GAO, over \u003Ca href=\u0022https:\/\/www.gao.gov\/cybersecurity\u0022\u003E28,000 security incidents were reported\u003C\/a\u003E by federal executive branch civilian agencies to the Department of Homeland Security in fiscal year 2019. That number is almost certainly an under-reporting of the attacks.\u003C\/p\u003E\n\u003Cp\u003EOne major factor hampering cyber security efforts is that agency front-line security analysts are struggling with too much noise. The proliferation of software-enabled systems and attack surfaces produces a flood of information without context. Every day analysts are bombarded with thousands of security alerts, 45 percent on average false positives. No matter how heroic or dedicated, humans simply cannot scale to meet the enormity of the threat to government networks and data.\u0026nbsp; \u0026nbsp;\u003C\/p\u003E\n\u003Ch4\u003EXDR via Mandiant Automated Defense Is the Solution\u003C\/h4\u003E\n\u003Cp\u003EWhat\u2019s needed is an Extended Detection and Response (XDR) solution. XDR solutions integrate a set of products unifying control points, security data, analytics, and operations into a single enterprise solution. XDR supports and unifies reporting of multiple attack surfaces\u2014endpoint, email, network, web filters and cloud sensors.\u003C\/p\u003E\n\u003Cp\u003EHaving acquired Respond Software\u2019s XDR engine late in 2020, Mandiant has rebranded the solution as \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/automated-defense.html\u0022\u003EMandiant Automated Defense\u003C\/a\u003E. Mandiant Automated Defense becomes a new part of the Mandiant Advantage SaaS platform, providing an AI-based, cloud-native XDR engine that automates monitoring and triage\u2014the initial investigation on the front end that is critical to catching threats early, before they become a problem.\u003C\/p\u003E\n\u003Cp\u003EMandiant Automated Defense connects the dots amongst disparate, multi-vendor security data at machine speed and scale so that the government analyst can focus on real security incidents without wasting time on false positives. Security teams would be able to detect the latest techniques and tactics at the front end, not just after the attack. In February 2021 alone Mandiant Automated Defense analyzed more than 52 billion customer alerts and reduced that overwhelming flood to less than 700 actual events that required prioritized investigations.\u003C\/p\u003E\n\u003Cp\u003EWe\u2019ve all seen crime dramas where the police must solve a mystery. What detectives do with physical evidence on a white board, an XDR Engine does with cyber security data\u2014but at machine speed and scale.\u003C\/p\u003E\n\u003Ch4\u003EReinforce Existing Security Platforms\u003C\/h4\u003E\n\u003Cp\u003EAdding Mandiant Automated Defense can immediately improve existing security services and platforms an agency many have in place. Security Information and Event Management (SIEM) systems require rules to be written and constantly maintained to be effective. Security Orchestration, Automation and Remediation (SOAR) platforms can choke on the high volumes of threat data coming in daily and require significant playbook development efforts. Both can be improved immediately by adding an XDR capability, automating response and detection capabilities with the power of AI and ML.\u003C\/p\u003E\n\u003Cp\u003EAdding Mandiant Automated Defense to Mandiant Advantage combines our experts and intelligence with decision automation to power threat alert correlation and triage. It\u2019s like inserting a cyborg Mandiant Analyst into your security platform, who learns faster as the threat volume increases.\u003C\/p\u003E\n\u003Ch4\u003EDeploy the Way You Want With No Vendor Lock\u003C\/h4\u003E\n\u003Cp\u003EMandiant Automated Defense offers flexible deployment options\u2014on premises, hybrid assisted model or as a fully managed service. It\u2019s important to avoid vendor lock when choosing the right XDR solution. Like\u0026nbsp;all of the Mandiant Advantage platform, Automated Defense is\u0026nbsp;controls\u0026nbsp;agnostic and\u0026nbsp;supports\u0026nbsp;a broad range of third-party control products, intelligence sources and contextual data.\u003C\/p\u003E\n\u003Cp\u003EMandiant \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/automated-defense.html\u0022\u003EAutomated Defense\u003C\/a\u003E is what front-line government analysts need to meet the cyber security mission. Ready to learn more? \u003Ca href=\u0022https:\/\/www.fireeye.com\/mandiant\/automated-defense.html\u0022\u003EClick here to view a detailed datasheet or to request a demo. \u003C\/a\u003E\u0026nbsp;\u003C\/p\u003E\n",
+        "jcr:lastModified": "Tue Jun 01 2021 16:45:13 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EXDR solutions such as Mandiant Automated Defense help protect the IT systems government agencies depend on to carry out operations and process data.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Tue Jun 01 2021 16:50:39 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Tue Jun 01 2021 16:48:37 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+uuid: 254e9e96-95f4-474a-8877-e0d2cba3fb2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_link
+    - media.type.image
+  module:
+    - link
+id: media.image.field_link
+field_name: field_link
+entity_type: media
+bundle: image
+label: Link
+description: 'Include an optional destination link if the display allows for the image to be likable.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

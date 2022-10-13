@@ -1,0 +1,18 @@
+version: "2.1"
+
+services:
+  cli:
+    environment:
+      - THEME_DEFAULT_PATH
+      - XDEBUG_ENABLED
+      - PHP_IDE_CONFIG=serverName=${VIRTUAL_HOST}
+      - SHIELD_AUTH_PASS
+      - RECAPTCHA_SITE_KEY
+
+  solr:
+    image: docksal/solr:7.7
+    extends:
+      file: ${HOME}/.docksal/stacks/services.yml
+      service: solr
+    volumes:
+      - ${PROJECT_ROOT}/.docksal/etc/solr/conf:/var/lib/solr/conf:ro

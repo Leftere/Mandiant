@@ -1,0 +1,14 @@
+.desktop-container {
+  @extend %wrapper;
+
+  @include container($desktop);
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  @include breakpoint($tablet) {
+    @include breakpoint(max-height 400px) {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+  }
+}

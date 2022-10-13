@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 287e2d58-e9e4-47f1-af66-482d6fdf0c90
+  bundle: cta
+  default_langcode: en
+  depends:
+    76142c52-522d-4fd1-aa68-da16dde771e8: user
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Inline block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      entity: 76142c52-522d-4fd1-aa68-da16dde771e8
+  content_translation_created:
+    -
+      value: 1626970016
+  field_body:
+    -
+      value: "<p>Sed euismod, erat et finibus elementum, felis ligula bibendum nibh, in condimentum tortor sem nec diam. Sed euismod nunc vitae pretium lacinia. Praesent rutrum ex vitae ipsum consequat consequat. Etiam vitae metus quis neque mattis dapibus aliquet in mauris. Duis gravida nisi id maximus vestibulum.</p>\r\n"
+      format: basic_html
+  field_title:
+    -
+      value: 'Example for CTA - BLOCK (dark)'

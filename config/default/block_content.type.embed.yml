@@ -1,0 +1,8 @@
+uuid: 4bc83ec9-f587-458c-8ac0-87ad4d2149f8
+langcode: en
+status: true
+dependencies: {  }
+id: embed
+label: Embed
+revision: 0
+description: ''

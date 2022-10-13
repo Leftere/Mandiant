@@ -1,0 +1,19 @@
+uuid: 4d5e44bd-fb0e-4f6a-8937-6d97177e49ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.featured_pages
+    - field.storage.block_content.field_eyebrow
+id: block_content.featured_pages.field_eyebrow
+field_name: field_eyebrow
+entity_type: block_content
+bundle: featured_pages
+label: Eyebrow
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

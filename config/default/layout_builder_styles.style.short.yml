@@ -1,0 +1,13 @@
+uuid: 6aa70ed6-f869-496b-9186-5a96de60bb17
+langcode: en
+status: true
+dependencies: {  }
+id: short
+label: Short
+classes: short
+type: component
+group: modifiers_type
+weight: -6
+block_restrictions:
+  - 'inline_block:hero'
+layout_restrictions: {  }

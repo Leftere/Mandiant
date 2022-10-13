@@ -1,0 +1,34 @@
+{
+    "name": "wearegenuine/gnorm",
+    "description": "Frontend prototyping framework.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Les Peabody",
+            "email": "lpeabody@wearegenuine.com"
+        },
+        {
+            "name": "Patrick Connors",
+            "email": "pconnors@wearegenuine.com"
+        },
+        {
+            "name": "Ryan Brooks",
+            "email": "rbrooks@wearegenuine.com"
+        }
+    ],
+    "require": {
+        "wearegenuine/gnorm-twig": "^0.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gnorm\\Fed\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "Gnorm\\Fed\\ProjectUtility::removeVirtualHost",
+            "Gnorm\\Fed\\ProjectUtility::updatePipelines"
+        ]
+    }
+}

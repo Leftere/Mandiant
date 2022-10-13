@@ -1,0 +1,20 @@
+.author-main-title {
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+
+  @include breakpoint($desktop) {
+    padding-bottom: 8rem;
+    padding-top: 8rem;
+  }
+}
+
+.author-title,
+.author-main-title {
+  h2 {
+    @include font-size(30, 40);
+    color: palette(blue, darkermed);
+    font-weight: 500;
+    margin: 0 0 2rem 0;
+    text-align: center;
+  }
+}

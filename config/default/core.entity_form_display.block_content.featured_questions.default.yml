@@ -1,0 +1,112 @@
+uuid: 46cf039b-a95a-4f15-96f6-08fa3126eb8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.featured_questions
+    - field.field.block_content.featured_questions.field_eyebrow
+    - field.field.block_content.featured_questions.field_tab
+  module:
+    - field_group
+    - inline_entity_form
+    - limited_field_widgets
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_content
+        - group_settings
+      parent_name: ''
+      weight: 1
+      format_type: tabs
+      region: content
+      format_settings:
+        direction: horizontal
+        width_breakpoint: 640
+        id: ''
+        classes: ''
+        show_empty_fields: false
+      label: Tabs
+    group_content:
+      children:
+        - field_title
+        - body
+        - field_cta
+        - field_eyebrow
+        - field_tab
+      parent_name: group_tabs
+      weight: 20
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Content
+    group_settings:
+      children:
+        - langcode
+      parent_name: group_tabs
+      weight: 21
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Settings
+id: block_content.featured_questions.default
+targetEntityType: block_content
+bundle: featured_questions
+mode: default
+content:
+  field_eyebrow:
+    weight: 29
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_tab:
+    weight: 30
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Question
+      label_plural: Questions
+      allow_new: true
+      match_operator: CONTAINS
+      revision: false
+      collapsible: false
+      collapsed: false
+      allow_existing: false
+      allow_duplicate: false
+    third_party_settings:
+      limited_field_widgets:
+        limit_values: '0'
+    type: inline_entity_form_complex
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden:
+  layout_selection: true

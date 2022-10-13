@@ -1,0 +1,145 @@
+// =======================================
+//    #CORE/HTML - TYPOGRAPHY
+// =======================================
+
+// =============================================================================
+// Font Smoothing
+//
+// `@extend %font-smoothing` when using custom fonts over dark backgrounds
+// =============================================================================
+%font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+strong {
+  font-weight: 700;
+}
+
+sup,
+sub {
+  font-size: 75%;
+  position: relative;
+  top: -.4em;
+  vertical-align: baseline;
+}
+
+sub {
+  top: .4em;
+}
+
+hr {
+  background-image: url('../images/hr.png');
+  background-position: center center;
+  background-repeat: repeat-x;
+  border: 0;
+  height: 13px;
+  margin-block-end: 3rem;
+  margin-block-start: 3rem;
+  outline: 0;
+  padding: 3rem 0;
+
+  @include breakpoint($desktop) {
+    padding: 7rem 0;
+  }
+}
+
+blockquote {
+  padding: 0;
+  position: relative;
+
+  p {
+    .resource-body & {
+      @include font-size(30, 40);
+      font-style: italic;
+      font-weight: 500;
+      padding: 3rem;
+    }
+  }
+
+  &:before,
+  &:after {
+    border-bottom: 2px solid $red;
+    border-top: 2px solid $red;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 1.6rem;
+  }
+
+  &:before {
+    border-left: 2px solid $red;
+    left: 0;
+  }
+
+  &:after {
+    border-right: 2px solid $red;
+    right: 0;
+  }
+}
+
+figure.quote {
+  position: relative;
+
+  &:before,
+  &:after {
+    border-bottom: 2px solid $red;
+    border-top: 2px solid $red;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 1.6rem;
+  }
+
+  &:before {
+    border-left: 2px solid $red;
+    left: 0;
+  }
+
+  &:after {
+    border-right: 2px solid $red;
+    right: 0;
+  }
+
+  blockquote {
+    margin-block-end: 0;
+    margin-block-start: 0;
+    padding: 2rem 0 3rem 0;
+    position: relative;
+
+    p {
+      @include font-size(30, 40);
+      font-style: italic;
+      font-weight: 500;
+      margin: 0;
+      padding: 0;
+    }
+
+    &:before,
+    &:after {
+      content: none;
+      display: none;
+    }
+  }
+
+  figcaption {
+    @include font-size(14, 36);
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: .25em;
+    margin-bottom: 0;
+    margin-inline-end: 40px;
+    margin-inline-start: 42px;
+    padding: 2rem 0 0 0;
+    position: relative;
+    text-transform: uppercase;
+
+    span {
+      display: inline-block;
+      font-weight: 400;
+      margin: 0 1rem;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Tue Mar 23 2021 16:05:31 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "FireEye Named A Leader in External Threat Intelligence by Leading Independent Research Firm",
+    "jcr:versionHistory": "512f9249-759e-4ac2-9e5f-93b385dcfc9d",
+    "cq:template": "\/apps\/fireeye-www\/fdc\/templates\/press-release",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "842df6bd-d782-4c88-beb4-7d5d73dacedf"
+    ],
+    "jcr:created": "Mon Jul 19 2021 17:37:17 GMT+0000",
+    "cq:lastModified": "Mon Jul 19 2021 17:34:55 GMT+0000",
+    "jcr:baseVersion": "842df6bd-d782-4c88-beb4-7d5d73dacedf",
+    "jcr:isCheckedOut": true,
+    "pagedate": "Tue Mar 23 2021 09:00:00 GMT-0700",
+    "cq:tags": [
+      "company:en-US\/press-releases",
+      "company:en-US\/press-releases\/2021",
+      "company:en-US\/press-releases\/latest",
+      "fireeye-doctypes:press-releases",
+      "company:en-US\/awards"
+    ],
+    "jcr:uuid": "afb8a10d-7bdb-42f5-b83f-5be83d196187",
+    "sling:resourceType": "fireeye-www\/fdc\/components\/page\/press-release",
+    "cq:designPath": "\/etc\/designs\/fireeye-www",
+    "cq:lastModifiedBy": "jeff.payne@fireeye.com",
+    "content-par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "grid_100_full": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "adam.greenberg@fireeye.com",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "jcr:created": "Tue Mar 23 2021 15:41:45 GMT+0000",
+        "jcr:lastModified": "Tue Mar 23 2021 15:41:45 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/grids\/grid-100-full",
+        "grid-100-mid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "fireeye-www\/fdc\/components\/grids\/grid-parsys\/parsys-100-full\/parsys",
+          "text": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "adam.greenberg@fireeye.com",
+            "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+            "jcr:created": "Tue Mar 23 2021 15:41:51 GMT+0000",
+            "text": "\u003Cp style=\u0022text-align: center;\u0022\u003E\u003Ci\u003EFireEye ranks highest in strategy and current offering categories; earning highest possible scores of \u201c5\u201d across 18 criteria\u003C\/i\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cb\u003EMILPITAS, Calif., March 23, 2021 \u003C\/b\u003E\u2013 \u003Ca href=\u0022https:\/\/www.fireeye.com\/\u0022\u003EFireEye, Inc.\u0026nbsp;\u003C\/a\u003E(NASDAQ: FEYE), the intelligence-led security company, today announced that it was named a leader in the Forrester Research, Inc. report: \u201cThe Forrester Wave\u003Csup\u003ETM:\u003C\/sup\u003E External Threat Intelligence Services Q1, 2021.\u201d\u003C\/p\u003E\n\u003Cp\u003EThe Forrester report finds that \u201cFireEye-Mandiant\u2019s strength in threat intelligence is in large part due to the reputation and visibility provided via the company\u2019s robust incident response consultancy, security controls business, and managed security services. The visibility gained from those supporting services is ahead of the pack.\u201d\u003C\/p\u003E\n\u003Cp\u003E\u201cWhen it comes to intelligence there is no substitute for quality,\u201d said Sandra Joyce, Executive Vice President and head of Mandiant Threat Intelligence. \u201cOrganizations need every advantage available to protect their people, critical systems, and data from constantly evolving criminal and state actors. This starts with understanding adversaries and threats targeting their infrastructure and designing a security program to match their capabilities. Every day we are on the front lines, hunting adversaries to deliver the intelligence and insights organizations need to better defend themselves.\u201d\u003C\/p\u003E\n\u003Cp\u003EThe report notes, \u201cCustomer references expressed high satisfaction with the new Mandiant Advantage portal. Their vulnerability intelligence subscription sets the bar for the category. The vendor also maintains one of the few cyber\/physical threat intelligence capabilities. Security buyers in North America, Europe, the Middle East, and Asia with operational technology environments and state-nexus threat concerns should strongly consider FireEye for their external threat intelligence service.\u201d\u003C\/p\u003E\n\u003Cp\u003EThe full report \u003Ci\u003EThe Forrester Wave External Threat Intelligence Services Q1, 2021\u003C\/i\u003E\u0026nbsp;is available for download: \u003Ca href=\u0022https:\/\/www.fireeye.com\/mandiant\/threat-intelligence\/forrester-wave-external-threat-intel-services-q121.html\u0022\u003Ehttps:\/\/www.fireeye.com\/mandiant\/threat-intelligence\/forrester-wave-external-threat-intel-services-q121\u003C\/a\u003E\u003C\/p\u003E\n\u003Cp\u003EThe Mandiant Advantage Saas platform allows security practitioners to explore actors, malware and vulnerabilities that matter to their business. Get free access here: \u003Ca href=\u0022https:\/\/www.fireeye.com\/mandiant\/advantage.html\u0022\u003Ehttps:\/\/www.fireeye.com\/mandiant\/advantage\u003C\/a\u003E\u003C\/p\u003E\n\u003Cp\u003EMandiant Threat Intelligence: Setting the Bar \u2013 blog post: \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/products-and-services\/2021\/03\/mandiant-threat-intelligence-setting-the-bar.html\u0022\u003Ehttps:\/\/www.fireeye.com\/blog\/products-and-services\/2021\/03\/mandiant-threat-intelligence-setting-the-bar\u003C\/a\u003E\u003C\/p\u003E\n\u003Ch4\u003EAbout Mandiant\u003Cb\u003E\u003C\/b\u003E\u003C\/h4\u003E\n\u003Cp\u003EMandiant Solutions, a part of FireEye, brings together the world\u2019s leading threat intelligence and frontline expertise with continuous security validation to arm organizations with the tools needed to increase security effectiveness and reduce organizational risk.\u003C\/p\u003E\n\u003Ch4\u003EAbout FireEye, Inc.\u003C\/h4\u003E\n\u003Cp\u003EFireEye is the intelligence-led security company. Working as a seamless, scalable\u0026nbsp;extension of customer security operations, FireEye offers a single platform that blends innovative security technologies, nation-state grade threat intelligence, and world-renowned Mandiant\u00ae consulting. With this approach, FireEye eliminates the complexity and burden of cyber security for organizations struggling to prepare for, prevent, and respond to cyber attacks. FireEye has over 9,900 customers across 103 countries, including more than 50 percent of the Forbes Global 2000.\u003C\/p\u003E\n\u003Cp\u003E\u00a9 2021 FireEye, Inc. All rights reserved. FireEye and Mandiant are registered trademarks or trademarks of FireEye, Inc. in the United States and other countries. All other brands, products, or service names are or may be trademarks or service marks of their respective owners.\u003C\/p\u003E\n\u003Ch4\u003EContacts\u003C\/h4\u003E\n\u003Cp\u003E\u003Cb\u003EMedia\u003C\/b\u003E\u003Cbr\u003E\n\u003Ca href=\u0022mailto:Media.Relations@FireEye.com\u0022\u003EMedia.Relations@FireEye.com\u003C\/a\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cb\u003EInvestors\u003C\/b\u003E\u003Cbr\u003E\n\u003Ca href=\u0022mailto:Investor.relations@fireeye.com\u0022\u003EInvestor.Relations@FireEye.com\u003C\/a\u003E\u003C\/p\u003E\n",
+            "jcr:lastModified": "Tue Mar 23 2021 15:47:22 GMT+0000",
+            "sling:resourceType": "fireeye-www\/fdc\/components\/text\/text",
+            "textIsRich": "true"
+          }
+        }
+      }
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "jeff.payne@fireeye.com",
+      "jcr:lastModified": "Mon Jul 19 2021 17:34:55 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

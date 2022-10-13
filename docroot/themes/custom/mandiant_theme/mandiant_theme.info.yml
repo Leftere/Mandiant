@@ -1,0 +1,25 @@
+name: Mandiant Main Theme
+type: theme
+description: Mandiant main theme, serving as a base for future themes.
+core_version_requirement: ^8 || ^9
+
+screenshot: mandiant.jpg
+
+libraries:
+  - mandiant_theme/gnorm-styles
+  - mandiant_theme/gnorm-js
+  - mandiant_theme/vertical-tabs
+
+component-libraries:
+  includes:
+    paths:
+      - gnorm/app/includes
+
+base theme: stark
+
+regions:
+  top: Top
+  header: Header
+  content: Content
+  footer: Footer
+  bottom: Bottom

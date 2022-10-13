@@ -1,0 +1,21 @@
+uuid: 2c2eea34-4956-46f7-a376-6c0c5d32bdca
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.partner
+    - field.storage.block_content.layout_selection
+id: block_content.partner.layout_selection
+field_name: layout_selection
+entity_type: block_content
+bundle: partner
+label: Layout
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: layout_library
+  handler_settings: {  }
+field_type: entity_reference

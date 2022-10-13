@@ -1,0 +1,8 @@
+name: Mandiant Migrate
+type: module
+package: CUSTOM
+core_version_requirement: ^8 || ^9
+description: 'Mandiant Migrate.'
+dependencies:
+  - migrate_tools
+  - migrate_plus

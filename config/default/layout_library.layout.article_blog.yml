@@ -1,0 +1,394 @@
+uuid: 2891fc38-a35d-4f1b-a21b-57d3a9f8b7ac
+langcode: en
+status: true
+dependencies: {  }
+id: article_blog
+label: Blog
+targetEntityType: node
+targetBundle: article
+layout:
+  -
+    layout_id: layout_onecol
+    layout_settings:
+      label: ''
+      context_mapping: {  }
+      layout_builder_styles_style:
+        0: ''
+        1: ''
+        resource_hero: resource_hero
+        block_plain_text: 0
+        component_intro: 0
+        intro_text: 0
+        negative_bottom_margin: 0
+        negative_top_margin: 0
+        related_thought_leadership: 0
+        section_product_services: 0
+        small_tile_section: 0
+        small_image_tile: 0
+    components:
+      403a0863-e1de-4ac8-be8c-496b4bb5bedf:
+        uuid: 403a0863-e1de-4ac8-be8c-496b4bb5bedf
+        region: content
+        configuration:
+          id: 'field_block:node:article:title'
+          label: Title
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: text_field_formatter
+            settings:
+              link_to_entity: 0
+              wrap_tag: h1
+              wrap_class: ''
+              wrap_attributes: ''
+              override_link_label: ''
+              token: ''
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 1
+      cdeeb782-3d8f-4e25-a607-42c2a010cf78:
+        uuid: cdeeb782-3d8f-4e25-a607-42c2a010cf78
+        region: content
+        configuration:
+          id: 'field_block:node:article:field_eyebrow'
+          label: Eyebrow
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: string
+            settings:
+              link_to_entity: false
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 0
+      de2b0e02-88b3-4dc0-b15f-4ebc5ba2e0f5:
+        uuid: de2b0e02-88b3-4dc0-b15f-4ebc5ba2e0f5
+        region: content
+        configuration:
+          id: 'extra_field_block:node:article:reading_time'
+          label: 'Reading time'
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            settings: {  }
+            third_party_settings: {  }
+          context_mapping:
+            entity: layout_builder.entity
+        additional: {  }
+        weight: 13
+      b0dc5f76-7224-44ef-8062-178cf6a8c1c4:
+        uuid: b0dc5f76-7224-44ef-8062-178cf6a8c1c4
+        region: content
+        configuration:
+          id: 'field_block:node:article:field_author'
+          label: Author
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: string
+            settings:
+              link_to_entity: false
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 11
+      30c55fc2-2c23-4d68-85d6-d59d8268665d:
+        uuid: 30c55fc2-2c23-4d68-85d6-d59d8268665d
+        region: content
+        configuration:
+          id: 'field_block:node:article:field_date'
+          label: Date
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: datetime_custom
+            settings:
+              timezone_override: ''
+              date_format: 'M d, Y'
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 12
+      1dac5f7b-8fed-4706-aa39-559f2e4a1689:
+        uuid: 1dac5f7b-8fed-4706-aa39-559f2e4a1689
+        region: content
+        configuration:
+          id: 'field_block:node:article:field_terms_topic'
+          label: Topic
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: entity_reference_label
+            settings:
+              link: false
+            third_party_settings:
+              field_formatter_class:
+                class: topic-hero
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          layout_builder_styles_style:
+            left_oriented: 0
+          layout_builder_id: ''
+        weight: 14
+    third_party_settings: {  }
+  -
+    layout_id: layout_twocol_section
+    layout_settings:
+      label: ''
+      column_widths: 67-33
+      layout_builder_styles_style:
+        0: ''
+        1: ''
+        2: ''
+        block_plain_text: 0
+        cta_contact_full: 0
+        divider: 0
+        negative_top_margin: 0
+        cta_columns: 0
+        negative_bottom_margin: 0
+        small_tile_section: 0
+        featured_testimonial: 0
+        3: ''
+      context_mapping: {  }
+      layout_builder_id: ''
+    components:
+      9d32411a-6ca6-4f6d-afe7-057ff6702033:
+        uuid: 9d32411a-6ca6-4f6d-afe7-057ff6702033
+        region: first
+        configuration:
+          id: 'field_block:node:article:field_body'
+          label: Body
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: text_default
+            settings: {  }
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 2
+      73df6655-77ad-418e-a914-070fb00f2151:
+        uuid: 73df6655-77ad-418e-a914-070fb00f2151
+        region: second
+        configuration:
+          id: 'field_block:node:article:field_embed'
+          label: Embed
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: text_default
+            settings: {  }
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 0
+      4f8a2142-b76d-442d-8e63-2471657a749d:
+        uuid: 4f8a2142-b76d-442d-8e63-2471657a749d
+        region: second
+        configuration:
+          id: 'field_block:node:article:field_block'
+          label: Blocks
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: block_field
+            settings: {  }
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          layout_builder_styles_style:
+            left_oriented: 0
+          layout_builder_id: ''
+        weight: 1
+      50ef0656-c5cc-4af9-b44f-08e9210ff221:
+        uuid: 50ef0656-c5cc-4af9-b44f-08e9210ff221
+        region: first
+        configuration:
+          id: 'field_block:node:article:field_media_document'
+          label: 'Download materials'
+          provider: layout_builder
+          label_display: visible
+          formatter:
+            label: hidden
+            type: entity_reference_entity_view
+            settings:
+              view_mode: cta
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          layout_builder_styles_style:
+            left_oriented: 0
+            padding_top_60px_: 0
+            padding_top_bottom_60: 0
+          layout_builder_id: ''
+        weight: 3
+    third_party_settings: {  }
+  -
+    layout_id: layout_onecol
+    layout_settings:
+      label: ''
+      layout_builder_styles_style:
+        0: ''
+        1: solid_light_white_
+        block_plain_text: 0
+        cta_contact_full: 0
+        component_intro: 0
+        intro_text: 0
+        negative_top_margin: 0
+        related_thought_leadership: 0
+        section_product_services: 0
+        negative_bottom_margin: 0
+        margin_bottom_zero: 0
+        padding_top_bottom_: 0
+        padding_top_: 0
+        small_image_tile: 0
+        small_tile_section: 0
+        featured_testimonial: 0
+        resource_hero: 0
+      layout_builder_id: ''
+      context_mapping: {  }
+    components:
+      c614f923-b9d4-40fb-9138-733b9580df7e:
+        uuid: c614f923-b9d4-40fb-9138-733b9580df7e
+        region: content
+        configuration:
+          id: 'field_block:node:article:field_related_bios'
+          label: Authors
+          provider: layout_builder
+          label_display: visible
+          formatter:
+            label: hidden
+            type: entity_reference_entity_view
+            settings:
+              view_mode: card
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          layout_builder_id: ''
+          layout_builder_styles_style:
+            left_oriented: 0
+            padding_top_60px_: 0
+            padding_top_bottom_60: 0
+        weight: 0
+    third_party_settings: {  }
+  -
+    layout_id: layout_onecol
+    layout_settings:
+      label: ''
+      layout_builder_styles_style:
+        0: ''
+        1: ''
+        block_plain_text: 0
+        cta_contact_full: 0
+        component_intro: 0
+        intro_text: 0
+        negative_top_margin: 0
+        related_thought_leadership: 0
+        section_product_services: 0
+        negative_bottom_margin: 0
+        margin_bottom_zero: 0
+        padding_top_bottom_: 0
+        padding_top_: 0
+        small_image_tile: 0
+        small_tile_section: 0
+        featured_testimonial: 0
+        resource_hero: 0
+      context_mapping: {  }
+      layout_builder_id: ''
+    components:
+      02549f7e-726e-4831-9ce0-db509c7bcb1c:
+        uuid: 02549f7e-726e-4831-9ce0-db509c7bcb1c
+        region: content
+        configuration:
+          id: 'field_block:node:article:field_related_insights_view'
+          label: 'Related Thought Leadership'
+          provider: layout_builder
+          label_display: visible
+          formatter:
+            label: hidden
+            type: viewsreference_formatter
+            settings:
+              plugin_types:
+                block: block
+                default: 0
+                page: 0
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          layout_builder_id: ''
+        weight: 2
+      4d0c538f-f1b5-439d-9aa1-61a8a536247a:
+        uuid: 4d0c538f-f1b5-439d-9aa1-61a8a536247a
+        region: content
+        configuration:
+          id: 'field_block:node:article:field_related_insights'
+          label: 'Related Thought Leadership'
+          provider: layout_builder
+          label_display: visible
+          formatter:
+            label: hidden
+            type: entity_reference_entity_view
+            settings:
+              view_mode: teaser
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          layout_builder_id: ''
+        weight: 1
+    third_party_settings: {  }

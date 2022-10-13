@@ -1,0 +1,128 @@
+.getting-started {
+  @include container($desktop);
+  background-color: $black;
+  color: $white;
+  padding: 6rem 0;
+  position: relative;
+
+  > .layout__region--second {
+    padding: 0 4rem;
+  }
+
+  &:before {
+    background: radial-gradient(at top right, #3f1c20, black);
+    content: '';
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100vw;
+
+    @include breakpoint($desktop) {
+      left: 0;
+    }
+  }
+
+  .layout--twocol-section {
+    align-items: flex-start;
+    flex-direction: column !important;
+    position: relative;
+  }
+
+  .block-bundle-cta {
+    background: transparent;
+    border: 0px;
+  }
+
+  .block-bundle-cta.block-cta-media {
+    margin: 0;
+
+    .layout__region--first {
+      align-self: center;
+      order: 2;
+
+      .image {
+        position: relative;
+
+        &:after {
+          border-bottom: 2px solid #d70e0a;
+          border-right: 2px solid #d70e0a;
+          border-top: 2px solid #d70e0a;
+          content: '';
+          height: 120%;
+          position: absolute;
+          right: -2.5rem;
+          top: -50%;
+          transform: translateY(34%);
+          width: 15px;
+        }
+
+        &:before {
+          border-bottom: 2px solid #d70e0a;
+          border-left: 2px solid #d70e0a;
+          border-top: 2px solid #d70e0a;
+          content: '';
+          height: 120%;
+          left: -2.5rem;
+          position: absolute;
+          top: -50%;
+          transform: translateY(34%);
+          width: 15px;
+        }
+      }
+    }
+
+    .layout__region--second {
+      margin: 0 auto 3rem;
+      max-width: 350px;
+      order: 1;
+      padding: 0;
+
+      .devider {
+        a {
+          color: $white;
+          font-weight: bold;
+        }
+      }
+
+      h2 {
+        margin-bottom: 0;
+      }
+    }
+
+    picture {
+      @include frame;
+      display: flex;
+      max-width: 400px;
+      position: relative;
+
+      &:before,
+      &:after {
+        padding: 0 1.25rem;
+      }
+
+      img {
+        padding: 2rem 1rem;
+      }
+    }
+  }
+
+  .block-bundle-cta:not(.block-cta-media) {
+    padding-bottom: 0;
+
+    h2 {
+      @include font-size(18, 27);
+      font-weight: 500;
+      margin-top: 0;
+    }
+  }
+
+  .cta-button {
+    margin-bottom: 25px;
+    margin-top: -10px;
+
+    a {
+      @include cta-simple;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed May 04 2016 09:04:21 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Malware Lateral Movement: A Primer",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "17e371dd-4d79-4d95-9dff-d8dbec96ee09",
+    "author": "Chad Holmes",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "lynda.hall@fireeye.com",
+    "focusKeyword": "advanced malware",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "3d6fa7c5-86b2-42dd-93b8-7cf007efd228"
+    ],
+    "jcr:created": "Fri Jun 03 2016 19:48:58 GMT-0400",
+    "cq:lastReplicated": "Fri Jun 03 2016 19:48:58 GMT-0400",
+    "cq:lastModified": "Wed Sep 23 2015 18:24:03 GMT-0400",
+    "cq:distribute": true,
+    "jcr:baseVersion": "3d6fa7c5-86b2-42dd-93b8-7cf007efd228",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-tags:malware",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:advanced-malware"
+    ],
+    "jcr:uuid": "f2112b79-c5c6-4b9e-9657-1b77025973d8",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Tue Aug 11 2015 12:35:00 GMT-0700",
+    "_charset_": "UTF-8",
+    "cq:lastModifiedBy": "lynda.hall@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "lynn.thorne@fireeye.com",
+        "text": "\u003Cp\u003EFor all the talk about malware, a lot of discussion focuses on initial infection.\u0026nbsp; Recently, the lateral spread of malware\u2014so called east-west movement\u2014has garnered more increasing interest.\u0026nbsp; Here\u2019s some basics every security professional should know.\u003Ci\u003E\u003Cbr\u003E\n\u003C\/i\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cu\u003ESo, how is your day-to-day IT operations related to lateral spread?\u003C\/u\u003E\u003C\/p\u003E\n\u003Cp\u003EDuring our incident response engagements conducted all over the world, we identify numerous trends related to how malicious actors, maintain persistence and move laterally within a compromised organization. After the initial host compromise, the malicious actors will typically focus their efforts on credential harvesting, internal reconnaissance and attacking other internal systems to get deeper inside your network.\u003C\/p\u003E\n\u003Cp\u003EThey will utilize whatever is at their disposal to continue their quest for your data. This often includes leveraging built-in operating systems, and IT support tools and protocols that your organization actively relies on during its daily operations. For example, they will access and use tools like PowerShell, remote desktop protocol, Kerberos, remote scheduling tools, communication protocols and many others to move throughout your network. \u0026nbsp;\u003C\/p\u003E\n\u003Cp\u003EBeyond just being resourceful, attackers often turn to these tools and protocols for another reason:\u0026nbsp; Evasion. Tools like Powershell are often whitelisted, and their activity\/logs are often not part of a security log review process. By leveraging already-existing tools and protocols, attackers avoid being detected on your network; a key aspect of longer term, persistent campaigns.\u003C\/p\u003E\n\u003Cp\u003EThe key techniques used for lateral movement are:\u003C\/p\u003E\n\u003Cp\u003E\u003Ci\u003E1) Internal reconnaissance\u003C\/i\u003E\u003Cbr\u003E\nLets first take a look at the different techniques and tools that the malicious actor will use during their internal reconnaissance efforts. After they are able to gain access to an individual machine on your network, they will need to find out where they are located, what they can get access to and what firewalls or other devices that maybe between them and their goal. To do this, they may download other tools or they will use built-in windows or support tools, to reduce their risk of being detected.\u003C\/p\u003E\n\u003Cp\u003EHere is a brief list of some built-in tools, that they may leverage to do internal reconnaissance.\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003ENetstat \u2013 Built-in tool showing the machines current network connections. This can be used for identifying more critical assets or used for gaining knowledge of the network they are connected to.\u003C\/li\u003E\n\u003Cli\u003EIPConfig\/IFConfig \u2013 Built-in tools providing access to the network configuration and location information\u003C\/li\u003E\n\u003Cli\u003EARP cache \u2013 Provides information of the IP address to physical address. This information can be used for targeting individuals machines inside your network and\/or used for evasion techniques.\u003C\/li\u003E\n\u003Cli\u003ELocal Routing table \u2013 This will display the current routes\/communication paths for the connected host\u003C\/li\u003E\n\u003Cli\u003EPowerShell \u2013 Powerful built-in Windows command line and scripting tool\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EThey could also leverage tons of external custom tools and open source tools for port scanning, proxy connections and other techniques.\u003C\/p\u003E\n\u003Cp\u003E\u003Ci\u003E2) Credentials harvesting;\u003C\/i\u003E\u003Cbr\u003E\nWhen it comes to massive compromise of an entire network, credentials are a main component. Out of all the incident response engagements that we conducted; 100% of them involved the threat actor compromising valid credentials during the attack. The malicious actor used any and all possible techniques to gain access to the local or domain level credentials.\u003C\/p\u003E\n\u003Cp\u003EHere are some of the techniques, we have seen;\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EStealing of NTLM hashes and then performing a technique called \u201cpass the hash\u201d, which allows the malicious actor to successfully authenticate to other machines with these hashes.\u003C\/li\u003E\n\u003Cli\u003EStealing of plaintext passwords from the memory of the machine using tools like Mimikatz and using these passwords to authenticate to other machines.\u003C\/li\u003E\n\u003Cli\u003EIn this process, an intruder that has compromised a domain controller can generate a Kerberos ticket-granting ticket for any user. This golden ticket can be generated offline, remain valid for an indefinite lifespan, and be used to impersonate any account\u2014even after a password reset.\u003Cbr\u003E\n\u003C\/li\u003E\n\u003Cli\u003EUtilizing open source keylogging tools to capture passwords\u003C\/li\u003E\n\u003Cli\u003EUtilizing certificate capture tools like Mimikatz to harvest authentication certificates from compromised machines\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003E\u003Ci\u003E3) Pivoting attacks to compromise other hosts\u003C\/i\u003E\u003Cbr\u003E\nIt varies on the motives of the malicious actor but most of the time, it is not the \u201cpatient zero\u201d machine that was the goal. Instead, they are looking to use the information that was gathered in the previous steps to gain deeper access to your network, bypassing existing security controls and exfiltrating your data.\u003C\/p\u003E\n\u003Cp\u003EDuring this phase, the malicious actor will again utilize the built-in system or IT support tools to help them spread laterally. Here are a few example techniques used to do so:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EUsing built-in system tools like Remote Desktop Protocol (RDP), AT, PsExec, VBScript and using open source tools like Metasploit. While these tools have been used a lot in the past for things like remote scheduling, exploiting, evasion or remote access and authentication, they tend to leave behind more forensic artifacts. As a result, we have seen a move to newer techniques.\u003C\/li\u003E\n\u003Cli\u003ESome of the newer techniques that we have seen includes leveraging the built-in Windows tool PowerShell and WMI (Windows Management Instrumentation). Attackers can use PowerShell and WMI to connect to remote systems, modify the registry, access event logs, and even execute commands on remote machines.\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EAs you can see, it is important to understand the techniques used by malicious actors to do internal reconnaissance, credential harvesting and pivoting attacks towards other machines inside your network.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/malware.png\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\n\u003Cp\u003EBottom line is a lot of the tools that malicious actors will utilize are tools that your IT support staff also uses or installs by default. Reducing business risk and improving security starts with controlling your internal environment and making people realize that security is everyone\u2019s problem.\u003C\/p\u003E\n\u003Cp\u003E\u003Cu\u003EWhat can you do to detect and contain the threat actors creeping around in the dark space of your network?\u003C\/u\u003E\u003C\/p\u003E\n\u003Cp\u003EFirst, you need to be able to shine a light into that dark space and get visibility into what you are missing. Below are some recommendations that will help you do just that:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EGathering Threat Intelligence about the tools, tactics and procedures of the malicious actors and their campaigns\u003C\/li\u003E\n\u003Cli\u003EHave a threat analytics platform to identify and consolidate the information that will give your analyst the ability to do more proactive hunting for these types of techniques\u003C\/li\u003E\n\u003Cli\u003EProactively perform forensics and sweeping of endpoints for indicators of compromise\u003C\/li\u003E\n\u003Cli\u003EHarden the devices that are on your network by removing any non-required applications or services and preforming proactive application and system configuration management and logging\u003C\/li\u003E\n\u003Cli\u003EImplement tighter controls and proactive monitoring of credentials and applications, utilizing whitelisting and multifactor authentication methods.\u003C\/li\u003E\n\u003Cli\u003EPerform data exfiltration identification and monitoring by utilizing full packet analysis and monitoring tools.\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EArmed with this information, you will hopefully be able to empower your IT staff to detect these types of actives, and see a little deeper into the dark spaces on your network where traditional tools fall short.\u003C\/p\u003E\n\u003Cp\u003EFor more technical details of the different techniques covered please review the 2015 M-Trends report located\u003Ci\u003E \u003C\/i\u003E\u003Ca href=\u0022https:\/\/www2.fireeye.com\/rs\/fireye\/images\/rpt-m-trends-2015.pdf\u0022\u003E\u003Ci\u003Ehere\u003C\/i\u003E\u003C\/a\u003E\u003C\/p\u003E\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\n",
+        "jcr:lastModified": "Thu Aug 13 2015 17:55:45 GMT-0400",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "alt": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "comments": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/commons\/components\/comments"
+      },
+      "trackback": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/blog\/components\/trackback"
+      }
+    }
+  }
+}

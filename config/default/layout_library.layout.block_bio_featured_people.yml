@@ -1,0 +1,109 @@
+uuid: 4cd9a621-0923-44df-9832-b645503883a2
+langcode: en
+status: true
+dependencies: {  }
+id: block_bio_featured_people
+label: 'Featured People'
+targetEntityType: block_content
+targetBundle: bio
+layout:
+  -
+    layout_id: layout_onecol
+    layout_settings:
+      label: ''
+      layout_builder_styles_style:
+        0: ''
+        1: ''
+        block_plain_text: 0
+        cta_contact_full: 0
+        component_intro: 0
+        intro_text: 0
+        negative_top_margin: 0
+        related_thought_leadership: 0
+        search_filter: 0
+        search_results_: 0
+        section_product_services: 0
+        negative_bottom_margin: 0
+        margin_bottom_zero: 0
+        padding_top_bottom_: 0
+        padding_top_: 0
+        small_image_tile: 0
+        small_tile_section: 0
+        featured_testimonial: 0
+        margin_bottom_60px_: 0
+        padding_top_60px_: 0
+        resource_hero: 0
+      layout_builder_id: ''
+      context_mapping: {  }
+    components:
+      eab67b70-27b4-4882-b116-22f0fed74b8d:
+        uuid: eab67b70-27b4-4882-b116-22f0fed74b8d
+        region: content
+        configuration:
+          id: 'field_block:block_content:bio:field_title'
+          label: Title
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: text_field_formatter
+            settings:
+              link_to_entity: 0
+              wrap_tag: h2
+              wrap_class: ''
+              wrap_attributes: ''
+              override_link_label: ''
+              token: ''
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          layout_builder_id: ''
+        weight: 0
+      517f8b61-37de-459d-942b-cdfbb6d6a92c:
+        uuid: 517f8b61-37de-459d-942b-cdfbb6d6a92c
+        region: content
+        configuration:
+          id: 'field_block:block_content:bio:field_body'
+          label: Body
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: text_default
+            settings: {  }
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          layout_builder_id: ''
+        weight: 1
+      fb1a8eb4-edd8-41a2-864b-3129f6d57180:
+        uuid: fb1a8eb4-edd8-41a2-864b-3129f6d57180
+        region: content
+        configuration:
+          id: 'field_block:block_content:bio:field_bios'
+          label: Bios
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: entity_reference_entity_view
+            settings:
+              view_mode: card
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          layout_builder_id: ''
+        weight: 2
+    third_party_settings: {  }

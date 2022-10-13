@@ -1,0 +1,26 @@
+uuid: 0b610db8-8807-4721-9058-2767c7b33809
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary_html
+    - node.type.bio
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: '0'
+    plain_text: '0'
+id: node.bio.field_summary_html
+field_name: field_summary_html
+entity_type: node
+bundle: bio
+label: 'Summary (HTML)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

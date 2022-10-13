@@ -1,0 +1,19 @@
+{%
+  set classes = [
+    'block-bundle',
+    'block-bundle-featured_resources',
+    'hide-media',
+    'divided-info',
+  ]
+%}
+{% set title = elements['#configuration']['label'] %}
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if title %}
+    <h3{{ title_attributes }}>{{ title }}</h3>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+</div>

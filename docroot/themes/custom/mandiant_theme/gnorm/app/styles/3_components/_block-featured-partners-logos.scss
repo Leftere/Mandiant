@@ -1,0 +1,51 @@
+.block-bundle-partner.feature-partners-logos {
+  @extend %wrapper;
+
+  @include container($desktop);
+  padding: 3rem $spacing-unit;
+
+  .layout__region {
+    align-items: center;
+    flex-direction: column;
+
+    @include breakpoint($desktop) {
+      display: flex;
+    }
+
+    > div:first-child {
+      flex: 1 0 auto;
+      text-align: center;
+    }
+
+    > div:last-child > div {
+      display: grid;
+      grid-gap: 12rem;
+      grid-template-columns: 1fr;
+      padding: 0 4rem;
+
+      @include breakpoint($tablet) {
+        grid-template-columns: 1fr 1fr 1fr;
+
+        @include breakpoint(max-height 400px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @include breakpoint($desktop) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+
+      div {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        img {
+          border-radius: 0;
+          max-height: 140px;
+          max-width: 150px;
+        }
+      }
+    }
+  }
+}

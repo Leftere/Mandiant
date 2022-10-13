@@ -1,0 +1,50 @@
+.column-cards {
+  @extend %wrapper;
+
+  @include container($desktop);
+  align-items: center;
+  margin-bottom: 0 !important;
+  padding: 0 0 5rem 0;
+  position: relative;
+
+  .wrapper {
+    > .layout__region {
+      align-items: center;
+      background-color: #f3f3f8;
+      border-bottom: 15px solid $lighterGray;
+      border-top: 15px solid $lighterGray;
+      margin: .5rem;
+      padding: 5rem 4rem;
+
+      @include breakpoint($tablet) {
+        flex: 1;
+      }
+
+      @include breakpoint($desktop) {
+        padding: 5rem 6rem 4rem;
+      }
+    }
+  }
+
+  &.layout--fourcol-section {
+    .wrapper {
+      > .layout__region {
+        padding: 2rem;
+      }
+    }
+  }
+
+  .block-bundle-text {
+    position: relative;
+
+    h2 {
+      @include font-size(18, 18);
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    p {
+      @include font-size(16, 24);
+    }
+  }
+}

@@ -1,0 +1,18 @@
+uuid: ccc109a1-9363-46bc-9e4e-7aa5c8fbbbd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.to_be_removed
+id: block_content.to_be_removed.metatag
+field_name: metatag
+entity_type: block_content
+bundle: to_be_removed
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

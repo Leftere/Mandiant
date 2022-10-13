@@ -1,0 +1,7 @@
+{% set cards = items|length <= 4 ? items|length : 4 %}
+{% set columns = 'cols cols-' ~ cards %}
+<div{{ attributes.addClass(columns) }}>
+  {% for item in items %}
+    {{ item.content }}
+  {% endfor %}
+</div>

@@ -1,0 +1,251 @@
+.block-bundle-bio {
+  &.block-bio-default {
+    > .layout {
+      > .layout__region {
+        @include make-custom-block($type: 'bio', $grid-gap: 2rem);
+        padding-bottom: 4rem;
+        padding-top: 6rem;
+
+        .cols.cols-4,
+        .cols.cols-3,
+        .cols.cols-2,
+        .cols.cols-1 {
+          grid-template-columns: repeat(1, 1fr);
+          margin: 6rem auto 0 auto;
+
+          > a {
+            color: $black;
+
+            @include breakpoint($tablet) {
+              display: flex;
+              grid-column: 1 / -1;
+              max-width: 100%;
+            }
+
+            h3 {
+              @include font-size(22, 24);
+              margin-bottom: 1.25rem;
+            }
+
+            > span.media {
+              margin-bottom: 0;
+              width: auto;
+            }
+
+            > span.column {
+              align-self: center;
+              padding: 0 4rem;
+
+              > h3,
+              > span,
+              > small {
+                display: block;
+
+                @include breakpoint($large-tablet) {
+                  max-width: 60%;
+                }
+
+                &.role {
+                  color: $medGray;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.block-bio-experts {
+    @include bg-gradient-curves-red();
+
+    > .layout {
+      > .layout__region {
+        @include make-custom-block($type: 'bio', $grid-gap: 2rem);
+        color: $white;
+        padding-bottom: 5rem;
+        padding-top: 10rem;
+
+        h2 {
+          position: relative;
+
+          &:before {
+            @include icon-hr-3();
+            content: ' ';
+            height: 18px;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: -5rem;
+            width: 100%;
+          }
+        }
+
+        .cols {
+          margin: 6rem auto;
+
+          @include breakpoint($tablet) {
+            width: 90%;
+          }
+
+          > a {
+            color: $white;
+
+            @include breakpoint($tablet) {
+              @include card-media-square-bracket-multiple();
+            }
+
+            h3 {
+              margin-bottom: 0;
+              margin-top: 4rem;
+              padding: 0 4rem;
+            }
+
+            span,
+            small {
+              &.role,
+              &.summary,
+              &.cta-href {
+                padding: 0 4rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.block-bio-featured-people {
+    background-color: $lighterGray;
+
+    > .layout {
+      > .layout__region {
+        @include make-custom-block($type: 'bio', $grid-gap: 2rem);
+        padding-bottom: 4rem;
+        padding-top: 6rem;
+
+        .cols {
+          margin: 6rem auto;
+
+          > a {
+            color: $black;
+
+            @include breakpoint(max-width $tablet) {
+              width: 75%;
+            }
+
+            h3 {
+              margin-bottom: 0;
+              margin-top: 2rem;
+            }
+
+            span,
+            small {
+              &.role {
+                color: $medGray;
+              }
+
+              &.summary {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.block-bio-featured-person {
+    background-color: $lighterWhite;
+
+    > .layout {
+      > .layout__region {
+        @include make-custom-block($type: 'bio', $grid-gap: 2rem);
+        padding-bottom: 4rem;
+        padding-top: 6rem;
+
+        h2 {
+          position: relative;
+
+          &:before {
+            @include icon-hr-3();
+            content: ' ';
+            height: 18px;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: -4rem;
+            width: 100%;
+          }
+        }
+
+        .cols {
+          margin: 6rem auto 0 auto;
+
+          > a {
+            color: $black;
+
+            @include breakpoint(max-width $tablet) {
+              width: 75%;
+            }
+
+            h3 {
+              margin-bottom: 0;
+              margin-top: 2rem;
+            }
+
+            span,
+            small {
+              &.role {
+                color: $medGray;
+              }
+
+              &.summary {
+                display: none;
+              }
+            }
+          }
+
+          > a:first-child {
+            @include card-media-square-bracket-single();
+
+            @include breakpoint($tablet) {
+              display: flex;
+              grid-column: 1 / -1;
+              margin-bottom: 0;
+              max-width: 100%;
+            }
+
+            h3 {
+              @include font-size(28, 32);
+              font-weight: 500;
+              margin-bottom: 1.25rem;
+            }
+
+            > span.media {
+              margin-bottom: 0;
+              min-width: 30%;
+              width: auto;
+            }
+
+            > span.column {
+              align-self: center;
+              padding: 0 4rem;
+
+              @include breakpoint($tablet) {
+                padding: 0 8rem;
+              }
+            }
+
+            span,
+            small {
+              &.summary {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

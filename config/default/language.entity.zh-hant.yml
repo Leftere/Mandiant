@@ -1,0 +1,15 @@
+uuid: a083d5da-7ebb-4dac-b1ea-a9e337955a1f
+langcode: zh-hant
+status: true
+dependencies:
+  module:
+    - disable_language
+third_party_settings:
+  disable_language:
+    disable: true
+    redirect_language: en
+id: zh-hant
+label: 'Chinese, Traditional'
+direction: ltr
+weight: 9
+locked: false

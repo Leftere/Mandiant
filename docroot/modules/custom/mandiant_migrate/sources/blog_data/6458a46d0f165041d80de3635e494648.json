@@ -1,0 +1,79 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Fri Mar 31 2017 10:23:58 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Introducing Monitor.app for macOS",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "1f2159a0-81bb-4a8d-b45d-79a25d2250ee",
+    "author": "Stephen Davis",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "adam.greenberg@fireeye.com",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "03aa3876-3e51-484d-9ac3-af07721205e3"
+    ],
+    "jcr:created": "Wed Oct 24 2018 14:29:23 GMT-0400",
+    "cq:lastReplicated": "Wed Oct 24 2018 14:29:22 GMT-0400",
+    "cq:lastModified": "Wed Oct 24 2018 14:29:08 GMT-0400",
+    "cq:distribute": true,
+    "jcr:baseVersion": "03aa3876-3e51-484d-9ac3-af07721205e3",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-tags:mac",
+      "fireeye-blog-tags:apple",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:ice",
+      "fireeye-blog-authors:stephen-davis",
+      "fireeye-doctypes:blog",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:tools"
+    ],
+    "jcr:uuid": "3e9887c4-9d41-47ce-8435-b1fc3a71c72c",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Fri Mar 31 2017 10:15:00 GMT-0400",
+    "_charset_": "UTF-8",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003E\u003Ci\u003EUPDATE 2 (Oct. 24, 2018): Monitor.app now supports macOS 10.14\u003C\/i\u003E.\u003C\/p\u003E\n\u003Cp\u003E\u003Ci\u003EUPDATE (April 4, 2018): Monitor.app now supports macOS 10.13.\u003C\/i\u003E\u003C\/p\u003E\n\u003Cp\u003EAs a malware analyst or systems programmer, having a suite of solid dynamic analysis tools is vital to being quick and effective. These tools enable us to understand malware capabilities and undocumented components of the operating system. One obvious tool that comes to mind is \u003Ca href=\u0022https:\/\/technet.microsoft.com\/en-us\/sysinternals\/bb842062.aspx\u0022\u003EProcmon from the legendary Sysinternals Suite\u003C\/a\u003E from Microsoft. Those tools only work on Windows though and we love macOS.\u003C\/p\u003E\n\u003Cp\u003EmacOS has some fantastic dynamic instrumentation software included with the operating system and Xcode. In the past, we have used dynamic instrumentation tools such as \u003Ca href=\u0022http:\/\/dtrace.org\/\u0022\u003EDtrace\u003C\/a\u003E, a very powerful tracing subsystem built into the core of macOS. While it is very powerful and efficient, it commonly required us to write D scripts to get the interesting bits. We wanted something simpler.\u003C\/p\u003E\n\u003Cp\u003EToday, the Innovation and Custom Engineering (ICE) Applied Research team presents the public release of \u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/services\/freeware\/monitor.html\u0022\u003EMonitor.app\u003C\/a\u003E for macOS, a simple GUI application for monitoring common system events on a macOS host. Monitor.app captures the following event types:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EProcess execution with command line arguments\u003C\/li\u003E\n\u003Cli\u003EFile creates (if data is written)\u003C\/li\u003E\n\u003Cli\u003EFile renames\u003C\/li\u003E\n\u003Cli\u003ENetwork activity\u003C\/li\u003E\n\u003Cli\u003EDNS requests and replies\u003C\/li\u003E\n\u003Cli\u003EDynamic library loads\u003C\/li\u003E\n\u003Cli\u003ETTY Events\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EMonitor.app identifies system activities using a kernel extension (kext). Its focus is on capturing data that matters, with context. These events are presented in the UI with a rich search capability allowing users to hunt through event data for areas of interest.\u003C\/p\u003E\n\u003Cp\u003EThe goal of Monitor is simplicity. When launching Monitor, the user is prompted for root credentials to launch a process and load our kext (don\u2019t worry, the main UI process doesn\u2019t run as root). From there, the user can click on the start button and watch the events roll in!\u003C\/p\u003E\n\u003Cp\u003EThe UI is sparse with a few key features. There is the start\/stop button, filter buttons, and a search bar. The search bar allows us to set simple filters on types of data we may want to filter or search for over all events. The event table is a listing of all the events Monitor is capable of presenting to the user. The filter buttons allow the user to turn off some classes of events. For example, if a TimeMachine backup were to kick off when the user was trying to analyze a piece of malware, the user can click the file system filter button and the file write events won\u2019t clutter the display.\u003C\/p\u003E\n\u003Cp\u003EAs an example, perhaps we were interested in seeing any processes that communicated with xkcd.com. We can simply use an \u201cAny\u201d filter and enter xkcd into the search bar, as seen in Figure 1.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/Monitor.app\/Fig1.png\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 1: Monitor.app User Interface\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EWe think you will be surprised how useful Monitor can be when trying to figure out how components of macOS or even malware work under the hood, all without firing up a debugger or D script.\u003C\/p\u003E\n\u003Cp\u003EClick \u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/services\/freeware\/monitor.html\u0022\u003Ehere\u003C\/a\u003E to download Monitor.app. Please send any feature requests\/bugs to \u003Ca href=\u0022mailto:monitorapp-bugs@fireeye.com\u0022\u003Emonitorapp-bugs@fireeye.com\u003C\/a\u003E.\u003C\/p\u003E\n\u003Cp\u003E\u003Ci\u003EApple, Mac and MacOS are registered trademarks or trademarks of Apple Inc.\u003C\/i\u003E\u003C\/p\u003E\n",
+        "jcr:lastModified": "Wed Oct 24 2018 14:29:08 GMT-0400",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "alt": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "comments": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/commons\/components\/comments"
+      },
+      "trackback": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/blog\/components\/trackback"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EThe Innovation and Custom Engineering (ICE) Applied Research team presents the public release of Monitor.app for macOS, a simple GUI application for monitoring common system events on a macOS host.\u0026nbsp;\u003C\/p\u003E\n",
+      "jcr:lastModified": "Thu Mar 30 2017 12:14:51 GMT-0400",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Fri Mar 31 2017 10:26:41 GMT-0400",
+      "imageRotate": "0"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+uuid: 875e166f-ae65-4ab7-8c48-289e09a04422
+langcode: en
+status: true
+dependencies: {  }
+id: red
+label: 'Solid (Red)'
+classes: bg-solid--red
+type: component
+group: background
+weight: -11
+block_restrictions:
+  - 'inline_block:cta'
+layout_restrictions: {  }

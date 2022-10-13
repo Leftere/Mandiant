@@ -1,0 +1,14 @@
+uuid: 4c1355b4-9f26-48e5-96a9-405b3dd6fc2c
+langcode: en
+status: true
+dependencies: {  }
+id: wave_background_image
+label: 'Image (Wave)'
+classes: wv-bg-img
+type: section
+group: background
+weight: 0
+block_restrictions:
+  - 'inline_block:card'
+layout_restrictions:
+  - layout_onecol

@@ -1,0 +1,19 @@
+uuid: c93bc493-9a8b-499d-94ee-d45a084b860d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.featured_logos
+    - field.storage.block_content.field_title
+id: block_content.featured_logos.field_title
+field_name: field_title
+entity_type: block_content
+bundle: featured_logos
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

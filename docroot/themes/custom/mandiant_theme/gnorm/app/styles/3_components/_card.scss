@@ -1,0 +1,132 @@
+.block-bundle-card {
+  &.card-product-services {
+    margin-bottom: 0;
+    padding: 5rem 0;
+
+    &.pt-6 {
+      padding-top: 6rem;
+    }
+
+    &.p-6 {
+      @include breakpoint($tablet) {
+        padding: 6rem 0;
+      }
+    }
+
+    .layout__region--first {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .layout__region--second {
+      background: linear-gradient(109deg, rgba(6, 4, 12, 1) 0%, rgba(18, 16, 24, .54) 73%);
+      border-bottom-right-radius: 15px;
+
+      > div {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      img {
+        border-bottom-right-radius: 15px;
+
+        @include breakpoint(max-width $tablet) {
+          min-height: 200px;
+        }
+      }
+
+      ul:not(.contextual-links) {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        padding-right: 10rem;
+
+        @include breakpoint(max-width $tablet) {
+          padding-right: 2rem;
+        }
+
+        li {
+          margin: 1rem 0;
+          padding-left: 5rem;
+          position: relative;
+
+          &:after {
+            background-image: url('../images/redArrow.svg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 14px;
+            color: red;
+            content: '';
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: -10px;
+            transform: rotate(225deg);
+            width: 40px;
+          }
+        }
+      }
+    }
+
+    &.darkest-blue {
+      background-color: $darkestBlue;
+      position: relative;
+
+      &:after {
+        background-image: url('../images/backgrounds/waves.png');
+        background-position: 0 100%;
+        background-repeat: no-repeat;
+        bottom: 0;
+        content: '';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        width: 100%;
+
+        @include breakpoint($tablet) {
+          width: 20%;
+        }
+      }
+
+      .layout__region--first {
+        background-color: $charcoal;
+        border-top-left-radius: 15px;
+        padding: 0rem 10rem 3rem 10rem;
+        z-index: 10;
+
+        @include breakpoint(max-width $tablet) {
+          padding: 4rem;
+        }
+      }
+
+      .layout__region--second {
+        z-index: 10;
+      }
+    }
+  }
+
+  > div {
+    background-color: $charcoal;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    margin: 0 auto;
+    max-width: $desktop;
+
+    > .layout__region--first {
+      padding: 4rem;
+      text-align: left;
+
+      @include breakpoint($desktop) {
+        padding: 6rem 10rem;
+      }
+    }
+
+    > .layout__region--second {
+      padding-right: 6rem;
+    }
+  }
+}

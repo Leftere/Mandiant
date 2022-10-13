@@ -1,0 +1,31 @@
+session:
+  parameter: language
+url:
+  source: domain
+  prefixes:
+    en: ''
+    fr: fr
+    de: de
+    it: it
+    ja: ja
+    ko: ko
+    pt-br: pt-br
+    es: es
+    zh-hans: zh-hans
+    zh-hant: zh-hant
+    ar: ar
+  domains:
+    en: www.mandiant.com
+    fr: www.mandiant.fr
+    de: www.mandiant.de
+    it: www.mandiant.it
+    ja: www.mandiant.jp
+    ko: www.mandiant.kr
+    pt-br: www.mandiant.br
+    es: www.mandiant.es
+    zh-hans: www.mandiant.ch
+    zh-hant: www.mandiant.zh
+    ar: www.mandiant.ar
+selected_langcode: site_default
+_core:
+  default_config_hash: uEePITI9tV6WqzmsTb7MfPCi5yPWXSxAN1xeLcYFQbM

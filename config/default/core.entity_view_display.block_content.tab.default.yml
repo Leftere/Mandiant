@@ -1,0 +1,246 @@
+uuid: 774e947a-2a86-49b7-97f3-4de85ce027f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tab
+    - field.field.block_content.tab.field_body
+    - field.field.block_content.tab.field_eyebrow
+    - field.field.block_content.tab.field_tab
+    - field.field.block_content.tab.field_title
+  module:
+    - field_formatter_class
+    - layout_builder
+    - layout_discovery
+    - layout_library
+    - slick_entityreference
+    - smart_trim
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          132533f8-1801-4cd2-bdab-19da3c0d206e:
+            uuid: 132533f8-1801-4cd2-bdab-19da3c0d206e
+            region: content
+            configuration:
+              id: 'field_block:block_content:tab:field_title'
+              label: Title
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_field_formatter
+                settings:
+                  link_to_entity: 0
+                  wrap_tag: h2
+                  wrap_class: ''
+                  wrap_attributes: ''
+                  override_link_label: ''
+                  token: ''
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional:
+              layout_builder_id: ''
+            weight: 1
+          b33c5c3d-fc95-4662-8154-8d03d63f588e:
+            uuid: b33c5c3d-fc95-4662-8154-8d03d63f588e
+            region: content
+            configuration:
+              id: 'field_block:block_content:tab:field_body'
+              label: Body
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: smart_trim
+                settings:
+                  trim_length: 20
+                  trim_type: words
+                  trim_suffix: ''
+                  wrap_output: false
+                  wrap_class: trimmed
+                  more_link: false
+                  more_text: More
+                  more_class: more-link
+                  trim_options:
+                    text: true
+                    trim_zero: false
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional:
+              layout_builder_id: ''
+            weight: 2
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          column_widths: 50-50
+          layout_builder_styles_style:
+            0: ''
+            1: ''
+            2: ''
+            block_plain_text: 0
+            cta_contact_full: 0
+            divider: 0
+            negative_top_margin: 0
+            cta_columns: 0
+            negative_bottom_margin: 0
+            padding_top_bottom_: 0
+            small_tile_section: 0
+            featured_testimonial: 0
+            padding_top_60px_: 0
+            3: ''
+          layout_builder_id: ''
+          context_mapping: {  }
+        components:
+          3413b99f-1e33-45dd-a533-c0d9159d813e:
+            uuid: 3413b99f-1e33-45dd-a533-c0d9159d813e
+            region: first
+            configuration:
+              id: 'field_block:block_content:tab:field_tab'
+              label: Tab
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_revisions_entity_view
+                settings:
+                  view_mode: preview
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional:
+              layout_builder_id: ''
+            weight: 0
+          7ce8a7b8-42c1-468c-ac7f-ded96828dd03:
+            uuid: 7ce8a7b8-42c1-468c-ac7f-ded96828dd03
+            region: second
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:block_content:tab:field_tab'
+              formatter:
+                type: slick_entityreference_vanilla
+                label: hidden
+                settings:
+                  optionset: vertical_tabs
+                  skin: ''
+                  view_mode: slick
+                  cache: 0
+                  current_view_mode: default
+                  use_theme_field: false
+                  override: false
+                  overridables:
+                    arrows: '0'
+                    autoplay: '0'
+                    dots: '0'
+                    draggable: '0'
+                    infinite: '0'
+                    mouseWheel: '0'
+                    randomize: '0'
+                    variableWidth: '0'
+                  skin_arrows: ''
+                  skin_dots: ''
+                  fx: ''
+                  style: ''
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+  layout_library:
+    enable: false
+id: block_content.tab.default
+targetEntityType: block_content
+bundle: tab
+mode: default
+content:
+  field_body:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 20
+      trim_type: words
+      trim_suffix: ''
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
+      more_link: false
+      summary_handler: full
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: smart_trim
+    region: content
+  field_eyebrow:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_tab:
+    type: slick_entityreference_vanilla
+    weight: 3
+    label: hidden
+    settings:
+      optionset: vertical_tabs
+      skin: ''
+      view_mode: slick
+      cache: 0
+      current_view_mode: default
+      use_theme_field: false
+      override: false
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      skin_arrows: ''
+      skin_dots: ''
+      fx: ''
+      style: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

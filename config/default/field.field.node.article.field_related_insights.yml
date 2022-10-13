@@ -1,0 +1,28 @@
+uuid: b0db4d5d-9a5d-4eb1-bb2d-34af1e3ebcb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_insights
+    - node.type.article
+id: node.article.field_related_insights
+field_name: field_related_insights
+entity_type: node
+bundle: article
+label: 'Related Insights (manual)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,10 @@
+uuid: 3d189cc6-5641-4979-b32a-5674ec237493
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.slick_tab
+label: 'Slick tab'
+targetEntityType: media
+cache: true

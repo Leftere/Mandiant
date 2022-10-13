@@ -1,0 +1,17 @@
+uuid: 11d93023-e43e-41a1-ab4b-0a292ef74ed1
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Partner
+type: partner
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

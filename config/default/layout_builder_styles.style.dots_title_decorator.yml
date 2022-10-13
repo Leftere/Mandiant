@@ -1,0 +1,13 @@
+uuid: e1fba1f8-64c2-48af-ae0f-a9b863d7a9b7
+langcode: en
+status: true
+dependencies: {  }
+id: dots_title_decorator
+label: 'Dots title decorator'
+classes: dots-title-decorator
+type: component
+group: modifiers_style
+weight: 0
+block_restrictions:
+  - 'inline_block:to_be_removed'
+layout_restrictions: {  }

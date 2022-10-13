@@ -1,0 +1,32 @@
+uuid: 6d767b24-2adb-4016-8578-dde1222775a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.video.field_media_oembed_video
+    - field.field.media.video.field_terms_industry
+    - field.field.media.video.field_terms_topic
+    - media.type.video
+id: media.video.media_library
+targetEntityType: media
+bundle: video
+mode: media_library
+content:
+  name:
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_media_oembed_video: true
+  field_terms_industry: true
+  field_terms_topic: true
+  langcode: true
+  path: true
+  status: true
+  uid: true

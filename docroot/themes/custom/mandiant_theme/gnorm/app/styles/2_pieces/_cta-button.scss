@@ -1,0 +1,55 @@
+.cta-button {
+  a {
+    @include font-size(14, 14);
+    background-color: $red;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+    color: $white;
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-right: 4rem;
+    padding: 1rem 2rem;
+    position: relative;
+    text-transform: uppercase;
+    transition: .4s all ease;
+
+    &:hover,
+    &:focus {
+      background-color: darken($red, 10%);
+      color: $white;
+
+      &:before {
+        background-color: darken($red, 20%);
+      }
+    }
+
+    &:before {
+      background-color: darken($red, 10%);
+      border-bottom-right-radius: 10px;
+      content: '';
+      height: 100%;
+      position: absolute;
+      right: -40px;
+      top: 0;
+      transition: .4s background-color ease;
+      width: 40px;
+    }
+
+    &:after {
+      background-image: url('../images/arrow.svg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 14px;
+      content: '';
+      height: 100%;
+      position: absolute;
+      right: -40px;
+      top: 0;
+      transform: rotate(225deg);
+      width: 40px;
+    }
+  }
+}

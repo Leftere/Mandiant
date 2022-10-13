@@ -1,0 +1,128 @@
+uuid: 6d4f364a-31e3-4061-a909-3a7fd4e8ee0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.bio
+    - field.field.block_content.bio.field_bios
+    - field.field.block_content.bio.field_body
+    - field.field.block_content.bio.field_title
+    - field.field.block_content.bio.layout_selection
+  module:
+    - layout_builder
+    - layout_discovery
+    - layout_library
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          b1541148-f5b1-4361-bbf2-e9228b33a52d:
+            uuid: b1541148-f5b1-4361-bbf2-e9228b33a52d
+            region: content
+            configuration:
+              id: 'field_block:block_content:bio:field_title'
+              label: Title
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_field_formatter
+                settings:
+                  link_to_entity: 0
+                  wrap_tag: h2
+                  wrap_class: ''
+                  wrap_attributes: ''
+                  override_link_label: ''
+                  token: ''
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          403797ed-ed64-47c8-8fd7-cbebb27f0865:
+            uuid: 403797ed-ed64-47c8-8fd7-cbebb27f0865
+            region: content
+            configuration:
+              id: 'field_block:block_content:bio:field_body'
+              label: Body
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+          e201bd9d-4ebe-4c18-9b69-f7e122474fd2:
+            uuid: e201bd9d-4ebe-4c18-9b69-f7e122474fd2
+            region: content
+            configuration:
+              id: 'field_block:block_content:bio:field_bios'
+              label: Bios
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: card
+                third_party_settings:
+                  field_formatter_class:
+                    class: ''
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional:
+              layout_builder_id: ''
+            weight: 2
+        third_party_settings: {  }
+  layout_library:
+    enable: true
+id: block_content.bio.default
+targetEntityType: block_content
+bundle: bio
+mode: default
+content:
+  field_bios:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_body:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true
+  layout_selection: true
+  search_api_excerpt: true

@@ -1,0 +1,64 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Fri Feb 02 2018 21:16:29 GMT-0500",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Attacks Leveraging Adobe Zero-Day (CVE-2018-4878) \u2013 Threat Attribution, Attack Scenario and Recommendations",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "881def21-1a84-4219-9adb-4bf3f7e120ff",
+    "author": "FireEye",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "adam.greenberg@fireeye.com",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "d383b9eb-a342-43e9-a1b3-a3b02f9c6470"
+    ],
+    "jcr:created": "Mon Feb 05 2018 11:38:19 GMT-0500",
+    "cq:lastReplicated": "Mon Feb 05 2018 11:38:18 GMT-0500",
+    "cq:lastModified": "Mon Feb 05 2018 11:37:55 GMT-0500",
+    "jcr:baseVersion": "d383b9eb-a342-43e9-a1b3-a3b02f9c6470",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:cap-fireeye",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:0day",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:vulnerability",
+      "fireeye-blog-tags:zero-day"
+    ],
+    "jcr:uuid": "f220c720-cabf-4c88-986c-41ef4f642bb8",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Fri Feb 02 2018 21:15:00 GMT-0500",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EOn Jan. 31, KISA (KrCERT) published an\u0026nbsp;\u003Ca href=\u0022https:\/\/www.krcert.or.kr\/data\/secNoticeView.do?bulletin_writing_sequence=26998\u0022\u003Eadvisory about an Adobe Flash zero-day vulnerability\u003C\/a\u003E\u0026nbsp;(CVE-2018-4878) being exploited in the wild. On Feb. 1, Adobe issued an advisory confirming the\u0026nbsp;\u003Ca href=\u0022https:\/\/helpx.adobe.com\/security\/products\/flash-player\/apsa18-01.html\u0022\u003Evulnerability exists in Adobe Flash Player 28.0.0.137 and earlier\u003C\/a\u003E\u0026nbsp;versions, and that successful exploitation could potentially allow an attacker to take control of the affected system.\u003C\/p\u003E\n\u003Cp\u003EFireEye began investigating the vulnerability following the release of the initial advisory from KISA.\u003C\/p\u003E\n\u003Ch4\u003EThreat Attribution\u003C\/h4\u003E\n\u003Cp\u003EWe assess that the actors employing this latest Flash zero-day are a suspected North Korean group we track as TEMP.Reaper. We have observed TEMP.Reaper operators directly interacting with their command and control infrastructure from IP addresses assigned to the STAR-KP network in Pyongyang. The STAR-KP network is operated as a joint venture between the North Korean Government\u0026#39;s Post and Telecommunications Corporation and Thailand-based Loxley Pacific. Historically, the majority of their targeting has been focused on the South Korean government, military, and defense industrial base; however, they have expanded to other international targets in the last year. They have taken interest in subject matter of direct importance to the Democratic People\u0026#39;s Republic of Korea (DPRK) such as Korean unification efforts and North Korean defectors.\u003C\/p\u003E\n\u003Cp\u003EIn the past year, FireEye iSIGHT Intelligence has discovered newly developed wiper malware being deployed by TEMP.Reaper, which we detect as RUHAPPY. While we have observed other suspected North Korean threat groups such as TEMP.Hermit employ wiper malware in disruptive attacks, we have not thus far observed TEMP.Reaper use their wiper malware actively against any targets.\u003C\/p\u003E\n\u003Ch4\u003EAttack Scenario\u003C\/h4\u003E\n\u003Cp\u003EAnalysis of the exploit chain is ongoing, but available information points to the Flash zero-day being distributed in a malicious document or spreadsheet with an embedded SWF file. Upon opening and successful exploitation, a decryption key for an encrypted embedded payload would be downloaded from compromised third party websites hosted in South Korea. Preliminary analysis indicates that the vulnerability was likely used to distribute the previously observed DOGCALL malware to South Korean victims.\u003C\/p\u003E\n\u003Ch4\u003ERecommendations\u003C\/h4\u003E\n\u003Cp\u003EAdobe stated that it plans to release a fix for this issue the week of Feb. 5, 2018. Until then, we recommended that customers use extreme caution, especially when visiting South Korean sites, and avoid opening suspicious documents, especially Excel spreadsheets. Due to the publication of the vulnerability prior to patch availability, it is likely that additional criminal and nation state groups will attempt to exploit the vulnerability in the near term.\u003C\/p\u003E\n\u003Ch4\u003EFireEye Solutions Detections\u003C\/h4\u003E\n\u003Cp\u003EFireEye Email Security, Endpoint Security with Exploit Guard enabled, and Network Security products will detect the malicious document natively. Email Security and Network Security customers who have enabled the riskware feature may see additional alerts based on suspicious content embedded in malicious documents.\u0026nbsp;Customers can find more information in our\u0026nbsp;\u003Ca href=\u0022https:\/\/community.fireeye.com\/docs\/DOC-7041\u0022\u003EFireEye Customer Communities post\u003C\/a\u003E.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Mon Feb 05 2018 11:37:55 GMT-0500",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EWe assess that the actors employing this latest Flash zero-day are a suspected North Korean group we track as TEMP.Reaper.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Fri Feb 02 2018 21:09:50 GMT-0500",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Fri Feb 02 2018 21:11:21 GMT-0500",
+      "imageRotate": "0"
+    }
+  }
+}

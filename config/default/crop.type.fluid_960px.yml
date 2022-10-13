@@ -1,0 +1,12 @@
+uuid: f8e43035-0af9-4353-8aa8-2bd55e791f30
+langcode: en
+status: true
+dependencies: {  }
+id: fluid_960px
+label: 'Fluid 960px'
+description: ''
+aspect_ratio: '1:1'
+soft_limit_width: 960
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

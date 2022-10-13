@@ -1,0 +1,53 @@
+uuid: 564361c1-4276-4351-8646-25f149aa7d5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.question_answers
+    - field.field.paragraph.tab.field_body
+    - field.field.paragraph.tab.field_cta_link
+    - field.field.paragraph.tab.field_media
+    - field.field.paragraph.tab.field_title
+    - paragraphs.paragraphs_type.tab
+  module:
+    - layout_builder
+    - layout_builder_restrictions
+    - layout_library
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+  layout_library:
+    enable: false
+  layout_builder_restrictions:
+    allowed_block_categories: {  }
+    entity_view_mode_restriction:
+      whitelisted_blocks: {  }
+      blacklisted_blocks: {  }
+      restricted_categories: {  }
+      allowed_layouts: {  }
+id: paragraph.tab.question_answers
+targetEntityType: paragraph
+bundle: tab
+mode: question_answers
+content:
+  field_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_cta_link: true
+  field_media: true
+  search_api_excerpt: true

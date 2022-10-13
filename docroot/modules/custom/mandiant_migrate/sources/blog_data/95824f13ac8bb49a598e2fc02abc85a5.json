@@ -1,0 +1,53 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed May 04 2016 09:03:52 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Malware Callbacks",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "4528f75f-9b02-46f0-9ff6-231bd457144d",
+    "author": "Rob Rachwald",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "lynda.hall@fireeye.com",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "820331d6-7803-4d40-bf39-d98f0fc95d3b"
+    ],
+    "jcr:created": "Fri Jan 26 2018 17:40:06 GMT-0500",
+    "cq:lastReplicated": "Fri Jan 26 2018 17:40:06 GMT-0500",
+    "cq:lastModified": "Fri Jan 26 2018 17:40:01 GMT-0500",
+    "jcr:baseVersion": "820331d6-7803-4d40-bf39-d98f0fc95d3b",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-doctypes:blog",
+      "fireeye-blog-authors:cap-rob-rachwald",
+      "fireeye-blog-threat-research:threat-research"
+    ],
+    "jcr:uuid": "af246779-98a2-426e-b433-221fb23632c3",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Mon Apr 22 2013 22:30:00 GMT-0700",
+    "cq:lastModifiedBy": "lynda.hall@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "lynda.hall@fireeye.com",
+        "text": "\u003Cp\u003EToday we released our first-ever \u003Ca adhocenable=\u0022false\u0022 href=\u0022http:\/\/www2.fireeye.com\/WEB2013ATLReport.html.\u0022\u003Eanalysis of malware callbacks\u003C\/a\u003E.\u003Cbr\u003E\n\u003C\/p\u003E\n\u003Cp\u003EFireEye monitored more than 12 million malware communications seeking instructions\u2014or callbacks\u2014across hundreds of thousands of infected enterprise hosts, capturing details of advanced attacks as well as more generic varieties during the course of 2012. Callback activity reveals a great deal about an attacker\u2019s intentions, interests and geographic location. Cyber attacks are a widespread global activity. We\u2019ve built\u0026nbsp;interactive maps that highlight the presence of malware globally:\u0026nbsp; \u003Ca href=\u0022http:\/\/www.fireeye.com\/cyber-attack-landscape\/\u0022\u003Ehttp:\/\/www.fireeye.com\/cyber-attack-landscape\/\u003C\/a\u003E.\u003C\/p\u003E\n\u003Cp\u003EOur key findings:\u003C\/p\u003E\n\u003Col\u003E\n\u003Cli\u003E\u003Cb\u003EMalware has become a multinational activity\u003C\/b\u003E. Over the past year, callbacks were sent to command and control (CnC) servers in 184 countries\u2014a 42 percent increase when compared to 130 countries in 2010.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003ETwo key regions stand out as hotspots driving advanced cyber attacks: Asia and Eastern Europe. \u003C\/b\u003ELooking at the average callbacks per company by country, the Asian nations of China, South Korea, India, Japan, and Hong Kong accounted for 24 percent. Not far behind, the Eastern European countries of Russia, Poland, Romania, Ukraine, Kazhakstan, and Latvia comprised 22 percent. (North America represented 44 percent but this is due to CnC servers residing in the United States to help attackers with evasion.)\u003Cb\u003E\u003C\/b\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003EThe majority of Advanced Persistent Threat (APT) callback activities are associated with APT tools that are made in China or that originated from Chinese hacker groups\u003C\/b\u003E. By mapping the DNA of known APT malware families against callbacks, FireEye Malware Intelligence Lab discovered that the majority of APT callback activities\u201489 percent\u2014are associated with APT tools that are made in China or that originated from Chinese hacker groups. The main tool is Gh0st RAT.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003EAttackers are increasingly sending initial callbacks to servers within the same nation in which the target resides\u003C\/b\u003E. To improve evasion, hackers are increasingly placing CnC servers within target nations. At the same time, this fact gives a strong indicator of which countries are most interesting to attackers.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003ETechnology organizations are experiencing the highest rate of APT callback activity\u003C\/b\u003E. With a high volume of intellectual property, technology firms are natural targets for attackers and are experiencing heavy APT malware activity.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003EFor APT attacks, CnC servers were hosted in the United States 66 percent of the time, a strong indicator that the U.S. is still the top target country for attacks\u003C\/b\u003E. As previously mentioned, attackers increasingly put CnC servers in the target country to help avoid detection. With such a high proportion of CnC servers, by a wide margin, the U.S. is subject to the highest rate of malware attacks. This is likely, due to a very high concentration of intellectual property and digitized data that resides in the U.S.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003ETechniques for disguising callback communications are evolving.\u003C\/b\u003E To evade detection, CnC servers are leveraging social networking sites like Facebook and Twitter for communicating with infected machines. Also, to mask exfiltrated content, attackers embed information inside common files, such as JPGs, to give network scanning tools the impression of normal traffic.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003EAttack patterns vary substantially globally\u003C\/b\u003E:\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\n\u003Col\u003E\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\n\u003Cli\u003E\u003Cb\u003ESouth Korean firms experience the highest level of callback communications per organization\u003C\/b\u003E. Due to a robust internet infrastructure, South Korea has emerged as a fertile location for cybercriminals to host their CnC infrastructure. For example, FireEye found that callbacks from technology firms are most likely to go to South Korea.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003EIn Japan, 87 percent of callbacks originated and stayed in country\u003C\/b\u003E. This may give an indication of the high value of Japanese intellectual property.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003EIn Canada, 99 percent of callbacks exited the country. In the U.K., exit rates were 90 percent\u003C\/b\u003E. High exit rates indicate attackers are unconcerned about detection. In Canada and the U.K., attackers appear to be unconcerned about detection and pursue low-hanging fruit opportunistically.\u003C\/li\u003E\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\n\u003C\/ol\u003E\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\n\u003C\/li\u003E\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\n\u003C\/ol\u003E\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\n",
+        "jcr:lastModified": "Fri Jan 26 2018 17:40:01 GMT-0500",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "brian.sisco@fireeye.com",
+      "jcr:lastModified": "Tue Jan 23 2018 15:35:40 GMT-0500",
+      "imageRotate": "0"
+    }
+  }
+}

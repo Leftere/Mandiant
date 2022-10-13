@@ -1,0 +1,14 @@
+uuid: 9fe5a438-8fdb-4fdd-a204-0938f2e6944e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.maturity_levels
+id: taxonomy_vocabulary_maturity_levels
+entity_type_id: taxonomy_vocabulary
+entity_id: maturity_levels
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

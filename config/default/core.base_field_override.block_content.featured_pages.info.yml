@@ -1,0 +1,18 @@
+uuid: 147129da-e06a-4a9c-90e2-c37f829c2b7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.featured_pages
+id: block_content.featured_pages.info
+field_name: info
+entity_type: block_content
+bundle: featured_pages
+label: 'Block description'
+description: 'A brief description of your block.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

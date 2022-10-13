@@ -1,0 +1,13 @@
+uuid: 6aa0a7de-ae1b-4af5-9604-0d5f2f104a37
+langcode: en
+status: true
+dependencies: {  }
+id: right
+label: Right
+classes: right
+type: component
+group: add_ons
+weight: -9
+block_restrictions:
+  - 'inline_block:cta'
+layout_restrictions: {  }

@@ -1,0 +1,14 @@
+uuid: 686714a5-5b51-4f43-8a58-12992512e766
+langcode: en
+status: true
+dependencies: {  }
+id: gradient_red_block
+label: 'Gradient (Red)'
+classes: bg-gradient--red
+type: component
+group: background
+weight: -14
+block_restrictions:
+  - 'inline_block:cta'
+  - 'inline_block:text'
+layout_restrictions: {  }

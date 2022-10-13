@@ -1,0 +1,87 @@
+.apple_podcast {
+  display: inline-block;
+}
+
+.apple_podcast_link a {
+  background-image: url(../images/Apple_Podcasts_Listen.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  content: '';
+  display: block;
+  font-size: 0;
+  height: 40px;
+  top: 0;
+  width: 170px;
+}
+
+.spotify_podcast {
+  display: inline-block;
+}
+
+.spotify_podcast_link a {
+  background-image: url(../images/Spotify_podcast_badge.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  content: '';
+  display: block;
+  font-size: 0;
+  height: 40px;
+  top: 0;
+  width: 170px;
+}
+
+.layout-builder-block.series_podcast,
+.layout-builder-block.episode_podcast {
+  display: inline-block;
+  float: inherit;
+  height: auto;
+  width: 100%;
+}
+
+.series_podcast > div,
+.episode_podcast > div {
+}
+
+.series_podcast {
+  color: #17151e;
+  float: left;
+  font-size: 1.3rem;
+  font-weight: 700;
+  height: 15px;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin: 0 10px 0 0;
+  position: relative;
+  text-transform: uppercase;
+  width: auto;
+
+  .fonts-loaded & {
+    font-family: $sans;
+  }
+}
+
+.episode_podcast {
+  color: #17151e;
+  float: left;
+  font-size: 1.3rem;
+  font-weight: 700;
+  height: 15px;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin: 0 10px 0 0;
+  position: relative;
+  text-transform: uppercase;
+  width: auto;
+
+  .fonts-loaded & {
+    font-family: $sans;
+  }
+}
+
+.episode_podcast:after {
+  color: #000;
+  content: '|';
+  position: absolute;
+  right: -7px;
+  top: 0;
+}

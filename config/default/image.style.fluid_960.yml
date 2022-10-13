@@ -1,0 +1,25 @@
+uuid: 3b2b337f-ccb7-4dd1-9624-ed21e51ce59b
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.fluid_960px
+  module:
+    - crop
+name: fluid_960
+label: 'Fluid 960px'
+effects:
+  5b36a3dd-c0ed-475b-b172-8094d13ad67e:
+    uuid: 5b36a3dd-c0ed-475b-b172-8094d13ad67e
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: fluid_960px
+  3bdd33e9-b2f8-46c6-b87d-3dda21b7ef50:
+    uuid: 3bdd33e9-b2f8-46c6-b87d-3dda21b7ef50
+    id: image_scale
+    weight: 2
+    data:
+      width: 960
+      height: null
+      upscale: true

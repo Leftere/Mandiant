@@ -1,0 +1,49 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 61136547-2248-4f83-af8b-05f3ad4a5c68
+  bundle: card
+  default_langcode: en
+  depends:
+    76142c52-522d-4fd1-aa68-da16dde771e8: user
+    05cb08cc-fe68-4355-85d9-366c84f74a53: media
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Inline block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      entity: 76142c52-522d-4fd1-aa68-da16dde771e8
+  content_translation_created:
+    -
+      value: 1626967781
+  field_body:
+    -
+      value: "<p>Sed ut neque faucibus, tincidunt nisi vel, tempor urna. In faucibus eros elit, a luctus dolor tincidunt at.</p>\r\n"
+      format: basic_html
+  field_cta:
+    -
+      uri: 'internal:#'
+      title: 'Learn More'
+      options: {  }
+  field_media:
+    -
+      entity: 05cb08cc-fe68-4355-85d9-366c84f74a53
+  field_title:
+    -
+      value: 'Lorem ipsum<br/>dolor sit amet'

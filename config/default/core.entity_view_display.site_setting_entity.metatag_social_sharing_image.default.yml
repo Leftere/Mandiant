@@ -1,0 +1,25 @@
+uuid: 835bae38-b2bf-4ac1-8d62-cb8269f7dee6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.site_setting_entity.metatag_social_sharing_image.field_image
+    - site_settings.site_setting_entity_type.metatag_social_sharing_image
+id: site_setting_entity.metatag_social_sharing_image.default
+targetEntityType: site_setting_entity
+bundle: metatag_social_sharing_image
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  fieldset: true
+  name: true
+  search_api_excerpt: true
+  user_id: true

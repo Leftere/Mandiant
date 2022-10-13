@@ -1,0 +1,65 @@
+uuid: 78ab1085-a0dd-49f3-b94a-d013f09498d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.site_setting_entity.phones.field_phone_ca
+    - field.field.site_setting_entity.phones.field_phone_uk
+    - field.field.site_setting_entity.phones.field_phone_us
+    - site_settings.site_setting_entity_type.phones
+  module:
+    - user
+id: site_setting_entity.phones.default
+targetEntityType: site_setting_entity
+bundle: phones
+mode: default
+content:
+  field_phone_ca:
+    weight: 3
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_phone_uk:
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_phone_us:
+    weight: 2
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  fieldset:
+    label: above
+    type: string
+    weight: 1
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  name:
+    label: above
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  search_api_excerpt: true

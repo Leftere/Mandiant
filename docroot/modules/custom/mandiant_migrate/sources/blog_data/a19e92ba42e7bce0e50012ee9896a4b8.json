@@ -1,0 +1,61 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed May 12 2021 15:29:19 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Global Information Storage and Management Provider Maximizes Security Value With Mandiant Security Validation",
+    "jcr:versionHistory": "12372424-4450-4556-b2f9-f4f2f459888b",
+    "author": "Lynn Harrington",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "1a4912b6-1d25-4998-8e4c-fa18a5a6e398"
+    ],
+    "jcr:created": "Wed May 12 2021 15:29:19 GMT+0000",
+    "cq:lastModified": "Wed May 12 2021 15:29:11 GMT+0000",
+    "jcr:baseVersion": "1a4912b6-1d25-4998-8e4c-fa18a5a6e398",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:lynn-harrington",
+      "fireeye-blog-products-and-services:products-and-services",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:security-validation",
+      "fireeye-blog-tags:mandiant",
+      "fireeye-blog-tags:roi"
+    ],
+    "jcr:uuid": "0f5683aa-16a9-4880-a303-9566b94be130",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Wed May 12 2021 11:30:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EThere is perhaps no better example of how critical effective cyber security is than for a global company whose core business is storing and protecting its customers\u2019 data and digital assets.\u003C\/p\u003E\n\u003Cp\u003EHeadquartered in the eastern region of the U.S., the company relies on Google Cloud, Azure and AWS for its cloud-based business continuity and information storage and management offerings. The combination of rigid data privacy regulations with a steady increase in ransomware and malware attacks against businesses across multiple industries pressured leadership to demonstrate the value and effectiveness of their security stack\u2014including people, processes and technology\u2014to their stakeholders.\u003C\/p\u003E\n\u003Ch4\u003EStarting With a Breach and Attack Simulation (BAS) Tool\u003C\/h4\u003E\n\u003Cp\u003EThe CIO turned to a leading BAS provider, expecting to receive evidence that security controls were working as they should, or find gaps in protection with guidance on remediation. Soon after deploying the BAS solution, the CIO realized that his team would not get the results necessary to prove their security controls were effective.\u003C\/p\u003E\n\u003Cp\u003EA few challenges emerged quickly with the BAS deployment. First, given the siloed nature of the organization\u2019s infrastructure to separate and secure each customer\u2019s assets, implementing the BAS system required installing more than 100 actors (i.e., agents used to simulate victim systems) across its environment\u2014an enormous footprint that meant many hours of configuration and a performance drain on production systems. Additionally, the system could not detect the entire attack kill chain and could only see activity post-exploit\u2014a standard limitation of most BAS solutions. If there had been a truly malicious attack, detecting its presence \u003Ci\u003Eafter \u003C\/i\u003Ethe attacker penetrated the company\u2019s systems could cause untold damage and harm to the company and its reputation.\u003C\/p\u003E\n\u003Cp\u003EIn addition, the BAS tool deployed was not able to integrate sufficiently with the cyber security platforms and systems the team needed to test, requiring a relatively high level of sophistication among security team members to write code and build out their content library. The BAS tool left them feeling as much in the dark as they were before they started.\u003C\/p\u003E\n\u003Ch4\u003EBeyond BAS With Mandiant Security Validation\u003C\/h4\u003E\n\u003Cp\u003EAfter several months of not being able to realize the expected return on investment (ROI) with their BAS investment, the CIO turned to \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/security-validation.html\u0022\u003EMandiant Security Validation\u003C\/a\u003E. Initial easily identifiable strengths became apparent to the company\u2019s security team and CIO:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EMandiant Security Validation required no coding, configuration or separate server.\u003C\/li\u003E\n\u003Cli\u003EMandiant Security Validation was seamlessly deployed out of the box, integrated through native APIs with cloud, email, network and endpoint solutions without affecting the performance of any existing production systems in operation.\u003C\/li\u003E\n\u003Cli\u003EMandiant deployed only ten actors and was able to cover the entire attack lifecycle, including malware detonation, lateral movement and reconnaissance activities.\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EThe team quickly recognized that Mandiant could deliver comprehensive testing of their entire security stack with greater flexibility and a much smaller footprint. Immediately after deployment, an area of weakness within the security stack was detected, revealing that the company\u2019s firewalls were not appropriately configured within each cloud environment and were therefore allowing malware to penetrate systems. In the case of a real attack, this could cause significant damage that would have remained undetected until it was too late.\u003C\/p\u003E\n\u003Cp\u003EAs is the case with every customer we serve, Mandiant\u2019s goal was to help the client maximize the return on their security investments through our controls-focused approach to automated, continuous testing of people, processes and technology. Seven days after deploying Mandiant Security Validation, the company CIO declared that we had delivered twice the value they had received after one year of using their old BAS.\u003C\/p\u003E\n\u003Cp\u003EFollowing the project completion, a Mandiant sales engineer was embedded into the organization\u2019s internal team and became a trusted advisor. The company also chose to deploy Mandiant\u2019s Threat Actor Assurance Module linked to their existing threat intelligence platform to incorporate threat intel feeds into the validation process.\u003C\/p\u003E\n\u003Ch4\u003EThe Mandiant Difference\u003C\/h4\u003E\n\u003Cp\u003EOne of the most significant advantages of \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/security-validation.html\u0022\u003EMandiant Security Validation\u003C\/a\u003E when measured against BAS is our ability to safely execute \u003Ci\u003Ereal\u003C\/i\u003E malware in a protected theater without impacting an organization\u2019s environment. As many BAS users discover, the live attack binaries enacted by the Mandiant Security Validation Platform are highly effective at demonstrating where controls are working and where vulnerabilities exist. The weakened attacks executed by simulation tools are more likely to be missed because they are not real and therefore not recognized as a genuine threat. Consequently, they do not effectively depict whether or not the controls in place are effective.\u003C\/p\u003E\n\u003Cp\u003EWith Mandiant Security Validation\u2019s continuous validation and emulation of real attacks, companies get a reality check on whether their security vendors deliver on their promises, and receive much needed evidence that demonstrates when they are not. Through accurate remediation and reporting of quantifiable results, our users instill confidence among business leaders that their risk profile does not exceed the level acceptable to key stakeholders while protecting the organization\u2019s brand reputation and financial posture.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Tue May 11 2021 19:13:17 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EIdentify weaknesses and improve security with Mandiant Security Validation, and find out if security vendors are delivering on their promises.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Tue May 11 2021 19:14:56 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Wed May 12 2021 15:29:11 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

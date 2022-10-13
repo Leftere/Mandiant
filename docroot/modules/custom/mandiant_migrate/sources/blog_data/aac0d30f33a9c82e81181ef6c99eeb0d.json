@@ -1,0 +1,61 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "fireeye_global_admin",
+  "jcr:created": "Tue Aug 04 2020 15:07:12 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "fireeye_global_admin",
+    "jcr:title": "Announcing the Seventh Annual Flare-On Challenge",
+    "jcr:versionHistory": "c961beb4-af57-4300-a385-3d062571e32a",
+    "author": "Nick Harbour",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "7ccb301d-1689-4219-b4da-390b3ffb6a5f"
+    ],
+    "jcr:created": "Wed Aug 05 2020 15:26:29 GMT+0000",
+    "cq:lastModified": "Wed Aug 05 2020 15:26:19 GMT+0000",
+    "jcr:baseVersion": "7ccb301d-1689-4219-b4da-390b3ffb6a5f",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:cap-nick-harbour",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:FLARE",
+      "fireeye-blog-tags:malware",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:reverse-engineering"
+    ],
+    "jcr:uuid": "a1bc143a-2cef-4488-9553-13eaefed49d5",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Tue Aug 04 2020 11:00:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/flareon7\/FLARE-On%207.png\u0022 alt=\u0022\u0022 class=\u0022float-right-small\u0022\u003EThe\u0026nbsp;Front Line Applied Research \u0026amp; Expertise (FLARE) team is honored to announce that the popular Flare-On challenge will return for a triumphant seventh\u0026nbsp;year. Ongoing global events proved no match against our passion for creating challenging and fun puzzles to test and hone the skills of aspiring and experienced reverse engineers.\u003C\/p\u003E\n\u003Cp\u003EThe contest will begin at 8:00 p.m. ET on Sept. 11, 2020. This is a CTF-style challenge for all active and aspiring reverse engineers, malware analysts and security professionals. The contest runs for six full weeks and ends at 8:00 p.m. ET on Oct. 23, 2020.\u003C\/p\u003E\n\u003Cp\u003EThis year\u2019s contest features a total of 11 challenges in a variety of formats, including Windows, Linux, Python, VBA and .NET. This is one of the only Windows-centric CTF contests out there and we have crafted it to closely represent the challenges faced by our FLARE team on a daily basis.\u003C\/p\u003E\n\u003Cp\u003EIf you are skilled and dedicated enough to complete the seventh Flare-On challenge, you will receive a prize and recognition on the Flare-On website for your accomplishment. Prize details will be revealed later, but as always, it will be worthwhile swag to earn the envy of your peers. In previous years we sent out belt buckles, replica police badges, challenge coins, medals and huge pins.\u003C\/p\u003E\n\u003Cp\u003ECheck the \u003Ca href=\u0022http:\/\/flare-on.com\/\u0022\u003EFlare-On website\u003C\/a\u003E for a live countdown timer, to view the previous year\u2019s winners, and to download past challenges and solutions for practice. For official news and information, we will be using the Twitter hashtag: #flareon7.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Wed Aug 05 2020 15:26:19 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003ETo all active and aspiring malware analysts, the FLARE team is honored to announce that the popular Flare-On challenge will return for a triumphant seventh\u0026nbsp;year.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Tue Aug 04 2020 14:00:06 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Tue Aug 04 2020 15:07:02 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

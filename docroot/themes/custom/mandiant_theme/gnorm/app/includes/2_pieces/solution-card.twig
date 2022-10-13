@@ -1,0 +1,21 @@
+<div class="solution-card">
+  <div class="solution-card__content">
+    {% if eyebrow %}
+    <div class="eyebrow">{{ eyebrow }}</div>
+    {% endif %}
+
+    <h3>{{ title }}</h3>
+    {{ description }}
+
+    {% if cta %}
+      <div class="cta-button">
+        <a href="{{ cta.url }}" tabindex="-1" draggable="false">{{ cta.label }}</a>
+      </div>
+    {% endif %}
+  </div>
+  <div class="solution-card__statistics">
+    {% for statistic in statistics %}
+      {% include "@includes/2_pieces/solution-card__statistic.twig" with statistic only %}
+    {% endfor %}
+  </div>
+</div>

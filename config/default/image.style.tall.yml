@@ -1,0 +1,23 @@
+uuid: 2e394668-7bc5-4efb-84ee-f653687e5f78
+langcode: en
+status: true
+dependencies: {  }
+name: tall
+label: 'Tall (340 x 410)'
+effects:
+  7fce207a-0517-4d88-87f8-d6cdee8f042d:
+    uuid: 7fce207a-0517-4d88-87f8-d6cdee8f042d
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 340
+      height: 410
+      anchor: center-center
+  dc7c0bc3-7817-47b1-ba67-8a9cb2d21ed6:
+    uuid: dc7c0bc3-7817-47b1-ba67-8a9cb2d21ed6
+    id: image_scale
+    weight: -10
+    data:
+      width: 340
+      height: null
+      upscale: true

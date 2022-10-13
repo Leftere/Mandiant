@@ -1,0 +1,11 @@
+shield_enable: false
+credential_provider: key
+credentials:
+  key:
+    user: mandiant_shield
+    pass_key: shield_basic_auth_pass
+print: 'This site is protected by a username and password.'
+allow_cli: true
+_core:
+  default_config_hash: yHBuI_J_kdrugm0JRNsxHODZ0qQyPzejI6r1ZPacK5Q
+whitelist: ''

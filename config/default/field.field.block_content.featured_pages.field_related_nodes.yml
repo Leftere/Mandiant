@@ -1,0 +1,29 @@
+uuid: 6e6bc018-2992-4769-9d9e-7601ccdc4cf6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.featured_pages
+    - field.storage.block_content.field_related_nodes
+    - node.type.page
+id: block_content.featured_pages.field_related_nodes
+field_name: field_related_nodes
+entity_type: block_content
+bundle: featured_pages
+label: Pages
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      page: page
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

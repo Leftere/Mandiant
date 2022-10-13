@@ -1,0 +1,321 @@
+@mixin card-info {
+  font-family: $sans;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 4rem;
+  left: 5rem;
+  right: 5rem;
+
+  &:after {
+    background-image: url(../images/arrow-red.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 14px;
+    content: "";
+    position: absolute;
+    top: -11px;
+    right: 0;
+    transform: rotate(225deg);
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@mixin card-media($centered: false) {
+  margin-top: -8rem;
+
+  img {
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+    @if $centered {
+      margin: 0 auto;
+    }
+  }
+}
+
+@mixin card-media-square-bracket-multiple() {
+  &:first-child,
+  &:last-child {
+    > span.media {
+      position: relative;
+    }
+  }
+
+  &:first-child {
+    > span.media:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: -2rem;
+      bottom: -2rem;
+      border: 2px solid $red;
+      width: 2.5rem;
+      left: -2rem;
+      border-right: none;
+    }
+  }
+
+  &:last-child {
+    > span.media:after {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: -2rem;
+      bottom: -2rem;
+      border: 2px solid $red;
+      width: 2.5rem;
+      right: -2rem;
+      border-left: none;
+    }
+  }
+}
+
+@mixin card-media-square-bracket-single() {
+  > span.media {
+    position: relative;
+  }
+
+  > span.media:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    bottom: 1.5rem;
+    border: 2px solid $red;
+    width: 2.5rem;
+    left: -1.25rem;
+    border-right: none;
+  }
+
+  > span.media:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    bottom: 1.5rem;
+    border: 2px solid $red;
+    width: 2.5rem;
+    right: -1.25rem;
+    border-left: none;
+  }
+}
+
+@mixin card-page {
+  background-color: $black;
+  color: $white;
+  padding: 5rem 5rem 12rem;
+  text-align: center;
+  display: block;
+  position: relative;
+
+  > h3 {
+    @include font-size(20, 18);
+    color: $white;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  span {
+    display: block;
+
+    > span {
+      display: inline;
+    }
+
+    &.media {
+      @include card-media(true);
+    }
+
+    &.cta-link {
+      @include card-info();
+      @include font-size(14, 18);
+      color: $DarkGray;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+
+    span.cta-link {
+      text-decoration: underline;
+    }
+  }
+}
+
+@mixin card-article {
+  background-color: $lightWhite;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  color: $black;
+  padding: 3rem 3rem 6rem;
+  text-align: left;
+  display: block;
+  position: relative;
+
+  > h3 {
+    margin-top: 4px;
+    line-height: 1.2;
+  }
+
+  span,
+  small {
+    display: block;
+
+    > span {
+      display: inline;
+    }
+
+    &.media {
+      @include card-media();
+      margin-bottom: 1.5rem;
+    }
+
+    &.type {
+      color: $DarkGray;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+
+      &:before {
+        content: "#";
+      }
+    }
+
+    &.info {
+      @include card-info();
+      @include font-size(13, 13);
+      bottom: 2rem;
+      left: 3rem;
+      right: 3rem;
+
+      > .date {
+        opacity: 0.7;
+
+        &.string {
+          display: none;
+        }
+      }
+
+      &:after {
+        top: -11px;
+      }
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+
+    h3 {
+      text-decoration: underline;
+    }
+  }
+}
+
+@mixin card-bio {
+  text-align: left;
+  max-width: 340px;
+
+  @include breakpoint(max-width $tablet) {
+    justify-self: center;
+    margin-bottom: 4rem;
+  }
+
+  span,
+  small {
+    display: block;
+    width: 100%;
+
+    > span {
+      display: inline;
+    }
+
+    &.media {
+      margin-bottom: 2rem;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &.role {
+      font-family: $sans;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    &.summary {
+      @include font-size(16, 20);
+      font-weight: 500;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+
+    h3 {
+      text-decoration: underline;
+    }
+
+    span,
+    small {
+      &.media {
+        > img {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+
+@mixin card-related-article-divided-info {
+  small {
+    &.type {
+      text-transform: none;
+      &:before {
+        content: "";
+      }
+    }
+
+    &.info {
+      text-transform: capitalize;
+      border-top: 1px solid $DarkGray;
+      padding-top: 1.5rem;
+
+      > .separator {
+        display: none;
+      }
+
+      > .date {
+        opacity: 1;
+        &.number {
+          display: none;
+        }
+        &.string {
+          display: inline;
+        }
+      }
+
+      > .time {
+        opacity: 0.7;
+        padding-left: 1.5rem;
+      }
+
+      &:after {
+        top: 2px;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+uuid: 876538a3-0ec2-4479-b577-cedd45d47121
+langcode: en
+status: true
+dependencies: {  }
+id: margin_bottom_60px_
+label: 'Margin bottom (60px)'
+classes: mb-6
+type: section
+group: modifiers_style
+weight: 0
+block_restrictions: {  }
+layout_restrictions:
+  - layout_onecol
+  - layout_twocol_section
+  - layout_threecol_section
+  - layout_fourcol_section

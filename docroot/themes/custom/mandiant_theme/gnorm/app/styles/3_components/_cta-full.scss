@@ -1,0 +1,154 @@
+.block-bundle-cta {
+  &.cta--full {
+    @include container($desktop);
+    background: linear-gradient(109deg, rgba(84, 20, 26, 1) 45%, rgba(59, 16, 17, 1) 100%);
+    border: none;
+    color: $white;
+    margin: 0 2rem;
+    padding: 8rem 4rem;
+    position: relative;
+    text-align: center;
+
+    @include breakpoint($large-tablet) {
+      margin: 0 auto;
+      padding: 4rem 8rem;
+      text-align: left;
+    }
+
+    @include breakpoint(max-width $desktop) {
+      .layout--twocol-section {
+        display: block;
+
+        .layout__region--first {
+          padding: 0;
+        }
+      }
+    }
+
+    .negative-margin-bottom & {
+      margin-bottom: -10rem !important;
+
+      @include breakpoint($large-tablet) {
+        margin-bottom: -8rem !important;
+      }
+    }
+
+    .layout--twocol-section {
+      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+
+      @include breakpoint($large-tablet) {
+        justify-content: flex-end;
+      }
+    }
+
+    .layout__region--first {
+      text-align: left;
+
+      h2 {
+        @include font-size(32, 44);
+        color: $white;
+        font-weight: 500;
+        margin: 0;
+        text-align: center;
+
+        @include breakpoint($large-tablet) {
+          text-align: left;
+        }
+      }
+
+      p {
+        @include font-size(16, 22);
+        text-align: center;
+
+        @include breakpoint($large-tablet) {
+          text-align: left;
+        }
+      }
+    }
+
+    .layout__region--second {
+      @include breakpoint($large-tablet) {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+
+    // Three Quarters
+    .layout--twocol-section--33-67 {
+      align-items: center;
+      justify-content: flex-start;
+
+      .layout__region--first {
+        padding-left: 0;
+      }
+
+      a {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &.cta {
+    @include container($desktop);
+    border: none;
+    color: $black;
+    margin: 0 auto;
+    padding: 4rem 6rem;
+
+    @include breakpoint(max-width $desktop) {
+      height: auto;
+      padding: 2rem;
+
+      .layout--twocol-section {
+        display: block;
+
+        .layout__region--first {
+          padding: 0;
+        }
+      }
+    }
+
+    .negative-margin-bottom & {
+      @include breakpoint($desktop) {
+        margin-bottom: -8rem !important;
+      }
+    }
+
+    .layout--twocol-section {
+      align-items: flex-end;
+      flex-direction: row;
+    }
+
+    .layout__region--first {
+      padding-left: 5rem;
+      text-align: left;
+
+      h2 {
+        @include font-size(32, 44);
+        color: $black;
+        margin: 0;
+        text-align: left;
+      }
+
+      p {
+        @include font-size(16, 22);
+      }
+    }
+
+    .layout__region--second {
+      align-items: flex-end;
+      justify-content: center;
+
+      .cta-button {
+        margin-bottom: 1.5rem;
+
+        @include breakpoint(max-width $desktop) {
+          margin-right: 5rem;
+        }
+      }
+    }
+  }
+}

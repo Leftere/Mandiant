@@ -1,0 +1,17 @@
+uuid: ba7af610-5549-48e1-be2e-01d78a699cd6
+langcode: en
+status: true
+dependencies: {  }
+id: block_plain_text
+label: 'Block (Plain text)'
+classes: block-plain-text
+type: section
+group: add_ons
+weight: -1
+block_restrictions:
+  - 'inline_block:text'
+layout_restrictions:
+  - layout_onecol
+  - layout_twocol_section
+  - layout_threecol_section
+  - layout_fourcol_section

@@ -1,0 +1,52 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: add43e4a-2a28-4367-a89d-d26f4ce04aaf
+  bundle: statistic
+  default_langcode: en
+  depends:
+    76142c52-522d-4fd1-aa68-da16dde771e8: user
+    05cb08cc-fe68-4355-85d9-366c84f74a53: media
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Inline block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      entity: 76142c52-522d-4fd1-aa68-da16dde771e8
+  content_translation_created:
+    -
+      value: 1626967912
+  field_body:
+    -
+      value: "<p>Optional text teasing additional information lorem ipsum dolor sit amet.</p>\r\n"
+      format: basic_html
+  field_cta:
+    -
+      uri: 'internal:#'
+      title: 'Read Related Report'
+      options: {  }
+  field_eyebrow:
+    -
+      value: 'Key Statistics'
+  field_media:
+    -
+      entity: 05cb08cc-fe68-4355-85d9-366c84f74a53
+  field_title:
+    -
+      value: 'Mandiant Supports<br/>Over 70 Third Party Vendors'

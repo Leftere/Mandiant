@@ -1,0 +1,10 @@
+uuid: 7e071e28-f3bc-46f7-9249-20515421fb47
+langcode: en
+status: true
+dependencies: {  }
+machine: dev
+description: null
+name: Dev
+url: 'https://mandiantdev.prod.acquia-sites.com'
+fg_color: '#feffff'
+bg_color: '#2c884c'

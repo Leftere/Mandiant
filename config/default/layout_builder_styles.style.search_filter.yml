@@ -1,0 +1,13 @@
+uuid: c67af6b0-68ed-48a9-88f4-de5ab7c01b57
+langcode: en
+status: true
+dependencies: {  }
+id: search_filter
+label: 'Search filter'
+classes: search--filter
+type: section
+group: add_ons
+weight: 0
+block_restrictions: {  }
+layout_restrictions:
+  - layout_onecol

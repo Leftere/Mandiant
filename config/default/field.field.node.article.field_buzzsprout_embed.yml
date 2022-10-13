@@ -1,0 +1,19 @@
+uuid: ff756508-ff7f-464f-8bdb-cccf08374892
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_buzzsprout_embed
+    - node.type.article
+id: node.article.field_buzzsprout_embed
+field_name: field_buzzsprout_embed
+entity_type: node
+bundle: article
+label: 'Buzzsprout Embed'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

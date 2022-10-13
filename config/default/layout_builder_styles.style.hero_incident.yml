@@ -1,0 +1,13 @@
+uuid: d5f579b7-5c84-4228-872b-f6c860198292
+langcode: en
+status: true
+dependencies: {  }
+id: hero_incident
+label: 'Hero Incident'
+classes: hero--incident
+type: component
+group: add_ons
+weight: 0
+block_restrictions:
+  - 'inline_block:hero'
+layout_restrictions: {  }

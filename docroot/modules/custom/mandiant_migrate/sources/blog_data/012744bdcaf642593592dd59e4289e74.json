@@ -1,0 +1,62 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed May 19 2021 18:35:46 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "How Mandiant is Helping Governments Build Cyber Capacity",
+    "jcr:versionHistory": "2af5e0ca-1614-43a8-8547-315115925603",
+    "author": "Luke McNamara",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "32522698-4c18-40c5-8c58-065a48456518"
+    ],
+    "jcr:created": "Wed May 19 2021 18:35:46 GMT+0000",
+    "cq:lastModified": "Wed May 19 2021 17:27:01 GMT+0000",
+    "jcr:baseVersion": "32522698-4c18-40c5-8c58-065a48456518",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:luke-mcnamara",
+      "fireeye-blog-products-and-services:products-and-services",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:mandiant",
+      "fireeye-blog-tags:emea",
+      "fireeye-blog-tags:government",
+      "fireeye-blog-tags:podcast"
+    ],
+    "jcr:uuid": "336fa4e5-bc19-447c-8221-25589290c9bb",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Wed May 19 2021 14:30:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/eos2021\/mandiant-eos.png\u0022 alt=\u0022\u0022 class=\u0022float-left-small\u0022\u003EIn the latest \u003Ci\u003EEye on Security\u003C\/i\u003E podcast, I am joined by Paul Tumelty, Government Security Manager, to discuss how \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/mandiant.html\u0022\u003EMandiant\u003C\/a\u003E is partnering with governments in EMEA to help foster cyber capacity building in nations across the region.\u003C\/p\u003E\n\u003Cp\u003EPaul walks us through how governments are thinking about this, from the crafting of high-level strategies to working through the tasking of the appropriate entities for cyber defense, and establishing relationships with the private sector and beyond. Paul also highlights some of the challenges\u2014and even advantages\u2014that various nations may have depending on where they are in their journey of establishing a government framework to better address a changing threat landscape, especially in areas such as critical infrastructure protection.\u003C\/p\u003E\n\u003Cp\u003EWhat I found particularly interesting and exciting about the work Mandiant is doing in this space is the holistic approach Paul and his team are taking\u2014beyond just ensuring the implementation of the right technologies\u2014but looking at every aspect of what contributes to a nation\u2019s strategy to continuously provide for a defense that can meet emerging threats. We even discussed the importance of early education initiatives to help foster the future workforce as part of capacity building.\u003C\/p\u003E\n\u003Cp\u003ECheck out the episode now for all this and more.\u003C\/p\u003E\n\u003Cp\u003E\u003Cdiv id=\u0022buzzsprout-player-8548709\u0022\u003E\u003C\/div\u003E\n\u003Cscript src=\u0022https:\/\/www.buzzsprout.com\/1762840\/8548709-how-mandiant-is-helping-governments-build-cyber-capacity.js?container_id=buzzsprout-player-8548709\u0026player=small\u0022 type=\u0022text\/javascript\u0022 charset=\u0022utf-8\u0022\u003E\u003C\/script\u003E\u003C\/p\u003E\n",
+        "jcr:lastModified": "Wed May 19 2021 17:24:38 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EIn this podcast we talk about how Mandiant is partnering with governments in EMEA to help foster cyber capacity building in nations across the region.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Wed May 19 2021 17:25:22 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Wed May 19 2021 17:27:01 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

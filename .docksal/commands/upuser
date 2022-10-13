@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+#: exec_target = cli
+
+## Resets username and password for uid=1
+##
+## Usage: fin upuser
+
+# Abort if anything fails
+set -e
+
+echo "Setting up root user and password..."
+drush sql-query "UPDATE users_field_data SET name='root' WHERE uid=1";
+drush upwd root root
+
+drush user-create test1 --mail="test@wearegenuine.com" --password="test";
+drush user-add-role "editor" test1

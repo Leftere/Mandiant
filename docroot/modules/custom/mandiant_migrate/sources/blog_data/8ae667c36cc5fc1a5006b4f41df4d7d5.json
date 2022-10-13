@@ -1,0 +1,82 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Fri May 26 2017 11:03:12 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "SMB Exploited: WannaCry Use of \u0022EternalBlue\u0022",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "b3cb411f-b03f-423b-94f8-4e4ab4241e44",
+    "author": "Ali Islam",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "lynda.hall@fireeye.com",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "ef2a5057-7318-46e1-9a04-6b7d1780ab3c"
+    ],
+    "jcr:created": "Wed May 31 2017 12:56:41 GMT-0400",
+    "cq:lastReplicated": "Wed May 31 2017 12:56:41 GMT-0400",
+    "cq:lastModified": "Wed May 31 2017 12:56:37 GMT-0400",
+    "cq:distribute": true,
+    "jcr:baseVersion": "ef2a5057-7318-46e1-9a04-6b7d1780ab3c",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:nicole-oppenheim",
+      "fireeye-blog-tags:wannacry-ransomware",
+      "fireeye-blog-authors:cap-ali-islam",
+      "fireeye-blog-tags:smb",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-authors:winny-thomas",
+      "fireeye-blog-tags:exploit",
+      "fireeye-doctypes:blog",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:malware"
+    ],
+    "jcr:uuid": "cf66d62b-1ba8-452b-8403-16e2a71f64c6",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Fri May 26 2017 11:00:00 GMT-0400",
+    "_charset_": "UTF-8",
+    "cq:lastModifiedBy": "lynda.hall@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EServer Message Block (SMB) is the transport protocol used by Windows machines for a wide variety of purposes such as file sharing, printer sharing, and access to remote Windows services. SMB operates over TCP ports 139 and 445. In April 2017, Shadow Brokers released an SMB vulnerability named \u201cEternalBlue,\u201d which was part of the \u003Ca href=\u0022https:\/\/technet.microsoft.com\/en-us\/library\/security\/ms17-010.aspx\u0022\u003EMicrosoft security bulletin MS17-010\u003C\/a\u003E.\u003C\/p\u003E\n\u003Cp\u003EThe recent \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/products-and-services\/2017\/05\/wannacry-ransomware-campaign.html\u0022\u003EWannaCry ransomware\u003C\/a\u003E takes advantage of this vulnerability to compromise Windows machines, load malware, and propagate to other machines in a network. The attack uses SMB version 1 and TCP port 445 to propagate.\u003C\/p\u003E\n\u003Ch4\u003EContext\u003C\/h4\u003E\n\u003Cp\u003ESMB provides support for what are known as SMB Transactions. Using SMB Transactions enables atomic read and write to be performed between an SMB client and server. If the message request is greater than the SMB MaxBufferSize, the remaining messages are sent as Secondary Trans2 requests. This vulnerability affects the srv2.sys kernel driver and is triggered by malformed Secondary Trans2 requests.\u003C\/p\u003E\n\u003Ch4\u003EWorking\u003C\/h4\u003E\n\u003Cp\u003EAfter the initial SMB handshake, which consists of a protocol negotiate request\/response and a session setup request\/response, the ransomware connects to the IPC$ share on the remote machine. Another related aspect of this attack is that the malware is configured to connect to a hardcoded local IP, as shown in Figure 1.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/SMB%20Exploited\/image1.png\u0022\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 1: Connecting to the IPC$ share\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003ENext it sends out an initial NT Trans request, which is a huge payload size and consists of a sequence of NOPs, as shown in Figure 2. What it essentially does is move the SMB server state machine to a point where the vulnerability exists so that the attacker can then exploit it using a special crafted packet.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/SMB%20Exploited\/image2.png\u0022\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 2: Preparing server for exploit via NT Trans\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003ESpeaking the SMB language, the large NT Trans request leads to multiple Secondary Trans2 Requests to accommodate for the large request size. These Secondary Trans2 requests are malformed, as seen in the Figure 3. They act as a trigger point for the vulnerability, and the request data portion contains the shellcode and encrypted payload, which is the launcher for the malware on the remote machine.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/SMB%20Exploited\/image3.png\u0022\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 3: Overflow via Malformed Trans2\u003C\/span\u003E\u003C\/p\u003E\n\u003Ch4\u003EPost Exploitation \u0026amp; Full Cycle\u003C\/h4\u003E\n\u003Cp\u003EOn successfully triggering the vulnerability, an encrypted payload containing the stager for the malware is loaded on the remote machine. The payload delivered to the remote machine launches a service \u201cmssecsvc\u201d from within the lsass process. This service scans the local network and the internet for machines that are accessible and have exposed SMB ports. The service then uses the aforementioned vulnerability to gain access to a remote machine and deliver the malware payload, thus completing the full cycle. All of these activities happen very quickly and the attack penetrates all machines in a typical LAN within minutes.\u003C\/p\u003E\n\u003Cp\u003EThe \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/threat-research\/2017\/05\/wannacry-malware-profile.html\u0022\u003Eransomware contains two parts\u003C\/a\u003E, the main executable file containing the code for scanning the network and triggering the SMB vulnerability on accessible machines. Within the resource section of this executable is another executable file embedded in a section named \u201cR\u201d, which contains the ransomware code. The executable containing the ransomware code has an encrypted ZIP file embedded in the resource section named \u201cXIA\u201d. The encrypted ZIP file contains encrypted keys, image files, Tor client and two other executables: taskdl.exe and tasse.exe. The ZIP file contents can be extracted using the password WNcry@2ol7 embedded within the malware code\u003C\/p\u003E\n\u003Ch4\u003EMitigation\u003C\/h4\u003E\n\u003Cp\u003EThere are anomalies and patterns in the NT Trans, Trans2 requests and responses packets that analysts and researchers can use to create useful network level detection. A couple of example signatures that can be deployed are found \u003Ca href=\u0022http:\/\/docs.emergingthreats.net\/bin\/view\/Main\/2024297\u0022\u003Ehere\u003C\/a\u003E and \u003Ca href=\u0022http:\/\/docs.emergingthreats.net\/bin\/view\/Main\/2024217\u0022\u003Ehere\u003C\/a\u003E.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Thu May 25 2017 22:21:09 GMT-0400",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "alt": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "comments": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/commons\/components\/comments"
+      },
+      "trackback": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/blog\/components\/trackback"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "lynda.hall@fireeye.com",
+      "text": "\u003Cp\u003EThe recent WannaCry ransomware takes advantage of a Server Message Block vulnerability to compromise Windows machines, load malware, and propagate to other machines in a network.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Wed May 31 2017 12:56:37 GMT-0400",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Fri May 26 2017 10:53:54 GMT-0400",
+      "imageRotate": "0"
+    }
+  }
+}

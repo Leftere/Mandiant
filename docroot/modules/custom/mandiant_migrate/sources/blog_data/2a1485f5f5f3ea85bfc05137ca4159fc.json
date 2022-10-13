@@ -1,0 +1,67 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed Apr 28 2021 10:00:01 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Ghostwriter Update: Cyber Espionage Group UNC1151 Likely Conducts Ghostwriter Influence Activity",
+    "jcr:versionHistory": "b08e896b-bd33-4171-806d-5fe4bd56aaee",
+    "author": "Lee Foster",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "fe34d396-774a-4fa5-83e8-a0167ed89634"
+    ],
+    "jcr:created": "Wed Apr 28 2021 15:19:08 GMT+0000",
+    "cq:lastModified": "Wed Apr 28 2021 15:18:45 GMT+0000",
+    "jcr:baseVersion": "fe34d396-774a-4fa5-83e8-a0167ed89634",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:lee-foster",
+      "fireeye-blog-authors:david-mainor",
+      "fireeye-blog-authors:ben-read",
+      "fireeye-blog-authors:sam-riddell",
+      "fireeye-blog-authors:gabby-roncone",
+      "fireeye-blog-authors:lindsay-smith",
+      "fireeye-blog-authors:alden-wahlstrom",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:unc",
+      "fireeye-blog-tags:threat-intelligence",
+      "fireeye-blog-tags:information-operations"
+    ],
+    "jcr:uuid": "c1a247e4-0141-4ff2-96ef-0b9e520f4a2b",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Wed Apr 28 2021 06:00:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EIn July 2020, \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/advantage.html\u0022\u003EMandiant Threat Intelligence\u003C\/a\u003E released \u003Ca href=\u0022\/content\/fireeye-www\/en_US\/blog\/threat-research\/2020\/07\/ghostwriter-influence-campaign.html\u0022 adhocenable=\u0022false\u0022\u003Ea public report\u003C\/a\u003E detailing an ongoing influence campaign we named \u201cGhostwriter.\u201d Ghostwriter is a cyber-enabled influence campaign which primarily targets audiences in Lithuania, Latvia and Poland and promotes narratives critical of the North Atlantic Treaty Organization\u2019s (NATO) presence in Eastern Europe. Since releasing our public report, we have continued to investigate and report on Ghostwriter activity to Mandiant Intelligence customers. We tracked new incidents as they happened and identified activity extending back years before we formally identified the campaign in 2020. A new report by our Information Operations analysis, Cyber Espionage analysis, and Mandiant Research teams provides an \u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/content.fireeye.com\/web-assets\/rpt-unc1151-ghostwriter-update\u0022\u003Eupdate on Ghostwriter\u003C\/a\u003E, highlighting two significant developments.\u003C\/p\u003E\n\u003Cp\u003EWe have observed an expansion of narratives, targeting and TTPs associated with Ghostwriter activity since we released our July 2020 report. For example, several recent operations have heavily leveraged the compromised social media accounts of Polish officials on the political right to publish content seemingly intended to create domestic political disruption in Poland rather than foment distrust of NATO. These operations, conducted in Polish and English, appear to have largely not relied on the dissemination vectors we have typically observed with previous Ghostwriter activity, such as website compromises, spoofed emails or posts from inauthentic personas. We have observed no evidence that these social media platforms were themselves in any way compromised, and instead believe account credentials were obtained using the compromised email accounts of targeted individuals.\u003C\/p\u003E\n\u003Cp\u003ERecently obtained technical evidence now allows us to assess with high confidence that UNC1151, a suspected state-sponsored cyber espionage actor that engages in credential harvesting and malware campaigns, conducts at least some components of Ghostwriter influence activity; current intelligence gaps, including gaps pertaining to website compromises and the operation of false personas, do not allow us to conclusively attribute all aspects of the Ghostwriter campaign to UNC1151 at this time. We do not associate UNC1151 with any other previously tracked threat groups. Since the start of 2021, UNC1151 has expanded its credential theft activity to target German politicians. This targeting has been publicly reported in the German \u003Ca href=\u0022https:\/\/www.tagesschau.de\/investigativ\/wdr\/hackerangriffe-105.html\u0022\u003ETagesschau\u003C\/a\u003E.\u003C\/p\u003E\n\u003Cp\u003EThe appendices of the report include an exhaustive table of incidents and operations we currently associate with Ghostwriter activity, a detailed case study of a recent Ghostwriter operation, and indicators of compromise (IOCs) related to UNC1151.\u003C\/p\u003E\n\u003Cp\u003ERead \u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/content.fireeye.com\/web-assets\/rpt-unc1151-ghostwriter-update\u0022\u003Ethe report today\u003C\/a\u003E to learn more.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Wed Apr 28 2021 15:18:45 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003ENew evidence allows us to assess that UNC1151, a suspected state-sponsored cyber espionage actor, conducts at least some components of Ghostwriter influence activity.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Tue Apr 27 2021 16:18:03 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Tue Apr 27 2021 16:21:25 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

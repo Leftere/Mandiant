@@ -1,0 +1,13 @@
+uuid: f77b5bb1-a7f9-4e35-b5c8-1ba66cb35e41
+langcode: en
+status: true
+dependencies: {  }
+id: s
+label: 'Columns (Statistics)'
+classes: statistics--columns
+type: section
+group: modifiers_layout
+weight: 2
+block_restrictions: {  }
+layout_restrictions:
+  - layout_threecol_section

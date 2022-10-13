@@ -1,0 +1,63 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "fireeye_global_admin",
+  "jcr:created": "Thu Sep 05 2019 09:00:02 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Ransomware Protection and Containment Strategies: Practical Guidance for Endpoint Protection, Hardening, and Containment",
+    "jcr:versionHistory": "20ae3465-833b-4fcb-81da-42f388b1c9d5",
+    "author": "Matthew McWhirt",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "ffef1c6b-dc60-480b-9202-a467a3c77699"
+    ],
+    "jcr:created": "Fri Oct 30 2020 17:37:45 GMT+0000",
+    "cq:lastModified": "Fri Oct 30 2020 17:20:42 GMT+0000",
+    "jcr:baseVersion": "ffef1c6b-dc60-480b-9202-a467a3c77699",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:matthew-mcwhirt",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:ransomware",
+      "fireeye-blog-tags:endpoint",
+      "fireeye-blog-tags:security-strategy",
+      "fireeye-blog-tags:federal-government"
+    ],
+    "jcr:uuid": "8a61b14b-428a-4a3c-bac0-ac55a3880109",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Thu Sep 05 2019 02:00:00 GMT-0700",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003E\u003Ci\u003EUPDATE (Oct. 30, 2020):\u0026nbsp;We have updated the report to include additional protection and containment strategies based on front-line visibility and response efforts in combating ransomware. While the full scope of recommendations included within the initial report remain unchanged, the following strategies have been added into the report:\u003C\/i\u003E\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003E\u003Ci\u003EWindows Firewall rule configurations to block specific binaries from establishing outbound connections from endpoints\u003C\/i\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ci\u003EDomain Controller isolation and recovery planning steps\u003C\/i\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ci\u003EProactive GPO permissions review and monitoring guidance\u003C\/i\u003E\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003ERansomware is a global threat targeting organizations in all industries. The impact of a successful ransomware event can be material to an organization - including the loss of access to data, systems, and operational outages. The potential downtime, coupled with unforeseen expenses for restoration, recovery, and implementation of new security processes and controls can be overwhelming. Ransomware has become an increasingly popular choice for attackers over the past few years, and it\u2019s easy to understand why given how simple it is to leverage in campaigns\u0026nbsp;\u2013 while offering a healthy financial return for attackers.\u003C\/p\u003E\n\u003Cp\u003EIn our latest report, \u003Ci\u003E\u003Ca href=\u0022\/content\/dam\/fireeye-www\/current-threats\/pdfs\/wp-ransomware-protection-and-containment-strategies.pdf\u0022 target=\u0022_blank\u0022\u003ERansomware Protection and Containment Strategies: Practical Guidance for Endpoint Protection, Hardening, and Containment\u003C\/a\u003E\u003C\/i\u003E, we discuss steps organizations can proactively take to harden their environment to prevent the downstream impact of a ransomware event. These recommendations can also help organizations with prioritizing the most important steps required to contain and minimize the impact of a ransomware event after it occurs.\u003C\/p\u003E\n\u003Cp\u003ERansomware is commonly deployed across an environment in two ways:\u003C\/p\u003E\n\u003Col\u003E\n\u003Cli\u003EManual propagation by a threat actor after they\u2019ve penetrated an environment and have administrator-level privileges broadly across the environment:\u003Cul\u003E\n\u003Cli\u003EManually run encryptors on targeted systems.\u003C\/li\u003E\n\u003Cli\u003EDeploy encryptors across the environment using Windows batch files (mount C$ shares, copy the encryptor, and execute it with the Microsoft PsExec tool).\u003C\/li\u003E\n\u003Cli\u003EDeploy encryptors with Microsoft Group Policy Objects (GPOs).\u003C\/li\u003E\n\u003Cli\u003EDeploy encryptors with existing software deployment tools utilized by the victim organization.\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003C\/li\u003E\n\u003Cli\u003EAutomated propagation:\u003Cul\u003E\n\u003Cli\u003ECredential or Windows token extraction from disk or memory.\u003C\/li\u003E\n\u003Cli\u003ETrust relationships between systems \u2013 and leveraging methods such as Windows Management Instrumentation (WMI), SMB, or PsExec to bind to systems and execute payloads.\u003C\/li\u003E\n\u003Cli\u003EUnpatched exploitation methods (e.g., EternalBlue \u2013 addressed via \u003Ca href=\u0022https:\/\/docs.microsoft.com\/en-us\/security-updates\/securitybulletins\/2017\/ms17-010\u0022\u003EMicrosoft Security Bulletin MS17-010\u003C\/a\u003E).\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003C\/li\u003E\n\u003C\/ol\u003E\n\u003Cp\u003EThe report covers several technical recommendations to help organizations mitigate the risk of and contain ransomware events including:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EEndpoint segmentation\u003C\/li\u003E\n\u003Cli\u003EHardening against common exploitation methods\u003C\/li\u003E\n\u003Cli\u003EReducing the exposure of privileged and service accounts\u003C\/li\u003E\n\u003Cli\u003ECleartext password protections\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EIf you are reading this report to aid your organization\u2019s response to an existing ransomware event, it is important to understand how the ransomware was deployed through the environment and design your ransomware response appropriately. This guide should help organizations in that process.\u003C\/p\u003E\n\u003Cp\u003E\u003Ca href=\u0022\/content\/dam\/fireeye-www\/current-threats\/pdfs\/wp-ransomware-protection-and-containment-strategies.pdf\u0022 target=\u0022_blank\u0022\u003ERead the report today\u003C\/a\u003E.\u003C\/p\u003E\n\u003Cp\u003E*Note: The recommendations in this report will help organizations mitigate the risk of and contain ransomware events. However, this report does not cover all aspects of a ransomware incident response. We do not discuss investigative techniques to identify and remove backdoors (ransomware operators often have multiple backdoors into victim environments), communicating and negotiating with threat actors, or recovering data once a decryptor is provided.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Fri Oct 30 2020 17:20:42 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext",
+        "textIsRich": "true"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003ELearn steps organizations can proactively take to harden their environment to prevent the downstream impact of a ransomware event.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Wed Sep 04 2019 18:50:40 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "jeff.payne@fireeye.com",
+      "jcr:lastModified": "Mon Sep 16 2019 20:39:16 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+uuid: 288e895e-597c-4cc0-bbae-9c2ddeba4555
+langcode: en
+status: true
+dependencies: {  }
+id: testimonial
+label: 'Featured Testimonial'
+revision: 0
+description: ''

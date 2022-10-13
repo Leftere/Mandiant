@@ -1,0 +1,66 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed Apr 07 2021 20:11:13 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "John Watters Rejoins FireEye Executive Team as President and Chief Operating Officer",
+    "jcr:versionHistory": "2e4388ae-5e2c-487e-8a85-59097acfa89f",
+    "cq:template": "\/apps\/fireeye-www\/fdc\/templates\/press-release",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "7d70247a-7b16-48c7-be4e-ef1206f3b356"
+    ],
+    "jcr:created": "Wed Apr 07 2021 20:11:13 GMT+0000",
+    "cq:lastModified": "Wed Apr 07 2021 20:11:00 GMT+0000",
+    "jcr:baseVersion": "7d70247a-7b16-48c7-be4e-ef1206f3b356",
+    "jcr:isCheckedOut": true,
+    "pagedate": "Wed Apr 07 2021 16:00:00 GMT-0400",
+    "cq:tags": [
+      "company:en-US\/press-releases",
+      "company:en-US\/press-releases\/2021",
+      "company:en-US\/press-releases\/latest",
+      "fireeye-doctypes:press-releases"
+    ],
+    "jcr:uuid": "3b31e1f7-c030-4575-af81-55eab32ca5a1",
+    "sling:resourceType": "fireeye-www\/fdc\/components\/page\/press-release",
+    "cq:designPath": "\/etc\/designs\/fireeye-www",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "content-par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "grid_100_full": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "adam.greenberg@fireeye.com",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "jcr:created": "Wed Apr 07 2021 20:08:59 GMT+0000",
+        "jcr:lastModified": "Wed Apr 07 2021 20:08:59 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/grids\/grid-100-full",
+        "grid-100-mid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "fireeye-www\/fdc\/components\/grids\/grid-parsys\/parsys-100-full\/parsys",
+          "text": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "adam.greenberg@fireeye.com",
+            "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+            "jcr:created": "Wed Apr 07 2021 20:09:04 GMT+0000",
+            "text": "\u003Cp\u003E\u003Cb\u003EMILPITAS, Calif. \u2013 April 7, 2021\u003C\/b\u003E \u2013 FireEye, Inc. (NASDAQ: FEYE), the intelligence-led security company, announced John Watters has been appointed president and chief operating officer after holding multiple senior leadership and advisory positions at the company, most recently as chairman of the FireEye advisory board. In this role, Watters will bring his operational experience and knowledge of the company to further accelerate our transition to Security as a Service and a Solutions company.\u003C\/p\u003E\n\u003Cp\u003EWatters founded iSIGHT Partners and served as its chairman and CEO from November 2006 to February 2016, leading the company to a successful acquisition by FireEye. Following the acquisition, Watters held various senior leadership roles within FireEye, initially as president of the FireEye iSIGHT intelligence business and then as executive vice president of Global Services and Intelligence. He held that position until February 2018, when he was appointed executive vice president and chief strategy officer. Watters stepped down from that role in April 2020 but remained engaged with the company as a senior consultant and then chairman of the company\u2019s Advisory Board.\u003C\/p\u003E\n\u003Cp\u003E\u201cHe combines the speed and agility of a founder with great operational experience and deep security knowledge,\u201d said FireEye CEO Kevin Mandia. \u201cHe\u2019s already familiar with the company and has the knowledge and the passion to accelerate our evolution of our Mandiant solutions business.\u201d\u003C\/p\u003E\n\u003Cp\u003EPrior to iSIGHT Partners, Watters was chairman and chief executive officer of iDEFENSE, a security intelligence firm acquired by VeriSign in 2005. In addition, Watters is the founder, a director and president of the STAIRS Program, a non-profit organization supporting inner-city education. He holds a B.S.C degree in Finance from Santa Clara University.\u003C\/p\u003E\n\u003Cp\u003E\u201cWe have the opportunity to change the game in security, and I\u2019m here to make sure we execute against the challenges ahead,\u201d said Watters. \u201cKevin and I are aligned on our mission and vision, and I\u0027m excited to join the team to help execute on the strategy.\u201d\u003C\/p\u003E\n\u003Ch4\u003EAbout FireEye, Inc.\u003C\/h4\u003E\n\u003Cp\u003EFireEye is the intelligence-led security company. Working as a seamless, scalable extension of customer security operations, FireEye offers a single platform that blends innovative security technologies, nation-state grade threat intelligence, and world-renowned Mandiant\u00ae consulting. With this approach, FireEye eliminates the complexity and burden of cyber security for organizations struggling to prepare for, prevent, and respond to cyber attacks. FireEye has over 9,900 customers across 103 countries, including more than 50 percent of the Forbes Global 2000.\u003C\/p\u003E\n\u003Cp\u003E\u00a9 2021 FireEye, Inc. All rights reserved. FireEye and Mandiant are registered trademarks or trademarks of FireEye, Inc. in the United States and other countries. All other brands, products, or service names are or may be trademarks or service marks of their respective owners.\u003C\/p\u003E\n\u003Cp\u003E\u003Cb\u003EMedia Inquiries\u003Cbr\u003E\n\u003C\/b\u003E\u003Ca href=\u0022mailto:Media.Relations@fireeye.com\u0022\u003EMedia.Relations@fireeye.com\u003C\/a\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cb\u003EInvestor Inquiries\u003Cbr\u003E\n\u003C\/b\u003E\u003Ca href=\u0022mailto:Investor.Relations@fireeye.com\u0022\u003EInvestor.Relations@fireeye.com\u003C\/a\u003E\u003C\/p\u003E\n",
+            "jcr:lastModified": "Wed Apr 07 2021 20:10:10 GMT+0000",
+            "sling:resourceType": "fireeye-www\/fdc\/components\/text\/text",
+            "textIsRich": "true"
+          }
+        }
+      }
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Wed Apr 07 2021 20:11:00 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

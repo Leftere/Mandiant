@@ -1,0 +1,61 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed Jun 02 2021 17:12:19 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "When It Comes to Security Validation, BAS Is Not Enough",
+    "jcr:versionHistory": "2a2b9f52-bf24-4efb-b65b-4f9907a723ff",
+    "author": "Lynn Harrington",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "47dbd8de-0b61-42e0-af5a-8c298f534d42"
+    ],
+    "jcr:created": "Wed Jun 02 2021 17:12:19 GMT+0000",
+    "cq:lastModified": "Wed Jun 02 2021 17:11:58 GMT+0000",
+    "jcr:baseVersion": "47dbd8de-0b61-42e0-af5a-8c298f534d42",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:lynn-harrington",
+      "fireeye-blog-products-and-services:products-and-services",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:mandiant",
+      "fireeye-blog-tags:security-validation",
+      "fireeye-blog-tags:threat-intelligence"
+    ],
+    "jcr:uuid": "8ef76ebb-2df7-46b7-b5b8-88d2f0d54222",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Wed Jun 02 2021 13:00:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EIncomplete testing of security controls could have devastating consequences on an organization\u2019s security posture, brand reputation and bottom line. We hear concerns almost daily from customers and prospects who have come to the realization that Breach and Attack Simulation (BAS) technologies are just scratching the surface of testing security effectiveness.\u003C\/p\u003E\n\u003Cp\u003EIn this blog post we share are a few reasons why BAS is not enough to demonstrate cyber readiness and why organizations are instead choosing \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/threat-intelligence.html\u0022\u003EMandiant Security Validation\u003C\/a\u003E to safely emulate real attacks, proving true security effectiveness against today\u2019s most relevant threats.\u0026nbsp;\u0026nbsp;\u003C\/p\u003E\n\u003Ch4\u003ESimulation Is Not as Effective as Emulation\u003C\/h4\u003E\n\u003Cp\u003EBAS tools merely simulate an attack, which is far less effective than the emulation of a real attack, achieved by safely executing real attack binaries. Contrary to executing dynamic attack behaviors, simulated attacks are incomplete, reverse-engineered, manufactured or fake. As a result, they are often not recognized by security controls as a threat. Rules detecting but not alerting on simulated attacks is common and detrimental to a security program as this creates a false sense of security. AI and machine learning will only exacerbate this scenario.\u0026nbsp;Organizations have difficulty optimizing their security controls without using real attack binaries based on active attacker tactics, techniques, and procedures (TTPs) and without visibility of the full attack lifecycle.\u0026nbsp;\u003C\/p\u003E\n\u003Ch4\u003ESimulations Only Focus on Post-Exploit Attacks\u003C\/h4\u003E\n\u003Cp\u003ESimulations performed by BAS technologies are limited to the phases of operation once the attack has compromised the system.\u0026nbsp;As a result, these simulations do not provide complete attack lifecycle\/kill chain visibility, which is critical to analyzing security effectiveness across the entire security infrastructure and optimizing controls proactively.\u003C\/p\u003E\n\u003Ch4\u003ETesting Is Only as Good as the Data Used\u003C\/h4\u003E\n\u003Cp\u003EThe validity of attack libraries inherent in today\u0027s BAS solutions is in question as they cannot keep pace with the threat landscape.\u0026nbsp;BAS solutions lack the real-time threat data and breach intelligence that reveal what threat actors are doing right now. That lack of timely intelligence\u2014providing insights into the current TTPs used by attackers\u2014limits an organization\u2019s ability to identify and defend against the most relevant threats.\u003C\/p\u003E\n\u003Ch4\u003ELack of Remediation for Environmental Drift\u003C\/h4\u003E\n\u003Cp\u003ECritical to validating controls is the ability to monitor and remediate changes to the IT environment that otherwise remain unseen by the security team. These gaps can cause regressions in security controls effectiveness and ultimately cause massive opportunities for attackers. BAS solutions lack automated processes to detect and respond to IT environmental drift and ensure ongoing integrity of the security infrastructure.\u0026nbsp;\u003C\/p\u003E\n\u003Cp\u003EThe use of continuous monitoring or simulation is distinctly different from the automated detection and remediation of IT environmental drift. Drift or changes in digital environments can also impact IT policies, tools, topologies, segmentation and more\u2014which are not flagged in BAS solutions. Automating the process of monitoring and remediating IT environmental drift assures the health of the security infrastructure resulting in integrity and accuracy in test results.\u003C\/p\u003E\n\u003Ch4\u003EOngoing Proof of Security Effectiveness\u003C\/h4\u003E\n\u003Cp\u003EMandiant \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/security-validation.html\u0022\u003ESecurity Validation\u003C\/a\u003E gives teams ongoing proof of security effectiveness across people, processes and technology, providing them with:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EThe latest global threat intelligence and adversary visibility\u003C\/li\u003E\n\u003Cli\u003EEmulation of real attack binaries\u003C\/li\u003E\n\u003Cli\u003ESafe execution of destructive malware and ransomware\u003C\/li\u003E\n\u003Cli\u003EAn automated process to monitor and remediate IT environmental drift\u0026nbsp;\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003ESecurity Validation and BAS technologies have many perceived similarities, but despite claims of comparable functionality, the distinction remains clear: simulation and yesterday\u2019s data are no match for emulation using \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/threat-intelligence.html\u0022\u003Ereal-time threat intelligence\u003C\/a\u003E.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Wed Jun 02 2021 17:07:44 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EBreach and Attack Simulation is not enough to demonstrate cyber readiness, but Mandiant Security Validation can help get it done by\u0026nbsp;safely emulating real attacks.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Wed Jun 02 2021 17:09:58 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Wed Jun 02 2021 17:11:58 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+uuid: feae5dcb-119e-4c10-bdd5-000aa6902403
+langcode: es
+status: true
+dependencies:
+  module:
+    - disable_language
+third_party_settings:
+  disable_language:
+    disable: true
+    redirect_language: en
+id: es
+label: Spanish
+direction: ltr
+weight: 7
+locked: false

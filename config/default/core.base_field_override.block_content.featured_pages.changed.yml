@@ -1,0 +1,18 @@
+uuid: 695c6cb1-28b4-4685-acf6-6b901ddd129d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.featured_pages
+id: block_content.featured_pages.changed
+field_name: changed
+entity_type: block_content
+bundle: featured_pages
+label: Changed
+description: 'The time that the custom block was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

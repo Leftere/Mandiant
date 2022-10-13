@@ -1,0 +1,19 @@
+uuid: 04b3cfcf-9f9a-4177-8cdc-b7aec460049d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.site_setting_entity.field_phone_us
+    - site_settings.site_setting_entity_type.phones
+id: site_setting_entity.phones.field_phone_us
+field_name: field_phone_us
+entity_type: site_setting_entity
+bundle: phones
+label: 'United States'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

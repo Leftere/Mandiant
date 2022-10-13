@@ -1,0 +1,29 @@
+uuid: 45d9a3f8-b05c-4256-a28c-6eda76591679
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.relationship
+    - field.storage.block_content.field_related_nodes
+    - node.type.article
+id: block_content.relationship.field_related_nodes
+field_name: field_related_nodes
+entity_type: block_content
+bundle: relationship
+label: Resources
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

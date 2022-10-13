@@ -1,0 +1,18 @@
+uuid: 8a96a812-b77f-4ab3-8615-9874c7c3a0e2
+langcode: de
+status: true
+dependencies:
+  config:
+    - block_content.type.testimonial
+id: block_content.testimonial.changed
+field_name: changed
+entity_type: block_content
+bundle: testimonial
+label: Changed
+description: 'The time that the custom block was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

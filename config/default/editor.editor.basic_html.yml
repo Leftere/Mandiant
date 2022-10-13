@@ -1,0 +1,76 @@
+uuid: 554e07fc-6765-4e9d-87a6-b13bfafa300d
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - ckeditor
+_core:
+  default_config_hash: AqlPmO16LvJI4D0Ih6u4GFQIzqr5OnLgAUSjcUGWk2g
+format: basic_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+            - Underline
+            - Strike
+            - Blockquote
+            - blockquote_attribution
+        -
+          name: Actions
+          items:
+            - Undo
+            - Redo
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+            - Accordion
+        -
+          name: Linking
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Media
+          items:
+            - DrupalImage
+            - DrupalMediaLibrary
+        -
+          name: 'Block Formatting'
+          items:
+            - '-'
+            - Format
+            - HorizontalRule
+        -
+          name: Tools
+          items:
+            - Table
+            - '-'
+            - Source
+  plugins:
+    drupallink:
+      linkit_enabled: true
+      linkit_profile: default
+    language:
+      language_list: un
+    stylescombo:
+      styles: ''
+    tokenbrowser:
+      token_types: {  }
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

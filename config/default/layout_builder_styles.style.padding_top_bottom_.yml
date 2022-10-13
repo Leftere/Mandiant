@@ -1,0 +1,16 @@
+uuid: 566e2ab5-dfc4-49f1-a44a-688ece4e7a31
+langcode: en
+status: true
+dependencies: {  }
+id: padding_top_bottom_
+label: 'Padding (Top & Bottom)'
+classes: padding-top-bottom
+type: section
+group: modifiers_layout
+weight: 0
+block_restrictions: {  }
+layout_restrictions:
+  - layout_onecol
+  - layout_twocol_section
+  - layout_threecol_section
+  - layout_fourcol_section

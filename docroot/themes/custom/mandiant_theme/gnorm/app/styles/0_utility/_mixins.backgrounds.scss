@@ -1,0 +1,23 @@
+@mixin bg-gradient-curves-red {
+  background-image: url(/themes/custom/mandiant_theme/gnorm/build/images/backgrounds/bg-gradient-red-curves.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin bg-gradient-soft-grid-red {
+  background-image: url(/themes/custom/mandiant_theme/gnorm/build/images/backgrounds/bg-gradient-soft-grid-red.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin icon-hr-3 {
+  background-image: url(/themes/custom/mandiant_theme/gnorm/build/images/hr-3.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+@mixin bg-image-dark-red-stats {
+  background-image: url(/themes/custom/mandiant_theme/gnorm/build/images/backgrounds/bg-gradient-soft-grid-red.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}

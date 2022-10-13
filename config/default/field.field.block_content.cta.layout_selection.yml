@@ -1,0 +1,21 @@
+uuid: 5f3e1730-fc55-4b04-843d-04ef818e2528
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cta
+    - field.storage.block_content.layout_selection
+id: block_content.cta.layout_selection
+field_name: layout_selection
+entity_type: block_content
+bundle: cta
+label: Layout
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: layout_library
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,9 @@
+.component-intro {
+  padding-bottom: 3rem !important;
+  padding-top: 0;
+  text-align: center;
+
+  @include breakpoint($tablet) {
+    padding-top: 8rem;
+  }
+}

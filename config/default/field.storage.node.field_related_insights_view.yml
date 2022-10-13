@@ -1,0 +1,21 @@
+uuid: 2563a9c6-763a-496b-b1e9-4e5c2b2be832
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - views
+    - viewsreference
+id: node.field_related_insights_view
+field_name: field_related_insights_view
+entity_type: node
+type: viewsreference
+settings:
+  target_type: view
+module: viewsreference
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

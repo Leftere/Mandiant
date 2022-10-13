@@ -1,0 +1,109 @@
+.block-bundle-tab {
+  @include bg-gradient-soft-grid-red();
+  padding-bottom: 5rem;
+  padding-top: 10rem;
+
+  > .layout--onecol {
+    > .layout__region {
+      @include make-custom-block($grid-gap: 2rem);
+      color: $white;
+      padding-bottom: 5rem;
+      padding-top: 10rem;
+
+      h2 {
+        position: relative;
+
+        &:before {
+          @include icon-hr-3();
+          content: ' ';
+          height: 18px;
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: -5rem;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  > .layout--twocol-section {
+    @include container($desktop);
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: 1fr;
+
+    @include breakpoint($desktop) {
+      grid-template-columns: 1fr 2fr;
+    }
+
+    .layout__region--first {
+      .slick-for {
+        margin-top: 4rem;
+
+        > a {
+          background-color: rgba(60, 37, 43, .5);
+          -webkit-box-shadow: -17px 14px 10px 0px rgba(0, 0, 0, .18);
+          box-shadow: -17px 14px 10px 0px rgba(0, 0, 0, .18);
+          color: $white;
+          display: block;
+          margin-bottom: .5rem;
+          padding: 2rem 5rem 2.5rem 5rem;
+
+          h4 {
+            @include font-size(20, 24);
+            margin: 0;
+            margin-bottom: 1rem;
+
+            &:before {
+              border-top: 3px solid $red;
+              content: ' ';
+              display: block;
+              margin-bottom: 1rem;
+              width: 20px;
+            }
+          }
+
+          span {
+            @include font-size(14, 18);
+            font-weight: 500;
+          }
+
+          &.active-trail {
+            background-color: rgba(7, 5, 13, .5);
+          }
+
+          &:hover,
+          &:active,
+          &:focus {
+            text-decoration: none;
+
+            &:not(.active-trail) {
+              background-color: rgba(60, 37, 43, .75);
+            }
+          }
+        }
+      }
+    }
+
+    .paragraph--view-mode--slick {
+      overflow: visible;
+
+      .media--image {
+        border-bottom-right-radius: 25px;
+        border-color: rgba(7, 5, 13, .8);
+        border-style: solid;
+        border-top-left-radius: 25px;
+        border-width: 2rem;
+        display: block;
+        width: 100%;
+
+        img {
+          border-radius: 0;
+          height: auto;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

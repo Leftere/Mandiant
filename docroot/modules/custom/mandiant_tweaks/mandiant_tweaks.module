@@ -1,0 +1,257 @@
+<?php
+
+/**
+ * @file
+ * Mandiant Tweaks.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\node\Entity\NodeType;
+use \Drupal\Core\Entity\EntityInterface;
+use \Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function mandiant_tweaks_preprocess_page(&$variables) {
+  $theme = \Drupal::service('theme.manager')->getActiveTheme();
+
+  $variables['#attached']['library'][] = 'mandiant_tweaks/gin';
+
+  if ($theme->getName() === 'mandiant_theme') {
+    $variables['#attached']['library'][] = 'mandiant_tweaks/wireframe';
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function mandiant_tweaks_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Disable HTML5 validation on every drupal form.
+  $form['#attributes']['novalidate'] = 'novalidate';
+
+  // Add process for relationship inline block
+  if ($form_id == 'layout_builder_add_block') {
+    $block_bundle = $form['settings']['block_form']['#block']->bundle();
+  
+    if ($block_bundle == 'relationship') {
+      $form['settings']['block_form']['#process'][] = '_mandiant_tweaks_article_form_alter';
+    }
+  }
+
+  // Custom submit handler to redirect pages to layout builder after submit.
+  if (isset($form['#entity_type']) && $form['#entity_type'] == 'node') {
+    foreach (array_keys($form['actions']) as $action) {
+      if ($action != 'preview' && isset($form['actions'][$action]['#type']) && $form['actions'][$action]['#type'] === 'submit') {
+        $form['actions'][$action]['#submit'][] = '_mandiant_tweaks_node_form_submit';
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function mandiant_tweaks_form_node_article_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Makes the Layout field mandatory (only when creating a new node).
+  $form['layout_selection']['widget']['#required'] = TRUE;
+
+  $form['group_podcasts']['#states'] = [
+    'visible' => [
+      ':input[name="layout_selection"]' => ['value' => 'article_podcast'],
+    ],
+  ];
+
+  $form['group_webinars']['#states'] = [
+    'visible' => [
+      ':input[name="layout_selection"]' => ['value' => 'article_webinar'],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function mandiant_tweaks_form_node_article_edit_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Disables the Layout field. Once the layout was cloned, it can't be changed.
+  $form['layout_selection']['widget']['#disabled'] = TRUE;
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function mandiant_tweaks_form_node_page_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Makes the Layout field mandatory (only when creating a new node).
+  $form['layout_selection']['widget']['#required'] = TRUE;
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function mandiant_tweaks_form_node_page_edit_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Disables the Layout field. Once the layout was cloned, it can't be changed.
+  $form['layout_selection']['widget']['#disabled'] = TRUE;
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function mandiant_tweaks_form_entity_view_display_layout_builder_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  _mandiant_tweaks_layout_form_preview_block_layout($form);
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function mandiant_tweaks_form_layout_layout_builder_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  _mandiant_tweaks_layout_form_preview_block_layout($form);
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function mandiant_tweaks_form_node_page_layout_builder_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  _mandiant_tweaks_layout_form_preview_block_layout($form);
+}
+
+/**
+ * Implements hook_entity_extra_field_info().
+ */
+function mandiant_tweaks_entity_extra_field_info() {
+  $extra = array();
+
+  foreach (NodeType::loadMultiple() as $bundle) {
+    if (in_array($bundle->Id(), ['page', 'article', 'partner', 'bio'])) {
+      $extra['node'][$bundle->Id()]['display']['title_display'] = array(
+        'label' => t('Display Title'),
+        'description' => t('Node Display Title'),
+        'weight' => 100,
+        'visible' => TRUE,
+      );
+      $extra['node'][$bundle->Id()]['display']['cta_learn_more'] = array(
+        'label' => t('Learn More CTA'),
+        'description' => t('Learn More CTA'),
+        'weight' => 100,
+        'visible' => TRUE,
+      );
+    }
+    if (in_array($bundle->Id(), ['article'])) {
+      $extra['node'][$bundle->Id()]['display']['resource_type'] = array(
+        'label' => t('Resource Type'),
+        'description' => t('Resource Type'),
+        'weight' => 100,
+        'visible' => TRUE,
+      );
+    }
+  }
+
+  return $extra;
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function mandiant_tweaks_node_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  if ($display->getComponent('title_display')) {
+    $link = $entity->toLink();
+    $build['title_display'] = $link->toRenderable();
+  }
+  if ($display->getComponent('cta_learn_more')) {
+    $link = $entity->toLink();
+    $link->setText('Learn More');
+    $build['cta_learn_more'] = $link->toRenderable();
+  }
+  if ($display->getComponent('resource_type')) {
+    if (!empty($entity->hasField('layout_selection'))) {
+      $layout_selection = $entity->get('layout_selection')->getValue();
+      if (!empty($layout_selection[0])) {
+        $label = str_replace('article_', '', $layout_selection[0]['target_id']);
+        $label = str_replace('_', ' ', $label);
+        $build['resource_type'] = [
+          '#type' => 'markup',
+          '#markup' => ucfirst($label),
+        ];
+      }
+    }
+  }
+}
+
+/**
+ * Custom submit handler to redirect pages to layout builder after submit.
+ */
+function _mandiant_tweaks_node_form_submit($form, FormStateInterface $form_state){
+  $node = $form_state->getFormObject()->getEntity();
+  if (in_array($node->bundle(), ['page'])) {
+    \Drupal::request()->query->remove('destination');
+    $form_state->setRedirect(
+      'layout_builder.overrides.node.view',
+      ['node' => $node->id()]
+    );
+  }
+}
+
+/**
+ * Helper to add a new toggle button to show/hide Block layout regions.
+ */
+function _mandiant_tweaks_layout_form_preview_block_layout(&$form) {
+  $form['actions']['preview_block_layout'] = [
+    "#type" => "container",
+    "#weight" => 21,
+    "#attributes" => [
+      "class" => ["js-show", "glb-form-item-preview-regions"],
+    ],
+    "toggle_block_layout_preview" => [
+      "#id" => "layout-builder-block-layout-preview",
+      "#title" => "Preview Block layout",
+      "#type" => "checkbox",
+      "#value" => FALSE,
+      "#attributes" => [
+        "data-content-preview-id" => "Drupal.layout_builder.block_layout_preview.1"
+      ],
+      '#attached' => [
+        'library' => 'mandiant_tweaks/layout_builder_tweaks',
+      ]
+    ],
+  ];
+}
+
+/**
+ * Add helper to hide fields for article fields.
+ */
+function _mandiant_tweaks_article_form_alter(array &$element, FormStateInterface $form_state = NULL, array &$form = []) {
+  if (isset($element['field_related_nodes']['widget']['form'])) {
+    $element['field_related_nodes']['widget']['form']['inline_entity_form']['#process'][] = '_mandiant_tweaks_article_form_alter_2';
+  }
+  return $element;
+}
+
+/**
+ * Helper to hide fields for article fields.
+ */
+function _mandiant_tweaks_article_form_alter_2(array &$element, FormStateInterface $form_state = NULL, array &$form = []) {
+  if(isset($element['group_podcasts'])) {
+    $element['group_podcasts']['#states'] = [
+      'visible' => [
+        ':input[name="settings[block_form][field_related_nodes][form][0][layout_selection]"]' => ['value' => 'article_podcast'],
+      ],
+    ];
+  }
+
+  if (isset($element['group_webinars'])) {
+    $element['group_webinars']['#states'] = [
+      'visible' => [
+        ':input[name="settings[block_form][field_related_nodes][form][0][layout_selection]"]' => ['value' => 'article_webinar'],
+      ],
+    ];
+  }
+
+  return $element;
+}
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function mandiant_tweaks_page_attachments_alter(array &$page) {
+  $page['#attached']['library'][] = 'mandiant_tweaks/marketo_form';
+  $page['#attached']['library'][] = 'mandiant_tweaks/progress_bar';
+}

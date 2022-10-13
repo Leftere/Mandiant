@@ -1,0 +1,103 @@
+uuid: dda8f2d2-1d5c-4fb8-9ab4-ea1764b92331
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.testimonial
+    - field.field.block_content.testimonial.field_testimonial
+  module:
+    - field_group
+    - inline_entity_form
+third_party_settings:
+  field_group:
+    group_content:
+      children:
+        - field_testimonial
+      parent_name: group_tabs
+      weight: 3
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        direction: horizontal
+        width_breakpoint: 640
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Content
+    group_tabs:
+      children:
+        - group_content
+        - group_settings
+      parent_name: ''
+      weight: 1
+      format_type: tabs
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        direction: horizontal
+        width_breakpoint: 640
+      label: Tabs
+    group_settings:
+      children:
+        - langcode
+        - translation
+      parent_name: group_tabs
+      weight: 4
+      format_type: tab
+      region: content
+      format_settings:
+        show_empty_fields: true
+        id: ''
+        classes: modal-styling-options
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Settings
+id: block_content.testimonial.default
+targetEntityType: block_content
+bundle: testimonial
+mode: default
+content:
+  field_testimonial:
+    weight: 1
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Testimonial
+      label_plural: Testimonials
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      revision: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 50
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  translation:
+    weight: 51
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

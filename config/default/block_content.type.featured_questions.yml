@@ -1,0 +1,8 @@
+uuid: b81ce0db-1416-4283-8c89-651413e263b4
+langcode: en
+status: true
+dependencies: {  }
+id: featured_questions
+label: 'Featured Questions'
+revision: 0
+description: ''

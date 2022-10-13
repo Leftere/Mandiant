@@ -1,0 +1,13 @@
+uuid: d831d477-1f15-4ae8-81ba-4dc479978b2d
+langcode: en
+status: true
+dependencies: {  }
+id: simple_cta
+label: 'Simple CTA'
+classes: simple-cta
+type: component
+group: modifiers_type
+weight: -5
+block_restrictions:
+  - 'inline_block:cta'
+layout_restrictions: {  }

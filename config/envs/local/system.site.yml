@@ -1,0 +1,15 @@
+uuid: 8eed5d58-d4f9-4dbd-9f02-211f88aae883
+name: Mandiant
+mail: no-reply@local-docksal.com
+slogan: 'Your Cybersecurity Advantage'
+page:
+  403: /node/3886
+  404: /node/3876
+  front: /node/3831
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+mail_notification: ''

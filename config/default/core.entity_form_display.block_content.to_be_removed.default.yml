@@ -1,0 +1,40 @@
+uuid: 4ff60fbf-7efd-4a0a-9030-3c2fe519346c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.to_be_removed
+    - field.field.block_content.to_be_removed.body
+  module:
+    - text
+id: block_content.to_be_removed.default
+targetEntityType: block_content
+bundle: to_be_removed
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

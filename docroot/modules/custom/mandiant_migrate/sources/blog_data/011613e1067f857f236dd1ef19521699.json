@@ -1,0 +1,70 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Thu Jul 15 2021 17:31:50 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Fostering CTI Development With Mandiant Intelligence Services",
+    "jcr:versionHistory": "3e066dba-e12c-42ee-bf1e-188360163dd9",
+    "author": "Luke McNamara",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "699bc3d3-a818-49d1-aa52-df55ed322517"
+    ],
+    "jcr:created": "Thu Jul 15 2021 17:31:50 GMT+0000",
+    "cq:lastModified": "Thu Jul 15 2021 17:31:40 GMT+0000",
+    "jcr:baseVersion": "699bc3d3-a818-49d1-aa52-df55ed322517",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:luke-mcnamara",
+      "fireeye-blog-products-and-services:products-and-services",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:podcast",
+      "fireeye-blog-tags:threat-intelligence",
+      "fireeye-blog-tags:risk"
+    ],
+    "jcr:uuid": "94810458-86ec-4a8d-901e-7852f009fbf6",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Thu Jul 15 2021 13:30:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/eos2021\/mandiant-eos.png\u0022 alt=\u0022\u0022 class=\u0022float-left-small\u0022\u003EIn this episode of \u003Ci\u003EEye on Security\u003C\/i\u003E, I am joined by Jeff Compton, Senior Manager for the Mandiant Intelligence Capability Development team. We dive right in by discussing how Jeff\u2019s team helps customers build threat intelligence programs. One point Jeff focused on was the importance of having a threat intelligence function that supports not just the SOC, but a broader group of stakeholders across the organization as well.\u003C\/p\u003E\n\u003Cp\u003EDeveloping a risk profile that is specific to a customer is a big focus of Jeff\u2019s team, but the threat landscape is constantly evolving. Jeff shares stories about how the needs of customers in this space continue to evolve, and how the regulatory landscape is driving change in particular regions and industries.\u003C\/p\u003E\n\u003Cp\u003EWe close out with discussing how the market is shifting, and some of the opportunities Jeff is excited about for Mandiant to help mid-market customers build up this important function.\u003C\/p\u003E\n\u003Cp\u003EListen to the podcast now, and then head over to our site for more information on \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/threat-intelligence.html\u0022\u003EMandiant Threat Intelligence\u003C\/a\u003E.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Thu Jul 15 2021 17:29:45 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      },
+      "htmlpassthru": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "adam.greenberg@fireeye.com",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "jcr:created": "Thu Jul 15 2021 17:26:49 GMT+0000",
+        "html": "\u003Cdiv id=\u0022buzzsprout-player-8856648\u0022\u003E\u003C\/div\u003E\n\u003Cscript src=\u0022https:\/\/www.buzzsprout.com\/1762840\/8856648-fostering-cti-development-with-mandiant-intelligence-services.js?container_id=buzzsprout-player-8856648\u0026player=small\u0022 type=\u0022text\/javascript\u0022 charset=\u0022utf-8\u0022\u003E\u003C\/script\u003E",
+        "jcr:lastModified": "Thu Jul 15 2021 17:26:54 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/html\/htmlpassthru"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EIn this episode of\u0026nbsp;Eye on Security, Jeff Compton of the Mandiant Intelligence Capability Development team talks about building out intelligence programs.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Thu Jul 15 2021 17:29:20 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Thu Jul 15 2021 17:31:40 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

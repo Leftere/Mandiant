@@ -1,0 +1,62 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed Jun 23 2021 16:59:00 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Can You Prove Your Next Cyber Investment Addresses the Most Risk?",
+    "jcr:versionHistory": "9b667b15-3e3a-4b67-9f3a-8c27058b2cde",
+    "author": "Tom Topping",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "11efe71e-aaef-48d0-b9ad-5f2fcf108d42"
+    ],
+    "jcr:created": "Wed Jun 23 2021 16:59:00 GMT+0000",
+    "cq:lastModified": "Wed Jun 23 2021 16:58:41 GMT+0000",
+    "jcr:baseVersion": "11efe71e-aaef-48d0-b9ad-5f2fcf108d42",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:tom-topping",
+      "fireeye-blog-products-and-services:products-and-services",
+      "fireeye-blog-tags:federal",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:security-validation",
+      "fireeye-blog-tags:expertise-on-demand",
+      "fireeye-blog-tags:threat-intelligence"
+    ],
+    "jcr:uuid": "e7bd8165-4264-41f9-ab11-91e480e396cf",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Wed Jun 23 2021 13:00:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EA large majority (87%) of security leaders say their organizations are \u003Ca href=\u0022https:\/\/www.csoonline.com\/article\/3598393\/new-study-shows-pandemic-changing-short-and-long-term-approaches-to-risk.html\u0022\u003Enot sufficiently addressing cyber risks\u003C\/a\u003E, according to the \u003Ci\u003ECSO 2020 Security Priorities\u003C\/i\u003E \u003Ci\u003EStudy.\u003C\/i\u003E\u003C\/p\u003E\n\u003Cp\u003EThat\u2019s not necessarily surprising given the sophistication of threats today. The attack landscape is quickly expanding, with nation-state attacks such as \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/blog\/threat-research\/2020\/12\/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor.html\u0022\u003ESolarWinds\u003C\/a\u003E and \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/blog\/threat-research\/2021\/03\/detection-response-to-exploitation-of-microsoft-exchange-zero-day-vulnerabilities.html\u0022\u003EHAFNIUM\u003C\/a\u003E causing challenges for many public sector CISOs and CSOs.\u003C\/p\u003E\n\u003Cp\u003EThe U.S. government has taken notice and has just approved the funding to dramatically improve federal executive branch cyber security capabilities and the capacity for the federal government to work with state, local, tribal, territorial, and critical infrastructure organizations. The recently enacted American Rescue Plan allocates $1 billion to the Technology Modernization Fund and $650 million to expand the capabilities of the Cybersecurity and Infrastructure Security Agency.\u003C\/p\u003E\n\u003Cp\u003EWith an opportunity to make transformational changes, many leaders are asking:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EHow do we know that the proposed changes will address the most risk?\u003C\/li\u003E\n\u003Cli\u003EHow will we measure the impact of the proposed changes?\u003C\/li\u003E\n\u003Cli\u003EHow will we be sure that we are realizing the benefits once the changes are implemented?\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EBefore agencies use those funds\u2014and especially prior to making significant transformation changes\u2014it\u2019s important to select the right elements. For example, choosing a technology just because it has been on the security team\u2019s wish list for a long time doesn\u2019t mean that solution is better at addressing cyber risk than other potential investments.\u003C\/p\u003E\n\u003Cp\u003EIn other words, how can you know that your investments are the right ones?\u003C\/p\u003E\n\u003Ch4\u003EOptimizing Your Cyber Investments\u003C\/h4\u003E\n\u003Cp\u003EThere are many elements\u2014processes, software, hardware, skill capabilities\u2014to consider when planning for cyber defense. Agencies should seek to understand what\u2019s currently working, ways to align capabilities with mission requirements, the current threat environment, and ways to operate at full skills capabilities despite personnel shortages.\u003C\/p\u003E\n\u003Ch5\u003EFocus on What\u2019s Working\u003C\/h5\u003E\n\u003Cp\u003EBefore spending on new capabilities, it\u2019s critical to know how well existing security investments are working. That requires accurately and frequently measuring the effectiveness of existing security tools.\u003C\/p\u003E\n\u003Cp\u003EOne way many public sector organizations are achieving this is with \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/security-validation.html\u0022\u003EMandiant Security Validation\u003C\/a\u003E. Mandiant Security Validation puts security posture to the test\u2014literally\u2014by safely running relevant cyber attacks against production environments. Organizations come away knowing exactly:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EHow effective their existing security systems and processes are at identifying and responding to relevant threat activity.\u003C\/li\u003E\n\u003Cli\u003EThe areas that present the most risk to the organization.\u003C\/li\u003E\n\u003Cli\u003EWhere subsequent investments will mitigate the most risk.\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Ch5\u003EConduct Periodic Assessments\u003C\/h5\u003E\n\u003Cp\u003EEvery organization evolves. Missions are added, changed or retired. Updated projects may require different levels of data, application or infrastructure protection. That\u2019s why it\u2019s important to periodically assess the cyber security program to ensure that it remains optimally organized, prepared, capable, and aligned with overall mission requirements.\u003C\/p\u003E\n\u003Cp\u003EMany public sector organizations utilize Mandiant Consulting services to conduct a variety of annual assessments that range from \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/red-team-assessment.html\u0022\u003Ered teaming\u003C\/a\u003E and \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/tabletop-exercise.html\u0022\u003Etabletop exercises\u003C\/a\u003E to full security program reviews. Periodic assessments ensure that cyber defenses are mitigating risks and meeting operating objectives.\u003C\/p\u003E\n\u003Ch5\u003EFocus on Relevant Threats\u003C\/h5\u003E\n\u003Cp\u003EMost threat actors have a modus operandi, meaning they focus on victims with similar profiles and tend to use the same tactics, techniques, and procedures across multiple attacks. For example, Mandiant-identified FIN actors are financially motivated and have historically focused their attacks on organizations in the financial industry. If organizations want to stay ahead of today\u2019s sophisticated threats, it is imperative that they align their cyber capabilities to rapidly detect potential attack activity by their most likely attackers.\u003C\/p\u003E\n\u003Cp\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/threat-intelligence.html\u0022\u003EMandiant Advantage: Threat Intelligence\u003C\/a\u003E helps organizations protect against targeted attacks more effectively by enabling them to:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EUnderstand the attackers they are most likely to face\u003C\/li\u003E\n\u003Cli\u003EUnderstand which capabilities must be in place to detect those threat actors rapidly and consistently within their environment\u003C\/li\u003E\n\u003Cli\u003EMore effectively hunt for threat actor activity within their environments\u003C\/li\u003E\n\u003Cli\u003EAnticipate attacks by understanding industry attack events and trends\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Ch5\u003EOperate at Full Capability\u003C\/h5\u003E\n\u003Cp\u003ESurvey after survey shows that the talent gap remains a top challenge facing security leaders. Undertrained teams struggle to effectively manage risk, and the problems compound when cyber operations teams are understaffed and overworked.\u003C\/p\u003E\n\u003Cp\u003EMany public sector organizations are operating at full skills capability despite being understaffed. FireEye is helping to fill these consequential skills gaps by enabling customers to call upon Mandiant experts on an as-needed basis.\u0026nbsp;\u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/expertise-on-demand.html\u0022\u003EMandiant Expertise On Demand\u003C\/a\u003E provides a flexible set of on-demand expert capabilities that enable security teams to call upon the specific expertise they need, when they need it. Cyber leaders find that the ability to rapidly engage experts, as needed, is delivering many positive benefits, including a more effective security operation, happier employees, lower turnover, improved response times, and reduced overall risk.\u003C\/p\u003E\n\u003Ch4\u003ETying It All Together\u003C\/h4\u003E\n\u003Cp\u003ECyber security leaders are finding today that the actions outlined in this post are providing the information and capabilities they need to determine where each future investment dollar will mitigate the most risk. They do this by knowing themselves (\u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/security-validation.html\u0022\u003EMandiant Security Validation\u003C\/a\u003E and periodic assessments), knowing their enemy (\u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/threat-intelligence.html\u0022\u003EMandiant Advantage: Threat Intelligence\u003C\/a\u003E), and filling their ranks with experts as needed (\u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/expertise-on-demand.html\u0022\u003EMandiant Expertise On Demand\u003C\/a\u003E). It\u2019s a winning strategy.\u003Ci\u003E\u003C\/i\u003E\u003C\/p\u003E\n",
+        "jcr:lastModified": "Wed Jun 23 2021 15:55:46 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EFederal agencies need to ensure they\u0027re making the right investments to reduce the most amount of cyber risk, and that\u0027s where FireEye can help.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Wed Jun 23 2021 15:57:11 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Wed Jun 23 2021 16:58:41 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

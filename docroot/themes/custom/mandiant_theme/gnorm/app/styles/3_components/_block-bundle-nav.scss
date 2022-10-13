@@ -1,0 +1,37 @@
+.block-bundle-nav {
+  padding: 0 13rem;
+
+  @include breakpoint(max-width $tablet) {
+    padding: 4rem 6rem;
+  }
+
+  .layout__region--content {
+    .link {
+      div {
+        margin: 2rem 0;
+      }
+    }
+  }
+
+  a {
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 4rem 0;
+    position: relative;
+
+    &:after {
+      background-image: url('../images/arrow-red.svg');
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: 14px;
+      content: '';
+      height: 100%;
+      left: -40px;
+      position: absolute;
+      top: 0;
+      transform: rotate(0deg);
+      width: 40px;
+    }
+  }
+}

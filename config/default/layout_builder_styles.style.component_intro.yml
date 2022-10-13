@@ -1,0 +1,13 @@
+uuid: 6dbc9589-0b39-4869-a1fc-b0bd36caa957
+langcode: en
+status: true
+dependencies: {  }
+id: component_intro
+label: 'Component Intro'
+classes: component-intro
+type: section
+group: add_ons
+weight: 3
+block_restrictions: {  }
+layout_restrictions:
+  - layout_onecol

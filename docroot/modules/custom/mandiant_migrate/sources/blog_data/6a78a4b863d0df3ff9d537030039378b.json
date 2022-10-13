@@ -1,0 +1,80 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Tue Aug 21 2018 19:21:46 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "fireeye_global_admin",
+    "jcr:title": "Suspected Iranian Influence Operation Leverages Network of Inauthentic News Sites \u0026 Social Media Targeting Audiences in U.S., UK, Latin America, Middle East",
+    "jcr:versionHistory": "496892c0-3f99-4ec7-b8ff-bd7aa0978976",
+    "author": "FireEye Intelligence",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "1453a558-80cc-4e0c-98b2-cb468d58a4be"
+    ],
+    "jcr:created": "Fri Jan 10 2020 18:33:16 GMT+0000",
+    "cq:lastModified": "Fri Jan 10 2020 18:32:56 GMT+0000",
+    "jcr:baseVersion": "1453a558-80cc-4e0c-98b2-cb468d58a4be",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:fireeye-intelligence",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:iran",
+      "fireeye-blog-tags:apt"
+    ],
+    "jcr:uuid": "f51abe56-b72d-47df-b683-8afd08ac824d",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Tue Aug 21 2018 16:30:00 GMT-0700",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EFireEye has identified a suspected influence operation that appears to originate from Iran aimed at audiences in the U.S., U.K., Latin America, and the Middle East. This operation is leveraging a network of inauthentic news sites and clusters of associated accounts across multiple social media platforms to promote political narratives in line with Iranian interests. These narratives include anti-Saudi, anti-Israeli, and pro-Palestinian themes, as well as support for specific U.S. policies favorable to Iran, such as the U.S.-Iran nuclear deal (JCPOA). The activity we have uncovered is significant, and demonstrates that actors beyond Russia continue to engage in and experiment with online, social media-driven influence operations to shape political discourse.\u003C\/p\u003E\n\u003Ch4\u003EWhat Is This Activity?\u003C\/h4\u003E\n\u003Cp\u003EFigure 1 maps the registration and content promotion connections between the various inauthentic news sites and social media account clusters we have identified thus far. This activity dates back to at least 2017. At the time of publication of this blog post, we continue to investigate and identify additional social media accounts and websites linked to this activity. For example, we have identified multiple Arabic-language, Middle East-focused sites that appear to be part of this broader operation that we do not address here.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/SuspectedIranianOperation\/Fig1.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 1: Connections among components of suspected Iranian influence operation\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EWe use the term \u201cinauthentic\u201d to describe sites that are not transparent in their origins and affiliations, undertake concerted efforts to mask these origins, and often use false social media personas to promote their content. The content published on the various websites consists of a mix of both original content and news articles appropriated, and sometimes altered, from other sources.\u003C\/p\u003E\n\u003Ch4\u003EWho Is Conducting this Activity and Why?\u003C\/h4\u003E\n\u003Cp\u003EBased on an investigation by FireEye Intelligence\u2019s Information Operations analysis team, we assess with moderate confidence that this activity originates from Iranian actors. This assessment is based on a combination of indicators, including site registration data and the linking of social media accounts to Iranian phone numbers, as well as the promotion of content consistent with Iranian political interests. For example:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003ERegistrant emails for the sites \u2018Liberty Front Press\u2019 and \u2018Instituto Manquehue\u2019 are associated with advertisements for website designers in Tehran and with the Iran-based site gahvare[.]com, respectively.\u003C\/li\u003E\n\u003Cli\u003EWe have identified multiple Twitter accounts directly affiliated with the sites, as well as other associated Twitter accounts, that are linked to phone numbers with the +98 Iranian country code.\u003C\/li\u003E\n\u003Cli\u003EWe have observed inauthentic social media personas, masquerading as American liberals supportive of U.S. Senator Bernie Sanders, heavily promoting Quds Day, a holiday established by Iran in 1979 to express support for Palestinians and opposition to Israel.\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EWe limit our assessment regarding Iranian origins to moderate confidence because influence operations, by their very nature, are intended to deceive by mimicking legitimate online activity as closely as possible. While highly unlikely given the evidence we have identified, some possibility nonetheless remains that the activity could originate from elsewhere, was designed for alternative purposes, or includes some small percentage of authentic online behavior. We do not currently possess additional visibility into the specific actors, organizations, or entities behind this activity. Although the Iran-linked APT35 (Newscaster) has previously used inauthentic news sites and social media accounts to facilitate espionage, we have not observed any links to APT35.\u003C\/p\u003E\n\u003Cp\u003EBroadly speaking, the intent behind this activity appears to be to promote Iranian political interests, including anti-Saudi, anti-Israeli, and pro-Palestinian themes, as well as to promote support for specific U.S. policies favorable to Iran, such as the U.S.-Iran nuclear deal (JCPOA). In the context of the U.S.-focused activity, this also includes significant anti-Trump messaging and the alignment of social media personas with an American liberal identity. However, it is important to note that the activity does not appear to have been specifically designed to influence the 2018 U.S. midterm elections, as it extends well beyond U.S. audiences and U.S. politics.\u003C\/p\u003E\n\u003Ch4\u003EConclusion\u003C\/h4\u003E\n\u003Cp\u003EThe activity we have uncovered highlights that multiple actors continue to engage in and experiment with online, social media-driven influence operations as a means of shaping political discourse. These operations extend well beyond those conducted by Russia, which has often been the focus of research into information operations over recent years. Our investigation also illustrates how the threat posed by such influence operations continues to evolve, and how similar influence tactics can be deployed irrespective of the particular political or ideological goals being pursued.\u003C\/p\u003E\n\u003Ch4\u003EAdditional Details\u003C\/h4\u003E\n\u003Cp\u003ERead the \u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/current-threats\/pdfs\/rpt-FireEye-Iranian-IO.pdf\u0022\u003Efull report for more information\u003C\/a\u003E.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Fri Jan 10 2020 18:32:56 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "sidebar": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "jeff.payne@fireeye.com",
+      "jcr:lastModified": "Tue Aug 21 2018 14:53:54 GMT-0400",
+      "sling:resourceType": "foundation\/components\/iparsys",
+      "iparsys_fake_par": {
+        "jcr:primaryType": "nt:unstructured",
+        "inheritance": "cancel",
+        "sling:resourceType": "foundation\/components\/iparsys\/par"
+      },
+      "htmlpassthru": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "jeff.payne@fireeye.com",
+        "jcr:lastModifiedBy": "jeff.payne@fireeye.com",
+        "jcr:created": "Thu Aug 23 2018 13:31:03 GMT-0400",
+        "html": "\u003Cdiv class=\u0022a8 quote-box bg button uc-he01v1\u0022\u003E\n\u003Ccenter\u003E\n\u003Ch2 class=\u0022uc-he01_title title-1A2A39 header\u0022\u003ESpecial Report\u003C\/h2\u003E\n\u003Cp class=\u0022type-ML\u0022\u003E\u003Cb\u003ESUSPECTED IRANIAN INFLUENCE OPERATION\u003C\/b\u003E\u003Cbr\u003E\nLeveraging Inauthentic News Sites and Social Media Aimed at U.S., U.K., Other Audiences.\u003C\/p\u003E\n\u003Cbr\u003E\n\u003C\/center\u003E\n\u003Cdiv class=\u0022text-center\u0022\u003E\u003Ca class=\u0022btn btn-B2282D\u0022 href=\u0022\/content\/dam\/fireeye-www\/current-threats\/pdfs\/rpt-FireEye-Iranian-IO.pdf\u0022 target=\u0022_blank\u0022\u003EGet The Report\u003C\/a\u003E\u003C\/div\u003E\n\u003C\/div\u003E\n\n\u003Cstyle\u003E\n.quote-box {padding: 30px; margin-bottom: 30px; border: 1px solid #aaaaaa;}\n.bg {#D6E2F4; background-image: url(\u0022\/content\/dam\/fireeye-www\/summit\/bg-cds-home.jpg\u0022); background-position: center bottom;}\n.reverse {color: #FFFFFF;}\n.header {font-size: 48px !important;}\n\u003C\/style\u003E",
+        "jcr:lastModified": "Fri Aug 24 2018 14:05:28 GMT-0400",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/html\/htmlpassthru"
+      }
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "jeff.payne@fireeye.com",
+      "jcr:lastModified": "Mon Oct 07 2019 23:05:50 GMT+0000",
+      "imageRotate": "0"
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EFireEye has identified a suspected influence operation that appears to originate from Iran aimed at audiences in the U.S., U.K., Latin America, and the Middle East.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Tue Aug 21 2018 19:05:28 GMT-0400",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    }
+  }
+}

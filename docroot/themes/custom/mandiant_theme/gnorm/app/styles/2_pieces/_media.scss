@@ -1,0 +1,91 @@
+.media {
+  &--image {
+    img {
+      border: none;
+      border-bottom-right-radius: 10px;
+      border-top-left-radius: 10px;
+    }
+  }
+
+  &--video {
+    margin: 8rem 3rem;
+    max-width: 60rem;
+    position: relative;
+
+    &:after {
+      border-bottom: 2px solid $red;
+      border-left: 2px solid $red;
+      border-top: 2px solid $red;
+      content: '';
+      height: calc(100% + 6rem);
+      left: -3rem;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 26px;
+    }
+
+    &:before {
+      border-bottom: 2px solid $red;
+      border-right: 2px solid $red;
+      border-top: 2px solid $red;
+      content: '';
+      height: calc(100% + 6rem);
+      position: absolute;
+      right: -3rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 26px;
+    }
+
+    > div {
+      height: 0;
+      padding-bottom: 56.3%;
+    }
+
+    iframe {
+      border: none;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  &--document {
+    align-items: center;
+    background-color: #eeeef3;
+    display: flex;
+    margin: 0 0 2.4rem 0;
+    padding: 5rem 8rem;
+
+    h4 {
+      @include font-size(18, 22);
+      flex-basis: 80%;
+      font-weight: 700;
+      margin-right: 2rem;
+    }
+
+    a {
+      @include font-size(14, 22);
+      color: $red;
+      font-weight: 600;
+      position: relative;
+      text-decoration: underline;
+
+      &:before {
+        background-image: url('../images/download.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 12px;
+        content: '';
+        height: 100%;
+        left: -28px;
+        position: absolute;
+        top: 0;
+        width: 20px;
+      }
+    }
+  }
+}

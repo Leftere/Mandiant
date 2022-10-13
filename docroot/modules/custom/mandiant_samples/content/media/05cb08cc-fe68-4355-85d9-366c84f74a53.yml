@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 05cb08cc-fe68-4355-85d9-366c84f74a53
+  bundle: image
+  default_langcode: en
+  depends:
+    76142c52-522d-4fd1-aa68-da16dde771e8: user
+    ea953e3a-f0b9-4b1e-9b11-8c68e995e46b: file
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 76142c52-522d-4fd1-aa68-da16dde771e8
+  name:
+    -
+      value: 'Blurred Backgrounds (10).jpg'
+  created:
+    -
+      value: 1625588464
+  revision_translation_affected:
+    -
+      value: true
+  field_media_image:
+    -
+      entity: ea953e3a-f0b9-4b1e-9b11-8c68e995e46b
+      alt: 'Blurred Backgrounds (10).jpg'
+      title: ''
+      width: 4000
+      height: 3000

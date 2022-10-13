@@ -1,0 +1,61 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "fireeye_global_admin",
+  "jcr:created": "Mon Jul 20 2020 17:37:00 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "fireeye_global_admin",
+    "jcr:title": "Unique Threats to Operational Technology and Cyber Physical Systems",
+    "jcr:versionHistory": "0aa2578e-fa3d-45cc-bea5-d6b80b7ed2cc",
+    "author": "Luke McNamara",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "c7ebba1f-7920-4a14-922f-eaa698f5ad3e"
+    ],
+    "jcr:created": "Mon Jul 20 2020 17:37:00 GMT+0000",
+    "cq:lastModified": "Mon Jul 20 2020 16:54:23 GMT+0000",
+    "jcr:baseVersion": "c7ebba1f-7920-4a14-922f-eaa698f5ad3e",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:luke-mcnamara",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:operational-technology",
+      "fireeye-blog-tags:cyber-physical",
+      "fireeye-blog-tags:podcast"
+    ],
+    "jcr:uuid": "283ca8f5-2795-47ba-a5ae-fac8a10bebb7",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Mon Jul 20 2020 13:30:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/EyeOnSecurity\/Podcast-Itunes-cover_eye%20on%20security.png\u0022 class=\u0022float-left-small\u0022\u003EIn this latest episode of our \u003Ci\u003EEye on Security\u003C\/i\u003E\u0026nbsp;podcast, I talk all about the world of operational technology (OT) and cyber physical systems with one of our foremost experts on the topic: Nathan Brubaker, Senior Manager of Analysis for Mandiant Threat Intelligence.\u003C\/p\u003E\n\u003Cp\u003ENathan kicked off our chat by explaining what exactly we mean when we use the term \u2018cyber physical.\u2019 We then turned our attention to related threats. As it turns out, there are far less attempts by attackers to target these systems than one might believe. Nathan went on to discuss some of the fundamental differences between OT and information technology (IT) systems, and then explained how OT is becoming more similar to IT, which makes OT systems more vulnerable to compromise. Fortunately, even though OT security typically lags behind that of IT systems, it\u2019s definitely moving in the right direction.\u003C\/p\u003E\n\u003Cp\u003EListen to the podcast today, and check out the following blog posts referenced by Nathan during the episode:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003E\u003Ca href=\u0022\/content\/fireeye-www\/en_US\/blog\/threat-research\/2020\/07\/financially-motivated-actors-are-expanding-access-into-ot.html\u0022 adhocenable=\u0022false\u0022\u003EFinancially Motivated Actors Are Expanding Access Into OT: Analysis of Kill Lists That Include OT Processes Used With Seven Malware Families\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca href=\u0022\/content\/fireeye-www\/en_US\/blog\/threat-research\/2020\/03\/monitoring-ics-cyber-operation-tools-and-software-exploit-modules.html\u0022 adhocenable=\u0022false\u0022\u003EMonitoring ICS Cyber Operation Tools and Software Exploit Modules To Anticipate Future Threats\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca href=\u0022\/content\/fireeye-www\/en_US\/blog\/threat-research\/2020\/02\/ransomware-against-machine-learning-to-disrupt-industrial-production.html\u0022 adhocenable=\u0022false\u0022\u003ERansomware Against the Machine: How Adversaries are Learning to Disrupt Industrial Production by Targeting IT and OT\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca href=\u0022\/content\/fireeye-www\/en_US\/blog\/threat-research\/2019\/12\/fireeye-approach-to-operational-technology-security.html\u0022 adhocenable=\u0022false\u0022\u003EThe FireEye Approach to Operational Technology Security\u003C\/a\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ca href=\u0022\/content\/fireeye-www\/en_US\/blog\/threat-research\/2019\/04\/triton-actor-ttp-profile-custom-attack-tools-detections.html\u0022 adhocenable=\u0022false\u0022\u003ETRITON Actor TTP Profile, Custom Attack Tools, Detections, and ATT\u0026amp;CK Mapping\u003C\/a\u003E\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003E\u003Ciframe width=\u0022100%\u0022 height=\u0022100\u0022 src=\u0022\/\/www.hipcast.com\/podcast\/HzJKy5n4?embed=1\u0022 frameborder=\u00220\u0022\u003E\u0026amp;amp;amp;nbsp;\u003C\/iframe\u003E\u003C\/p\u003E\n",
+        "jcr:lastModified": "Mon Jul 20 2020 16:49:36 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EIn this podcast, Nathan Brubaker joins us to discuss the world of operational technology and cyber physical systems.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Mon Jul 20 2020 16:51:02 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Mon Jul 20 2020 16:54:23 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

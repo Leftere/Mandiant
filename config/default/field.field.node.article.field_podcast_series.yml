@@ -1,0 +1,29 @@
+uuid: f3fa8369-75a9-4fa4-9fb6-044a17fc5a8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_podcast_series
+    - node.type.article
+    - taxonomy.vocabulary.podcast
+id: node.article.field_podcast_series
+field_name: field_podcast_series
+entity_type: node
+bundle: article
+label: 'Podcast Series'
+description: 'Series this podcast belongs to.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      podcast: podcast
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

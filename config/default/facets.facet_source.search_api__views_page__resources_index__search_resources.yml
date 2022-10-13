@@ -1,0 +1,9 @@
+uuid: b43e6469-5e67-46eb-b144-bcdf4aeec1dc
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__resources_index__search_resources
+name: 'search_api:views_page__resources_index__search_resources'
+filter_key: null
+url_processor: query_string
+breadcrumb: {  }

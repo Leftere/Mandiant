@@ -1,0 +1,13 @@
+uuid: 17795103-b7a5-4cfb-8fb9-c081919f7ef6
+langcode: en
+status: true
+dependencies: {  }
+id: cta_
+label: 'Cta '
+classes: cta
+type: component
+group: add_ons
+weight: 0
+block_restrictions:
+  - 'inline_block:cta'
+layout_restrictions: {  }

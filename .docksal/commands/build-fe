@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+#: exec_target = cli
+
+## Resets username and password for uid=1
+##
+## Usage: fin build-gin
+
+# Abort if anything fails
+set -e
+
+echo "Building frontend styles..."
+/var/www/vendor/bin/blt source:build:frontend --no-interaction
+drush cr

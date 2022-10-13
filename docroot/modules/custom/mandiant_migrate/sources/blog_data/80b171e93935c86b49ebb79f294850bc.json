@@ -1,0 +1,83 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed May 04 2016 09:04:20 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Demonstrating Hustle, Chinese APT Groups Quickly Use Zero-Day Vulnerability (CVE-2015-5119) Following Hacking Team Leak",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "1aeb1bc5-19d0-4f1d-8487-d34f0615d5a4",
+    "author": "FireEye Threat Intelligence",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "lynda.hall@fireeye.com",
+    "focusKeyword": "APT",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "4d6ccfae-3149-48d9-9107-0d1774bcf130"
+    ],
+    "jcr:created": "Fri Jun 03 2016 19:48:56 GMT-0400",
+    "cq:lastReplicated": "Fri Jun 03 2016 19:48:56 GMT-0400",
+    "cq:lastModified": "Tue Jul 21 2015 14:50:18 GMT-0400",
+    "cq:distribute": true,
+    "jcr:baseVersion": "4d6ccfae-3149-48d9-9107-0d1774bcf130",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-tags:advanced-persistent-threat-detection",
+      "fireeye-doctypes:blog",
+      "fireeye-blog-tags:advanced-persistent-threats",
+      "fireeye-blog-threat-research:threat-research\/threat-intelligence",
+      "fireeye-blog-tags:advanced-persistent-threat",
+      "fireeye-blog-authors:cap-fireEye-threat-intelligence",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:latest"
+    ],
+    "jcr:uuid": "42d41510-8caa-49b0-b9e9-465c3b1c580f",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Mon Jul 13 2015 06:31:00 GMT-0700",
+    "_charset_": "UTF-8",
+    "cq:lastModifiedBy": "lynda.hall@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "lynda.hall@fireeye.com",
+        "jcr:lastModified": "Tue Jul 21 2015 14:50:18 GMT-0400",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      },
+      "text_5fef": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "lynn.thorne@fireeye.com",
+        "jcr:lastModifiedBy": "lynda.hall@fireeye.com",
+        "jcr:created": "Mon Jul 13 2015 11:16:39 GMT-0400",
+        "text": "\u003Cdiv class=\u0022fdc-grids grid-33-66-full section\u0022\u003E\u003Cdiv class=\u0022l_container \u0022\u003E\u003Cdiv class=\u0022g \u0022\u003E\u003Cdiv class=\u0022g-u-1-3 m_g-u-1\u0022\u003E\u003Cdiv class=\u0022g-content\u0022\u003E\u003Cdiv class=\u0022parsys grid-33-left\u0022\u003E\u003Cdiv class=\u0022parbase image section\u0022\u003E\u003Cdiv\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/italianhackerteam\/Screen%20Shot%202015-07-13%20at%2011.23.48%20AM.png\u0022\u003E\u003C\/div\u003E\n\u003C\/div\u003E\n\u003C\/div\u003E\n\u003C\/div\u003E\n\u003C\/div\u003E\n\u003Cdiv class=\u0022g-u-2-3 m_g-u-1\u0022\u003E\u003Cdiv class=\u0022g-content\u0022\u003E\u003Cdiv class=\u0022parsys grid-66-right\u0022\u003E\u003Cdiv class=\u0022text parbase section\u0022\u003E\u003Cdiv class=\u0022c00 c00v0\u0022\u003E\u003Cdiv\u003EThe FireEye as a Service team detected independent phishing campaigns conducted by two Chinese advanced persistent threat (APT) groups that we track, APT3 and APT18. Each threat group quickly took advantage of a zero-day vulnerability (CVE-2015-5119), which was leaked in the disclosure of Hacking Team\u2019s internal data. Adobe released a \u003Ca href=\u0022https:\/\/helpx.adobe.com\/security\/products\/flash-player\/apsb15-16.html\u0022\u003Epatch\u003C\/a\u003E for the vulnerability on July 8, 2015. Before that patch was released, the groups launched phishing campaigns against multiple companies in the aerospace and defense, construction and engineering, education, energy, health and biotechnology, high tech, non-profit, telecommunications, and transportation industries.\u003C\/div\u003E\n\u003C\/div\u003E\n\u003C\/div\u003E\n\u003C\/div\u003E\n\u003C\/div\u003E\n\u003C\/div\u003E\n\u003C\/div\u003E\n\u003C\/div\u003E\n\u003Cdiv class=\u0022clear-all\u0022\u003E\u0026nbsp;\u003C\/div\u003E\n\u003C\/div\u003E\n\u003Cp\u003EAs of publication, we have no reason to believe APT3 and APT18 are working together. Their opportunism demonstrates each group\u2019s flexibility, organization, and awareness of developments in the information security community.\u003C\/p\u003E\n\u003Ch2\u003EAPT3\u2019s Campaign\u003C\/h2\u003E\n\u003Cp\u003E\u003Cb\u003EAPT3\u003C\/b\u003E\u0026nbsp;actors targeted at least 10 organizations in the following industries:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EAerospace and Defense\u003C\/li\u003E\n\u003Cli\u003EConstruction and Engineering\u003C\/li\u003E\n\u003Cli\u003EEnergy\u003C\/li\u003E\n\u003Cli\u003EHigh Tech\u003C\/li\u003E\n\u003Cli\u003ENon-Profit\u003C\/li\u003E\n\u003Cli\u003ETelecommunications\u003C\/li\u003E\n\u003Cli\u003ETransportation\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003E\u0026nbsp;An example of an APT3 phishing email is below in Figure 1:\u003C\/p\u003E\n\u003Cp\u003E\u0026nbsp;\u0026nbsp;\u0026nbsp; \u0026nbsp;\u0026nbsp;\u0026nbsp; \u003Cb\u003EFROM:\u003C\/b\u003E\u0026nbsp;\u0026quot;\u0026lt;first.last\u0026gt;\u0026quot; \u0026lt;first.last\u0026gt;@perrydale.com\u003C\/p\u003E\n\u003Cp\u003E\u0026nbsp;\u0026nbsp;\u0026nbsp; \u0026nbsp;\u0026nbsp;\u0026nbsp; \u003Cb\u003ESUBJECT:\u003C\/b\u003E\u0026nbsp; \u0026lt;Target\u0026gt; Analysis report- 2015\u003C\/p\u003E\n\u003Cp\u003E\u0026nbsp;\u0026nbsp;\u0026nbsp; \u0026nbsp;\u0026nbsp;\u0026nbsp; \u003Cb\u003EURLs:\u003C\/b\u003E\u003C\/p\u003E\n\u003Cp\u003E\u0026nbsp;\u0026nbsp;\u0026nbsp; \u0026nbsp;\u0026nbsp;\u0026nbsp; hxxp:\/\/report.perrydale[.]com\/ema\/RR201507[.]pdf\u003C\/p\u003E\n\u003Cp\u003E\u0026nbsp;\u0026nbsp;\u0026nbsp; \u0026nbsp;\u0026nbsp;\u0026nbsp; hxxp:\/\/vic.perrydale[.]com\/logo2.jpg\u003C\/p\u003E\n\u003Cp\u003E\u0026nbsp;\u0026nbsp;\u0026nbsp; \u0026nbsp;\u0026nbsp;\u0026nbsp; hxxp:\/\/rpt.perrydale[.]com\/en\/rep201507101[.]pdf\u003C\/p\u003E\n\u003Cp\u003E\u0026nbsp;\u0026nbsp;\u0026nbsp; \u0026nbsp;\u0026nbsp;\u0026nbsp; \u003Ci\u003EFigure 1: An example of APT3 phishing email using CVE-2015-5119\u003C\/i\u003E\u003C\/p\u003E\n\u003Cp\u003EAs of July 8, all three domains observed in the URLs resolved to 194.44.130.179. Similar to APT3\u2019s activity in \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/threat-research\/2015\/06\/operation-clandestine-wolf-adobe-flash-zero-day.html\u0022\u003EOperation Clandestine Wolf\u003C\/a\u003E, the URLs redirect to JavaScript profilers and a malicious Adobe Flash file. The Flash file downloads an obfuscated GIF, which contains a SHOTPUT payload compiled the day APT3 sent the phishing emails. SHOTPUT is a DLL backdoor that that communicates over HTTP and may be capable of uploading or downloading files, managing processes, executing system commands, and collecting system information. SHOTPUT may also be detected as Backdoor.APT.CookieCutter. The SHOTPUT backdoor communicates to the following command and control (CnC) addresses, which are hardcoded into the malware:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003Epsa.perrydale[.]com\u003C\/li\u003E\n\u003Cli\u003Elink.angellroofing[.]com\u003C\/li\u003E\n\u003Cli\u003E107.20.255.57\u003C\/li\u003E\n\u003Cli\u003E23.99.20.198\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EThis is the third time since mid-2014 that we have observed APT3 using a zero-day, which attests to its ability to capitalize on new exploits.\u003C\/p\u003E\n\u003Ch2\u003EAPT18\u2019s Campaign\u003C\/h2\u003E\n\u003Cp\u003E\u003Cb\u003EAPT18\u003C\/b\u003E actors targeted at least 13 organizations in the following industries:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EAerospace and Defense\u003C\/li\u003E\n\u003Cli\u003EConstruction and Engineering\u003C\/li\u003E\n\u003Cli\u003EEducation\u003C\/li\u003E\n\u003Cli\u003EHealth and Biotechnology\u003C\/li\u003E\n\u003Cli\u003EHigh Tech\u003C\/li\u003E\n\u003Cli\u003ETelecommunications\u003C\/li\u003E\n\u003Cli\u003ETransportation\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EAn example of an APT18 phishing email is shown in Figure 2:\u003C\/p\u003E\n\u003Cp style=\u0022margin-left: 40px;\u0022\u003E\u003Cb\u003EFROM:\u003C\/b\u003E\u0026nbsp; \u0026lt;various\u0026gt; @duwrt.com\u003C\/p\u003E\n\u003Cp style=\u0022margin-left: 40px;\u0022\u003E\u003Cb\u003ESUBJECT:\u0026nbsp;\u003C\/b\u003EImportant:Flash Update\u003C\/p\u003E\n\u003Cp style=\u0022margin-left: 40px;\u0022\u003E\u003Cb\u003EBody:\u003C\/b\u003E\u003C\/p\u003E\n\u003Cp style=\u0022margin-left: 40px;\u0022\u003EDear,\u003C\/p\u003E\n\u003Cp style=\u0022margin-left: 40px;\u0022\u003EIf you already have Flash installed on your computer, you\u0027ll be asked to download and install update. Once the new update is installed, Flash should function normally. Update Outlook Many Flash problems can be solved by updating your client software to the latest version. Please verify that you have all the latest updates available for your version of Adobe flash software. Here\u0027s how:\u003C\/p\u003E\n\u003Cp style=\u0022margin-left: 40px;\u0022\u003E1.Download update hxxp:\/\/get[.]adobe[.]com\/\u0026nbsp;\u003Cb\u003E(masked URL:\u0026nbsp;hxxp:\/\/137.175.4[.]132\/index.htm)\u003C\/b\u003E\u003C\/p\u003E\n\u003Cp style=\u0022margin-left: 40px;\u0022\u003E2.Click Check for Updates.\u003C\/p\u003E\n\u003Cp style=\u0022margin-left: 40px;\u0022\u003E3.Restart your computer after you have verified that all updates are installed. You must have administrative privileges on your computer to install any Flash. Please contact your desktop support staff if you need assistance.\u003C\/p\u003E\n\u003Cp\u003E\u0026nbsp;\u0026nbsp;\u0026nbsp; \u0026nbsp;\u0026nbsp;\u0026nbsp; \u003Ci\u003EFigure 2:\u0026nbsp; An example of APT18 phishing email using CVE-2015-5119\u003C\/i\u003E\u003C\/p\u003E\n\u003Cp\u003EOnce the victim clicks the URL, the system downloads a malicious Adobe Flash (.swf) file with the properties shown in Figure 3.\u003C\/p\u003E\n\u003Cp style=\u0022margin-left: 40px;\u0022\u003EFilename:\u0026nbsp; movie.swf\u003C\/p\u003E\n\u003Cp style=\u0022margin-left: 40px;\u0022\u003EMD5:\u0026nbsp; 079a440bee0f86d8a59ebc5c4b523a07\u003C\/p\u003E\n\u003Cp style=\u0022margin-left: 40px;\u0022\u003EFilesize:\u0026nbsp; 214976\u003C\/p\u003E\n\u003Cp\u003E\u0026nbsp;\u0026nbsp;\u0026nbsp; \u0026nbsp;\u0026nbsp;\u0026nbsp; \u003Ci\u003EFigure 3: APT18 Malicious SWF Properties\u003C\/i\u003E\u003C\/p\u003E\n\u003Cp\u003EUpon exploitation, a GH0ST RAT variant is delivered to the victims\u2019 system, which calls out to a previously known APT18 CnC address 223.25.233.248. GH0ST RAT is a backdoor derived from public source code. It may also be detected as Backdoor.APT.Gh0stRat. The compiled source code provides attackers with many ways to control a victim\u2019s system, including the ability to create, manipulate, delete, launch, or transfer files; perform screen or audio capture; enable a webcam; list or kill processes; open a command shell; and wipe event logs. However, since the source code is public, threat groups may tailor the code by removing or adding functionality.\u003C\/p\u003E\n\u003Ch2\u003EComparing the Campaigns\u003C\/h2\u003E\n\u003Cp\u003EAPT3 and APT18 took a slightly different approach in employing the exploit, which demonstrates they likely work independently. As usual, APT3 used compromised infrastructure, while APT18 relied on procured infrastructure. APT3 used customized phishing emails that sometimes contained the names of the targeted organizations, whereas APT18\u2019s emails were nonspecific and likely crafted to be used on multiple targets.\u003C\/p\u003E\n\u003Ch2\u003EQuick Turnaround Time Demonstrates Adaptability and Opportunism\u003C\/h2\u003E\n\u003Cp\u003EThe groups demonstrated their adaptability and skill by quickly employing Hacking Team\u2019s leaked zero-day before the vulnerability was patched. Both groups likely monitor information from security research to learn what exploits are available and how network defenders are reacting to them. We have previously observed APT3 monitoring and quickly changing tactics based on public research. After we exposed details about Operation Clandestine Wolf, APT3 changed its phishing emails, modified filenames, and updated its backdoor.\u003C\/p\u003E\n\u003Cp\u003EIn the past, APT3 and APT18 have frequently developed or adapted zero-day exploits for operations, which were likely planned in advance. Using data from the Hacking Team leak demonstrates how they can shift resources\u2014selecting targets, preparing infrastructure, crafting messages, and updating tools\u2014to take advantage of unexpected opportunities like newly exposed exploits.\u003C\/p\u003E\n\u003Ch2\u003ERecommendations\u003C\/h2\u003E\n\u003Cp\u003EFireEye maintains endpoint and network detection for CVE-2015-5119, the backdoors used in these campaigns, and other tools used by these groups. Additionally, we highly recommend:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EApplying Adobe\u2019s \u003Ca href=\u0022https:\/\/helpx.adobe.com\/security\/products\/flash-player\/apsb15-16.html\u0022\u003Epatch\u003C\/a\u003E for Flash immediately,\u003C\/li\u003E\n\u003Cli\u003EQuerying for additional activity by source addresses or email indicators,\u003C\/li\u003E\n\u003Cli\u003EBlocking CnC addresses via outbound communications, and\u003C\/li\u003E\n\u003Cli\u003EScope the environment to prepare for incident response.\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003ENote: IOCs for this campaign can be found \u003Ca href=\u0022https:\/\/github.com\/fireeye\/iocs\u0022\u003Ehere\u003C\/a\u003E.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Tue Jul 21 2015 14:48:22 GMT-0400",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/text\/text",
+        "textIsRich": "true"
+      }
+    },
+    "alt": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "comments": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/commons\/components\/comments"
+      },
+      "trackback": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/blog\/components\/trackback"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "lynn.thorne@fireeye.com",
+      "text": "\u003Cp\u003ETwo Chinese Advanced Persistent Threat (APT) groups quickly adapted their approach after details came to light about a zero-day vulnerability.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Mon Jul 13 2015 09:43:35 GMT-0400",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed May 04 2016 09:03:47 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Using Precalculated String Hashes when Reverse Engineering Shellcode",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "827c68db-3ada-47a2-b231-ccb34c1ff9fd",
+    "author": "Jay Smith",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "adam.greenberg@fireeye.com",
+    "focusKeyword": "cybersecurity",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "3d71af2e-4fba-4b95-a5eb-d3502d2c12f4"
+    ],
+    "jcr:created": "Wed May 08 2019 18:18:50 GMT-0400",
+    "cq:lastReplicated": "Wed May 08 2019 18:18:49 GMT-0400",
+    "cq:lastModified": "Wed May 08 2019 18:18:38 GMT-0400",
+    "cq:distribute": true,
+    "jcr:baseVersion": "3d71af2e-4fba-4b95-a5eb-d3502d2c12f4",
+    "jcr:isCheckedOut": true,
+    "cq:createdBy": "admin",
+    "cq:tags": [
+      "fireeye-blog-tags:malware",
+      "fireeye-blog-tags:github",
+      "fireeye-blog-tags:scripting",
+      "fireeye-blog-tags:malware-analysis",
+      "fireeye-blog-authors:cap-jay-smith",
+      "fireeye-blog-tags:cybersecurity",
+      "fireeye-blog-tags:shellcode",
+      "fireeye-blog-tags:ida-pro",
+      "fireeye-blog-tags:idapython",
+      "fireeye-blog-tags:reverse-engineering",
+      "fireeye-blog-tags:FLARE"
+    ],
+    "jcr:uuid": "a46884c2-9971-4a3f-90c5-ea6fe7d80db1",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Thu Nov 29 2012 21:48:00 GMT-0500",
+    "_charset_": "UTF-8",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "lynda.hall@fireeye.com",
+        "text": "\u003Cdiv class=\u0022c00 c00v1\u0022\u003E\u003Cp\u003EIn the five years I have been a part of Mandiant\u0027s malware analysis team (now formally known as M-Labs) there have been times when I\u0027ve had to reverse engineer chunks of shellcode. In this post I will give some background on shellcode import resolution techniques and how to automate IDA markup to allow faster shellcode reverse engineering.\u003C\/p\u003E\n\u003Cp\u003E\u003Cb\u003EReversing Shellcode\u003C\/b\u003E\u003C\/p\u003E\n\u003Cp\u003EThe easiest way to determine what a piece of shellcode does is to allow it to run within a monitored environment. This may not work if the shellcode is launched by an exploit and you don\u0027t have the correct version of the vulnerable program. In our experience working with shellcode we\u0027ve seen many malware samples that contain an embedded shellcode buffer that is injected into other processes to execute. However, getting this embedded piece of shellcode to run correctly may not always to be feasible. Static analysis of the shellcode may be required in these types of situations to determine its functionality.\u003C\/p\u003E\n\u003Cp\u003EShellcode binaries are typically not very large, so they don\u0027t present a huge challenge to reverse engineer, but common techniques shellcode authors employ often have a side-effect of hampering reverse engineering. One such technique is using hashes of API function when manually resolving import functions.\u003C\/p\u003E\n\u003Cp\u003E\u003Cb\u003EShellcode Import Resolution\u003C\/b\u003E\u003C\/p\u003E\n\u003Cp\u003EA developer writing a normal program can use \u003Ccode\u003Ekernel32.dll\u0027s LoadLibraryA\u003C\/code\u003E and \u003Ccode\u003EGetProcAddress\u003C\/code\u003E to load arbitrary DLLs and retrieve its exported function pointers. Shellcode authors usually face size constraints, so including the full string of each API function it wishes to use could be prohibitive. Rather than using the full string, a more size efficient method is to pre-compute numeric hashes of function names and include these values in the shellcode. This changes the import resolution process as shellcode can no longer rely on \u003Ccode\u003EGetProcAddress \u003C\/code\u003Eto retrieve the function pointers. Instead it must parse the DLL PE files in memory to find the export directory and traverse its array of export functions. For each export function name, the shellcode calculates the hash and compares it against the value embedded in the shellcode. The correct API function has been found when the values match. Background information on this technique can be found in the paper that was released by the Last Stage of Delirium as part of their \u003Ccode\u003Ewinasm \u003C\/code\u003Eproject (http:\/\/lsd-pl.net\/projects\/winasm.zip).\u003C\/p\u003E\n\u003Cp\u003EThis may sound difficult, but luckily most shellcode authors reuse known hash algorithms and values, making the life of the reverse engineer much better. The most common hash function that I\u0027ve seen in recovered shellcode samples is included with Metasploit. The algorithm is shown in pseudocode in Figure 1.\u003C\/p\u003E\n\u003Cfigure\u003E\u003Ca href=\u0022https:\/\/www.fireeye.com\/content\/dam\/legacy\/ammo\/Figure-1_112912.png\u0022\u003E\u003Cimg width=\u0022651\u0022 height=\u0022103\u0022 class=\u0022size-full wp-image-3882\u0022 title=\u0022Figure 1: ROR-13 Pseudocode\u0022 src=\u0022https:\/\/www.fireeye.com\/content\/dam\/legacy\/ammo\/Figure-1_112912.png\u0022\u003E\u003C\/a\u003E\u003Cfigcaption\u003EFigure 1: ROR-13 Pseudocode\u003C\/figcaption\u003E\u003C\/figure\u003E\u003Cp\u003EThe hash is in no way a strong cryptographic hash, but it accomplishes the goal of calculating an integer value based on an arbitrary length input string. The only real constraint on the hash algorithm is that every API function the developer wishes to use within a DLL must have a unique hash value, and this simple ROR-13 calculation is very effective. Unusual hashes that I\u0027ve come across are usually slight variant of this idea: they may rotate by a different amount, rotate left rather than right, or use some other operators to mix all of the characters in the input string to form an integer result.\u003C\/p\u003E\n\u003Cp\u003E\u003Cb\u003EAutomating Shellcode Import Markup\u003C\/b\u003E\u003C\/p\u003E\n\u003Cp\u003EWhen first starting to reverse engineer shellcode you\u0027ll most likely search online for these magic values, or calculate these values yourself and store them in a text file for future reference. Over time, as I reviewed more samples, I realized this was an annoying and repetitive task that is ripe for automation through IDA scripting.\u003C\/p\u003E\n\u003Cp\u003EDue to frequent code reuse among shellcode authors, I felt releasing my set of IDA scripts would be helpful to malware analysts. Pre-computing common API function names using known hash algorithms is feasible, and if a new hash algorithm is encountered it likely will not be too difficult to implement to generate its hashes. There has only been one instance, involving string hash from Poison Ivy RAT, in which this wasn\u0027t the case.\u003C\/p\u003E\n\u003Cp\u003EYou may find the scripts at the Mandiant GitHub repository: \u003Ca href=\u0022https:\/\/github.com\/mandiant\/Reversing\u0022 target=\u0022_blank\u0022\u003Ehttps:\/\/github.com\/mandiant\/Reversing\u003C\/a\u003E.\u003C\/p\u003E\n\u003Cp\u003EThere are two parts:\u003C\/p\u003E\n\u003Col\u003E\n\u003Cli\u003E\u003Ccode\u003Emake_sc_hash_db.py\u003C\/code\u003E is responsible for the pre-calculation of function names hashes. It is a command-line Python script that contains an implementation of the hash algorithms I\u0027ve encountered in the past. It processes a directory of DLLs, calculates the hash of each export function and stores all of these into an SQLite database.\u003C\/li\u003E\n\u003Cli\u003E\u003Ccode\u003Eshellcode_hash_search.py is an IDAPython script that opens the SQLite database containing the precalculated hashes and searches th\u003C\/code\u003Erough the current binary for known hashes.\u003C\/li\u003E\n\u003C\/ol\u003E\n\u003Cp\u003E\u003Ccode\u003Emake_sc_hash_db.py\u003C\/code\u003E can be run as shown in Figure 2, where the first argument is the SQLite database name to create and the second argument is the directory containing interesting DLLs. If you prefer to skip this step, a sample database is included within the distribution.\u003C\/p\u003E\n\u003Cfigure\u003E\u003Ca href=\u0022https:\/\/www.fireeye.com\/content\/dam\/legacy\/ammo\/Figure-2_112912.png\u0022\u003E\u003Cimg width=\u0022654\u0022 height=\u002240\u0022 class=\u0022size-full wp-image-3883\u0022 title=\u0022Figure 2: Example database creation\u0022 src=\u0022https:\/\/www.fireeye.com\/content\/dam\/legacy\/ammo\/Figure-2_112912.png\u0022\u003E\u003C\/a\u003E\u003Cfigcaption\u003EFigure 2: Example database creation\u003C\/figcaption\u003E\u003C\/figure\u003E\u003Cp\u003EWhen the \u003Ccode\u003Eshellcode_hash_search.py\u003C\/code\u003E IDAPython script runs it prompts the user for the database to use and then queries the user for additional search parameters. It shows all of the hash algorithms stored in the database and provides some simple pseudocode as shown in Figure 3. The script tries to use PySide Python bindings for QT that HexRays distributes (available as a separate download for IDA here \u003Ca href=\u0022http:\/\/www.hex-rays.com\/products\/ida\/support\/download.shtml\u0022\u003Ehttp:\/\/www.hex-rays.com\/products\/ida\/support\/download.shtml\u003C\/a\u003E). If the HexRays distribution of PySide is not included, it falls back to presenting a series of simple dialogs to get the same information from the user.\u003C\/p\u003E\n\u003Cfigure\u003E\u003Ca href=\u0022https:\/\/www.fireeye.com\/content\/dam\/legacy\/ammo\/Figure-3-QT-GUI-view.png\u0022\u003E\u003Cimg width=\u0022300\u0022 height=\u0022185\u0022 class=\u0022size-medium wp-image-3884\u0022 title=\u0022Figure 3: QT GUI view\u0022 src=\u0022https:\/\/www.fireeye.com\/content\/dam\/legacy\/ammo\/Figure-3-QT-GUI-view-300x185.png\u0022\u003E\u003C\/a\u003E\u003Cfigcaption\u003EFigure 3: QT GUI view\u003C\/figcaption\u003E\u003C\/figure\u003E\u003Cp\u003EIf nothing has been highlighted, the script searches through the highlighted region or the current segment. The searching process queries each DWORD (if the \u003Ccode\u003EDWORD Array\u003C\/code\u003E option is checked) and each instruction operand (if the \u003Ccode\u003EInstr Operands\u003C\/code\u003E option is checked) to determine if that is a known hash for the selected hash algorithms. When a hash value is found a line comment is added in IDA as shown in Figure 4.\u003C\/p\u003E\n\u003Cfigure\u003E\u003Ca href=\u0022https:\/\/www.fireeye.com\/content\/dam\/legacy\/ammo\/Figure-4-Comments-are-added-for-identified-hashes.png\u0022\u003E\u003Cimg width=\u0022300\u0022 height=\u0022150\u0022 class=\u0022size-medium wp-image-3885\u0022 title=\u0022Figure 4: Comments are added for identified hashes\u0022 src=\u0022https:\/\/www.fireeye.com\/content\/dam\/legacy\/ammo\/Figure-4-Comments-are-added-for-identified-hashes-300x150.png\u0022\u003E\u003C\/a\u003E\u003Cfigcaption\u003EFigure 4: Comments are added for identified hashes\u003C\/figcaption\u003E\u003C\/figure\u003E\u003Cp\u003EIt\u0027s also common for shellcode authors to use DWORD arrays of hashes rather than pushing each one as a function argument, and this is shown in Figure 5.\u003C\/p\u003E\n\u003Cfigure\u003E\u003Ca href=\u0022https:\/\/www.fireeye.com\/content\/dam\/legacy\/ammo\/Figure-5-DWORD-array-of-hashes.png\u0022\u003E\u003Cimg width=\u0022300\u0022 height=\u0022149\u0022 class=\u0022size-medium wp-image-3886\u0022 title=\u0022Figure 5: DWORD array of hashes\u0022 src=\u0022https:\/\/www.fireeye.com\/content\/dam\/legacy\/ammo\/Figure-5-DWORD-array-of-hashes-300x149.png\u0022\u003E\u003C\/a\u003E\u003Cfigcaption\u003EFigure 5: DWORD array of hashes\u003C\/figcaption\u003E\u003C\/figure\u003E\u003Cp\u003EIf the \u003Ccode\u003ECreate Struct\u003C\/code\u003E option is checked and hash values are found at consecutive addresses the script creates an IDA structure as shown in Figure 6.\u003C\/p\u003E\n\u003Cfigure\u003E\u003Ca href=\u0022https:\/\/www.fireeye.com\/content\/dam\/legacy\/ammo\/Figure-6-Generated-structure-of-function-pointers.png\u0022\u003E\u003Cimg width=\u0022300\u0022 height=\u0022221\u0022 class=\u0022size-medium wp-image-3887\u0022 title=\u0022Figure 6: Generated structure of function pointers\u0022 src=\u0022https:\/\/www.fireeye.com\/content\/dam\/legacy\/ammo\/Figure-6-Generated-structure-of-function-pointers-300x221.png\u0022\u003E\u003C\/a\u003E\u003Cfigcaption\u003EFigure 6: Generated structure of function pointers\u003C\/figcaption\u003E\u003C\/figure\u003E\u003Cp\u003EThis structure may be useful if the shellcode authors treat this as an array of function pointers, as it allows the analyst to convert \u003Ccode\u003E[base+index]\u003C\/code\u003E references into structure references. This is shown in Figure 7 where the call instructions are easier to understand by using known structure offsets.\u003C\/p\u003E\n\u003Cfigure\u003E\u003Ca href=\u0022https:\/\/www.fireeye.com\/content\/dam\/legacy\/ammo\/Figure-7-Sample-function-pointer-array-usage.png\u0022\u003E\u003Cimg width=\u0022300\u0022 height=\u0022199\u0022 class=\u0022size-medium wp-image-3888\u0022 title=\u0022Figure 7: Sample function pointer array usage\u0022 src=\u0022https:\/\/www.fireeye.com\/content\/dam\/legacy\/ammo\/Figure-7-Sample-function-pointer-array-usage-300x199.png\u0022\u003E\u003C\/a\u003E\u003Cfigcaption\u003EFigure 7: Sample function pointer array usage\u003C\/figcaption\u003E\u003C\/figure\u003E\u003Cp\u003EThe \u003Ccode\u003Eshellcode_hashes_search_plugin.py\u003C\/code\u003E IDAPython plugin is provided if you would like this functionality available from IDA\u0027s plugins menu. Simply copy this file to your \u003Ccode\u003E%PROGRAMFILES%IDAplugins\u003C\/code\u003E directory and make sure the other python files are accessible by setting your \u003Ccode\u003EPYTHONPATH \u003C\/code\u003Eenvironment variable correctly.\u003C\/p\u003E\n\u003Cp\u003E\u003Cb\u003EConclusion\u003C\/b\u003E\u003C\/p\u003E\n\u003Cp\u003EFrequently, reversing shellcode is much more tedious than reversing a typical binary. The lack of imports resolved by IDA is a big reason for the slowed reversing timeline. By using the IDAPython scripts we\u0027ve described above, and released on our GitHub page, we hope your shellcode reversing will improve.\u003C\/p\u003E\n\u003C\/div\u003E\n",
+        "jcr:lastModified": "Mon Dec 28 2015 19:09:50 GMT-0500",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "alt": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "comments": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/commons\/components\/comments"
+      },
+      "trackback": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/blog\/components\/trackback"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "lynda.hall@fireeye.com",
+      "text": "\u003Cp\u003EIn the five years I have been a part of Mandiant\u0027s malware analysis team (now formally known as M-Labs) there have been times when I\u0027ve had to reverse engineer chunks of shellcode. In this post I will give some background on shellcode import resolution techniques and how to automate IDA markup to allow faster shellcode reverse engineering.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Mon Dec 28 2015 19:10:05 GMT-0500",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Wed May 08 2019 18:18:38 GMT-0400",
+      "imageRotate": "0"
+    }
+  }
+}

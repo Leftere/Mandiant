@@ -1,0 +1,8 @@
+uuid: 42785b89-aed4-407e-a86d-6f8d15bea3a0
+langcode: en
+status: true
+dependencies: {  }
+id: email
+label: 'Email Information'
+fieldset: Email
+multiple: false

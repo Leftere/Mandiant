@@ -1,0 +1,22 @@
+uuid: 16394406-48a4-4cb4-8a4f-21f61515eefe
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.to_be_removed
+id: block_content.to_be_removed.status
+field_name: status
+entity_type: block_content
+bundle: to_be_removed
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,67 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "fireeye_global_admin",
+  "jcr:created": "Thu Aug 22 2019 03:35:26 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "APT41: A Dual Espionage and Cyber Crime Operation",
+    "jcr:versionHistory": "a09a2027-cd30-44b7-baf4-12730aa975a6",
+    "author": "Nalani Fraser",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "f6a41061-f188-44e1-ac5a-ffec04c5ed46"
+    ],
+    "jcr:created": "Wed Sep 16 2020 15:53:38 GMT+0000",
+    "cq:lastModified": "Wed Sep 16 2020 15:53:26 GMT+0000",
+    "jcr:baseVersion": "f6a41061-f188-44e1-ac5a-ffec04c5ed46",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-tags:cyber-crime",
+      "fireeye-blog-tags:china",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:apt",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-authors:nalani-fraser",
+      "fireeye-blog-authors:fred-plan",
+      "fireeye-blog-authors:jacqueline-oleary",
+      "fireeye-blog-authors:vincent-cannon",
+      "fireeye-blog-authors:raymond-leong",
+      "fireeye-blog-authors:dan-perez",
+      "fireeye-blog-authors:chien-shen"
+    ],
+    "jcr:uuid": "604e2818-c3b2-4929-b522-a4daeb90cbdb",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Wed Aug 07 2019 08:00:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EToday, FireEye Intelligence is releasing a comprehensive report detailing APT41, a prolific Chinese cyber threat group that carries out state-sponsored espionage activity in parallel with financially motivated operations. APT41 is unique among tracked China-based actors in that it leverages\u0026nbsp;non-public malware\u0026nbsp;typically reserved for espionage campaigns in what appears to be activity for personal gain. Explicit financially-motivated targeting is unusual among Chinese state-sponsored threat groups, and evidence suggests APT41 has conducted simultaneous cyber crime and cyber espionage operations from 2014 onward.\u003C\/p\u003E\n\u003Cp\u003EThe \u003Ca adhocenable=\u0022false\u0022 href=\u0022http:\/\/content.fireeye.com\/apt41\/rpt-apt41\u0022\u003Efull published report\u003C\/a\u003E\u0026nbsp;covers historical and ongoing activity attributed to APT41, the evolution of the group\u2019s tactics, techniques, and procedures (TTPs), information on the individual actors, an overview of their malware toolset, and how these identifiers overlap with other known Chinese espionage operators. APT41 partially coincides with public reporting on groups including BARIUM (\u003Ca href=\u0022https:\/\/www.microsoft.com\/security\/blog\/2017\/01\/25\/detecting-threat-actors-in-recent-german-industrial-attacks-with-windows-defender-atp\/\u0022\u003EMicrosoft\u003C\/a\u003E) and Winnti (\u003Ca href=\u0022https:\/\/securelist.com\/winnti-more-than-just-a-game\/37029\/\u0022\u003EKaspersky\u003C\/a\u003E, \u003Ca href=\u0022https:\/\/www.welivesecurity.com\/2019\/03\/11\/gaming-industry-scope-attackers-asia\/\u0022\u003EESET\u003C\/a\u003E, \u003Ca href=\u0022https:\/\/www.clearskysec.com\/winnti\/\u0022\u003EClearsky\u003C\/a\u003E).\u003C\/p\u003E\n\u003Ch4\u003EWho Does APT41 Target?\u003C\/h4\u003E\n\u003Cp\u003ELike other Chinese espionage operators, APT41 espionage targeting has generally aligned with \u003Ca href=\u0022https:\/\/www.uscc.gov\/sites\/default\/files\/Research\/The%2013th%20Five-Year%20Plan_Final_2.14.17_Updated%20%28002%29.pdf\u0022\u003EChina\u0027s Five-Year economic development plans\u003C\/a\u003E. The group has established and maintained strategic access to organizations in the healthcare, high-tech, and telecommunications sectors. APT41 operations against higher education, travel services, and news\/media firms provide some indication that the group also tracks individuals and conducts surveillance. For example, the group has repeatedly targeted call record information at telecom companies. In another instance, APT41 targeted a hotel\u2019s reservation systems ahead of Chinese officials staying there, suggesting the group was tasked to reconnoiter the facility for security reasons.\u003C\/p\u003E\n\u003Cp\u003EThe group\u2019s financially motivated activity has primarily focused on the video game industry, where APT41 has manipulated virtual currencies and even attempted to deploy ransomware. The group is adept at moving laterally within targeted networks, including pivoting between Windows and Linux systems, until it can access game production environments. From there, the group steals source code as well as digital certificates which are then used to sign malware. More importantly, APT41 is known to use its access to production environments to inject malicious code into legitimate files which are later distributed to victim organizations. These supply chain compromise tactics have also been characteristic of APT41\u2019s best known and most recent espionage campaigns.\u003C\/p\u003E\n\u003Cp\u003EInterestingly, despite the significant effort required to execute supply chain compromises and the large number of affected organizations, APT41 limits the deployment of follow-on malware to specific victim systems by matching against individual system identifiers. These multi-stage operations restrict malware delivery only to intended victims and significantly obfuscate the intended targets. In contrast, a typical spear-phishing campaign\u2019s desired targeting can be discerned based on recipients\u0027 email addresses.\u003C\/p\u003E\n\u003Cp\u003EA breakdown of industries directly targeted by APT41 over time can be found in Figure 1.\u003C\/p\u003E\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/apt41\/Picture1b.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 1: Timeline of industries directly targeted by APT41\u003C\/span\u003E\u003C\/p\u003E\n\u003Ch4\u003EProbable Chinese Espionage Contractors\u003C\/h4\u003E\n\u003Cp\u003ETwo identified personas using the monikers \u201cZhang Xuguang\u201d and \u201cWolfzhi\u201d linked to APT41 operations have also been identified in Chinese-language forums. These individuals advertised their skills and services and indicated that they could be hired. Zhang listed his online hours as 4:00pm to 6:00am, similar to APT41 operational times against online gaming targets and suggesting that he is moonlighting. Mapping the group\u2019s activities since 2012 (Figure 2) also provides some indication that APT41 primarily conducts financially motivated operations outside of their normal day jobs.\u003C\/p\u003E\n\u003Cp\u003EAttribution to these individuals is backed by identified persona information, their previous work and apparent expertise in programming skills, and their targeting of Chinese market-specific online games.\u0026nbsp;The latter is especially notable because APT41 has repeatedly returned to targeting the video game industry and we believe these activities were formative in the group\u2019s later espionage operations.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/apt41\/Picture2.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 2: Operational activity for gaming versus non-gaming-related targeting based on observed operations since 2012\u003C\/span\u003E\u003C\/p\u003E\n\u003Ch4\u003EThe Right Tool for the Job\u003C\/h4\u003E\n\u003Cp\u003EAPT41 leverages an arsenal of over 46 different malware families and tools to accomplish their missions, including publicly available utilities, malware shared with other Chinese espionage operations, and tools unique to the group. The group often relies on spear-phishing emails with attachments such as compiled HTML (.chm) files to initially compromise their victims. Once in a victim organization, APT41 can leverage more sophisticated TTPs and deploy additional malware. For example, in a campaign running almost a year, APT41 compromised hundreds of systems and used close to 150 unique pieces of malware including backdoors, credential stealers, keyloggers, and rootkits.\u003C\/p\u003E\n\u003Cp\u003EAPT41 has also deployed rootkits and Master Boot Record (MBR) bootkits on a limited basis to hide their malware and maintain persistence on select victim systems. The use of bootkits in particular adds an extra layer of stealth because the code is executed prior to the operating system initializing. The limited use of these tools by APT41 suggests the group reserves more advanced TTPs and malware only for high-value targets.\u003C\/p\u003E\n\u003Ch4\u003EFast and Relentless\u003C\/h4\u003E\n\u003Cp\u003EAPT41 quickly identifies and compromises intermediary systems that provide access to otherwise segmented parts of an organization\u2019s network. In one case, the group compromised hundreds of systems across multiple network segments and several geographic regions in as little as two weeks.\u003C\/p\u003E\n\u003Cp\u003EThe group is also highly agile and persistent, responding quickly to changes in victim environments and incident responder activity. Hours after a victimized organization made changes to thwart APT41, for example, the group compiled a new version of a backdoor using a freshly registered command-and-control domain and compromised several systems across multiple geographic regions. In a different instance, APT41 sent spear-phishing emails to multiple HR employees three days after an intrusion had been remediated and systems were brought back online. Within hours of a user opening a malicious attachment sent by APT41, the group had regained a foothold within the organization\u0027s servers across multiple geographic regions.\u003C\/p\u003E\n\u003Ch4\u003ELooking Ahead\u003C\/h4\u003E\n\u003Cp\u003EAPT41 is a creative, skilled, and well-resourced adversary, as highlighted by the operation\u2019s distinct use of supply chain compromises to target select individuals, consistent signing of malware using compromised digital certificates, and deployment of bootkits (which is rare among Chinese APT groups).\u003C\/p\u003E\n\u003Cp\u003ELike other Chinese espionage operators, APT41 appears to have moved toward strategic intelligence collection and establishing access and away from direct intellectual property theft since 2015. This shift, however, has not affected the group\u0027s consistent interest in targeting the video game industry for financially motivated reasons. The group\u0027s capabilities and targeting have both broadened over time, signaling the potential for additional supply chain compromises affecting a variety of victims in additional verticals.\u003C\/p\u003E\n\u003Cp\u003EAPT41\u0027s links to both underground marketplaces and state-sponsored activity may indicate the group enjoys protections that enables it to conduct its own for-profit activities, or authorities are willing to overlook them. It is also possible that APT41 has simply evaded scrutiny from Chinese authorities. Regardless, these operations underscore a blurred line between state power and crime that lies at the heart of threat ecosystems and is exemplified by APT41.\u003C\/p\u003E\n\u003Cp\u003E\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/content.fireeye.com\/apt-41\/rpt-apt41\/\u0022\u003ERead the report today to learn more\u003C\/a\u003E.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Wed Sep 16 2020 15:53:26 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EAPT41 is a prolific Chinese cyber threat group that carries out state-sponsored espionage activity.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Mon Aug 05 2019 12:47:42 GMT-0400",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Mon Sep 23 2019 19:41:36 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+// =======================================
+//    #UTILITY - FRAME
+// =======================================
+
+@mixin frame() {
+  &:before,
+  &:after {
+    border: 3px solid $red;
+    content: '';
+    margin: 0;
+    width: 30px;
+  }
+
+  &:before {
+    border-right: 0px;
+    transform: translateX(50%);
+  }
+
+  &:after {
+    border-left: 0px;
+    transform: translateX(-50%);
+  }
+}

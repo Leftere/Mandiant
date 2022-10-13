@@ -1,0 +1,19 @@
+uuid: 85bac854-3148-4ff8-ad51-f6532af9c03b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_spotify_podcast_link
+    - node.type.article
+id: node.article.field_spotify_podcast_link
+field_name: field_spotify_podcast_link
+entity_type: node
+bundle: article
+label: 'Spotify Podcast Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

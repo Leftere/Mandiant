@@ -1,0 +1,29 @@
+uuid: ec9df2db-8567-4ef9-831b-341f5046ce61
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - field.storage.block_content.field_related_nodes
+    - node.type.article
+id: block_content.hero.field_related_nodes
+field_name: field_related_nodes
+entity_type: block_content
+bundle: hero
+label: Resources
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

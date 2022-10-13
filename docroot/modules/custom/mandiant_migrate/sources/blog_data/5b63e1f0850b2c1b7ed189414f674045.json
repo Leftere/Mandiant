@@ -1,0 +1,57 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed May 04 2016 09:04:07 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "DLL Side-Loading: Another Blind-Spot for Anti-Virus ",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "ed56f010-d9f4-49bd-9e1d-96f643bbb663",
+    "author": "Amanda Stewart",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "lynda.hall@fireeye.com",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "b4d53616-928c-46f4-9eb2-841fba21a32a"
+    ],
+    "jcr:created": "Fri Jan 26 2018 15:32:55 GMT-0500",
+    "cq:lastReplicated": "Fri Jan 26 2018 15:32:55 GMT-0500",
+    "cq:lastModified": "Fri Jan 26 2018 15:32:49 GMT-0500",
+    "jcr:baseVersion": "b4d53616-928c-46f4-9eb2-841fba21a32a",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-tags:windows-malware",
+      "fireeye-blog-tags:dll",
+      "fireeye-blog-authors:cap-amanda-stewart",
+      "fireeye-doctypes:blog",
+      "fireeye-blog-tags:winsxs",
+      "fireeye-blog-tags:sideloading",
+      "fireeye-blog-threat-research:threat-research"
+    ],
+    "jcr:uuid": "eaecc9cf-8614-43af-b20f-179ce38bdd17",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Thu Apr 03 2014 07:48:00 GMT-0700",
+    "cq:lastModifiedBy": "lynda.hall@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "lynda.hall@fireeye.com",
+        "text": "\u003Cp\u003ELast month, I presented a talk at the RSA USA Conference on an increasingly popular threat vector called \u201cDynamic-Link Library Side-Loading\u201d (DLL Side-Loading). As with many vulnerabilities, this exploit has existed for a rather long time and is the result of Microsoft looking to make binary updates easier for Windows developers through the Windows side-by-side (WinSxS) assembly feature.\u003C\/p\u003E\n\u003Cp\u003ENow, though, advanced persistent threat (APT) developers are using the innocuous DLL Side-Loading method to sneak malware past anti-virus (AV) scanners as the infected files run in-memory. In doing-so, the malicious payload is using a benign application to be built in memory, meaning that the malware does not sit running in the file system where AV scans take place. In the figure below, you can see an example of how this all plays out:\u003C\/p\u003E\n\u003Cp style=\u0022text-align: center;\u0022\u003E\u003Ca href=\u0022\/content\/dam\/legacy\/blog\/2014\/04\/DLLpic.png\u0022\u003E\u003Cimg class=\u0022wp-image-5127 aligncenter landscape-med\u0022 alt=\u0022DLLpic\u0022 src=\u0022\/content\/dam\/legacy\/blog\/2014\/04\/DLLpic.png\u0022 width=\u0022504\u0022 height=\u0022328\u0022\u003E\u003C\/a\u003E\u003C\/p\u003E\n\u003Cp\u003EFor a real-life example: in 2013, attackers exploited the executable originally developed by Fortune 50 company using this technique in a highly targeted attack. In such an attacks, the malware places a spoofed, malicious DLL file in a Windows\u2019 WinSxS directory so that the operating system loaded the spoofed DLL instead of the legitimate file. Furthermore, because the file in-question was white-listed by hash in a public database, AV simply ignores it altogether.\u003C\/p\u003E\n\u003Cp\u003EIn response to the growing use of DLL Side-Loading in APTs, we have developed a full paper that describes the history of \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/dam\/fireeye-www\/global\/en\/current-threats\/pdfs\/rpt-dll-sideloading.pdf\u0022\u003EDLL Side-Loading and its role in the malware and software engineering arenas.\u003C\/a\u003E\u003C\/p\u003E\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\n\u003Cp\u003E\u0026nbsp;\u003C\/p\u003E\n",
+        "jcr:lastModified": "Fri Jan 26 2018 15:32:49 GMT-0500",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "lynda.hall@fireeye.com",
+      "jcr:lastModified": "Fri Jan 26 2018 15:30:00 GMT-0500",
+      "imageRotate": "0"
+    }
+  }
+}

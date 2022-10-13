@@ -1,0 +1,26 @@
+.layout--threecol-section {
+  .wrapper {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-row-gap: 0;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    padding: 0 2rem;
+
+    @include breakpoint($tablet) {
+      grid-row-gap: 50px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint($desktop) {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 0;
+    }
+
+    .block-bundle-cta {
+      @include breakpoint($tablet) {
+        padding: $spacing-unit;
+      }
+    }
+  }
+}

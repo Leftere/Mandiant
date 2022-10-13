@@ -1,0 +1,10 @@
+uuid: be60956e-b279-489f-a67f-b84c165a3173
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.view_row
+label: 'View Row'
+targetEntityType: node
+cache: true

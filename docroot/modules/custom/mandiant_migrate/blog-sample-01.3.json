@@ -1,0 +1,62 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed Jul 14 2021 15:59:26 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Sharing is Caring: FireEye Helix Connects to Netskope to Block Threats",
+    "jcr:versionHistory": "26de09eb-4846-47ba-b942-570aebd9381a",
+    "author": "Christopher Unick",
+    "cq:template": "/apps/fireeye-blog/templates/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "1e29e9ef-f13d-411e-8a4d-9c9bdce0d632"
+    ],
+    "jcr:created": "Wed Jul 14 2021 15:59:26 GMT+0000",
+    "cq:lastModified": "Wed Jul 14 2021 15:58:33 GMT+0000",
+    "jcr:baseVersion": "1e29e9ef-f13d-411e-8a4d-9c9bdce0d632",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:christopher-unick",
+      "fireeye-blog-authors:mahmoud-eraqi",
+      "fireeye-blog-products-and-services:products-and-services",
+      "fireeye-blog-tags:helix",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:cloud",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:indicators-of-compromise"
+    ],
+    "jcr:uuid": "0cc7d0e6-2650-4e24-b38b-23032ae7fb7d",
+    "sling:resourceType": "social/blog/components/page",
+    "published": "Wed Jul 14 2021 12:00:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation/components/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "<p>FireEye Helix is a SaaS security operations platform that allows organizations to take control of any incident from detection to response and remediation.&nbsp;We introduced <a adhocenable=\"false\" href=\"/content/fireeye-www/en_US/products/helix.html\">Helix</a> in 2017 to simplify, integrate and automate security operations, and along the way we made many enhancements and introduced various features to improve the user experience.</p>\n<p>Today we are excited to announce a new integration that customers of Helix and Netskope can leverage to block threats between our products. This expands on our previous integration—<a adhocenable=\"false\" href=\"/content/fireeye-www/en_US/blog/products-and-services/2020/03/expanded-cloud-visibility-in-fireeye-with-netskope.html\">ingesting data from Netskope into Helix to identify threats</a>—by closing the loop to help customers of Netskope block threats that are found anywhere in their suite of security and business tools.&nbsp;</p>\n<h4>Finding Threats With Helix</h4>\n<p>It is imperative that security teams have visibility into what's happening across the business so they can respond to and investigate security incidents. FireEye Helix is able to analyze events in over 300 security and business tools and is enriched with FireEye expertise to identify the threats happening in an organization.</p>\n<p>The good news is the median dwell time is currently 24 days (per <i><a adhocenable=\"false\" href=\"/content/fireeye-www/en_US/current-threats/annual-threat-report/mtrends.html\">M-Trends 2021</a></i>), meaning organizations are identifying threats more than twice as fast as in 2020. These improvements in detection are very important, and organizations must ensure their response is just as quick. This integration allows those threats to be shared with Netskope in mere minutes to block threats seen throughout the business.</p>\n<p>FireEye Helix alerts on and shares the following alerts (and many more) with Netskope:</p>\n<ul>\n<li>Malware on the endpoint: MD5 Hash will be identified when FireEye Endpoint Security discovers malware on a customer’s endpoint.</li>\n<li>Files containing ransomware: Identify malicious content (MD5 hash) shared via email, found on endpoints and more.</li>\n<li>Malware callback alerts: Network activity (malicious IP address) that matches a malware command and control (C2) signature.</li>\n<li>Third party content: Malicious files (MD5 Hash) being shared to you by third parties or suppliers (via cloud storage like AWS S3 and 30+ others).</li>\n<li>Malicious IPs and URLs from log files: Ingesting logs from our partners (like Netskope) that find malicious activity and share the corresponding IOCs.</li>\n</ul>\n<h4>Netskope Cloud Threat Exchange (CTE)</h4>\n<p>Netskope Cloud Threat Exchange is a near real-time threat ingestion, curation, and sharing tool that enables Netskope customers and FireEye to exchange IOCs. Security teams can integrate IOCs that contain malicious URLs and file hashes from any Helix source, including FireEye Endpoint Security, Network Security and Email Security tools, third-party firewalls, cloud logs, and secure web-gateways.</p>\n<p>Mutual customers of this integration can:</p>\n<ul>\n<li>Ingest, manage and share all IOCs seen in a customer’s environment.</li>\n<li>Leverage FireEye’s industry leading detection capabilities.</li>\n<li>Ensure all users and devices are protected with up-to-date indicators.</li>\n<li>Respond faster and block threats across a customer’s ecosystem.</li>\n</ul>\n<p><img src=\"/content/dam/fireeye-www/blog/images/helix-netskope/fig1.png\" alt=\"\"></p>\n<h4>How to Enable This Integration in Minutes</h4>\n<p>Navigate to the FireEye Helix CloudConnect portal and select Netskope CTE.</p>\n<p><img src=\"/content/dam/fireeye-www/blog/images/helix-netskope/fig2.png\" alt=\"\"></p>\n<p>Select your FireEye Helix Instance and drop in your API Key (found in your IAM setup).</p>\n<p><img src=\"/content/dam/fireeye-www/blog/images/helix-netskope/fig3.png\" alt=\"\"></p>\n<p>Fill in your Netskope credentials to enable the integration, and you are all set!</p>\n<p><img src=\"/content/dam/fireeye-www/blog/images/helix-netskope/fig4.png\" alt=\"\"></p>\n<p>As you navigate to the Netskope CTE dashboard, you’ll see IOCs that are shared from Helix that will actively block/restrict items based on your configuration in your Netskope solution.</p>\n<p><img src=\"/content/dam/fireeye-www/blog/images/helix-netskope/fig5.png\" alt=\"\"></p>\n<p>Ready to get started?&nbsp;Connect with us&nbsp;today to <a href=\"/content/fireeye-www/en_US/company/contact-us.html\" adhocenable=\"false\">see a demo and to learn more</a>. Already using Helix, but not familiar with the latest integrations available? Reach out to your sales engineer to get more information and a walkthrough of how we can help!</p>\n",
+        "jcr:lastModified": "Wed Jul 14 2021 15:58:33 GMT+0000",
+        "sling:resourceType": "social/blog/components/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "<p>We are excited to announce a new integration that customers of Helix and Netskope can leverage to block threats between our products.</p>\n",
+      "jcr:lastModified": "Wed Jul 14 2021 15:54:57 GMT+0000",
+      "sling:resourceType": "social/blog/components/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Wed Jul 14 2021 15:57:51 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

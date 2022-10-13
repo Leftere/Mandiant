@@ -1,0 +1,48 @@
+// ================================== //
+//    #CORE/HTML - PAGE
+// ================================== //
+
+* {
+  box-sizing: border-box; // establishes border-box model for all elements
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); // Remove default tappable touch color in iOS
+  word-wrap: normal;
+}
+
+:root {
+  position: relative;
+}
+
+html,
+body {
+  @extend %font-smoothing;
+  background: $white;
+  height: 100%;
+  min-height: 100vh;
+}
+
+html {
+  font-size: 62.5%; // Sets up the Base 10 stuff
+  scroll-behavior: smooth;
+}
+
+body {
+  @include font-size(16, 24);
+  font-weight: 400;
+  overflow-x: hidden;
+
+  .fonts-loaded & {
+    font-family: $sans;
+  }
+}
+
+.layout-container > main {
+  padding: 0;
+}
+
+// https://css-tricks.com/introduction-reduced-motion-media-query/
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

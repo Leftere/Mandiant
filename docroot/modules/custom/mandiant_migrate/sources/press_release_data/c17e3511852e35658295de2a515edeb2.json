@@ -1,0 +1,66 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Mon Jul 12 2021 14:00:20 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "FireEye Appoints Erin Joe as SVP of Strategy and Alliances",
+    "jcr:versionHistory": "181bd93f-27b4-4f90-8ce5-74e7b00c66ec",
+    "cq:template": "\/apps\/fireeye-www\/fdc\/templates\/press-release",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "c080b82d-5401-47a4-a15b-b1147c479970"
+    ],
+    "jcr:created": "Mon Jul 12 2021 17:54:31 GMT+0000",
+    "cq:lastModified": "Mon Jul 12 2021 17:54:27 GMT+0000",
+    "jcr:baseVersion": "c080b82d-5401-47a4-a15b-b1147c479970",
+    "jcr:isCheckedOut": true,
+    "pagedate": "Mon Jul 12 2021 10:00:00 GMT-0400",
+    "cq:tags": [
+      "company:en-US\/press-releases",
+      "company:en-US\/press-releases\/2021",
+      "company:en-US\/press-releases\/latest",
+      "fireeye-doctypes:press-releases"
+    ],
+    "jcr:uuid": "826f060f-8e04-42d5-bc20-1121e2041a74",
+    "sling:resourceType": "fireeye-www\/fdc\/components\/page\/press-release",
+    "cq:designPath": "\/etc\/designs\/fireeye-www",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "content-par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "grid_100_full": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "adam.greenberg@fireeye.com",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "jcr:created": "Mon Jul 12 2021 13:44:26 GMT+0000",
+        "jcr:lastModified": "Mon Jul 12 2021 13:44:26 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/grids\/grid-100-full",
+        "grid-100-mid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "fireeye-www\/fdc\/components\/grids\/grid-parsys\/parsys-100-full\/parsys",
+          "text": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "adam.greenberg@fireeye.com",
+            "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+            "jcr:created": "Mon Jul 12 2021 13:44:30 GMT+0000",
+            "text": "\u003Cp style=\u0022text-align: center;\u0022\u003E\u003Ci\u003ESenior FBI National Security\u003C\/i\u003E \u003Ci\u003Eexecutive joins Mandiant to drive strategic initiatives\u003C\/i\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cb\u003EMILPITAS, Calif.,\u0026nbsp;July 12, 2021\u0026nbsp;\u003C\/b\u003E\u2013\u0026nbsp;\u003Ca href=\u0022https:\/\/www.fireeye.com\/\u0022\u003EFireEye, Inc.\u003C\/a\u003E\u003Ca href=\u0022https:\/\/www.fireeye.com\/\u0022\u003E\u202f\u003C\/a\u003E(NASDAQ: FEYE), the intelligence-led security company, today announced that Erin Joe has joined the company as Senior Vice President of Strategy and Alliances. In this role, Joe will be responsible for Mandiant strategy development and implementation, as well as key alliances in both the government and private sector.\u003C\/p\u003E\n\u003Cp\u003EPrior to FireEye, Joe was a top-ranking FBI executive driving federal cyber response strategies in partnership with the private sector. With six years in Senior Executive Service, Joe most recently served in the FBI\u2019s Office of Private Sector where she improved intelligence sharing and threat preparedness with Fortune 500 company C-suite executives, and U.S. and foreign government counterparts. As a Section Chief and Deputy Assistant Director in the FBI\u2019s Cyber Division, her efforts to counter cyber adversaries included executing synchronized actions with numerous global partners.\u003C\/p\u003E\n\u003Cp\u003EImmediately prior to serving in the Office of the Private Sector, Joe was appointed by and served under the Director of National Intelligence as the Director of the Cyber Threat Intelligence Integration Center (CTIIC). In this role she worked extensively with the Intelligence Community (IC) to develop cyber threat intelligence, strategies, lessons learned, emergency readiness, crisis management, incident response, and other plans to advance the\u0026nbsp;IC\u0027s agility and performance related to cyber threats and attacks.\u003C\/p\u003E\n\u003Cp\u003EOver a career spanning 25 years, Joe has been a transformational leader implementing and guiding organizational change. This includes co-authoring and implementing the FBI\u0027s first comprehensive, integrated strategy for Cyber, Counterterrorism, and Counterintelligence as well as implementing strategic and tactical cyber operations adopted and executed by the National Security Council, the IC, and allied nations.\u003C\/p\u003E\n\u003Cp\u003E\u201cErin has had an outstanding career at the FBI, playing a critical role in defining and executing national cyber defense strategies. Her experience driving and implementing organizational change puts her in a unique position to help us meet the challenge ahead as we address the intensifying threat landscape,\u201d said John Watters, FireEye President and Chief Operating Officer.\u003C\/p\u003E\n\u003Cp\u003E\u201cI have collaborated with the Mandiant team for many years as we have shared the same aim of countering cyber threats posed by the worst threat actors,\u201d said Joe. \u201cHaving worked closely with the security industry over the years, I believe there was no better place to apply my skills and experience than Mandiant.\u201d\u0026nbsp;\u003Cbr\u003E\n\u003C\/p\u003E\n\u003Ch4\u003EAbout FireEye, Inc.\u003C\/h4\u003E\n\u003Cp\u003EFireEye is the intelligence-led security company. Working as a seamless, scalable extension of customer security operations, FireEye offers a single platform that blends innovative security technologies, nation-state grade threat intelligence, and world-renowned Mandiant\u00ae consulting. With this approach, FireEye eliminates the complexity and burden of cyber security for organizations struggling to prepare for, prevent, and respond to\u0026nbsp;cyber attacks. FireEye has over 10,100 customers across 103 countries, including more than 50 percent of the Forbes Global 2000.\u0026nbsp;\u003C\/p\u003E\n\u003Ch4\u003EAbout Mandiant\u003C\/h4\u003E\n\u003Cp\u003EMandiant brings together the world\u2019s leading threat intelligence and frontline expertise with continuous security validation to arm organizations with the tools needed to increase security effectiveness and reduce organizational risk.\u003C\/p\u003E\n\u003Cp\u003E\u00a9 2021 FireEye, Inc. All rights reserved. FireEye and Mandiant are registered trademarks or trademarks of FireEye, Inc. in the United States and other countries. All other brands, products, or service names are or may be trademarks or service marks of their respective owners.\u0026nbsp;\u003C\/p\u003E\n\u003Ch4\u003EContacts\u003C\/h4\u003E\n\u003Cp\u003EMedia\u003Cbr\u003E\n\u003Ca href=\u0022mailto:Media.Relations@FireEye.com\u0022\u003EMedia.Relations@FireEye.com\u003C\/a\u003E\u0026nbsp;\u0026nbsp;\u003C\/p\u003E\n\u003Cp\u003EInvestors\u003Cbr\u003E\n\u003Ca href=\u0022mailto:Investor.Relations@FireEye.com\u0022\u003EInvestor.Relations@FireEye.com\u003C\/a\u003E\u003C\/p\u003E\n",
+            "jcr:lastModified": "Mon Jul 12 2021 17:54:27 GMT+0000",
+            "sling:resourceType": "fireeye-www\/fdc\/components\/text\/text",
+            "textIsRich": "true"
+          }
+        }
+      }
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Mon Jul 12 2021 13:47:03 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

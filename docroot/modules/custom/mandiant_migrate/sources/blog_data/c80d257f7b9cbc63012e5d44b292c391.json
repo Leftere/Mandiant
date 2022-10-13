@@ -1,0 +1,69 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed May 19 2021 16:20:33 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Stay in the Zone: Mandiant Advantage Browser Plugin Brings Insights, Expertise and Intelligence Forward",
+    "jcr:versionHistory": "39e50665-2c04-42a6-b2a5-ebf6617d1301",
+    "author": "Lance Mendes",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "909a3506-be34-425f-bcf7-29bfc67d402b"
+    ],
+    "jcr:created": "Wed May 19 2021 16:20:33 GMT+0000",
+    "cq:lastModified": "Wed May 19 2021 16:20:26 GMT+0000",
+    "jcr:baseVersion": "909a3506-be34-425f-bcf7-29bfc67d402b",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:lance-mendes",
+      "fireeye-blog-products-and-services:products-and-services",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:mandiant-advantage",
+      "fireeye-blog-tags:threat-intelligence",
+      "fireeye-blog-tags:saas"
+    ],
+    "jcr:uuid": "33c2df99-47c7-4a58-bb85-eb4d1857733c",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Wed May 19 2021 12:30:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "matthew.sawicki@fireeye.com",
+        "text": "\u003Cp\u003EAt Mandiant, we understand that cyber security practitioners are often \u201cin the zone\u201d\u2014a mindset and special place that requires extreme focus and unbroken concentration. Yet security teams are regularly distracted by alerts and other action items that require quick decision making in order to protect the organization. Workflow disruption, for instance when switching between applications, is also a major distraction resulting in loss of focus, extended work cycles, frustration or\u2014worse\u2014missed critical events.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/advantage-browser-plugin\/advantage-global-news-analysis.png\u0022 alt=\u0022\u0022 class=\u0022float-right-small\u0022\u003EUsing the Browser Plugin, also called Extension in the Chrome Web Store, security analysts have direct access to the latest insights from Mandiant experts such as:\u003C\/p\u003E\n\u003Cp\u003EWith the Mandiant Advantage Browser Plugin, security practitioners can instantly embed the most recent threat insights, context and research directly from our platform into the application page they are using, without needing to toggle between programs. This automated heads-up display approach enables them to stay \u201cin the zone\u201d while having access to relevant and timely threat intelligence, so they can take accurate and necessary action quickly. We believe this is critical to security success and have made it also available for subscribers of \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/threat-intelligence.html\u0022\u003EMandiant Advantage Free\u003C\/a\u003E, a no-cost access subscription to our Advantage SaaS Platform\u003C\/p\u003E\n\n\u003Cul\u003E\n\u003Cli\u003EGlobal News Analysis view providing direct access to Mandiant\u2019s context on recent news headlines. Selected news topics displayed via the browser plugin cover a broad array of cyber threats and help any reader (operational to strategic) to frame publicly discussed threats via Mandiant\u2019s comments and ratings\u003C\/li\u003E\n\u003Cli\u003EFree \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/blog\/products-and-services\/2021\/02\/mandiant-advantage-delivers-free-confidence-scoring-for-publicly-known-indicators.html\u0022\u003Eexpert-based confidence scoring (also called M-score)\u003C\/a\u003E for millions of open source indicators to prioritize threat\u003C\/li\u003E\n\u003Cli\u003EMandiant\u2019s context associations on commonly used\u003Cb\u003E \u003C\/b\u003Emalware and actor names\u003C\/li\u003E\n\u003C\/ul\u003E\n",
+        "jcr:lastModified": "Thu May 13 2021 21:18:34 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      },
+      "grid_33_66_full": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "matthew.sawicki@fireeye.com",
+        "jcr:lastModifiedBy": "matthew.sawicki@fireeye.com",
+        "jcr:created": "Thu May 13 2021 21:16:24 GMT+0000",
+        "jcr:lastModified": "Thu May 13 2021 21:16:24 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/grids\/grid-33-66-full"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EThe Mandiant Advantage Browser Plugin enables security practitioners to focus on the tasks at hand while also being able to quickly respond to incidents.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Thu May 13 2021 20:47:35 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Wed May 19 2021 16:20:26 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

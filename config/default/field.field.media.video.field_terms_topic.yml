@@ -1,0 +1,29 @@
+uuid: 5ed28908-a44c-46ad-b293-891679546f60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_terms_topic
+    - media.type.video
+    - taxonomy.vocabulary.topics
+id: media.video.field_terms_topic
+field_name: field_terms_topic
+entity_type: media
+bundle: video
+label: Topic
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      topics: topics
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

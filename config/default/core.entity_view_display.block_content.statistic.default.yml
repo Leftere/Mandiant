@@ -1,0 +1,187 @@
+uuid: b44dbffd-5459-472e-9e7b-0dd432c59a04
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.statistic
+    - field.field.block_content.statistic.field_body
+    - field.field.block_content.statistic.field_cta
+    - field.field.block_content.statistic.field_eyebrow
+    - field.field.block_content.statistic.field_media
+    - field.field.block_content.statistic.field_title
+  module:
+    - layout_builder
+    - link
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          column_widths: 50-50
+          context_mapping: {  }
+        components:
+          6c0e4e92-dc80-4767-81d9-42cc22c2d266:
+            uuid: 6c0e4e92-dc80-4767-81d9-42cc22c2d266
+            region: first
+            configuration:
+              id: 'field_block:block_content:statistic:field_title'
+              label: Title
+              provider: layout_builder
+              label_display: ''
+              formatter:
+                label: hidden
+                type: text_field_formatter
+                settings:
+                  link_to_entity: 0
+                  wrap_tag: h2
+                  wrap_class: ''
+                  wrap_attributes: ''
+                  override_link_label: ''
+                  token: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+          8e5e4113-dbe5-4001-92b6-e0a828d291af:
+            uuid: 8e5e4113-dbe5-4001-92b6-e0a828d291af
+            region: first
+            configuration:
+              id: 'field_block:block_content:statistic:field_eyebrow'
+              label: Eyebrow
+              provider: layout_builder
+              label_display: ''
+              formatter:
+                label: hidden
+                type: text_field_formatter
+                settings:
+                  link_to_entity: 0
+                  wrap_tag: span
+                  wrap_class: ''
+                  wrap_attributes: ''
+                  override_link_label: ''
+                  token: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          c63e95ff-13da-4303-83c4-bb3b0c2db04e:
+            uuid: c63e95ff-13da-4303-83c4-bb3b0c2db04e
+            region: second
+            configuration:
+              id: 'field_block:block_content:statistic:field_cta'
+              label: Link
+              provider: layout_builder
+              label_display: ''
+              formatter:
+                label: hidden
+                type: link
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: '0'
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 2
+          51e9d129-5925-48e1-8de5-ffcf82d109ad:
+            uuid: 51e9d129-5925-48e1-8de5-ffcf82d109ad
+            region: second
+            configuration:
+              id: 'field_block:block_content:statistic:field_media'
+              label: Media
+              provider: layout_builder
+              label_display: ''
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          8b7540f7-be51-4f60-abb0-12cfc22b933b:
+            uuid: 8b7540f7-be51-4f60-abb0-12cfc22b933b
+            region: second
+            configuration:
+              id: 'field_block:block_content:statistic:field_body'
+              label: Body
+              provider: layout_builder
+              label_display: ''
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+id: block_content.statistic.default
+targetEntityType: block_content
+bundle: statistic
+mode: default
+content:
+  field_body:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_cta:
+    weight: 3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_eyebrow:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_media:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

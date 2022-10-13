@@ -1,0 +1,23 @@
+uuid: f8f0868f-79a2-40b4-9ed8-b22b69aa4cc8
+langcode: en
+status: true
+dependencies: {  }
+name: slick_media_tab
+label: 'Slick Media Tab'
+effects:
+  f5015c86-2d58-4c73-9187-77e7cafa4915:
+    uuid: f5015c86-2d58-4c73-9187-77e7cafa4915
+    id: image_scale
+    weight: 1
+    data:
+      width: 800
+      height: null
+      upscale: true
+  e902ef00-8084-4a58-833b-056ace670cff:
+    uuid: e902ef00-8084-4a58-833b-056ace670cff
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 800
+      height: 600
+      anchor: center-center

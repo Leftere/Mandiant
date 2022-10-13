@@ -1,0 +1,12 @@
+uuid: ada96e24-cf22-436b-9cfd-0b2e53d414ae
+langcode: en
+status: true
+dependencies: {  }
+id: fluid_250px
+label: 'Fluid 250px'
+description: ''
+aspect_ratio: '1:1'
+soft_limit_width: 250
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

@@ -1,0 +1,76 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Fri Jun 02 2017 09:23:59 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Threat actors leverage EternalBlue exploit to deliver non-WannaCry payloads",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "90071be5-6a68-41d9-8b6d-1166b872a448",
+    "author": "Ali Islam",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "lynn.thorne@fireeye.com",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "e1d47ce2-87e0-4786-9426-97d41cf52509"
+    ],
+    "jcr:created": "Fri Jun 02 2017 14:43:58 GMT-0400",
+    "cq:lastReplicated": "Fri Jun 02 2017 14:43:58 GMT-0400",
+    "cq:lastModified": "Fri Jun 02 2017 14:43:46 GMT-0400",
+    "cq:distribute": true,
+    "jcr:baseVersion": "e1d47ce2-87e0-4786-9426-97d41cf52509",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-tags:wannacry-ransomware",
+      "fireeye-blog-authors:cap-ali-islam",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:exploit",
+      "fireeye-doctypes:blog",
+      "fireeye-blog-threat-research:threat-research\/malware-research",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:malware",
+      "fireeye-blog-authors:cap-christopher-glyer",
+      "fireeye-blog-authors:cap-barry-vengerik",
+      "fireeye-blog-authors:zain-gardezi",
+      "fireeye-blog-authors:cap-haroon-w-malik"
+    ],
+    "jcr:uuid": "7e082548-3ee3-4ca9-9013-66461129ec96",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Fri Jun 02 2017 09:00:00 GMT-0400",
+    "_charset_": "UTF-8",
+    "cq:lastModifiedBy": "lynn.thorne@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "lynn.thorne@fireeye.com",
+        "text": "\u003Cp\u003EThe \u201cEternalBlue\u201d exploit (\u003Ca href=\u0022https:\/\/technet.microsoft.com\/en-us\/library\/security\/ms17-010.aspx\u0022\u003EMS017-010\u003C\/a\u003E) was initially used by WannaCry ransomware and Adylkuzz cryptocurrency miner. Now more threat actors are leveraging the vulnerability in \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/threat-research\/2017\/05\/smb-exploited-wannacry-use-of-eternalblue.html\u0022\u003EMicrosoft Server Message Block (SMB) protocol\u003C\/a\u003E \u2013 this time to distribute Backdoor.Nitol and Trojan Gh0st RAT.\u003C\/p\u003E\n\u003Cp\u003EFireEye Dynamic Threat Intelligence (DTI) has historically observed similar payloads delivered via exploitation of CVE-2014-6332 vulnerability as well as in some email spam campaigns using \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/threat-research\/2016\/09\/hancitor_aka_chanit.html\u0022\u003Epowershell commands\u003C\/a\u003E. Specifically, Backdoor.Nitol has also been linked to campaigns involving a remote code execution vulnerability using the ADODB.Stream ActiveX Object that affects older versions of Internet Explorer. Both payloads have previously been involved in targeted \u003Ca href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/current-threats\/pdfs\/ib-aerospace.pdf\u0022\u003Ecyber-attacks against the aerospace and defense industry\u003C\/a\u003E.\u003C\/p\u003E\n\u003Cp\u003EWe observed lab machines vulnerable to SMB exploit were attacked by a threat actor using the EternalBlue exploit to gain shell access to the machine.\u003C\/p\u003E\n\u003Cp\u003EFigure 1 shows an EternalBlue exploitation attempt.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/Every%20tom%20dick%20and%20harry%20ali\/image1.png\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 1. Network traffic showing EternalBlue attack attempt\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EThe initial exploit technique used at the \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/threat-research\/2017\/05\/smb-exploited-wannacry-use-of-eternalblue.html\u0022\u003ESMB level\u003C\/a\u003E is similar to what we have been seen in \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/threat-research\/2017\/05\/wannacry-malware-profile.html\u0022\u003EWannaCry campaigns\u003C\/a\u003E; however, once a machine is successfully infected, this particular attack opens a shell to write instructions into a VBScript file and then executes it to fetch the payload on another server.\u003C\/p\u003E\n\u003Cp\u003EWe have observed the same EternalBlue and VBScript combination used to distribute \u0026nbsp;Gh0st RAT in Singapore, as well as Backdoor.Nitol being delivered in the South Asia region.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/Every%20tom%20dick%20and%20harry%20ali\/image2.jpg\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 2. VBScript instructions in \u20181.vbs\u2019\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EThe full VBScript instructions can be seen in Figure 2. The attacker echoes instructions into a new \u20181.vbs\u2019 file to be executed later. \u0026nbsp;These instructions fetch the \u0026nbsp;payload \u2018taskmgr.exe\u2019 from another server in a synchronous call (as indicated by the second parameter \u20180\u2019). \u0026nbsp;This action creates an ActiveX object ADODB.Stream, which allows reading the file coming from the server and writes the result of the binary data in a stream. Mode \u20183\u2019 is used for read\/write permissions while type \u20181\u2019 indicates stream as binary data. Thereafter, it saves the binary stream to a location at \u201cc:\/\u201d with option \u20182\u2019 in order to overwrite any binary with the same name at that location.\u003C\/p\u003E\n\u003Cp\u003ELater, we see that \u20181.vbs\u2019 executes through a command-line version of the Windows Script Host which deletes the vbs file. Once the executable is fetched and saved, the attacker uses a shell to launch the backdoor from the saved location.\u003C\/p\u003E\n\u003Cp\u003EFigure 3 shows Backdoor.Nitol being downloaded and infecting the machine.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/Every%20tom%20dick%20and%20harry%20ali\/image3.jpg\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 3. Network traffic showing Backdoor.Nitol download\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EThe command and control (C2) for the Backdoor.Nitol sample is hackqz.f3322[.]org (120.209.40.157).\u0026nbsp; See Figure 4.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/Every%20tom%20dick%20and%20harry%20ali\/image4.png\u0022\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 4. Backdoor.Nitol C2 communication\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EThe other malware that we\u2019ve observed being deployed in this manner is Gh0st RAT. The observed dropper downloads the Gh0st RAT binary from beiyeye.401hk[.]com (Figure 5).\u003C\/p\u003E\n\u003Cp\u003E\u003Cb\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/Every%20tom%20dick%20and%20harry%20ali\/image5.png\u0022\u003E\u003C\/b\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 5. Gh0st RAT C2 communication\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EThe first five bytes in the header of the Gh0st RAT traffic is an indication of the Gh0st variant used. Historically we have seen wide-spread usage of variants employing the \u2018\u003Cb\u003Ecb1st\u003C\/b\u003E\u2019 magic header against the Education, Energy\/Utilities, Manufacturing, Services\/Consulting, and Telecom industries. For more information on this and other widely used variants of Gh0st RAT, please review \u003Ca href=\u0022https:\/\/mysight.isightpartners.com\/report\/full\/16-00006116\u0022\u003E\u003Ci\u003EGH0ST in the Machine: GH0ST RAT Remains Active in Financial Services Sector\u003C\/i\u003E\u003C\/a\u003E available on our subscription MySight portal.\u003C\/p\u003E\n\u003Cp\u003EThe Gh0St RAT sample observed in this attack, as well as other associated samples identified by FireEye are all signed with a common digital certificate purporting to be from \u5317\u4eac\u7814\u521b\u8fbe\u79d1\u6280\u6709\u9650\u516c\u53f8 (Beijing Institute of Science and Technology Co., Ltd). Stolen or illegitimately purchased code signing certificates are increasingly used to lend legitimacy to malware. See the appendix for full details on the observed code signing certificate.\u003C\/p\u003E\n\u003Ch5\u003E\u003Cb\u003EConclusion\u003C\/b\u003E\u003C\/h5\u003E\n\u003Cp\u003EThe addition of the EternalBlue exploit to Metasploit has made it easy for threat actors to exploit these vulnerabilities. In the coming weeks and months, we expect to see more attackers leveraging these vulnerabilities and to spread such infections with different payloads. It is critical that Microsoft Windowsusers patch their machines and update to the latest software versions as soon as possible.\u003C\/p\u003E\n\u003Ch5\u003EAcknowledgements\u003C\/h5\u003E\n\u003Cp\u003EFireEye Labs authors would like to thank Shahzad Ahmad and Kean Siong Tan for their contributions in this discovery.\u003C\/p\u003E\n\u003Cp\u003EIOCs\u003C\/p\u003E\n\u003Cp\u003ESHA sum\u003Cbr\u003E\ncba19d228abf31ec8afab7330df3c9da60cd4dae376552b503aea6d7feff9946\u003Cbr\u003E\n4f49e17b457ef202ab0be905691ef2b2d2b0a086a7caddd1e70dd45e5ed3b309\u003C\/p\u003E\n\u003Cp\u003EDownloader\u003C\/p\u003E\n\u003Cp\u003E121.201.9.204:45988 \/ taskmgr.exe\u0026nbsp; (Nitol)\u003Cbr\u003E\nbeiyeye.401hk[.]com:1541 \/ systemUpdate.exe (Gh0st)\u003C\/p\u003E\n\u003Cp\u003EC2\u003C\/p\u003E\n\u003Cp\u003Ehackqz.f3322.org\u0026nbsp; (Nitol)\u003Cbr\u003E\n120.209.40.157:8880 (Nitol)\u003Cbr\u003E\nbj6po.a1free9bird[.]com (Gh0st)\u003Cbr\u003E\n\u003Cbr\u003E\nCode-Signing Certificate\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/Every%20tom%20dick%20and%20harry%20ali\/Certificate.jpg\u0022\u003E\u003C\/p\u003E\n",
+        "jcr:lastModified": "Fri Jun 02 2017 08:03:55 GMT-0400",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "alt": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "comments": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/commons\/components\/comments"
+      },
+      "trackback": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/blog\/components\/trackback"
+      }
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "lynn.thorne@fireeye.com",
+      "jcr:lastModified": "Fri Jun 02 2017 14:43:46 GMT-0400",
+      "imageRotate": "0"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+uuid: 27843818-d5ef-4338-9e2c-1367ae3794ad
+langcode: en
+status: true
+dependencies: {  }
+id: card_product_services
+label: 'Card product services'
+classes: card-product-services
+type: component
+group: add_ons
+weight: -21
+block_restrictions:
+  - 'inline_block:card'
+layout_restrictions: {  }

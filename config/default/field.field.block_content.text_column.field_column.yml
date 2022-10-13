@@ -1,0 +1,31 @@
+uuid: 437e898a-8bc9-4a95-aaf1-349818f0620c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_column
+    - field.storage.block_content.field_column
+    - paragraphs.paragraphs_type.text_column
+  module:
+    - entity_reference_revisions
+id: block_content.text_column.field_column
+field_name: field_column
+entity_type: block_content
+bundle: text_column
+label: Column
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      text_column: text_column
+    target_bundles_drag_drop:
+      text_column:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

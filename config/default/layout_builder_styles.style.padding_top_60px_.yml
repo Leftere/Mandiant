@@ -1,0 +1,12 @@
+uuid: ec84d006-226b-4ee9-8c2b-63cf82da2004
+langcode: en
+status: true
+dependencies: {  }
+id: padding_top_60px_
+label: 'Padding (top 60px)'
+classes: pt-6
+type: section
+group: modifiers_style
+weight: 0
+block_restrictions: {  }
+layout_restrictions: {  }

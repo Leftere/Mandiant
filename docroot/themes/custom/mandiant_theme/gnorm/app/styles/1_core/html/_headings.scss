@@ -1,0 +1,29 @@
+// ================================== //
+//    #CORE/HTML - HEADING ELEMENTS
+// ================================== //
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+h1 {
+  @include font-size(50, 50);
+  font-weight: 500;
+  letter-spacing: .05em;
+}
+
+h2 {
+  @include font-size(30, 40);
+  font-weight: 500;
+}
+
+// h3 {}
+
+// h4 {}
+
+// h5 {}
+
+// h6 {}

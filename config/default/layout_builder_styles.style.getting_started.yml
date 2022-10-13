@@ -1,0 +1,13 @@
+uuid: d681c6c0-1177-4e85-9abf-7ff32925f340
+langcode: en
+status: true
+dependencies: {  }
+id: getting_started
+label: 'Getting started'
+classes: getting-started
+type: section
+group: alignment
+weight: 10
+block_restrictions: {  }
+layout_restrictions:
+  - layout_twocol_section

@@ -1,0 +1,14 @@
+uuid: 2d4878fd-15d5-4ef9-8d68-ba2c9db47117
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.bio
+id: node_type_bio
+entity_type_id: node_type
+entity_id: bio
+action: display_page
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

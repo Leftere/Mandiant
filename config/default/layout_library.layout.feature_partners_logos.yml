@@ -1,0 +1,110 @@
+uuid: 6b845680-02bb-44af-b290-84cbd1c2a889
+langcode: en
+status: true
+dependencies: {  }
+id: feature_partners_logos
+label: 'Partners Logos'
+targetEntityType: block_content
+targetBundle: partner
+layout:
+  -
+    layout_id: layout_onecol
+    layout_settings:
+      label: ''
+      layout_builder_styles_style:
+        0: ''
+        1: ''
+        block_plain_text: 0
+        cta_contact_full: 0
+        component_intro: 0
+        intro_text: 0
+        negative_top_margin: 0
+        related_thought_leadership: 0
+        search_filter: 0
+        search_results_: 0
+        section_product_services: 0
+        negative_bottom_margin: 0
+        margin_bottom_zero: 0
+        padding_top_bottom_: 0
+        padding_top_: 0
+        small_image_tile: 0
+        small_tile_section: 0
+        featured_testimonial: 0
+        margin_bottom_60px_: 0
+        padding_top_60px_: 0
+        resource_hero: 0
+      layout_builder_id: ''
+      context_mapping: {  }
+    components:
+      4d853713-ace6-43b4-a060-addb3233f657:
+        uuid: 4d853713-ace6-43b4-a060-addb3233f657
+        region: content
+        configuration:
+          id: 'field_block:block_content:partner:field_eyebrow'
+          label: Eyebrow
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: string
+            settings:
+              link_to_entity: false
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          layout_builder_id: ''
+        weight: 0
+      70ad71d7-4b50-41eb-a34e-dde2e10a9c9f:
+        uuid: 70ad71d7-4b50-41eb-a34e-dde2e10a9c9f
+        region: content
+        configuration:
+          id: 'field_block:block_content:partner:field_title'
+          label: Title
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: text_field_formatter
+            settings:
+              link_to_entity: 0
+              wrap_tag: h3
+              wrap_class: ''
+              wrap_attributes: ''
+              override_link_label: ''
+              token: ''
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          layout_builder_id: ''
+        weight: 1
+      fad89ee9-6feb-41f8-aa48-366d596b6242:
+        uuid: fad89ee9-6feb-41f8-aa48-366d596b6242
+        region: content
+        configuration:
+          id: 'field_block:block_content:partner:field_partners'
+          label: Partners
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: entity_reference_entity_view
+            settings:
+              view_mode: teaser
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          layout_builder_id: ''
+        weight: 2
+    third_party_settings: {  }

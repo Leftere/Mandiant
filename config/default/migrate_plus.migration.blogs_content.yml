@@ -1,0 +1,61 @@
+uuid: d3dee21a-9f4f-46b3-b8aa-93d77495e346
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: HsaRe0ArJbSXzBv0dj1K4gGqAcHca7Bv69fMK2FDimc
+id: blogs_content
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - blogs
+migration_group: mandiant_migrate
+label: 'Blogs Content'
+source:
+  plugin: blogs_page
+  csv: blog_sources
+process:
+  langcode: language
+  type:
+    plugin: default_value
+    default_value: article
+  title: title
+  field_author: author
+  field_date: published
+  field_body/value:
+    -
+      plugin: dom
+      method: import
+      source: body
+    -
+      plugin: dom_convert_images_to_media
+    -
+      plugin: dom
+      method: export
+  field_body/format:
+    plugin: default_value
+    default_value: basic_html
+  field_summary_html: summary/text
+  field_terms_topic:
+    -
+      plugin: entity_generate
+      source: topic
+  field_tags:
+    -
+      plugin: entity_generate
+      source: tags
+  layout_selection:
+    plugin: default_value
+    default_value: article_blog
+  uid:
+    plugin: default_value
+    default_value: 1
+  status:
+    plugin: default_value
+    default_value: 1
+  created: created
+  changed: changed
+destination:
+  plugin: 'entity:node'
+migration_dependencies: {  }

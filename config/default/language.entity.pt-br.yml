@@ -1,0 +1,15 @@
+uuid: fb05fb19-657b-47e7-b3f5-529b877a0fbf
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - disable_language
+third_party_settings:
+  disable_language:
+    disable: true
+    redirect_language: en
+id: pt-br
+label: 'Portuguese, Brazil'
+direction: ltr
+weight: 6
+locked: false

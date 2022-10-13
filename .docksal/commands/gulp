@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+## Run Gulp Commands
+##
+## Usage: fin gulp [GULP_COMMANDS]
+##
+
+# Abort if anything fails
+set -e
+
+#-------------------------- Variables --------------------------------
+default_theme=${THEME_DEFAULT_PATH}
+path_to_theme=${default_theme}
+
+#-------------------------- Argument definitions ---------------------
+for arg in "$@"
+do
+  case $arg in
+    *)
+      other_arguments+=("$1")
+      shift
+    ;;
+  esac
+done
+
+#-------------------------- Commands --------------------------------
+cd "${PROJECT_ROOT}"/docroot/"${path_to_theme}"/gnorm
+if [[ -z "${other_arguments[*]}" ]];
+then
+  fin exec npx gulp;
+else
+  fin exec npx gulp "${other_arguments[*]}";
+fi

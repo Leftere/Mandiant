@@ -1,0 +1,8 @@
+.section-thought-leadership {
+  // @include container($desktop);
+  text-align: center;
+
+  h2 {
+    @include font-size(25,24);
+  }
+}

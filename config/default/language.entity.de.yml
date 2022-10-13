@@ -1,0 +1,15 @@
+uuid: 178428ab-035b-47e1-ac26-9fce201eb003
+langcode: de
+status: true
+dependencies:
+  module:
+    - disable_language
+third_party_settings:
+  disable_language:
+    disable: true
+    redirect_language: en
+id: de
+label: German
+direction: ltr
+weight: 2
+locked: false

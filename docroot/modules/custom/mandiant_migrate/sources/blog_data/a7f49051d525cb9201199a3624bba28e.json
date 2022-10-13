@@ -1,0 +1,65 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Tue May 11 2021 15:10:10 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Strategien zum Schutz vor Ransomware und zur Eind\u00e4mmung von Angriffen: Praktischer Leitfaden f\u00fcr den Schutz, die H\u00e4rtung und die Isolierung von Endpunkten",
+    "jcr:versionHistory": "7fa7a810-ac1c-4588-a12f-5cb92e967341",
+    "author": "Matthew McWhirt",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:lastModifiedBy": "lynda.hall@fireeye.com",
+    "jcr:language": "de_DE",
+    "jcr:predecessors": [
+      "73f9a8be-a5a0-4311-a81b-1c463adb94ca"
+    ],
+    "jcr:created": "Tue May 11 2021 15:10:10 GMT+0000",
+    "cq:lastModified": "Fri Apr 30 2021 23:21:13 GMT+0000",
+    "jcr:baseVersion": "73f9a8be-a5a0-4311-a81b-1c463adb94ca",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:matthew-mcwhirt",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:ransomware",
+      "fireeye-blog-tags:endpoint",
+      "fireeye-blog-tags:security-strategy",
+      "fireeye-blog-tags:federal-government"
+    ],
+    "jcr:lastModified": "Fri Apr 30 2021 14:47:59 GMT+0000",
+    "jcr:uuid": "e98bc66d-2305-4d96-94d2-fdab1d940ac9",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Thu Sep 05 2019 02:00:00 GMT-0700",
+    "cq:lastModifiedBy": "lynda.hall@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "lynda.hall@fireeye.com",
+        "text": "\u003Cp\u003E\u003Ci\u003EUPDATE (30. Okt. 2020):\u0026nbsp;Wir haben zus\u00e4tzliche Schutz- und Isolierungsstrategien in den Bericht aufgenommen, die im Kampf gegen \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/de_DE\/products\/ransomware.html\u0022\u003ERansomware\u003C\/a\u003E die Transparenz und Abwehr in den Mittelpunkt stellen. An den bisher im Bericht aufgef\u00fchrten Empfehlungen hat sich nichts ge\u00e4ndert, neu hinzugekommen sind folgende Strategien:\u003C\/i\u003E\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003E\u003Ci\u003EKonfigurationseinstellungen f\u00fcr Windows-Firewalls, die bestimmte Bin\u00e4rcodes hindern, auf Endpunkten ausgehende Verbindungen einzurichten\u003C\/i\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ci\u003ESchritte zur Isolierung von Domain-Controllern und zur Planung ihrer Wiederherstellung\u003C\/i\u003E\u003C\/li\u003E\n\u003Cli\u003E\u003Ci\u003ERichtlinien zur proaktiven Pr\u00fcfung und \u00dcberwachung von GPO-Berechtigungen\u003C\/i\u003E\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003ERansomware ist eine globale Bedrohung, die f\u00fcr Unternehmen in allen Branchen relevant ist. Ein erfolgreicher Ransomware-Angriff kann f\u00fcr ein Unternehmen einschneidende Folgen haben, etwa den Verlust des Zugangs zu Daten und Systemen sowie Betriebsausf\u00e4lle. Zur m\u00f6glichen Ausfallzeit kommen nicht eingeplante Ausgaben f\u00fcr Behebung und Wiederherstellung sowie die Implementierung neuer Sicherheitsma\u00dfnahmen und -kontrollen hinzu\u0026nbsp;\u2013 und alles zusammen kann ein Unternehmen an den Rand seiner M\u00f6glichkeiten bringen. Ransomware ist in den letzten Jahren in der Gunst der Angreifer gestiegen, und das ist nicht verwunderlich, wenn man bedenkt, wie einfach eine solche Kampagne umzusetzen ist\u0026nbsp;\u2013 und wie lukrativ sie sein kann.\u003C\/p\u003E\n\u003Cp\u003EIn unserem neuesten Bericht \u003Ci\u003E\u003Ca href=\u0022\/content\/dam\/fireeye-www\/regional\/de_DE\/current-threats\/pdfs\/wp-ransomware-protection-and-containment-strategies.pdf\u0022 target=\u0022_blank\u0022 adhocenable=\u0022false\u0022\u003EStrategien zum Schutz vor Ransomware und zur Eind\u00e4mmung von Angriffen: Praktischer Leitfaden f\u00fcr den Schutz, die H\u00e4rtung und die Isolierung von Endpunkten\u003C\/a\u003E\u003C\/i\u003E beschreiben wir Ma\u00dfnahmen, mit denen Unternehmen ihre Umgebung proaktiv gegen die Auswirkungen eines Ransomware-Angriffs absichern k\u00f6nnen. Diese Empfehlungen k\u00f6nnen Unternehmen auch dabei helfen, die wichtigsten Schritte zur Isolierung und Eind\u00e4mmung eines Ransomware-Angriffs zu priorisieren, wenn dieser bereits begonnen hat.\u003C\/p\u003E\n\u003Cp\u003EIn der Regel kommt bei Ransomware-Angriffen eine der folgenden beiden Methoden zum Einsatz:\u003C\/p\u003E\n\u003Col\u003E\n\u003Cli\u003EManuelle Verbreitung: Ein Angreifer dringt in eine Umgebung ein und verschafft sich Administratorrechte f\u00fcr die Systeme.\u003Cul\u003E\n\u003Cli\u003EDie Zielsysteme werden manuell verschl\u00fcsselt.\u003C\/li\u003E\n\u003Cli\u003EDie Verschl\u00fcsselungsanwendungen werden mithilfe von Windows-Batchdateien (Einbinden der C$-Freigaben, Kopieren der Verschl\u00fcsselungsanwendung und Ausf\u00fchren mit dem PsExec-Tool von Microsoft) in der gesamten Umgebung implementiert.\u003C\/li\u003E\n\u003Cli\u003EDie Verschl\u00fcsselungsanwendungen werden mithilfe von Microsoft-Gruppenrichtlinienobjekten (GPO) implementiert.\u003C\/li\u003E\n\u003Cli\u003EDie Verschl\u00fcsselungsanwendungen werden mithilfe der beim Opfer vorhandenen Softwareinstallationstools implementiert.\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003C\/li\u003E\n\u003Cli\u003EAutomatisierte Verbreitung:\u003Cul\u003E\n\u003Cli\u003EDie Anmeldedaten oder Windows-Token werden von einem Datentr\u00e4ger oder aus dem Arbeitsspeicher gestohlen.\u003C\/li\u003E\n\u003Cli\u003EEs werden vertrauensw\u00fcrdige Beziehungen zwischen Systemen ausgenutzt und Tools wie Windows Management Instrumentation (WMI), SMB oder PsExec verwendet, um sich in den Systemen festzusetzen und Schadcode auszuf\u00fchren.\u003C\/li\u003E\n\u003Cli\u003EEs werden Angriffsmethoden auf Schwachstellen genutzt, gegen die noch keine Patches installiert wurden (z.\u0026nbsp;B. EternalBlue\u0026nbsp;\u2013 siehe \u003Ca href=\u0022https:\/\/docs.microsoft.com\/en-us\/security-updates\/securitybulletins\/2017\/ms17-010\u0022\u003EMicrosoft-Sicherheitsbulletin MS17-010\u003C\/a\u003E).\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003C\/li\u003E\n\u003C\/ol\u003E\n\u003Cp\u003EDer Bericht enth\u00e4lt mehrere technische Empfehlungen, mit denen Unternehmen das Risiko eines Ransomware-Angriffs senken und seine Ausbreitung eind\u00e4mmen k\u00f6nnen, darunter:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EEndpunktsegmentierung\u003C\/li\u003E\n\u003Cli\u003ESchutz vor g\u00e4ngigen Exploit-Verfahren\u003C\/li\u003E\n\u003Cli\u003EZugriffsbeschr\u00e4nkungen f\u00fcr Konten mit privilegierten Zugriffsrechten und Service Accounts.\u003C\/li\u003E\n\u003Cli\u003ESchutz von Klartextpassw\u00f6rtern\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EWenn Sie diesen Bericht lesen, um Ihr Unternehmen bei der Bek\u00e4mpfung eines aktuellen Ransomware-Angriffs zu unterst\u00fctzen, m\u00fcssen Sie genau ermitteln, wie die Ransomware in Ihre Umgebung eingeschleust und dort installiert wurde, um die Abwehrma\u00dfnahmen darauf abzustimmen. Der Leitfaden wird Ihnen sicher dabei helfen.\u003C\/p\u003E\n\u003Cp\u003E\u003Ca href=\u0022\/content\/dam\/fireeye-www\/regional\/de_DE\/current-threats\/pdfs\/wp-ransomware-protection-and-containment-strategies.pdf\u0022 target=\u0022_blank\u0022 adhocenable=\u0022false\u0022\u003EZum Bericht\u003C\/a\u003E\u003C\/p\u003E\n\u003Cp\u003E* Hinweis: Die Empfehlungen in diesem Bericht unterst\u00fctzen Unternehmen dabei, das Risiko eines Ransomware-Angriffs zu senken und seine Ausbreitung einzud\u00e4mmen. Der Bericht behandelt jedoch nicht alle Aspekte der Abwehr von Ransomware-Angriffen. So werden folgende Punkte nicht besprochen: Untersuchungen zur Entdeckung und Entfernung von Backdoors (Angreifer installieren oft mehrere Backdoors in der Umgebung des Opfers), Kommunikation und Verhandlung mit Angreifern, Wiederherstellung der Daten nach Erhalt des Entschl\u00fcsselungscodes.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Fri Apr 30 2021 23:21:13 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext",
+        "textIsRich": "true"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003ESie lernen Ma\u00dfnahmen kennen, mit denen Sie die Infrastruktur Ihres Unternehmens proaktiv h\u00e4rten k\u00f6nnen, um die Auswirkungen eines Ransomware-Angriffs zu minimieren.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Wed Sep 04 2019 18:50:40 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "jeff.payne@fireeye.com",
+      "jcr:lastModified": "Mon Sep 16 2019 20:39:16 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+uuid: 8e895efb-b360-4cc3-a217-311aea0506a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tab
+    - field.storage.block_content.field_body
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: '0'
+    plain_text: '0'
+id: block_content.tab.field_body
+field_name: field_body
+entity_type: block_content
+bundle: tab
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: media
+  uuid: 18e6ecf7-9abe-42ee-aa51-2fd1cf93577c
+  bundle: video
+  default_langcode: en
+  depends:
+    76142c52-522d-4fd1-aa68-da16dde771e8: user
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 76142c52-522d-4fd1-aa68-da16dde771e8
+  name:
+    -
+      value: 'Mandiant Advantage - The New Standard in Cyber Threat Intelligence'
+  created:
+    -
+      value: 1626907387
+  revision_translation_affected:
+    -
+      value: true
+  field_media_oembed_video:
+    -
+      value: 'https://www.youtube.com/watch?v=h4y2Xj2p8oQ'

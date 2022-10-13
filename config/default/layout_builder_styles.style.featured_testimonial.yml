@@ -1,0 +1,12 @@
+uuid: cb8cddb1-30a1-437d-ad71-388d2b4a9bfd
+langcode: en
+status: true
+dependencies: {  }
+id: featured_testimonial
+label: 'Image (fingerprint)'
+classes: featured-testimonial
+type: section
+group: modifiers_style
+weight: 9
+block_restrictions: {  }
+layout_restrictions: {  }

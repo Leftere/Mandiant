@@ -1,0 +1,13 @@
+uuid: 975e33d5-7f9b-413c-ab36-95f742b72844
+langcode: en
+status: true
+dependencies: {  }
+id: center
+label: Center
+classes: center
+type: section
+group: alignment
+weight: 0
+block_restrictions: {  }
+layout_restrictions:
+  - layout_threecol_section

@@ -1,0 +1,103 @@
+.solution-card {
+  align-items: stretch;
+  margin-bottom: 4.4rem;
+
+  @include breakpoint($large-tablet) {
+    display: flex;
+  }
+
+  &__content,
+  &__statistics {
+    display: flex;
+    flex: 0 1 50%;
+    flex-direction: column;
+    padding: 4rem 2rem;
+
+    @include breakpoint($large-tablet) {
+      padding: 4rem 7.5rem;
+    }
+  }
+
+  &__content {
+    background-color: #dcdce2;
+    border-top-left-radius: 10px;
+
+    h3 {
+      @include font-size(24, 26);
+      font-weight: 700;
+      max-width: 35rem;
+    }
+
+    p {
+      padding-bottom: 2rem;
+    }
+  }
+
+  &__statistics {
+    background-color: #e6e6ec;
+    background-image: url('../images/backgrounds/solution-card-bg.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    border-bottom-right-radius: 10px;
+    justify-content: center;
+  }
+
+  &__statistic {
+    align-items: center;
+    display: flex;
+    padding: 2rem;
+    position: relative;
+
+    &:before {
+      border-top: 2px dotted #bbbbc1;
+      content: '';
+      height: 1px;
+      left: 50%;
+      position: absolute;
+      top: 0;
+      transform: translateX(-50%);
+      width: 80%;
+    }
+
+    &:first-child {
+      &:before {
+        content: none;
+      }
+    }
+  }
+
+  &__statistic-number {
+    @include font-size(35, 55);
+    flex: 0 1 50%;
+    padding-right: 3rem;
+    text-align: right;
+
+    @include breakpoint($tablet) {
+      flex: 0 1 40%;
+    }
+
+    @include breakpoint($large-tablet) {
+      flex: 0 1 50%;
+    }
+
+    @include breakpoint($desktop) {
+      @include font-size(45, 55);
+    }
+
+    .fonts-loaded & {
+      font-family: $mono;
+    }
+  }
+
+  &__statistic-description {
+    flex: 0 1 50%;
+
+    @include breakpoint($tablet) {
+      flex: 0 1 60%;
+    }
+
+    @include breakpoint($large-tablet) {
+      flex: 0 1 50%;
+    }
+  }
+}

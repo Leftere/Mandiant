@@ -1,0 +1,64 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "fireeye_global_admin",
+  "jcr:created": "Wed Jul 29 2020 02:11:09 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "fireeye_global_admin",
+    "jcr:title": "\u0027Ghostwriter\u0027 Influence Campaign: Unknown Actors Leverage Website Compromises and Fabricated Content to Push Narratives Aligned With Russian Security Interests",
+    "jcr:versionHistory": "a6aedf10-4a5d-4414-b839-9610ea132c79",
+    "author": "Lee Foster",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "47677707-0e03-4b38-9360-602c3010b518"
+    ],
+    "jcr:created": "Wed Jul 29 2020 16:38:29 GMT+0000",
+    "cq:lastModified": "Wed Jul 29 2020 16:38:07 GMT+0000",
+    "jcr:baseVersion": "47677707-0e03-4b38-9360-602c3010b518",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:lee-foster",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:russia",
+      "fireeye-blog-tags:information-operations",
+      "fireeye-blog-tags:threat-intelligence",
+      "fireeye-blog-authors:sam-riddell",
+      "fireeye-blog-authors:david-mainor",
+      "fireeye-blog-authors:gabby-roncone"
+    ],
+    "jcr:uuid": "9e96c433-4925-4aad-be77-a666d67a665a",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Tue Jul 28 2020 22:15:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EMandiant Threat Intelligence has tied together several information operations that we assess with moderate confidence comprise part of a broader influence campaign\u2014ongoing since at least March 2017\u2014aligned with Russian security interests. The operations have primarily targeted audiences in Lithuania, Latvia, and Poland with narratives critical of the North Atlantic Treaty Organization\u2019s (NATO) presence in Eastern Europe, occasionally leveraging other themes such as anti-U.S. and COVID-19-related narratives as part of this broader anti-NATO agenda. We have dubbed this campaign \u201c\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/Ghostwriter-Influence-Campaign.pdf\u0022\u003EGhostwriter\u003C\/a\u003E.\u201d\u003C\/p\u003E\n\u003Cp\u003EMany, though not all of the incidents we suspect to be part of the Ghostwriter campaign, appear to have leveraged website compromises or spoofed email accounts to disseminate fabricated content, including falsified news articles, quotes, correspondence and other documents designed to appear as coming from military officials and political figures in the target countries.\u003C\/p\u003E\n\u003Cp\u003EThis falsified content has been referenced as source material in articles and op-eds authored by at least 14 inauthentic personas posing as locals, journalists and analysts within those countries. These articles and op-eds, primarily written in English, have been consistently published to a core set of third-party websites that appear to accept user-submitted content, most notably OpEdNews.com, BalticWord.com, and the pro-Russian site TheDuran.com, among others, as well as to suspected Ghostwriter-affiliated blogs.\u003C\/p\u003E\n\u003Cp\u003ESome of these incidents and personas have received public attention from researchers, foreign news outlets, or government entities in Lithuania and Poland, but have not been tied to a broader activity set. Others have received little attention and remain relatively obscure. Mandiant Threat Intelligence has independently discovered several Ghostwriter personas and identified additional incidents involving some of those personas previously exposed.\u003C\/p\u003E\n\u003Cp\u003EWe believe the assets and operations discussed in this \u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/Ghostwriter-Influence-Campaign.pdf\u0022\u003Ereport\u003C\/a\u003E are for the first time being collectively tied together and assessed to comprise part of a larger, concerted and ongoing influence campaign.\u003C\/p\u003E\n\u003Cp\u003ERead \u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/Ghostwriter-Influence-Campaign.pdf\u0022\u003Ethe report\u003C\/a\u003E today to learn more.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Wed Jul 29 2020 02:10:41 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EWe have tied together several information operations that we assess are part of a broader influence campaign aligned with Russian security interests.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Tue Jul 28 2020 20:55:31 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Wed Jul 29 2020 16:38:07 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

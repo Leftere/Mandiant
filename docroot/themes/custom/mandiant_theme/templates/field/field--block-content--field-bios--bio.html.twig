@@ -1,0 +1,40 @@
+{% set cards = items|length <= 4 ? items|length : 4 %}
+{% set columns = 'cols cols-' ~ cards %}
+<div{{ attributes.addClass(columns) }}>
+  {% for key, item in items %}
+    {% set variant = element['#object'].layout_selection %}
+    {# Print the first multivalue item in case we're rendering the Featured Person variant. #}
+    {% if key == 0 and variant is not empty and variant.value[0].target_id == 'block_bio_featured_person' %}
+      {% set node = item.content['#node'] %}
+      {% set media_uri = node.field_media|file_uri %}
+      <a
+        href="{{ path('entity.node.canonical', {'node': node.id}) }}"
+        title="{{ node.label }}"
+        aria-label="{{ "Read more about"|t ~ " " ~ node.label}}"
+      >
+        {% if media_uri is not null %}
+          <span class="media">
+            {{ drupal_image(media_uri, 'tall') }}
+          </span>
+        {% endif %}
+        <span class="column">
+          <h3 class="title">
+            {{ node.label }}
+          </h3>
+          {% if node.field_role_company.value is not empty %}
+            <small class="role">
+              {{ node.field_role_company.value }}
+            </small>
+          {% endif %}
+          {% if node.field_summary_html.value is not empty %}
+            <span class="summary">
+              {{ node.field_summary_html.value|raw|striptags }}
+            </span>
+          {% endif %}
+        </span>
+      </a>
+    {% else %}
+      {{ item.content }}
+    {% endif %}
+  {% endfor %}
+</div>

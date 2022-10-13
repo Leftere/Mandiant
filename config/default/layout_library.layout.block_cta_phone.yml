@@ -1,0 +1,155 @@
+uuid: 95e028d3-41e8-4f89-8a65-a6cdbff066e9
+langcode: en
+status: true
+dependencies: {  }
+id: block_cta_phone
+label: Phone
+targetEntityType: block_content
+targetBundle: cta
+layout:
+  -
+    layout_id: layout_twocol_section
+    layout_settings:
+      label: ''
+      column_widths: 67-33
+      context_mapping: {  }
+    components:
+      9212a8d6-af25-443c-88c7-af9dbb05a42b:
+        uuid: 9212a8d6-af25-443c-88c7-af9dbb05a42b
+        region: first
+        configuration:
+          id: 'field_block:block_content:cta:field_title'
+          label: Title
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: text_field_formatter
+            settings:
+              link_to_entity: 0
+              wrap_tag: h2
+              wrap_class: ''
+              wrap_attributes: ''
+              override_link_label: ''
+              token: ''
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 1
+      83edbb78-0daf-48b4-8210-073d5b7275fb:
+        uuid: 83edbb78-0daf-48b4-8210-073d5b7275fb
+        region: first
+        configuration:
+          id: 'field_block:block_content:cta:field_body'
+          label: Body
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: text_default
+            settings: {  }
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 2
+      9402ab4d-ebfa-464c-ab56-eb61ac6aadc1:
+        uuid: 9402ab4d-ebfa-464c-ab56-eb61ac6aadc1
+        region: second
+        configuration:
+          id: 'field_block:block_content:cta:field_cta'
+          label: Link
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: link
+            settings:
+              trim_length: 80
+              url_only: false
+              url_plain: false
+              rel: '0'
+              target: '0'
+            third_party_settings:
+              field_formatter_class:
+                class: href-cta
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 2
+      ef703329-4a83-4d96-baa8-fd7b62e8948a:
+        uuid: ef703329-4a83-4d96-baa8-fd7b62e8948a
+        region: second
+        configuration:
+          id: 'field_block:block_content:cta:field_block'
+          label: Blocks
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: block_field
+            settings: {  }
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 1
+      10ae6a37-f52a-4d4b-ada2-e4e7d40de01d:
+        uuid: 10ae6a37-f52a-4d4b-ada2-e4e7d40de01d
+        region: first
+        configuration:
+          id: 'field_block:block_content:cta:field_eyebrow'
+          label: Eyebrow
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: string
+            settings:
+              link_to_entity: false
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 0
+      88e823fa-a932-486e-9e55-0232ac2d10b3:
+        uuid: 88e823fa-a932-486e-9e55-0232ac2d10b3
+        region: second
+        configuration:
+          id: 'field_block:block_content:cta:field_media_document'
+          label: Document
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: entity_reference_entity_view
+            settings:
+              view_mode: cta
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          layout_builder_styles_style:
+            left_oriented: 0
+            padding_top_60px_: 0
+            padding_top_bottom_60: 0
+          layout_builder_id: ''
+        weight: 3
+    third_party_settings: {  }

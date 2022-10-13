@@ -1,0 +1,62 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "fireeye_global_admin",
+  "jcr:created": "Wed Apr 08 2020 16:17:24 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "fireeye_global_admin",
+    "jcr:title": "Limited Shifts in the Cyber Threat Landscape Driven by COVID-19",
+    "jcr:versionHistory": "f6f91a0e-fc34-414a-b470-2241c658fda9",
+    "author": "Sandra Joyce",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "5114486b-85dc-405d-a38e-02fac260bf99"
+    ],
+    "jcr:created": "Wed Apr 08 2020 18:25:50 GMT+0000",
+    "cq:lastModified": "Wed Apr 08 2020 18:25:42 GMT+0000",
+    "jcr:baseVersion": "5114486b-85dc-405d-a38e-02fac260bf99",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:sandra-joyce",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:phishing",
+      "fireeye-blog-tags:social-engineering",
+      "fireeye-blog-tags:information-operations",
+      "fireeye-blog-tags:healthcare"
+    ],
+    "jcr:uuid": "be070348-ae78-4b44-a0aa-aac5395f6794",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Wed Apr 08 2020 12:15:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EThough COVID-19 has had enormous effects on our society and economy, its effects on the cyber threat landscape remain limited. For the most part, the same actors we have always tracked are behaving in the same manner they did prior to the crisis. There are some new challenges, but they are perceptible, and we\u2014and our customers\u2014are prepared to continue this fight through this period of unprecedented change.\u003C\/p\u003E\n\u003Cp\u003EThe significant shifts in the threat landscape we are currently tracking include:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EThe sudden major increase in a remote workforce has changed the nature and vulnerability of enterprise networks.\u003C\/li\u003E\n\u003Cli\u003EThreat actors are now leveraging COVID-19 and related topics in social engineering ploys.\u003C\/li\u003E\n\u003Cli\u003EWe anticipate increased collection by cyber espionage actors seeking to gather intelligence on the crisis.\u003C\/li\u003E\n\u003Cli\u003EHealthcare operations,\u0026nbsp;related manufacturing, logistics, and administration organizations, as well as government offices involved in responding to the crisis\u0026nbsp;are increasingly critical and vulnerable to disruptive attacks such as ransomware.\u003C\/li\u003E\n\u003Cli\u003EInformation operations actors have seized on the crisis to promote narratives primarily to domestic or near-abroad audiences.\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Ch4\u003ESame Actors, New Content\u003C\/h4\u003E\n\u003Cp\u003EThe same threat actors and malware families that we observed prior to the crisis are largely pursuing the same objectives as before the crisis, using many of the same tools. They are simply now leveraging the crisis as a means of social engineering. This pattern of behavior is familiar. Threat actors have always capitalized on major events and crises to entice users. Many of the actors who are now using this approach have been tracked for years.\u003C\/p\u003E\n\u003Cp\u003EUltimately, COVID-19 is being adopted broadly in social engineering approaches because it is has widespread, generic appeal, and there is a genuine thirst for information on the subject that encourages users to take actions when they might otherwise have been circumspect. We have seen it used by several cyber criminal and cyber espionage actors, and in underground communities some actors have created tools to enable effective social engineering exploiting the coronavirus pandemic. Nonetheless, COVID-19 content is still only used in two percent of malicious emails.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/limitedshifts\/Picture1.png\u0022 alt=\u0022\u0022\u003E\u0026nbsp;\u003C\/p\u003E\n\u003Cp\u003EFor the time being, we do not believe this social engineering will be abetting. In fact, it is likely to take many forms as changes in policy, economics, and other unforeseen consequences manifest. Recently we predicted a \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/blog\/threat-research\/2020\/03\/stimulus-bill-social-engineering-covid-19-financial-compensation-schemes.html\u0022\u003Espike in stimulus related social engineering\u003C\/a\u003E, for example. Additionally, the FBI has recently released a \u003Ca href=\u0022https:\/\/www.fbi.gov\/news\/pressrel\/press-releases\/fbi-anticipates-rise-in-business-email-compromise-schemes-related-to-the-covid-19-pandemic\u0022\u003Epress release\u003C\/a\u003E anticipating a rise in COVID-19 related Business Email Compromise (BEC) scams.\u003C\/p\u003E\n\u003Ch4\u003EState Actors Likely Very Busy\u003C\/h4\u003E\n\u003Cp\u003EGiven that COVID-19 is the undoubtedly the overwhelming concern of governments worldwide for the time being, we anticipated targeting of government, healthcare, biotech, and other sectors by cyber espionage actors. We have not yet observed an incident of cyber espionage targeting COVID-19 related information; however, it is often difficult to determine what information these actors are targeting. There has been at least one case reported publicly which we have not independently confirmed.\u003C\/p\u003E\n\u003Cp\u003EWe have seen state actors, such as those from Russia, China and North Korea, leverage COVID-19 related social engineering, but given wide interest in that subject, that does not necessarily indicate targeting of COVID-19 related information.\u003C\/p\u003E\n\u003Ch4\u003EThreat to Healthcare\u003C\/h4\u003E\n\u003Cp\u003EThough we have no reason to believe there is a sudden, elevated threat to healthcare, the criticality of these systems has probably never been greater, and thus the risk to this sector will be elevated throughout this crisis. The threat of disruption is especially disconcerting as it could affect the ability of these organizations to provide safe and timely care. This threat extends beyond hospitals to pharmaceutical companies, as well as manufacturing, administration and logistics organizations providing vital support. Additionally, many critical public health resources lie at the state and local level.\u003C\/p\u003E\n\u003Cp\u003EThough there is some anecdotal evidence suggesting some ransomware actors are avoiding healthcare targets, we do not expect that all actors will practice this restraint. Additionally, an attack on state and local governments, which have been a major target of ransomware actors, could have a disruptive effect on treatment and prevention efforts.\u003C\/p\u003E\n\u003Ch4\u003ERemote Work\u003C\/h4\u003E\n\u003Cp\u003EThe sudden and unanticipated shift of many workers to work from home status will represent an opportunity for threat actors. Organizations will be challenged to move quickly to ensure sufficient capacity, as well as that security controls and policies are in place. Disruptive situations can reduce morale and increase stress, leading to adverse behavior such as decreasing users\u2019 reticence to open suspicious messages, and even increasing the risk of insider threats. Distractions while working at home can cause lowered vigilance in scrutinizing and avoiding suspicious content as workers struggle to balance work and home responsibilities at the same time. Furthermore, the rapid adoption of platforms will undoubtedly lead to security mistakes and attract the attention of the threat actors.\u003C\/p\u003E\n\u003Cp\u003ESecure remote access will likely rely on use of VPNs and user access permissions and authentication procedures intended to limit exposure of proprietary data. Hardware and infrastructure protection should include ensuring full disk encryption on enterprise devices, maintaining visibility on devices through an endpoint security tool, and maintaining regular software updates.\u0026nbsp;\u003C\/p\u003E\n\u003Cp\u003EFor more on this issue, see our blog post on the \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/blog\/executive-perspective\/2020\/03\/remote-work-in-an-age-of-covid-19-threat-modeling-the-risks.html\u0022\u003Erisks associated with remote connectivity\u003C\/a\u003E.\u003C\/p\u003E\n\u003Ch4\u003EThe Information Operations Threat\u003C\/h4\u003E\n\u003Cp\u003EWe have seen information operations actors promote narratives associated with COVID-19 to manipulate primarily domestic or near-abroad audiences. We observed accounts in Chinese-language networks operating in support of the People\u0027s Republic of China (PRC), some of which we previously identified to be promoting messaging pertaining to the Hong Kong protests, shift their focus to praising the PRC\u0027s response to the COVID-19 outbreak, criticizing the response of Hong Kong medical workers and the U.S. to the pandemic, and covertly promoting a conspiracy theory that the U.S. was responsible for the outbreak of the coronavirus in Wuhan.\u003C\/p\u003E\n\u003Cp\u003EWe have also identified multiple information operations promoting COVID-19-related narratives that were aimed at Russian- and Ukrainian-speaking audiences, including some that we assess with high confidence are part of the broader suspected Russian influence campaign publicly referred to as \u0026quot;Secondary Infektion,\u0026quot; as well as other suspected Russian activity. These operations have included leveraging a false hacktivist persona to spread the conspiracy theory that the U.S. developed the coronavirus in a weapons laboratory in Central Asia, taking advantage of physical protests in Ukraine to push the narrative that Ukrainians repatriated from Wuhan will infect the broader Ukrainian population, and claiming that the Ukrainian healthcare system is ill-equipped to deal with the pandemic. Other operations alleged that U.S. government or military personnel were responsible for outbreaks of the coronavirus in various countries including Lithuania and Ukraine, or insisted that U.S. personnel would contribute to the pandemic\u0027s spread if scheduled multilateral military exercises in the region were to continue as planned.\u003C\/p\u003E\n\u003Ch4\u003EOutlook\u003C\/h4\u003E\n\u003Cp\u003EIt is clear that adversaries expect us to be distracted by these overwhelming events. The greatest cyber security challenge posed by COVID-19 may be our ability to stay focused on the threats that matter most. An honest assessment of the cyber security implications of the pandemic will be necessary to make efficient use of resources limited by the crisis itself.\u003C\/p\u003E\n\u003Cp\u003E\u003Ci\u003EFor more information and resources that can help strengthen defenses, visit FireEye\u0027s \u0026quot;\u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/current-threats\/covid-19.html\u0022\u003EManaging Through Change and Crisis\u003C\/a\u003E\u0026quot; site, which aggregates many resources to help organizations that are trying to navigate COVID-19 related security challenges.\u003C\/i\u003E\u003C\/p\u003E\n",
+        "jcr:lastModified": "Wed Apr 08 2020 18:25:42 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003ECOVID-19 has had enormous effects on our society and economy, but its effects on the cyber threat landscape remain limited.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Wed Apr 08 2020 16:10:38 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Wed Apr 08 2020 16:16:09 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

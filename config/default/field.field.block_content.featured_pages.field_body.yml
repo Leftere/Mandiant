@@ -1,0 +1,26 @@
+uuid: 2db6cea6-fdb8-47bc-9e0f-e74293ace8b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.featured_pages
+    - field.storage.block_content.field_body
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: '0'
+    plain_text: '0'
+id: block_content.featured_pages.field_body
+field_name: field_body
+entity_type: block_content
+bundle: featured_pages
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

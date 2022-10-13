@@ -1,0 +1,25 @@
+uuid: 2173d914-17da-4592-90b1-024d8afecc42
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:text:bbd0b2fa-908c-49e7-b61a-c66ece93ffad'
+  module:
+    - block_content
+  theme:
+    - mandiant_theme
+id: megamenumandiantadvantagelinks
+theme: mandiant_theme
+region: header
+weight: -7
+provider: null
+plugin: 'block_content:bbd0b2fa-908c-49e7-b61a-c66ece93ffad'
+settings:
+  id: 'block_content:bbd0b2fa-908c-49e7-b61a-c66ece93ffad'
+  label: 'MegaMenu - Mandiant Advantage - Links'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,66 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "fireeye_global_admin",
+  "jcr:created": "Thu Apr 09 2020 21:54:04 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "fireeye_global_admin",
+    "jcr:title": "M-Trends\u00a02020: Erkenntnisse aus der Praxis",
+    "jcr:versionHistory": "92d790f5-7449-4353-90e5-7b1de77759b1",
+    "author": "Jurgen Kutscher",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:lastModifiedBy": "lynda.hall@fireeye.com",
+    "jcr:language": "fr",
+    "jcr:predecessors": [
+      "f2b819f3-1575-4981-bda5-ebc95fb1fd0c"
+    ],
+    "jcr:created": "Thu Apr 09 2020 22:12:01 GMT+0000",
+    "cq:lastModified": "Thu Apr 09 2020 22:11:45 GMT+0000",
+    "jcr:baseVersion": "f2b819f3-1575-4981-bda5-ebc95fb1fd0c",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:cap-jurgen-kutscher",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:m-trends",
+      "fireeye-blog-tags:mandiant",
+      "fireeye-blog-tags:incident-response",
+      "fireeye-blog-tags:malware",
+      "fireeye-blog-tags:apt",
+      "fireeye-blog-tags:TTPs"
+    ],
+    "jcr:lastModified": "Tue Apr 07 2020 16:43:57 GMT+0000",
+    "jcr:uuid": "e58e3716-fc93-4be9-b021-6567ebfc5b20",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Thu Feb 20 2020 05:00:00 GMT-0800",
+    "cq:lastModifiedBy": "lynda.hall@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "lynda.hall@fireeye.com",
+        "text": "\u003Cp\u003EHeute ver\u00f6ffentlichen wir \u003Ci\u003E\u003Ca href=\u0022\/content\/fireeye-www\/de_DE\/current-threats\/annual-threat-report\/mtrends.html\u0022 adhocenable=\u0022false\u0022\u003EM-Trends\u0026nbsp;2020\u003C\/a\u003E\u003C\/i\u003E, die 11.\u0026nbsp;Ausgabe des renommierten Jahresberichts von FireEye Mandiant.\u003Csup\u003E\u003C\/sup\u003E Die neuste Ausgabe enth\u00e4lt die Statistiken, Trends, Fallstudien und H\u00e4rtungsempfehlungen, die unsere treuen Leser von \u003Ci\u003EM-Trends\u003C\/i\u003E erwarten\u0026nbsp;\u2013 und mehr.\u003C\/p\u003E\n\u003Cp\u003EEins der erfreulichsten Ergebnisse in diesem Bericht ist, dass der globale Medianwert f\u00fcr die Verweildauer jetzt bei 56\u0026nbsp;Tagen liegt. Angreifer bleiben im Durchschnitt also weniger als zwei Monate lang unbemerkt, nachdem sie in ein Netzwerk eingedrungen sind. Das ist ein neuer Rekord f\u00fcr \u003Ci\u003EM-Trends\u003C\/i\u003E und eine riesige Verbesserung im Vergleich zu 2011, als der globale Medianwert der Verweildauer bei 416\u0026nbsp;Tagen lag. Wir wissen aber nat\u00fcrlich auch, dass ein technisch versierter Angreifer nur wenige Tage braucht, um die wertvollsten Ressourcen in einem Netzwerk zu finden und zu stehlen. Die Verweildauer muss also weiter verk\u00fcrzt werden.\u003C\/p\u003E\n\u003Cp\u003EEine weitere interessante Statistik aus unserem Bericht ist die \u0026quot;\u201eBedrohungserkennung nach Quelle\u201c\u0026quot;. Zum ersten Mal seit 2015 wurden mehr Unternehmen und Institutionen durch externe Quellen \u00fcber infiltrierte Infrastrukturen informiert als durch ihre eigenen Teams (53 bzw. 47\u0026nbsp;Prozent). Das liegt aber wahrscheinlich nicht daran, dass interne Sicherheitsteams weniger effektiv sind. Wir vermuten eher, dass Strafverfolgungsbeh\u00f6rden zum Beispiel aufgrund strengerer Compliance-Vorgaben \u00fcber mehr Angriffskampagnen informiert sind und diese Informationen an Unternehmen und Institutionen weiterleiten.\u003C\/p\u003E\n\u003Cp\u003EIn \u003Ci\u003EM-Trends\u003C\/i\u003E warten viele weitere interessante Themen auf Sie, darunter:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003E\u003Cb\u003EIn Zahlen\u003C\/b\u003E: Der globale Medianwert f\u00fcr die Verweildauer ist nur eine von vielen interessanten Zahlen in diesem Bericht. Au\u00dferdem finden Sie dort Statistiken zu den Industriezweigen mit den meisten Angriffen, zu Malware, Angriffsmethoden und vielem mehr.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003ENeu benannte APT-Gruppen\u003C\/b\u003E: Ein Expos\u00e9 zu APT41, einer von der chinesischen Regierung gesponserten Hackergruppe, die mindestens seit 2012 finanziell motivierte Angriffe durchf\u00fchrt.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003ETrends\u003C\/b\u003E: Wir haben detaillierte Untersuchungen zu den neuesten Trends bei Malware-Arten, Erpressung mit Ransomware, Crimeware-as-a-Service und Insider-Bedrohungen durchgef\u00fchrt und stellen die Ergebnisse vor.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003EFallstudien\u003C\/b\u003E: Da immer mehr Unternehmen und Institutionen Clouds nutzen, nehmen wir einen Angriff unter die Lupe, bei dem Cloud-Ressourcen missbraucht wurden. Au\u00dferdem betrachten wir eine Kampagne, bei der die Angreifer Gutscheinkarten ins Visier nahmen.\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EObwohl \u003Ci\u003EM-Trends 2020\u003C\/i\u003E jede Menge neuer Informationen enth\u00e4lt, ist das Ziel des Berichts dasselbe wie bei allen vorherigen Ausgaben von \u003Ci\u003EM-Trends\u003C\/i\u003E: Wir wollen Sicherheitsprofis \u00fcber die neuesten Entwicklungen bei Angriffen und Bedrohungen informieren, die wir bei unseren Eins\u00e4tzen beobachtet haben.\u003C\/p\u003E\n\u003Cp\u003E\u003Ca href=\u0022\/content\/fireeye-www\/de_DE\/current-threats\/annual-threat-report\/mtrends.html\u0022 adhocenable=\u0022false\u0022\u003ELaden Sie die 11.\u0026nbsp;M-Trends-Ausgabe noch heute herunter\u003Csup\u003E\u003C\/sup\u003E\u003C\/a\u003E.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Thu Apr 09 2020 21:53:20 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EM-Trends 2020 enth\u00e4lt die Statistiken, Trends, Fallstudien und H\u00e4rtungsempfehlungen, die unsere treuen Leser erwarten\u00a0\u2013 und mehr.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Thu Feb 20 2020 17:58:41 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "lynda.hall@fireeye.com",
+      "jcr:lastModified": "Thu Apr 09 2020 22:11:45 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

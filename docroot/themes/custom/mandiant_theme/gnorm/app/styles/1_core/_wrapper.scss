@@ -1,0 +1,39 @@
+// ================================== //
+//    #CORE - WRAPPER
+// ================================== //
+
+:root {
+  position: relative;
+}
+
+%wrapper,
+.wrapper {
+  padding-left: $spacing-unit;
+  padding-right: $spacing-unit;
+  width: 100%;
+}
+
+.wrapper {
+  @include container($desktop);
+
+  &--desktop {
+    @include container($desktop);
+  }
+
+  &-narrow {
+    @extend %wrapper;
+
+    @include container($large-tablet);
+  }
+
+  &-wide {
+    @extend %wrapper;
+
+    @include container($large-desktop);
+  }
+
+  > .wrapper {
+    max-width: none;
+    padding: 0;
+  }
+}

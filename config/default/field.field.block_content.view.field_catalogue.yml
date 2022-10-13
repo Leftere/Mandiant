@@ -1,0 +1,46 @@
+uuid: bdfb0fce-9d94-4e48-8cb9-153de946c696
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.view
+    - field.storage.block_content.field_catalogue
+  module:
+    - viewsreference
+id: block_content.view.field_catalogue
+field_name: field_catalogue
+entity_type: block_content
+bundle: view
+label: Catalogue
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: 0
+    page: 0
+  preselect_views:
+    resources: resources
+    resources_index: resources_index
+    terms: terms
+    acquia_search: 0
+    block_content: 0
+    content: 0
+    files: 0
+    media: 0
+    media_library: 0
+    user_admin_people: 0
+  enabled_settings:
+    pager: pager
+    limit: limit
+    argument: argument
+    offset: offset
+    title: title
+field_type: viewsreference

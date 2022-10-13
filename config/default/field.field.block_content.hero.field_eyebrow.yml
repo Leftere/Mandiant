@@ -1,0 +1,19 @@
+uuid: 159e7b95-524a-447a-a09b-8dac16141c60
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - field.storage.block_content.field_eyebrow
+id: block_content.hero.field_eyebrow
+field_name: field_eyebrow
+entity_type: block_content
+bundle: hero
+label: Eyebrow
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

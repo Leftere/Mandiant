@@ -1,0 +1,47 @@
+{% set media_uri = node.field_media|file_uri %}
+<a
+  href="{{ path('entity.node.canonical', {'node': node.id}) }}"
+  title="{{ node.label }}"
+  aria-label="{{ "Read more about"|t ~ " " ~ node.label}}"
+>
+
+  {% if node.field_eyebrow.value is not empty %}
+    <span class="eyebrow">
+      {{ node.field_eyebrow.value }}
+    </span>
+  {% endif %}
+  
+  {% if media_uri is not null %}
+    <span class="media">
+      {{ drupal_image(media_uri, 'slick_media') }}
+    </span>
+  {% endif %}
+
+  {% if node.layout_selection.value is not null %}
+    <small class="type">
+      {{ node.layout_selection.value[0]['target_id']|replace({'article_': ''})|replace({'_': ' '})}}
+    </small>
+  {% endif %}
+
+  <h3 class="title">
+    {{ node.label }}
+  </h3>
+
+  <small class="info">
+    {% if node.field_date.value is not empty and node.field_date.value is not null %}
+      <span class="date string">
+        {{ node.field_date.value|date('M d, Y') }}
+      </span>
+    {% endif %}
+    <span class="time">
+      {% if content._layout_builder is not null %}
+        {% set field_blocks = content._layout_builder[0].content %}
+        {% for field_block in field_blocks %}
+          {% if field_block['#plugin_id'] == 'extra_field_block:node:article:reading_time' %}
+            {{ field_block.content }}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    </span>
+  </small>
+</a>

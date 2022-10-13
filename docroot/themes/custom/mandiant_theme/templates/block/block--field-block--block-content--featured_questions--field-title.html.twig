@@ -1,0 +1,10 @@
+{% block content %}
+	{% if title_suffix['contextual_links'] is not empty %}
+		<div{{attributes}}>
+			{{ title_prefix }}{{ title_suffix }}
+			{{ content }}
+		</div>
+	{% else %}
+		<h2>{{ content }}</h2>
+	{% endif %}
+{% endblock %}

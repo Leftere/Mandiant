@@ -1,0 +1,77 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed May 04 2016 09:03:31 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "fireeye_global_admin",
+    "jcr:title": "Malware Persistence without the Windows Registry",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "f5a5662e-0341-4956-900a-2538a4216f21",
+    "author": "Nick Harbour",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "replication-service",
+    "focusKeyword": "KnownDLLs",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "bb65bf43-b425-4ece-b160-8a312b23750a"
+    ],
+    "jcr:created": "Tue Nov 05 2019 18:29:00 GMT+0000",
+    "cq:lastReplicated": "Tue Nov 05 2019 18:29:02 GMT+0000",
+    "cq:lastModified": "Tue Nov 05 2019 18:28:44 GMT+0000",
+    "jcr:baseVersion": "bb65bf43-b425-4ece-b160-8a312b23750a",
+    "jcr:isCheckedOut": true,
+    "cq:createdBy": "admin",
+    "cq:tags": [
+      "fireeye-blog-tags:malware",
+      "fireeye-blog-tags:knowndlls",
+      "fireeye-blog-tags:persistence",
+      "fireeye-blog-authors:cap-nick-harbour",
+      "fireeye-blog-threat-research:threat-research"
+    ],
+    "jcr:uuid": "daf6c4d2-9e7c-474e-8ad9-a39bfee6e11f",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Thu Jul 15 2010 17:13:00 GMT-0400",
+    "_charset_": "UTF-8",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "admin",
+        "text": "\u003Cdiv class=\u0022c00 c00v1\u0022\u003E\u003Cp\u003EFor an attacker to maintain a foothold inside your network they will typically install a piece of backdoor malware on at least one of your systems.  The malware needs to be installed persistently, meaning that it will remain active in the event of a reboot.  Most persistence techniques on a Microsoft Windows platform involve the use of the Registry.  Notable exceptions include the Startup Folder and trojanizing system binaries.  Examining malware persistence locations in the Windows Registry and startup locations is a common technique employed by forensic investigators to identify malware on a host.  Each persistence technique commonly seen today leaves a forensic footprint which can be easily collected using most forensic software on the market.\u003C\/p\u003E \u003Cp\u003EThe persistence technique I\u0027ll describe here is special in that it doesn\u0027t leave an easy forensic trail behind.  A malware DLL can be made persistent on a Windows host by simply residing in a specific directory with a specific name, with no trace evidence in the registry or startup folder and no modified system binaries.   There isn\u0027t just one directory location and DLL filename that are candidate locations for this persistence mechanism but rather a whole class of candidate locations exist for any given system.  On my laptop (Windows 7 64-bit) there are no less than 1032 such path and DLL name combinations where a DLL could be placed such that it would automatically be loaded at some point during my normal boot-up, and that\u0027s just for a 32-bit DLL!  If you had a 64-bit malware DLL the number would be much higher as I have many more 64-bit processes running at boot time.  So how does this work?\u003C\/p\u003E \u003Ch2\u003EDLL Search Order Hijacking\u003C\/h2\u003E\u003Cp\u003EWhen an application requests to load a DLL either statically via an import table in its executable file, or dynamically via the LoadLibrary() function the operating system will look for the DLL in a predefined sequence of locations.  This sequence is defined in the MSDN documentation here: \u003Ca href=\u0022http:\/\/msdn.microsoft.com\/en-us\/library\/ms682586(VS.85).aspx\u0022\u003Ehttp:\/\/msdn.microsoft.com\/en-us\/library\/ms682586(VS.85).aspx\u003C\/a\u003E.  The most important tidbit of information to take away from that document is that the first place the application looks for a DLL is the location of the executable itself.  This isn\u0027t always the case though.  If the DLL name that is requested is listed in the \u0022\\.KnownDlls\u0022 object then it will always load from a fixed location (the System32 folder).  This object is populated at boot-time using data from the Registry at the following location:\u003C\/p\u003E \u003Cpre\u003EHKEY_LOCAL_MACHINESystemCurrentControlSetControlSession ManagerKnownDLLs\u003C\/pre\u003E\u003Cp\u003EMicrosoft employee Larry Osterman describes this in a blog post (\u003Ca href=\u0022http:\/\/blogs.msdn.com\/b\/larryosterman\/archive\/2004\/07\/19\/187752.aspx\u0022\u003Ehttp:\/\/blogs.msdn.com\/b\/larryosterman\/archive\/2004\/07\/19\/187752.aspx\u003C\/a\u003E).  He states in the post that the KnownDlls object will be larger in memory than what is in the Registry key and will be built recursively from the statically imported DLLs from any DLL listed in the registry.  In the limited testing I\u0027ve done on Windows XP and Windows 7 systems, the KnownDlls object in memory is identical to the list provided by the KnownDLLs registry key.\u003C\/p\u003E \u003Cp\u003ECasual browsing of the KnownDlls key will reveal a short list of about 30-35 of the most commonly used DLLs.  For example, the low level networking API DLL \u0022ws2_32.dll\u0022 is contained in this list.  Whenever any application attempts to load a DLL named \u0022ws2_32.dll\u0022 it will always load it from the System32 folder because it is listed in this key, regardless of where the application was launched from.  The KnownDlls system provides a thin layer of security for this small set of crticial DLLs because an attacker can\u0027t simply place a DLL named \u0022ws2_32.dll\u0022 inside a folder containing an application which uses ws2_32.dll and expect their local copy to be loaded.  The KnownDlls system is far too limited to provide any realistic sense of DLL loading security though.  For example, even though we can guarantee that the copy of ws2_32.dll that will be loaded will always be the one from system32, other components loaded when ws2_32.dll is loaded (such as iphlpapi.dll and mswsock.dll) are not guaranteed because they are not covered by KnownDlls.\u003C\/p\u003E \u003Cp\u003ELets imagine that we had a legitimate program called update.exe which ran from the location \u0022C:Program FilesMyCompany\u0022 and loaded ws2_32.dll, all we would have to do to make update.exe load our malware DLL is place our malware in the \u0022C:Program FilesMyCompany\u0022 directory and give it the name \u0022iphlpapi.dll\u0022.  When the update.exe program runs it loads ws2_32.dll, which in turn loads iphlpapi.dll which it loads from the application directory first before checking the System32 folder where it legitimately resides.  All the malware author needs to do is make sure their malicious iphlpapi.dll eventually loads the real thing and the user of the system (and a forensic analyst most likely) will have no idea that malware has been loaded.\u003C\/p\u003E \u003Ch3\u003EReal-World Usage\u003C\/h3\u003E\u003Cp\u003EYou might have come to the conclusion in reading the description of the problem above that executables which reside in the System32 folder are not susceptible.  If you thought that, you\u0027d be correct.  If you also thought that there is no real practical problem because all consistent and reliably placed startup binaries exist in the System32 folder, you\u0027d be incorrect.  Case-in-point: Explorer.exe .  Strangely, this binary resides in C:Windows (I assume for historic reasons).  So when explorer.exe launches and it requests a DLL that is not protected by KnownDlls, the first place the system looks to find the DLL is the C:Windows directory.  Thus far, the most common place we\u0027ve found this malware persistence technique being used is in the location and name \u0022C:Windowsntshrui.dll\u0022.  The real ntshrui.dll is located in the System32 folder but since this dll is loaded by Explorer.exe and not protected by KnownDlls, it\u0027s unfortunately susceptible to DLL search order hijacking.\u003C\/p\u003E \u003Ch3\u003EThe Extent of the Problem\u003C\/h3\u003E\u003Cp\u003EOnce you really understand the nature of the problem it may occur to you that it\u0027s a very widespread and pervasive issue.  It has always existed in Windows and will likely exist for the foreseeable future.  To alter the DLL search path mechanism could have severe backward-compatibility problems for Windows and is most likely not going to happen due to the high value they have always placed in compatibility (We love you Raymond Chen!).  I\u0027ve written a program to identify all locations and filenames that a DLL could be placed to achieve persistence on a given system.  The idea is that you can run this program on a clean (Gold Image) system and forensically search for any DLL name listed in the output on a machine you suspect of being compromised with this method of persistence.  Similar programs may be developed to attempt to identify hijacked DLLs on a live system.  I chose to write this program first however because its output helps to explain the extent of the problem.  I ran the program on my laptop and it produced output which contained 1032 lines, each describing a location and filename that a DLL could be placed to be loaded at boot-time by my system.  On a clean XP SP2 machine I get 91 locations listed.  Here are a few lines from the output from my laptop:\u003C\/p\u003E \u003Cpre\u003EHijackable Location: C:Program Files (x86)iTunesSspiCli.dll\u003C\/pre\u003E\u003Cpre\u003EHijackable Location: C:Program Files (x86)iTunesCRYPTBASE.dll\u003C\/pre\u003E\u003Cpre\u003EHijackable Location: C:Program Files (x86)iTunesCoreFoundation.dll\u003C\/pre\u003E\u003Cpre\u003EHijackable Location: C:Program Files (x86)iTunesMSVCR80.dll\u003C\/pre\u003E\u003Cp\u003EAccording to this output, some program that loads when my system boots (most likely iTunes) attempts to load the DLL named \u0022CRYPTBASE.DLL\u0022 which is commonly found in the System32 folder but an attacker could place a malicious DLL in the iTunes folder and that would be loaded instead.  The program examines running processes and determines hijackable DLL locations by the following properties (applied to each loaded dll in every running process in the system):\u003C\/p\u003E \u003Col\u003E\u003Cli\u003EThe process executable that loaded the DLL is not located in the System32 folder\u003C\/li\u003E\u003Cli\u003EThe DLL name is not found in the KnownDlls object\u003C\/li\u003E\u003Cli\u003EThe DLL is not found in the same directory as the executable\u003C\/li\u003E\u003C\/ol\u003E\u003Cp\u003E\u003Cem\u003E\u003Cstrong\u003EAny loaded DLL that contains all three properties is susceptible to being trumped by search order hijacking.\u003C\/strong\u003E\u003C\/em\u003E\u003C\/p\u003E \u003Cp\u003EThe tool (compiled and source) to identify possibly malicious 32-bit DLL locations from a clean system can be found \u003Ca href=\u0022https:\/\/www.fireeye.com\/content\/dam\/legacy\/ammo\/finddllhijack1.zip\u0022\u003Ehere\u003C\/a\u003E.\u003C\/p\u003E \u003C\/div\u003E",
+        "jcr:lastModified": "Thu Jul 15 2010 16:13:08 GMT-0500",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "alt": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "comments": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/commons\/components\/comments"
+      },
+      "trackback": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/blog\/components\/trackback"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "admin",
+      "text": "\u003Cp\u003EFor an attacker to maintain a foothold inside your network they will typically install a piece of backdoor malware on at least one of your systems.  The malware needs to be installed persistently, meaning that it will remain active in the event of a reboot.  Most persistence techniques on a Microsoft Windows platform involve the use of the Registry.  Notable exceptions include the Startup Folder and trojanizing system binaries.  Examining malware persistence locations in the Windows Registry and startup locations is a common technique employed by forensic investigators to identify malware on a host.  Each persistence technique commonly seen today leaves a forensic footprint which can be easily collected using most forensic software on the market.\u003C\/p\u003E ",
+      "jcr:lastModified": "Thu Jul 15 2010 16:13:08 GMT-0500",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Tue Nov 05 2019 18:28:44 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

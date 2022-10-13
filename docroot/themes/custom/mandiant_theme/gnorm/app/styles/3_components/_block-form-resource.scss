@@ -1,0 +1,453 @@
+.mktoModalMain,
+.devider,
+.embed-article {
+  .mktoFormRow {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    flex-wrap: initial;
+  }
+
+  // Adding some rules for marketo form that
+  // has a different structure.
+  .marketoCheckboxList {
+    .g-recaptcha > div {
+      margin: 0 !important;
+      @include breakpoint(min-width $desktop) {
+        width: 50% !important;
+      }
+    }
+
+    @include breakpoint(max-width $large-tablet) {
+      strong {
+        padding: 0 !important;
+      }
+    }
+
+    p {
+      color: palette(gray, light);
+    }
+
+    .mktoFormRow {
+      color: palette(gray, light);
+      display: flex;
+      flex-basis: 100%;
+      flex-direction: row;
+      flex-wrap: inherit;
+    }
+
+    div {
+      .mktoHtmlText {
+        height: auto;
+        padding-left: 23px;
+        width: 100% !important;
+
+        @include breakpoint(max-width $desktop) {
+          width: 90% !important;
+        }
+
+        hr {
+          padding: 0;
+          margin: 1em;
+        }
+      }
+    }
+
+    input[type='checkbox'] {
+      margin-top: 2px !important;
+    }
+
+   .mktoFieldWrap {
+      flex-direction: column;
+    }
+
+    label[for=Email] {
+      order: 0;
+    }
+  }
+
+  .mktoFieldWrap {
+    align-items: flex-start;
+    display: flex;
+    width: 100%;
+
+    .mktoLabel {
+      float: none !important;
+      margin: 0;
+      order: 1;
+      padding: 0 !important;
+      text-align: left;
+      width: 100%;
+    }
+  }
+
+  .mktoButtonRow {
+    margin: 15px 0 0 0;
+    width: 100%;
+
+    span {
+      margin-left: 0 !important;
+
+      @include breakpoint(max-width $tablet) {
+        margin: 0 !important;
+      }
+    }
+  }
+
+  .mktoForm {
+    background: palette(blue, darkermed);
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    height: auto;
+    margin: 3rem 0 0;
+    max-width: 600px !important;
+    padding: 25px 36px;
+    text-align: center;
+    width: auto !important;
+
+    @include breakpoint(max-width $desktop) {
+      padding: 20px;
+    }
+
+    input,
+    select,
+    textarea {
+      @include font-size(16, 16);
+      background: palette(white, base) !important;
+      border: none;
+      border-bottom-right-radius: 5px;
+      border-top-left-radius: 5px;
+      color: palette(gray, base) !important;
+      float: none;
+      font-weight: 500;
+      height: 33px !important;
+      margin: .4em 0 !important;
+      padding: 2px 15px !important;
+      width: 100% !important;
+      flex-shrink: 0;
+
+      &::placeholder,
+      &::-webkit-input-placeholder {
+        color: palette(gray, base) !important;
+        opacity: 1 !important;
+      }
+
+      @include breakpoint(max-width $tablet) {
+        padding: 2px 18px !important;
+        width: 249px;
+      }
+
+      .fonts-loaded & {
+        font-family: $sans;
+      }
+    }
+
+    textarea {
+      height: 6em !important;
+      padding: 1.2rem !important;
+
+      .fonts-loaded & {
+        font-family: $sans;
+      }
+    }
+
+    input[type='checkbox'] {
+      height: 15px !important;
+      margin: 0 !important;
+      width: 15px !important;
+    }
+
+    select {
+      cursor: pointer;
+      padding-left: 11px !important;
+      padding-right: 1px !important;
+    }
+
+    select,
+    option {
+      color: palette(gray, base) !important;
+      font-weight: 500;
+
+      .fonts-loaded & {
+        font-family: $sans;
+      }
+    }
+
+    .mktoLabel {
+      @include font-size(11, 11);
+      color: $white;
+      line-height: 1.5;
+
+      @include breakpoint(max-width $tablet) {
+        padding: 0 !important;
+      }
+
+      .fonts-loaded & {
+        font-family: $sans;
+      }
+
+      a {
+        color: $white;
+        font-weight: bold;
+      }
+    }
+
+    .mktoRadioList,
+    .mktoCheckboxList {
+      padding: 2px 0 0 0;
+
+      @include breakpoint(max-width $tablet) {
+        padding: 0 25px 0 0;
+        width: 15px;
+      }
+    }
+
+    .mktoRequiredField {
+      width: 100%;
+    }
+  }
+
+  .mktoAsterix {
+    display: block;
+    left: 0%;
+    margin: 0;
+    position: absolute;
+    top: 22%;
+
+    @include breakpoint(max-width $tablet) {
+      left: 1%;
+    }
+  }
+
+  .mktoFormCol {
+    label[for=SubscribetoFireEyeMailings] {
+      padding: 0 0 0 10px !important;
+
+      @include breakpoint(max-width $desktop) {
+        padding: 0;
+        width: 85% !important;
+
+        strong {
+          padding: 0 !important;
+        }
+
+        a {
+          padding: 0;
+        }
+      }
+
+      @include breakpoint(max-width $tablet) {
+        margin: 0 auto 0 0;
+        overflow-x: hidden;
+        padding: 0 0 0 20px !important;
+        width: 91% !important;
+      }
+
+      a {
+        @include breakpoint(max-width $tablet) {
+          padding: 0;
+        }
+      }
+    }
+
+    label[for=Email] {
+      @include font-size(13, 13);
+
+      .mktoAsterix {
+        top: 38%;
+      }
+    }
+
+    .mktoLabel {
+      @include breakpoint(max-width $tablet) {
+        margin: 0 auto 0 0;
+        overflow-x: hidden;
+        padding-right: 30px !important;
+        width: 91% !important;
+      }
+
+      a {
+        @include breakpoint(max-width $tablet) {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  button {
+    .mktoButton {
+      color: palette(white, base);
+      letter-spacing: 1px;
+      padding: 1rem 2rem;
+      position: relative;
+      text-transform: uppercase;
+      transition: all .4s ease;
+      margin: 10px 0 0 0;
+
+      .fonts-loaded & {
+        font-family: $sans;
+      }
+    }
+  }
+
+  .mktoForm .mktoButtonWrap.mktoDownloadButton .mktoButton {
+    @include font-size(12, 12);
+    background-color: palette(red, base);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 10px !important;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .mktoGutter,
+  .mktoOffset,
+  .mktoClear {
+    display: none;
+  }
+
+  // Recaptcha
+  iframe {
+    padding: 0 !important;
+    .rc-anchor-compact {
+      width: 100% !important;
+      @include breakpoint(max-width $large-mobile) {
+        width: 100% !important;
+      }
+    }
+  }
+
+  .g-recaptcha {
+    max-width: 100%;
+    padding: 0;
+    transform: translate(0, 0) !important;
+    width: 100%;
+
+    .mktoErrorMsg {
+      position: relative;
+      height: 27px;
+    }
+  }
+
+  #rc-imageselect {
+    max-width: 100%;
+  }
+
+  .g-recaptcha > div > div {
+    width: 100% !important;
+    height: 78px;
+    transform:scale(0.88);
+
+    @include breakpoint(max-width $desktop) {
+      transform:scale(1);
+      webkit-transform:scale(1);
+    }
+
+    @include breakpoint(max-width $tablet) {
+      transform:scale(0.85);
+    }
+
+    @include breakpoint(max-width $large-mobile) {
+      transform:scale(1);
+    }
+
+    flex-direction: row;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .g-recaptcha > div {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+
+    @include breakpoint(max-width $large-mobile) {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  #normalRecaptcha,
+  #compactRecaptcha {
+    display: none;
+  }
+}
+
+.mktoModalContent {
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: 600px !important;
+  border: none;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 8px;
+
+   // Adding some rules for marketo form that
+  // has a different structure.
+  .mktoModalMain {
+    max-width: 600px !important;
+
+    .mktoForm {
+      margin: 0;
+    }
+
+    .g-recaptcha > div {
+      margin: 0 !important;
+      @include breakpoint(min-width $desktop) {
+        width: 50% !important;
+      }
+    }
+
+    @include breakpoint(max-width $large-tablet) {
+      strong {
+        padding: 0 !important;
+      }
+    }
+
+    p {
+      color: palette(gray, light);
+    }
+
+    .mktoFormRow {
+      color: palette(gray, light);
+      display: flex;
+      flex-basis: 100%;
+      flex-direction: row;
+      flex-wrap: inherit;
+    }
+
+    div {
+      .mktoHtmlText {
+        height: auto;
+        padding-left: 23px;
+        width: 100% !important;
+
+        @include breakpoint(max-width $desktop) {
+          width: 90% !important;
+        }
+
+        hr {
+          padding: 0;
+          margin: 1em;
+        }
+      }
+    }
+
+    input[type='checkbox'] {
+      margin-top: 2px !important;
+    }
+
+   .mktoFieldWrap {
+      flex-direction: column;
+    }
+
+    label[for=Email] {
+      order: 0;
+    }
+  }
+}

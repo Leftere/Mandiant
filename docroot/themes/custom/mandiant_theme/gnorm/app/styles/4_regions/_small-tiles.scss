@@ -1,0 +1,48 @@
+.section-small-tiles {
+  background-color: $lightWhite;
+  margin-bottom: 0 !important;
+  padding: 8rem 2rem;
+
+  @include breakpoint($desktop) {
+    padding: 8rem 0;
+  }
+
+  .block-cta-media {
+    @include container($desktop);
+    background: transparent;
+
+    @include breakpoint($tablet) {
+      > div {
+        justify-content: space-between;
+      }
+
+      &.right {
+        .layout__region--first {
+          align-self: center;
+          flex: 0 1 45%;
+
+          img {
+            border-bottom-right-radius: 15px;
+            border-top-left-radius: 15px;
+          }
+        }
+
+        .layout__region--second {
+          padding-left: 0rem;
+        }
+      }
+
+      .layout__region--first {
+        img {
+          border-bottom-right-radius: 15px;
+          border-top-left-radius: 15px;
+          width: 100%;
+        }
+      }
+
+      .layout__region--second {
+        padding-left: 6rem;
+      }
+    }
+  }
+}

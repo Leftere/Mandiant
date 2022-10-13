@@ -1,0 +1,79 @@
+{
+  "title": "Front End Template Directory",
+  "utilityLinks": [
+      {
+        "name": "Base Style Guide",
+        "link": "/_styleguide.html"
+      }
+  ],
+  "layoutLinks": [
+    {
+      "name": "T01 - Homepage",
+      "link": "t01-homepage.html"
+    },
+    {
+      "name": "T02 - Landing Page",
+      "link": "t02-landing-page.html"
+    },
+    {
+      "name": "T02 - Support Landing",
+      "link": "t02-support-landing.html"
+    },
+    {
+      "name": "T03 - Solution Category",
+      "link": "t03-solution-category.html"
+    },
+    {
+      "name": "T03 - Solution Detail",
+      "link": "t03-solution-detail.html"
+    },
+    {
+      "name": "T04 - Product Detail",
+      "link": "t04-product-detail.html"
+    },
+    {
+      "name": "T04 - Service Detail",
+      "link": "t04-service-detail.html"
+    },
+    {
+      "name": "T05 - General Listing",
+      "link": "t05-general-listing.html"
+    },
+    {
+      "name": "T06 - Article",
+      "link": "t06-article.html"
+    },
+    {
+      "name": "T07 - Case Study",
+      "link": "t07-case-study.html"
+    },
+    {
+      "name": "T08 - Contact Us",
+      "link": "t08-contact-us.html"
+    },
+    {
+      "name": "T09 - Sign Up",
+      "link": "t09-sign-up.html"
+    },
+    {
+      "name": "T09 - Sign Up: Incident Response",
+      "link": "t09-sign-up-incident-response.html"
+    },
+    {
+      "name": "T11 - Campaign Landing",
+      "link": "t11-campaign-landing.html"
+    },
+    {
+      "name": "T12 - Basic Page",
+      "link": "t12-basic-page.html"
+    },
+    {
+      "name": "T13 - Leadership",
+      "link": "t13-leadership.html"
+    },
+    {
+      "name": "T14 - Bio Detail",
+      "link": "t14-bio-detail.html"
+    }
+  ]
+}

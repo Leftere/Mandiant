@@ -1,0 +1,21 @@
+uuid: 272e0aba-ccf0-4338-9f7e-1af810b7eb4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.featured_logos
+    - field.storage.block_content.layout_selection
+id: block_content.featured_logos.layout_selection
+field_name: layout_selection
+entity_type: block_content
+bundle: featured_logos
+label: Layout
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: layout_library
+  handler_settings: {  }
+field_type: entity_reference

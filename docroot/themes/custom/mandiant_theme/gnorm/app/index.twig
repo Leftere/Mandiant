@@ -1,0 +1,24 @@
+{# index.twig #}
+{% extends '@includes/1_core/layout.twig' %}
+
+{% block page %}
+  <section class="wrapper">
+    <h1>{{ title }}</h1>
+
+    <h2>Layouts</h2>
+    <ul>
+      {% for item in layoutLinks %}
+        <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+      {% endfor %}
+    </ul>
+
+    <h2>Utility</h2>
+    <ul>
+      {% for item in utilityLinks %}
+        <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+      {% endfor %}
+      <li><a href="/scripts/report.html" target="_blank">Webpack Bundle Analyer report</a></li>
+    </ul>
+
+  </section>
+{% endblock %}

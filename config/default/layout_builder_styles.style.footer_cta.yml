@@ -1,0 +1,14 @@
+uuid: 918b6e3c-aff5-44c2-a70b-d6b7c0ff0f05
+langcode: en
+status: true
+dependencies: {  }
+id: footer_cta
+label: 'Footer CTA'
+classes: cta--full
+type: component
+group: modifiers_type
+weight: -15
+block_restrictions:
+  - 'inline_block:cta'
+layout_restrictions:
+  - layout_onecol

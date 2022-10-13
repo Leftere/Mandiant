@@ -1,0 +1,79 @@
+# This file contains your BLT configuration. For a list of all available
+# properties with current values run `blt config:dump`. Default values come
+# from vendor/acquia/blt/config/build.yml.
+#
+# These values can be overridden at the command line using `--define`, i.e.:
+# blt setup --define project.profile.name=minimal
+#
+# However, when tokens in this file are expanded, they will not use any such
+# command-line overrides. For instance, `blt sync --define drush.aliases.local`
+# will not modify `drush.default_alias`, even though `drush.default_alias` is
+# set to `drush.aliases.local` by default.
+project:
+  machine_name: mandiant
+  # Used for enforcing correct git commit msg syntax.
+  prefix: MAND
+  human_name: 'Mandiant'
+  profile:
+    name: mandiant_main
+  # This will be used as the local uri for all developers.
+  local:
+    protocol: http
+    hostname: '${project.machine_name}.docksal'
+
+# Configuration settings for new git repository.
+git:
+  default_branch: main-build
+  remotes:
+    - mandiant@svn-21939.prod.hosting.acquia.com:mandiant.git
+  hooks:
+    commit-msg: false
+    pre-commit: false
+    pre-push: false
+  # The value of a hook should be the file path to a directory containing an
+  # executable file named after the hook. Changing a hook value to 'false' will disable it.
+  # You should execute `blt blt:init:git-hooks` after modifying these values.
+#  hooks:
+#    commit-msg: ${repo.root}/blt/scripts/git-hooks
+#    pre-commit: ${repo.root}/blt/scripts/git-hooks
+#    pre-push: ${repo.root}/blt/scripts/git-hooks
+
+deploy:
+  # When manually deploying a tag, also tag the source repository.
+  tag_source: true
+
+drush:
+  # You can set custom project aliases in drush/sites/*.site.yml.
+  aliases:
+    # The remote environment from which the database will be pulled.
+    remote: '${project.machine_name}.prod'
+    # The local environment against which all local drush commands are run.
+    local: self
+    # The drush alias against which all ci commands are run.
+    ci: self
+    # The default drush alias to be used when no environment is specified.
+  default_alias: '${drush.aliases.local}'
+
+# Manages front-end dependencies and builds.
+command-hooks:
+  # Download and install all required front-end theme files.
+  frontend-reqs:
+    dir: '${repo.root}/blt/scripts'
+    command: 'bash frontend-setup.sh ${repo.root}'
+  # Runs front-end tasks and builds theme files.
+  frontend-assets:
+    dir: '${repo.root}/blt/scripts'
+    command: 'bash frontend-build.sh ${repo.root}'
+
+# Disable git hooks globally.
+disable-targets:
+  drupal:
+    toggle:
+      modules: true
+
+cm:
+  allow-overrides: true
+  strategy: config-split
+
+setup:
+  strategy: sync

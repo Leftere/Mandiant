@@ -1,0 +1,6 @@
+.block-bundle-text {
+  h2 {
+    @include font-size(30, 40);
+    margin: 1rem 0;
+  }
+}

@@ -1,0 +1,18 @@
+uuid: d94ddd7f-8e3d-4ac5-ad58-65227c4fcdff
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: block_content.hero
+target_entity_type_id: block_content
+target_bundle: hero
+default_langcode: site_default
+language_alterable: true

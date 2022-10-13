@@ -1,0 +1,8 @@
+uuid: 0bf04bf0-0ab8-4572-b83c-7839fe6ac29a
+langcode: en
+status: true
+dependencies: {  }
+id: view
+label: Catalog
+revision: 0
+description: ''

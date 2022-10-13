@@ -1,0 +1,33 @@
+{# layout.twig #}
+<!doctype html>
+<html lang="en" class="no-js">
+
+  <head>
+  {% block head %}
+    {% include '@includes/1_core/head.twig' %}
+  {% endblock %}
+  </head>
+
+  <body{{- bodyClass is defined ? ' class="' ~ bodyClass ~ '"' : '' }}>
+
+  {% include "@includes/2_pieces/skipLinks.twig" %}
+
+  {% block page_top %}
+    {% include '@includes/4_regions/header.twig' %}
+  {% endblock %}
+
+  <main id="maincontent">
+  {% block page %}{% endblock %}
+  </main>
+
+  {% block page_bottom %}
+    {% include '@includes/4_regions/footer.twig' %}
+  {% endblock %}
+
+  {% if not isBuild %}
+    {% include '@includes/1_core/browser-sync.twig' %}
+  {% endif %}
+
+  </body>
+
+</html>

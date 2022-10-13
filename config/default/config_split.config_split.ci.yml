@@ -1,0 +1,15 @@
+uuid: 3b346787-75df-4193-ba7e-e7e264b66af2
+langcode: en
+status: false
+dependencies: {  }
+id: ci
+label: CI
+description: ''
+folder: ../config/envs/ci
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 1

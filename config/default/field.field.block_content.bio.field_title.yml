@@ -1,0 +1,19 @@
+uuid: 718f6e7c-54c9-4491-8ba0-277a9aef0994
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.bio
+    - field.storage.block_content.field_title
+id: block_content.bio.field_title
+field_name: field_title
+entity_type: block_content
+bundle: bio
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

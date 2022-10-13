@@ -1,0 +1,17 @@
+attributes:
+  class:
+    label: ''
+    description: ''
+  target:
+    label: ''
+    description: ''
+    options:
+      _blank: 'New window (_blank)'
+      _self: 'Same window (_self)'
+    default_value: ''
+  rel:
+    label: ''
+    description: ''
+    options:
+      noopener: 'No opener'
+    default_value: ''

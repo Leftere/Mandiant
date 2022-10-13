@@ -1,0 +1,15 @@
+uuid: a21bb714-0ed7-4562-b7fc-08739011c024
+langcode: en
+status: true
+dependencies: {  }
+name: wide_320
+label: 'Wide 320px'
+effects:
+  2e59285f-a138-48e3-b758-3a4d9dd51e83:
+    uuid: 2e59285f-a138-48e3-b758-3a4d9dd51e83
+    id: image_scale
+    weight: 1
+    data:
+      width: 320
+      height: null
+      upscale: true

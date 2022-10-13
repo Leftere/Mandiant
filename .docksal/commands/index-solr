@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+## Reindex local solr server.
+##
+## Usage: fin index-solr
+
+# Abort if anything fails
+set -e
+
+echo "Starting local Solr server reindexing."
+
+echo "Clearing old indexes."
+fin exec /var/www/vendor/bin/drush sapi-c
+
+echo "Rebuilding tracking information."
+fin exec /var/www/vendor/bin/drush sapi-rt
+
+echo "Reindexing all Solr server indexes"
+fin exec /var/www/vendor/bin/drush sapi-i

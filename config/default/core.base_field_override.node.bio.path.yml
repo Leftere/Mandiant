@@ -1,0 +1,20 @@
+uuid: 4305bd37-327d-4fb0-a13b-44b20c2933a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.bio
+  module:
+    - path
+id: node.bio.path
+field_name: path
+entity_type: node
+bundle: bio
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

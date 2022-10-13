@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+#: exec_target = cli
+
+## Resets username and password for uid=1
+##
+## Usage: fin build-wf
+
+# Abort if anything fails
+set -e
+
+echo "Transpiling wireframe styles..."
+npm install -g sass
+cd /var/www/docroot/modules/custom/mandiant_tweaks
+sass --watch scss/styles.scss css/styles.css

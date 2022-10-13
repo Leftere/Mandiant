@@ -1,0 +1,19 @@
+uuid: 8c0622bc-20a1-4d2d-b450-611605d86ae1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.site_setting_entity.field_phone_uk
+    - site_settings.site_setting_entity_type.phones
+id: site_setting_entity.phones.field_phone_uk
+field_name: field_phone_uk
+entity_type: site_setting_entity
+bundle: phones
+label: 'United Kingdom'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,293 @@
+.tb-megamenu {
+  @include breakpoint(max-height 380px) {
+    display: none;
+  }
+
+  .tb-megamenu-button {
+    display: none;
+  }
+
+  .mega > .mega-dropdown-menu {
+    min-width: 100%;
+    top: 7.5rem;
+
+    @include breakpoint(min-width 1000px) {
+      left: 0;
+      position: fixed;
+      right: 0;
+      width: 100%;
+    }
+
+    .mega-dropdown-inner {
+      background-color: #eeeef2;
+      overflow: auto;
+      position: relative;
+
+      &:before {
+        background-image: url('../images/backgrounds/meganav-bg.png');
+        background-repeat: no-repeat;
+        bottom: 0;
+        content: '';
+        height: 400px;
+        position: absolute;
+        right: 0;
+        width: 860px;
+        z-index: 0;
+      }
+
+      .tb-megamenu-row {
+        align-items: center;
+        display: flex;
+        height: calc(100vh - 150px); // 100vh - header
+        justify-content: flex-start;
+
+        @include breakpoint($tablet) {
+          padding: 0 10rem 10rem 10rem;
+        }
+      }
+    }
+
+    .intro {
+      width: 50%;
+
+      @include breakpoint($desktop) {
+        margin: 0;
+        width: 33%;
+      }
+
+      &.cta-long {
+        .devider {
+          h3 {
+            &:after {
+              right: -9rem;
+            }
+          }
+        }
+      }
+
+      &.cta-long-text {
+        .devider {
+          h3 {
+            &:after {
+              right: -20rem;
+            }
+          }
+        }
+      }
+
+      .block-bundle-cta {
+        background: transparent;
+        margin-left: 10rem;
+
+        .devider {
+          margin: 0;
+          padding: 0;
+        }
+
+        .sub-title {
+          h2 {
+            @include font-size(25, 24);
+            font-weight: 500;
+            max-width: 150px;
+          }
+        }
+
+        .cta-button {
+          a {
+            color: $white;
+          }
+        }
+      }
+
+      .devider {
+        position: relative;
+
+        h3 {
+          @include font-size(28, 32);
+          display: inline-block;
+          position: relative;
+          text-transform: uppercase;
+          width: 20rem;
+
+          &:after {
+            border-bottom: 2px solid red;
+            border-right: 2px solid red;
+            border-top: 2px solid red;
+            content: '';
+            height: 327px;
+            position: absolute;
+            right: -6rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+
+            @include breakpoint(max-width 1500px) {
+              // right: 5rem;
+            }
+
+            @include breakpoint(max-width 1100px) {
+              // right: 0;
+            }
+          }
+        }
+
+        a {
+          background-color: #d70e0a;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 0;
+          color: $white;
+          display: inline-block;
+          font-weight: 600;
+          letter-spacing: 1px;
+          margin: 0;
+          padding: 1rem 2rem;
+          position: relative;
+          text-transform: uppercase;
+          transition: all .4s ease;
+
+          &:before {
+            background-image: url('../images/arrow.svg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 14px;
+            content: '';
+            height: 100%;
+            position: absolute;
+            right: -40px;
+            top: 0;
+            transform: rotate(225deg);
+            width: 40px;
+            z-index: 3;
+          }
+
+          &:after {
+            background-color: darken($red, 10%);
+            background-image: none;
+            border-bottom-right-radius: 10px;
+            bottom: 0;
+            content: '';
+            height: 38px;
+            left: auto;
+            position: absolute;
+            right: -38px;
+            transform: rotate(270deg);
+            transition: .4s background-color ease;
+            width: 38px;
+          }
+        }
+      }
+    }
+
+    .links {
+      margin: 0;
+      padding: 0;
+      width: 33%;
+
+      .tb-megamenu-block {
+        // margin-top: 8rem;
+
+        .devider {
+          span {
+            @include font-size(14, 14);
+            // color: $medGray;
+            display: block;
+            font-weight: 600;
+            letter-spacing: .5px;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+          }
+
+          p {
+            @include font-size(18, 17);
+            color: $black;
+            font-weight: 600;
+            margin: 1.5rem 0 0 0;
+            position: relative;
+
+            span {
+              @include font-size(14, 20);
+              display: inline-block;
+              font-weight: 400;
+              letter-spacing: 0;
+              text-transform: none;
+            }
+          }
+
+          a {
+            @include font-size(18, 17);
+            color: $black;
+            font-weight: 600;
+            margin: 0;
+            position: relative;
+
+            &:after {
+              background-image: url('../images/arrow-red.svg');
+              background-size: cover;
+              content: '';
+              height: 13px;
+              left: -3px;
+              position: absolute;
+              top: 6px;
+              transform: rotate(230deg);
+              width: 13px;
+            }
+          }
+        }
+      }
+
+      .block-bundle-cta {
+        background: transparent;
+        padding: 2rem 0;
+
+        .layout--twocol-section {
+          flex-direction: column-reverse;
+        }
+      }
+    }
+
+    .mega-dropdown-bottom {
+      background: $black;
+      display: flex;
+      justify-content: flex-end;
+      left: 0;
+      padding: 2rem 0;
+      position: fixed;
+      right: 0;
+
+      @include breakpoint(max-width 980px) {
+        display: none;
+      }
+
+      a {
+        color: $white;
+        position: relative;
+        text-transform: uppercase;
+
+        &:after {
+          background: $red;
+          content: '';
+          height: 2px;
+          left: -7px;
+          position: absolute;
+          top: 12px;
+          transform: rotate(45deg);
+          width: 20px;
+        }
+
+        &:before {
+          background: $red;
+          content: '';
+          height: 2px;
+          left: -7px;
+          position: absolute;
+          top: 12px;
+          transform: rotate(-45deg);
+          width: 20px;
+        }
+      }
+    }
+  }
+}
+

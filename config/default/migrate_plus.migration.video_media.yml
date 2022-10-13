@@ -1,0 +1,38 @@
+uuid: 9e32694a-0837-4e10-8f46-63314def764d
+langcode: en
+status: true
+dependencies: {  }
+id: video_media
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - videos
+migration_group: mandiant_migrate
+label: 'Video media'
+source:
+  plugin: mandiant_video
+process:
+  bundle:
+    plugin: default_value
+    default_value: video
+  langcode:
+    plugin: default_value
+    default_value: en
+  field_media_oembed_video: video_url
+  field_terms_topic:
+    -
+      plugin: entity_generate
+      source: topic
+  field_terms_industry:
+    plugin: entity_generate
+    source: industry
+  uid:
+    plugin: default_value
+    default_value: 1
+  status:
+    plugin: default_value
+    default_value: 1
+destination:
+  plugin: 'entity:media'
+migration_dependencies: {  }

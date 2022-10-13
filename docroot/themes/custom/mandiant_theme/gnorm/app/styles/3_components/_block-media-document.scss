@@ -1,0 +1,23 @@
+.documents-resource {
+  h2 {
+    @include font-size(30, 30);
+    color: palette(blue, darkermed);
+    font-weight: 400;
+  }
+
+  .media {
+    &--document {
+      h4 {
+        @include font-size(17, 17);
+        color: palette(blue, darkermed);
+        letter-spacing: .5px;
+        padding-right: 5px;
+      }
+
+      a {
+        @include font-size(13, 13);
+        letter-spacing: 1px;
+      }
+    }
+  }
+}

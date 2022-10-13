@@ -1,0 +1,49 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: f2e2245f-1e52-406d-bd3b-b28133e668b2
+  bundle: card
+  default_langcode: en
+  depends:
+    76142c52-522d-4fd1-aa68-da16dde771e8: user
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Inline block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      entity: 76142c52-522d-4fd1-aa68-da16dde771e8
+  content_translation_created:
+    -
+      value: 1626967742
+  field_alternative:
+    -
+      value: "<ul>\r\n\t<li><a href=\"http://mandiant.docksal/samples/solutions-overview#\">How can I resolve cyber security incidents quickly, efficiently and at scale?</a></li>\r\n\t<li><a href=\"http://mandiant.docksal/samples/solutions-overview#\">How can I quickly gain insight on priority threats and follow up with expert investigation?</a></li>\r\n</ul>\r\n"
+      format: basic_html
+  field_body:
+    -
+      value: "<p>Accelerate response and minimize impact of security incidents by faster detection across multiple vectors.</p>\r\n"
+      format: basic_html
+  field_cta:
+    -
+      uri: 'internal:#'
+      title: 'Learn More'
+      options: {  }
+  field_title:
+    -
+      value: 'Reduce the impact of<br/>security incidents'

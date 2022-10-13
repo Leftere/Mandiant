@@ -1,0 +1,10 @@
+uuid: dce8929a-a123-42c6-b343-5ce74b5681dc
+langcode: en
+status: true
+dependencies: {  }
+id: modifiers_image
+label: 'Image modifiers'
+multiselect: multiple
+form_type: checkboxes
+required: 0
+weight: 0

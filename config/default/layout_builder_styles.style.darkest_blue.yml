@@ -1,0 +1,13 @@
+uuid: b9a44b8c-9a77-40fb-809a-ef7a3d629743
+langcode: en
+status: true
+dependencies: {  }
+id: darkest_blue
+label: 'Solid (Darkest blue)'
+classes: darkest-blue
+type: component
+group: background
+weight: -17
+block_restrictions:
+  - 'inline_block:card'
+layout_restrictions: {  }

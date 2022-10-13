@@ -1,0 +1,9 @@
+recaptcha_integration:
+  version: 1.x
+  css:
+    theme:
+      https://www.fireeye.com/etc/designs/fireeye-www/clientlibs_recaptcha.min.css: { type: external }
+
+  js:
+    js/recaptcha-marketo.js : { weight: -2 }
+    https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit: { type: external, weight: -1 ,attributes: { async: true, defer: true } }

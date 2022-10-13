@@ -1,0 +1,25 @@
+uuid: 507264a6-12b7-4901-9982-81ae5d0822a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.bottom
+  module:
+    - system
+  theme:
+    - mandiant_theme
+id: bottom
+theme: mandiant_theme
+region: bottom
+weight: -4
+provider: null
+plugin: 'system_menu_block:bottom'
+settings:
+  id: 'system_menu_block:bottom'
+  label: Bottom
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

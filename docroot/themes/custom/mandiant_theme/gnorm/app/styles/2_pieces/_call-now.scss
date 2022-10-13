@@ -1,0 +1,79 @@
+.call-now {
+  > span {
+    @include font-size(14, 34);
+    color: $white;
+    display: block;
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-transform: none;
+  }
+
+  form {
+    display: inline-block;
+
+    .custom-select-container {
+      @include font-size(14, 34);
+      background: transparent;
+      color: $white;
+      font-weight: 700;
+      margin-right: 1rem;
+      min-width: 6rem;
+    }
+
+    .custom-select {
+      &-opener {
+        background: transparent;
+        padding-right: 3rem;
+        position: relative;
+        text-align: right;
+
+        &:after {
+          background: url('../images/chevron--white.svg') no-repeat 50% 50%;
+          content: '';
+          height: 1rem;
+          pointer-events: none;
+          position: absolute;
+          right: 1rem;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 1rem;
+        }
+      }
+
+      &-panel {
+        background-color: $black;
+        color: $white;
+      }
+
+      &-option {
+        padding: 0 1rem 0 2rem;
+        position: relative;
+        white-space: nowrap;
+
+        &.is-selected {
+          &:before {
+            background: url('../images/checkmark--white.svg') no-repeat 50% 50%;
+            content: '';
+            height: 1rem;
+            left: .5rem;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1rem;
+          }
+        }
+
+        &.has-focus {
+          background-color: $red;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  a {
+    @include font-size(16, 24);
+    color: $white;
+    font-weight: 700;
+  }
+}

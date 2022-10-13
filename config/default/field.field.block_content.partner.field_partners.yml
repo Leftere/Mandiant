@@ -1,0 +1,29 @@
+uuid: dd185765-9b49-42bf-b714-680267c404c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.partner
+    - field.storage.block_content.field_partners
+    - node.type.partner
+id: block_content.partner.field_partners
+field_name: field_partners
+entity_type: block_content
+bundle: partner
+label: Partners
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      partner: partner
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

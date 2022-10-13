@@ -1,0 +1,26 @@
+uuid: b93d3998-0e9c-4527-8a10-f7436b0632cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tile
+    - field.storage.block_content.field_body
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: '0'
+    plain_text: '0'
+id: block_content.tile.field_body
+field_name: field_body
+entity_type: block_content
+bundle: tile
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

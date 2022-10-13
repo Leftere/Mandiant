@@ -1,0 +1,16 @@
+uuid: 652ad82e-a941-4272-9a12-b2d7d2aaf554
+langcode: en
+status: true
+dependencies: {  }
+id: solid_light_white_
+label: 'Solid (Light white)'
+classes: bg-light-white
+type: section
+group: background
+weight: 0
+block_restrictions: {  }
+layout_restrictions:
+  - layout_onecol
+  - layout_twocol_section
+  - layout_threecol_section
+  - layout_fourcol_section

@@ -1,0 +1,63 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Fri Mar 23 2018 00:08:13 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "DOSfuscation: Exploring the Depths of Cmd.exe Obfuscation and Detection Techniques",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "59c0320a-b070-4a9b-b8bf-0b6b89a4d8da",
+    "author": "Daniel Bohannon",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "adam.greenberg@fireeye.com",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "ab22f731-35a8-4f20-9e75-edfa9a0c0af3"
+    ],
+    "jcr:created": "Fri Mar 23 2018 00:08:13 GMT-0400",
+    "cq:lastReplicated": "Fri Mar 23 2018 00:08:07 GMT-0400",
+    "cq:lastModified": "Wed Mar 21 2018 11:53:27 GMT-0400",
+    "jcr:baseVersion": "ab22f731-35a8-4f20-9e75-edfa9a0c0af3",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:daniel-bohannon",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:detection",
+      "fireeye-blog-tags:obfuscation"
+    ],
+    "jcr:uuid": "47d18638-3e73-43bd-a606-255948ddcd28",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Thu Mar 22 2018 23:45:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003ESkilled attackers continually seek out new attack vectors, while employing evasion techniques to maintain the effectiveness of old vectors, in an ever-changing defensive landscape. Many of these threat actors employ obfuscation frameworks for common scripting languages such as JavaScript and PowerShell to thwart signature-based detections of common offensive tradecraft written in these languages.\u003C\/p\u003E\n\u003Cp\u003EHowever, as defenders\u0026#39; visibility into these popular scripting languages increases through better logging and defensive tooling, some stealthy attackers have shifted their tradecraft to languages that do not support this additional visibility. At a minimum, determined attackers are adding dashes of simple obfuscation to previously detected payloads and commands to break rigid detection rules.\u003C\/p\u003E\n\u003Cp\u003EIn this \u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/dosfuscation-report.pdf\u0022\u003EDOSfuscation white paper\u003C\/a\u003E, first presented at Black Hat Asia 2018, I showcase nine months of research into several facets of command line argument obfuscation that affect static and dynamic detection approaches. Beginning with cataloguing a half-dozen characters with significant obfuscation capabilities (only two of which I have identified being used in the wild), I then highlight the static detection evasion capabilities of environment variable substring encoding. Combining these techniques, I unveil four never-before-seen payload obfuscation approaches that are fully compatible with any input command on cmd.exe\u0026#39;s command line. These obfuscation capabilities de-obfuscate in the current cmd.exe session for both interactive and noninteractive sessions, and avoid all command line logging. Finally, I discuss the building blocks required for these new encoding and obfuscation capabilities and outline several approaches that defenders can take to begin detecting this genre of obfuscation.\u003C\/p\u003E\n\u003Cp\u003EAs a Senior Applied Security Researcher with FireEye\u0026#39;s Advanced Practices Team, I am tasked with researching, developing and deploying new detection capabilities to FireEye\u0026#39;s detection platform to stay ahead of advanced threat actors and their ever-changing tactics, techniques and procedures. FireEye customers have been benefiting from multiple layers of innovative obfuscation detection capabilities developed and deployed over the past nine months as a direct result of this research.\u003C\/p\u003E\n\u003Cp\u003EDownload the \u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/dosfuscation-report.pdf\u0022\u003EDOSfuscation white paper\u003C\/a\u003E today.\u003C\/p\u003E\n\u003Cp\u003E\u003Ci\u003EDaniel Bohannon (@danielhbohannon) is a Senior Applied Security Researcher on FireEye\u0026#39;s Advanced Practices Team.\u003C\/i\u003E\u003C\/p\u003E\n",
+        "jcr:lastModified": "Wed Mar 21 2018 11:49:26 GMT-0400",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EThis\u0026nbsp;DOSfuscation white paper showcases nine months of research into several facets of command line argument obfuscation that affect static and dynamic detection approaches.\u0026nbsp;\u003C\/p\u003E\n",
+      "jcr:lastModified": "Wed Mar 21 2018 11:51:09 GMT-0400",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Wed Mar 21 2018 11:53:27 GMT-0400",
+      "imageRotate": "0"
+    }
+  }
+}

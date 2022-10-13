@@ -1,0 +1,7 @@
+uuid: a08a842a-d3b1-4404-a85d-a5a25398dc5b
+langcode: en
+status: true
+dependencies: {  }
+name: metatag_social_sharing_image
+label: 'Meta Tag Social Sharing Image'
+effects: {  }

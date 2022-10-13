@@ -1,0 +1,10 @@
+// =======================================
+//    #UTILITY - SMALL CAPS
+// =======================================
+
+@mixin small-caps() {
+  @include font-size(14, 22);
+  font-weight: 700;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}

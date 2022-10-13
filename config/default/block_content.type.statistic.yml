@@ -1,0 +1,8 @@
+uuid: c708ca81-2c75-4d6d-b29e-0acd1fcb0fa9
+langcode: en
+status: true
+dependencies: {  }
+id: statistic
+label: Statistic
+revision: 0
+description: ''

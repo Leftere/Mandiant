@@ -1,0 +1,477 @@
+footer.footer {
+  background: $black;
+  color: $white;
+  padding-top: 16rem;
+
+  @include breakpoint($desktop) {
+    padding-top: 10rem;
+  }
+
+  .footer_logo {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0;
+    text-align: center;
+
+    > svg {
+      @include breakpoint(max-width 400px) {
+        max-width: 100%;
+      }
+    }
+
+    span {
+      @include font-size(14, 14);
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-top: 1rem;
+      text-transform: uppercase;
+    }
+
+    svg {
+      margin: 0 auto;
+    }
+  }
+
+  .wrapper,
+  #block-footer {
+    @include container($desktop);
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    > .wrapper {
+      max-width: none;
+      padding: 0;
+    }
+  }
+
+  #block-footer,
+  #block-socialmenu {
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
+
+    @include breakpoint($desktop) {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  .subscribe {
+    padding: 0;
+
+    @include breakpoint($desktop) {
+      display: flex;
+      flex: 0 0 50%;
+      padding: 5rem 0;
+    }
+
+    &__left {
+      text-align: center;
+
+      @include breakpoint($desktop) {
+        flex-basis: 50%;
+        max-width: 50%;
+        text-align: left;
+      }
+
+      svg {
+        display: inline-block;
+        margin-top: 3rem;
+        max-width: 32rem;
+      }
+
+      span {
+        @include small-caps;
+        @include font-size(12);
+        display: block;
+        font-weight: 700;
+        margin: 1rem 0 3rem;
+        text-align: center;
+
+        @include breakpoint($desktop) {
+          margin-bottom: 0;
+          max-width: 30rem;
+        }
+      }
+    }
+
+    &__right {
+      margin-top: 4rem;
+
+      @include breakpoint($desktop) {
+        align-items: flex-end;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+      }
+
+      .subscribe--form {
+        margin: 0 auto 3rem;
+        max-width: 30rem;
+        padding: 1rem 2rem;
+        position: relative;
+        text-align: left;
+
+        @include breakpoint($desktop) {
+          margin: 0;
+          max-width: 100%;
+          padding: 1rem 3rem;
+        }
+
+        &:after {
+          border-bottom: 2px solid $red;
+          border-left: 2px solid $red;
+          border-top: 2px solid $red;
+          content: '';
+          height: 100%;
+          left: -15px;
+          position: absolute;
+          top: 0;
+          width: 15px;
+        }
+
+        &:before {
+          border-bottom: 2px solid $red;
+          border-right: 2px solid $red;
+          border-top: 2px solid $red;
+          content: '';
+          height: 100%;
+          position: absolute;
+          right: -15px;
+          top: 0;
+          width: 15px;
+        }
+      }
+    }
+
+    #contact-message-mandiant-newsletter-form {
+      padding-bottom: 1rem;
+
+      @include breakpoint($desktop) {
+        display: flex;
+        flex-wrap: nowrap;
+      }
+
+      .field--type-email {
+        margin-bottom: 1rem;
+
+        @include breakpoint($desktop) {
+          margin-bottom: 0;
+          margin-right: 2rem;
+        }
+      }
+
+      label {
+        @include visually-hidden;
+      }
+    }
+
+    h5 {
+      @include small-caps;
+      @include font-size(14, 15);
+      color: palette(gray, midlight);
+      font-weight: 700;
+      margin: 0 0 1rem 0;
+    }
+
+    form {
+      justify-content: left;
+
+      .form-email {
+        background: $white;
+        border: 0;
+        border-bottom: 1px solid rgba(48, 60, 66, .7);
+        border-radius: 5px 0px 5px 0px;
+        box-shadow: none;
+        height: 34px;
+        max-width: 25rem;
+        outline: none;
+        padding: 5px 15px;
+      }
+
+      .form-submit {
+        @include font-size(14, 14);
+        background-color: $red;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0;
+        border-width: 0;
+        color: $white;
+        font-weight: 600;
+        letter-spacing: 1px;
+        outline: none;
+        padding: 1rem 2rem;
+        position: relative;
+        text-transform: uppercase;
+        transition: all .4s ease;
+
+        &:hover,
+        &:focus {
+          background: darken($red, 10%);
+        }
+      }
+    }
+  }
+
+  .navigation {
+    @include container($desktop);
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    @include breakpoint($large-mobile) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-bottom: 0;
+
+      li {
+        flex: 50%;
+      }
+    }
+
+    @include breakpoint($desktop) {
+      li {
+        flex: 1;
+      }
+    }
+
+    > li {
+      @include small-caps;
+      @include font-size(14, 15);
+      flex-basis: 20rem;
+      font-weight: 700;
+      padding-bottom: 1rem;
+      padding-top: 4rem;
+
+      @include breakpoint($large-tablet) {
+        max-width: 20rem;
+        padding-top: 0;
+      }
+
+      > a {
+        color: palette(gray, midlight);
+      }
+
+      ul {
+        margin-top: 2rem;
+
+        li {
+          @include font-size(16, 22);
+          font-weight: 400;
+          letter-spacing: 0;
+          position: relative;
+
+          @include breakpoint($desktop) {
+            @include font-size(14, 34);
+          }
+
+          a {
+            color: $white;
+            display: inline-block;
+            padding: .5rem 0;
+            position: relative;
+            text-transform: capitalize;
+
+            @include breakpoint($large-tablet) {
+              padding: 0;
+            }
+
+            &[target='_blank'] {
+              &:before {
+                background-image: url('../images/external-link.svg');
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: 16px;
+                content: '';
+                height: 100%;
+                left: -2.4rem;
+                position: absolute;
+                top: 0;
+                width: 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .social-media {
+    background: $lightBlack;
+    text-align: center;
+
+    @include breakpoint($desktop) {
+      text-align: left;
+    }
+
+    .wrapper {
+      @include container($desktop);
+      color: $white;
+      padding-bottom: 4rem;
+      padding-top: 4rem;
+    }
+
+    .social-media__wrapper {
+      @include breakpoint($tablet) {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    .social-media__title {
+      @include small-caps;
+      color: palette(gray, midlight);
+      text-align: center;
+
+      @include breakpoint($tablet) {
+        text-align: left;
+      }
+    }
+
+    .call-now {
+      margin-right: 2rem;
+
+      @include breakpoint($desktop) {
+        text-align: right;
+      }
+    }
+
+    .social-media__icons {
+      margin-bottom: 2rem;
+
+      @include breakpoint($tablet) {
+        margin-bottom: 0;
+      }
+
+      ul {
+        display: inline-flex;
+        margin: 0 0 1rem;
+        padding: 0;
+      }
+
+      li {
+        margin: 0 2rem 0 0;
+      }
+
+      svg {
+        color: $white;
+        height: 3rem;
+        pointer-events: none;
+        width: 3rem;
+      }
+    }
+
+    .navigation {
+      margin: 0;
+
+      li {
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.bottom {
+  background: $black;
+  color: $white;
+  padding: 0;
+
+  .wrapper {
+    @include container($desktop);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+    text-align: center;
+
+    @include breakpoint($desktop) {
+      flex-direction: row;
+    }
+  }
+
+  #block-copyright,
+  #block-dropdownlanguage-2 {
+    color: rgba(#fff, .4);
+  }
+
+  #block-copyright {
+    order: 2;
+
+    @include breakpoint($desktop) {
+      order: 1;
+    }
+
+    p {
+      @include font-size(12, 34);
+      margin: 0;
+      padding: $spacing-unit 0;
+      text-transform: none;
+
+      @include breakpoint($desktop) {
+        padding: 0;
+      }
+    }
+
+    .devider {
+      margin: 0;
+    }
+  }
+
+  #block-bottom {
+    @include font-size(12, 34);
+    flex: 1;
+    justify-content: left;
+
+    @include breakpoint($large-mobile) {
+      justify-content: center;
+    }
+
+    @include breakpoint($desktop) {
+      order: 2;
+    }
+
+    > ul {
+      margin: 0;
+      padding: 2rem 0;
+      text-align: center;
+
+      @include breakpoint($tablet) {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        text-align: center;
+      }
+
+      li {
+        font-weight: 500;
+        margin: 0 1rem;
+
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .dropdown-language-item {
+    li {
+      @include font-size(12, 34);
+    }
+  }
+
+  nav.contextual-region {
+    ul {
+      li {
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+}

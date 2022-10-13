@@ -1,0 +1,10 @@
+uuid: 45d18955-c312-44d8-abb9-77bd7e14565e
+langcode: en
+status: true
+dependencies: {  }
+id: mandiant_migrate
+label: 'Mandiant migrate'
+description: 'Migration for blogs'
+source_type: ''
+module: null
+shared_configuration: null

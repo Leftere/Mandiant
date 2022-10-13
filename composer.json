@@ -1,0 +1,318 @@
+{
+    "name": "acquia/drupal-minimal-project",
+    "description": "Minimal Acquia-compatible Drupal application based on the Drupal Recommended Project",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Acquia Engineering",
+            "homepage": "https://www.acquia.com",
+            "role": "Maintainer"
+        }
+    ],
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        "asset-packagist": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        "blazy": {
+            "type": "package",
+            "package": {
+                "name": "dinbror/blazy",
+                "version": "1.8.2",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/dinbror/blazy/archive/refs/tags/1.8.2.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "slick": {
+            "type": "package",
+            "package": {
+                "name": "kenwheeler/slick",
+                "version": "1.8.1",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/kenwheeler/slick/archive/refs/tags/v1.8.1.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "chosen": {
+            "type": "package",
+            "package": {
+                "name": "harvesthq/chosen",
+                "version": "1.8.7",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.7/chosen_v1.8.7.zip",
+                    "type": "zip"
+                }
+            }
+        }
+    },
+    "require": {
+        "acquia/blt": "^12",
+        "acquia/blt-phpcs": "^1.0",
+        "acquia/drupal-spec-tool": "*",
+        "acquia/memcache-settings": "*",
+        "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.6",
+        "d8-contrib-modules/cloudflarephpsdk": "1.0.0-alpha5",
+        "dinbror/blazy": "^1.8",
+        "drupal/access_unpublished": "^1.3",
+        "drupal/acquia_connector": "^3.0",
+        "drupal/acquia_lift": "~4.0",
+        "drupal/acquia_purge": "^1.1",
+        "drupal/acquia_search": "^3.0.0",
+        "drupal/address": "^1.9",
+        "drupal/addtoany": "^1.15",
+        "drupal/admin_toolbar": "^3.0",
+        "drupal/adminimal_theme": "^1.6",
+        "drupal/allowed_formats": "^1.3",
+        "drupal/autocomplete_deluxe": "^2.0",
+        "drupal/better_normalizers": "^1.0@beta",
+        "drupal/blazy": "^2.4",
+        "drupal/block_blacklist": "^1.1",
+        "drupal/block_content_permissions": "^1.10",
+        "drupal/block_field": "^1.0-rc2",
+        "drupal/block_list_override": "^1.0.1",
+        "drupal/chosen": "^3.0",
+        "drupal/ckeditor_accordion": "^1.3",
+        "drupal/ckeditor_blockquote_attribution": "^1.0",
+        "drupal/cloudflare": "^1.0@beta",
+        "drupal/codemirror_editor": "^1.7",
+        "drupal/components": "^2.4",
+        "drupal/config_ignore": "^2.3",
+        "drupal/config_split": "^1.7",
+        "drupal/contact_block": "^1.5",
+        "drupal/content_translation_redirect": "^1.3",
+        "drupal/cookieconsent": "^1.6",
+        "drupal/core-composer-scaffold": "^9",
+        "drupal/core-recommended": "^9",
+        "drupal/default_content": "^2.0.x-dev",
+        "drupal/devel": "^4.1",
+        "drupal/disable_language": "^1.0@beta",
+        "drupal/dropdown_language": "^3.0.0",
+        "drupal/easy_breadcrumb": "^2.0",
+        "drupal/editor_advanced_link": "^2.0",
+        "drupal/entity_browser": "^2.6",
+        "drupal/entity_update": "^2.0@RC",
+        "drupal/environment_indicator": "^4.0",
+        "drupal/exclude_node_title": "^1.2",
+        "drupal/facets": "^1.8",
+        "drupal/features": "^3.12",
+        "drupal/field_formatter_class": "^1.5",
+        "drupal/field_group": "^3.1",
+        "drupal/flood_control": "^2.2",
+        "drupal/focal_point": "^1.5",
+        "drupal/formtips": "^1.5",
+        "drupal/gin": "^3.0-alpha36",
+        "drupal/gin_lb": "^1.0.0-beta11",
+        "drupal/gin_login": "^1.0-rc8",
+        "drupal/gin_toolbar": "^1.0-beta19",
+        "drupal/globallink": "^2.2",
+        "drupal/google_tag": "^1.4",
+        "drupal/helper": "^1.7",
+        "drupal/honeypot": "^2.0",
+        "drupal/iframe": "^2.11",
+        "drupal/imagemagick": "^3.2",
+        "drupal/inline_block_title_automatic": "^1.0",
+        "drupal/inline_entity_form": "^1.0-rc9",
+        "drupal/key": "^1.14",
+        "drupal/layout_builder_additions": "^1.0.0",
+        "drupal/layout_builder_at": "^2.12",
+        "drupal/layout_builder_ids": "^2.0.0-rc6",
+        "drupal/layout_builder_modal": "^1.1",
+        "drupal/layout_builder_operation_link": "^1.0.1",
+        "drupal/layout_builder_restrictions": "^2.9",
+        "drupal/layout_builder_save_and_edit": "^1.0.0",
+        "drupal/layout_builder_styles": "^1.0-beta4",
+        "drupal/layout_library": "^1.x-dev",
+        "drupal/layoutbuilder_search_api": "^1.0",
+        "drupal/limited_field_widgets": "^2.0.4",
+        "drupal/link_target": "^1.3",
+        "drupal/linkit": "^6.0.0-beta2",
+        "drupal/login_security": "^2.0",
+        "drupal/media_entity_download": "^2.1",
+        "drupal/media_library_media_modify": "^1.0@beta",
+        "drupal/media_revisions_ui": "^2.0",
+        "drupal/menu_admin_per_menu": "^1.3",
+        "drupal/menu_link_attributes": "^1.2",
+        "drupal/migrate_media_handler": "^1.0",
+        "drupal/migrate_tools": "^5.0",
+        "drupal/miniorange_saml": "^2.24",
+        "drupal/mysql56": "^1.0",
+        "drupal/node_read_time": "^1.3",
+        "drupal/pace": "^2.0",
+        "drupal/paragraphs": "^1.12",
+        "drupal/password_policy": "^3.0",
+        "drupal/pathauto": "^1.8",
+        "drupal/pcr": "^1.3",
+        "drupal/permissions_filter": "^1.2",
+        "drupal/prepopulate": "^2.3",
+        "drupal/preview_link": "^1.7",
+        "drupal/rabbit_hole": "^1.0@beta",
+        "drupal/redirect": "^1.6",
+        "drupal/remove_http_headers": "^1.0",
+        "drupal/robotstxt": "^1.4",
+        "drupal/schema_metatag": "^2.2",
+        "drupal/search_api": "^1.19",
+        "drupal/search_api_solr": "^4.1",
+        "drupal/seckit": "^2.0",
+        "drupal/section_library": "^1.0.0-beta2",
+        "drupal/security_review": "^1.0@alpha",
+        "drupal/shield": "^1.4",
+        "drupal/simple_search_form": "^1.3",
+        "drupal/simple_sitemap": "^3.10",
+        "drupal/site_settings": "^1.19",
+        "drupal/slick": "^2.3",
+        "drupal/slick_entityreference": "^2.0",
+        "drupal/slick_paragraphs": "^2.1",
+        "drupal/smart_trim": "^1.3",
+        "drupal/stage_file_proxy": "^1.1",
+        "drupal/structure_sync": "^2.0.2",
+        "drupal/tablefield": "^2.2",
+        "drupal/tb_megamenu": "^1.4",
+        "drupal/text_field_formatter": "^2.0.0",
+        "drupal/tmgmt": "^1.12",
+        "drupal/token_filter": "^1.2",
+        "drupal/twig_tweak": "^3.1",
+        "drupal/twig_vardumper": "^3.0.2",
+        "drupal/username_enumeration_prevention": "^1.2",
+        "drupal/varnish_purger": "^2.1",
+        "drupal/vidyard": "^2.0.0-beta2",
+        "drupal/views_block_filter_block": "^1.0",
+        "drupal/viewsreference": "^2.0-beta2",
+        "drupal/webform": "^6.0",
+        "drush/drush": "^10.3",
+        "harvesthq/chosen": "^1.8",
+        "kenwheeler/slick": "^1.8"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "docroot/"
+            },
+            "file-mapping": {
+                "[web-root]/sites/default/default.services.yml": {
+                    "mode": "replace",
+                    "path": "docroot/core/assets/scaffold/files/default.services.yml",
+                    "overwrite": false
+                },
+                "[web-root]/sites/default/default.settings.php": {
+                    "mode": "replace",
+                    "path": "docroot/core/assets/scaffold/files/default.settings.php",
+                    "overwrite": false
+                },
+                "[web-root]/.gitignore": false,
+                "[web-root]/.htaccess": false,
+                "[web-root]/INSTALL.txt": false,
+                "[web-root]/README.md": false,
+                "[web-root]/robots.txt": false,
+                "[web-root]/sites/development.services.yml": {
+                    "mode": "replace",
+                    "path": "docroot/core/assets/scaffold/files/development.services.yml",
+                    "overwrite": false
+                }
+            },
+            "gitignore": true
+        },
+        "installer-paths": {
+            "docroot/core": [
+                "type:drupal-core"
+            ],
+            "docroot/libraries/{$name}": [
+                "type:drupal-library",
+                "harvesthq/chosen"
+            ],
+            "docroot/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "docroot/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "docroot/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "docroot/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "docroot/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ]
+        },
+        "enable-patching": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "patches": {
+            "drupal/access_unpublished": {
+                "2958800 - Create per-language tokens": "https://www.drupal.org/files/issues/2019-03-20/access_unpublished-create_per_language_tokens-2958800-3.patch"
+            },
+            "drupal/core": {
+                "3207813 - ModuleHandler skips all hook implementations when invoked before the module files have been loaded": "https://www.drupal.org/files/issues/2021-04-08/3207813-2.patch",
+                "3101344 - Cannot save translated nodes after upgrading to 8.8 due to invalid path": "https://www.drupal.org/files/issues/2021-03-01/3101344-drupal-core-fix-permissions-checking-while-node-translating-64.patch",
+                "2985168 - Allow media items to be edited in a modal when using the field widget": "https://www.drupal.org/files/issues/2021-06-06/2985168-71.patch"
+            },
+            "drupal/default_content": {
+                "Add a Normalizer and Denormalizer to support Layout Builder": "https://www.drupal.org/files/issues/2021-04-07/3160146-37.patch",
+                "SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry": "https://www.drupal.org/files/issues/2020-08-03/default_content-integrity_constrait_violation-3162987-2.patch"
+            },
+            "drupal/facets": {
+                "3052574 - Facets with AJAX not working in most of situations": "https://www.drupal.org/files/issues/2021-08-25/facets-facets_with_ajax_not_working_in_most_of_situations-3052574-121-8.x.patch"
+            },
+            "drupal/layout_library": {
+                "Dangling layout references in the layout selection field cause a type error on the entity detail page": "https://www.drupal.org/files/issues/2020-03-26/entity-interface-3122496-5.patch",
+                "Add hide the content preview option to layout editing": "https://www.drupal.org/files/issues/2019-11-07/3081497_add-hide-content-preview-02.patch",
+                "Allows Saved Layout Library Labels to be edited": "https://www.drupal.org/files/issues/2020-04-08/Issue%20%233125879%20by%20bernardm28%20Configuration%20form%20for%20layouts%20LayoutEditForm.patch"
+            },
+            "drupal/gin_lb": {
+                "3230953 - TypeError: in_array(): Argument #2 ($haystack) must be of type array": "https://www.drupal.org/files/issues/2021-10-27/3230953-in-array-error-when-string-returned-on-classes.patch"
+            },
+            "drupal/layout_builder_styles": {
+                "Issue #3075502: Grouping of layout builder styles": "https://git.drupalcode.org/project/layout_builder_styles/-/merge_requests/5.diff"
+            },
+            "drupal/layout_builder_at": {
+                "Clone nested inline blocks when translating": "https://www.drupal.org/files/issues/2019-12-03/3098245-7.patch"
+            },
+            "drupal/link_target": {
+                "3226870 - After upgrade to 8.x-1.3 from 8.x-1.2, on adding new field it throws an error.": "https://www.drupal.org/files/issues/2021-08-05/3226870-new_field_addition_fix.patch"
+            },
+            "drupal/paragraphs": {
+                "Integrity constraint violation 1048 Column langcode cannot be null": "https://www.drupal.org/files/issues/2021-05-03/paragraphs-2901390-82-withtests.patch"
+            },
+            "drupal/media_entity_download": {
+                "Make link title editable / add token support / more options": "https://www.drupal.org/files/issues/2021-07-16/3059830-make-link-title-11.patch"
+            },
+            "drupal/simple_sitemap": {
+                "3067767 - Drop \"Generated by\" or make it optional": "https://www.drupal.org/files/issues/2019-07-15/removed_generated_by.patch"
+            },
+            "drupal/tb_megamenu": {
+                "changing hover to on click for menu": "./patches/tb_megamenu_click.patch",
+                "Reverting 1.4 access check for disabled blocks": "./patches/tb_megamenu_block_access.patch"
+            },
+            "drupal/viewsreference": {
+                "3238360 - EntityUntranslatableFieldsConstraint can cause issues when viewsreference field is marked untranslatable": "patches/3238360-viewsreference-unstranslatable-field-validation-error-mr12.patch"
+            },
+            "drupal/autocomplete_deluxe": {
+                "Autocomplete deluxe widget doesn't work for multiple entity reference field when you add new terms and some terms are existing": "https://www.drupal.org/files/issues/2019-05-10/3053986_2.patch"
+            }
+        }
+    },
+    "require-dev": {
+        "drupal/qa_accounts": "^1.0@beta"
+    }
+}

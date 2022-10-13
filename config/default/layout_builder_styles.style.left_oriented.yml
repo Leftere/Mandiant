@@ -1,0 +1,14 @@
+uuid: d4ccde6a-f756-4b9e-9e05-ab0970a38b3a
+langcode: en
+status: true
+dependencies: {  }
+id: left_oriented
+label: 'Left oriented'
+classes: left
+type: component
+group: modifiers_layout
+weight: 0
+block_restrictions:
+  - 'inline_block:cta'
+  - 'inline_block:tile'
+layout_restrictions: {  }

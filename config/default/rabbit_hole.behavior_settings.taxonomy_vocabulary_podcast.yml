@@ -1,0 +1,14 @@
+uuid: 6087f00c-7948-4042-83d1-f28d55e04787
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.podcast
+id: taxonomy_vocabulary_podcast
+entity_type_id: taxonomy_vocabulary
+entity_id: podcast
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

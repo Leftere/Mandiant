@@ -1,0 +1,84 @@
+.cs {
+  &-header {
+    margin-bottom: 0 !important;
+
+    .layout {
+      align-items: center;
+      overflow: auto;
+      position: relative;
+    }
+
+    .block-bundle-text {
+      @include container($desktop);
+      background-color: $black;
+      color: $white;
+      position: relative;
+
+      h2 {
+        @extend %wrapper;
+
+        @include container(970px);
+        @include font-size(24, 24);
+        color: $medGray;
+        margin-bottom: .5rem;
+        text-align: left;
+      }
+    }
+  }
+
+  &-columns {
+    color: $white;
+    margin-bottom: 0 !important;
+    position: relative;
+
+    @include breakpoint($large-tablet) {
+      padding: 0 0 10rem;
+    }
+
+    .wrapper {
+      @include container($desktop);
+      background-color: $black;
+      position: relative;
+
+      @include breakpoint($desktop) {
+        padding: 0 0 9rem 0 !important;
+      }
+    }
+
+    &:after {
+      background-image: url('../images/backgrounds/scaly-bg.png');
+      background-position: bottom right;
+      background-repeat: no-repeat;
+      background-size: contain;
+      bottom: 0;
+      content: '';
+      height: 100%;
+      position: absolute;
+      right: 0;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .layout__region {
+      position: relative;
+    }
+
+    .block-bundle-text {
+      padding: 3rem 4rem;
+      text-align: left;
+
+      @include breakpoint($desktop) {
+        padding: 3rem 4rem 4rem 2rem;
+      }
+
+      &.center {
+        text-align: center;
+      }
+
+      h2 {
+        @include font-size(18, 18);
+        font-weight: 500;
+      }
+    }
+  }
+}

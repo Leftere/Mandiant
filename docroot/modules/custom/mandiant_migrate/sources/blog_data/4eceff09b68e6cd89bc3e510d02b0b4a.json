@@ -1,0 +1,67 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed Oct 03 2018 08:06:24 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "APT38: Details on New North Korean Regime-Backed Threat Group",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "b9d724a3-e692-434a-91ed-0aaf820f0d74",
+    "author": "Nalani Fraser",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "adam.greenberg@fireeye.com",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "bcdb062b-7965-4171-84c9-f62ccc661624"
+    ],
+    "jcr:created": "Fri Oct 05 2018 19:23:22 GMT-0400",
+    "cq:lastReplicated": "Fri Oct 05 2018 19:23:21 GMT-0400",
+    "cq:lastModified": "Fri Oct 05 2018 19:23:08 GMT-0400",
+    "jcr:baseVersion": "bcdb062b-7965-4171-84c9-f62ccc661624",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:nalani-fraser",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:apt",
+      "fireeye-blog-tags:cyber-crime",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:malware",
+      "fireeye-blog-authors:jacqueline-oleary",
+      "fireeye-blog-authors:vincent-cannon",
+      "fireeye-blog-authors:fred-plan"
+    ],
+    "jcr:uuid": "9229540b-39b2-4310-9b58-b915b2e6c0f5",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Wed Oct 03 2018 08:00:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EToday, we are releasing details on the threat group that we believe is responsible for conducting financial crime on behalf of the North Korean regime, stealing millions of dollars from banks worldwide. The group is particularly aggressive; they regularly use destructive malware to render victim networks inoperable following theft. More importantly, diplomatic efforts, including the recent Department of Justice (DOJ) complaint that outlined attribution to North Korea, have thus far failed to put an end to their activity. We are calling this group APT38.\u003C\/p\u003E\n\u003Cp\u003EWe are releasing a special report, \u003Ca href=\u0022https:\/\/content.fireeye.com\/apt\/rpt-apt38\u0022\u003EAPT38: Un-usual Suspects\u003C\/a\u003E, to expose the methods used by this active and serious threat, and to complement earlier efforts by others to expose these operations, using FireEye\u2019s unique insight into the attacker lifecycle.\u003C\/p\u003E\n\u003Cp\u003EWe believe APT38\u2019s financial motivation, unique toolset, and tactics, techniques and procedures (TTPs) observed during their carefully executed operations are distinct enough to be tracked separately from other North Korean cyber activity. There are many overlapping characteristics with other operations, known as \u201cLazarus\u201d and the actor we call \u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/blog\/threat-research\/2018\/02\/attacks-leveraging-adobe-zero-day.html\u0022\u003ETEMP.Hermit\u003C\/a\u003E; however, we believe separating this group will provide defenders with a more focused understanding of the adversary and allow them to prioritize resources and enable defense. The following are some of the ways APT38 is different from other North Korean actors, and some of the ways they are similar:\u003C\/p\u003E\n\u003Cul style=\u0022list-style-position: inside;\u0022\u003E\n\u003Cli\u003EWe find there are clear distinctions between APT38 activity and the activity of other North Korean actors, including the actor we call TEMP.Hermit. Our investigation indicates they are disparate operations against different targets and reliance on distinct TTPs; however, the malware tools being used either overlap or exhibit shared characteristics, indicating a shared developer or access to the same code repositories. As evident in the DOJ complaint, there are other shared resources, such as personnel who may be assisting multiple efforts.\u003C\/li\u003E\n\u003Cli\u003EA \u003Ca href=\u0022https:\/\/www.operationblockbuster.com\/wp-content\/uploads\/2016\/02\/Operation-Blockbuster-Report.pdf\u0022\u003E2016 Novetta report\u003C\/a\u003E detailed the work of security vendors attempting to unveil tools and infrastructure related to the 2014 destructive attack against Sony Pictures Entertainment. This report detailed malware and TTPs related to a set of developers and operators they dubbed \u201cLazarus,\u201d a name that has become synonymous with aggressive North Korean cyber operations.\u003Cul\u003E\n\u003Cli\u003ESince then, public reporting attributed additional activity to the \u201cLazarus\u201d group with varying levels of confidence primarily based on malware similarities being leveraged in identified operations. Over time, these malware similarities diverged, as did targeting, intended outcomes and TTPs, almost certainly indicating that this activity is made up of multiple operational groups primarily linked together with shared malware development resources and North Korean state sponsorship.\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003ESince at least 2014, APT38 has conducted operations in more than 16 organizations in at least 13 countries, sometimes simultaneously, indicating that the group is a large, prolific operation with extensive resources. The following are some details about APT38 targeting:\u003C\/p\u003E\n\u003Cul style=\u0022list-style-position: inside;\u0022\u003E\n\u003Cli\u003EThe total number of organizations targeted by APT38 may be even higher when considering the probable low incident reporting rate from affected organizations.\u003C\/li\u003E\n\u003Cli\u003EAPT38 is characterized by long planning, extended periods of access to compromised victim environments preceding any attempts to steal money, fluency across mixed operating system environments, the use of custom developed tools, and a constant effort to thwart investigations capped with a willingness to completely destroy compromised machines afterwards.\u003C\/li\u003E\n\u003Cli\u003EThe group is careful, calculated, and has demonstrated a desire to maintain access to a victim environment for as long as necessary to understand the network layout, required permissions, and system technologies to achieve its goals.\u003C\/li\u003E\n\u003Cli\u003EOn average, we have observed APT38 remain within a victim network for approximately 155 days, with the longest time within a compromised environment believed to be almost two years.\u003C\/li\u003E\n\u003Cli\u003EIn just the publicly reported heists alone, APT38 has attempted to steal over $1.1 billion dollars from financial institutions.\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EInvestigating intrusions of many victimized organizations has provided us with a unique perspective into APT38\u2019s entire attack lifecycle. Figure 1 contains a breakdown of observed malware families used by APT38 during the different stages of their operations. At a high-level, their targeting of financial organizations and subsequent heists have followed the same general pattern:\u003C\/p\u003E\n\u003Col style=\u0022list-style-position: inside;\u0022\u003E\n\u003Cli\u003E\u003Cb\u003EInformation Gathering\u003C\/b\u003E: Conducted research into an organization\u2019s personnel and targeted third party vendors with likely access to SWIFT transaction systems to understand the mechanics of SWIFT transactions on victim networks (Please note: The systems in question are those used by the victim to conduct SWIFT transactions. At no point did we observe these actors breach the integrity of the SWIFT system itself.).\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003EInitial Compromise\u003C\/b\u003E: Relied on watering holes and exploited an insecure out-of-date version of Apache Struts2 to execute code on a system.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003EInternal Reconnaissance\u003C\/b\u003E: Deployed malware to gather credentials, mapped the victim\u2019s network topology, and used tools already present in the victim environment to scan systems.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003EPivot to Victim Servers Used for SWIFT Transactions\u003C\/b\u003E: Installed reconnaissance malware and internal network monitoring tools on systems used for SWIFT to further understand how they are configured and being used. Deployed both active and passive backdoors on these systems to access segmented internal systems at a victim organization and avoid detection.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003ETransfer funds\u003C\/b\u003E: Deployed and executed malware to insert fraudulent SWIFT transactions and alter transaction history. Transferred funds via multiple transactions to accounts set up in other banks, usually located in separate countries to enable money laundering.\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003EDestroy Evidence\u003C\/b\u003E: Securely deleted logs, as well as deployed and executed disk-wiping malware, to cover tracks and disrupt forensic analysis.\u003C\/li\u003E\n\u003C\/ol\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/APT38\/Fig1c.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 1: APT38 Attack Lifecycle\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EAPT38 is unique in that it is not afraid to aggressively destroy evidence or victim networks as part of its operations. This attitude toward destruction is probably a result of the group trying to not only cover its tracks, but also to provide cover for money laundering operations.\u003C\/p\u003E\n\u003Cp\u003EIn addition to cyber operations, public reporting has detailed recruitment and cooperation of individuals in-country to support with the tail end of APT38\u2019s thefts, including persons responsible for laundering funds and interacting with recipient banks of stolen funds. This adds to the complexity and necessary coordination amongst multiple components supporting APT38 operations.\u003C\/p\u003E\n\u003Cp\u003EDespite recent efforts to curtail their activity, APT38 remains active and dangerous to financial institutions worldwide. By conservative estimates, this actor has stolen over a hundred million dollars, which would be a major return on the likely investment necessary to orchestrate these operations. Furthermore, given the sheer scale of the thefts they attempt, and their penchant for destroying targeted networks, APT38 should be considered a serious risk to the sector.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Fri Oct 05 2018 19:23:08 GMT-0400",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EWe release details on APT38, a threat group we believe is responsible for conducting financial crime on behalf of the North Korean regime, stealing millions of dollars from banks worldwide.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Tue Oct 02 2018 17:46:14 GMT-0400",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Wed Oct 03 2018 23:18:46 GMT-0400",
+      "imageRotate": "0"
+    }
+  }
+}

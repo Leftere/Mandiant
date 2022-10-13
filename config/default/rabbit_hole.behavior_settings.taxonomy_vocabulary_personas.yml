@@ -1,0 +1,14 @@
+uuid: 65964fcd-c7f1-426d-806d-1c7978b4290f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.personas
+id: taxonomy_vocabulary_personas
+entity_type_id: taxonomy_vocabulary
+entity_id: personas
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

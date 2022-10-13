@@ -1,0 +1,14 @@
+uuid: 58cd86cc-52e1-4a39-83c7-798fe82b1626
+langcode: en
+status: true
+dependencies: {  }
+id: white_base_
+label: 'White (base)'
+classes: bg-base-white
+type: section
+group: background
+weight: 0
+block_restrictions: {  }
+layout_restrictions:
+  - layout_onecol
+  - layout_threecol_section

@@ -1,0 +1,13 @@
+uuid: 1f87d6f6-cd29-4761-af36-af5445f356d6
+langcode: en
+status: true
+dependencies: {  }
+id: accordion
+label: Accordion
+classes: accordion
+type: component
+group: add_ons
+weight: 0
+block_restrictions:
+  - 'inline_block:text'
+layout_restrictions: {  }

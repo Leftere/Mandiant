@@ -1,0 +1,42 @@
+uuid: 8b6407dc-dc5c-484d-888e-506ce1039496
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.slick
+    - field.field.paragraph.tab.field_body
+    - field.field.paragraph.tab.field_cta_link
+    - field.field.paragraph.tab.field_media
+    - field.field.paragraph.tab.field_title
+    - paragraphs.paragraphs_type.tab
+  module:
+    - field_formatter_class
+    - layout_builder
+    - layout_library
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+  layout_library:
+    enable: false
+id: paragraph.tab.slick
+targetEntityType: paragraph
+bundle: tab
+mode: slick
+content:
+  field_media:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: slick_tab
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    region: content
+hidden:
+  field_body: true
+  field_cta_link: true
+  field_title: true
+  search_api_excerpt: true

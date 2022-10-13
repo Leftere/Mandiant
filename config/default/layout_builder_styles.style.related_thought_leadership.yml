@@ -1,0 +1,13 @@
+uuid: 71994664-05e6-4321-aab1-239f113f464d
+langcode: en
+status: true
+dependencies: {  }
+id: related_thought_leadership
+label: 'Related thought leadership'
+classes: section-thought-leadership
+type: section
+group: add_ons
+weight: 16
+block_restrictions: {  }
+layout_restrictions:
+  - layout_onecol

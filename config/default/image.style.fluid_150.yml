@@ -1,0 +1,25 @@
+uuid: 8959a0ce-8750-4a23-912d-657e7195df1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.fluid_150px
+  module:
+    - crop
+name: fluid_150
+label: 'Fluid 150px'
+effects:
+  13ab7022-7572-4ca3-80ce-9754a3813940:
+    uuid: 13ab7022-7572-4ca3-80ce-9754a3813940
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: fluid_150px
+  bb10647c-70c0-4826-ac8a-0218c5a8ea60:
+    uuid: bb10647c-70c0-4826-ac8a-0218c5a8ea60
+    id: image_scale
+    weight: 2
+    data:
+      width: 150
+      height: null
+      upscale: true

@@ -1,0 +1,29 @@
+uuid: 408814c2-51f9-46ce-a89c-a9401962c244
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_terms_industry
+    - media.type.video
+    - taxonomy.vocabulary.industries
+id: media.video.field_terms_industry
+field_name: field_terms_industry
+entity_type: media
+bundle: video
+label: Industry
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      industries: industries
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

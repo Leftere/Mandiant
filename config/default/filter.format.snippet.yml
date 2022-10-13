@@ -1,0 +1,17 @@
+uuid: c07d2782-0dd7-4090-b7f6-3a172692b705
+langcode: en
+status: false
+dependencies:
+  module:
+    - token_filter
+name: Snippet
+format: snippet
+weight: 0
+filters:
+  token_filter:
+    id: token_filter
+    provider: token_filter
+    status: false
+    weight: 0
+    settings:
+      replace_empty: '0'

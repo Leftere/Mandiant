@@ -1,0 +1,66 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Tue Mar 16 2021 12:00:03 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Mandiant Introduces New Services to Counter Dynamic Insider Threats",
+    "jcr:versionHistory": "14f0dd15-c770-4db9-bd4f-1108e0e4f105",
+    "cq:template": "\/apps\/fireeye-www\/fdc\/templates\/press-release",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "42c5e3f3-f36d-4336-b514-d5b43c92b162"
+    ],
+    "jcr:created": "Tue Mar 16 2021 12:00:03 GMT+0000",
+    "cq:lastModified": "Mon Mar 15 2021 22:14:39 GMT+0000",
+    "jcr:baseVersion": "42c5e3f3-f36d-4336-b514-d5b43c92b162",
+    "jcr:isCheckedOut": true,
+    "pagedate": "Tue Mar 16 2021 08:00:00 GMT-0400",
+    "cq:tags": [
+      "company:en-US\/press-releases",
+      "company:en-US\/press-releases\/2021",
+      "company:en-US\/press-releases\/latest",
+      "fireeye-doctypes:press-releases"
+    ],
+    "jcr:uuid": "e9601aaf-15f5-49cb-9d55-e60f09632d0c",
+    "sling:resourceType": "fireeye-www\/fdc\/components\/page\/press-release",
+    "cq:designPath": "\/etc\/designs\/fireeye-www",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "content-par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "grid_100_full": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "adam.greenberg@fireeye.com",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "jcr:created": "Mon Mar 15 2021 22:11:13 GMT+0000",
+        "jcr:lastModified": "Mon Mar 15 2021 22:11:13 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/grids\/grid-100-full",
+        "grid-100-mid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "fireeye-www\/fdc\/components\/grids\/grid-parsys\/parsys-100-full\/parsys",
+          "text": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "adam.greenberg@fireeye.com",
+            "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+            "jcr:created": "Mon Mar 15 2021 22:11:20 GMT+0000",
+            "text": "\u003Cp style=\u0022text-align: center;\u0022\u003E\u003Ci\u003ENew \u201cInsider Threat Security as a Service\u201d and \u201cInsider Threat Program Assessments\u201d offer customers protection from insider threats using unparalleled frontline incident response expertise and Mandiant Threat Intelligence\u003C\/i\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cb\u003EMILPITAS, Calif. \u2013 March 16, 2021\u003C\/b\u003E\u0026nbsp;\u2013 FireEye, Inc.\u0026nbsp;(NASDAQ: FEYE), the intelligence-led security company, today unveiled two new insider threat security services from Mandiant\u00ae. The new services help organizations establish or scale up insider threat programs and are designed to provide ongoing protection against rapidly evolving and dynamic malicious activities within organizations.\u003C\/p\u003E\n\u003Cp\u003EInsider threat events impact\u0026nbsp;organizational\u0026nbsp;reputation, customer trust and investor confidence.\u0026nbsp;In 2019 and 2020, Mandiant responded to numerous customers who experienced corporate and economic espionage, data and backup destruction, and intentional data theft and leakage. The rise in incidents is an increasing challenge for organizations of all sizes and missions as insiders are, by definition, those organizations trust most.\u003C\/p\u003E\n\u003Cp\u003E\u201cLegitimate access to controls rules the cyber threat landscape. Insider threat investigations are complex to solve and rely on combinations of technical forensic analysis, threat intelligence capabilities and traditional non-cyber investigative techniques,\u201d said Jurgen Kutscher, Executive Vice President, Service Delivery, Mandiant Consulting. \u201cNo one understands this unique threat vector better than Mandiant. This is the reason we formalized a service model to help commercial and government organizations design, assess and establish a continuous, full-spectrum insider threat visibility and prevention program.\u201d\u003C\/p\u003E\n\u003Cp\u003EMandiant uses a \u201cfollow the data\u201d security model to deliver actionable, organization-specific recommendations. This approach is designed to identify weaknesses and vulnerabilities across existing safeguards, improve program capabilities and reduce the overall risk of insider threats. Mandiant Insider Threat Security Services are controls agnostic and available as a point-in-time assessment or an ongoing, subscription-based program.\u003C\/p\u003E\n\u003Ch4\u003EInsider Threat Program Assessment\u003C\/h4\u003E\n\u003Cp\u003EThe Insider Threat Program Assessment is a purpose-built, point-in-time service to assess organizations with a nascent or existing insider threat security program. Designed to follow the data rooted in three core domains \u2013 people, processes and tools \u2013 Mandiant leads dedicated workshops to identify gaps and vulnerabilities in the client\u2019s specific environment. Available in three tiers to meet situational client needs, the Insider Threat Program Assessment delivers detailed, organization-specific recommendations and actionable roadmaps for tailored program outcomes.\u0026nbsp; \u0026nbsp;\u003C\/p\u003E\n\u003Ch4\u003EInsider Threat Security as a Service\u003C\/h4\u003E\n\u003Cp\u003EThe Insider Threat Security as a Service is a holistic, subscription-based program that provides organizations with continuous, full-spectrum insider threat visibility, prevention, incident response, remediation and real-time threat intelligence. Powered by Mandiant Threat Intelligence, this service is imperative for organizations with a remote workforce and sensitive data that could be stolen or leaked. The Insider Threat Security as a Service provides delivery of regular executive briefings, insider threat activity case files and reporting, and threat intelligence specific to the client\u2019s environment. Available in three tiers, this service has comprehensive coverage and expertise to accommodate program needs of all sizes, at scale.\u0026nbsp;\u0026nbsp;\u003C\/p\u003E\n\u003Cp\u003ELearn more about Mandiant expertise and the intelligence backed offerings to mitigate insider threats on the \u003Ca href=\u0022https:\/\/www.fireeye.com\/mandiant\/insider-threat-security-services.html\u0022\u003Eweb\u003C\/a\u003E and review our other resources.\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003E\u003Ca href=\u0022https:\/\/www.fireeye.com\/mtrends\u0022\u003EFireEye Mandiant M-Trends\u00ae 2020 report\u003C\/a\u003E, \u201cThreats from Within,\u201d page 40\u003C\/li\u003E\n\u003Cli\u003EEye on Security Podcast: \u201c\u003Ca href=\u0022https:\/\/www.hipcast.com\/podcast\/Hx3wZPBx?stamp=0.68211300%201614973807\u0022\u003EBreaking Down Malicious Insider Threats\u003C\/a\u003E\u201d\u003C\/li\u003E\n\u003Cli\u003EInsider Threat Security Services \u003Ca href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/services\/pdfs\/ds-insider-threat-security-services.pdf\u0022\u003EData Sheet\u003C\/a\u003E\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Ch4\u003EAbout Mandiant\u003C\/h4\u003E\n\u003Cp\u003EMandiant, a part of FireEye, brings together the world\u2019s leading threat intelligence and frontline expertise with continuous security validation to arm organizations with the tools needed to increase security effectiveness and reduce organizational risk.\u003C\/p\u003E\n\u003Ch4\u003EAbout FireEye, Inc.\u003C\/h4\u003E\n\u003Cp\u003EFireEye is the intelligence-led security company. Working as a seamless, scalable\u0026nbsp;extension of customer security operations, FireEye offers a single platform that blends innovative security technologies, nation-state grade threat intelligence, and world-renowned Mandiant consulting. With this approach, FireEye eliminates the complexity and burden of cyber security for organizations struggling to prepare for, prevent, and respond to cyber attacks. FireEye has over 9,900 customers across 103 countries, including more than 50 percent of the Forbes Global 2000.\u003C\/p\u003E\n\u003Cp\u003E\u00a9 2021 FireEye, Inc. All rights reserved. FireEye, Mandiant and M-Trends are registered trademarks or trademarks of FireEye, Inc. in the United States and other countries. All other brands, products, or service names are or may be trademarks or service marks of their respective owners.\u003C\/p\u003E\n\u003Ch4\u003EContacts\u0026nbsp; \u0026nbsp; \u0026nbsp; \u0026nbsp;\u0026nbsp;\u003C\/h4\u003E\n\u003Cp\u003E\u003Cb\u003EMedia\u003C\/b\u003E\u003Cbr\u003E\n\u003Ca href=\u0022mailto:Media.Relations@FireEye.com\u0022\u003EMedia.Relations@FireEye.com\u003C\/a\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cb\u003EInvestors\u003C\/b\u003E\u003Cbr\u003E\n\u003Ca href=\u0022mailto:Investor.relations@fireeye.com\u0022\u003EInvestor.Relations@FireEye.com\u003C\/a\u003E\u003C\/p\u003E\n",
+            "jcr:lastModified": "Mon Mar 15 2021 22:13:42 GMT+0000",
+            "sling:resourceType": "fireeye-www\/fdc\/components\/text\/text",
+            "textIsRich": "true"
+          }
+        }
+      }
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Mon Mar 15 2021 22:14:39 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

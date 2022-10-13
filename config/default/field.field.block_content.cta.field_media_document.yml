@@ -1,0 +1,29 @@
+uuid: 4c14c4c0-02e6-4b40-84ae-da2b30f7891d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cta
+    - field.storage.block_content.field_media_document
+    - media.type.document
+id: block_content.cta.field_media_document
+field_name: field_media_document
+entity_type: block_content
+bundle: cta
+label: Document
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

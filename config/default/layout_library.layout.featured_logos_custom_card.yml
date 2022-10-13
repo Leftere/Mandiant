@@ -1,0 +1,171 @@
+uuid: 57162ef6-f3e5-433a-a635-fe37252d63ef
+langcode: en
+status: true
+dependencies: {  }
+id: featured_logos_custom_card
+label: 'Custom Card'
+targetEntityType: block_content
+targetBundle: featured_logos
+layout:
+  -
+    layout_id: layout_onecol
+    layout_settings:
+      label: ''
+      layout_builder_styles_style:
+        0: ''
+        block_plain_text: 0
+        intro_text: 0
+        negative_bottom_margin: 0
+        negative_top_margin: 0
+      context_mapping: {  }
+    components:
+      4df4f173-d53d-4a88-8023-d27e31729724:
+        uuid: 4df4f173-d53d-4a88-8023-d27e31729724
+        region: content
+        configuration:
+          id: 'field_block:block_content:featured_logos:field_eyebrow'
+          label: Eyebrow
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: string
+            settings:
+              link_to_entity: false
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 0
+      f53e24e0-03a9-4456-ac6d-c55926748ac0:
+        uuid: f53e24e0-03a9-4456-ac6d-c55926748ac0
+        region: content
+        configuration:
+          id: 'field_block:block_content:featured_logos:field_title'
+          label: Title
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: text_field_formatter
+            settings:
+              link_to_entity: 0
+              wrap_tag: h2
+              wrap_class: ''
+              wrap_attributes: ''
+              override_link_label: ''
+              token: ''
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 1
+    third_party_settings: {  }
+  -
+    layout_id: layout_twocol_section
+    layout_settings:
+      label: ''
+      column_widths: 67-33
+      layout_builder_styles_style:
+        0: ''
+        block_plain_text: 0
+        divider: 0
+        negative_bottom_margin: 0
+        negative_top_margin: 0
+      context_mapping: {  }
+    components:
+      fecd6c76-878e-4b74-86e9-7a6922518654:
+        uuid: fecd6c76-878e-4b74-86e9-7a6922518654
+        region: second
+        configuration:
+          id: 'field_block:block_content:featured_logos:field_media'
+          label: Media
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: entity_reference_entity_view
+            settings:
+              view_mode: logo
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 0
+      65bc34d6-bd43-4e4e-9cb6-57654b16e7dc:
+        uuid: 65bc34d6-bd43-4e4e-9cb6-57654b16e7dc
+        region: second
+        configuration:
+          id: 'field_block:block_content:featured_logos:field_gallery'
+          label: 'Media Gallery'
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: entity_reference_entity_view
+            settings:
+              view_mode: logo
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 1
+      e5df3e30-8ae6-4c55-afd7-dfa6982039de:
+        uuid: e5df3e30-8ae6-4c55-afd7-dfa6982039de
+        region: second
+        configuration:
+          id: 'field_block:block_content:featured_logos:field_cta'
+          label: Link
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: link
+            settings:
+              trim_length: 80
+              url_only: false
+              url_plain: false
+              rel: '0'
+              target: '0'
+            third_party_settings:
+              field_formatter_class:
+                class: href-cta
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 2
+      37e0596c-76c4-421c-a660-772a7b10a46b:
+        uuid: 37e0596c-76c4-421c-a660-772a7b10a46b
+        region: first
+        configuration:
+          id: 'field_block:block_content:featured_logos:field_gallery'
+          label: 'Media Gallery'
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: entity_reference_entity_view
+            settings:
+              view_mode: logo
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 0
+    third_party_settings: {  }

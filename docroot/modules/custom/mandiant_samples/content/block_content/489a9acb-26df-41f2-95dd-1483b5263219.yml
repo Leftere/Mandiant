@@ -1,0 +1,45 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 489a9acb-26df-41f2-95dd-1483b5263219
+  bundle: cta
+  default_langcode: en
+  depends:
+    76142c52-522d-4fd1-aa68-da16dde771e8: user
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Inline block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      entity: 76142c52-522d-4fd1-aa68-da16dde771e8
+  content_translation_created:
+    -
+      value: 1626961979
+  field_body:
+    -
+      value: "<p>Aenean eget neque ut erat tempor cursus. Sed sit amet faucibus turpis. Praesent id magna finibus, porttitor nisi eget, scelerisque diam. Quisque porta tincidunt tortor vitae fermentum. Aliquam fringilla et elit quis convallis.</p>\r\n"
+      format: basic_html
+  field_cta:
+    -
+      uri: 'internal:#'
+      title: 'Learn More'
+      options: {  }
+  field_title:
+    -
+      value: 'Example for CTA - 3QUARTERS (light)'

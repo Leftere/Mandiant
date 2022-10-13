@@ -1,0 +1,67 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 51abdba2-1211-4bbd-863d-e01e971b8243
+  bundle: article
+  default_langcode: en
+  depends:
+    76142c52-522d-4fd1-aa68-da16dde771e8: user
+    05cb08cc-fe68-4355-85d9-366c84f74a53: media
+default:
+  revision_uid:
+    -
+      entity: 76142c52-522d-4fd1-aa68-da16dde771e8
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 76142c52-522d-4fd1-aa68-da16dde771e8
+  title:
+    -
+      value: 'Sample - Nam sollicitudin est nibh'
+  created:
+    -
+      value: 1626961748
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /nam-sollicitudin-est-nibh
+      langcode: en
+      pathauto: 1
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_author:
+    -
+      value: 'Quisque Vel'
+  field_body:
+    -
+      value: "<p>Ut nec tristique eros. In hac habitasse platea dictumst. In ut fermentum erat, tempus pharetra ante. Quisque bibendum auctor massa, mattis ornare ligula sodales sed. Curabitur volutpat non tortor et fermentum. Nam a rutrum justo. Morbi et suscipit orci. Phasellus non vestibulum lacus, ut laoreet tellus. Nullam tincidunt libero nec dignissim rutrum. Integer vel blandit justo, vel pretium dui. Mauris non quam non ipsum egestas ultrices.</p>\r\n\r\n<p>Nam sollicitudin est nibh, in pharetra lorem rhoncus id. Donec sodales non orci eget malesuada. Mauris vel venenatis ante, eget porta massa. Vivamus consectetur malesuada sapien bibendum lacinia. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam luctus urna a blandit aliquam. Nulla tristique neque non ex blandit ornare. Sed libero lacus, faucibus a risus et, consectetur molestie dui. Quisque hendrerit arcu ac odio tristique, eget aliquam massa feugiat. Praesent est lorem, cursus in odio vitae, cursus consequat sem. Mauris luctus iaculis libero, faucibus dapibus ipsum posuere quis. Fusce accumsan mollis odio, sit amet porta quam cursus eget. Donec turpis metus, hendrerit a nunc in, facilisis elementum mi.</p>\r\n\r\n<p>Phasellus ultricies mi vel enim ornare, eu consequat mi posuere. Duis efficitur facilisis ligula non lacinia. Phasellus consectetur et nunc vitae consectetur. Sed pretium odio a pulvinar hendrerit. Mauris pulvinar magna et metus faucibus, id pretium nisi blandit. Donec id sem ac ligula aliquam maximus. Donec eu bibendum sem, a gravida nibh. Donec viverra bibendum aliquet.</p>\r\n"
+      format: basic_html
+  field_date:
+    -
+      value: '2021-07-21T00:00:00'
+  field_media:
+    -
+      entity: 05cb08cc-fe68-4355-85d9-366c84f74a53
+  field_role_company:
+    -
+      value: 'Sed neque felis'
+  field_summary:
+    -
+      value: 'Nam a rutrum justo. Morbi et suscipit orci. Phasellus non vestibulum lacus, ut laoreet tellus. Nullam tincidunt libero nec dignissim rutrum. Integer vel blandit justo, vel pretium dui. Mauris non quam non ipsum egestas ultrices.'
+  layout_selection:
+    -
+      target_id: article_blog

@@ -1,0 +1,72 @@
+uuid: fab236e6-84e6-4b58-9aef-ba943784c0fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.site_setting_entity.email.field_email_apac
+    - field.field.site_setting_entity.email.field_email_emea
+    - field.field.site_setting_entity.email.field_email_us
+    - site_settings.site_setting_entity_type.email
+id: site_setting_entity.email.default
+targetEntityType: site_setting_entity
+bundle: email
+mode: default
+content:
+  field_email_apac:
+    weight: 12
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_email_emea:
+    weight: 13
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_email_us:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  fieldset:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 10
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }

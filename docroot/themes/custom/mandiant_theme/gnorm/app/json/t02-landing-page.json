@@ -1,0 +1,25 @@
+{
+  "title": "T02 - Inner Page Template",
+  "exampleCards": [
+    {
+      "image": "images/card.png",
+      "name": "Michael D.",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibenadum laoreet"
+    },
+    {
+      "image": "images/card.png",
+      "name": "Tiffany Cruikshank",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibenadum laoreet"
+    },
+    {
+      "image": "images/card.png",
+      "name": "Tiffany M.",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibenadum laoreet"
+    },
+    {
+      "image": "images/card.png",
+      "name": "Alan R.",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibenadum laoreet"
+    }
+  ]
+}

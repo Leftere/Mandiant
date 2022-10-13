@@ -1,0 +1,70 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Thu Jun 17 2021 15:37:50 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Low Sophistication Threat Actors Continue to Target OT",
+    "jcr:versionHistory": "11859d3e-7136-46bc-86ad-d1bff3be2724",
+    "author": "Luke McNamara",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "9a8d71f7-2a00-4751-9e09-05aea47b40f8"
+    ],
+    "jcr:created": "Tue Jun 22 2021 18:01:13 GMT+0000",
+    "cq:lastModified": "Tue Jun 22 2021 18:00:59 GMT+0000",
+    "jcr:baseVersion": "9a8d71f7-2a00-4751-9e09-05aea47b40f8",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:luke-mcnamara",
+      "fireeye-blog-executive-perspective:executive-perspective",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:operational-technology",
+      "fireeye-blog-tags:podcast",
+      "fireeye-blog-tags:cyber-physical"
+    ],
+    "jcr:uuid": "760f3845-412b-4c1c-8cde-e0c21e86a24a",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Thu Jun 17 2021 11:30:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/eos2021\/mandiant-eos.png\u0022 alt=\u0022\u0022 class=\u0022float-left-small\u0022\u003EIn this episode of \u003Ci\u003EEye on Security\u003C\/i\u003E, I had Daniel Kapellmann Zafra, a manager on Mandiant\u2019s Cyber Physical Threat Intelligence team, on to discuss a recent blog post he and his team released on the trend of \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/blog\/threat-research\/2021\/05\/increasing-low-sophistication-operational-technology-compromises.html\u0022\u003Elower sophistication threat actors targeting operational technology (OT)\u003C\/a\u003E.\u003C\/p\u003E\n\u003Cp\u003EWe started by discussing a blog post they published last year that explored this trend\u2014specifically the \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/blog\/threat-research\/2020\/07\/financially-motivated-actors-are-expanding-access-into-ot.html\u0022\u003Eusage of ransomware by financially motivated actors against OT\u003C\/a\u003E\u2014and we talk about what Daniel is seeing change in this space. Our conversation touches on the various motivations that appear to be shaping this activity, and what it could mean if we continue to see this type of targeting by hacktivists, opportunistic threat actors, and more.\u003C\/p\u003E\n\u003Cp\u003EOne of the things that I think really comes across in this episode is the thoughtful analysis that Daniel and his team apply to ascertaining the drivers of this trend and where it may be going. It\u2019s an insightful look into an area of threat activity we will likely continue to see headlines around this year.\u0026nbsp;\u003C\/p\u003E\n\u003Cp\u003EListen to the podcast right now.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Tue Jun 22 2021 18:00:59 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      },
+      "htmlpassthru": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "adam.greenberg@fireeye.com",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "jcr:created": "Thu Jun 17 2021 15:39:18 GMT+0000",
+        "html": "\u003Cdiv id=\u0022buzzsprout-player-8678831\u0022\u003E\u003C\/div\u003E\n\u003Cscript src=\u0022https:\/\/www.buzzsprout.com\/1762840\/8678831-low-sophistication-threat-actors-continue-to-target-ot.js?container_id=buzzsprout-player-8678831\u0026player=small\u0022 type=\u0022text\/javascript\u0022 charset=\u0022utf-8\u0022\u003E\u003C\/script\u003E",
+        "jcr:lastModified": "Thu Jun 17 2021 15:39:52 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/html\/htmlpassthru"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EOn this episode of our Eye on Security podcast, we discuss the trend of lower sophistication threat actors targeting operational technology.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Mon Jun 14 2021 16:44:42 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Thu Jun 17 2021 15:37:44 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

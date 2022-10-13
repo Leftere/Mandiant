@@ -1,0 +1,16 @@
+uuid: bf72de9c-4e7c-4c31-a3de-1682b172944c
+langcode: en
+status: true
+dependencies: {  }
+id: small_tile_section
+label: 'Tiles (Small)'
+classes: section-small-tiles
+type: section
+group: modifiers_layout
+weight: 20
+block_restrictions: {  }
+layout_restrictions:
+  - layout_onecol
+  - layout_twocol_section
+  - layout_threecol_section
+  - layout_fourcol_section

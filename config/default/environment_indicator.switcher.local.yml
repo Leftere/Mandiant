@@ -1,0 +1,10 @@
+uuid: 939aecc1-cb64-4a92-95c1-bf4b3773ef4b
+langcode: en
+status: true
+dependencies: {  }
+machine: local
+description: null
+name: Local
+url: 'http://mandiant.docksal'
+fg_color: '#3f91d6'
+bg_color: '#feffff'

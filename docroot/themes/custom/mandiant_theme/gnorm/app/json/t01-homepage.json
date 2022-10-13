@@ -1,0 +1,83 @@
+{
+  "bodyClass": "front dark",
+  "title": "T01 - Homepage",
+  "solutionCards": [
+    {
+      "eyebrow": "Expertise",
+      "title": "Maximize security effectiveness with unparalleled expertise",
+      "description": "<p>Apply the unmatched experience and knowledge of leading threat researchers, reverse engineers, intelligence analysts and incident responders who have been defending organizations of all sizes from the front lines of cyber conflict since 2004.</p>",
+      "cta": {
+        "url": "#",
+        "label": "Learn more"
+      },
+      "statistics": [
+        {
+          "number": "200K+",
+          "description": "hours responding to attacks per year"
+        },
+        {
+          "number": "1K+",
+          "description": "engagements per year"
+        },
+        {
+          "number": "17+",
+          "description": "years of investigative experience"
+        }
+      ]
+    },
+    {
+      "eyebrow": "Intelligence",
+      "title": "Take decisive action with industry-leading intelligence",
+      "description": "<p>Empower your team with Mandiants uniquely dynamic view of the attack lifecycle. Combine machine, adversary and operational cyber threat intelligence to understand and proactively protect against the relevant threats facing your organization.</p>",
+      "cta": {
+        "url": "#",
+        "label": "Start here"
+      },
+      "statistics": [
+        {
+          "number": "3K+",
+          "description": "threat actors tracked at any tie"
+        },
+        {
+          "number": "300+",
+          "description": "security researchers and intelligence analysts"
+        },
+        {
+          "number": "26",
+          "description": "countries covering 30+ languages"
+        }
+      ]
+    },
+    {
+      "eyebrow": "Innovative Technology",
+      "title": "The power of Mandiant in a single platform",
+      "description": "<p>The Advantage Platform allows you to automate Mandiant expertise and intelligence so you can prioritize effort and increase capacity to detect and respond faster to attacks – think of it as a virtual extension of your team.</p>",
+      "cta": {
+        "url": "#",
+        "label": "Explore Advantage"
+      },
+      "statistics": [
+        {
+          "number": "530B+",
+          "description": "events triaged per year"
+        },
+        {
+          "number": "7.6B+",
+          "description": "analyst hours saved per year through expert automation"
+        }
+      ]
+    }
+  ],
+  "largeImageCTA": {
+    "image": {
+      "src": "images/home-laptop-iso.png",
+      "alt": "Laptop displaying the Mandiant Advantage Platform"
+    },
+    "title": "Technology can stop breaches. Expertise keeps you ready. The Mandiant Advantage Platform gives you both.",
+    "description": "<p>Combining our years of experience and expertise, Mandiant Advantage provides you with a scalable SaaS-based platform that extends Mandiant’s threat intelligence and expertise to your team</p>",
+    "cta": {
+      "url": "#",
+      "label": "Explore Advantage"
+    }
+  }
+}

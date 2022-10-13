@@ -1,0 +1,25 @@
+uuid: 5c1138bd-08da-4be0-b04c-5b6747f0a72a
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:text:606f0282-f99f-4e0b-ab40-b76c87b4723d'
+  module:
+    - block_content
+  theme:
+    - mandiant_theme
+id: megamenucompanylinks2
+theme: mandiant_theme
+region: header
+weight: 3
+provider: null
+plugin: 'block_content:606f0282-f99f-4e0b-ab40-b76c87b4723d'
+settings:
+  id: 'block_content:606f0282-f99f-4e0b-ab40-b76c87b4723d'
+  label: 'MegaMenu - Company - links2'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,50 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 87f2eada-e572-45f2-804a-d7e93a26e743
+  bundle: view
+  default_langcode: en
+  depends:
+    76142c52-522d-4fd1-aa68-da16dde771e8: user
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Inline block'
+  reusable:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      entity: 76142c52-522d-4fd1-aa68-da16dde771e8
+  content_translation_created:
+    -
+      value: 1626960037
+  field_body:
+    -
+      value: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.<br />\r\nProin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>\r\n"
+      format: basic_html
+  field_catalogue:
+    -
+      target_id: terms
+      display_id: block_1
+      data: 'a:5:{s:8:"argument";s:0:"";s:5:"limit";s:0:"";s:6:"offset";s:0:"";s:5:"pager";s:0:"";s:5:"title";i:0;}'
+  field_cta:
+    -
+      uri: 'internal:#'
+      title: 'Explore Mandiant Solutions'
+      options: {  }
+  field_title:
+    -
+      value: 'What do you need to<br/>improve your security?'

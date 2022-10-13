@@ -1,0 +1,19 @@
+uuid: 42201a54-347b-4654-859d-cd019da08a7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.featured_pages
+    - field.storage.block_content.field_title
+id: block_content.featured_pages.field_title
+field_name: field_title
+entity_type: block_content
+bundle: featured_pages
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

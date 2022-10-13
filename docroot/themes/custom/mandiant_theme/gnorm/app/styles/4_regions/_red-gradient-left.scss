@@ -1,0 +1,34 @@
+.red-gradient-left {
+  > div {
+    position: relative;
+  }
+
+  > .layout__region,
+  .wrapper {
+    @extend %wrapper;
+
+    @include container($desktop);
+    background-color: $black;
+    position: relative;
+
+    &:before {
+      @include container(1600px);
+      background: linear-gradient(to right, #000 5%, #3f1c20 60%, #000 80%);
+      content: '';
+      height: 100%;
+      left: -400px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  .left {
+    .sub-title {
+      h2 {
+        color: $medGray;
+        margin-left: 2rem;
+      }
+    }
+  }
+}

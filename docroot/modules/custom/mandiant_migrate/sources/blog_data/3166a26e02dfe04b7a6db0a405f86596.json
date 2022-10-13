@@ -1,0 +1,77 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Fri Sep 01 2017 10:40:38 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Monitoring Windows Console Activity (Part 1)",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "cf6742d3-392d-4411-a202-11db146cccb8",
+    "author": "Andrew Davis",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "adam.greenberg@fireeye.com",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "bcfd7d17-fcdb-4e11-b530-6d15010b4c06"
+    ],
+    "jcr:created": "Fri Sep 01 2017 10:42:15 GMT-0400",
+    "cq:lastReplicated": "Fri Sep 01 2017 10:42:01 GMT-0400",
+    "cq:lastModified": "Fri Sep 01 2017 10:41:42 GMT-0400",
+    "cq:distribute": true,
+    "jcr:baseVersion": "bcfd7d17-fcdb-4e11-b530-6d15010b4c06",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-authors:cap-andrew-davis",
+      "fireeye-doctypes:blog",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:windows-incident-response"
+    ],
+    "jcr:uuid": "fa36187c-1cc7-47ee-8d66-f7dd6677c704",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Fri Sep 01 2017 11:00:00 GMT-0400",
+    "_charset_": "UTF-8",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Ch4\u003EIntroduction\u003C\/h4\u003E\n\u003Cp\u003EWhile performing incident response, Mandiant encounters attackers actively using systems on a compromised network. This activity often includes using interactive console programs via RDP such as the command prompt, PowerShell, and sometimes custom command and control (C2) console tools. Mandiant\u2019s Innovation and Custom Engineering (ICE) team researched how feasible it would be to capture this attacker activity on an endpoint.\u003C\/p\u003E\n\u003Cp\u003EDepending on the target Windows version, capturing this data on a live system can be difficult. The varying level of difficulty is directly related to the evolving Windows implementation of virtual consoles over the last decade.\u003C\/p\u003E\n\u003Cp\u003EThis blog will discuss the implementation of the Windows console architecture from years past, with a primary focus on the current implementation present on modern versions of Windows.\u003C\/p\u003E\n\u003Ch4\u003EA Review of Console Applications\u003C\/h4\u003E\n\u003Cp\u003EThe Windows PE loader determines if a file is a console application when the \u0026quot;Subsystem\u0026quot; field in the PE optional header is set to IMAGE_SUBSYSTEM_WINDOWS_CUI. If this flag is set, the loader allocates a console server for the process. The details of how the console server is implemented depends on the Windows version and has undergone three major revisions since Windows XP. Regardless of the implementation, when a client (e.g. cmd.exe, powershell.exe, etc.) is executed, by default, a console server connection is established typically via the AllocConsole Win32 API. The server process is what the user typically interacts with when typing commands that are then transferred to the client process through an Interprocess communication (IPC) mechanism. A single console server can host one or more clients simultaneously.\u003C\/p\u003E\n\u003Ch4\u003EEvolution of the Windows Console\u003C\/h4\u003E\n\u003Cp\u003EOn Windows XP through Windows Vista, the Client\/Server Runtime Subsystem process \u003Ca href=\u0022https:\/\/blogs.technet.microsoft.com\/askperf\/2009\/10\/05\/windows-7-windows-server-2008-r2-console-host\/\u0022\u003E(CSRSS) was responsible for capturing user input and sending it to client processes\u003C\/a\u003E. The clients and CSRSS communicated using a Local Procedure Call (LPC) Port to send captured input.\u0026nbsp; Figure 1 illustrates the client-server console architecture implemented in Windows XP and Vista.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/Monitoring%20Windows\/Fig1a.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 1: Windows XP\/Vista console architecture\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EThis model suffered from privilege escalation vulnerabilities since the client ran as the current user, but the CSRSS server process ran as the Local System account. An attacker could exploit the exposed attack surface of CSRSS by connecting as an unprivileged user and triggering a vulnerable code path in CSRSS, giving them SYSTEM level access.\u003C\/p\u003E\n\u003Cp\u003EThis architecture problem was addressed with the release of Windows 7 and Windows Server 2008 R2. Instead of CSRSS being the only console server on the system, a new console host (conhost.exe) process was introduced that hosted the console input thread. This process now ran in the same context as the client, removing this attack scenario. Figure 2 illustrates the updated Windows 7 console architecture.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/Monitoring%20Windows\/Fig2a.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 2: Windows 7\/Server 2008 R2 console architecture\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EWhen a\u0026nbsp;\u003Ca href=\u0022https:\/\/docs.microsoft.com\/en-us\/sysinternals\/learn\/windows-internals\u0022\u003Econsole in Windows 7 is allocated, CSRSS executes a new instance of the conhost.exe process\u003C\/a\u003E. An Advanced Local Procedure Call (ALPC) port is created with the following naming convention: \\RPC Control\\ConsoleLPC-\u0026lt;conhost_pid\u0026gt;-\u0026lt;random_number\u0026gt;. This port is used along with a shared section object mapped into the client and server processes so command line data can be easily shared. In addition, an event object is created with the naming scheme \\RPC Control\\ConsoleEvent-\u0026lt;conhost_pid\u0026gt;-\u0026lt;random_number\u0026gt;. This event object is used so the\u003Ca href=\u0022https:\/\/docs.microsoft.com\/en-us\/sysinternals\/learn\/windows-internals\u0022\u003E client and server can notify each other\u003C\/a\u003E when new data is present. A single conhost.exe process can service multiple client applications, as shown in the Windbg output in Figure 3.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/Monitoring%20Windows\/Fig3a.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 3: Windbg output for analyzing ALPC ports between a conhost process and multiple console applications on Windows 7\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EThe release of Windows 8 introduced the current console implementation at the time of this writing. This new architecture differs significantly from the previous ones in that there is now a dedicated kernel driver to handle console I\/O between client and server processes. This new driver is named ConDrv.sys and brokers all console communication on the system. This is exposed to user mode applications by the driver with a device object named \\Device\\ConDrv. This device object is opened from user mode using a list of \u003Ca href=\u0022https:\/\/github.com\/rprichard\/win32-console-docs\/blob\/master\/README.md\u0022\u003Esupported namespace parameters\u003C\/a\u003E \u2013 Connect, Server, Input, Output, Reference, CurrentIn, and CurrentOut \u2013 that are opened depending on the needs of the application. Client applications will often have multiple open handles to the console driver depending on the functionality needed by the driver. This is shown in Figure 4.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/Monitoring%20Windows\/Fig4a.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 4: Command line application with multiple ConDrv handles open\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EWhen a console is allocated by a command line process, kernelbase.dll will open a handle to \\Device\\ConDrv and request that a new conhost.exe process be created. ConDrv will execute this process from kernel mode and a memory descriptor list (MDL) chain is allocated. This MDL chain is used to map memory pages between the Conhost process and its clients so that data can be easily shared between them. Instead of the LPC\/ALPC ports used in the previous versions, messages are now typically transferred using Fast I\/O to the console driver. Fast I\/O allows an application to communicate with a driver without the overhead of creating an I\/O request packet (IRP) for each request. IRPs are an operating system structure that are used to deliver I\/O data to device drivers. These fast I\/O requests are used to read and write to the console and are brokered by the ConDrv driver.\u003C\/p\u003E\n\u003Cp\u003EIn Windows 10, conhost.exe is mostly a container process. The main input thread along with all the server functionality executes in either ConhostV2.dll or ConhostV1.dll. By default ConhostV2.dll is loaded and provides new console functionality to Windows 10 users (such as full screen console windows). ConhostV1.dll implements \u201clegacy mode\u201d that can be enabled that will make consoles behave as they did in Windows 7 and earlier. Regardless of the version being used, ConDrv.sys is used to transfer messages between console clients and servers. Figure 5 illustrates how all this fits together.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/Monitoring%20Windows\/Fig5a.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 5: Console driver based architecture used in Windows 10\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003ECheck out the follow-up post, \u0026quot;\u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/blog\/threat-research\/2017\/08\/monitoring-windows-console-activity-part-two.html\u0022\u003EMonitoring Windows Console Activity Part 2\u003C\/a\u003E,\u0026quot; for more.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Fri Sep 01 2017 10:41:42 GMT-0400",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "alt": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "comments": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/commons\/components\/comments"
+      },
+      "trackback": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/blog\/components\/trackback"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EThis is the first of two blogs that discuss the implementation of the Windows console architecture from years past, with a primary focus on the current implementation present on modern versions of Windows.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Fri Sep 01 2017 10:39:49 GMT-0400",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Thu Aug 31 2017 14:05:03 GMT-0400",
+      "imageRotate": "0"
+    }
+  }
+}

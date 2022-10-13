@@ -1,0 +1,10 @@
+uuid: 40f75f53-8d99-4bf3-9ebd-07616acbd69d
+langcode: en
+status: true
+dependencies: {  }
+machine: stage
+description: null
+name: Stage
+url: 'https://mandiantstg.prod.acquia-sites.com'
+fg_color: '#000000'
+bg_color: '#fdcf6c'

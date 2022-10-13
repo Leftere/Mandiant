@@ -1,0 +1,13 @@
+uuid: 7d3eb1e1-170b-4113-be9f-565a4a68b822
+langcode: en
+status: true
+dependencies: {  }
+id: red_gradient
+label: 'Gradient (Red)'
+classes: bg-gradient--red
+type: section
+group: background
+weight: 17
+block_restrictions: {  }
+layout_restrictions:
+  - layout_onecol

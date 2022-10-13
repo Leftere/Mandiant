@@ -1,0 +1,65 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Thu Sep 20 2018 12:31:04 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Increased Use of a Delphi Packer to Evade Malware Classification",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "a2e9f3b0-699d-44c1-99f0-f88c5d51efb0",
+    "author": "Irshad Muhammad",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "adam.greenberg@fireeye.com",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "c30f6605-a301-49e9-b97f-d6d39459d852"
+    ],
+    "jcr:created": "Thu Sep 20 2018 12:31:04 GMT-0400",
+    "cq:lastReplicated": "Thu Sep 20 2018 12:30:57 GMT-0400",
+    "cq:lastModified": "Thu Sep 20 2018 12:30:45 GMT-0400",
+    "jcr:baseVersion": "c30f6605-a301-49e9-b97f-d6d39459d852",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:irshad-muhammad",
+      "fireeye-blog-authors:sarfaraz-ahmed",
+      "fireeye-blog-authors:abhay-vaish",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:evasion-techniques",
+      "fireeye-blog-tags:tactics-techniques-procedures"
+    ],
+    "jcr:uuid": "01bea41a-67ca-47cc-bc3c-8331f68fcd63",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Thu Sep 20 2018 12:30:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Ch4\u003EIntroduction\u003C\/h4\u003E\n\u003Cp\u003EThe concept of \u0026quot;packing\u0026quot; or \u0026quot;crypting\u0026quot; a malicious program is widely popular among threat actors looking to bypass or defeat analysis by static and dynamic analysis tools. Evasion of classification and detection is an arms race in which new techniques are traded and used in the wild. For example, we observe many crypting services being offered in underground forums by actors who claim to make any malware \u0026quot;FUD\u0026quot; or \u0026quot;Fully Undetectable\u0026quot; by anti-virus technologies, sandboxes and other endpoint solutions. We also see an increased effort to model normal user activity and baseline it as an effective countermeasure to fingerprint malware analysis environments.\u003C\/p\u003E\n\u003Ch4\u003EDelphi Code to the Rescue\u003C\/h4\u003E\n\u003Cp\u003EThe samples we inspected were carrying the Delphi signature (Figure 1) and were consistent with Delphi code constructs on analyzing with IDR (Interactive Delphi Reconstructor).\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/DelphiSandbox\/Fig0.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 1: Delphi signature in sample\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EThe Delphi programming language can be an easy way to write applications and programs that leverage Windows API functions. In fact, some actors deliberately include the default libraries as a diversion to hamper static analysis and make the application \u0026quot;look legit\u0026quot; during dynamic analysis. Figure 2 shows the forum post of an actor discussing this technique.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/DelphiSandbox\/Figure1.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 2: Underground forum post of an actor discussing technique\u003C\/span\u003E\u003C\/p\u003E\n\u003Ch4\u003EDistribution Campaigns\u003C\/h4\u003E\n\u003Cp\u003EWe have observed many spam campaigns with different themes that drop payloads packed using this packer.\u003C\/p\u003E\n\u003Cp\u003EAn example is an average swift transfer spam that carries a document file as an attachment (hash: 71cd5df89e3936bb39790010d6d52a2d), which leverages malicious macros to drop the payload. The spam email is shown in Figure 3.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/DelphiSandbox\/Figure2.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 3: Spam example 1\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EAnother example is an average quotation themed spam that carries an exploit document file as an attachment (hash: 0543e266012d9a3e33a9688a95fce358), which leverages an equation editor vulnerability to drop the payload (Figure 4).\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/DelphiSandbox\/Figure3.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 4: Spam example 2\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EThe documents in the examples fetched a payload from http:\/\/5.152.203.115\/win32.exe. This turned out to be Lokibot malware.\u003C\/p\u003E\n\u003Ch4\u003EUser Activity Checks\u003C\/h4\u003E\n\u003Cp\u003EThe packer goes to great lengths to ensure that it is not running in an analysis environment. Normal user activity involves many application windows being rotated or changed over a period of time. The first\u0026nbsp;variant of the packer uses GetForegroundWindow API to check for the user activity of changing windows at least three times before it executes further. If it does not see the change of windows, it puts itself into an infinite sleep. The code is shown in Figure 5. Interestingly, some of the publicly available sandboxes can be detected by this simple technique.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/DelphiSandbox\/Figure4.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 5: Window change check\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003ETo confirm user activity, a second\u0026nbsp;variant of the packer checks for mouse cursor movement using GetCursorPos and Sleep APIs, while a third\u0026nbsp;variant checks for system idle state using GetLastInputInfo and GetTickCount APIs.\u003C\/p\u003E\n\u003Ch4\u003EExtracting Real Payloads from the PE Resources\u003C\/h4\u003E\n\u003Cp\u003EThe original payload is split into multiple binary blobs and stored in various locations inside the resource directory, as shown in Figure 6.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/DelphiSandbox\/Figure5.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 6: Bitmap resource with encrypted contents\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003ETo locate and assemble the real payload bytes, the packer code first directly reads content from a hardcoded resource ID inside the resource section. The first 16 bytes of this form a XOR key used to decrypt rest of the bytes using rolling XOR. The decrypted bytes actually represent an internal data structure, as shown in Figure 7, used by the packer to reference encrypted and obfuscated buffers at various resource IDs.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/DelphiSandbox\/Figure6.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 7: Structure showing encrypted file information\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EThe packer then reads values from the encrypted buffers, starting from dwStartResourceId to dwStartResourceId+dwNumberOfResources, and brings them to a single location by reading chunks of dwChunkSize. Once the final data buffer is prepared, it starts decrypting it using the same rolling XOR algorithm mentioned previously and the new key from the aforementioned structure, producing the core payload executable. This script can be used to \u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/content\/dam\/fireeye-www\/blog\/pdfs\/script.pdf\u0022\u003Eextract the real payload statically\u003C\/a\u003E.\u003C\/p\u003E\n\u003Ch4\u003EClassification of Real Families\u003C\/h4\u003E\n\u003Cp\u003EMany of the unpacked binaries that we were able to extract from the sample set were identified as belonging to the Lokibot malware family. We were also able to identify Pony, IRStealer, Nanocore, Netwire, Remcos, and nJRAT malware families, as well as a coin mining malware family, among others. A distribution of the malware families using the packer is shown in Figure 8. This diversity of malware families implies that many threat actors are using this \u0026quot;crypting\u0026quot; service\/tool for their operations, possibly buying it from the developer itself.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/DelphiSandbox\/Picture7.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 8: Distribution of malware families using packer\u003C\/span\u003E\u003C\/p\u003E\n\u003Ch4\u003EConclusion\u003C\/h4\u003E\n\u003Cp\u003EPackers and crypter services provide threat actors an easy and convenient option to outsource the workload of keeping their real payloads undetected and unclassified as long as possible. They are regularly finding nifty ways to bypass sandbox environments with anti-analysis techniques; hence, detonating malware samples in a sandbox environment that try to model real user behavior is a safe bet.\u003C\/p\u003E\n\u003Cp\u003EFireEye MVX Engine both detects and blocks this activity.\u003C\/p\u003E\n\u003Ch4\u003EIndicators of Compromise (IOCs)\u003C\/h4\u003E\n\u003Cul style=\u0022list-style-position: inside;\u0022\u003E\n\u003Cli\u003E853bed3ad5cc4b1471e959bfd0ea7c7c\u003C\/li\u003E\n\u003Cli\u003Ee3c421d404c08809dd8ee3365552e305\u003C\/li\u003E\n\u003Cli\u003E14e5326c5da90cd6619b7fe1bc4a97e1\u003C\/li\u003E\n\u003Cli\u003Edc999a1a2c5e796e450c0a6a61950e3f\u003C\/li\u003E\n\u003Cli\u003E3ad781934e67a8b84739866b0b55544b\u003C\/li\u003E\n\u003Cli\u003Eb4f5e691b264103b9c4fb04fa3429f1e\u003C\/li\u003E\n\u003C\/ul\u003E\n",
+        "jcr:lastModified": "Thu Sep 20 2018 11:49:10 GMT-0400",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Thu Sep 20 2018 12:30:45 GMT-0400",
+      "imageRotate": "0"
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EThe concept of \u0026quot;packing\u0026quot; or \u0026quot;crypting\u0026quot; a malicious program is widely popular among threat actors looking to bypass or defeat analysis by static and dynamic analysis tools.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Thu Sep 20 2018 11:50:10 GMT-0400",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+uuid: 2426df41-9d8b-427b-a850-f50a3e2493e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_podcast
+    - node.type.article
+  module:
+    - iframe
+id: node.article.field_podcast
+field_name: field_podcast
+entity_type: node
+bundle: article
+label: Podcast
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  class: ''
+  frameborder: '0'
+  scrolling: 'no'
+  transparency: '1'
+  allowfullscreen: '0'
+  tokensupport: null
+  title: null
+  height: null
+  width: null
+field_type: iframe

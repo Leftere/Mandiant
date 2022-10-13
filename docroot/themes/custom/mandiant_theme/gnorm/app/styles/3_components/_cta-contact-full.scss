@@ -1,0 +1,53 @@
+.cta-contact-full {
+  @extend %wrapper;
+
+  @include container($desktop);
+  margin-top: 5rem;
+
+  @include breakpoint($desktop) {
+    margin-top: 10rem;
+  }
+
+  .wrapper {
+    > .layout__region {
+      margin: .5rem;
+
+      @include breakpoint($tablet) {
+        flex: 1 !important;
+      }
+    }
+  }
+
+  // Layout modifiers
+  &.negative-margin-bottom {
+    margin-bottom: -5rem !important;
+
+    @include breakpoint($desktop) {
+      margin-bottom: -10rem !important;
+    }
+  }
+
+  .block-bundle-cta {
+    height: 100%;
+
+    > div {
+      padding: 3rem;
+
+      @include breakpoint($desktop) {
+        padding: 6rem;
+      }
+    }
+  }
+
+  .block-bundle-text {
+    height: 100%;
+
+    > div {
+      padding: 3rem;
+
+      @include breakpoint($desktop) {
+        padding: 6rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+uuid: a1839e23-f0bf-4cf5-b0fa-8c21cc7ccc7e
+langcode: en
+status: true
+dependencies: {  }
+id: negative_bottom_margin
+label: 'Margin bottom (Negative)'
+classes: negative-margin-bottom
+type: section
+group: modifiers_layout
+weight: 12
+block_restrictions: {  }
+layout_restrictions:
+  - layout_onecol
+  - layout_twocol_section
+  - layout_threecol_section
+  - layout_fourcol_section

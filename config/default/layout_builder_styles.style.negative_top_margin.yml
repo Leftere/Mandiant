@@ -1,0 +1,16 @@
+uuid: 4d0e6aca-dd63-4934-a482-5ef069ada57b
+langcode: en
+status: true
+dependencies: {  }
+id: negative_top_margin
+label: 'Margin top (Negative)'
+classes: negative-margin-top
+type: section
+group: add_ons
+weight: 13
+block_restrictions: {  }
+layout_restrictions:
+  - layout_onecol
+  - layout_twocol_section
+  - layout_threecol_section
+  - layout_fourcol_section

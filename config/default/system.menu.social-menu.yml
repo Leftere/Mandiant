@@ -1,0 +1,8 @@
+uuid: ea21f38f-79bb-4676-8803-c6accdc284ce
+langcode: en
+status: true
+dependencies: {  }
+id: social-menu
+label: 'Social Menu'
+description: 'Provide links to companies social network sites.'
+locked: false

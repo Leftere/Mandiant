@@ -1,0 +1,19 @@
+uuid: bcee7015-c3bc-4b4d-bfd4-c012ac1a1726
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.featured_questions
+    - field.storage.block_content.field_eyebrow
+id: block_content.featured_questions.field_eyebrow
+field_name: field_eyebrow
+entity_type: block_content
+bundle: featured_questions
+label: 'Questions Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

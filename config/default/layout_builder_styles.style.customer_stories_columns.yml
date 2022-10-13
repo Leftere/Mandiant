@@ -1,0 +1,13 @@
+uuid: 80e36ae6-2b65-4aa7-9d4d-b4fcd0225a12
+langcode: en
+status: true
+dependencies: {  }
+id: customer_stories_columns
+label: 'Customer stories columns'
+classes: cs-columns
+type: section
+group: modifiers_type
+weight: 5
+block_restrictions: {  }
+layout_restrictions:
+  - layout_threecol_section

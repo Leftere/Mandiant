@@ -1,0 +1,12 @@
+project:
+  profile:
+    name: mandiant_main
+  local:
+    hostname: mandiant.docksal
+
+drupal:
+  db:
+    database: default
+    username: user
+    password: user
+    host: db

@@ -1,0 +1,18 @@
+uuid: c19eed01-03a0-450b-87a8-b53ea662858e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.bio
+id: node.bio.title
+field_name: title
+entity_type: node
+bundle: bio
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: 9f190736-d5cf-4874-9249-76b8e698597e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.view
+    - field.storage.block_content.field_cta
+  module:
+    - link
+id: block_content.view.field_cta
+field_name: field_cta
+entity_type: block_content
+bundle: view
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

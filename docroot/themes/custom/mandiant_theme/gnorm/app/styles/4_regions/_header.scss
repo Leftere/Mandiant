@@ -1,0 +1,59 @@
+.header {
+  background-color: #000;
+  background-image: linear-gradient(to right, $black, #1b0403 75%, #450c12);
+  height: 7.5rem;
+  padding: 0 3rem;
+  position: fixed;
+  transition: .4s background-color ease;
+  width: 100%;
+  z-index: 20;
+
+  .dark & {
+    background: transparent;
+  }
+
+  &.scrolled {
+    background-color: #000;
+  }
+
+  &__search {
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 50rem;
+    will-change: opacity, transform;
+
+    &.shown {
+      max-height: 200px;
+    }
+  }
+}
+
+.layout-container > header > div {
+  align-items: center;
+
+  #block-sitebranding {
+    @include breakpoint($desktop) {
+      max-width: 27rem;
+      padding: 1.5rem;
+
+      .front & {
+        max-width: 19rem;
+      }
+    }
+
+    svg {
+      color: $white;
+      width: 100%;
+    }
+  }
+}
+
+// nav scroll position detector
+#header__top {
+  display: block;
+  height: 1px;
+  position: absolute;
+  top: 100px;
+  width: 1px;
+}

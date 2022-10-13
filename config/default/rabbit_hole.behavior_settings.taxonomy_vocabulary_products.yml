@@ -1,0 +1,14 @@
+uuid: 64aa2499-aa33-4cd4-8079-37f7119aa425
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.products
+id: taxonomy_vocabulary_products
+entity_type_id: taxonomy_vocabulary
+entity_id: products
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

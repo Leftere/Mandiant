@@ -1,0 +1,48 @@
+.chosen-container {
+  .chosen-choices {
+    background-color: transparent;
+    background-image: none;
+    border: 0;
+  }
+}
+
+.field--name-field-body,
+.field--name-field-block {
+  table > thead {
+    text-align: left;
+    h4 {
+      margin-top: 0;
+    }
+    tr, th {
+      padding: 0;
+    }
+  }
+  .tabledrag-toggle-weight-wrapper {
+    display: none;
+  }
+  .form-item--multiple.glb-form-item {
+    margin-top: 0 !important;
+  }
+
+  table {
+    width: 100%;
+    > tbody > tr {
+      > td:nth-child(1),
+      > td:nth-child(3) {
+        width: 5%;
+      }
+    }
+  }
+  a.tabledrag-handle .handle {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.field--name-field-embed {
+  [data-drupal-selector="edit-settings-block-form-field-embed-0-format"] {
+    display: none;
+  }
+}

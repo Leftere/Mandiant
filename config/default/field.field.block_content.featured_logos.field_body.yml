@@ -1,0 +1,26 @@
+uuid: af7a2fff-09c1-4023-98d4-074687fbc16b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.featured_logos
+    - field.storage.block_content.field_body
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: '0'
+    plain_text: '0'
+id: block_content.featured_logos.field_body
+field_name: field_body
+entity_type: block_content
+bundle: featured_logos
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

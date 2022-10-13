@@ -1,0 +1,8 @@
+uuid: 8f5c547d-fb36-446a-b216-dbfbdcd0f48c
+langcode: en
+status: true
+dependencies: {  }
+id: relationship
+label: 'Featured Resources'
+revision: 0
+description: ''

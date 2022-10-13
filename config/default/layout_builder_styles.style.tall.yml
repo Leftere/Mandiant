@@ -1,0 +1,13 @@
+uuid: 40403195-411d-466b-8106-6c40cae33e39
+langcode: en
+status: true
+dependencies: {  }
+id: tall
+label: Tall
+classes: tall
+type: component
+group: modifiers_type
+weight: -2
+block_restrictions:
+  - 'inline_block:hero'
+layout_restrictions: {  }

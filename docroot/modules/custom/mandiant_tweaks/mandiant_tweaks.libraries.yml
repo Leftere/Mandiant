@@ -1,0 +1,41 @@
+wireframe:
+  version: 1.x
+  css:
+    theme:
+      css/styles.css: {}
+
+gin:
+  version: VERSION
+  css:
+    theme:
+      css/gin-fixes.css: {}
+  js:
+    js/scripts.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+
+progress_bar:
+  version: VERSION
+  css:
+    theme:
+      css/progress-bar.css: {}
+
+layout_builder_tweaks:
+  version: VERSION
+  js:
+    js/layout-builder.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+
+marketo_form:
+  version: VERSION
+  js:
+    js/marketo-form.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal

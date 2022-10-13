@@ -1,0 +1,15 @@
+uuid: 420ef935-c914-4415-83a3-99ffb5ea497a
+langcode: en
+status: true
+dependencies: {  }
+id: divider
+label: Divider
+classes: divider
+type: section
+group: add_ons
+weight: 8
+block_restrictions: {  }
+layout_restrictions:
+  - layout_twocol_section
+  - layout_threecol_section
+  - layout_fourcol_section

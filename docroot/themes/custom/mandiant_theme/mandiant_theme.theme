@@ -1,0 +1,219 @@
+<?php
+
+/**
+ * Implements hook_preprocess().
+ */
+function mandiant_theme_preprocess(&$variables, $hook) {
+  // Template variable to front-end files directory.
+  /** @var \Drupal\Core\Theme\ActiveTheme $active_theme */
+  $active_theme = \Drupal::service('theme.manager')->getActiveTheme();
+  $theme_path = base_path() . $active_theme->getPath();
+  $variables['path_to_theme'] = $theme_path;
+  $variables['path_to_gnorm'] = $variables['path_to_theme'] . "/gnorm";
+  $variables['path_to_gnorm_build'] = $variables['path_to_gnorm'] . "/build";
+  $variables['isBuild'] = TRUE;
+}
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function mandiant_theme_preprocess_html(&$variables) {
+  // This script will add the values from field_styles on every content type
+  // that implement it to print those values in the <body> tag.
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if ($node instanceof \Drupal\node\NodeInterface) {
+    $variables['attributes']['class'][] = 'light';
+
+    if (!empty($node->field_styles) && !$node->get('field_styles')->isEmpty() ) {
+      $styles = $node->get('field_styles')->getValue();
+      foreach ($styles as $class) {
+        // In case the specific 'dark' class is set we need to remove the oposite.
+        if ($class['value'] == 'dark' && ($key = array_search('light', $variables['attributes']['class'])) !== false) {
+          unset($variables['attributes']['class'][$key]);
+        }
+        $variables['attributes']['class'][] = $class['value'];
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for block templates.
+ */
+function mandiant_theme_preprocess_block(&$variables) {
+  // Forces block labels to be overwritten with the inline block title.
+  $allowed_plugin_ids = [
+    'field_block:node:article:field_media_document',
+    'field_block:node:article:field_related_bios',
+    'field_block:node:article:field_media_document',
+  ];
+  if (in_array($variables['plugin_id'], $allowed_plugin_ids)) {
+    $variables['label'] = $variables['configuration']['label'];
+
+    // Adding specific class to Documents media block
+     if ($variables['plugin_id'] == $allowed_plugin_ids[2]) {
+      $variables['attributes']['class'][] = 'documents-resource';
+    }
+  }
+
+  // Forces a custom block-bundle-[machine_name] css class for custom blocks.
+  $block = $variables['elements']['content'];
+  if (isset($block['#block_content'])) {
+    $bundle = $block['#block_content']->bundle();
+    $variables['attributes']['class'][] = 'block-bundle';
+    $variables['attributes']['class'][] = 'block-bundle-' . $bundle;
+
+    if (!empty($block['#block_content']->hasField('layout_selection'))) {
+      $layout_selection = $block['#block_content']->get('layout_selection')->getValue();
+      if (!empty($layout_selection[0])) {
+        $template_id = $layout_selection[0]['target_id'];
+        $variables['attributes']['class'][] = str_replace('_', '-', $template_id);
+      }
+    }
+  }
+
+  // Send view css class to the view wrapper block.
+  if ($variables['plugin_id'] === 'inline_block:view') {
+    $el = $variables['content']['field_catalogue'];
+    if (!empty($el) && !empty($el[0]) && !empty($el[0]['contents'])) {
+      $view = $el[0]['contents']['#view'];
+      $variables['attributes']['class'][] = $view->display_handler->getOption('css_class');
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_media_entity_download_link().
+ */
+function mandiant_theme_preprocess_media_entity_download_link(&$variables) {
+  // Forces a download link to use the Media Name and not the file name.
+  $variables['link']['#title'] = t('Download link');
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function mandiant_theme_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if (in_array($form_id, ['contact_message_mandiant_newsletter_form', ])) {
+    $key = ($form_id == 'contact_message_mandiant_newsletter_form') ? 'actions' : 'basic';
+    $form[$key]['submit']['#value'] = 'Submit';
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_alter()
+ */
+function mandiant_theme_theme_suggestions_alter(array &$suggestions, array $variables, $hook) {
+  if (
+    $hook == 'block'
+    && in_array('block__inline_block', $suggestions)
+    && !empty($variables['elements']['#layout_builder_style'])
+  ) {
+    $styles = array_filter($variables['elements']['#layout_builder_style']);
+    $block_id = str_replace(':', '__', $variables['elements']['#plugin_id']);
+
+    if (!empty($styles)) {
+      // Adds a suggestion per css class on every block type.
+      foreach ($styles as $style) {
+        $suggestions[] = $hook . '__' . $block_id . '__' . $style;
+      }
+    }
+
+    // Forces the Hero banner to use Tall suggestion as default.
+    if ($variables['elements']['#plugin_id'] === 'inline_block:hero') {
+      if (!in_array('short', $styles) && !in_array('tall', $styles)) {
+        $suggestions[] = $hook . '__' . $block_id . '__tall';
+      }
+    }
+  }
+
+  if ($hook == 'node') {
+    $node = $variables['elements']['#node'];
+    $node_view_mode = $variables["elements"]["#view_mode"];
+    // Adds a suggestion per node based on the layout selection chosen.
+    if (!empty($node->hasField('layout_selection'))) {
+      $layout_selection = $node->get('layout_selection')->getValue();
+      if (!empty($layout_selection[0])) {
+        $template_id = $layout_selection[0]['target_id'];
+        $suggestions[] = $hook . '__' . $node->bundle(). '__layout__' . $template_id;
+        if (!empty($node_view_mode)) {
+          $suggestions[] = $hook . '__' . $node->bundle(). '__layout__' . $template_id . '__' . $node_view_mode;
+        }
+      }
+    }
+  }
+
+  if ($hook == 'field') {
+    $el = $variables['element'];
+    // Adds a granular suggestion per node view mode on some fields.
+    $allowed_fields = [
+      'field_media',
+      'field_summary_html',
+    ];
+    if (in_array($variables['element']['#field_name'], $allowed_fields)) {
+      $suggestions[] = $hook . '__' . $el['#entity_type'] . '__' . $el['#bundle'] . '__' . $el['#view_mode'] . '__' . $el['#field_name'];
+    }
+
+    $allowed_fields_date = [
+      'field_date',
+    ];
+    if (in_array($el['#field_name'], $allowed_fields_date) && $el['#bundle'] == 'article') {
+      if ($node = \Drupal::routeMatch()->getParameter('node')) {
+        $content_type = $node->bundle();
+        $layout_selection = $node->get('layout_selection')->getValue();
+        $allowed_layout = [
+          'article_webinar',
+          'article_podcast',
+          'article_press_release',
+          'article_blog',
+          'article_insight',
+          'article_report',
+          'article_customer_story',
+        ];
+        if (in_array($layout_selection[0]['target_id'], $allowed_layout) && $content_type == 'article') {
+          $layout_selection_target_id = $layout_selection[0]['target_id'];
+          $suggestions[] = $hook . '__' . $el['#entity_type'] . '__' . $el['#bundle'] . '__' . $el['#field_name'] . '__' . $layout_selection_target_id;
+        }
+      }
+    }
+  }
+
+  if ($hook == 'container') {
+    $el = $variables['element'];
+    // Adds a granular container suggestion per view name and view display.
+    if (!empty($el['#type']) && !empty($el['#name'])) {
+      $suggestions[] = $hook . '__' . $el['#type'] . '__' . $el['#name'];
+      if (!empty($el['#display_id'])) {
+        $suggestions[] = $hook . '__' . $el['#type'] . '__' . $el['#name'] . '__' . $el['#display_id'];
+      }
+    }
+  }
+
+  if ($hook == 'views_view') {
+    $el = $variables['view'];
+    // Adds a granular view suggestion per view name and view display.
+    $suggestions[] = $hook . '__' . $el->id();
+    $suggestions[] = $hook . '__' . $el->id() . '__' . $el->current_display;
+  }
+
+  if ($hook == 'views_view_unformatted') {
+    $el = $variables['view'];
+    // Adds a granular view suggestion per view name and view display.
+    $suggestions[] = $hook . '__' . $el->id();
+    $suggestions[] = $hook . '__' . $el->id() . '__' . $el->current_display;
+  }
+
+  if ($hook == 'media') {
+    $el = $variables["elements"];
+    $allowed_bundles = [
+      'image'
+    ];
+    if (!empty($variables["elements"]["#media"]) && in_array($variables["elements"]["#media"]->bundle(), $allowed_bundles)) {
+      /** @var \Drupal\media\Entity\Media $media */
+      $media = $variables["elements"]["#media"];
+      if (!empty($el["#view_mode"])) {
+        $suggestions[] = $hook . '__' . $media->bundle(). '__' . $el["#view_mode"];
+      }
+    }
+  }
+}

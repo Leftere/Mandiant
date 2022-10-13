@@ -1,0 +1,29 @@
+uuid: e63b7eb0-12be-4e44-9157-9fb7df4aa98c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_terms_service
+    - node.type.page
+    - taxonomy.vocabulary.services
+id: node.page.field_terms_service
+field_name: field_terms_service
+entity_type: node
+bundle: page
+label: Service
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      services: services
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

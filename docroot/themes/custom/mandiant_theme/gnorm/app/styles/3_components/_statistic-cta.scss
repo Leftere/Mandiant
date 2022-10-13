@@ -1,0 +1,23 @@
+.statistic-cta {
+  .layout {
+    @extend %wrapper;
+
+    @include container($desktop);
+
+    &__region--first {
+      .image {
+        box-shadow: 21px 24px 33px -2px rgba(0, 0, 0, .43);
+      }
+    }
+
+    &__region--second {
+      .eyebrow {
+        @include font-size(75, 75);
+        color: $black;
+        display: block;
+        font-family: $mono;
+        font-weight: 400;
+      }
+    }
+  }
+}

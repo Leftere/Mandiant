@@ -1,0 +1,25 @@
+uuid: 378227f0-511a-46be-a10c-020381cad9d7
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:text:c4693df6-be3d-48e5-8de3-2914c5128408'
+  module:
+    - block_content
+  theme:
+    - mandiant_theme
+id: megamenucompanycta
+theme: mandiant_theme
+region: header
+weight: 1
+provider: null
+plugin: 'block_content:c4693df6-be3d-48e5-8de3-2914c5128408'
+settings:
+  id: 'block_content:c4693df6-be3d-48e5-8de3-2914c5128408'
+  label: 'MegaMenu - Company - CTA'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

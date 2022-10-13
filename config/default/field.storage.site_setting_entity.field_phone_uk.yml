@@ -1,0 +1,21 @@
+uuid: 6a82eabe-24cd-412a-8cc9-9b062f66b006
+langcode: en
+status: true
+dependencies:
+  module:
+    - site_settings
+id: site_setting_entity.field_phone_uk
+field_name: field_phone_uk
+entity_type: site_setting_entity
+type: string
+settings:
+  max_length: 50
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

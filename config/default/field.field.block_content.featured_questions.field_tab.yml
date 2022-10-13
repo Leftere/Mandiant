@@ -1,0 +1,34 @@
+uuid: 3a20dcaa-7469-4571-8cdb-a89ba05bd13c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.featured_questions
+    - field.storage.block_content.field_tab
+    - paragraphs.paragraphs_type.tab
+  module:
+    - entity_reference_revisions
+id: block_content.featured_questions.field_tab
+field_name: field_tab
+entity_type: block_content
+bundle: featured_questions
+label: Questions
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      tab: tab
+    target_bundles_drag_drop:
+      tab:
+        enabled: true
+        weight: 3
+      text_column:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

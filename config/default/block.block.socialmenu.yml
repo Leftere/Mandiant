@@ -1,0 +1,25 @@
+uuid: 2b2bb347-a323-44f3-bdd4-0de8332f26ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-menu
+  module:
+    - system
+  theme:
+    - mandiant_theme
+id: socialmenu
+theme: mandiant_theme
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:social-menu'
+settings:
+  id: 'system_menu_block:social-menu'
+  label: 'Social Menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

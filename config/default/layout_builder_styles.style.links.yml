@@ -1,0 +1,13 @@
+uuid: 82989860-b2b5-400e-900c-a16a4a0fe513
+langcode: en
+status: true
+dependencies: {  }
+id: links
+label: Links
+classes: links
+type: section
+group: modifiers_style
+weight: 0
+block_restrictions: {  }
+layout_restrictions:
+  - layout_threecol_section

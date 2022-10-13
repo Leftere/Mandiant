@@ -1,0 +1,10 @@
+uuid: 403a4af3-b9a5-4c2e-be11-cf3a1b76a2c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.ief
+label: IEF
+targetEntityType: node
+cache: true

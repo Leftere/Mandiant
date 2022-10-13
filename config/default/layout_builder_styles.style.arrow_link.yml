@@ -1,0 +1,13 @@
+uuid: 139ecba5-7708-4ef9-a235-0bf6d54305a8
+langcode: en
+status: true
+dependencies: {  }
+id: arrow_link
+label: Arrow
+classes: arrow-link
+type: component
+group: modifiers_link
+weight: -22
+block_restrictions:
+  - 'inline_block:cta'
+layout_restrictions: {  }

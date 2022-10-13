@@ -1,0 +1,26 @@
+.block-bundle-featured_pages {
+  @include make-custom-block($type: 'page', $grid-gap: 3rem);
+
+  &:not(.hide-media) {
+    .cols {
+      > a {
+        margin-bottom: 2rem;
+        margin-top: 4rem;
+      }
+    }
+  }
+
+  &.hide-media {
+    .cols {
+      margin-top: 4rem;
+
+      > a {
+        margin-bottom: 4rem;
+
+        span.media {
+          display: none;
+        }
+      }
+    }
+  }
+}

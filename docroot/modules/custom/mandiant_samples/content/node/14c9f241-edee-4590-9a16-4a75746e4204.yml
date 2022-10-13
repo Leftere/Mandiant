@@ -1,0 +1,254 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 14c9f241-edee-4590-9a16-4a75746e4204
+  bundle: page
+  default_langcode: en
+  depends:
+    76142c52-522d-4fd1-aa68-da16dde771e8: user
+    816a9662-f7c4-43fe-9365-124660176389: block_content
+    cb9cb187-8a49-4023-86f7-bd96c46f7f57: block_content
+    597d0484-8fe8-4d25-9567-66f2a9ba212a: block_content
+    489a9acb-26df-41f2-95dd-1483b5263219: block_content
+    6480e8a4-939f-4ba1-bcaf-1aebcba7da99: block_content
+    e7d5bc3d-b6d3-40fa-aac3-877d5ce779d0: block_content
+    287e2d58-e9e4-47f1-af66-482d6fdf0c90: block_content
+    4e14aee1-27de-4599-b9a5-17d64a8c9c96: block_content
+    9fcdfa9a-edf3-42cb-be27-365d3573731e: block_content
+default:
+  revision_uid:
+    -
+      entity: 76142c52-522d-4fd1-aa68-da16dde771e8
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 76142c52-522d-4fd1-aa68-da16dde771e8
+  title:
+    -
+      value: 'Sample - CTA Variants'
+  created:
+    -
+      value: 1626961796
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /samples/cta
+      langcode: en
+      pathauto: 0
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  layout_builder__layout:
+    -
+      section:
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          7421261a-0b09-4596-be0b-63e2e28c8f11:
+            uuid: 7421261a-0b09-4596-be0b-63e2e28c8f11
+            region: content
+            configuration:
+              id: 'inline_block:cta'
+              label: 'Inline block'
+              provider: layout_builder
+              label_display: false
+              view_mode: full
+              block_revision_id: '176'
+              block_serialized: null
+              context_mapping: {  }
+            additional:
+              layout_builder_styles_style:
+                - dark
+              target_uuid: 816a9662-f7c4-43fe-9365-124660176389
+            weight: 0
+          8cc17ac9-b013-4a1c-934c-ac222536bf57:
+            uuid: 8cc17ac9-b013-4a1c-934c-ac222536bf57
+            region: content
+            configuration:
+              id: 'inline_block:cta'
+              label: 'Inline block'
+              provider: layout_builder
+              label_display: false
+              view_mode: full
+              block_revision_id: '181'
+              block_serialized: null
+              context_mapping: {  }
+            additional:
+              layout_builder_styles_style: {  }
+              target_uuid: cb9cb187-8a49-4023-86f7-bd96c46f7f57
+            weight: 1
+        third_party_settings: {  }
+    -
+      section:
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          layout_builder_styles_style: {  }
+          context_mapping: {  }
+        components:
+          8833c59b-f2f7-4295-8537-87b30d22c60b:
+            uuid: 8833c59b-f2f7-4295-8537-87b30d22c60b
+            region: content
+            configuration:
+              id: 'inline_block:cta'
+              label: 'Inline block'
+              provider: layout_builder
+              label_display: false
+              view_mode: full
+              block_revision_id: '186'
+              block_serialized: null
+              context_mapping: {  }
+            additional:
+              layout_builder_styles_style:
+                - dark
+              target_uuid: 597d0484-8fe8-4d25-9567-66f2a9ba212a
+            weight: 0
+          902d4af2-04cd-401f-97fb-f4905bc0fa3d:
+            uuid: 902d4af2-04cd-401f-97fb-f4905bc0fa3d
+            region: content
+            configuration:
+              id: 'inline_block:cta'
+              label: 'Inline block'
+              provider: layout_builder
+              label_display: false
+              view_mode: full
+              block_revision_id: '191'
+              block_serialized: null
+              context_mapping: {  }
+            additional:
+              layout_builder_styles_style: {  }
+              target_uuid: 489a9acb-26df-41f2-95dd-1483b5263219
+            weight: 1
+        third_party_settings: {  }
+    -
+      section:
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          layout_builder_styles_style: {  }
+          context_mapping: {  }
+        components:
+          55f2c7fa-e8f5-498b-b699-07a82eaea3dd:
+            uuid: 55f2c7fa-e8f5-498b-b699-07a82eaea3dd
+            region: content
+            configuration:
+              id: 'inline_block:cta'
+              label: 'Inline block'
+              provider: layout_builder
+              label_display: false
+              view_mode: full
+              block_revision_id: '246'
+              block_serialized: null
+              context_mapping: {  }
+            additional:
+              layout_builder_styles_style:
+                - dark
+              target_uuid: 6480e8a4-939f-4ba1-bcaf-1aebcba7da99
+            weight: 0
+          bf7b432a-b075-4d57-a00f-b99adfb53633:
+            uuid: bf7b432a-b075-4d57-a00f-b99adfb53633
+            region: content
+            configuration:
+              id: 'inline_block:cta'
+              label: 'Inline block'
+              provider: layout_builder
+              label_display: false
+              view_mode: full
+              block_revision_id: '261'
+              block_serialized: null
+              context_mapping: {  }
+            additional:
+              layout_builder_styles_style: {  }
+              target_uuid: e7d5bc3d-b6d3-40fa-aac3-877d5ce779d0
+            weight: 1
+        third_party_settings: {  }
+    -
+      section:
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          layout_builder_styles_style: {  }
+          context_mapping: {  }
+        components:
+          2634d03c-3ee2-4c42-91f6-9f96db1663af:
+            uuid: 2634d03c-3ee2-4c42-91f6-9f96db1663af
+            region: content
+            configuration:
+              id: 'inline_block:cta'
+              label: 'Inline block'
+              provider: layout_builder
+              label_display: false
+              view_mode: full
+              block_revision_id: '266'
+              block_serialized: null
+              context_mapping: {  }
+            additional:
+              layout_builder_styles_style: {  }
+              target_uuid: 287e2d58-e9e4-47f1-af66-482d6fdf0c90
+            weight: 0
+        third_party_settings: {  }
+    -
+      section:
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          layout_builder_styles_style: {  }
+          context_mapping: {  }
+        components:
+          ca265271-b0c5-4bc3-9932-5bdd1427a965:
+            uuid: ca265271-b0c5-4bc3-9932-5bdd1427a965
+            region: content
+            configuration:
+              id: 'inline_block:cta'
+              label: 'Inline block'
+              provider: layout_builder
+              label_display: false
+              view_mode: full
+              block_revision_id: '276'
+              block_serialized: null
+              context_mapping: {  }
+            additional:
+              layout_builder_styles_style:
+                - dark
+              target_uuid: 4e14aee1-27de-4599-b9a5-17d64a8c9c96
+            weight: 0
+        third_party_settings: {  }
+    -
+      section:
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          layout_builder_styles_style: {  }
+          context_mapping: {  }
+        components:
+          4700ed3b-cef0-455a-a95a-1cad51224459:
+            uuid: 4700ed3b-cef0-455a-a95a-1cad51224459
+            region: content
+            configuration:
+              id: 'inline_block:cta'
+              label: 'Inline block'
+              provider: layout_builder
+              label_display: false
+              view_mode: full
+              block_revision_id: '291'
+              block_serialized: null
+              context_mapping: {  }
+            additional:
+              layout_builder_styles_style: {  }
+              target_uuid: 9fcdfa9a-edf3-42cb-be27-365d3573731e
+            weight: 0
+        third_party_settings: {  }

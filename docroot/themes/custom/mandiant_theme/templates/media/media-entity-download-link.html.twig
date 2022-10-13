@@ -1,0 +1,6 @@
+{% block media_entity_download_link %}
+  <div{{ attributes.addClass("media media--document") }}>
+    <h4>{{ media_entity.getName() }}</h4>
+    {{ link }}
+  </div>
+{% endblock media_entity_download_link %}

@@ -1,0 +1,25 @@
+// =======================================
+//    #CORE/HTML - IMAGES
+// =======================================
+
+img {
+  display: block;
+  max-width: 100%;
+
+  // Shame images lacking the alt attribute.
+  // &:not([alt]) {
+  //   filter: blur(10px);
+  // }
+}
+
+figure {
+  margin: 3rem 0;
+  max-width: 69rem;
+
+  figcaption {
+    @include font-size(13, 22);
+    color: palette(blue, darkermed);
+    font-style: italic;
+    margin: 2.4rem 0;
+  }
+}

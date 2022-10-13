@@ -1,0 +1,13 @@
+uuid: f82710ba-f5e8-47fb-9631-db3feef7e69a
+langcode: en
+status: true
+dependencies: {  }
+id: darker_gray
+label: 'Solid (Darker gray)'
+classes: darker-gray
+type: section
+group: background
+weight: 7
+block_restrictions: {  }
+layout_restrictions:
+  - layout_onecol

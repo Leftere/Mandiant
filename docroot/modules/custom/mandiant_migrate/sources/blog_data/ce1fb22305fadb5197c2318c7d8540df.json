@@ -1,0 +1,62 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "fireeye_global_admin",
+  "jcr:created": "Mon Nov 25 2019 19:59:21 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "fireeye_global_admin",
+    "jcr:title": "FIDL: FLARE\u2019s IDA Decompiler Library",
+    "jcr:versionHistory": "bb0e960d-2be1-478c-b723-1e4a7e026435",
+    "author": "Ryan Warns",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "d6752cc4-6686-4d8e-8ac9-33b6a5e3a7f9"
+    ],
+    "jcr:created": "Mon Nov 25 2019 19:59:21 GMT+0000",
+    "cq:lastModified": "Mon Nov 25 2019 19:41:20 GMT+0000",
+    "jcr:baseVersion": "d6752cc4-6686-4d8e-8ac9-33b6a5e3a7f9",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:ryan-warns",
+      "fireeye-blog-authors:carlos-garcia-prado",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:FLARE",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:ida",
+      "fireeye-blog-tags:reverse-engineering"
+    ],
+    "jcr:uuid": "c58488d2-fc68-4555-8830-f1240205bef5",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Mon Nov 25 2019 15:00:00 GMT-0500",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EIDA Pro and the Hex Rays decompiler are a core part of any toolkit for reverse engineering and vulnerability research. In a previous blog post we discussed how the \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/blog\/threat-research\/2018\/04\/solving-ad-hoc-problems-with-hex-rays-api.html\u0022\u003EHex-Rays API\u003C\/a\u003E can be used to solve small, well-defined problems commonly seen as part of malware analysis. Having access to a higher-level representation of binary code makes the Hex-Rays decompiler a powerful tool for reverse engineering. However, interacting with the HexRays API and its underlying data sources can be daunting, making the creation of generic analysis scripts difficult or tedious.\u003C\/p\u003E\n\u003Cp\u003EThis blog post introduces the \u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/github.com\/fireeye\/FIDL\u0022\u003EFLARE IDA Decompiler Library (FIDL)\u003C\/a\u003E, FireEye\u2019s open source library which provides a wrapper layer around the Hex-Rays API.\u003C\/p\u003E\n\u003Ch4\u003EBackground\u003C\/h4\u003E\n\u003Cp\u003EOutput from the Hex-Rays decompiler is exposed to analysts via an Abstract Syntax Tree (AST). Out of the box, processing a binary using the Hex-Rays API means iterating this AST using a tree visitor class which visits each node in the tree and issues a callback.\u0026nbsp; For every callback we can check to see what kind of node we are visiting (calls, additions, assignments, etc.) and then process that node. For more information on these constructs see our previous blog post.\u003C\/p\u003E\n\u003Ch4\u003EThe Problem\u003C\/h4\u003E\n\u003Cp\u003EWhile powerful, this workflow can be difficult to use when creating a generic API for several reasons:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EThe order nodes are visited in, is not always obvious based on the decompiler output\u003C\/li\u003E\n\u003Cli\u003EWhen visiting a node, we have no context about where we are in the AST\u003C\/li\u003E\n\u003Cli\u003EAny problem which requires multiple steps requires multiple visitors or complicated logic in our callback function\u003C\/li\u003E\n\u003Cli\u003EThe amount of cases to handle when walking up or down the AST can increase exponentially\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EHandling each of these cases in a single visitor callback function is untenable, so we need a way to more flexibly interact with the decompiler.\u003C\/p\u003E\n\u003Ch4\u003EFIDL\u003C\/h4\u003E\n\u003Cp\u003EFIDL, the \u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/github.com\/fireeye\/FIDL\u0022\u003EFLARE IDA Decompiler Library\u003C\/a\u003E, is our implementation of a wrapper around the Hex-Rays API. FIDL\u2019s main goal is to abstract away the lower level details of the default decompiler API. FIDL solves multiple problems:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003EProvides analysts an easy-to-understand API layer which can be used to write more complicated binary processing scripts\u003C\/li\u003E\n\u003Cli\u003EAbstracts away the minutiae of processing the AST\u003C\/li\u003E\n\u003Cli\u003EProvides helper implementations for commonly needed functionality when working with the decompiler\u003C\/li\u003E\n\u003Cli\u003EProvides documented examples on how to use various Hex-Rays APIs\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EMany of FIDL\u2019s benefits are exposed to users via the controlFlowinator class. When constructing this object FIDL will parse the AST for us and provides a high-level summary of a function using information extracted via the decompiler including APIs called, their parameters, and a summary of local variables and parameters for the function.\u003C\/p\u003E\n\u003Cp\u003EFigure 1 shows a subset of information available via a controlFlowinator next to the decompilation of the function.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/fidl\/Picture1.png\u0022 alt=\u0022\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 1: Sample output available as part of a controlFlowinator\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EWhen parsing the AST during construction, the controlFlowinator also combines nodes representing the same logical expression into a more digestible form where each block translates roughly to one line of pseudocode. Figure 2 and Figure 3 show the AST and controlFlowinator representations of the same function.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/fidl\/Picture2.png\u0022 alt=\u0022\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 2: The default rendering of the AST of a function\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/fidl\/Picture3.png\u0022 alt=\u0022\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 3: The control flow graph created by the controlFlowinator for the function shown in Figure 2\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003ECompared to the default AST, this graph is organized by potential code paths that can be taken through a function. This gives analysts a much more logical structure to iterate when trying to determine context for a particular expression.\u003C\/p\u003E\n\u003Cp\u003EReadily available access to variables and API calls used in a function makes creating scripts to leverage the Hex-Rays API much more straightforward. In our previous blog post we introduced a script which uses the HexRays API to rename global variables based on the parameter to GetProcAddress. Figure 4 shows this script rewritten using the FIDL API. This new script is both easier to understand and does not rely on manually walking the AST.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/fidl\/Picture4.png\u0022 alt=\u0022\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 4: Script that uses the FIDL API to map all calls to GetProcAddress to global variables\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003ERather than calling GetProcAddress malware commonly manually revolves needed imports by walking the Export Address Table (EAT) and comparing the hashes of a DLL\u2019s exports looking for pre-computed values. As an analyst being able to quickly or automatically map these functions to their intended API makes it easier for us to identify which functions we should spend time analyzing. Figure 5 shows an example of how FIDL can be used to handle these cases. This script targets a DRIDEX sample with MD5 hash 7B82CF2CF9D08191C6828C3F62A2F914. This binary uses CRC32 with an XOR key of 0x65C54023 as the hashing algorithm during import resolution.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/fidl\/Picture5.png\u0022 alt=\u0022\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 5: IDAPython script to automatically process and markup a DRIDEX sample\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003ERunning the above script results in output similar to what is shown in Figure 6, with comments labeling which functions are resolved.\u003C\/p\u003E\n\u003Cp\u003E\u003Ci\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/fidl\/Picture6.png\u0022 alt=\u0022\u0022\u003E\u003Cbr\u003E\n\u003C\/i\u003E\u003Cspan class=\u0022type-XS\u0022\u003EFigure 6: The script in Figure 5 inserts comments into the decompiler output annotating decrypted strings\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EYou can find \u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/github.com\/fireeye\/FIDL\u0022\u003EFIDL in the FireEye GitHub repository\u003C\/a\u003E.\u003C\/p\u003E\n\u003Ch4\u003EConclusion\u003C\/h4\u003E\n\u003Cp\u003EWhile the Hex-Rays decompiler is a powerful source of information during reverse engineering, writing generic scripts and plugins using the default API is difficult and requires handling numerous edge cases. This post introduced the \u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/github.com\/fireeye\/FIDL\u0022\u003EFIDL library\u003C\/a\u003E, a wrapper around the Hex-Rays API, which fixes this by reducing the amount of low-level details an analyst needs to understand in order to create a script leveraging the decompiler and should make the creation of these scripts much faster. In future blog posts we will publish more scripts and analysis utilizing this library.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Mon Nov 25 2019 19:40:47 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EIntroducing FLARE IDA Decompiler Library (FIDL), FireEye\u2019s open source library which provides a wrapper layer around the Hex-Rays API.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Mon Nov 25 2019 18:38:07 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Mon Nov 25 2019 19:41:20 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

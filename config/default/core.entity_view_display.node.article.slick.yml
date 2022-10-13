@@ -1,0 +1,144 @@
+uuid: 0f850760-4ce0-4797-ac21-fcf6e821051a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.slick
+    - field.field.node.article.field_apple_podcast_link
+    - field.field.node.article.field_author
+    - field.field.node.article.field_block
+    - field.field.node.article.field_body
+    - field.field.node.article.field_brighttalk_url
+    - field.field.node.article.field_buzzsprout_embed
+    - field.field.node.article.field_date
+    - field.field.node.article.field_embed
+    - field.field.node.article.field_eyebrow
+    - field.field.node.article.field_media
+    - field.field.node.article.field_media_document
+    - field.field.node.article.field_metatags
+    - field.field.node.article.field_podcast
+    - field.field.node.article.field_podcast_episode_number
+    - field.field.node.article.field_podcast_media
+    - field.field.node.article.field_podcast_series
+    - field.field.node.article.field_related_bios
+    - field.field.node.article.field_related_insights
+    - field.field.node.article.field_related_insights_view
+    - field.field.node.article.field_role_company
+    - field.field.node.article.field_spotify_podcast_link
+    - field.field.node.article.field_styles
+    - field.field.node.article.field_summary
+    - field.field.node.article.field_summary_html
+    - field.field.node.article.field_tags
+    - field.field.node.article.field_terms_industry
+    - field.field.node.article.field_terms_maturity_level
+    - field.field.node.article.field_terms_persona
+    - field.field.node.article.field_terms_product
+    - field.field.node.article.field_terms_region
+    - field.field.node.article.field_terms_service
+    - field.field.node.article.field_terms_solution
+    - field.field.node.article.field_terms_topic
+    - field.field.node.article.field_webinar
+    - field.field.node.article.field_youtube_embed
+    - field.field.node.article.layout_selection
+    - node.type.article
+  module:
+    - datetime
+    - field_formatter_class
+    - layout_builder
+    - layout_builder_restrictions
+    - layout_library
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+  layout_builder_restrictions:
+    allowed_block_categories: {  }
+    entity_view_mode_restriction:
+      whitelisted_blocks: {  }
+      blacklisted_blocks: {  }
+      restricted_categories: {  }
+      allowed_layouts: {  }
+  layout_library:
+    enable: true
+id: node.article.slick
+targetEntityType: node
+bundle: article
+mode: slick
+content:
+  field_date:
+    type: datetime_default
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+  field_media:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: slick
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    region: content
+  reading_time:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  resource_type:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title_display:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  cta_learn_more: true
+  field_apple_podcast_link: true
+  field_author: true
+  field_block: true
+  field_body: true
+  field_brighttalk_url: true
+  field_buzzsprout_embed: true
+  field_embed: true
+  field_eyebrow: true
+  field_media_document: true
+  field_metatags: true
+  field_podcast: true
+  field_podcast_episode_number: true
+  field_podcast_media: true
+  field_podcast_series: true
+  field_related_bios: true
+  field_related_insights: true
+  field_related_insights_view: true
+  field_role_company: true
+  field_spotify_podcast_link: true
+  field_styles: true
+  field_summary: true
+  field_summary_html: true
+  field_tags: true
+  field_terms_industry: true
+  field_terms_maturity_level: true
+  field_terms_persona: true
+  field_terms_product: true
+  field_terms_region: true
+  field_terms_service: true
+  field_terms_solution: true
+  field_terms_topic: true
+  field_webinar: true
+  field_youtube_embed: true
+  langcode: true
+  layout_builder__layout: true
+  layout_selection: true
+  links: true
+  search_api_excerpt: true

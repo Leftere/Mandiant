@@ -1,0 +1,16 @@
+uuid: d66ab7fb-7deb-4715-a2db-a5e29d54c13e
+langcode: en
+status: true
+dependencies: {  }
+id: padding_top_
+label: 'Padding top '
+classes: pt-5
+type: section
+group: modifiers_layout
+weight: 0
+block_restrictions: {  }
+layout_restrictions:
+  - layout_onecol
+  - layout_twocol_section
+  - layout_threecol_section
+  - layout_fourcol_section

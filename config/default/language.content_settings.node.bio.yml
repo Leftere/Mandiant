@@ -1,0 +1,18 @@
+uuid: ac239be9-e5f1-447e-b4d5-ebe19e01bca5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.bio
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.bio
+target_entity_type_id: node
+target_bundle: bio
+default_langcode: site_default
+language_alterable: false

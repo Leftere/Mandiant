@@ -1,0 +1,14 @@
+uuid: 7748550a-cf9b-41d8-a998-ef5f73116e82
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.regions
+id: taxonomy_vocabulary_regions
+entity_type_id: taxonomy_vocabulary
+entity_id: regions
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

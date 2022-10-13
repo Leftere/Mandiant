@@ -1,0 +1,21 @@
+uuid: bdc3f497-8383-4c59-9a70-314268c6c88a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.bio
+    - field.storage.block_content.layout_selection
+id: block_content.bio.layout_selection
+field_name: layout_selection
+entity_type: block_content
+bundle: bio
+label: Layout
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: layout_library
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,8 @@
+uuid: 3c83d4c7-0ba3-4a39-9061-31adc14f67b9
+langcode: en
+status: true
+dependencies: {  }
+id: featured_pages
+label: 'Featured Pages'
+revision: 0
+description: ''

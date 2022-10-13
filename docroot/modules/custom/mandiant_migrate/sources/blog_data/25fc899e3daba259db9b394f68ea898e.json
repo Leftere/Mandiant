@@ -1,0 +1,53 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed May 04 2016 09:04:14 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "APT28: A Window into Russia\u0027s Cyber Espionage Operations?",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "e8c7fe29-e7c6-4855-a151-f001aee1fb5d",
+    "author": "Dan McWhorter",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "adam.greenberg@fireeye.com",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "9d591995-afb7-4fc2-9f1d-dbd00f0fe6f9"
+    ],
+    "jcr:created": "Fri Sep 07 2018 16:21:29 GMT-0400",
+    "cq:lastReplicated": "Fri Sep 07 2018 16:21:27 GMT-0400",
+    "cq:lastModified": "Fri Sep 07 2018 16:21:16 GMT-0400",
+    "jcr:baseVersion": "9d591995-afb7-4fc2-9f1d-dbd00f0fe6f9",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-tags:fireeye",
+      "fireeye-blog-tags:exploit",
+      "fireeye-blog-tags:advanced-threats",
+      "fireeye-doctypes:blog",
+      "fireeye-blog-threat-research:threat-research\/threat-intelligence",
+      "fireeye-blog-tags:cybersecurity",
+      "fireeye-blog-tags:advanced-persistent-threat",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:mandiant"
+    ],
+    "jcr:uuid": "e7615e21-92de-46a5-b7aa-dd384d497fc5",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Mon Oct 27 2014 04:00:42 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EThe role of nation-state actors in cyber attacks was perhaps most widely revealed in February 2013 when \u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/www.fireeye.com\/services.html\u0022\u003EMandiant\u003C\/a\u003E released the \u003Ca target=\u0022_blank\u0022 href=\u0022http:\/\/www.mandiant.com\/apt1\u0022\u003EAPT1 report,\u003C\/a\u003E which detailed a professional cyber espionage group based in China. Today we release a new report: \u003Ca target=\u0022_blank\u0022 href=\u0022https:\/\/www2.fireeye.com\/apt28.html\u0022 adhocenable=\u0022false\u0022\u003EAPT28: A Window Into Russia\u2019s Cyber Espionage Operations?\u003C\/a\u003E\u003C\/p\u003E\n\u003Cp\u003EThis report focuses on a threat group that we have designated as APT28. While APT28\u2019s malware is fairly well known in the cybersecurity community, our report details additional information exposing ongoing, focused operations that we believe indicate a government sponsor based in Moscow.\u003C\/p\u003E\n\u003Cp\u003EIn contrast with the China-based threat actors that FireEye tracks, APT28 does not appear to conduct widespread intellectual property theft for economic gain. Instead, APT28 focuses on collecting intelligence that would be most useful to a government. Specifically, FireEye found that since at least 2007, APT28 has been targeting privileged information related to governments, militaries and security organizations that would likely benefit the Russian government.\u003C\/p\u003E\n\u003Cp\u003EIn our report, we also describe several malware samples containing details that indicate that the developers are Russian language speakers operating during business hours that are consistent with the time zone of Russia\u2019s major cities, including Moscow and St. Petersburg. FireEye analysts also found that APT28 has systematically evolved its malware since 2007, using flexible and lasting platforms indicative of plans for long-term use and sophisticated coding practices that suggest an interest in complicating reverse engineering efforts.\u003C\/p\u003E\n\u003Cp\u003EWe assess that APT28 is most likely sponsored by the Russian government based on numerous factors summarized below:\u003C\/p\u003E\n\u003Cp\u003E\u003Ca href=\u0022\/content\/dam\/legacy\/blog\/2014\/10\/Table-for-APT28.jpg\u0022\u003E\u003Cimg width=\u0022569\u0022 height=\u0022426\u0022 alt=\u0022Table for APT28\u0022 src=\u0022\/content\/dam\/legacy\/blog\/2014\/10\/Table-for-APT28.jpg\u0022 class=\u0022aligncenter  wp-image-6770 landscape-med\u0022\u003E\u003C\/a\u003E\u003C\/p\u003E\n\u003Cp\u003EFireEye is also releasing indicators to help organizations detect APT28 activity. Those indicators can be downloaded at \u003Ca target=\u0022_blank\u0022 href=\u0022https:\/\/github.com\/fireeye\/iocs\u0022\u003Ehttps:\/\/github.com\/fireeye\/iocs\u003C\/a\u003E.\u003C\/p\u003E\n\u003Cp\u003EAs with the APT1 report, we recognize that no single entity completely understands the entire complex picture of intense cyber espionage over many years. Our goal by releasing this report is to offer an assessment that informs and educates the community about attacks originating from Russia. The complete report can be downloaded here: \u003Ca target=\u0022_blank\u0022 href=\u0022\/content\/dam\/fireeye-www\/global\/en\/current-threats\/pdfs\/rpt-apt28.pdf\u0022\u003E\/content\/dam\/legacy\/resources\/pdfs\/apt28.pdf\u003C\/a\u003E.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Fri Sep 07 2018 16:21:16 GMT-0400",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    }
+  }
+}

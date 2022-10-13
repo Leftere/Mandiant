@@ -1,0 +1,6 @@
+{% set columns = 'cols cols-' ~ items|length %}
+<div{{ attributes.addClass(columns) }}>
+  {% for item in items %}
+    {{ item.content }}
+  {% endfor %}
+</div>

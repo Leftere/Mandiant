@@ -1,0 +1,29 @@
+uuid: 6e956ad5-5929-4852-80e5-67041d2e3ec8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_terms_maturity_level
+    - node.type.page
+    - taxonomy.vocabulary.maturity_levels
+id: node.page.field_terms_maturity_level
+field_name: field_terms_maturity_level
+entity_type: node
+bundle: page
+label: 'Maturity Level'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      maturity_levels: maturity_levels
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

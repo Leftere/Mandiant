@@ -1,0 +1,61 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "fireeye_global_admin",
+  "jcr:created": "Fri Mar 27 2020 19:05:49 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "fireeye_global_admin",
+    "jcr:title": "Social Engineering Based on Stimulus Bill and COVID-19 Financial Compensation Schemes Expected to Grow in Coming Weeks",
+    "jcr:versionHistory": "1867d2a6-7c1b-4812-8204-fb3eadde0faf",
+    "author": "FireEye Mandiant Threat Intelligence",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "d10d8062-49aa-457d-a341-d66dc74d4568"
+    ],
+    "jcr:created": "Fri Mar 27 2020 19:05:49 GMT+0000",
+    "cq:lastModified": "Fri Mar 27 2020 18:52:51 GMT+0000",
+    "jcr:baseVersion": "d10d8062-49aa-457d-a341-d66dc74d4568",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:fireeye-mandiant-threat-intelligence",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:phishing",
+      "fireeye-blog-tags:malware",
+      "fireeye-blog-tags:social-engineering"
+    ],
+    "jcr:uuid": "bb0739e2-0aa0-426e-978a-ab84c30bd920",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Fri Mar 27 2020 15:00:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EGiven the community interest and media coverage surrounding the economic stimulus bill currently being considered by the United States House of Representatives, we anticipate attackers will increasingly leverage lures tailored to the new stimulus bill and related recovery efforts such as stimulus checks, unemployment compensation and small business loans. Although campaigns employing themes relevant to these matters are only beginning to be adopted by threat actors, we expect future campaigns\u2014primarily those perpetrated by financially motivated threat actors\u2014to incorporate these themes in proportion to the media\u2019s coverage of these topics.\u003C\/p\u003E\n\u003Cp\u003EThreat actors with varying motivations are actively exploiting the current pandemic and public fear of the coronavirus and COVID-19. This is consistent with our expectations; malicious actors are typically quick to adapt their social engineering lures to exploit major flashpoints along with other recurrent events (e.g. holidays, Olympics). Security researchers at FireEye and \u003Ca href=\u0022https:\/\/twitter.com\/1ZRR4H\/status\/1240442939421200390\u0022\u003Ein the broader community\u003C\/a\u003E have already begun to identify and report on COVID-19 themed campaigns with grant, payment, or economic recovered themed emails and attachments.\u003C\/p\u003E\n\u003Ch4\u003EExample Malware Distribution Campaign\u003Cb\u003E\u003C\/b\u003E\u003C\/h4\u003E\n\u003Cp\u003EOn March 18, individuals at corporations across a broad set of industries and geographies received emails with the subject line \u201cCOVID-19 Payment\u201d intended to distribute the SILENTNIGHT banking malware (also referred to by others as Zloader). Despite the campaign\u2019s broad distribution, a plurality of associated messages were sent to organizations based in Canada. Interestingly, although the content of these emails was somewhat generic, they were sometimes customized to reference a payment made in currency relevant to the recipient\u2019s geography and contextually relevant government officials (Figure 1 and Figure 2). These emails were sent from a large pool of different @gmx.com email addresses and had password protected Microsoft Word document attachments using the file name \u201cCOVID 19 Relief.doc\u201d (Figure 3). The emails appear to be auto generated and follow the format \u0026lt;name\u0026gt;.\u0026lt;name\u0026gt;\u0026lt;SevenNumberString\u0026gt;@gmx.com. When these documents were opened and macros enabled, they would drop and execute a .JSE script crafted to download and execute an instance of SILENTNIGHT from http:\/\/209.141.54[.]161\/crypt18.dll.\u003C\/p\u003E\n\u003Cp\u003EAn analyzed sample of SILENTNIGHT downloaded from this URL had an MD5 hash of 9e616a1757cf1d40689f34d867dd742e, employed the RC4 key \u0027q23Cud3xsNf3\u0027, and was associated with the SILENTNIGHT botnet \u0027PLSPAM\u0027. This botnet has been seen loading configuration files containing primarily U.S.- and Canada financial institution webinject targets. Furthermore, this sample was configured to connect to the following controller infrastructure:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003Ehttp:\/\/marchadvertisingnetwork4[.]com\/post.php\u003C\/li\u003E\n\u003Cli\u003Ehttp:\/\/marchadvertisingnetwork5[.]com\/post.php\u003C\/li\u003E\n\u003Cli\u003Ehttp:\/\/marchadvertisingnetwork6[.]com\/post.php\u003C\/li\u003E\n\u003Cli\u003Ehttp:\/\/marchadvertisingnetwork7[.]com\/post.php\u003C\/li\u003E\n\u003Cli\u003Ehttp:\/\/marchadvertisingnetwork8[.]com\/post.php\u003C\/li\u003E\n\u003Cli\u003Ehttp:\/\/marchadvertisingnetwork9[.]com\/post.php\u003C\/li\u003E\n\u003Cli\u003Ehttp:\/\/marchadvertisingnetwork10[.]com\/post.php\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/stimulusphishing\/Picture1.png\u0022 alt=\u0022\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 1: Example lure using CAD\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/stimulusphishing\/Picture2.png\u0022 alt=\u0022\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 2: Example lure using AUD\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/stimulusphishing\/Picture3.png\u0022 alt=\u0022\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 3: Malicious Word document\u003C\/span\u003E\u003C\/p\u003E\n\u003Ch4\u003EExample Phishing Campaign\u003C\/h4\u003E\n\u003Cp\u003EIndividuals at financial services organizations in the United States were sent emails with the subject line \u201cInternal Guidance for Businesses Grant and loans in response to respond to COVID-19\u201d (Figure 4). These emails had OpenDocument Presentation (.ODP) format attachments that, when opened in Microsoft PowerPoint or OpenOffice Impress, display a U.S. Small Business Administration (SBA) themed message (Figure 5) and an in-line link that redirects to an Office 365 phishing kit (Figure 6) hosted at https:\/\/tyuy56df-kind-giraffe-ok.mybluemix[.]net\/.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/stimulusphishing\/Picture4.png\u0022 alt=\u0022\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 4: Email lure referencing business grants and loans\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/stimulusphishing\/Picture5.png\u0022 alt=\u0022\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 5: SBA-themed message\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/stimulusphishing\/Picture6.png\u0022 alt=\u0022\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 6: Office 365 phishing page\u003C\/span\u003E\u003C\/p\u003E\n\u003Ch4\u003EImplications\u003C\/h4\u003E\n\u003Cp\u003EMalicious actors have always exploited users\u2019 sense of urgency, fear, goodwill and mistrust to enhance their operations. The threat actors exploiting this crisis are not new, they are simply taking advantage of a particularly overtaxed target set that is urgently seeking new information. Users who are aware of this dynamic, and who approach any new information with cautious skepticism will be especially prepared to meet this challenge.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Fri Mar 27 2020 18:47:37 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EThreat actors with varying motivations are actively exploiting the current pandemic and public fear of the coronavirus and COVID-19.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Fri Mar 27 2020 18:50:16 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Fri Mar 27 2020 18:52:51 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

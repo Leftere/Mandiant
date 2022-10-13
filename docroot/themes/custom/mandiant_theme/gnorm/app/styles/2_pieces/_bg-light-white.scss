@@ -1,0 +1,11 @@
+.bg-light-white {
+  background: $lightWhite;
+}
+
+.bg-light-white-circle {
+  background: $lightWhite;
+  background-image: url('../images/backgrounds/circle-graph-element.svg');
+  background-position: 89% 5%;
+  background-repeat: no-repeat;
+  background-size: 18%;
+}

@@ -1,0 +1,13 @@
+uuid: 36494b50-3b28-40e0-8819-f74d7896166f
+langcode: en
+status: true
+dependencies: {  }
+id: statistic_cta
+label: 'Statistic CTA'
+classes: statistic-cta
+type: component
+group: modifiers_type
+weight: 0
+block_restrictions:
+  - 'inline_block:statistic'
+layout_restrictions: {  }

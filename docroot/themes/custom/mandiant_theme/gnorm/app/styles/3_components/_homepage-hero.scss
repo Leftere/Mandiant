@@ -1,0 +1,18 @@
+#homepage-hero {
+  h1 {
+    background-image: url('../images/homepage-logo.svg');
+    background-repeat: no-repeat;
+    height: 60px;
+    text-indent: -9999em;
+    width: 280px;
+
+    @include breakpoint($tablet) {
+      height: 100px;
+      width: 585px;
+    }
+  }
+
+  p {
+    max-width: 45rem;
+  }
+}

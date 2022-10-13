@@ -1,0 +1,135 @@
+uuid: f5cb6ec2-4868-4501-888a-42609c9dffd4
+langcode: en
+status: true
+dependencies: {  }
+id: block_cta_3quarters
+label: '3 Quarters'
+targetEntityType: block_content
+targetBundle: cta
+layout:
+  -
+    layout_id: layout_twocol_section
+    layout_settings:
+      label: ''
+      column_widths: 33-67
+      context_mapping: {  }
+    components:
+      7632fb30-139a-484e-8316-80464132ffef:
+        uuid: 7632fb30-139a-484e-8316-80464132ffef
+        region: first
+        configuration:
+          id: 'field_block:block_content:cta:field_title'
+          label: Title
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: text_field_formatter
+            settings:
+              link_to_entity: 0
+              wrap_tag: h2
+              wrap_class: ''
+              wrap_attributes: ''
+              override_link_label: ''
+              token: ''
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 1
+      57fe6304-176d-439d-88c8-5dbeb6dbeb10:
+        uuid: 57fe6304-176d-439d-88c8-5dbeb6dbeb10
+        region: second
+        configuration:
+          id: 'field_block:block_content:cta:field_body'
+          label: Body
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: text_default
+            settings: {  }
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 0
+      3856f747-1619-433b-b46b-c67bf97268bf:
+        uuid: 3856f747-1619-433b-b46b-c67bf97268bf
+        region: second
+        configuration:
+          id: 'field_block:block_content:cta:field_cta'
+          label: Link
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: link
+            settings:
+              trim_length: 80
+              url_only: false
+              url_plain: false
+              rel: '0'
+              target: '0'
+            third_party_settings:
+              field_formatter_class:
+                class: href-cta
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 1
+      3d4f146f-1663-4cce-be49-04b9affd307b:
+        uuid: 3d4f146f-1663-4cce-be49-04b9affd307b
+        region: first
+        configuration:
+          id: 'field_block:block_content:cta:field_eyebrow'
+          label: Eyebrow
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: string
+            settings:
+              link_to_entity: false
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional: {  }
+        weight: 0
+      73a91642-bc37-4d3c-9a1a-654605c31b2d:
+        uuid: 73a91642-bc37-4d3c-9a1a-654605c31b2d
+        region: second
+        configuration:
+          id: 'field_block:block_content:cta:field_media_document'
+          label: Document
+          provider: layout_builder
+          label_display: '0'
+          formatter:
+            label: hidden
+            type: entity_reference_entity_view
+            settings:
+              view_mode: cta
+            third_party_settings:
+              field_formatter_class:
+                class: ''
+          context_mapping:
+            entity: layout_builder.entity
+            view_mode: view_mode
+        additional:
+          layout_builder_styles_style:
+            left_oriented: 0
+            padding_top_60px_: 0
+            padding_top_bottom_60: 0
+          layout_builder_id: ''
+        weight: 2
+    third_party_settings: {  }

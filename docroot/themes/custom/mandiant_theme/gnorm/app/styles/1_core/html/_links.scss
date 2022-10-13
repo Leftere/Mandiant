@@ -1,0 +1,20 @@
+// ================================== //
+//    #CORE/HTML - LINKS
+// ================================== //
+
+a {
+  color: $red;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color .3s ease-in-out;
+
+  &:active,
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  // &:active {}
+  // &:hover {}
+  // &:focus {}
+}

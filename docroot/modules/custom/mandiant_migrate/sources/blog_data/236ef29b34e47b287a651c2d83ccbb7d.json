@@ -1,0 +1,63 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Tue May 04 2021 17:28:12 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Pandemic Impacts to the Cyber Threat Landscape",
+    "jcr:versionHistory": "ffe8a865-fd75-40f1-8c75-2e0b98b8f976",
+    "author": "Luke McNamara",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "6d600cc7-dfca-4c30-9e57-c3f168647e8d"
+    ],
+    "jcr:created": "Tue May 04 2021 17:28:12 GMT+0000",
+    "cq:lastModified": "Tue May 04 2021 17:27:58 GMT+0000",
+    "jcr:baseVersion": "6d600cc7-dfca-4c30-9e57-c3f168647e8d",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:luke-mcnamara",
+      "fireeye-blog-executive-perspective:executive-perspective",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:threat-landscape",
+      "fireeye-blog-tags:podcast",
+      "fireeye-blog-tags:trends",
+      "fireeye-blog-tags:phishing",
+      "fireeye-blog-tags:ransomware"
+    ],
+    "jcr:uuid": "e0f012d3-37d8-4830-bc58-cde41271397d",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Tue May 04 2021 13:30:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/eos2021\/mandiant-eos.png\u0022 alt=\u0022\u0022 class=\u0022float-left-small\u0022\u003EIn the latest episode of \u003Ci\u003EEye on Security\u003C\/i\u003E, I had Jens Monrad, Head of Mandiant Threat Intelligence, EMEA, join me for a conversation on how the threat landscape has changed in the past year and how it continues to be impacted by the ongoing pandemic.\u003C\/p\u003E\n\u003Cp\u003EWe reviewed the cyber events of the past year: \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/blog\/executive-perspective\/2020\/03\/managing-email-phishing-risks.html\u0022\u003Epandemic-themed phishing\u003C\/a\u003E, multiple APT campaigns against vaccine research and development, and \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/blog\/threat-research\/2020\/04\/limited-shifts-in-cyber-threat-landscape-driven-by-covid-19.html\u0022\u003Eransomware targeting healthcare systems\u003C\/a\u003E. Jens revealed that the biggest change still impacting the cyber threat landscape is the sheer volume of people working from home. He also highlighted the potential increase in the cyber criminal ecosystem due to job losses, and how individuals might turn to cybercrime in order to make money.\u003C\/p\u003E\n\u003Cp\u003ECheck out the episode now to hear how the pandemic has impacted APT activity and disinformation campaigns. Jens also shares a unique piece of advice on the threat landscape that is helpful to remember as we all work to better secure our environments.\u003C\/p\u003E\n\u003Cp\u003EFor additional information on how the pandemic and more is influencing the cyber threat landscape, check out our latest \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/current-threats\/annual-threat-report\/mtrends.html\u0022\u003E\u003Ci\u003EM-Trends 2021\u003C\/i\u003E report\u003C\/a\u003E.\u003C\/p\u003E\n\u003Cp\u003E\u003Cdiv id=\u0022buzzsprout-player-8449125\u0022\u003E\u003C\/div\u003E\n\u003Cscript src=\u0022https:\/\/www.buzzsprout.com\/1762840\/8449125-pandemic-impacts-to-the-cyber-threat-landscape.js?container_id=buzzsprout-player-8449125\u0026player=small\u0022 type=\u0022text\/javascript\u0022 charset=\u0022utf-8\u0022\u003E\u003C\/script\u003E\u003C\/p\u003E",
+        "jcr:lastModified": "Tue May 04 2021 17:24:53 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EIn this episode of our Eye on Security podcast, we discuss how the threat landscape has changed and continues to be impacted by the global pandemic.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Tue May 04 2021 17:25:57 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Tue May 04 2021 17:27:58 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

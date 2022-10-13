@@ -1,0 +1,30 @@
+mandiant_theme.xs:
+  label: Extra Small
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+mandiant_theme.sm:
+  label: Small
+  mediaQuery: 'all and (min-width: 576px)'
+  weight: 1
+  multipliers:
+    - 1x
+mandiant_theme.md:
+  label: Medium
+  mediaQuery: 'all and (min-width: 768px)'
+  weight: 2
+  multipliers:
+    - 1x
+mandiant_theme.lg:
+  label: Large
+  mediaQuery: 'all and (min-width: 992px)'
+  weight: 3
+  multipliers:
+    - 1x
+mandiant_theme.xl:
+  label: Extra Large
+  mediaQuery: 'all and (min-width: 1200px)'
+  weight: 4
+  multipliers:
+    - 1x

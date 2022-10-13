@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Genuine - UI Templates</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="cleartype" content="on">
+
+<link rel="shortcut icon" href="{{ gnormThemePath }}/favicon.ico">
+
+<script>
+if("true"===sessionStorage.fontsLoaded)document.documentElement.classList.add("fonts-loaded")
+else{var script=document.createElement("script")
+script.src="{{ gnormThemePath }}/scripts/fontloader.built.js",script.defer=!0,document.head.appendChild(script)}
+</script>
+
+<link rel="stylesheet" href="{{ gnormThemePath }}/styles/screen.css">
+
+{% for link in cssLinks %}
+  <link rel="stylesheet" href="{{ link }}">
+{% endfor %}

@@ -1,0 +1,16 @@
+uuid: 11642a8c-6894-4a31-9833-a704500db709
+langcode: en
+status: true
+dependencies:
+  theme:
+    - mandiant_theme
+id: default_responsive_media
+label: 'Default Responsive Media'
+image_style_mappings:
+  -
+    breakpoint_id: mandiant_theme.xs
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: ''
+breakpoint_group: mandiant_theme
+fallback_image_style: '_original image_'

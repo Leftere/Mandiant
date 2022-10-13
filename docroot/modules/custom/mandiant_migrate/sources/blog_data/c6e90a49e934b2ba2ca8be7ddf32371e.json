@@ -1,0 +1,80 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Fri Aug 11 2017 09:11:48 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "APT28 Targets Hospitality Sector, Presents Threat to Travelers",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "863ab2aa-d910-4d7c-8234-16d471349b04",
+    "author": "Lindsay Smith",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "adam.greenberg@fireeye.com",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "bf99e7ee-8c6c-40f4-94b4-375852342c03"
+    ],
+    "jcr:created": "Fri Aug 11 2017 09:11:48 GMT-0400",
+    "cq:lastReplicated": "Fri Aug 11 2017 09:11:33 GMT-0400",
+    "cq:lastModified": "Thu Aug 10 2017 12:50:41 GMT-0400",
+    "cq:distribute": true,
+    "jcr:baseVersion": "bf99e7ee-8c6c-40f4-94b4-375852342c03",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-tags:spear-phishing",
+      "fireeye-blog-tags:targeted-attacks",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-authors:lindsay-smith",
+      "fireeye-blog-authors:ben-read",
+      "fireeye-blog-tags:apt",
+      "fireeye-doctypes:blog",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest"
+    ],
+    "jcr:uuid": "85f5a16d-6154-4488-8942-9d252589d661",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Fri Aug 11 2017 09:00:00 GMT-0400",
+    "_charset_": "UTF-8",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EFireEye has moderate confidence that a campaign targeting the hospitality sector is attributed to Russian actor \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/threat-research\/2014\/10\/apt28-a-window-into-russias-cyber-espionage-operations.html\u0022\u003EAPT28\u003C\/a\u003E. We believe this activity, which dates back to at least July 2017, was intended to target travelers to hotels throughout Europe and the Middle East. The actor has used several notable techniques in these incidents such as sniffing passwords from Wi-Fi traffic, poisoning the NetBIOS Name Service, and spreading laterally via the \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/threat-research\/2017\/05\/smb-exploited-wannacry-use-of-eternalblue.html\u0022\u003EEternalBlue\u003C\/a\u003E exploit.\u0026nbsp;\u003C\/p\u003E\n\u003Ch4\u003EAPT28 Uses Malicious Document to Target Hospitality Industry\u003C\/h4\u003E\n\u003Cp\u003EFireEye has uncovered a malicious document sent in spear phishing emails to multiple companies in the hospitality industry, including hotels in at least seven European countries and one Middle Eastern country in early July. Successful execution of the macro within the malicious document results in the installation of APT28\u2019s signature \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/threat-research\/2017\/05\/eps-processing-zero-days.html\u0022\u003EGAMEFISH\u003C\/a\u003E malware.\u003C\/p\u003E\n\u003Cp\u003EThe malicious document \u2013 Hotel_Reservation_Form.doc (MD5: 9b10685b774a783eabfecdb6119a8aa3), as seen in Figure 1 \u2013 contains a macro that base64 decodes a dropper that then deploys APT28\u2019s signature GAMEFISH malware (MD5: 1421419d1be31f1f9ea60e8ed87277db), which uses mvband.net and mvtband.net as command and control (C2) domains.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/APT28%20Hospitality\/Fig1.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 1: Hotel_Reservation_Form.doc (MD5: 9b10685b774a783eabfecdb6119a8aa3)\u003C\/span\u003E\u003C\/p\u003E\n\u003Ch4\u003EAPT28 Uses Novel Techniques to Move Laterally and Potentially Target Travelers\u003C\/h4\u003E\n\u003Cp\u003EAPT28 is using novel techniques involving the EternalBlue exploit and the open source tool \u003Ca href=\u0022https:\/\/github.com\/SpiderLabs\/Responder\u0022\u003EResponder\u003C\/a\u003E to spread laterally through networks and likely target travelers. Once inside the network of a hospitality company, APT28 sought out machines that controlled both guest and internal Wi-Fi networks.\u0026nbsp;No guest credentials were observed being stolen at the compromised hotels; however, in a separate incident that occurred in Fall 2016, APT28 gained initial access to a victim\u2019s network via credentials likely stolen from a hotel Wi-Fi network.\u0026nbsp;\u003C\/p\u003E\n\u003Cp\u003EUpon gaining access to the machines connected to corporate and guest Wi-Fi networks, APT28 deployed Responder. Responder facilitates NetBIOS Name Service (NBT-NS) poisoning. This technique listens for NBT-NS (UDP\/137) broadcasts from victim computers attempting to connect to network resources. Once received, Responder masquerades as the sought-out resource and causes the victim computer to send the username and hashed password to the attacker-controlled machine. APT28 used this technique to steal usernames and hashed passwords that allowed escalation of privileges in the victim network.\u003C\/p\u003E\n\u003Cp\u003ETo spread through the hospitality company\u2019s network, APT28 used a version of the EternalBlue SMB exploit. This was combined with the heavy use of py2exe to compile Python scripts. This is the first time we have seen APT28 incorporate this exploit into their intrusions.\u003C\/p\u003E\n\u003Cp\u003EIn the 2016 incident, the victim was compromised after connecting to a hotel Wi-Fi network. Twelve hours after the victim initially connected to the publicly available Wi-Fi network, APT28 logged into the machine with stolen credentials. These 12 hours could have been used to crack a hashed password offline. After successfully accessing the machine, the attacker deployed tools on the machine, spread laterally through the victim\u0027s network, and accessed the victim\u0027s OWA account. The login originated from a computer on the same subnet, indicating that the attacker machine was physically close to the victim and on the same Wi-Fi network.\u003C\/p\u003E\n\u003Cp\u003EWe cannot confirm how the initial credentials were stolen in the 2016 incident; however, later in the intrusion, Responder was deployed. Since this tool allows an attacker to sniff passwords from network traffic, it could have been used on the hotel Wi-Fi network to obtain a user\u2019s credentials.\u003C\/p\u003E\n\u003Ch4\u003ELong-Standing Threats to Travelers\u003C\/h4\u003E\n\u003Cp\u003ECyber espionage activity against the hospitality industry is typically focused on collecting information on or from hotel guests of interest rather than on the hotel industry itself, though actors may also collect information on the hotel as a means of facilitating operations. Business and government personnel who are traveling, especially in a foreign country, often rely on systems to conduct business other than those at their home office, and may be unfamiliar with threats posed while abroad.\u003C\/p\u003E\n\u003Cp\u003EAPT28 isn\u2019t the only group targeting travelers. South Korea-nexus Fallout Team (aka Darkhotel) has used \u003Ca href=\u0022http:\/\/www.zdnet.com\/article\/hackers-are-using-hotel-wi-fi-to-spy-on-guests-steal-data\/\u0022\u003Espoofed software updates on infected Wi-Fi networks in Asian hotels\u003C\/a\u003E, and Duqu 2.0 malware has been \u003Ca href=\u0022https:\/\/www.theguardian.com\/technology\/2015\/jun\/11\/duqu-20-computer-virus-with-traces-of-israeli-code-was-used-to-hack-iran-talks\u0022\u003Efound on the networks of European hotels\u003C\/a\u003E used by participants in the Iranian nuclear negotiations. Additionally, open sources have reported for several years that in Russia and China, high-profile hotel guests may expect their \u003Ca href=\u0022https:\/\/www.theguardian.com\/world\/2013\/oct\/06\/russia-monitor-communications-sochi-winter-olympics\u0022\u003Ehotel rooms to be accessed and their laptops and other electronic devices accessed\u003C\/a\u003E.\u003C\/p\u003E\n\u003Ch4\u003EOutlook and Implications\u003C\/h4\u003E\n\u003Cp\u003EThese incidents show a novel infection vector being used by APT28. The group is leveraging less secure hotel Wi-Fi networks to steal credentials and a NetBIOS Name Service poisoning utility to escalate privileges. APT28\u2019s already wide-ranging capabilities and tactics are continuing to grow and refine as the group expands its infection vectors.\u003C\/p\u003E\n\u003Cp\u003ETravelers must be aware of the threats posed when traveling \u2013 especially to foreign countries \u2013 and take extra precautions to secure their systems and data. Publicly accessible Wi-Fi networks present a significant threat and should be avoided whenever possible.\u003C\/p\u003E\n\u003Cp\u003EAdditional technical information and details are available to \u003Ca href=\u0022https:\/\/www.fireeye.com\/products\/isight-cyber-threat-intelligence-subscriptions.html\u0022\u003EFireEye iSIGHT Intelligence\u003C\/a\u003E customers through our portal.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Thu Aug 10 2017 12:50:41 GMT-0400",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "alt": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "comments": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/commons\/components\/comments"
+      },
+      "trackback": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/blog\/components\/trackback"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EThe hospitality sector is being actively targeted in a campaign that FireEye attributes with moderate confidence to APT28.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Thu Aug 10 2017 12:30:11 GMT-0400",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Thu Aug 10 2017 12:30:45 GMT-0400",
+      "imageRotate": "0"
+    }
+  }
+}

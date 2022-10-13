@@ -1,0 +1,10 @@
+uuid: 4d19ca6c-bcd4-4215-9c5f-ed2df163d002
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.logo_linked
+label: 'Logo (linked)'
+targetEntityType: media
+cache: true

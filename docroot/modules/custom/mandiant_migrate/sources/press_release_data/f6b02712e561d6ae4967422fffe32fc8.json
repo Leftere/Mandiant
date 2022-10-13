@@ -1,0 +1,67 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Wed May 19 2021 13:00:11 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "New Mandiant Services Help Organizations Balance Effective Cyber Security and Business Risk",
+    "jcr:versionHistory": "4c412f55-6f27-4133-aaa2-46f62ae7c312",
+    "cq:template": "\/apps\/fireeye-www\/fdc\/templates\/press-release",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "b2a60ac3-0b62-4c88-80d9-d3ec854dccd8"
+    ],
+    "jcr:created": "Wed May 19 2021 13:00:11 GMT+0000",
+    "cq:lastModified": "Tue May 18 2021 20:27:19 GMT+0000",
+    "jcr:baseVersion": "b2a60ac3-0b62-4c88-80d9-d3ec854dccd8",
+    "jcr:isCheckedOut": true,
+    "pagedate": "Wed May 19 2021 09:00:00 GMT-0400",
+    "cq:tags": [
+      "company:en-US",
+      "company:en-US\/press-releases",
+      "company:en-US\/press-releases\/2021",
+      "company:en-US\/press-releases\/latest",
+      "fireeye-doctypes:press-releases"
+    ],
+    "jcr:uuid": "e255c19c-2e75-4c48-9839-9ee4c41ef6e8",
+    "sling:resourceType": "fireeye-www\/fdc\/components\/page\/press-release",
+    "cq:designPath": "\/etc\/designs\/fireeye-www",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "content-par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "grid_100_full": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "adam.greenberg@fireeye.com",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "jcr:created": "Tue May 18 2021 20:23:48 GMT+0000",
+        "jcr:lastModified": "Tue May 18 2021 20:23:48 GMT+0000",
+        "sling:resourceType": "fireeye-www\/fdc\/components\/grids\/grid-100-full",
+        "grid-100-mid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "fireeye-www\/fdc\/components\/grids\/grid-parsys\/parsys-100-full\/parsys",
+          "text": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "adam.greenberg@fireeye.com",
+            "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+            "jcr:created": "Tue May 18 2021 20:23:52 GMT+0000",
+            "text": "\u003Cp style=\u0022text-align: center;\u0022\u003E\u003Ci\u003EMandiant Cyber Risk Management Services provide decision support to enhance security strategies and optimize risk reduction\u003C\/i\u003E\u003C\/p\u003E\n\u003Cp\u003E\u003Cb\u003EMILPITAS, Calif., May 19, 2021 \u003C\/b\u003E\u2013 \u003Ca href=\u0022https:\/\/www.fireeye.com\/\u0022\u003EFireEye, Inc.\u0026nbsp;\u003C\/a\u003E(NASDAQ: FEYE), the intelligence-led security company, today announced new Cyber Risk Management Services from Mandiant. Mandiant\u00ae Cyber Risk Management Services are designed to address critical business and security requirements to equip executives, boards of directors, and security and cross-functional leaders with risk-based data and advice to build effective and balanced security programs.\u003C\/p\u003E\n\u003Cp\u003E\u201cWhen developing a\u0026nbsp;corporate\u0026nbsp;security strategy\u0026nbsp;and program, it is\u0026nbsp;imperative\u0026nbsp;to identify\u0026nbsp;the areas\u0026nbsp;and assets\u0026nbsp;with the highest\u0026nbsp;business\u0026nbsp;value and\u0026nbsp;those with the\u0026nbsp;most significant\u0026nbsp;threats\u0026nbsp;and\u0026nbsp;vulnerabilities. Mandiant\u0026nbsp;Cyber Risk Management Services are designed to\u0026nbsp;balance\u0026nbsp;business and technical\u0026nbsp;considerations\u0026nbsp;and\u0026nbsp;provide executives with risk-based decision support,\u201d\u0026nbsp;said\u0026nbsp;Jurgen Kutscher, Executive Vice President, Service Delivery, Mandiant Consulting.\u0026nbsp;\u201cMandiant brings\u0026nbsp;unparalleled frontline expertise\u0026nbsp;and analysis to help business leaders focus on\u0026nbsp;running their\u0026nbsp;businesses more securely by prioritizing\u0026nbsp;their security\u0026nbsp;investments to\u0026nbsp;maximize risk\u0026nbsp;reduction.\u201d\u003C\/p\u003E\n\u003Cp\u003EThe Cyber Risk Management Services offering incorporates Mandiant threat intelligence, incident response data, and proven risk methodologies to help organizations shine a light on where harmful risk exists. This allows business and security leaders to shift from a reactive security approach to a risk-based, informed program for better decision-making and critical asset protection.\u003C\/p\u003E\n\u003Cp\u003EStructured as building blocks that work independently and collectively, Mandiant Cyber Risk Management Services include:\u003C\/p\u003E\n\u003Col\u003E\n\u003Cli\u003E\u003Cb\u003ESecurity Program Assessment\u003C\/b\u003E\u0026nbsp;\u2013\u0026nbsp;evaluate\u0026nbsp;existing\u0026nbsp;capabilities\u0026nbsp;and\u0026nbsp;maturity, coupled with an actionable improvement roadmap\u0026nbsp;focused\u0026nbsp;on the areas with the\u0026nbsp;highest risk based on Mandiant\u2019s frontline\u0026nbsp;expertise\u0026nbsp;\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003ECrown Jewels Assessment\u003C\/b\u003E \u2013 identify critical assets to shift security efforts and prioritize investment on the assets that matter most\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003ECyber Due Diligence\u003C\/b\u003E \u2013 surface and manage inherited cyber risks outside of an organization\u2019s control like those found in supply chain, third-party vendors, or during corporate acquisitions and divestment\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003ECyber Risk Operations\u003C\/b\u003E \u2013 design and operationalize risk programs that leverage threat intelligence and frontline experience to determine custom risk profiles and tolerances, including how to best invest in security capabilities\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003EThreat and Vulnerability Management\u003C\/b\u003E \u2013 build and improve the capability to identify and manage specific threats with significant technology impact and vulnerability if left exposed\u003C\/li\u003E\n\u003Cli\u003E\u003Cb\u003EThreat Modeling\u003C\/b\u003E \u2013 uncover unknown risks in both current and future state for improved planning\u003C\/li\u003E\n\u003C\/ol\u003E\n\u003Cp\u003ELearn more about \u003Ca href=\u0022\/content\/fireeye-www\/en_US\/mandiant\/cyber-risk-management-services.html\u0022\u003EMandiant Cyber Risk Management Services\u003C\/a\u003E: \u003Ca href=\u0022https:\/\/www.fireeye.com\/mandiant\/cyber-risk-management-services.html\u0022\u003Ehttps:\/\/www.fireeye.com\/mandiant\/cyber-risk-management-services.html\u003C\/a\u003E\u003C\/p\u003E\n\u003Ch4\u003EAbout Mandiant\u003C\/h4\u003E\n\u003Cp\u003EMandiant, a part of FireEye, brings together the world\u2019s leading threat intelligence and frontline expertise with continuous security validation to arm organizations with the tools needed to increase security effectiveness and reduce organizational risk.\u003C\/p\u003E\n\u003Ch4\u003EAbout FireEye, Inc.\u003C\/h4\u003E\n\u003Cp\u003EFireEye is the intelligence-led security company. Working as a seamless, scalable extension of customer security operations, FireEye offers a single platform that blends innovative security technologies, nation-state grade threat intelligence, and world-renowned Mandiant consulting. With this approach, FireEye eliminates the complexity and burden of cyber security for organizations struggling to prepare for, prevent, and respond to cyber attacks. FireEye has over 10,100 customers across 103 countries, including more than 50 percent of the Forbes Global 2000.\u003C\/p\u003E\n\u003Cp\u003E\u00a9 2021 FireEye, Inc. All rights reserved. FireEye and Mandiant are registered trademarks or trademarks of FireEye, Inc. in the United States and other countries. All other brands, products, or service names are or may be trademarks or service marks of their respective owners.\u003C\/p\u003E\n\u003Ch4\u003EContacts\u003C\/h4\u003E\n\u003Cp\u003EMedia\u003Cbr\u003E\n\u003Ca href=\u0022mailto:Media.Relations@FireEye.com\u0022\u003EMedia.Relations@FireEye.com\u003C\/a\u003E\u003C\/p\u003E\n\u003Cp\u003EInvestors\u003Cbr\u003E\n\u003Ca href=\u0022mailto:Investor.Relations@FireEye.com\u0022\u003EInvestor.Relations@FireEye.com\u003C\/a\u003E\u003C\/p\u003E\n",
+            "jcr:lastModified": "Tue May 18 2021 20:26:04 GMT+0000",
+            "sling:resourceType": "fireeye-www\/fdc\/components\/text\/text",
+            "textIsRich": "true"
+          }
+        }
+      }
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Tue May 18 2021 20:27:19 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

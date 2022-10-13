@@ -1,0 +1,65 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Tue Jan 29 2019 06:01:20 GMT-0500",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "fireeye_global_admin",
+    "jcr:title": "APT39: An Iranian Cyber Espionage Group Focused on Personal Information",
+    "jcr:versionHistory": "1f061c15-ba5c-41ab-aaeb-74a50385abf7",
+    "internalSearchKeywords": "iran",
+    "author": "Sarah Hawley",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "db98fc0e-e8f8-44f7-9ab0-e5829fb32080"
+    ],
+    "jcr:created": "Wed Jan 08 2020 03:00:04 GMT+0000",
+    "cq:lastModified": "Wed Jan 08 2020 02:59:56 GMT+0000",
+    "jcr:baseVersion": "db98fc0e-e8f8-44f7-9ab0-e5829fb32080",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:sarah-hawley",
+      "fireeye-blog-authors:ben-read",
+      "fireeye-blog-authors:cristiana-brafman-kittner",
+      "fireeye-blog-authors:nalani-fraser",
+      "fireeye-blog-authors:andrew-thompson",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:apt",
+      "fireeye-blog-tags:iran",
+      "fireeye-blog-authors:yuri-rozhansky",
+      "fireeye-blog-authors:sanaz-yashar"
+    ],
+    "jcr:uuid": "358daf3a-69b8-48ed-8f61-d7a1c99d70b9",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Tue Jan 29 2019 03:00:00 GMT-0800",
+    "cq:lastModifiedBy": "matthew.sawicki@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003E\u003Ci\u003EUPDATE (Jan. 30): Figure 1 has been updated to more accurately reflect APT39 targeting. Specifically, Australia, Norway and South Korea have been removed.\u003C\/i\u003E\u003C\/p\u003E\n\u003Cp\u003EIn December 2018, FireEye identified APT39 as an Iranian cyber espionage group responsible for widespread theft of personal information. We have tracked activity linked to this group since November 2014 in order to protect organizations from APT39 activity to date. APT39\u2019s focus on the widespread theft of personal information sets it apart from other Iranian groups FireEye tracks, which have been linked to \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/threat-research\/2018\/08\/suspected-iranian-influence-operation.html\u0022\u003Einfluence operations\u003C\/a\u003E, \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/threat-research\/2017\/09\/apt33-insights-into-iranian-cyber-espionage.html\u0022\u003Edisruptive attacks\u003C\/a\u003E, and other threats. APT39 likely focuses on personal information to support monitoring, tracking, or surveillance operations that serve Iran\u2019s national priorities, or potentially to create additional accesses and vectors to facilitate future campaigns.\u0026nbsp;\u003C\/p\u003E\n\u003Cp\u003EAPT39 was created to bring together previous activities and methods used by this actor, and its activities largely align with a group publicly referred to as \u0026quot;Chafer.\u0026quot; However, there are differences in what has been publicly reported due to the variances in how organizations track activity. APT39 primarily leverages the SEAWEED and CACHEMONEY backdoors along with a specific variant of the POWBAT backdoor. While APT39\u0027s targeting scope is global, its activities are concentrated in the Middle East. APT39 has prioritized the telecommunications sector, with additional targeting of the travel industry and IT firms that support it and the high-tech industry.\u0026nbsp;The countries and industries targeted by APT39 are depicted in Figure 1.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/APT39\/APT39Fig1c.jpg\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 1:\u0026nbsp;Countries and industries targeted by APT39\u003C\/span\u003E\u003C\/p\u003E\n\u003Ch4\u003EOperational Intent\u003C\/h4\u003E\n\u003Cp\u003EAPT39\u0027s focus on the telecommunications and travel industries suggests intent to perform monitoring, tracking, or surveillance operations against specific individuals, collect proprietary or customer data for commercial or operational purposes that serve strategic requirements related to national priorities, or create additional accesses and vectors to facilitate future campaigns. Government entities targeting suggests a potential secondary intent to collect geopolitical data that may benefit nation-state decision making. Targeting data supports the belief that APT39\u0027s key mission is to track or monitor targets of interest, collect personal information, including travel itineraries, and gather customer data from telecommunications firms.\u003C\/p\u003E\n\u003Ch4\u003EIran Nexus Indicators\u003C\/h4\u003E\n\u003Cp\u003EWe have moderate confidence APT39 operations are conducted in support of Iranian national interests based on regional targeting patterns focused in the Middle East, infrastructure, timing, and similarities to APT34, a group that loosely aligns with activity publicly reported as \u201cOilRig\u201d. While APT39 and APT34 share some similarities, including malware distribution methods, POWBAT backdoor use, infrastructure nomenclature, and targeting overlaps, we consider APT39 to be distinct from APT34 given its use of a different POWBAT variant. It is possible that these groups work together or share resources at some level.\u003C\/p\u003E\n\u003Ch4\u003EAttack Lifecycle\u003C\/h4\u003E\n\u003Cp\u003EAPT39 uses a variety of custom and publicly available malware and tools at all stages of the attack lifecycle.\u003C\/p\u003E\n\u003Cp\u003E\u003Ci\u003EInitial Compromise\u003C\/i\u003E\u003C\/p\u003E\n\u003Cp\u003EFor initial compromise, FireEye Intelligence has observed APT39 leverage spear phishing emails with malicious attachments and\/or hyperlinks typically resulting in a POWBAT infection. APT39 frequently registers and leverages domains that masquerade as legitimate web services and organizations that are relevant to the intended target. Furthermore, this group has routinely identified and exploited vulnerable web servers of targeted organizations to install web shells, such as ANTAK and ASPXSPY, and used stolen legitimate credentials to compromise externally facing Outlook Web Access (OWA) resources.\u003C\/p\u003E\n\u003Cp\u003E\u003Ci\u003EEstablish Foothold, Escalate Privileges, and Internal Reconnaissance\u003C\/i\u003E\u003C\/p\u003E\n\u003Cp\u003EPost-compromise, APT39 leverages custom backdoors such as SEAWEED, CACHEMONEY, and a unique variant of POWBAT to establish a foothold in a target environment. During privilege escalation, freely available tools such as Mimikatz and Ncrack have been observed, in addition to legitimate tools such as Windows Credential Editor and ProcDump. Internal reconnaissance has been performed using custom scripts and both freely available and custom tools such as the port scanner, BLUETORCH.\u003C\/p\u003E\n\u003Cp\u003E\u003Ci\u003ELateral Movement, Maintain Presence, and Complete Mission\u003C\/i\u003E\u003C\/p\u003E\n\u003Cp\u003EAPT39 facilitates lateral movement through myriad tools such as Remote Desktop Protocol (RDP), Secure Shell (SSH), PsExec, RemCom, and xCmdSvc. Custom tools such as REDTRIP, PINKTRIP, and BLUETRIP have also been used to create SOCKS5 proxies between infected hosts. In addition to using RDP for lateral movement, APT39 has used this protocol to maintain persistence in a victim environment. To complete its mission, APT39 typically archives stolen data with compression tools such as WinRAR or 7-Zip.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/APT39\/APT39Fig2.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 2: APT39 attack lifecycle\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EThere are some indications that APT39 demonstrated a penchant for operational security to bypass detection efforts by network defenders, including the use of a modified version of Mimikatz that was repacked to thwart anti-virus detection in one case, as well as another instance when after gaining initial access APT39 performed credential harvesting outside of a compromised entity\u0027s environment to avoid detection.\u003C\/p\u003E\n\u003Ch4\u003EOutlook\u003C\/h4\u003E\n\u003Cp\u003EWe believe APT39\u0027s significant targeting of the telecommunications and travel industries reflects efforts to collect personal information on targets of interest and customer data for the purposes of surveillance to facilitate future operations. Telecommunications firms are attractive targets given that they store large amounts of personal and customer information, provide access to critical infrastructure used for communications, and enable access to a wide range of potential targets across multiple verticals. APT39\u0027s targeting not only represents a threat to known targeted industries, but it extends to these organizations\u0027 clientele, which includes a wide variety of sectors and individuals on a global scale. APT39\u0027s activity showcases Iran\u0027s potential global operational reach and how it uses cyber operations as a low-cost and effective tool to facilitate the collection of key data on perceived national security threats and gain advantages against regional and global rivals.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Wed Jan 30 2019 14:51:06 GMT-0500",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EAPT39 is an Iranian cyber espionage group responsible for widespread theft of personal information.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Fri Jan 25 2019 18:39:47 GMT-0500",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "matthew.sawicki@fireeye.com",
+      "jcr:lastModified": "Wed Jan 08 2020 02:59:56 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

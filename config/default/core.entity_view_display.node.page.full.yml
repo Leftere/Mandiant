@@ -1,0 +1,158 @@
+uuid: 24f4fac2-ea01-46fa-ab0e-3ab175a0ebe1
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.page.field_media
+    - field.field.node.page.field_metatags
+    - field.field.node.page.field_styles
+    - field.field.node.page.field_summary_html
+    - field.field.node.page.field_terms_industry
+    - field.field.node.page.field_terms_maturity_level
+    - field.field.node.page.field_terms_persona
+    - field.field.node.page.field_terms_product
+    - field.field.node.page.field_terms_region
+    - field.field.node.page.field_terms_service
+    - field.field.node.page.field_terms_solution
+    - field.field.node.page.layout_builder__layout
+    - field.field.node.page.layout_selection
+    - node.type.page
+  module:
+    - layout_builder
+    - layout_builder_restrictions
+    - layout_library
+    - metatag
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: true
+    enabled: true
+    sections:
+      -
+        layout_id: layout_builder_blank
+        layout_settings:
+          label: ''
+        components:
+          ff86f04f-37ba-4df8-8440-754b5feb3b71:
+            uuid: ff86f04f-37ba-4df8-8440-754b5feb3b71
+            region: null
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:page:title_display'
+            additional: {  }
+            weight: 0
+          d8c5b81e-fbf1-4859-a2b6-e3ef701ef55a:
+            uuid: d8c5b81e-fbf1-4859-a2b6-e3ef701ef55a
+            region: null
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:page:cta_learn_more'
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+  layout_builder_restrictions:
+    allowed_block_categories:
+      - 'Chaos Tools'
+      - 'Content fields'
+      - 'Custom Blocks'
+      - 'Custom block types'
+      - 'Custom blocks'
+      - Devel
+      - Forms
+      - Help
+      - 'Inline blocks'
+      - 'Lists (Views)'
+      - Menus
+      - 'Site Settings and Labels'
+      - System
+      - 'TB Mega Menu'
+      - core
+    entity_view_mode_restriction:
+      whitelisted_blocks:
+        'Custom block types':
+          - card
+          - cta
+          - hero
+          - statistic
+          - text
+          - view
+        'Inline blocks':
+          - 'inline_block:card'
+          - 'inline_block:cta'
+          - 'inline_block:hero'
+          - 'inline_block:statistic'
+          - 'inline_block:text'
+          - 'inline_block:view'
+      blacklisted_blocks:
+        'Custom blocks':
+          - 'block_content:8e34ba60-0769-4675-a6cb-68228afebc9a'
+          - 'block_content:e3118852-782d-42f2-a482-1cf7937683c3'
+          - 'block_content:fef8b441-5859-49fb-b075-a791b7f32744'
+          - 'block_content:848ebb57-a51a-4a2a-a6fa-fdbac9bf22d3'
+      restricted_categories:
+        - 'Chaos Tools'
+        - 'Content fields'
+        - 'Custom Blocks'
+        - Devel
+        - Forms
+        - Help
+        - 'Lists (Views)'
+        - Menus
+        - 'Site Settings and Labels'
+        - System
+        - 'TB Mega Menu'
+        - core
+      allowed_layouts:
+        - layout_onecol
+        - layout_twocol_section
+        - layout_threecol_section
+        - layout_fourcol_section
+  layout_library:
+    enable: false
+id: node.page.full
+targetEntityType: node
+bundle: page
+mode: full
+content:
+  cta_learn_more:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: null
+  field_metatags:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  title_display:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: null
+hidden:
+  field_media: true
+  field_styles: true
+  field_summary_html: true
+  field_terms_industry: true
+  field_terms_maturity_level: true
+  field_terms_persona: true
+  field_terms_product: true
+  field_terms_region: true
+  field_terms_service: true
+  field_terms_solution: true
+  langcode: true
+  layout_builder__layout: true
+  layout_selection: true
+  search_api_excerpt: true

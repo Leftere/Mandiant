@@ -1,0 +1,25 @@
+.secondary-cta {
+  @include font-size(16, 24);
+  font-weight: 500;
+  margin-left: 3rem;
+
+  a {
+    color: $black;
+    position: relative;
+    text-transform: uppercase;
+
+    &:after {
+      background-image: url('../images/arrow-red.svg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 14px;
+      content: '';
+      height: 100%;
+      left: -40px;
+      position: absolute;
+      top: 0;
+      transform: rotate(225deg);
+      width: 40px;
+    }
+  }
+}

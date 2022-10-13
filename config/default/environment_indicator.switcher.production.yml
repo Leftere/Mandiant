@@ -1,0 +1,10 @@
+uuid: 4dae0cb3-4de1-4e2b-9d12-d6b98dff6dc6
+langcode: en
+status: true
+dependencies: {  }
+machine: production
+description: null
+name: Production
+url: 'https://mandiant.prod.acquia-sites.com'
+fg_color: '#feffff'
+bg_color: '#b34044'

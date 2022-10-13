@@ -1,0 +1,10 @@
+uuid: 6d2919f8-7a09-42e9-8ee1-ace7a1a7ed16
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.slick
+label: Slick
+targetEntityType: paragraph
+cache: true

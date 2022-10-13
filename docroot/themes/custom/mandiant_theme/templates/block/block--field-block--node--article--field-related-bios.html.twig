@@ -1,0 +1,21 @@
+{%
+  set classes = [
+    'block-bundle',
+    'block-bundle-bio',
+    'block-bio-default',
+  ]
+%}
+{% set title = elements['#configuration']['label'] %}
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}{{ title_suffix }}
+  <div class="layout">
+    <div class="layout__region">
+      {% if title %}
+        <h3{{ title_attributes }}>{{ title }}</h3>
+      {% endif %}
+      {% block content %}
+        {{ content }}
+      {% endblock %}
+    </div>
+  </div>
+</div>

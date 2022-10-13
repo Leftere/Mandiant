@@ -1,0 +1,105 @@
+.block-bundle-featured_questions {
+  .layout--twocol-section.layout--twocol-section--50-50
+    > .layout__region--first,
+  .layout--twocol-section.layout--twocol-section--50-50
+    > .layout__region--second {
+    padding: 5rem 1.5rem;
+    @include breakpoint($desktop) {
+      padding: 10rem;
+    }
+  }
+
+  .layout--twocol-section.layout--twocol-section--50-50
+    > .layout__region--first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  > .layout--onecol {
+    > .layout__region {
+      @include make-custom-block($grid-gap: 2rem);
+      color: $white;
+      padding-bottom: 5rem;
+      padding-top: 10rem;
+
+      h2 {
+        position: relative;
+
+        &:before {
+          @include icon-hr-3();
+          content: ' ';
+          height: 18px;
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: -5rem;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  > .layout--twocol-section {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include breakpoint($desktop) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .layout__region--first {
+      @include bg-image-dark-red-stats();
+      .eyebrow {
+        @include frame;
+        display: flex;
+        align-items: center;
+        color: palette(gray, lightest);
+        margin-top: 3.5rem;
+        &::before,
+        &::after {
+          height: 5rem;
+          width: 1rem;
+        }
+        &::before {
+          margin-right: 5rem;
+        }
+        &::after {
+          margin-left: 5rem;
+        }
+      }
+      .slick-for {
+        margin-top: 4rem;
+
+        > a {
+          color: palette(gray, lightest);
+
+          &:hover {
+            color: palette(gray, igray);
+            text-decoration: none;
+          }
+          &:active,
+          &:focus {
+            text-decoration: none;
+
+            &:not(.active-trail) {
+              background-color: rgba(60, 37, 43, 0.75);
+            }
+          }
+          h4 div {
+            list-style-type: disc;
+            display: list-item;
+            list-style-position: inside;
+          }
+          &.active-trail h4 div {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .slick-content-featured-questions {
+      overflow: visible;
+    }
+  }
+}

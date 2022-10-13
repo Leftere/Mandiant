@@ -1,0 +1,107 @@
+.email-now {
+  background-color: #1b161e;
+  display: block;
+  height: 100%;
+
+  @include breakpoint($large-tablet) {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  a {
+    @include font-size(16, 34);
+    color: $white;
+    font-weight: 700;
+    letter-spacing: .05em;
+    white-space: nowrap;
+
+    &:after {
+      content: none;
+    }
+
+    &:before {
+      @include breakpoint($large-tablet) {
+        @include font-size(16, 34);
+        color: rgba(255, 255, 255, .4);
+        content: '//';
+        letter-spacing: .05em;
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  > span {
+    @include font-size(14, 34);
+    display: block;
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-transform: none;
+  }
+
+  form {
+    display: inline-block;
+
+    .custom-select-container {
+      @include font-size(16, 34);
+      background: transparent;
+      color: rgba(255, 255, 255, .4);
+      font-weight: 700;
+      letter-spacing: .05em;
+      margin-left: -4px;
+      margin-right: 2rem;
+      min-width: 8rem;
+      text-transform: uppercase;
+    }
+
+    .custom-select {
+      &-opener {
+        background: transparent;
+        padding-right: 3rem;
+        position: relative;
+        text-align: right;
+
+        &:after {
+          background: url('../images/chevron--white.svg') no-repeat 50% 50%;
+          content: '';
+          height: 1rem;
+          pointer-events: none;
+          position: absolute;
+          right: 1rem;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 1rem;
+        }
+      }
+
+      &-panel {
+        background-color: $black;
+        color: $white;
+      }
+
+      &-option {
+        padding: 0 1rem 0 2rem;
+        position: relative;
+        white-space: nowrap;
+
+        &.is-selected {
+          &:before {
+            background: url('../images/checkmark--white.svg') no-repeat 50% 50%;
+            content: '';
+            height: 1rem;
+            left: .5rem;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1rem;
+          }
+        }
+
+        &.has-focus {
+          background-color: $red;
+          color: $white;
+        }
+      }
+    }
+  }
+}

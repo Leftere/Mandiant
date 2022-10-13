@@ -1,0 +1,59 @@
+name: Mandiant Samples - Page
+description: Content samples based on wireframes.
+package: Mandiant Samples
+type: module
+core_version_requirement: ^8.8 || ^9
+dependencies:
+  - default_content
+
+default_content:
+
+  block_content:
+    # Page: Sample - Homepage
+    - 21b2b57f-8a74-4ecf-bdc9-7612e5ee03e5
+    - 87f2eada-e572-45f2-804a-d7e93a26e743
+    - b7344cfb-8564-46fd-8f87-1edf8c1c1615
+    - 352a6d3d-94f5-4640-b918-529a5d19f72e
+    - a9b33d46-82e0-4393-8788-5b80591f834d
+    - 5401b851-1417-4cae-9e41-bf91126207cf
+    - 042dc07c-36d0-4f99-b56a-d6e195c1dcbf
+
+    # Page: Sample - Solutions Overview
+    - 764aec4b-d26e-4daa-b676-4167de5b8bc1
+    - 8ef3920e-cd36-4009-9b41-d832d29cf794
+    - db9a55d7-a6f1-4c24-987c-de044e740e35
+    - 1ab4c253-e562-455e-928e-80e3c05912b9
+    - f2e2245f-1e52-406d-bd3b-b28133e668b2
+    - 61136547-2248-4f83-af8b-05f3ad4a5c68
+    - 8177fc1c-4677-4064-804c-2f4a5ec3516d
+    - add43e4a-2a28-4367-a89d-d26f4ce04aaf
+
+  # Page: Sample - CTA Variants
+    - 816a9662-f7c4-43fe-9365-124660176389
+    - cb9cb187-8a49-4023-86f7-bd96c46f7f57
+    - 597d0484-8fe8-4d25-9567-66f2a9ba212a
+    - 489a9acb-26df-41f2-95dd-1483b5263219
+    - 6480e8a4-939f-4ba1-bcaf-1aebcba7da99
+    - e7d5bc3d-b6d3-40fa-aac3-877d5ce779d0
+    - 287e2d58-e9e4-47f1-af66-482d6fdf0c90
+    - 4e14aee1-27de-4599-b9a5-17d64a8c9c96
+    - 9fcdfa9a-edf3-42cb-be27-365d3573731e
+
+  media:
+    - 18e6ecf7-9abe-42ee-aa51-2fd1cf93577c
+    - 05cb08cc-fe68-4355-85d9-366c84f74a53
+
+  node:
+    # Page: Sample - Homepage
+    - 867df32e-65d9-45e0-9779-bd66c8bd41d2
+    # Page: Sample - Solutions Overview
+    - 117d141a-ccda-4914-9a28-6cc23acd9d8f
+    # Page: Sample - CTA Variants
+    - 14c9f241-edee-4590-9a16-4a75746e4204
+    # Articles
+    - 51abdba2-1211-4bbd-863d-e01e971b8243
+    - e5a04aa4-9cd8-4520-bf00-779b847d5dfe
+    - 0d32bf62-63ee-44f1-bb14-ffef9e8f8d99
+
+  user:
+    - 76142c52-522d-4fd1-aa68-da16dde771e8

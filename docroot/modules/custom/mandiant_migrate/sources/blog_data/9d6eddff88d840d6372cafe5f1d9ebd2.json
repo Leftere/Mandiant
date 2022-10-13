@@ -1,0 +1,78 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Fri Jun 30 2017 19:06:22 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Obfuscation in the Wild: Targeted Attackers Lead the Way in Evasion Techniques",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "953ff926-0095-43f8-bbeb-0b79eddea026",
+    "author": "Daniel Bohannon",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "cq:lastReplicatedBy": "adam.greenberg@fireeye.com",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "881f0397-9d9e-4f53-8d82-fc5cb80a1636"
+    ],
+    "jcr:created": "Wed Jul 05 2017 11:50:31 GMT-0400",
+    "cq:lastReplicated": "Wed Jul 05 2017 11:50:17 GMT-0400",
+    "cq:lastModified": "Wed Jul 05 2017 11:50:05 GMT-0400",
+    "cq:distribute": true,
+    "jcr:baseVersion": "881f0397-9d9e-4f53-8d82-fc5cb80a1636",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-tags:obfuscation",
+      "fireeye-blog-authors:nick-carr",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:evasion-techniques",
+      "fireeye-blog-authors:daniel-bohannon",
+      "fireeye-blog-threat-research:threat-research"
+    ],
+    "jcr:uuid": "a59a0dc3-ad17-4d04-8b31-ba6abfdb7141",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Fri Jun 30 2017 19:00:00 GMT-0400",
+    "_charset_": "UTF-8",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EThroughout 2017 we have observed a marked increase in the use of command line evasion and obfuscation by a range of targeted attackers. Cyber espionage groups and financial threat actors continue to adopt the latest cutting-edge application whitelisting bypass techniques and introduce innovative obfuscation into their phishing lures. These techniques often bypass static and dynamic analysis methods and highlight why signature-based detection alone will always be at least one step behind creative attackers.\u003Cbr\u003E\n\u003Cbr\u003E\nIn early 2017, FIN8 began using environment variables paired with PowerShell\u2019s ability to receive commands via StdIn (standard input) to evade detection based on process command line arguments. In the February 2017 phishing document \u201cCOMPLAINT Homer Glynn.doc\u201d (MD5: cc89ddac1afe69069eb18bac58c6a9e4), the file contains a macro that sets the PowerShell command in one environment variable (_MICROSOFT_UPDATE_CATALOG) and then the string \u201cpowershell -\u201d in another environment variable (MICROSOFT_UPDATE_SERVICE). When a PowerShell command ends in a dash then PowerShell will execute the command that it receives via StdIn, and only this dash will appear in powershell.exe\u2019s command line arguments. Figure 1 provides the commands that were extracted using Mandiant consultant Nick Carr\u2019s \u003Ca href=\u0022https:\/\/github.com\/itsreallynick\/office-crackros\u0022\u003EFIN8 macro decoder\u003C\/a\u003E.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/Obfuscation%20in%20the%20Wild\/image1.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 1: FIN8 environment variable commands extracted from \u201cCOMPLAINT Homer Glynn.doc\u201d macros\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003ETo evade many detections based on parent-child process relationships, FIN8 crafted this macro to use WMI to spawn the cmd.exe execution. Therefore, WinWord.exe never creates a child process, but the process tree looks like: wmiprvse.exe \u0026gt; cmd.exe \u0026gt; powershell.exe. FIN8 has regularly used obfuscation and WMI to remotely launch their PUNCHTRACK POS-scraping malware, and the 2017 activity is an implementation of these evasion techniques at an earlier stage of compromise.\u003C\/p\u003E\n\u003Cp\u003EAs new application whitelisting bypass techniques have surfaced, targeted attackers have quickly adopted these into their campaigns with extra layers of obfuscation to stay ahead of many defenders. Many groups leverage the regsvr32.exe application whitelisting bypass, \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/threat-research\/2017\/06\/phished-at-the-request-of-counsel.html\u0022\u003Eincluding APT19 in their 2017 campaign against law firms\u003C\/a\u003E. The cyber espionage group \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/threat-research\/2017\/05\/cyber-espionage-apt32.html\u0022\u003EAPT32 heavily obfuscates their backdoors and scripts\u003C\/a\u003E, and Mandiant consultants observed APT32 implement additional command argument obfuscation in April 2017. Instead of using the argument \/i:http for the regsvr32.exe bypass, APT32 used cmd.exe obfuscation techniques to attempt to break signature-based detection of this argument. At FireEye we have seen them include both \/i:^h^t^t^p and \/i:h\u201dt\u201dt\u201dp in their lures. Figure 2 shows a redacted screenshot of our Host Investigative Platform (HIP) capturing real-time attacker activity during one of our Mandiant incident response engagements for APT32 activity.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/Obfuscation%20in%20the%20Wild\/Fig2.png\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 2: APT32 command obfuscation for regsvr32.exe application whitelisting bypass\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EMeanwhile, \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/threat-research\/2017\/03\/fin7_spear_phishing.html\u0022\u003EFIN7\u003C\/a\u003E has continued to \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/threat-research\/2017\/05\/fin7-shim-databases-persistence.html\u0022\u003Ewreak havoc\u003C\/a\u003E on the restaurant, hospitality, and financial services sectors in 2017. To ensure their arsenal did not grow stale, in April 2017 FIN7 shifted to using wscript.exe to run JavaScript payloads that retrieve an additional payload hidden in the phishing document by use of the Word.Application COM object.\u003C\/p\u003E\n\u003Cp\u003EThis week, FireEye identified FIN7 introducing additional obfuscation techniques at both the JavaScript and cmd.exe levels. These methods rely on FIN7\u2019s preferred method of \u003Ca href=\u0022https:\/\/www.fireeye.com\/blog\/threat-research\/2017\/04\/fin7-phishing-lnk.html\u0022\u003Ehiding shortcut files (LNK files) in their DOCX and RTF phishing documents\u003C\/a\u003E to initiate the infection. At the time of this blog, the files implementing this technique were detected by 0 antivirus engines. For JavaScript, instead of specifying \u201cWord.Application\u201d for the COM object instantiation, FIN7 began concatenating the string to \u201cWor\u201d+\u201dd.Application\u201d. In addition, JavaScript\u2019s suspicious \u201ceval\u201d string was transformed into \u201cthis[String.fromCharCode(101)+\u2019va\u2019+\u2019l\u2019]\u201d. Finally, they used a little-known character replacement functionality supported by cmd.exe. The wscript.exe command is set in a process-level environment variable \u201cx\u201d, but is obfuscated with the \u201c@\u201d character. When the \u201cx\u201d variable is echoed at the end of the script the \u201c@\u201d character is removed by the syntax \u201c%x:@=%\u201d. Figure 3 shows this command extracted from a LNK file embedded within a new FIN7 phishing document.\u003C\/p\u003E\n\u003Cp\u003E\u003Cimg src=\u0022\/content\/dam\/fireeye-www\/blog\/images\/Obfuscation%20in%20the%20Wild\/image3.jpeg\u0022\u003E\u003Cbr\u003E\n\u003Cspan class=\u0022type-XS\u0022\u003EFigure 3: FIN7 command obfuscation from LNK file phishing document\u003C\/span\u003E\u003C\/p\u003E\n\u003Cp\u003EIn this example, FIN7 implements FIN8\u2019s passing of commands via StdIn \u2013 this time passing it to cmd.exe instead of powershell.exe \u2013 but the evasion effect is the same. While this example will expose these arguments in the first cmd.exe\u2019s command execution, if this environment variable were set within the LNK or a macro and pushed to cmd.exe via StdIn from VBA, then nothing would appear on the command line.\u003C\/p\u003E\n\u003Cp\u003EThe\u0026nbsp;\u003Ca href=\u0022https:\/\/www.fireeye.com\/products\/isight-intelligence.html\u0022\u003EFireEye iSIGHT Intelligence MySIGHT Portal\u003C\/a\u003E\u0026nbsp;contains detailed information on these attackers \u2013 and all financial and cyber espionage groups that we track \u2013 including analysis of their malware, tactics, and further intelligence attribution.\u003Cbr\u003E\n\u003Cbr\u003E\nWe fully expect targeted attackers to continue this pattern of adopting new bypass techniques and adding innovative obfuscation at both the macro and command line levels. As for what we might see next, we\u2019d recommend reading up on DOS command line tricks so that monitoring your network isn\u2019t the first time you see new attacker tricks. Network defenders must understand what obfuscation is possible, assess their endpoint and network visibility, and most importantly not rely on a single method to detect these attacks.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Sun Jul 02 2017 21:27:34 GMT-0400",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "alt": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "comments": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/commons\/components\/comments"
+      },
+      "trackback": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "social\/blog\/components\/trackback"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003EThroughout 2017 we have observed a marked increase in the use of command line evasion and obfuscation by a range of targeted attackers.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Fri Jun 30 2017 19:04:27 GMT-0400",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Wed Jul 05 2017 11:50:05 GMT-0400",
+      "imageRotate": "0"
+    }
+  }
+}

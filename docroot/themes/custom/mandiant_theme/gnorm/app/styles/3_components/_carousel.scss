@@ -1,0 +1,222 @@
+.block-bundle-hero {
+  &.insights-listing.hero {
+    padding: 0;
+  }
+  &.insights-listing {
+    .wrapper {
+      margin-right: 0;
+      max-width: $large-desktop - 100px;
+      padding: 0;
+
+      @include breakpoint($large-desktop + 200px) {
+        margin-right: auto;
+      }
+      @include breakpoint($desktop) {
+        max-width: inherit;
+      }
+    }
+
+    .layout--twocol-section {
+      @include breakpoint($desktop) {
+        flex-wrap: unset;
+        justify-content: flex-end;
+      }
+
+      .layout__region--first {
+        align-items: flex-start;
+        align-items: center;
+        display: flex;
+        flex: 0 1 100%;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        @include breakpoint($desktop) {
+          align-items: flex-start;
+          flex: 0 1 50%;
+          text-align: left;
+        }
+
+        .eyebrow {
+          text-align: center;
+
+          @include breakpoint($desktop) {
+            text-align: left;
+          }
+        }
+      }
+
+      .layout__region--second {
+        flex: 0 1 50%;
+        z-index: 2;
+
+        @include breakpoint($tablet) {
+          max-width: 1000px;
+        }
+
+        @include breakpoint($desktop) {
+          max-width: 800px;
+        }
+
+        .eyebrow {
+          position: relative;
+          z-index: 2;
+          top: 3rem;
+          left: 2rem;
+          background: $black;
+          color: $white;
+          border-top-left-radius: 15px;
+          border-bottom-right-radius: 15px;
+          padding: 1rem 1.5rem;
+        }
+
+        .type {
+          display: block;
+          color: $medGray;
+          margin-left: 10rem;
+        }
+
+        h3 {
+          color: $white;
+          margin: 1rem 0 0 10rem;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        .date.string,
+        .time {
+          display: inline-block;
+        }
+
+        .date.string {
+          font-weight: 600;
+          margin: 1rem 0 0 10rem;
+        }
+
+        .time {
+          color: $medGray;
+          font-weight: 600;
+          margin-left: 2rem;
+        }
+
+        .slick {
+          max-width: 90rem;
+
+          @include breakpoint($desktop) {
+            padding-top: 15rem;
+          }
+
+          &-slide {
+            margin-bottom: 5rem;
+
+            @include breakpoint($desktop) {
+              margin-bottom: 0;
+            }
+
+            img {
+              border-top-left-radius: 15px;
+              height: 100%;
+              width: 100%;
+            }
+
+            a {
+              color: $white;
+            }
+          }
+
+          .slick-dots {
+            bottom: 22rem;
+            display: flex;
+            flex-direction: column;
+            left: 10rem;
+            position: absolute;
+
+            @include breakpoint($tablet) {
+              bottom: 19.5rem;
+            }
+            @include breakpoint($desktop) {
+              bottom: 2.4rem;
+              left: 0
+            }
+
+            li {
+              &::marker {
+                color: $gray;
+                font-size: 1.6rem;
+              }
+
+              &.slick-active {
+                &::marker {
+                  color: $white;
+                }
+              }
+            }
+
+            button {
+              background: transparent;
+              border: none;
+              color: transparent;
+            }
+          }
+
+          .slick__slider {
+            background: $black;
+            border-top-left-radius: 15px;
+
+            @include breakpoint($desktop) {
+              min-height: 60rem;
+            }
+          }
+
+          .slick__arrow {
+            bottom: 27.8rem;
+            display: flex;
+            flex-direction: column-reverse;
+            position: relative;
+            width: 50px;            
+
+            @include breakpoint($tablet) {
+              bottom: 25rem;
+            }
+
+            @include breakpoint($desktop) {
+              bottom: 25.6rem;
+            }
+
+            button {
+              border: none;
+              cursor: pointer;
+              line-height: 1;
+              padding-top: 0;
+              padding-bottom: 1rem;
+              font-size: 4rem;
+            }
+
+            .slick-next {
+              background-color: $teal;
+            }
+
+            .slick-prev {
+              background-color: $darkTeal;
+            }
+          }
+
+          .media {
+            position: relative;
+            bottom: 3rem;
+            margin-bottom: 0;
+            img {
+              border-top-left-radius: 15px;
+              height: auto;
+              width: 100%;
+              max-height: 45rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

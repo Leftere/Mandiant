@@ -1,0 +1,26 @@
+uuid: 3af050cd-221d-4ba9-9765-9a2a4e0adc09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary_html
+    - node.type.page
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: '0'
+    plain_text: '0'
+id: node.page.field_summary_html
+field_name: field_summary_html
+entity_type: node
+bundle: page
+label: 'Summary (HTML)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,15 @@
+uuid: fad402f0-9e83-4f0d-81a6-779a2839a34e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - disable_language
+third_party_settings:
+  disable_language:
+    disable: true
+    redirect_language: en
+id: fr
+label: French
+direction: ltr
+weight: 1
+locked: false

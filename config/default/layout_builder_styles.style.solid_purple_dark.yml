@@ -1,0 +1,14 @@
+uuid: 8faee2a9-b619-4c59-9b4a-382c9f4bdcff
+langcode: en
+status: true
+dependencies: {  }
+id: solid_purple_dark
+label: 'Solid (Dark purple)'
+classes: bg-solid--purple
+type: component
+group: background
+weight: -3
+block_restrictions:
+  - 'inline_block:cta'
+  - 'inline_block:text'
+layout_restrictions: {  }

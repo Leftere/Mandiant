@@ -1,0 +1,19 @@
+uuid: 65c3476e-7ec8-4169-b72e-0844b7a224f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.site_setting_entity.field_email_emea
+    - site_settings.site_setting_entity_type.email
+id: site_setting_entity.email.field_email_emea
+field_name: field_email_emea
+entity_type: site_setting_entity
+bundle: email
+label: EMEA
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

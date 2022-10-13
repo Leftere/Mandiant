@@ -1,0 +1,61 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "fireeye_global_admin",
+  "jcr:created": "Mon Mar 09 2020 16:03:53 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "fireeye_global_admin",
+    "jcr:title": "Crescendo: Real Time Event Viewer for macOS",
+    "jcr:versionHistory": "f8820afb-2adc-423c-840b-6b1dafa60659",
+    "author": "Stephen Davis",
+    "cq:template": "\/apps\/fireeye-blog\/templates\/page_blogpost",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "0dcaee5a-fee8-49b6-9562-dfcf02574b63"
+    ],
+    "jcr:created": "Mon Mar 09 2020 16:03:53 GMT+0000",
+    "cq:lastModified": "Mon Mar 09 2020 15:29:30 GMT+0000",
+    "jcr:baseVersion": "0dcaee5a-fee8-49b6-9562-dfcf02574b63",
+    "jcr:isCheckedOut": true,
+    "cq:tags": [
+      "fireeye-blog-authors:stephen-davis",
+      "fireeye-blog-threat-research:threat-research",
+      "fireeye-blog-tags:apple",
+      "fireeye-blog-tags:latest",
+      "fireeye-blog-tags:homepage-carousel",
+      "fireeye-blog-tags:malware",
+      "fireeye-blog-tags:analysis"
+    ],
+    "jcr:uuid": "8c1680fa-ba32-4c7e-b1a6-14e22b059809",
+    "sling:resourceType": "social\/blog\/components\/page",
+    "published": "Mon Mar 09 2020 12:00:00 GMT-0400",
+    "cq:lastModifiedBy": "adam.greenberg@fireeye.com",
+    "par": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "foundation\/components\/parsys",
+      "entry": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+        "text": "\u003Cp\u003EPrior to 2017, researchers couldn\u2019t easily monitor actions performed by a process on macOS and had to resort to coding scripts that produced low level system call data. FireEye released \u003Ca adhocenable=\u0022false\u0022 href=\u0022\/content\/fireeye-www\/en_US\/blog\/threat-research\/2017\/03\/introducing_monitor.html\u0022\u003EMonitor.app\u003C\/a\u003E in 2017 that enabled collection of information on macOS at a higher level; at a simplified data set versus something like \u003Ca href=\u0022http:\/\/dtrace.org\u0022\u003EDtrace\u003C\/a\u003E. I created many versions of Monitor.app over the years and have received very positive feedback from users. Recently though, users have noticed it doesn\u0027t work on macOS Catalina (10.15)...\u003C\/p\u003E\n\u003Cp\u003EOriginally, a kernel extension was required to provide the inspection capabilities offered by Monitor.app. Unfortunately, kernel extensions are running in privileged mode which has very little protection from software bugs that may lead to system instability. This means kernel extensions should only be used if absolutely necessary.\u0026nbsp;Microsoft and Apple have started providing engineers \u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/docs.microsoft.com\/en-us\/windows\/win32\/etw\/about-event-tracing\u0022\u003Emore userland alternatives\u003C\/a\u003E to accomplish what previously required writing kernel code.\u003C\/p\u003E\n\u003Cp\u003EIn Catalina, Apple released the \u003Ca href=\u0022https:\/\/developer.apple.com\/documentation\/endpointsecurity\u0022\u003EEndpoint Security Framework\u003C\/a\u003E (ESF) to provide a robust and (more importantly) safer way of getting access to internal operating system artifacts. Being a security guy, I\u2019m not a huge fan when apps must ship with kernel extension to get their job done and I think this is a move in the right direction. With the coming release of 10.15.4, Apple will now pop-up a warning when a kernel extension is loaded that uses a set of these \u003Ca href=\u0022https:\/\/developer.apple.com\/support\/kernel-extensions\/\u0022\u003Edeprecated kernel programming interfaces\u003C\/a\u003E (KPIs).\u003C\/p\u003E\n\u003Cp\u003ENow seemed like a good time to kick the tires on the Endpoint Security Framework. Also, what engineer doesn\u2019t love to learn new languages, so why not write it all in \u003Ca href=\u0022https:\/\/developer.apple.com\/swift\/\u0022\u003ESwift\u003C\/a\u003E as well?\u003C\/p\u003E\n\u003Ch4\u003EIntroducing Crescendo\u003C\/h4\u003E\n\u003Cp\u003ECrescendo is a \u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/github.com\/SuprHackerSteve\/Crescendo\u0022\u003Ereal time event viewer for macOS\u003C\/a\u003E that uses the ESF to show process executions and forks, file events, share mounting events, kernel extension loads, and IPC event data. ESF provides a vast amount of data, but the goal was to just pick out the things that analysts would be interested in when analyzing a piece of malware or trying to understand how a process (or component) works. Just the right amount of data without being a firehose of events to the user.\u003C\/p\u003E\n\u003Cp\u003EHere are some of the features of Crescendo:\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003ESystem Extension using Endpoint Security Framework\u003C\/li\u003E\n\u003Cli\u003EReal time event viewer and event detail viewer\u003C\/li\u003E\n\u003Cli\u003ESearch for easy filtering of events by process, PID, username, or event type\u003C\/li\u003E\n\u003Cli\u003EFilters for unsigned apps vs apple signed apps\u003C\/li\u003E\n\u003Cli\u003EAbility to export all events to JSON\u003C\/li\u003E\n\u003Cli\u003EContext highlighting when unsigned apps are executed\u003C\/li\u003E\n\u003C\/ul\u003E\n\u003Cp\u003EApple has added \u003Ca href=\u0022https:\/\/developer.apple.com\/documentation\/uikit\/protecting_the_user_s_privacy\u0022\u003Esome extra security features\u003C\/a\u003E that require some extra setup for enabling Crescendo\u2019s system extension. Head on over to the \u003Ca href=\u0022https:\/\/github.com\/SuprHackerSteve\/Crescendo\/blob\/master\/README.md#Getting-Started\u0022\u003EGetting Started\u003C\/a\u003E section in the README to get started. I\u0027m hopeful this inconvenience will be fixed in future versions.\u003C\/p\u003E\n\u003Ch4\u003EOh, One More Thing...\u003Cb\u003E\u003C\/b\u003E\u003C\/h4\u003E\n\u003Cp\u003ECrescendo is being released open source under the MIT license! It consists of a ready to use framework that wraps the ESF with a Swift interface, removing some of the nuances and providing a simple callback for event data. This way other developers don\u0027t have to understand all the inner details of the Endpoint Security Framework. One caveat, if you wish to use the framework in your own app, you must \u003Ca href=\u0022https:\/\/developer.apple.com\/contact\/request\/system-extension\/\u0022\u003Eobtain an entitlement from Apple\u003C\/a\u003E.\u0026nbsp;\u003C\/p\u003E\n\u003Cp\u003EMissing a feature you\u2019d like to see? Submit a Pull Request!\u003C\/p\u003E\n\u003Cp\u003EHead over to the \u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/github.com\/SuprHackerSteve\/Crescendo\u0022\u003ECrescendo Github\u003C\/a\u003E to learn more and \u003Ca adhocenable=\u0022false\u0022 href=\u0022https:\/\/github.com\/SuprHackerSteve\/Crescendo\/releases\/download\/v1.0.3\/Crescendo.app.zip\u0022\u003Edownload the latest release\u003C\/a\u003E.\u003C\/p\u003E\n",
+        "jcr:lastModified": "Mon Mar 09 2020 15:29:30 GMT+0000",
+        "sling:resourceType": "social\/blog\/components\/entrytext"
+      }
+    },
+    "summary": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "text": "\u003Cp\u003ECrescendo is a real time event viewer for macOS that uses Apple\u0027s Endpoint Security Framework.\u003C\/p\u003E\n",
+      "jcr:lastModified": "Mon Mar 09 2020 15:24:09 GMT+0000",
+      "sling:resourceType": "social\/blog\/components\/entrytextteaser"
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "adam.greenberg@fireeye.com",
+      "jcr:lastModified": "Mon Mar 09 2020 15:28:20 GMT+0000",
+      "imageRotate": "0"
+    }
+  }
+}

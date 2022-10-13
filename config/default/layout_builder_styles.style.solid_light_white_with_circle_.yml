@@ -1,0 +1,13 @@
+uuid: d0d2b779-f5c3-472b-8646-3cd0c8bfe6e7
+langcode: en
+status: true
+dependencies: {  }
+id: solid_light_white_with_circle_
+label: 'Solid (Light white with circle)'
+classes: bg-light-white-circle
+type: section
+group: background
+weight: 0
+block_restrictions: {  }
+layout_restrictions:
+  - layout_onecol

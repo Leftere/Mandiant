@@ -1,0 +1,26 @@
+uuid: 825c5886-792a-4ce7-8830-2c12946973c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_embed
+    - node.type.article
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    plain_text: plain_text
+    basic_html: '0'
+id: node.article.field_embed
+field_name: field_embed
+entity_type: node
+bundle: article
+label: Embed
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

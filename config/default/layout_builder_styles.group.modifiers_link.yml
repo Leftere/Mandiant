@@ -1,0 +1,10 @@
+uuid: 716a8173-cf41-45c8-8b4a-34493ba635b4
+langcode: en
+status: true
+dependencies: {  }
+id: modifiers_link
+label: 'Link modifiers'
+multiselect: multiple
+form_type: checkboxes
+required: 0
+weight: 0

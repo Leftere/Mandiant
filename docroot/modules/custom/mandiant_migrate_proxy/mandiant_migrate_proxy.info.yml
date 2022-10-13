@@ -1,0 +1,8 @@
+name: Mandiant Proxy
+type: module
+description: 'Migrate Proxy.'
+package: CUSTOM
+core_version_requirement: ^8 || ^9
+
+dependencies:
+  - drupal:basic_auth

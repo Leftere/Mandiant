@@ -1,0 +1,21 @@
+diff --git a/js/tb-megamenu-frontend.js b/js/tb-megamenu-frontend.js
+index 77a4518..5ce4ba3 100644
+--- a/js/tb-megamenu-frontend.js
++++ b/js/tb-megamenu-frontend.js
+@@ -440,7 +440,7 @@
+           });
+ 
+           var mm_timeout = mm_duration ? 100 + mm_duration : 500;
+-          $('.nav > li, li.mega', context).bind('mouseenter', function (event) {
++          $('.nav > li, li.mega', context).bind('click', function (event) {
+             showMenu($(this), mm_timeout);
+           });
+ 
+@@ -459,7 +459,6 @@
+           });
+ 
+           $('.nav > li, li.mega', context).bind('mouseleave', function (event) {
+-            hideMenu($(this), mm_timeout);
+           });
+ 
+           /**

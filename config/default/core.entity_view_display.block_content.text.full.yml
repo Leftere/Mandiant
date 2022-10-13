@@ -1,0 +1,83 @@
+uuid: 53f3b86e-cb7b-4ba1-8c3f-18f0c598b4be
+langcode: en
+status: false
+dependencies:
+  config:
+    - block_content.type.text
+    - core.entity_view_mode.block_content.full
+    - field.field.block_content.text.field_body
+    - field.field.block_content.text.field_eyebrow
+    - field.field.block_content.text.field_title
+  module:
+    - layout_builder
+    - layout_discovery
+    - layout_library
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          2d3afd1b-41f5-46c3-84fa-d5e0487798b8:
+            uuid: 2d3afd1b-41f5-46c3-84fa-d5e0487798b8
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:block_content:text:field_body'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 0
+          933b583e-867e-450d-95f1-06e7d93fc503:
+            uuid: 933b583e-867e-450d-95f1-06e7d93fc503
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:block_content:text:field_title'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+  layout_library:
+    enable: false
+id: block_content.text.full
+targetEntityType: block_content
+bundle: text
+mode: full
+content:
+  field_body:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_eyebrow: true
+  langcode: true
+  search_api_excerpt: true
